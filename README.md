@@ -12,6 +12,7 @@ All generated notes and scores are pre-committed — browse them directly:
 | Claude Opus judge scores | `results/claude-opus-judge/soap/` |
 | Scoring rubric & methodology | [plan.md](plan.md) |
 | Rubric revisions & rationale | [reflections/](reflections/) |
+| Final presentation | [presentation/](presentation/) |
 
 To produce summary tables (CSVs saved to each judge's folder):
 ```bash
@@ -90,6 +91,7 @@ Both scripts are resumable — safe to stop and restart.
 evals/
 ├── README.md
 ├── plan.md                  # eval methodology, rubric, transcript selection
+├── presentation/            # final presentation
 ├── reflections/             # rubric revisions and scoring change rationale
 ├── scripts/
 │   ├── run-models.py            # eval harness (called by run-evals.sh)
