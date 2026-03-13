@@ -1,5 +1,7 @@
 # Clinical Note Generation — Model Evals
 
+> **📊 Results are available as an interactive presentation: [presentation/index.html](presentation/index.html)**
+
 Evaluation of 8 candidate models for offline clinical note generation (transcript → SOAP notes) on Apple Silicon Macs with 8GB RAM.
 
 ## Results
