@@ -1,0 +1,59 @@
+{
+  "transcript_id": "05-dm2-elevated-a1c",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note states 'Type 2 diabetes and hypertension' as past medical history \u2014 hypertension is reasonably inferred from lisinopril use and elevated BP, and Type 2 diabetes is clearly present. However, 'Weight gain (15 pounds in six months)' in the assessment is a minor embellishment; the transcript says 'over the past several weeks,' not six months. The occupation listed as 'Caregiver' is misleading \u2014 he was temporarily caregiving for his mother, not employed as a caregiver; the transcript mentions he was traveling for work.",
+      "flagged_content": [
+        "Weight gain (15 pounds in six months)",
+        "Occupation: Caregiver"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "Template instructions in parentheses and brackets are extensively left in the output (e.g., '(Only include systems that were discussed. If not mentioned, omit this section entirely)', '(If not documented, state \"Not documented\")', '(Only include items that were mentioned)'). The template also instructed to omit ROS systems not discussed, but the note lists them all as 'No symptoms discussed'. Multiple instruction violations.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing: the detailed discussion about insulin glargine (Lantus/Basaglar) and patient's refusal, the discussion of semaglutide mechanism/benefits/side effects, the counseling about insurance/prior authorization and empagliflozin as alternative, the foot exam findings (monofilament intact, pulses strong, no skin breakdown), kidney labs (creatinine 1.0, urine microalbumin 45, early diabetic nephropathy), dietary counseling details, the slow titration protocol discussion, BMP order, and family history of father on insulin.",
+      "missed_items": [
+        "Discussion of insulin glargine (Lantus/Basaglar) as option and patient refusal",
+        "Father's difficult experience with insulin (family history)",
+        "Semaglutide mechanism, cardiovascular benefits, GI side effects counseling, pancreatitis risk, thyroid cancer screening",
+        "Insurance coverage discussion and empagliflozin as alternative",
+        "Foot exam findings: monofilament intact bilaterally, pulses strong, no skin breakdown",
+        "Kidney labs: creatinine 1.0, urine microalbumin 45, early diabetic nephropathy",
+        "Counseling on nephropathy reversibility",
+        "BP monitoring and possible lisinopril increase",
+        "Dietary counseling details (low-carb, protein and vegetables first, smaller meals, avoid fatty foods)",
+        "Previous exercise routine (walking 3-4 times/week, 30 minutes)",
+        "Eye exam last over a year ago",
+        "BMP ordered for follow-up",
+        "Glucose monitoring instructions (fasting every morning and before dinner)"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template instructions are left in the output as raw text. The physical exam section says 'Physical examination not documented' but a foot exam and vital signs were documented. Vital signs are placed after the 'Physical examination not documented' statement, which is structurally incorrect. ROS includes systems that should have been omitted per template instructions. The genitourinary section should have included nocturia.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. No {{drug:...}} or {{condition:...}} syntax was used anywhere in the note.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 17.9,
+      "input_tokens": 3805,
+      "output_tokens": 959
+    }
+  }
+}

@@ -1,0 +1,96 @@
+---
+id: 40
+scenario: IUD counseling, options discussion
+category: Preventive
+density: Medium
+---
+
+Doctor: Hey, Jess. I see you're here to talk about birth control options?
+
+Patient: Yeah. So I've been on the pill for like six years and I'm kind of over it. I keep forgetting to take it and then I panic. My friend got an IUD and she loves it, so I figured I should at least look into it.
+
+Doctor: Totally reasonable. The pill is great when it works for people, but adherence is a real issue and you're not alone in that. Tell me what you're looking for in a birth control method — what matters most to you?
+
+Patient: I want something I don't have to think about. Like, set it and forget it. And ideally something long-term because my husband and I aren't planning on kids for at least three to four more years.
+
+Doctor: Perfect. Long-acting reversible contraception — that's the category we're talking about. The two main options are IUDs and the implant. Since you mentioned your friend has an IUD, let's start there, but I'll mention the implant too so you can compare.
+
+Patient: Okay.
+
+Doctor: So there are two types of IUDs. Hormonal IUDs — the brand names are Mirena, Kyleena, and Liletta — and the copper IUD, which is Paragard. They work differently and have different pros and cons. The hormonal IUDs release a small amount of progestin locally in your uterus. It's a much lower hormone dose than the pill because it's acting right where it needs to. They last between five and eight years depending on the brand. Mirena and Liletta are good for up to eight years now. Kyleena is good for five and has a slightly lower hormone dose, which some people prefer.
+
+Patient: And the copper one?
+
+Doctor: Paragard has no hormones at all. The copper itself acts as a spermicide and creates an inflammatory environment in the uterus that prevents implantation. It lasts up to ten years. Some people really want it specifically because it's hormone-free.
+
+Patient: What are the downsides of each?
+
+Doctor: Good question. The hormonal IUD — the main benefit beyond contraception is that most people's periods get significantly lighter. About twenty percent of Mirena users stop getting periods altogether after a year. Cramping usually decreases too. The downsides: some people get hormonal side effects like acne, mood changes, or headaches, but these are less common than with the pill because the hormone dose is lower and mostly local. There can be irregular spotting for the first three to six months while your body adjusts.
+
+Patient: I actually wouldn't mind if my period went away. Is that safe?
+
+Doctor: Completely safe. The lining just stays thin so there's nothing to shed. It's not building up or anything harmful. A lot of patients love that benefit.
+
+Patient: Okay. And the copper one?
+
+Doctor: Paragard's big advantage is zero hormones. Some women have had bad experiences with hormonal methods and want to avoid them entirely. The downside is that periods tend to get heavier and crampier, especially for the first few months. Some women find this manageable, others find it really bothersome. If you already have heavy or painful periods, Paragard might not be the best fit.
+
+Patient: My periods are pretty normal. Medium flow, mild cramps. Nothing terrible.
+
+Doctor: Then either would work for you from that perspective. Given that you're interested in lighter periods and you've tolerated hormones on the pill — any issues with the pill besides the adherence?
+
+Patient: Not really. I've been fine on it. No mood stuff, no weight gain. I just can't remember to take it.
+
+Doctor: Then a hormonal IUD sounds like it would be a great fit. You get the benefits you already have from hormonal contraception, plus lighter periods, plus you don't have to think about it for years. I'd probably suggest Mirena or Liletta given the longer duration, unless the slightly smaller size of Kyleena appeals to you.
+
+Patient: My friend has Mirena and she's happy. Let's go with that. What's the insertion like? She said it was — her exact words were "not fun."
+
+Doctor: Ha, that's honest. I'll be straight with you. For most people, insertion is uncomfortable. It takes about five minutes total. The most intense part is when the device passes through the cervix — that's a sharp cramp that lasts a few seconds. Some people describe it as a bad period cramp, others say it's worse. Most people feel fine within fifteen to twenty minutes. You can take eight hundred milligrams of ibuprofen about an hour before your appointment, which helps.
+
+Patient: Do you numb anything?
+
+Doctor: We can do a cervical block — a local anesthetic injection to the cervix. It doesn't eliminate all sensation but it can help. Some providers use it routinely, some don't. I do offer it, and most of my patients who've had it say it helped. The injection itself is a pinch, but then the actual insertion is more tolerable.
+
+Patient: Yes, please. I want the numbing.
+
+Doctor: Absolutely. We'll do that. After insertion, you might have cramping and spotting for a day or two. I'd suggest scheduling it on a day where you can take it easy afterward — don't plan a five-mile run.
+
+Patient: Can it fall out?
+
+Doctor: Expulsion happens in about two to five percent of cases, usually in the first few months. You'll be able to feel the strings — short threads that hang through the cervix. I'll teach you how to check them. If you can't feel them or they seem longer, call us. We'd do an ultrasound to make sure it's still in place.
+
+Patient: How soon does it work?
+
+Doctor: If we place it within seven days of the start of your period, it's effective immediately. Otherwise it takes about seven days to become effective. We'll coordinate the timing.
+
+Patient: And when I want to get pregnant eventually?
+
+Doctor: I remove it in the office — takes about thirty seconds, way easier than insertion — and fertility returns almost immediately. Most women ovulate within the first month after removal. There's no delay in return to fertility like some people worry about.
+
+Patient: Oh, that's good. I'd heard that it can take a while. My mom said IUDs can cause problems with fertility.
+
+Doctor: That's an old myth from the Dalkon Shield days in the nineteen seventies. Modern IUDs are extremely safe. They don't cause infertility or increase infection risk. The research is very solid on this.
+
+Patient: Okay, good. What about the implant you mentioned? Just so I can compare.
+
+Doctor: The implant is Nexplanon — it's a tiny flexible rod that goes in your upper arm. It releases a different progestin than the IUD. It lasts three years and is the most effective form of birth control available — even slightly more effective than IUDs, though both are over ninety-nine percent effective. Insertion is easy — we numb the arm and it slides in. The main downside is unpredictable bleeding patterns. Some women get lighter periods, some get irregular spotting that doesn't stop, and some get heavier. You can't predict who'll get what, and that's the number one reason people ask to have it removed.
+
+Patient: I think the IUD sounds better for me. I like the idea of lighter periods and longer duration.
+
+Doctor: I think that's a great choice. Let me get you scheduled. We'll aim for the first seven days of your next cycle. When is your period due?
+
+Patient: Should be in about a week and a half.
+
+Doctor: Perfect. I'll have the front desk schedule you during that window. Stop the pill after your current pack — actually, keep taking the pill through your current pack and stop when you get your period. We'll insert the IUD during that period and you'll be continuously protected.
+
+Patient: That's great. Thank you for going through all of this. I feel way more confident now.
+
+Doctor: That's what I'm here for. Any other questions?
+
+Patient: I don't think so. I'm actually kind of excited about not having to set a pill alarm anymore.
+
+Doctor: Freedom from the daily pill is one of the best parts. Alright, we'll see you in about two weeks. Take the ibuprofen beforehand and maybe bring a stress ball.
+
+Patient: Ha, will do. Thanks, doctor.
+
+Doctor: See you then, Jess.

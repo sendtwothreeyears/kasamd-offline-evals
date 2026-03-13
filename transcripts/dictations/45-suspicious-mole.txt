@@ -1,0 +1,20 @@
+---
+id: 45
+scenario: Skin check, suspicious mole, biopsy discussion
+category: Derm
+density: Medium
+---
+
+So I saw Claire this afternoon — she came in about a mole on her upper back that her husband had noticed was changing. He's been observing it for roughly three to four months, said it looks darker and possibly bigger than it used to be. She can't see it well herself. She did mention it bled once when she caught it on her bra strap, though she attributed that to friction.
+
+I went ahead and examined her back and used the dermatoscope to get a closer look. The lesion is on the right upper back. Going through the ABCDE criteria — it's asymmetric, the borders are irregular with some jagged edges, the color is variegated with dark brown, lighter tan, and a small area that's almost black. The diameter is approximately 8 millimeters, which is above the 6 millimeter threshold. And of course, E for evolving — her husband has confirmed it's been changing over the past few months.
+
+Given that it checks multiple ABCDE criteria, I explained to Claire that we can't just monitor this and that I'd like to proceed with an excisional biopsy — removing the entire mole with a small margin of normal skin around it. I explained the procedure to her: local anesthetic with lidocaine, she'll feel a pinch and some stinging but won't feel the actual removal, the whole thing takes about 15 to 20 minutes, and she'll have sutures that we'll remove in 10 to 14 days. Pathology results should be back in five to seven business days and I'll call her personally with the results.
+
+I counseled her on the possible outcomes — could be an atypical but benign mole, in which case we may already be done, or if it shows something more concerning like melanoma, we'd discuss next steps including possible wider excision and referral to dermatology or surgical oncology. I was careful not to alarm her unnecessarily and explained that many suspicious-looking moles turn out to be benign.
+
+She agreed to proceed. We've scheduled the excision for Thursday at 2:30. I instructed her to avoid aspirin and ibuprofen for three days prior due to blood thinning — Tylenol is fine — and to wear a loose-fitting top. Post-procedure, she should keep the site clean and dry for 24 hours, then can shower normally. We'll provide detailed wound care instructions at the visit.
+
+We also talked about skin surveillance going forward. I recommended monthly self-skin checks — her husband can help with areas she can't see — using the same ABCDE criteria. Given this finding, I recommended annual full skin exams, either with me or a dermatologist. She expressed interest in seeing a dermatologist as well, noting she's fair-skinned and had poor sun protection habits when she was younger. I counseled her on daily sunscreen use, SPF 30 or higher, reapplying every two hours when outdoors, and using hats and protective clothing when possible.
+
+So the plan is excisional biopsy Thursday at 2:30, pathology to follow, and we'll go from there.

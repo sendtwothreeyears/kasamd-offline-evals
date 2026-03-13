@@ -1,0 +1,14 @@
+{
+  "transcript_id": "15-uri-viral",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nMr. Tanaka presented with a three-day history of a cold, including a runny nose, nasal congestion, and a cough that began yesterday.\n\n**History of Present Illness**\nThe patient reports feeling a little warm on Monday, with a temperature of 99.1\u00b0F, but has since returned to normal temperatures. He experiences a mild scratchy throat and general feelings of being run down but does not report any significant body aches or headache.\n\n**Review of Systems**\nConstitutional: No fever, chills, fatigue, or weight changes reported.\nHEENT: No vision or hearing concerns, throat is a little pink without exudates, and ears are clear bilaterally.\nCardiovascular: No chest pain, palpitations, or edema reported.\nRespiratory: No shortness of breath, cough, or wheezing reported.\nGastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain reported.\nGenitourinary: No urinary symptoms or menstrual history provided.\nMusculoskeletal: No joint pain, muscle weakness, or mobility issues reported.\nNeurological: No headache, dizziness, numbness, or weakness reported.\nPsychiatric: No mood, anxiety, or sleep issues provided.\nSkin: No rashes, lesions, or wounds provided.\n\n**Past Medical History**\nNot documented\n\n**Medications**\nNot documented\n\n**Allergies**\nNo known drug allergies provided.\n\n**Social History**\nTobacco: Not documented\nAlcohol: Not documented\nRecreational drugs: Not documented\nOccupation: Not documented\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\nGeneral: The patient is afebrile on exam, appearing well and not ill. The throat is noted as a little pink but without exudates, and ears are clear bilaterally. Lungs are clear on both sides.\n\n**Vital Signs:**\nBP: Not documented\nHR: Not documented\nTemp: 98.4\u00b0F\nRR: Not documented\nSpO2: Not documented\n\n**Assessment**\nA straightforward viral upper respiratory infection is suspected.\n\n**Plan**\n1. No further diagnostic workup is needed as the condition is expected to resolve on its own.\n2. Management includes pseudoephedrine or a nasal steroid spray such as Flonase for congestion and honey in tea or an OTC cough suppressant like dextromethorphan for the cough. Hydration and rest are advised.\n3. Return precautions provided to the patient to watch for a high fever, worsening cough, trouble breathing, or lack of improvement after ten days.",
+  "metadata": {
+    "inference_time_s": 8.75,
+    "prompt_tokens": 1400,
+    "tokens_generated": 527,
+    "prompt_tps": 500.9,
+    "tokens_per_sec": 60.2,
+    "peak_memory_gb": 4.8
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "transcript_id": "04-dm2-routine-fu",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nDiabetes follow-up visit\n\n**History of Present Illness**\nPatient reports doing well with her diabetes management. Her recent A1c was 6.8, which is at her target range. She has been consistently monitoring her blood glucose levels at home, with fasting sugars typically between 100 and 120 mg/dL, and postprandial sugars generally under 180 mg/dL, although sometimes slightly higher after larger meals. She is currently taking {{drug:metformin}} 1,000 milligrams twice daily and reports tolerating it well, without any nausea or diarrhea, as long as she takes it with food.\n\n**Review of Systems**\nConstitutional: [Fever, chills, fatigue, weight changes]\nHEENT: [Vision, hearing, throat, nasal symptoms]\nCardiovascular: [Chest pain, palpitations, edema]\nRespiratory: [Shortness of breath, cough, wheezing]\nGastrointestinal: [Nausea, vomiting, diarrhea, abdominal pain]\nGenitourinary: [Urinary symptoms, menstrual history]\nMusculoskeletal: [Joint pain, muscle weakness, mobility issues]\nNeurological: [Headache, dizziness, numbness, weakness]\nPsychiatric: [Mood, anxiety, sleep]\nSkin: [Rashes, lesions, wounds]\n\n**Past Medical History**\n[Chronic conditions and prior diagnoses]\nDiabetes mellitus\n\n**Medications**\n[Current medications with dosages]\n{{drug:metformin}} 1,000 milligrams twice daily\n\n**Allergies**\n[Drug allergies and reactions]\nNo known drug allergies\n\n**Social History**\nTobacco: [Usage details]\nAlcohol: [Usage details]\nRecreational drugs: [Usage details]\nOccupation: [Job details]\n(Only include items that were mentioned)\n\n**Family History**\n[Relevant family medical history]\n(If not documented, state \"Not documented\")\n\n**Objective**\n**Physical Examination**\n**Vital Signs:**\nBP: [Blood pressure]\nHR: [Heart rate]\nTemp: [Temperature]\nRR: [Respiratory rate]\nSpO2: [Oxygen saturation]\n(Only include vitals that were documented)\n\nGeneral: [Overall appearance and condition]\n(Only document examination findings that were explicitly mentioned. If no physical exam was performed, state \"Physical examination not documented\")\n\n**Assessment**\n[Primary diagnosis or clinical impression]\nDiabetes mellitus\n\n**Plan**\n1. [Diagnostic workup - labs, imaging, referrals]\n2. [Therapeutic interventions - medications, procedures]\n3. [Patient education and counseling provided]\n4. [Follow-up instructions]\n(Only include plan elements that were specifically discussed)",
+  "metadata": {
+    "inference_time_s": 11.4,
+    "prompt_tokens": 1566,
+    "tokens_generated": 586,
+    "prompt_tps": 295.0,
+    "tokens_per_sec": 51.4,
+    "peak_memory_gb": 3.29
+  }
+}

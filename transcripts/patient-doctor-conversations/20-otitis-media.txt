@@ -1,0 +1,98 @@
+---
+id: 20
+scenario: Acute otitis media in 3-year-old child
+category: Acute
+density: Medium
+---
+
+Doctor: Hi there, you must be Lily's mom. I'm Dr. Vasquez. And who's this little one?
+
+Mom: I'm Sarah. And yeah, this is Lily — she's been having a rough couple of days.
+
+Doctor: Aw, I'm sorry to hear that. Hey Lily. I like your butterfly shirt. Can you tell me what hurts?
+
+Patient: My ear hurts.
+
+Mom: She's been pulling at her right ear since yesterday. And she woke up screaming at 2 AM last night — just inconsolable.
+
+Doctor: Poor thing. Has she had a fever?
+
+Mom: 101.5 last night. I gave her Tylenol and it came down to about 99, but it went back up this morning. She was 100.8 when I checked before we left.
+
+Doctor: Has she had any cold symptoms before this — runny nose, cough?
+
+Mom: Yeah, she's had a runny nose for about a week. Just clear stuff, nothing that seemed like a big deal. Then the ear thing started.
+
+Doctor: That's very typical — ear infections often follow a cold. The congestion blocks the tubes that drain the middle ear. Is she eating and drinking okay?
+
+Mom: She's drinking fine. Not super interested in food but she ate some crackers and applesauce this morning. She won't eat anything chewy — I think it hurts to chew.
+
+Doctor: That makes sense. Any vomiting or diarrhea?
+
+Mom: No.
+
+Doctor: Has she had ear infections before?
+
+Mom: Once, when she was about eighteen months. They gave her the pink medicine — amoxicillin — and it cleared up.
+
+Doctor: Good. Any allergies to medications?
+
+Mom: No, none.
+
+Doctor: Alright, Lily, can I look in your ears? I'm going to use this little light. It won't hurt, I promise. Can you sit on Mommy's lap? ... Perfect, good girl. Let me see the left one first... left ear looks totally fine, nice and clear. Now the right one... okay, I can see the right eardrum is red and bulging. There's some fluid behind it. That's definitely an ear infection.
+
+Mom: I figured. Should I be worried about her hearing?
+
+Doctor: Not at all. The fluid and inflammation can cause temporary muffled hearing, but it resolves once the infection clears. Let me finish my exam — I want to check her throat and listen to her lungs... throat's a little pink, tonsils are slightly enlarged but no pus. Lungs are clear. Lymph nodes in her neck are mildly swollen, which goes along with the URI and the ear infection.
+
+Mom: So does she need antibiotics?
+
+Doctor: Good question, and I want to talk through this with you. So there's actually two approaches for a child Lily's age with an ear infection. One is antibiotics right away. The other is what we call "watchful waiting" — managing the pain for 48 to 72 hours and seeing if it resolves on its own. About 80% of ear infections in kids will actually get better without antibiotics.
+
+Mom: Really? I didn't know that.
+
+Doctor: It's a newer approach based on a lot of research. The guidelines say we can consider watchful waiting in kids over two who have mild symptoms, one-sided infection, no ear drainage, and no high fever. Lily fits most of those criteria.
+
+Mom: But she was screaming at 2 AM. That didn't seem mild.
+
+Doctor: And that's a fair point. The pain is real and significant, even if the infection itself might resolve. Here's what I'd suggest — and this is a judgment call, not a strict rule. Given that she's in quite a bit of discomfort and had the high fever overnight, I'm comfortable going ahead with antibiotics. Amoxicillin worked well for her before, so we'll use that again.
+
+Mom: The pink stuff, yeah. She didn't mind the taste.
+
+Doctor: Perfect. It'll be amoxicillin 400 milligrams per 5 mL — she'll take 5 mLs twice a day for ten days. Make sure she finishes the whole bottle even when she's feeling better.
+
+Mom: Got it. What about the pain in the meantime? She's miserable.
+
+Doctor: Absolutely. Continue the Tylenol — acetaminophen — every four to six hours as needed. You can also alternate with ibuprofen every six to eight hours. For a 30-pound — how much does she weigh?
+
+Mom: About 32 pounds.
+
+Doctor: Okay, so Tylenol dose is about 240 milligrams, and ibuprofen would be about 100 milligrams. I'll have the exact dosing on the after-visit instructions. A warm compress on the ear can also help — just a warm washcloth.
+
+Mom: What about those ear drops? My sister swears by the numbing drops.
+
+Doctor: Benzocaine ear drops — they can help with pain. I can prescribe those. Just make sure there's no drainage from the ear first. If you ever see pus or fluid coming out, stop the drops and call us.
+
+Mom: When should I bring her back?
+
+Doctor: She should start improving within 48 to 72 hours on the antibiotic. If she's still having fever after 72 hours, or the pain is getting worse instead of better, or you see any drainage from the ear, bring her back in. We'd want to make sure the antibiotic is working and she doesn't need a different one.
+
+Mom: What about daycare? She goes three days a week.
+
+Doctor: She can go back once the fever's been gone for 24 hours and she's acting more like herself. Probably not tomorrow, maybe the day after.
+
+Mom: Okay, that works. My mom can watch her tomorrow. Is there anything I can do to prevent these? She seems to get sick every other week at daycare.
+
+Doctor: That's the daycare reality, unfortunately. Their immune systems are getting a workout. Make sure she's up to date on her vaccines — including the pneumococcal vaccine, which covers some of the bacteria that cause ear infections. Don't let her drink a bottle lying flat if she still takes one. And good handwashing — which at three is a work in progress, I know.
+
+Mom: Ha, yeah. She thinks hand sanitizer is lotion.
+
+Doctor: Close enough. Alright, I'm sending the prescriptions — amoxicillin and the benzocaine ear drops. Follow up in two to three weeks for a recheck of the ear, or sooner if things aren't improving. Sound good?
+
+Mom: Sounds great. Thank you so much.
+
+Doctor: Of course. Feel better, Lily. You were so brave today.
+
+Patient: Can I have a sticker?
+
+Doctor: You absolutely can. Pick whichever one you want.

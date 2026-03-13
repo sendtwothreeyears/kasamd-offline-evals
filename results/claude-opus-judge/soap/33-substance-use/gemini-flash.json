@@ -1,0 +1,45 @@
+{
+  "transcript_id": "33-substance-use",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note lists 'Alcohol Use Disorder' as the assessment diagnosis, but the transcript never explicitly diagnoses AUD \u2014 it describes a pattern warranting clinical attention and uses screening/counseling language. This is a minor embellishment/overstatement beyond what the transcript supports.",
+      "flagged_content": [
+        "Alcohol Use Disorder"
+      ]
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The note mostly follows instructions well, using 'Not documented' and 'Physical examination not documented' appropriately. Minor issue: the chief complaint could be considered the knee pain (the primary reason for visit per transcript), with alcohol use as a secondary concern addressed during the visit. The template says to omit ROS systems not discussed, and the psychiatric ROS entry is a stretch."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "The note captures most transcript content thoroughly. However, the knee pain as the primary reason for visit is downplayed (only mentioned in the plan as an MRI referral), and the positive framing/validation the physician provided regarding Sandra's insight is not well captured. The mention of the BASICS program description ('two sessions, no labels') is also missing.",
+      "missed_items": [
+        "Knee pain as the primary chief complaint",
+        "BASICS program described as 'two sessions, no labels'",
+        "Physician validated patient's insight and framed it positively"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well overall. Minor issues include alcohol use details being duplicated between HPI and Social History sections, and the Review of Systems section is a stretch since no formal ROS was conducted. Family History lists mother's stroke, which is arguably a social stressor rather than family medical history in this context."
+    },
+    "entity_marking": {
+      "score": 1,
+      "rationale": "Only one entity was marked ({{condition:Alcohol Use Disorder}}), and that diagnosis itself is arguably hallucinated. No drug entities needed marking (no medications prescribed), but the note missed marking {{condition:knee pain}} and {{condition:stroke}} (mother's stroke)."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "Alcohol use details appear in both HPI and Social History which is redundant content placement, but this is a template adherence issue rather than verbatim section duplication."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 20.74,
+      "input_tokens": 3384,
+      "output_tokens": 595
+    }
+  }
+}

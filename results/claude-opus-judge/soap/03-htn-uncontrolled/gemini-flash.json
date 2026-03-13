@@ -1,0 +1,51 @@
+{
+  "transcript_id": "03-htn-uncontrolled",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The Review of Systems section lists specific negative findings (no fever, chills, fatigue, weight changes, chest pain, palpitations, edema, shortness of breath, cough, wheezing, headache, dizziness, numbness, weakness) that were not explicitly discussed in the transcript. The patient only said he feels 'totally fine' with 'no symptoms,' which doesn't justify enumerating all these specific negatives across multiple systems. Also, 'No known drug allergies' is a standard clinical default and acceptable.",
+      "flagged_content": [
+        "Constitutional: No fever, chills, fatigue, or weight changes reported",
+        "Cardiovascular: No chest pain, palpitations, or edema reported",
+        "Respiratory: No shortness of breath, cough, or wheezing reported",
+        "Neurological: No headache, dizziness, numbness, or weakness reported"
+      ]
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The template instructs to 'Only include systems that were discussed' for ROS, but the note expanded 'no symptoms' into multiple specific system negatives that were not individually discussed. Otherwise, instructions were generally followed well, including using 'Not documented' and 'Physical examination not documented' appropriately."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured well. However, some details are missing.",
+      "missed_items": [
+        "Discussion about hypertension being asymptomatic until causing real damage and increased risk for heart attack, stroke, kidney problems (patient education in HPI or Plan)",
+        "Wife's support with label reading",
+        "Explanation that BP reduction from sodium restriction can be 5-10 points",
+        "Patient asked how long until lisinopril works \u2014 told 2-4 weeks",
+        "Mention that if cough is bothersome they would switch to a different class (partially captured but not the class-switching detail)",
+        "Tobacco use not addressed (though arguably not mentioned in transcript)"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well overall. Minor issue: BP reading and some lifestyle details are placed in HPI rather than only in Objective/Social History, and the ROS section was included with systems not actually discussed. Some content like medication adherence counseling could be better placed."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Entity marking syntax is correct. However, 'amlodipine' is marked twice (once in HPI and once in Medications) \u2014 only the first occurrence should be marked. Also, 'hypertension' in the Assessment is not marked as a condition (the first occurrence was in HPI, which is correctly marked). The second amlodipine in Medications and the repeated amlodipine/lisinopril in Plan are also marked, which violates first-occurrence-only rules."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No sections or content are duplicated in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.86,
+      "input_tokens": 3215,
+      "output_tokens": 749
+    }
+  }
+}

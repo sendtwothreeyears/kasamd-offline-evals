@@ -1,0 +1,14 @@
+{
+  "transcript_id": "41-gerd",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nBurning chest discomfort for three weeks.\n\n**History of Present Illness**\nPatient reports burning sensation behind the breastbone, midsternal area, sometimes creeping into the throat, associated with a sour taste. Reports the discomfort is particularly bothersome after dinner.\n\n**Review of Systems**\nConstitutional: No unintentional weight loss.\nCardiovascular: No palpitations.\nGastrointestinal: No dysphagia, no odynophagia, no sensation of food getting stuck, no vomiting, no hematemesis, no melena or blood in the stool.\n\n**Past Medical History**\nNot documented\n\n**Medications**\nNot documented\n\n**Allergies**\nNo known drug allergies\n\n**Social History**\nNot documented\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\nPhysical examination not documented\n\n**Vital Signs**\nBP: Not documented\nHR: Not documented\nTemp: Not documented\nRR: Not documented\nSpO2: Not documented\n\n**General**\nNot documented\n\n**Assessment**\nLikely {{condition:gastroesophageal reflux disease}} (GERD).\n\n**Plan**\n1. Started on {{drug:omeprazole}} 20 milligrams once daily, taken on an empty stomach about 30 minutes before breakfast.\n2. Advised patient to reduce coffee intake from two to three cups daily, avoid spicy foods and tomato-based sauces, avoid eating within two to three hours of lying down, and elevate the head of the bed.\n3. Follow-up in six weeks. Reassessment planned if {{drug:omeprazole}} is not effective.\n\n\n\n",
+  "metadata": {
+    "inference_time_s": 6.91,
+    "prompt_tokens": 1487,
+    "tokens_generated": 348,
+    "prompt_tps": 656.1,
+    "tokens_per_sec": 50.4,
+    "peak_memory_gb": 3.84
+  }
+}

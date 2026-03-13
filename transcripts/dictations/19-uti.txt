@@ -1,0 +1,14 @@
+---
+id: 19
+scenario: UTI with dysuria and frequency in adult woman
+category: Acute
+density: Sparse
+---
+
+So I saw Ms. Jennings this afternoon — she came in with what she suspected was a bladder infection. She's been having burning with urination and urinary urgency with very little output, started about two days ago and has gotten progressively worse. She also noticed some pinkish discoloration in her urine this morning, which is what prompted her to call. No back pain, no fever, no nausea or vomiting. She does have a history of one prior UTI about two years ago, treated with antibiotics and resolved without issue.
+
+We had her provide a urine sample at check-in. Dipstick came back positive for leukocyte esterase, positive nitrites, and trace blood — all consistent with a UTI. Went ahead and sent it for culture as well, but I was comfortable starting treatment empirically.
+
+Started her on nitrofurantoin — Macrobid — 100 milligrams twice daily for five days. Counseled her to take it with food for better absorption and to help with nausea, which is the most common side effect. Advised her to drink plenty of water. Told her she should feel significantly better within a day or two.
+
+Gave her return precautions — if symptoms aren't improving within 48 hours, or if she develops fever, back pain, or vomiting, she should call us right away as that could indicate the infection has spread to the kidneys. Otherwise, instructed her to complete the full course. Prescription was sent electronically to her pharmacy.

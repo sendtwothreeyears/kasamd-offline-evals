@@ -1,0 +1,16 @@
+---
+id: 15
+scenario: Viral upper respiratory infection, reassurance and symptomatic treatment
+category: Acute
+density: Sparse
+---
+
+So I saw Mr. Tanaka today, he came in with about a three-day history of a cold — runny nose, nasal congestion, and a cough that started yesterday. He did mention feeling a little warm on Monday, checked his temperature at home and it was 99.1, but since then it's been normal. He also has a mild scratchy throat, not really painful, and he's been feeling generally run down. No significant body aches, no headache.
+
+On exam, temp today was 98.4, other vitals were normal. Throat was a little pink but no exudates. Ears were clear bilaterally. Lungs were clear on both sides.
+
+So this really looks like a straightforward viral upper respiratory infection. He asked about antibiotics — his wife had suggested them — but I explained that this is viral in nature, antibiotics aren't going to help here and can cause side effects, and that it should run its course in about seven to ten days.
+
+For management, I recommended pseudoephedrine or a nasal steroid spray like Flonase for the congestion. For the cough, I suggested honey in tea or an over-the-counter cough suppressant like dextromethorphan at night. Also told him to stay hydrated and rest.
+
+I gave him return precautions — told him to call if he develops a high fever, if the cough gets significantly worse, if he has any trouble breathing, or if things aren't improving after ten days.

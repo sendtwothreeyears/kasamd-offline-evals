@@ -1,0 +1,59 @@
+{
+  "transcript_id": "31-insomnia",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems section fabricates negative findings for systems never discussed in the transcript (Constitutional, HEENT, Cardiovascular, Respiratory, GI, GU, MSK, Neurological, Skin). The 'Follow-up appointment scheduled in three weeks unless problems worsen prior to that time' is fabricated \u2014 the transcript says 'three to four weeks' and does not mention a scheduled appointment or worsening clause. The note also states 'No known drug allergies provided' when allergies were never discussed.",
+      "flagged_content": [
+        "Constitutional: No fever, chills, fatigue, or weight changes reported.",
+        "HEENT: No vision, hearing, throat, or nasal symptoms reported.",
+        "Cardiovascular: No chest pain, palpitations, or edema reported.",
+        "Respiratory: No shortness of breath, cough, or wheezing reported.",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain reported.",
+        "Genitourinary: No urinary symptoms or menstrual history provided.",
+        "Musculoskeletal: No joint pain, muscle weakness, or mobility issues provided.",
+        "Neurological: No headache, dizziness, numbness, or weakness provided.",
+        "Skin: No rashes, lesions, or wounds provided.",
+        "Follow-up appointment scheduled in three weeks unless problems worsen prior to that time."
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template explicitly states to omit the Review of Systems section entirely if not mentioned, yet the note includes all ROS subsystems with fabricated negatives. Template instructions in parentheses were left in the output. Social History includes items not mentioned instead of only including mentioned items."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "The note captures the chief complaint, basic HPI, melatonin recommendation with dosing, and follow-up plan, but misses key details: alarm time of 6:15, losing 1-2 hours of sleep, specific sleep hygiene counseling details (no screens 30 min to 1 hour before bed, bed for sleep only), stimulus control instructions (20-minute rule), counseling that higher doses aren't better, coworker taking 10mg, and that no medications were prescribed.",
+      "missed_items": [
+        "Alarm goes off at 6:15 for work",
+        "Losing 1-2 hours of potential sleep",
+        "No screens for at least 30 minutes before bed, ideally an hour",
+        "Keeping bed for sleep only",
+        "Stimulus control: if not asleep within 20 minutes, get up, go to another room, do something low-key, return when drowsy",
+        "Counseled that higher doses of melatonin aren't better",
+        "Coworker takes 10mg of melatonin",
+        "Evidence supports lower doses"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Review of Systems section was included when it should have been omitted per template instructions. Template parenthetical instructions were left in the output. Social History includes undiscussed items. Vital Signs section is placed after Physical Examination header instead of within it properly."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Melatonin should have been marked as {{drug:melatonin}} and sleep onset insomnia as {{condition:sleep onset insomnia}}."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Massive duplication in Plan item 4 where 'Follow-up appointment scheduled in three weeks unless problems worsen prior to that time' is repeated hundreds of times."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 20.6,
+      "input_tokens": 20890,
+      "output_tokens": 905
+    }
+  }
+}

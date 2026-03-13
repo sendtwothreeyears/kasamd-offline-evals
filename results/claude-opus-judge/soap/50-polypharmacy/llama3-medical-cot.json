@@ -1,0 +1,73 @@
+{
+  "transcript_id": "50-polypharmacy",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The note contains numerous fabricated medication dosages not in the transcript (e.g., Metoprolol 500 mg twice daily, Lisinopril 10 mg, Oxybutynin 25 mg, Diphenhydramine 50 mg twice a day, Zolpidem 0.5 mg, Omeprazole 0.5 mg, Metoprolol 0.5 mg listed twice). 'Oxymetazosin' is a fabricated medication name not mentioned in the transcript. The note also states the patient 'attributes' her falls to orthostatic hypotension, when it was the physician who identified this pattern.",
+      "flagged_content": [
+        "Metoprolol: 500 mg twice daily",
+        "Lisinopril: 10 mg",
+        "Metformin: 500 mg twice daily",
+        "Oxybutynin: 25 mg daily",
+        "Diphenhydramine: 50 mg twice a day",
+        "Zolpidem: 0.5 mg daily",
+        "Oxymetazosin: 0.5 mg daily",
+        "Omeprazole: 0.5 mg daily",
+        "Metoprolol: 0.5 mg daily",
+        "oxymetazosin"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "Template bracketed instructions remain in the output (e.g., '[Patient's primary reason for visit]', '[Current medications with dosages]', '[Drug allergies and reactions]'). The note is severely incomplete, missing the Objective, Assessment, and Plan sections entirely. Parenthetical instructions also remain in the Review of Systems header."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note is missing the vast majority of transcript content: the entire detailed plan (stopping diphenhydramine, stopping aspirin, switching oxybutynin to mirabegron, omeprazole taper, lorazepam taper, zolpidem taper, amlodipine reduction), counseling details (Beers Criteria, anticholinergic effects, aspirin primary prevention discussion), daughter's concerns about cognitive decline, sleep hygiene discussion, melatonin, CBT-I referral, pharmacist referral, follow-up instructions, and more.",
+      "missed_items": [
+        "Plan to stop diphenhydramine today",
+        "Plan to stop aspirin today",
+        "Switch oxybutynin to mirabegron 25 mg",
+        "Omeprazole taper plan",
+        "Lorazepam taper plan starting in two weeks",
+        "Zolpidem taper plan starting in two weeks",
+        "Amlodipine reduction from 10 to 5 mg",
+        "Home blood pressure monitoring plan",
+        "Daughter's concerns about cognitive decline/confusion",
+        "Beers Criteria counseling",
+        "Anticholinergic effects counseling",
+        "Sleep hygiene and melatonin discussion",
+        "CBT-I referral discussion",
+        "Pharmacist Jim referral for MTM",
+        "Written medication action plan",
+        "Follow-up in two weeks",
+        "Past medical history (hiatal hernia, sciatica, hypertension, etc.)",
+        "Social history (deceased husband, daughter involvement)",
+        "Vital signs in Objective section",
+        "Assessment section",
+        "Gabapentin future dose reduction discussion",
+        "Calcium supplement and multivitamin listed as unchanged"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The note is missing the Objective section (including Physical Examination and Vital Signs), Assessment section, and Plan section entirely. Template placeholder text remains in multiple sections. An extraneous title 'Medication Review and Management' was added. The structure is severely incomplete."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Metoprolol is listed twice in the medications list (items 1 and 14), and the blood pressure reading and antihypertensive medication list are repeated between the HPI and medications sections."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 18.01,
+      "input_tokens": 4285,
+      "output_tokens": 1036
+    }
+  }
+}

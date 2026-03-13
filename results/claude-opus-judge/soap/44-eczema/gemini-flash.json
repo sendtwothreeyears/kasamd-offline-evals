@@ -1,0 +1,42 @@
+{
+  "transcript_id": "44-eczema",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly supported by or reasonably inferred from the transcript. No fabricated findings or embellishments.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The template instructs to state 'No known drug allergies' or 'Not documented' for allergies, and the note says 'Not documented' which is acceptable. However, Social History should have been omitted entirely per the template instruction 'Only include items that were mentioned,' since nothing was discussed. Similarly, the Review of Systems section was correctly omitted. Minor deviation with including Social History as 'Not documented' instead of omitting it."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured well. However, the Review of Systems section is omitted entirely, which is acceptable per template instructions, but the note misses documenting sleep disruption and skin rash under ROS (Psychiatric: sleep; Skin: rash) which were discussed. Also, the specific detail about ointment not cream was captured.",
+      "missed_items": [
+        "Review of Systems - Psychiatric: sleep disruption",
+        "Review of Systems - Skin: rash/itching"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well overall. Minor issues: Social History and Family History are included as 'Not documented' when the template says to only include items mentioned (Social History) or state 'Not documented' (Family History - this one is correct). The ROS section is omitted which is acceptable per template. The note also lacks the 'General' section header under Objective properly - it says 'Not documented' which is fine."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Entity marking syntax is correct. However, 'eczema' is marked twice \u2014 once in Past Medical History and once in Assessment. Since eczema and atopic dermatitis are the same condition, marking both 'eczema' and 'atopic dermatitis' separately in Assessment is debatable, but the duplicate marking of 'eczema' is an error. Also, CeraVe and Vanicream could arguably be marked as drugs but are OTC moisturizers so this is borderline."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No sections or content are duplicated in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 19.59,
+      "input_tokens": 2733,
+      "output_tokens": 616
+    }
+  }
+}

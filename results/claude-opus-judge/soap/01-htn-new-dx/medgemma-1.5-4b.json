@@ -1,0 +1,54 @@
+{
+  "transcript_id": "01-htn-new-dx",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The HPI content that was filled in is accurate to the transcript. However, the note is essentially incomplete \u2014 only the Chief Complaint and HPI were actually populated, so there is limited opportunity for hallucination. No fabricated content is present.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note catastrophically fails instruction following. Template placeholder text and bracketed instructions are left verbatim throughout every section except Chief Complaint and HPI. The template explicitly states to use 'Not documented' where appropriate, to omit undiscussed ROS systems, and to only include mentioned items \u2014 none of these instructions were followed. The entire note is repeated dozens of times.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note only captures the chief complaint and HPI details. It completely misses: blood pressure readings (162/98, 158/96), no prior history of high blood pressure, hasn't seen a doctor in 4-5 years, elevated BP contributing to headaches, baseline labs ordered, lifestyle counseling (salt, exercise, caffeine), acetaminophen recommendation, ibuprofen avoidance, follow-up in two weeks, assessment of hypertension.",
+      "missed_items": [
+        "BP 162/98 and 158/96 bilaterally",
+        "no prior history of high blood pressure",
+        "hasn't seen doctor in 4-5 years",
+        "elevated BP possibly contributing to headaches",
+        "baseline labs (kidney function, cholesterol)",
+        "lifestyle modifications (salt, exercise, caffeine)",
+        "acetaminophen as needed",
+        "avoid ibuprofen",
+        "follow-up in two weeks",
+        "assessment of hypertension/elevated blood pressure",
+        "patient understanding and agreement"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "Template placeholder text and bracketed instructions are left verbatim in every section beyond HPI. The ROS includes all systems with unfilled brackets instead of being properly populated or omitted. Sections like Past Medical History, Medications, Allergies, Social History, Family History, Vital Signs, Assessment, and Plan all contain raw template instructions.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The entire note structure is duplicated approximately 30 times, which is an extreme case of output repetition."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.0,
+      "input_tokens": 21042,
+      "output_tokens": 664
+    }
+  }
+}

@@ -1,0 +1,24 @@
+---
+id: 07
+scenario: Hyperlipidemia lab review, improved numbers, diet counseling
+category: Chronic disease
+density: Sparse
+---
+
+Doctor: Priya, come on in. I've got your lab results — the good news is things are moving in the right direction.
+
+Patient: Oh, that's a relief. I've been really trying.
+
+Doctor: It shows. Your LDL dropped from 158 to 131, and your triglycerides came down from 195 to 150. HDL went up a touch too — 48, up from 43.
+
+Patient: So I can keep doing what I'm doing? No medication?
+
+Doctor: I think so, for now. You've made real progress. What changes have you been making?
+
+Patient: I cut way back on fried food and I've been eating oatmeal for breakfast almost every day. And I joined a walking group — we go three mornings a week.
+
+Doctor: That's fantastic. Keep it up. I'd love to see that LDL get under 130. You're close. Let's recheck in another six months and see where you land.
+
+Patient: Sounds great. Thank you.
+
+Doctor: You're doing the work. I just read the numbers. See you in six months.

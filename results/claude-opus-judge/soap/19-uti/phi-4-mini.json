@@ -1,0 +1,51 @@
+{
+  "transcript_id": "19-uti",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "Several fabricated details: 'Currently not on any medications prior to this presentation' is not stated in the transcript. 'return in a week for a follow-up evaluation' is fabricated \u2014 the transcript says nothing about a follow-up appointment. Multiple ROS systems (HEENT, Cardiovascular, Respiratory, Musculoskeletal, Neurological, Psychiatric, Skin) are listed as negative but were never discussed in the transcript. 'Culture was sent empirically but not discussed' mischaracterizes the transcript \u2014 the culture was sent for results, and treatment was started empirically.",
+      "flagged_content": [
+        "Currently not on any medications prior to this presentation",
+        "return in a week for a follow-up evaluation",
+        "HEENT: No vision, hearing, throat, or nasal symptoms reported",
+        "Cardiovascular: No chest pain, palpitations, or edema reported",
+        "Respiratory: No shortness of breath, cough, or wheezing reported",
+        "Musculoskeletal: No joint pain, muscle weakness, or mobility issues reported",
+        "Neurological: No headache, dizziness, numbness, or weakness reported",
+        "Psychiatric: No mood, anxiety, or sleep issues reported",
+        "Skin: No rashes, lesions, or wounds reported"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instruction '(Only include systems that were discussed. If not mentioned, omit this section entirely)' was literally reproduced in the output and then violated by including undiscussed systems. Social History formatting also includes template-like parenthetical instructions. The instruction to state 'Not documented' was not consistently followed (e.g., Medications says something not in transcript instead)."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most key transcript content is captured including symptoms, onset, urine findings, treatment, counseling, and return precautions. Minor omission: nausea as the most common side effect of nitrofurantoin was mentioned but not explicitly called out as a counseling point.",
+      "missed_items": [
+        "Nausea specifically noted as the most common side effect of nitrofurantoin"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The overall structure follows the template, but Vital Signs are listed after Physical Examination instead of before/within it as templated. The dipstick results are placed in the Plan rather than in the Objective section where lab results belong. Template parenthetical instructions are reproduced verbatim in the ROS header."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. No {{drug:...}} or {{condition:...}} syntax was used anywhere in the note."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "The nitrofurantoin prescription information is repeated at the end of the Plan section, but this is more of a summary restatement than a full section duplication."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.33,
+      "input_tokens": 3008,
+      "output_tokens": 739
+    }
+  }
+}

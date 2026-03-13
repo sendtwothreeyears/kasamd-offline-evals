@@ -1,0 +1,41 @@
+{
+  "transcript_id": "45-suspicious-mole",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly stated or reasonably inferred from the transcript. No fabricated findings or details.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 3,
+      "rationale": "The note follows all template instructions correctly. 'Not documented' is used where appropriate, Review of Systems is omitted as no formal ROS was discussed, and Social History section is omitted except for the sun protection habits mentioned in the plan context. No template instructions appear in the output."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "The note captures nearly all transcript content. However, the patient's interest in seeing a dermatologist is slightly underrepresented \u2014 the transcript says 'She expressed interest in seeing a dermatologist as well' which is somewhat captured but could be more explicit as a patient preference. The social history regarding fair skin and poor sun protection habits is placed in the plan rather than social history, but the content is present.",
+      "missed_items": [
+        "Patient's expressed interest in seeing a dermatologist could be more explicitly noted as a patient preference/request"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well but omits the Social History section entirely. The patient's fair skin and poor sun protection habits when younger are relevant social history items that should have been placed there (they appear only in the Plan). The Review of Systems section was appropriately omitted per instructions."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Entity marking syntax is correct. Melanoma is marked on first occurrence and correctly not re-marked with {{condition:}} on second use. Lidocaine, aspirin, ibuprofen, and Tylenol are marked. However, the suspicious pigmented lesion itself could arguably be marked as a condition, and melanoma's second occurrence is correctly handled. The note marks Tylenol as a drug which is correct. Minor issue: the note does not mark the suspicious mole/lesion as a condition in the assessment."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 12.5,
+      "input_tokens": 3228,
+      "output_tokens": 552
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "transcript_id": "31-insomnia",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The generated output is not a clinical note at all \u2014 it is a rambling, repetitive stream-of-consciousness thinking process that fabricates claims about 'stress and anxiety' and 'feeling tired all the time' which are not in the transcript.",
+      "flagged_content": [
+        "they're dealing with stress and anxiety too",
+        "They're feeling tired all the time, and it's affecting their daily life",
+        "They're saying they're taking a low dose, but I'm not sure if it's the right dose or if it's working"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The output completely fails to produce a clinical note. It is an unstructured, repetitive internal monologue with no adherence to any instructions."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "No clinical note was produced. Key findings such as sleep onset insomnia details, sleep hygiene counseling specifics, melatonin dosing recommendations, stimulus control instructions, and follow-up plan are not documented in any structured form.",
+      "missed_items": [
+        "sleep onset insomnia diagnosis",
+        "4-5 month duration",
+        "bedtime 10-10:30, sleep onset midnight+",
+        "wake time 6:15 AM",
+        "sleep maintenance not an issue",
+        "screen exposure and cognitive activation before bed",
+        "sleep hygiene counseling details",
+        "stimulus control instructions",
+        "melatonin 0.5-1mg recommendation",
+        "counseling that higher doses aren't better",
+        "coworker taking 10mg",
+        "3-4 week trial plan",
+        "no medications prescribed",
+        "follow-up if still struggling"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The output has no structure whatsoever \u2014 no sections, no headings, no template format. It is entirely unstructured rambling."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the output."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The output is massively duplicated, with the same sentences and paragraphs repeated hundreds of times in a loop."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.71,
+      "input_tokens": 19409,
+      "output_tokens": 553
+    }
+  }
+}

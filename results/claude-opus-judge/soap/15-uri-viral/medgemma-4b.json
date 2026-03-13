@@ -1,0 +1,49 @@
+{
+  "transcript_id": "15-uri-viral",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems includes multiple systems (Cardiovascular, Gastrointestinal, Genitourinary, Musculoskeletal, Psychiatric, Skin) with negative findings that were never discussed in the transcript. The template explicitly says to only include systems that were discussed, so fabricating negatives for undiscussed systems constitutes hallucination.",
+      "flagged_content": [
+        "Cardiovascular: No chest pain, palpitations, edema",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, abdominal pain",
+        "Genitourinary: No urinary symptoms, menstrual history",
+        "Musculoskeletal: No joint pain, muscle weakness, mobility issues",
+        "Psychiatric: No mood changes, anxiety, sleep disturbances",
+        "Skin: No rashes, lesions, wounds"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template explicitly states to only include ROS systems that were discussed and to omit the section entirely if not mentioned. The note includes many undiscussed systems. The Social History section should only include items that were mentioned, but all four sub-items are listed as 'Not documented' instead of being omitted."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured. However, the note omits the patient education about why antibiotics aren't appropriate (viral nature, side effects, wife's suggestion) and the expected duration of 7-10 days.",
+      "missed_items": [
+        "Discussion about antibiotics - wife suggested them, explained viral nature, antibiotics won't help and can cause side effects",
+        "Expected course of 7-10 days for the illness"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well overall, but includes ROS systems and Social History sub-items that should have been omitted per template instructions. Vital signs that were not documented are listed with 'Not documented' rather than being omitted per the instruction to only include vitals that were documented."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Medications like pseudoephedrine, Flonase, dextromethorphan and conditions like viral upper respiratory infection should have been marked with {{drug:...}} and {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content found."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 11.73,
+      "input_tokens": 2762,
+      "output_tokens": 632
+    }
+  }
+}

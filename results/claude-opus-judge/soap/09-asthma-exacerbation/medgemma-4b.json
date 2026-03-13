@@ -1,0 +1,53 @@
+{
+  "transcript_id": "09-asthma-exacerbation",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The Review of Systems section contains numerous fabricated findings not mentioned in the transcript: fatigue, nausea, vomiting, diarrhea, abdominal pain, urinary symptoms, menstrual history, joint pain, muscle weakness, mobility issues, headache, dizziness, numbness, weakness, mood, anxiety, sleep, rashes, lesions, wounds. These are wholesale fabrications across multiple organ systems.",
+      "flagged_content": [
+        "Constitutional: Fatigue",
+        "Gastrointestinal: Nausea, vomiting, diarrhea, abdominal pain",
+        "Genitourinary: Urinary symptoms, menstrual history",
+        "Musculoskeletal: Joint pain, muscle weakness, mobility issues",
+        "Neurological: Headache, dizziness, numbness, weakness",
+        "Psychiatric: Mood, anxiety, sleep",
+        "Skin: Rashes, lesions, wounds"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template explicitly states to only include systems that were discussed and to omit systems not mentioned, yet the note includes many undiscussed systems with template placeholder text. The Social History section includes the literal template instruction '(Only include items that were mentioned)'. The Medications section mixes current and newly prescribed medications.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured including HPI details, exam findings, plan elements, counseling, and follow-up. Minor omissions include the patient's concern about the long-acting bronchodilator and the explanation about LABA safety data, and the specific instruction about rescue inhaler use threshold (more than twice a week means adjustment needed).",
+      "missed_items": [
+        "Patient's specific concerns about long-acting bronchodilator component and the provider's explanation about LABA safety in combination inhalers",
+        "Instruction that using rescue inhaler more than twice a week is a sign therapy needs adjustment",
+        "Past medical history should include asthma as a known condition"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The overall structure follows the template well, but vital signs are placed under General instead of the Vital Signs subsection, and the lung exam findings are also placed under General rather than a respiratory exam section. The Physical Examination section lacks proper subsection formatting.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used for any medications or conditions."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 12.59,
+      "input_tokens": 3559,
+      "output_tokens": 690
+    }
+  }
+}

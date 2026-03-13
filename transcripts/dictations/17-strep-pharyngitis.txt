@@ -1,0 +1,18 @@
+---
+id: 17
+scenario: Strep pharyngitis with positive rapid strep test
+category: Acute
+density: Sparse
+---
+
+So I saw Marcus today — he came in complaining of a sore throat that started yesterday. He says it hurts to swallow, hurts to talk, basically just hurts in general. No cough, no runny nose. He did have a fever last night, 101 and some change, and he took some Tylenol for it.
+
+On exam, his tonsils were red and swollen with white patches, and he had tender submandibular lymphadenopathy. Went ahead and did a rapid strep test, which came back positive.
+
+So I'm prescribing amoxicillin, 500 milligrams three times a day for ten days. I counseled him to finish the full course even when he starts feeling better. Told him he should feel noticeably better within 24 to 48 hours. For symptom management, I recommended continuing Tylenol or ibuprofen for the pain and fever, and suggested warm tea or cold things like popsicles for throat comfort.
+
+I also let him know he's contagious until he's been on the antibiotic for at least 24 hours, so I told him to stay home from work tomorrow and he should be okay to return the day after, as long as he's feeling up to it.
+
+Return precautions given — I told him to come back in if the fever doesn't break within 48 hours of starting the antibiotic, or if he develops any difficulty breathing or trouble swallowing liquids.
+
+No known allergy to amoxicillin or penicillin. Prescription sent to his pharmacy.

@@ -1,0 +1,84 @@
+---
+id: 26
+scenario: Acute gout flare in great toe, treatment and urate-lowering discussion
+category: Acute
+density: Medium
+---
+
+Doctor: Mr. Delacroix, I can see you're limping. What happened?
+
+Patient: Doc, my big toe is on fire. I woke up in the middle of the night — literally woke me out of a dead sleep — and my left big toe was throbbing. I couldn't even have the sheet touching it.
+
+Doctor: When did this start?
+
+Patient: Last night. So maybe twelve hours ago. It's gotten worse since then. I can barely put any weight on it.
+
+Doctor: Has anything like this happened before?
+
+Patient: Yeah, actually. About three years ago, same toe. I went to urgent care and they said it was gout. They gave me something for it — I don't remember what — and it went away after about a week. I didn't really follow up after that. Probably should have.
+
+Doctor: Were you ever started on any daily medication for it? Something to lower your uric acid?
+
+Patient: No, nobody mentioned that. They just treated the episode and said to watch my diet.
+
+Doctor: Let me take a look. I'm going to take your shoe and sock off — I'll be gentle. Okay, I can see significant swelling and erythema of your left first MTP joint — the base of the big toe. It's warm, it's red, and — I'm barely going to touch it...
+
+Patient: Ow! Yeah. Don't do that.
+
+Doctor: Sorry. Exquisitely tender. The skin over the joint is taut and shiny. There's no break in the skin, no discharge. Let me look at your other joints — ankles, knees, hands... everything else looks fine. Just isolated to the left great toe. Your vitals look good, no fever.
+
+Patient: So it's gout again?
+
+Doctor: That's the most likely diagnosis. Classic presentation — sudden onset, overnight, first MTP joint, exquisitely tender, red, and swollen. With your prior history, I'm quite confident. I'd like to check a couple of labs though. I want to see your uric acid level, a CBC, and a basic metabolic panel to check your kidney function.
+
+Patient: Should you drain it or something?
+
+Doctor: We could aspirate the joint to look for urate crystals under a microscope — that's the gold standard for confirming gout. Given your history and classic presentation, I don't think it's necessary this time, but if you'd prefer diagnostic certainty, we can do it.
+
+Patient: If you're pretty sure, I'd rather not have a needle stuck in my toe right now.
+
+Doctor: Fair enough. Let's talk about getting you comfortable. For an acute gout flare, we have a few options. NSAIDs like indomethacin are the traditional first-line — they work well but can be tough on the stomach. Colchicine is another option — it works best if started within the first twelve to twenty-four hours, which puts you right in the window. And corticosteroids, either oral or injected into the joint.
+
+Patient: Which one do you recommend?
+
+Doctor: Given the timing, I'd like to start colchicine. The current dosing is much simpler than the old regimen — you take two tablets, which is 1.2 milligrams, right away, then one tablet, 0.6 milligrams, one hour later. Then 0.6 milligrams once or twice daily until the flare resolves. I'd also add a short course of prednisone — a steroid taper starting at 40 milligrams for five days — to really knock the inflammation down fast.
+
+Patient: Any issues with those?
+
+Doctor: Colchicine can cause diarrhea at higher doses, but the low-dose regimen we're using has a much lower risk. Prednisone for a short course can raise your blood sugar temporarily and might affect your sleep. Any history of diabetes?
+
+Patient: No.
+
+Doctor: Stomach ulcers? Kidney problems?
+
+Patient: No, nothing like that.
+
+Doctor: Good. I'm also going to recommend icing the toe — twenty minutes on, twenty minutes off — and keeping your foot elevated. Wear loose shoes or sandals. This flare should start improving in a few days and resolve within a week or so.
+
+Patient: Okay. Now, you mentioned something about preventing this from coming back?
+
+Doctor: Yes, and I think this is an important conversation. You've now had two gout flares. Your body is producing too much uric acid or not excreting enough, and it's forming crystals in your joints. The acute treatment handles the flare, but it doesn't address the underlying problem.
+
+Patient: So what does?
+
+Doctor: Urate-lowering therapy — usually a medication called allopurinol. It reduces the amount of uric acid your body produces. The goal is to get your serum uric acid below 6 milligrams per deciliter, which is the level below which crystals dissolve. Now, we don't start allopurinol during an acute flare — it can actually make the flare worse. We wait until this settles down, usually two to four weeks, and then start it at a low dose and gradually increase.
+
+Patient: And I'd have to take that forever?
+
+Doctor: In most cases, yes, it's a long-term medication. But the payoff is significant — it prevents future flares, and more importantly, it prevents the joint damage that repeated flares can cause over time. There's also the dietary piece. Certain foods are high in purines, which get broken down into uric acid. Red meat, organ meats, shellfish, beer — these are the big ones. Do any of those feature prominently in your diet?
+
+Patient: I mean... I do enjoy a good steak. And I probably have four or five beers a week. Sometimes more on weekends.
+
+Doctor: Beer is a double hit — it's high in purines and alcohol also impairs uric acid excretion. I'm not saying you can never have a beer or a steak again, but moderation helps. Staying well hydrated is also important — it helps your kidneys flush uric acid.
+
+Patient: I can try to cut back. The beer especially, I guess.
+
+Doctor: That'll help. So the plan is: colchicine and prednisone for the acute flare. We'll check your labs today. Once the flare is fully resolved, I'll see you back in about three to four weeks to start allopurinol if your uric acid is elevated, which I expect it will be. Sound good?
+
+Patient: Yeah, sounds good. I just want my toe to stop hurting.
+
+Doctor: I hear you. The colchicine should start kicking in within a few hours, and the prednisone will add to that. You should notice meaningful improvement by tomorrow or the next day. If it's not improving in forty-eight hours or gets worse, call us.
+
+Patient: Will do. Thanks, Doc.
+
+Doctor: Take care, Mr. Delacroix. The nurse will come in for the blood draw.

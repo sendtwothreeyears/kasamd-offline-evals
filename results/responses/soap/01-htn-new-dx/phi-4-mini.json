@@ -1,0 +1,14 @@
+{
+  "transcript_id": "01-htn-new-dx",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nA week of headaches described as a dull pressure in the back of the head, worse in the mornings\n\n**History of Present Illness**\nPatient experiences a dull pressure headache in the back of the head, worse in the mornings, without nausea, vision changes, or photosensitivity. Vitals revealed a consistent elevation in blood pressure on both arms (162/98 and 158/96).\n\n**Review of Systems**\nConstitutional: Blood pressure elevation\nHEENT: Not discussed\nCardiovascular: Blood pressure elevation\nRespiratory: Not discussed\nGastrointestinal: Not discussed\nGenitourinary: Not discussed\nMusculoskeletal: Not discussed\nNeurological: Not discussed\nPsychiatric: Not discussed\nSkin: Not discussed\n\n**Past Medical History**\nNot documented\n\n**Medications**\nNot documented\n\n**Allergies**\nNo known drug allergies\n\n**Social History**\nNot discussed\n\n**Family History**\nNot discussed\n\n**Objective**\nPhysical Examination: Not performed\nVital Signs:\nBP: Consistently elevated on both arms (162/98 and 158/96)\nHR: Not discussed\nTemp: Not discussed\nRR: Not discussed\nSpO2: Not discussed\n\nGeneral: Not discussed\n\n**Assessment**\nPrimary diagnosis: Dull pressure headache with elevated blood pressure\nSecondary diagnosis: Hypertension (newly discovered)\n\n**Plan**\n1. Baseline labs \u2014 kidney function, cholesterol, etc.\n2. Blood pressure recheck in two weeks\n3. Lifestyle modifications \u2014 reduce salt intake, regular exercise, limit caffeine\n4. Headache management \u2014 acetaminophen as needed, avoiding ibuprofen\n\nPatient understood and agreed to the plan. Follow-up scheduled in two weeks.",
+  "metadata": {
+    "inference_time_s": 5.85,
+    "prompt_tokens": 1383,
+    "tokens_generated": 354,
+    "prompt_tps": 477.5,
+    "tokens_per_sec": 60.6,
+    "peak_memory_gb": 3.87
+  }
+}

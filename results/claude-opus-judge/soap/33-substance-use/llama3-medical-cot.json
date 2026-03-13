@@ -1,0 +1,59 @@
+{
+  "transcript_id": "33-substance-use",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The note fabricates vital signs (BP 130/80, HR 110, Temp 98.6, RR 20, SpO2 98%) that are entirely absent from the transcript. These are specific clinical values, not standard defaults.",
+      "flagged_content": [
+        "BP: 130/80",
+        "HR: 110",
+        "Temp: 98.6",
+        "RR: 20",
+        "SpO2: 98%"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "Template bracket/placeholder instructions were left in the output throughout (e.g., '[Patient's primary reason for visit]', '[Constitutional: Fever, chills, fatigue, weight changes]'). The Review of Systems was included with all systems despite the instruction to omit systems not discussed. The note is largely unfilled template placeholders rather than actual clinical content."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note misses nearly all substantive transcript content: no details about drinking pattern escalation, AUDIT-C screening details, psychosocial stressors (mother's stroke, husband traveling), failed abstinence attempt, structured reduction strategies, BASICS referral, drinking diary recommendation, 6-week follow-up plan, MRI referral for knee pain, or counseling details.",
+      "missed_items": [
+        "Knee pain as primary reason for visit with MRI referral",
+        "Detailed drinking pattern (weekend to nightly, 2-3 generous pours)",
+        "AUDIT-C screening details and score",
+        "Mother's stroke in October as psychosocial stressor",
+        "Husband traveling frequently",
+        "Failed 2-day abstinence attempt",
+        "Structured reduction strategies discussed",
+        "30-day abstinence reset option",
+        "BASICS program referral",
+        "Drinking diary recommendation",
+        "6-week follow-up plan",
+        "15-20 drinks per week estimate",
+        "Low-risk guidelines for women"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The output retains raw template placeholders and brackets throughout, sections are malformed (e.g., Medications/Allergies/Social History/Family History collapsed together), the Objective section header is inside brackets, and the massive repetition of '[None]' destroys any semblance of proper structure."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The note contains thousands of repeated '[None]' entries, constituting massive duplication/repetition of content."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.4,
+      "input_tokens": 24422,
+      "output_tokens": 673
+    }
+  }
+}

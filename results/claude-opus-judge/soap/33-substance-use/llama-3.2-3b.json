@@ -1,0 +1,62 @@
+{
+  "transcript_id": "33-substance-use",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The note states 'She appeared to be in good overall condition' under General exam, which goes beyond standard clinical defaults \u2014 no physical exam was described in the transcript. The Review of Systems lists 'No findings' for all systems, which fabricates negative findings not discussed in the transcript. 'Tobacco: No usage details' and 'Recreational drugs: No usage details' imply these were discussed but had no details, when they were never mentioned at all.",
+      "flagged_content": [
+        "She appeared to be in good overall condition",
+        "Constitutional: No findings.",
+        "HEENT: No findings.",
+        "Cardiovascular: No findings.",
+        "Respiratory: No findings.",
+        "Gastrointestinal: No findings.",
+        "Genitourinary: No findings.",
+        "Musculoskeletal: No findings.",
+        "Neurological: No findings.",
+        "Psychiatric: No findings.",
+        "Skin: No findings.",
+        "Tobacco: No usage details.",
+        "Recreational drugs: No usage details."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to omit the Review of Systems section entirely if not mentioned, but the note includes all ROS systems with 'No findings.' The template says to only include social history items that were mentioned, but tobacco and recreational drugs are included. Vital signs that were not documented are listed individually rather than omitted or stating exam not documented. The opening line 'The patient's subjective complaints were not explicitly mentioned' is odd and misplaced."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing: Sandra's attempt to stop drinking and only lasting two days, the BASICS program referral, the drinking diary recommendation, the counseling about alcohol worsening anxiety and sleep over time, the MRI referral for knee pain, and the mother's stroke as family history context.",
+      "missed_items": [
+        "Sandra attempted to stop drinking and only sustained it for two days before returning to her usual pattern",
+        "BASICS program referral (brief alcohol intervention, two sessions, no labels)",
+        "Drinking diary recommendation with contextual notes (stress level, social situation, mood)",
+        "Counseling that alcohol temporarily reduces anxiety but worsens anxiety and sleep over time and can shift from choice to dependency",
+        "MRI referral for knee pain",
+        "Mother's stroke in October (could be in family history)",
+        "Sandra's husband traveling frequently for work (partially captured but not fully in social history)",
+        "Sandra working full time"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The 'Subjective' header appears before 'Chief Complaint' with an odd statement, deviating from template structure. The ROS section should have been omitted entirely per template instructions. Vital signs are listed individually when they should have been omitted or the exam section should state 'Physical examination not documented.' Psychosocial stressors are placed under Plan item 3 rather than in HPI or Social History."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. There are no {{drug:...}} or {{condition:...}} tags despite relevant conditions (e.g., alcohol use disorder/hazardous alcohol use, knee pain, stroke) and labs/vitamins (B12, folate) being mentioned."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed, though alcohol use details appear in both HPI and Social History, which is a minor overlap rather than true duplication."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 42.96,
+      "input_tokens": 3357,
+      "output_tokens": 863
+    }
+  }
+}

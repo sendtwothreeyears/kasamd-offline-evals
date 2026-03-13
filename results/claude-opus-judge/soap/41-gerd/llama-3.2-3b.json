@@ -1,0 +1,55 @@
+{
+  "transcript_id": "41-gerd",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The Review of Systems is almost entirely fabricated \u2014 the transcript only discussed GI-related negatives (no dysphagia, odynophagia, vomiting, hematemesis, melena, weight loss), yet the note fabricates negative findings for Constitutional, HEENT, Cardiovascular, Respiratory, Genitourinary, Musculoskeletal, Neurological, Psychiatric, and Skin systems. 'Past Medical History: history of GERD' is fabricated \u2014 GERD was the new diagnosis, not a prior history. 'The patient appears to be in good overall condition' is stated as an exam finding but no exam was documented. Coffee consumption is bizarrely placed under Tobacco in Social History.",
+      "flagged_content": [
+        "Constitutional: No fever, chills, or fatigue.",
+        "HEENT: No vision, hearing, throat, or nasal symptoms.",
+        "Cardiovascular: No chest pain, palpitations, or edema.",
+        "Respiratory: No shortness of breath, cough, or wheezing.",
+        "Genitourinary: No urinary symptoms or menstrual history.",
+        "Musculoskeletal: No joint pain, muscle weakness, or mobility issues.",
+        "Neurological: No headache, dizziness, numbness, or weakness.",
+        "Psychiatric: No mood, anxiety, or sleep disturbances.",
+        "Skin: No rashes, lesions, or wounds.",
+        "The patient has a history of GERD.",
+        "The patient appears to be in good overall condition."
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template explicitly states to only include ROS systems that were discussed and to omit undiscussed ones, yet the note includes all systems with fabricated negatives. The template says to state 'Physical examination not documented' if no exam was performed, but instead a fabricated general exam finding is included. Vital signs were listed individually as 'not documented' instead of being omitted per template instructions."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Key lifestyle modification counseling details are missing from the Plan (cutting back on coffee, avoiding trigger foods, not eating 2-3 hours before lying down, elevating head of bed). Patient education about expecting improvement within a few days and full effect in two weeks is also missing.",
+      "missed_items": [
+        "Lifestyle modifications: cutting back on coffee, avoiding trigger foods, not eating within 2-3 hours of lying down, elevating head of bed",
+        "Patient education: should feel better within a few days, full effect in two weeks",
+        "Omeprazole is a new prescription, not a current medication"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Subjective line appears before Chief Complaint rather than Chief Complaint being the first subsection under Subjective. Vital signs are listed individually as 'not documented' instead of being omitted. Social History includes items not mentioned in the transcript and misplaces coffee under Tobacco."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. Neither {{drug:omeprazole}} nor {{condition:GERD}} nor any other entities were marked."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The chief complaint content is duplicated \u2014 it appears both as a standalone line under 'Subjective' and again under 'Chief Complaint'."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.35,
+      "input_tokens": 2883,
+      "output_tokens": 880
+    }
+  }
+}

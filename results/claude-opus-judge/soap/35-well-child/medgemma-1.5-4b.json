@@ -1,0 +1,44 @@
+{
+  "transcript_id": "35-well-child",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note states 'New patient' under Past Medical History, which is not a past medical history item but rather a minor mischaracterization. Otherwise, the content is essentially a verbatim copy of the transcript with no fabricated clinical details.",
+      "flagged_content": [
+        "New patient"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note retains template bracketed instructions verbatim (e.g., '[Blood pressure]', '[Heart rate]', '[Overall appearance and condition]', '[Primary diagnosis or clinical impression]', '[Diagnostic workup - labs, imaging, referrals]') and parenthetical instructions (e.g., '(Only include items that were mentioned)', '(Only include vitals that were documented)'). The Social History section includes irrelevant items (Tobacco, Alcohol, etc.) for a 4-year-old despite the instruction to only include mentioned items. The Assessment and Plan sections are left as template placeholders rather than being filled in or omitted. The Objective/Physical Examination section is left blank with template text despite exam findings being present in the transcript (placed in Subjective instead).",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Nearly all transcript content is captured in the note, though it is almost entirely dumped into the HPI section. The physical exam findings, growth measurements, immunizations, anticipatory guidance, assessment, and plan details are all present in the note text but misplaced. The Assessment and Plan sections are empty placeholders, so those elements are technically present in the HPI but not in their proper sections.",
+      "missed_items": []
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The note dumps virtually the entire transcript into the HPI section. The Objective/Physical Examination section is left as template placeholders. The Assessment and Plan sections are unfilled template brackets. The Review of Systems section is entirely omitted. Growth measurements, physical exam findings, immunizations, and anticipatory guidance are all misplaced in the Subjective section. Vital signs section retains placeholder text.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. There are no {{drug:...}} or {{condition:...}} tags anywhere in the note, despite mentions of medications (DTaP, IPV, MMR, varicella) and conditions (picky eating, refractive error, nighttime wetting).",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.53,
+      "input_tokens": 4949,
+      "output_tokens": 669
+    }
+  }
+}

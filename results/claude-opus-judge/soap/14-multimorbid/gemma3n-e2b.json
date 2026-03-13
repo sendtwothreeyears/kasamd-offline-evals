@@ -1,0 +1,70 @@
+{
+  "transcript_id": "14-multimorbid",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note states 'Gastrointestinal: Reports no gastrointestinal symptoms' which was never discussed in the transcript. 'Patient appears fatigued' under General is an embellishment \u2014 the transcript does not describe the patient's appearance. The Medications section lists post-plan medications (dapagliflozin, atorvastatin 80mg) as current medications in the Subjective section, which is misleading. HCTZ is missing from the medication list.",
+      "flagged_content": [
+        "Gastrointestinal: Reports no gastrointestinal symptoms",
+        "Patient appears fatigued"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit undiscussed ones, yet Gastrointestinal was included despite not being discussed. The template says to only include vitals that were documented, yet HR, Temp, RR, SpO2 are listed as 'Not documented' instead of being omitted. The note also includes template bracket/parenthetical instructions implicitly violated.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing: weight (234 lbs), BMI (33.5), height (5'10\"), creatinine (1.8), GFR (42), urine albumin-to-creatinine ratio (220), LDL (98), triglycerides (210), monofilament testing results, no ankle edema, pedal pulses intact, no open sores/calluses, heart sounds regular/no murmurs, lungs clear, diabetic peripheral neuropathy diagnosis, back pain history, counseling on positional changes with HCTZ, counseling on interconnected conditions, wife's involvement, dialysis discussion, post-meal sugar checking instruction, low sodium diet counseling, Dr. Khatri coordination, target BP of 130/80, after-visit summary printed.",
+      "missed_items": [
+        "Weight 234 lbs, up 6 lbs",
+        "Height 5'10\", BMI 33.5",
+        "Creatinine 1.8 up from 1.5",
+        "GFR 42 down from 51",
+        "Urine albumin-to-creatinine ratio 220",
+        "LDL 98",
+        "Triglycerides 210",
+        "Monofilament testing results",
+        "No ankle edema",
+        "Pedal pulses intact bilaterally",
+        "No open sores or calluses",
+        "Heart regular no murmurs",
+        "Lungs clear",
+        "Diabetic peripheral neuropathy diagnosis",
+        "Back pain history",
+        "Counseling on positional changes with HCTZ",
+        "Counseling on interconnected conditions",
+        "Wife involvement in care",
+        "Dialysis discussion",
+        "Post-meal sugar checking instruction",
+        "Low sodium diet counseling details",
+        "HCTZ missing from medication list",
+        "Not checking post-meal sugars",
+        "Holiday diet explanation"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The overall structure follows the template well with appropriate sections. Minor issues include listing undocumented vitals instead of omitting them, and the neurological symptoms (numbness/neuropathy) being placed under Musculoskeletal in ROS rather than Neurological.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 1,
+      "rationale": "Entity marking syntax is correct, but drugs are re-marked on subsequent occurrences throughout the note (e.g., amlodipine, losartan, metformin, tresiba, dapagliflozin, atorvastatin all marked multiple times). Several conditions are not marked (diabetic peripheral neuropathy, dyslipidemia/hyperlipidemia). The duplication of the entire note compounds the re-marking issue.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The entire clinical note is duplicated \u2014 the full note appears twice in the output."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 18.1,
+      "input_tokens": 5174,
+      "output_tokens": 1012
+    }
+  }
+}

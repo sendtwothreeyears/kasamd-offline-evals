@@ -1,0 +1,14 @@
+{
+  "transcript_id": "15-uri-viral",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nPatient reports a three-day history of a cold with runny nose, nasal congestion, and cough that started yesterday.\n\n**History of Present Illness**\nPatient reports feeling a little warm on Monday, with a home temperature of 99.1\u00b0F. Since then, the temperature has been normal. He also describes a mild scratchy throat and feels generally run down. He denies significant body aches or headache.\n\n**Review of Systems**\nConstitutional: Reports feeling generally run down.\nHEENT: Reports a runny nose and nasal congestion. Reports a mild scratchy throat.\nRespiratory: Reports a cough that started yesterday.\n\n**Past Medical History**\nNot documented\n\n**Medications**\nNot documented\n\n**Allergies**\nNot documented\n\n**Social History**\nNot documented\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\n**Vital Signs:**\nBP: Not documented\nHR: Not documented\nTemp: 98.4\u00b0F\nRR: Not documented\nSpO2: Not documented\n\nGeneral: Patient appears to be in mild discomfort.\n\n**Assessment**\nStraightforward viral upper respiratory infection.\n\n**Plan**\n1. Recommended pseudoephedrine or a nasal steroid spray like Flonase for congestion.\n2. Suggested honey in tea or an over-the-counter cough suppressant like dextromethorphan at night for cough.\n3. Advised patient to stay hydrated and rest.\n4. Return precautions: Instructed patient to call if he develops a high fever, if the cough gets significantly worse, if he has any trouble breathing, or if things are not improving after ten days.\n\n\n\n",
+  "metadata": {
+    "inference_time_s": 7.05,
+    "prompt_tokens": 1475,
+    "tokens_generated": 356,
+    "prompt_tps": 652.6,
+    "tokens_per_sec": 50.5,
+    "peak_memory_gb": 3.83
+  }
+}

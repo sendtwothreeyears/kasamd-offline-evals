@@ -1,0 +1,16 @@
+---
+id: 04
+scenario: Type 2 diabetes routine follow-up, A1c at goal
+category: Chronic disease
+density: Medium
+---
+
+So I saw Linda today for a diabetes follow-up visit. She's doing really well — her A1c came back at 6.8, which is right at our target, and she's been keeping up with her home glucose monitoring. Fasting sugars in the mornings are running between 100 and 120, sometimes a little higher after a big dinner, which is reasonable. Postprandial sugars, when she checks them, are generally under 180, sometimes around 160. She's on metformin 1,000 milligrams twice daily and tolerating it well — no nausea, no diarrhea, as long as she takes it with food.
+
+Went ahead and did a foot exam today. Skin is intact, no ulcers, pulses are good, and sensation is intact on monofilament testing. Everything looks healthy. I counseled her to continue checking her feet daily, especially between the toes, to wear well-fitting shoes, and to avoid walking barefoot outside. She's aware of the risks — mentioned her sister lost a toe from diabetes complications, so she's motivated.
+
+She had her annual eye exam in February with Dr. Okafor, who noted everything looked normal. I did see that note in the chart. Kidney labs from today are also normal — microalbumin and creatinine both fine.
+
+On the lifestyle side, she completed three sessions with the nutritionist, which she found helpful. She's been doing more balanced plates — less rice, more vegetables — and is being more mindful about treats. For exercise, she does water aerobics twice a week at the Y and gardens regularly when the weather permits.
+
+So the plan is to continue metformin 1,000 milligrams twice daily, recheck the A1c in three months, continue home glucose monitoring, and schedule her annual eye exam again around February. I'll see her back in three months.

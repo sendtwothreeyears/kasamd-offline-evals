@@ -1,0 +1,42 @@
+{
+  "transcript_id": "15-uri-viral",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly stated or reasonably inferred from the transcript. No fabricated findings or diagnoses.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 3,
+      "rationale": "The note follows all template instructions: omits sections not discussed (Social History), uses 'Not documented' where appropriate, only includes systems that were discussed in ROS, and does not include template instructions in the output."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "The note captures nearly all transcript content. Minor omission: the transcript mentions the patient asked about antibiotics because his wife suggested them, and the note mentions the viral nature explanation but omits the specific detail that his wife suggested antibiotics.",
+      "missed_items": [
+        "Wife suggested antibiotics (context for why patient asked about them)",
+        "Other vitals were normal (note only documents temp, doesn't mention other vitals were normal)"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well. Minor issue: the physical exam findings (Throat, Ears, Lungs) are not organized under standard headings like 'General' or 'HEENT' as the template suggests, and the vital signs section could note that other vitals were normal."
+    },
+    "entity_marking": {
+      "score": 3,
+      "rationale": "Entity marking is correct with proper syntax. First occurrences of conditions (viral upper respiratory infection) and drugs (pseudoephedrine, Flonase, dextromethorphan) are marked appropriately. No repeated markings."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 10.2,
+      "input_tokens": 2735,
+      "output_tokens": 457
+    }
+  }
+}

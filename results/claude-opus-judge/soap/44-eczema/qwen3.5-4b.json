@@ -1,0 +1,49 @@
+{
+  "transcript_id": "44-eczema",
+  "template": "soap",
+  "model": "qwen3.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The generated note contains only the thinking/planning process and no actual clinical note was produced. There is no clinical content to evaluate, but the output fundamentally fails to deliver a note.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The output is entirely a thinking/reasoning process and does not contain a completed clinical note. The instructions required returning ONLY the completed note, which was not done."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "No clinical note was generated. All transcript content is missing from the output.",
+      "missed_items": [
+        "Chief complaint",
+        "History of present illness",
+        "Physical exam findings",
+        "Assessment/diagnosis",
+        "Plan including triamcinolone prescription",
+        "Moisturizing counseling",
+        "Benadryl recommendation",
+        "Follow-up instructions",
+        "Past medical history of eczema"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "No structured clinical note was produced. The output is entirely unstructured thinking/reasoning text."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was applied in any clinical note output since no note was generated."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The thinking process contains extreme repetition, with the same checks repeated dozens of times in an endless loop."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 8.47,
+      "input_tokens": 19681,
+      "output_tokens": 379
+    }
+  }
+}

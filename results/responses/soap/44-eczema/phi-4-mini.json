@@ -1,0 +1,14 @@
+{
+  "transcript_id": "44-eczema",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nIntense itching on the arms, disrupting sleep\n\n**History of Present Illness**\nPatient presents with a rash on the arms characterized by dry, scaly patches on the bilateral antecubital fossae and wrists, consistent with a history of eczema as a child. Symptoms occur every winter and last year was notably bad.\n\n**Review of Systems**\n(Only include systems that were discussed. If not mentioned, omit this section entirely)\nConstitutional: Not documented\nHEENT: Not documented\nCardiovascular: Not documented\nRespiratory: Not documented\nGastrointestinal: Not documented\nGenitourinary: Not documented\nMusculoskeletal: Not documented\nNeurological: Not documented\nPsychiatric: Not documented\nSkin: Itching, scaly patches on arms and wrists\n\n**Past Medical History**\nEczema\n\n**Medications**\nTriamcinolone 0.1% ointment, Benadryl\n\n**Allergies**\nNot documented\n\n**Social History**\nNot documented\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\nGeneral: Dry, scaly patches on bilateral antecubital fossae and wrists\n\n**Vital Signs:**\nNot documented\n\nGeneral: Consistent with eczema, atopic dermatitis\n\n**Assessment**\nEczema\n\n**Plan**\n1. Apply triamcinolone 0.1% ointment twice daily to affected areas for two weeks\n2. Moisturize with a fragrance-free cream (CeraVe cream or Vanicream) twice daily after showering\n3. Avoid skin irritants such as harsh soaps and wool clothing\n4. Over-the-counter Benadryl as needed for nighttime itching\n5. Follow-up in two weeks if no improvement\n\n(Only include plan elements that were specifically discussed)",
+  "metadata": {
+    "inference_time_s": 6.12,
+    "prompt_tokens": 1443,
+    "tokens_generated": 369,
+    "prompt_tps": 502.7,
+    "tokens_per_sec": 60.3,
+    "peak_memory_gb": 4.81
+  }
+}

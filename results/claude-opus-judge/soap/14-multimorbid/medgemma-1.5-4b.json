@@ -1,0 +1,47 @@
+{
+  "transcript_id": "14-multimorbid",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The medications list shows metformin as 1000 mg (pre-visit dose) but also lists the updated medications (Tresiba 26, atorvastatin 80, HCTZ 25, dapagliflozin 10), creating an inconsistency \u2014 the metformin should be listed as 500 mg twice daily per the updated plan. This is a minor error/embellishment. Otherwise content is faithful to the transcript.",
+      "flagged_content": [
+        "Metformin 1000 mg twice daily"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "Template instructions in parentheses and brackets are left throughout the note (e.g., '(Only include systems that were discussed. If not mentioned, omit this section entirely)', '[Fever, chills, fatigue, weight changes]', '[Heart rate]', etc.). The Review of Systems section was left entirely as template placeholders rather than being filled in or omitted. The chief complaint is not a proper clinical statement but a verbatim transcript quote."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured including lab values, exam findings, plan details, counseling, and referrals. However, the Review of Systems section was not filled in despite relevant information being available (fatigue, headaches, dyspnea, nocturia, numbness, no chest pain). The Tresiba titration instructions (2 units every 3 days until fasting <130) and instruction to start checking post-meal sugars are missing from the plan. The positional change counseling for HCTZ is also missing.",
+      "missed_items": [
+        "Tresiba titration instructions (2 units every 3 days until fasting under 130)",
+        "Instruction to check post-meal blood sugars 2 hours after biggest meal",
+        "Counseling on positional changes with HCTZ",
+        "Review of Systems not populated despite relevant symptoms discussed",
+        "Hyperlipidemia/dyslipidemia as a diagnosis in Assessment"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "Template placeholders and instructions are left throughout the note in brackets and parentheses. The Review of Systems is entirely unfilled template text. Vital signs section is duplicated with placeholder text. Physical exam findings are not properly organized under the template structure. Much of the HPI contains objective data (lab results, exam findings) that should be in the Objective section."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The vital signs section is duplicated (BP listed twice with template placeholders repeated), and labs ordered in four weeks appears twice in the plan (items 1 and 15)."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.27,
+      "input_tokens": 5341,
+      "output_tokens": 728
+    }
+  }
+}

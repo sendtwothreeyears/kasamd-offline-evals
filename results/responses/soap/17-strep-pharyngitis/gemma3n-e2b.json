@@ -1,0 +1,14 @@
+{
+  "transcript_id": "17-strep-pharyngitis",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nSore throat, started yesterday.\n\n**History of Present Illness**\nPatient reports sore throat that began yesterday, causing pain with swallowing and speaking. Denies cough or runny nose. Reports having a fever of 101 degrees Fahrenheit last night and took Tylenol.\n\n**Review of Systems**\nConstitutional: Reports fever of 101 degrees Fahrenheit.\nHEENT: Reports sore throat.\n\n**Past Medical History**\nNot documented\n\n**Medications**\nNot documented\n\n**Allergies**\nNo known drug allergies\n\n**Social History**\nNot documented\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\n**Vital Signs:**\nNot documented\n\nGeneral: Patient appears to be in distress due to sore throat.\n\n**Assessment**\nPositive for {{condition:strep throat}}\n\n**Plan**\n1. Prescribing {{drug:amoxicillin}} 500 mg three times a day for ten days.\n2. Advised to finish the full course of antibiotics.\n3. Recommended continuing Tylenol or ibuprofen for pain and fever.\n4. Suggested warm tea or cold things like popsicles for throat comfort.\n5. Instructed to remain home from work tomorrow and return the day after if feeling improved.\n6. Return precautions: Return if fever does not resolve within 48 hours of starting antibiotics, or if develops difficulty breathing or trouble swallowing liquids.\n7. Prescription sent to pharmacy.\n\n\n\n",
+  "metadata": {
+    "inference_time_s": 6.28,
+    "prompt_tokens": 1484,
+    "tokens_generated": 317,
+    "prompt_tps": 656.3,
+    "tokens_per_sec": 50.5,
+    "peak_memory_gb": 3.84
+  }
+}

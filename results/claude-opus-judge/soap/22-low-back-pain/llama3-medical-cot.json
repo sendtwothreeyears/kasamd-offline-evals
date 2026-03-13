@@ -1,0 +1,75 @@
+{
+  "transcript_id": "22-low-back-pain",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The note contains numerous fabricated findings with no basis in the transcript: vital signs (BP 130/80, HR 100, Temp 36.2, RR 20, SpO2 98%), shortness of breath and cough, nausea and vomiting, joint pain and muscle weakness, lab work orders, X-ray, MRI, ultrasound, kidney stones. The transcript explicitly states no imaging is indicated, yet the note orders MRI, X-ray, and ultrasound.",
+      "flagged_content": [
+        "BP: 130/80",
+        "HR: 100/min",
+        "Temp: 36.2\u00b0C",
+        "RR: 20/min",
+        "SpO2: 98%",
+        "Mr. Okonkwo has shortness of breath and cough",
+        "Mr. Okonkwo has nausea and vomiting",
+        "Mr. Okonkwo has joint pain and muscle weakness",
+        "Mr. Okonkwo will have blood work done to check for any abnormalities",
+        "He will also have an X-ray to check for any fractures or other injuries",
+        "Mr. Okonkwo will have an MRI to check for any injuries to the spine or surrounding tissues",
+        "He will also have an ultrasound to check for any kidney stones or other issues",
+        "Mr. Okonkwo has normal vision, hearing, and normal respiratory sounds. He has no difficulty walking or speaking",
+        "no recent history of yard work"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template instructs to only include systems that were discussed, yet the note includes fabricated ROS entries for HEENT, Cardiovascular, Respiratory, GI, Psychiatric, and Skin which were never discussed. The template says to only include vitals that were documented, yet fabricated vitals were included. The note fabricated diagnostic workup directly contradicting the transcript."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note misses numerous key findings: the specific mechanism details (4 days ago), pain severity ratings (5-6/10 at rest, 8/10 with transitions), ibuprofen dosing was confused (stated twice daily instead of three times daily), lumbar flexion limited to 30 degrees, extension better tolerated, tenderness at L4-L5, paraspinal muscle spasm, negative SLR details, the assessment of acute mechanical low back strain, no imaging indicated, counseling about GI side effects, counseling about staying active/avoiding bed rest, ice/heat recommendations, physical therapy referral, expected recovery timeline, and ER return precautions.",
+      "missed_items": [
+        "Pain severity 5-6/10 at rest, 8 with transitions",
+        "Onset 4 days ago on Saturday",
+        "Ibuprofen 400mg three times daily (not twice daily)",
+        "Lumbar flexion limited to 30 degrees",
+        "Extension better tolerated than flexion",
+        "Tenderness at L4-L5 level",
+        "Right paraspinal muscle tightness and spasm",
+        "Negative straight leg raise bilaterally with hamstring tightness",
+        "Patellar and Achilles reflexes normal and symmetric",
+        "Assessment of acute mechanical low back strain",
+        "No imaging indicated",
+        "Ibuprofen increased to 600mg TID with food for 7-10 days",
+        "GI side effect counseling",
+        "Cyclobenzaprine drowsiness counseling and driving restrictions",
+        "Stay active, avoid prolonged bed rest",
+        "Avoid heavy lifting for two weeks",
+        "Ice 20 minutes alternating with heat",
+        "Physical therapy referral for core strengthening",
+        "Recovery timeline 2-4 weeks significant improvement, 6 weeks baseline",
+        "Return precautions for numbness, tingling, weakness, bladder/bowel changes"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "While the note follows some template sections, the Assessment section is missing (merged into Plan), Past Medical History and Family History sections are missing, Vital Signs are placed after the general exam instead of before, and the Chief Complaint section contains HPI content rather than a concise complaint."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Multiple sections contain duplicated content: ibuprofen dosing is repeated multiple times in HPI and Medications, 'occasional mild back soreness with yard work' is stated twice in Constitutional, and the physical exam description is repeated in General."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 19.29,
+      "input_tokens": 3884,
+      "output_tokens": 1204
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "transcript_id": "19-uti",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The note contains multiple fabricated details not present in the transcript: history of hypertension, lisinopril use, drug allergy history, family history of hypertension, E. coli culture result, patient already feeling better, dipstick returning to normal, and nausea as a current symptom (it was mentioned only as a potential side effect).",
+      "flagged_content": [
+        "She has a history of hypertension, which is important to note",
+        "has been taking lisinopril for hypertension",
+        "She also mentions that she has had a history of drug allergies",
+        "Her family history includes hypertension",
+        "The culture test came back, and it's showing up positive for E. coli",
+        "she's been feeling a bit nauseous",
+        "The dipstick test is back to normal",
+        "she's feeling a bit better already"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note ignores key template instructions: many sections are missing (Objective, Assessment, Plan, Review of Systems, Social History, Family History, Physical Examination, Vital Signs), and the note fabricates information rather than stating 'Not documented' where appropriate."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "While some key elements are captured (chief complaint, burning/urgency, pinkish urine, prior UTI, nitrofurantoin prescription, dipstick results partially), many important details are missing.",
+      "missed_items": [
+        "positive leukocyte esterase on dipstick",
+        "positive nitrites on dipstick",
+        "trace blood on dipstick",
+        "urine culture sent",
+        "return precautions (fever, back pain, vomiting, 48-hour timeline)",
+        "no back pain",
+        "no fever",
+        "no nausea or vomiting as denied symptoms",
+        "counseling to take with food for absorption",
+        "nausea as most common side effect (counseling)",
+        "complete full course instruction",
+        "urinary urgency with very little output"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The note is missing the majority of required template sections: no Objective section, no Physical Examination, no Vital Signs, no Assessment, no Plan, no Review of Systems, no Social History, no Family History, and no Past Medical History as a distinct section. The structure is largely unrecognizable compared to the template."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The advice to 'drink plenty of water/fluids and take it easy on her diet' is repeated multiple times across the note, and the think block contains extensive repetitive content that leaked into the output structure."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.08,
+      "input_tokens": 3175,
+      "output_tokens": 712
+    }
+  }
+}

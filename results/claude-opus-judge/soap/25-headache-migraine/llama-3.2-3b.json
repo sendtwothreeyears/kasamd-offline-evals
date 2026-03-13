@@ -1,0 +1,51 @@
+{
+  "transcript_id": "25-headache-migraine",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The ROS lists 'No fever, chills, or fatigue' under Constitutional \u2014 the transcript mentions no fevers or night sweats but never explicitly denies chills or fatigue. This is a minor embellishment. Vital signs listed as 'Not documented' is acceptable. The rest closely follows the transcript.",
+      "flagged_content": [
+        "Constitutional: No fever, chills, or fatigue."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include vitals that were documented and to omit ROS systems not discussed, yet all vital signs are listed as 'Not documented' instead of being omitted. The template also says to omit sections not mentioned, but vital signs were explicitly listed despite not being documented. Additionally, the template parenthetical instructions say to only include items mentioned, yet the note includes 'General: Overall appearance and condition: Not documented' which should have been omitted. The Chief Complaint appears after the Subjective header text rather than in its proper position."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important items are missing: the impact on her work (leaving early twice, concern about boss noticing), prior treatment with ibuprofen and Excedrin Migraine, the use of a friend's sumatriptan and counseling against it, past medical history of two C-sections, the urgent discussion about changing her combination OCP due to migraine with aura and stroke risk, the discussion about progestin-only alternatives and scheduling with OB-GYN, and her occupation as a project manager at a tech company.",
+      "missed_items": [
+        "Headaches impacting work - left early twice, boss noticing",
+        "Prior treatment with ibuprofen and Excedrin Migraine",
+        "Used friend's sumatriptan once, counseled not to do that again",
+        "Past medical history: two C-sections",
+        "Urgent need to change combination OCP due to migraine with aura contraindication and stroke risk",
+        "Discussion of progestin-only alternatives (minipill, Depo shot, hormonal IUD, implant)",
+        "Scheduling appointment with OB-GYN",
+        "Occupation: project manager at a tech company",
+        "No history of stroke, blood clots, or heart disease"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note generally follows the template structure but has issues: Chief Complaint is placed after a Subjective introductory paragraph rather than directly under the Subjective heading, vital signs are listed as 'Not documented' instead of being omitted per template instructions, and 'General' section is listed with 'Not documented' instead of being omitted. The ROS organization is somewhat off \u2014 dizziness, weakness, numbness, weight changes, fevers, and night sweats are placed under HEENT rather than their appropriate systems."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. There are no {{drug:...}} or {{condition:...}} tags anywhere in the note despite numerous drugs (ibuprofen, sumatriptan, amitriptyline, propranolol, topiramate) and conditions (migraine with aura, photophobia, phonophobia, nausea) present."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed, though the chief complaint information appears both in the Subjective intro and the Chief Complaint section, which is a minor structural issue rather than true duplication."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 17.01,
+      "input_tokens": 4729,
+      "output_tokens": 894
+    }
+  }
+}

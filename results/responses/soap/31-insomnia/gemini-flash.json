@@ -1,0 +1,12 @@
+{
+  "transcript_id": "31-insomnia",
+  "template": "soap",
+  "model": "gemini-flash",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nDifficulty sleeping.\n\n**History of Present Illness**\nPatient presents with difficulty sleeping, which has been ongoing for approximately four to five months, gradually worsening. The primary issue is {{condition:sleep onset insomnia}}. Patient reports getting into bed between 10:00 PM and 10:30 PM but not falling asleep until midnight or later most nights. They wake at 6:15 AM for work, resulting in a loss of one to two hours of potential sleep while lying awake. Once asleep, they report generally staying asleep without issues. Pre-bed routine includes watching TV in bed, scrolling on their phone, and sometimes answering work emails in the evening, indicating screen exposure and cognitive activation prior to bedtime.\n\n**Past Medical History**\nNot documented\n\n**Medications**\nNot documented\n\n**Allergies**\nNo known drug allergies\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\n**Vital Signs:**\nPhysical examination not documented\n\n**Assessment**\n{{condition:Sleep onset insomnia}}\n\n**Plan**\n1. Patient counseled on sleep hygiene, including no screens for at least 30 minutes (ideally an hour) before bed, and keeping the bed for sleep only (no TV, phone, or laptop in bed).\n2. Reviewed stimulus control: if not asleep within 20 minutes, patient should get up, go to another room, do something low-key, and return to bed only when drowsy.\n3. Recommended low-dose {{drug:melatonin}}, 0.5 mg to 1 mg, taken about an hour before target bedtime. Patient counseled that higher doses are not more effective and evidence supports lower doses.\n4. Plan to try sleep hygiene changes and low-dose melatonin consistently for three to four weeks.\n5. If still struggling after this period, patient will return for further evaluation and options. No medications prescribed at this time.",
+  "metadata": {
+    "inference_time_s": 7.04,
+    "prompt_tokens": 1561,
+    "tokens_generated": 412,
+    "tokens_per_sec": 58.5
+  }
+}

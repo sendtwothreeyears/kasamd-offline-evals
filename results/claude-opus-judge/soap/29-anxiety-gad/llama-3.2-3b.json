@@ -1,0 +1,63 @@
+{
+  "transcript_id": "29-anxiety-gad",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The note states 'No fever, chills, or fatigue reported' under Constitutional, but the transcript clearly describes fatigue ('tired but wired', exhausted). The note also states 'no headaches, dizziness, numbness, or weakness reported' under Neurological ROS, but the transcript mentions tension headaches 3-4 times/week and mild orthostatic lightheadedness. The General section describes him as appearing 'anxious and on edge' with 'a general air of unease' which is fabricated \u2014 the transcript does not describe his appearance this way. The Genitourinary and Skin ROS entries are fabricated negatives not discussed in the transcript.",
+      "flagged_content": [
+        "No fever, chills, or fatigue reported",
+        "no headaches, dizziness, numbness, or weakness reported",
+        "Mr. Nakamura appears anxious and on edge, with significant muscle tension and a general air of unease",
+        "Genitourinary: No urinary symptoms or menstrual history reported",
+        "Skin: No rashes, lesions, or wounds reported"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit sections not mentioned, but the note includes Genitourinary, Skin, and HEENT sections that were never discussed. The template also says to omit sections not mentioned, yet these are included with fabricated negatives. The ordering of sections is also wrong (Subjective appears before Chief Complaint)."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing: the precipitating event (daughter's school play), wife urging him to come in, the work presentation episode with palpitations and brief fear of heart attack, palmar diaphoresis, irritability/snapping at kids/wife walking on eggshells, the discussion about benzodiazepines, specific lifestyle recommendations (3 thirty-minute walks, specific apps, reading a physical book), safety counseling, suggestion to loop wife into treatment plan, prior borderline BP readings/white coat hypertension discussion, sleep latency of 45 min to 1 hour, podcast use, tobacco history (denied).",
+      "missed_items": [
+        "Precipitating event at daughter's school play",
+        "Wife urging him to seek help",
+        "Work presentation palpitation episode with fear of heart attack",
+        "Palmar diaphoresis",
+        "Irritability - snapping at kids, wife walking on eggshells",
+        "Benzodiazepine discussion",
+        "Specific exercise goal (3 thirty-minute walks)",
+        "Specific meditation apps (Headspace, Calm, Insight Timer)",
+        "Sleep hygiene detail about replacing phone with physical book",
+        "Safety counseling details",
+        "Suggestion to loop wife into treatment plan",
+        "45 min to 1 hour sleep latency",
+        "Podcast use keeping him up later",
+        "Tobacco: none",
+        "Prior borderline BP readings/white coat hypertension discussion",
+        "Medication side effect counseling details (nausea, headache, transient anxiety increase, sexual side effects)",
+        "Checkup 6 months ago with normal blood work, uncertain about thyroid"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Subjective section appears before Chief Complaint instead of after it. Vital Signs are listed both within Physical Examination and as a separate section, creating structural redundancy. Family history is duplicated in both Past Medical History and Family History sections. The overall structure deviates significantly from the template ordering."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used for any medications (escitalopram, buspirone) or conditions (generalized anxiety disorder, irritable bowel syndrome, hyperthyroidism)."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Family history content (mother as worrier, brother on escitalopram) is duplicated in both the Past Medical History and Family History sections. Vital signs are duplicated in both the Physical Examination and a separate Vital Signs section. GI symptoms and muscle tension are repeated across HPI and ROS."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 19.46,
+      "input_tokens": 5138,
+      "output_tokens": 1039
+    }
+  }
+}

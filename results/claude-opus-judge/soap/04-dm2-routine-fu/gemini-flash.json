@@ -1,0 +1,41 @@
+{
+  "transcript_id": "04-dm2-routine-fu",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly stated or reasonably inferred from the transcript. No fabricated findings or diagnoses.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 3,
+      "rationale": "The note follows all template instructions well. Allergies correctly state 'Not documented' when not discussed. Only discussed systems are included in ROS. Social history only includes mentioned items."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "The note captures most transcript content but misses the kidney labs (microalbumin and creatinine both normal) which were explicitly mentioned.",
+      "missed_items": [
+        "Kidney labs from today are normal \u2014 microalbumin and creatinine both fine"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well overall. Minor issues: the eye exam finding is placed in ROS/HEENT rather than in HPI or objective findings, and 'Musculoskeletal: Pulses good on feet' is a vascular finding misplaced under musculoskeletal. Vital signs section is appropriately omitted since none were documented."
+    },
+    "entity_marking": {
+      "score": 3,
+      "rationale": "Both diabetes and metformin are correctly marked with {{condition:...}} and {{drug:...}} syntax on first occurrence only. Subsequent mentions are not marked."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 8.1,
+      "input_tokens": 2804,
+      "output_tokens": 414
+    }
+  }
+}

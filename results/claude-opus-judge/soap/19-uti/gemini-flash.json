@@ -1,0 +1,41 @@
+{
+  "transcript_id": "19-uti",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly stated or reasonably inferred from the transcript. 'No known drug allergies' is a standard clinical default and acceptable.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The template instructs to omit Social History if not mentioned, but instead the note states 'Not documented.' The template says to only include items that were mentioned for Social History. Minor deviation from instructions."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "The note captures nearly all transcript content. Minor omission: the dipstick was performed at check-in (urine sample provided at check-in with dipstick results) and the note mentions the nausea side effect counseling but doesn't explicitly note that nausea is the most common side effect of the medication.",
+      "missed_items": [
+        "Nausea described as 'the most common side effect' of nitrofurantoin"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well. Minor issues: Social History should have been omitted entirely per template instructions rather than stating 'Not documented,' and vital signs section is omitted (acceptable since none documented). Back pain under Musculoskeletal is a slight stretch\u2014it's more of a genitourinary/renal concern."
+    },
+    "entity_marking": {
+      "score": 3,
+      "rationale": "Entity marking is correct with {{condition:UTI}} and {{drug:nitrofurantoin}} properly marked on first occurrence only with correct syntax. The UTI in Assessment is not re-marked, which is correct."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content found."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 10.03,
+      "input_tokens": 2670,
+      "output_tokens": 468
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "transcript_id": "35-well-child",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The note fabricates that Lily is on metformin 500mg twice daily and lisinopril 10mg \u2014 completely invented medications for a 4-year-old with no medical conditions mentioned. It also fabricates claims like 'she doesn't like fruits' (transcript never mentions fruits being disliked) and other distorted content.",
+      "flagged_content": [
+        "Lily is on metformin 500mg twice daily",
+        "She's also on lisinopril 10mg",
+        "she doesn't like fruits and vegetables"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note catastrophically fails to follow instructions. It enters a massive repetitive loop, fabricates medications, includes non-template sections like 'Social' and 'Developmental' as standalone sections, and fails to produce an Objective, Assessment, or Plan section. The template structure is almost entirely ignored."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note misses the vast majority of transcript content including the entire physical exam, growth measurements, immunizations, anticipatory guidance, sleep history, behavioral history, potty training, dental hygiene, family history, assessment, and plan.",
+      "missed_items": [
+        "Physical examination findings",
+        "Growth measurements (height, weight, BMI, percentiles)",
+        "Immunizations (DTaP, IPV, MMR, varicella)",
+        "Sleep routine details",
+        "Potty training status",
+        "Dental hygiene",
+        "Behavioral history (meltdowns, fears)",
+        "Anticipatory guidance (car seat, water safety, screen time)",
+        "Nutritional counseling details (division of responsibility, switch to 2% milk)",
+        "Family history of refractive error",
+        "Assessment",
+        "Plan/follow-up",
+        "Vision and hearing screening results",
+        "Gross motor assessment"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The note is missing the Objective section, Physical Examination, Vital Signs, Assessment, and Plan entirely. It includes non-template sections and devolves into an infinite repetitive loop, making the structure completely non-functional."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The note contains massive duplication \u2014 'Social History / Medications \u2014 no known drug allergies' is repeated hundreds of times in an obvious generation loop failure."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.99,
+      "input_tokens": 23677,
+      "output_tokens": 636
+    }
+  }
+}

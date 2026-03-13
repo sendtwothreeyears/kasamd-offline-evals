@@ -1,0 +1,68 @@
+---
+id: 03
+scenario: Uncontrolled hypertension despite monotherapy, medication adjustment
+category: Chronic disease
+density: Medium
+---
+
+Doctor: Alright, Mr. Delgado, thanks for coming in. I see we're here for a blood pressure follow-up?
+
+Patient: Yeah. I got that letter in the portal saying my numbers were still too high.
+
+Doctor: Right. So let me check it today. Okay — 152 over 94. And looking at your home readings you've been logging, they've been running in the 140s to 150s over 90s for the past month. How have you been feeling?
+
+Patient: Honestly, fine. I feel totally normal. That's kind of why it's hard to take this seriously, you know?
+
+Doctor: I hear you. That's one of the tricky things about blood pressure — you usually can't feel it until it's causing real damage. And at these levels, over time, we're talking about increased risk for heart attack, stroke, kidney problems.
+
+Patient: Yeah, I know. My dad had a stroke at 62.
+
+Doctor: That's important. So you're on amlodipine 5 milligrams right now — have you been taking it every day?
+
+Patient: Most days. I'd say I miss maybe... once or twice a week? Sometimes I just forget.
+
+Doctor: Okay, that's pretty common. What time of day are you taking it?
+
+Patient: Whenever I remember, honestly. Sometimes morning, sometimes night.
+
+Doctor: Let's try to anchor it to something consistent — like right when you brush your teeth at night, put it next to your toothbrush. Consistency helps.
+
+Patient: I can try that.
+
+Doctor: Good. But even with perfect adherence, I think we need to add a second medication here. The amlodipine alone isn't getting us to goal. I'd like to add lisinopril, which is an ACE inhibitor. It works through a different mechanism — it relaxes the blood vessels from a different angle.
+
+Patient: Are there side effects I should know about?
+
+Doctor: The most common one is a dry cough — some people get it, most don't. If it bothers you, we switch to a different class. You might also feel a little lightheaded when you first start it as your body adjusts.
+
+Patient: Okay. How long until we know if it's working?
+
+Doctor: Usually within two to four weeks. I'd like you back in a month so we can recheck. Keep logging your home readings — that data is really helpful.
+
+Patient: Will do.
+
+Doctor: Now — let me ask about the lifestyle stuff. How's the diet going? Last time we talked about cutting back on sodium.
+
+Patient: Uh, it's been hit or miss. I've been trying to cook more at home, but we still eat out a couple times a week. And I know restaurant food is salty.
+
+Doctor: It really is. Even things that don't taste salty can have a lot of sodium. If you can aim for under 2,000 milligrams a day, that can drop your blood pressure by 5 to 10 points on its own. Reading labels helps.
+
+Patient: My wife's been reading labels more. She's been pushing me on this.
+
+Doctor: Good — sounds like you've got a teammate. What about exercise?
+
+Patient: I walk the dog most days. Maybe 20 minutes?
+
+Doctor: That's a good start. If you can build that up to 30 to 45 minutes of brisk walking most days, that would help a lot. You don't have to run a marathon.
+
+Patient: Yeah, the dog would appreciate it too.
+
+Doctor: Ha, win-win. Any alcohol use?
+
+Patient: A couple beers on the weekend. Nothing crazy.
+
+Doctor: That's fine. So the plan — I'm adding lisinopril 10 milligrams daily, continuing amlodipine 5, let's work on consistent timing and the sodium reduction. Come back in four weeks. If the cough bothers you, call us and we'll switch it out. Sound good?
+
+Patient: Sounds good, doc. Thanks.
+
+Doctor: You got it. We'll get this under control.

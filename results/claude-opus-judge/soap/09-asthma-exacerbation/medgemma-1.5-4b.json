@@ -1,0 +1,62 @@
+{
+  "transcript_id": "09-asthma-exacerbation",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The HPI content that was filled in is accurate to the transcript. However, the note is essentially just the template with only the Chief Complaint and HPI filled in, so there is minimal opportunity for hallucination. No fabricated clinical details are present.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note catastrophically fails instruction following. Template placeholder text (brackets, parenthetical instructions) is left throughout the entire note in every section except CC and HPI. The template instructions explicitly state to replace placeholders, omit sections not discussed, or state 'Not documented' \u2014 none of this was done. The note is duplicated approximately 25+ times.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note only captures the chief complaint and HPI. It is missing all objective findings (wheezing, O2 sat, peak flow), assessment (asthma exacerbation, allergic rhinitis), the entire plan (Advair, cetirizine, Flonase, spacer, exercise counseling, return precautions, follow-up), past medical history (asthma), medications (fluticasone 110, albuterol, Claritin), and all counseling provided.",
+      "missed_items": [
+        "expiratory wheezing bilaterally worse on right",
+        "O2 sat 97%",
+        "peak flow 380 (79% of personal best 480)",
+        "yellow zone classification",
+        "fluticasone 110 one puff twice daily (inconsistent use)",
+        "switching to fluticasone/salmeterol Advair 250/50",
+        "cetirizine 10mg daily",
+        "fluticasone nasal spray (Flonase)",
+        "spacer prescription",
+        "counseling on daily maintenance inhaler use",
+        "counseling on spacer use",
+        "counseling on mouth rinsing after inhaled steroid",
+        "counseling on LABA safety in combination inhaler",
+        "exercise counseling with pre-exercise albuterol",
+        "return precautions",
+        "updated asthma action plan",
+        "follow-up in 3-4 weeks",
+        "asthma diagnosis",
+        "allergic rhinitis/seasonal allergies diagnosis"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "Template placeholder text and instructions are left verbatim throughout the entire note. Sections that should have been filled in or omitted per instructions are left as raw template. The Review of Systems includes all systems with placeholder text despite the instruction to only include discussed systems.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The entire note structure is duplicated approximately 25+ times, which is an extreme case of output duplication."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.83,
+      "input_tokens": 21269,
+      "output_tokens": 757
+    }
+  }
+}

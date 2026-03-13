@@ -1,0 +1,100 @@
+---
+id: 21
+scenario: Sinusitis with 10 days of worsening symptoms, bacterial vs viral discussion
+category: Acute
+density: Medium
+---
+
+Doctor: Good morning, Ms. Taveras. What brings you in today?
+
+Patient: Hi, Doctor. I've had this awful pressure in my face for like ten days now, and it's just getting worse instead of better.
+
+Doctor: Ten days — okay. Tell me more about what you're feeling. Where exactly is the pressure?
+
+Patient: It's mostly right here, like around my cheeks and behind my eyes. Both sides, but the left is definitely worse. And when I bend over to pick something up off the floor, it feels like my face is going to explode.
+
+Doctor: That sounds really uncomfortable. Any nasal discharge?
+
+Patient: Yeah, a lot actually. It started out kind of clear and watery, but the last four or five days it's been this thick yellowish-green stuff. Sorry, I know that's gross.
+
+Doctor: No, no, that's exactly what I need to know. Any postnasal drip? Feeling it drip down the back of your throat?
+
+Patient: Oh yeah, constantly. It's making me cough, especially at night. My husband says I've been coughing in my sleep.
+
+Doctor: Have you had a fever at all?
+
+Patient: I took my temperature a couple times. It was like 99.8 one day, maybe 100.1 another day. Nothing super high.
+
+Doctor: And how did this all start? Did it begin with a cold?
+
+Patient: Yeah, I had a regular cold about two weeks ago. Runny nose, sneezing, sore throat — the usual. I thought it was getting better around day four or five, and then everything just... ramped back up. That's when the pressure started and the discharge changed color.
+
+Doctor: That pattern is actually really helpful. The initial improvement followed by worsening — we call that "double worsening" — is one of the things that points us toward a bacterial sinus infection rather than just a prolonged viral cold.
+
+Patient: So it's definitely bacterial?
+
+Doctor: Well, let me explain. Most sinus infections actually start viral, and a lot of them stay viral. We generally look at a few criteria to decide if antibiotics are warranted. The big ones are symptoms lasting more than ten days without improvement, or that double-worsening pattern you described, or severe symptoms with high fever right from the start. You're hitting two of those boxes — the duration and the worsening pattern.
+
+Patient: Okay, so antibiotics then?
+
+Doctor: I do think so in your case, yes. But first let me take a look. Any tooth pain or upper jaw aching?
+
+Patient: Actually yeah, my upper teeth on the left side have been kind of achy. I almost called my dentist.
+
+Doctor: That's actually very consistent with sinusitis — the roots of those upper teeth sit right next to the maxillary sinus. Any ear fullness or hearing changes?
+
+Patient: My ears feel a little plugged, but nothing major.
+
+Doctor: Headache?
+
+Patient: Yeah, kind of a dull headache most of the day. Tylenol helps a bit but it comes right back.
+
+Doctor: Let me take a look here. I'm going to press on a few areas of your face — tell me if anything is tender.
+
+Patient: Ow — yeah, right there.
+
+Doctor: That's over your left maxillary sinus. How about here?
+
+Patient: A little tender but not as bad.
+
+Doctor: Okay. Let me look in your nose. I'm going to use this light — just tilt your head back slightly. Alright, I can see quite a bit of mucopurulent discharge in both nasal passages, more on the left. The mucosa is really swollen and erythematous. Let me check your ears... Eardrums look fine, no fluid behind them. Throat — I can see some postnasal drip coating the posterior pharynx. Your lymph nodes are mildly enlarged in the anterior cervical chain.
+
+Patient: So what's the plan?
+
+Doctor: I'm going to start you on amoxicillin-clavulanate — that's Augmentin. It's our first-line antibiotic for bacterial sinusitis. I'll prescribe the regular strength, 875 milligrams twice a day for ten days. Do you have any drug allergies?
+
+Patient: No, none that I know of.
+
+Doctor: Good. Now, antibiotics are part of it, but I also want you doing some things to help with symptom relief. Have you ever used a saline nasal rinse? Like a neti pot or a squeeze bottle?
+
+Patient: I have a neti pot somewhere. I've used it before with colds.
+
+Doctor: Perfect. I want you using that at least twice a day. Use distilled or previously boiled water — not straight tap water. The saline irrigation physically flushes out that thick mucus and helps reduce the bacterial load in there.
+
+Patient: Okay, I can do that.
+
+Doctor: I'd also recommend a nasal decongestant spray — oxymetazoline, which is Afrin — but only for three days max. After three days it can actually cause rebound congestion and make things worse. For longer-term decongestion, you can take pseudoephedrine — the Sudafed you have to get from behind the pharmacy counter. Any blood pressure issues?
+
+Patient: No, my blood pressure's been fine.
+
+Doctor: Great. Pseudoephedrine can raise blood pressure in some people, so I always ask. You can also continue the Tylenol for pain, or ibuprofen if you prefer — ibuprofen actually helps with the inflammation too.
+
+Patient: How soon should I feel better?
+
+Doctor: Most people start feeling improvement within three to four days on the antibiotic. If you're not feeling any better by day three or four, or if you develop a high fever, worsening headache, swelling around your eyes, or any vision changes, I want you to call us right away. Those would be signs we need to reassess.
+
+Patient: Vision changes? That sounds scary.
+
+Doctor: It's very rare, but sinus infections can occasionally spread to nearby structures, and I always like patients to know the warning signs. The vast majority of bacterial sinusitis cases respond well to antibiotics — I'm not expecting any complications.
+
+Patient: Alright. Is there anything I should avoid?
+
+Doctor: Try to stay well hydrated — that helps thin the mucus. Avoid smoking or secondhand smoke if that's relevant. And honestly, just rest. Your body's fighting an infection.
+
+Patient: Should I stay home from work?
+
+Doctor: If you feel up to working, you can go. You're not really contagious at this point — this developed from your own cold, it's not something you're spreading around. But if you're feeling miserable, a day or two of rest won't hurt.
+
+Patient: Okay. Thank you, Doctor.
+
+Doctor: You're welcome. I'll send the prescription to your pharmacy. Follow up in two weeks if you're not fully better, or sooner if anything worries you.

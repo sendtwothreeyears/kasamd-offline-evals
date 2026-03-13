@@ -1,0 +1,72 @@
+{
+  "transcript_id": "35-well-child",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems section fabricates negative findings across multiple systems (Constitutional, Cardiovascular, Respiratory, Gastrointestinal, Genitourinary, Musculoskeletal, Neurological, Psychiatric) that were never discussed in the transcript. These are not standard clinical defaults \u2014 they are specific negative ROS findings presented as if they were reviewed.",
+      "flagged_content": [
+        "Constitutional: No reported fever or chills.",
+        "Cardiovascular: No reported chest pain or palpitations.",
+        "Respiratory: No reported shortness of breath or cough.",
+        "Gastrointestinal: No reported nausea or vomiting.",
+        "Genitourinary: No reported urinary symptoms.",
+        "Musculoskeletal: No reported joint pain or muscle weakness.",
+        "Neurological: No reported headache or dizziness.",
+        "Psychiatric: No reported mood or anxiety."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template explicitly states for Review of Systems: 'Only include systems that were discussed. If not mentioned, omit this section entirely.' The note includes all ROS systems with fabricated negatives. The Social History includes tobacco/alcohol/recreational drugs/occupation fields that were not mentioned and should have been omitted per the 'Only include items that were mentioned' instruction. Family history of refractive error was documented but stated as 'Not documented' in the Family History section."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note is missing the vast majority of transcript content including: picky eating concerns and detailed dietary counseling, developmental milestones, potty training status, dental hygiene, behavioral development, sleep routine, growth measurements (height, weight, BMI, percentiles), detailed physical exam findings, immunizations administered, and most anticipatory guidance.",
+      "missed_items": [
+        "Picky eating concern and detailed dietary history",
+        "Division of responsibility counseling for picky eating",
+        "Switch from whole milk to 2% counseling",
+        "Developmental milestones (language, drawing, dressing, counting, colors)",
+        "Potty training status and nighttime wetting reassurance",
+        "Dental hygiene details",
+        "Behavioral development (meltdowns, negotiating, fears)",
+        "Sleep routine details (10.5 hours, bath/books routine)",
+        "Nap dropping discussion",
+        "Growth measurements (39.2 inches/45th%, 35.6 lbs/55th%, BMI 58th%)",
+        "Detailed physical exam (oropharynx, ears, eyes, cardiovascular, lungs, abdomen, MSK, skin)",
+        "Vision screen results (20/25 bilateral)",
+        "Hearing screen results",
+        "Gross motor assessment (hopping, ball catching, single-leg stance)",
+        "Immunizations (DTaP, IPV, MMR, varicella)",
+        "Flu vaccine status",
+        "Next vaccine round at 11-12",
+        "Preschool attendance and social development",
+        "Swim lessons and dance class",
+        "Car seat specific details (forward-facing Graco, 5-point harness)",
+        "Screen time specific details (1 hour TV, 30 min iPad)",
+        "Water safety counseling details",
+        "Family history of refractive error (both parents wear glasses)"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The template structure is followed with correct section headers and formatting. However, the ROS section should have been omitted or limited per instructions, Social History includes irrelevant fields, and family history of refractive error is misplaced (noted in Plan but 'Not documented' in Family History section)."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. The note contains no {{drug:...}} or {{condition:...}} syntax despite mentioning vaccines and conditions that should have been marked."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.64,
+      "input_tokens": 3732,
+      "output_tokens": 1007
+    }
+  }
+}

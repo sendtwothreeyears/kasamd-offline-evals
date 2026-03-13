@@ -1,0 +1,52 @@
+{
+  "transcript_id": "44-eczema",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "The portions that were actually filled in (Chief Complaint and HPI) contain no fabricated information. All content is directly from the transcript.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note fails catastrophically on instruction following. Template bracketed/parenthetical instructions are left verbatim throughout the note instead of being filled in or replaced. Sections that should have been omitted (e.g., Social History, most of Review of Systems, Vital Signs) were left with raw template placeholders. The template explicitly states to omit sections not discussed or state 'Not documented', but neither was done.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "While the HPI is well captured, the note is missing nearly all critical content: physical exam findings (dry scaly patches, bilateral antecubital fossae, wrists, erythema, excoriations), the assessment/diagnosis (eczema/atopic dermatitis), and the entire plan (triamcinolone prescription, moisturizing counseling, shower advice, irritant avoidance, Benadryl recommendation, follow-up instructions). Past medical history of childhood eczema is also not placed in its proper section.",
+      "missed_items": [
+        "Physical exam findings: dry scaly patches on bilateral antecubital fossae and wrists, erythema, excoriations",
+        "Assessment: eczema/atopic dermatitis",
+        "Triamcinolone 0.1% ointment twice daily for two weeks",
+        "Moisturizing counseling (CeraVe/Vanicream, fragrance-free, after showering)",
+        "Shower advice (warm not hot, keep short)",
+        "Avoid irritants (harsh soaps, wool clothing)",
+        "OTC Benadryl for nighttime itching",
+        "Follow-up in two weeks if no improvement",
+        "Past medical history: childhood eczema"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The template structure is present but all sections beyond the Subjective CC and HPI contain raw template placeholders with brackets and parenthetical instructions. The Objective, Assessment, and Plan sections are completely unfilled.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The entire note is duplicated \u2014 the full Subjective through Plan sections appear twice in the output."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 12.9,
+      "input_tokens": 3614,
+      "output_tokens": 680
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "transcript_id": "44-eczema",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The General section describes the patient's overall appearance as 'dry, scaly patches on the arms,' which misrepresents what a General exam finding should be. The note also places the prescribed medication under current Medications, which is misleading. The ROS lists many systems as 'not mentioned' which is accurate but the template says to omit systems not discussed. The Constitutional section says 'No fever, chills, or fatigue was mentioned' \u2014 sleep disruption was discussed but listed under Psychiatric as not mentioned, which is inaccurate.",
+      "flagged_content": [
+        "The patient's overall appearance and condition were described as dry, scaly patches on the arms"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template explicitly instructs to only include ROS systems that were discussed and to omit the section entirely if not mentioned, but the note lists all systems with 'not mentioned' statements. Similarly, Social History should only include items that were mentioned, but all items are listed with 'not mentioned.' Vital signs should only include those documented, but all are listed as not documented. The template says to state 'Not documented' for certain sections, not elaborate on what wasn't mentioned."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured. However, the counseling about keeping showers warm rather than hot and short to avoid stripping natural oils is missing. The note also omits the detail about the patient scratching in sleep and waking up with skin under fingernails, and the explanation that regular lotion is mostly water and not sufficient.",
+      "missed_items": [
+        "Keeping showers warm rather than hot and short",
+        "Patient scratching in sleep and waking up with skin under fingernails",
+        "Regular lotion is mostly water and not sufficient"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Subjective section appears before Chief Complaint, reversing the template order. ROS includes all systems instead of only discussed ones. Social History includes all items instead of only mentioned ones. Vital Signs lists all vitals as not documented instead of omitting them. The location of the rash (exam finding) is placed in HPI rather than only in the objective section."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. There are no {{drug:...}} or {{condition:...}} tags anywhere in the note despite multiple drugs (triamcinolone, Benadryl, CeraVe, Vanicream) and conditions (eczema, atopic dermatitis) being mentioned."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or full note content was observed, though some information is repeated across sections (e.g., rash description in Subjective and HPI), this is minor and expected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.66,
+      "input_tokens": 3098,
+      "output_tokens": 711
+    }
+  }
+}

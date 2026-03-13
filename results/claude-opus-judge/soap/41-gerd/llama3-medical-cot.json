@@ -1,0 +1,54 @@
+{
+  "transcript_id": "41-gerd",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The note states omeprazole '20 milligrams twice a day' when the transcript clearly says 'once daily.' This is a fabricated detail that changes the clinical plan. The note also lacks structure and reads as informal thinking rather than a clinical note.",
+      "flagged_content": [
+        "omeprazole 20 milligrams twice a day"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The output is not a clinical note at all \u2014 it is a series of informal 'think' blocks with no structured sections, no proper formatting, and no adherence to the template instructions. It completely ignores the template structure and instructions."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "While some key elements are loosely mentioned (burning chest sensation, GERD, omeprazole, lifestyle modifications, follow-up), many specific details are missing: 3-week duration, radiation to throat, specific trigger foods (tomato-based sauces, pasta, coffee 2-3 cups/day), negative dysphagia/odynophagia/hematemesis/melena/weight loss, timing instruction (30 min before breakfast), 2-week full effect timeline, not eating 2-3 hours before lying down.",
+      "missed_items": [
+        "3-week duration explicitly stated",
+        "radiation to throat with sour taste",
+        "specific trigger foods (tomato-based sauces, pasta)",
+        "coffee 2-3 cups/day",
+        "no dysphagia",
+        "no odynophagia",
+        "no hematemesis",
+        "no melena",
+        "no unintentional weight loss",
+        "take on empty stomach 30 minutes before breakfast",
+        "full effect in 2 weeks",
+        "not eating within 2-3 hours of lying down"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The output has no structured sections whatsoever. It does not follow the template at all \u2014 no Subjective, Objective, Assessment, Plan sections, no headings, no proper clinical note format."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the output. No {{drug:...}} or {{condition:...}} syntax was used."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The output contains three separate <think> blocks that largely repeat the same content, constituting significant duplication."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 11.18,
+      "input_tokens": 3671,
+      "output_tokens": 618
+    }
+  }
+}

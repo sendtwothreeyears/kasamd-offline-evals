@@ -1,0 +1,53 @@
+{
+  "transcript_id": "31-insomnia",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "The HPI content that was actually filled in accurately reflects the transcript. No fabricated clinical details were added.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note failed to follow key instructions: template bracketed/parenthetical instructions were left in the output verbatim instead of being replaced with actual content or appropriate defaults. The Review of Systems should have been omitted entirely per instructions. Sections like Past Medical History, Medications, Allergies, Social History, Family History, Physical Examination, Assessment, and Plan were left as raw template placeholders rather than filled in or marked as 'Not documented.'",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "While the HPI is well-captured, the Assessment and Plan sections are completely empty \u2014 missing the diagnosis of sleep onset insomnia, sleep hygiene counseling details, melatonin recommendation (0.5-1mg), stimulus control counseling, the 3-4 week trial period, and follow-up instructions. These are key findings from the transcript.",
+      "missed_items": [
+        "Sleep onset insomnia as assessment/diagnosis",
+        "Sleep hygiene counseling (no screens 30-60 min before bed, bed for sleep only)",
+        "Stimulus control counseling (20-minute rule)",
+        "Melatonin recommendation 0.5-1mg taken 1 hour before bedtime",
+        "Counseling that higher doses of melatonin are not better",
+        "Coworker taking 10mg melatonin discussed",
+        "3-4 week trial period",
+        "Follow-up if still struggling",
+        "No medications prescribed",
+        "Social history: employed/works (alarm for work)"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "Template placeholders and parenthetical instructions are left verbatim throughout the note. The Review of Systems section was included with all subsystems despite the instruction to omit it if not discussed. Multiple sections contain raw template text instead of actual content.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. Melatonin (drug) and sleep onset insomnia (condition) should have been marked.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The entire note is duplicated \u2014 the full Subjective through Plan structure appears twice in the output."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 12.76,
+      "input_tokens": 3764,
+      "output_tokens": 637
+    }
+  }
+}

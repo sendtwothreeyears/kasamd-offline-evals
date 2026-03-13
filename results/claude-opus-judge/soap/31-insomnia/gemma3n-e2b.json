@@ -1,0 +1,50 @@
+{
+  "transcript_id": "31-insomnia",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly stated or reasonably inferred from the transcript. No fabricated findings or diagnoses.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to omit the Review of Systems section entirely if not discussed, but the note lists every ROS subsystem as 'Not documented.' Similarly, Social History includes items not mentioned with 'Not documented' instead of only including items that were mentioned. Vital signs are listed as 'Not documented' instead of only including those documented.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing: bedtime range of 10 to 10:30 (note says only 10:30), alarm at 6:15 for work, stimulus control counseling (get up after 20 minutes, go to another room), counseling that higher doses aren't better, the coworker taking 10mg, and that no medications were prescribed at this time.",
+      "missed_items": [
+        "Bedtime range of 10 to 10:30 (note only says 10:30)",
+        "Alarm goes off at 6:15 for work",
+        "Stimulus control counseling - get up after 20 minutes, go to another room, return only when drowsy",
+        "Counseling that higher doses of melatonin aren't better",
+        "Coworker takes 10mg of melatonin - addressed this with patient",
+        "No medications prescribed at this time",
+        "Occupation mentioned (patient works, implied by alarm for work and work emails)"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "ROS section should have been omitted entirely per template instructions. Social History should only include items mentioned (occupation was implied). Vital Signs section is placed after Physical Examination header instead of before/within it as templated. Multiple sections include 'Not documented' for every sub-item when the template says to only include items that were mentioned.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Melatonin is correctly marked with {{drug:melatonin}} syntax, but it is marked twice instead of only on first occurrence. The condition 'sleep onset insomnia' should have been marked with {{condition:...}} syntax.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No sections or content are duplicated in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.09,
+      "input_tokens": 2765,
+      "output_tokens": 667
+    }
+  }
+}

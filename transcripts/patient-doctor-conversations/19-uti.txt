@@ -1,0 +1,44 @@
+---
+id: 19
+scenario: UTI with dysuria and frequency in adult woman
+category: Acute
+density: Sparse
+---
+
+Doctor: Good afternoon, Ms. Jennings. What brings you in?
+
+Patient: I think I have a bladder infection. It burns when I pee and I feel like I have to go constantly, even when barely anything comes out.
+
+Doctor: When did this start?
+
+Patient: Day before yesterday. It's gotten worse since then.
+
+Doctor: Any blood in your urine?
+
+Patient: Maybe a little pinkish this morning. That's what made me call.
+
+Doctor: Any back pain, fever, nausea?
+
+Patient: No, none of that. Just the burning and the urgency.
+
+Doctor: Have you had UTIs before?
+
+Patient: One about two years ago. Same thing — they gave me antibiotics and it cleared right up.
+
+Doctor: Okay. We had you give a urine sample when you checked in. The dipstick shows positive leukocyte esterase, positive nitrites, and trace blood — all consistent with a UTI. I'm going to send it for culture too, but I'm comfortable starting antibiotics now.
+
+Patient: Oh good. What are you giving me?
+
+Doctor: Nitrofurantoin — brand name Macrobid — 100 milligrams twice a day for five days. Take it with food, it absorbs better that way.
+
+Patient: Any allergies I should worry about? I don't have any that I know of.
+
+Doctor: You should be fine. Most common side effect is a little nausea, which taking it with food helps. Drink plenty of water to flush things out. You should feel significantly better within a day or two.
+
+Patient: And if I don't?
+
+Doctor: If your symptoms aren't improving within 48 hours, or if you develop fever, back pain, or vomiting — call us right away because that could mean the infection has moved to the kidneys. Otherwise, finish the full course and you should be good.
+
+Patient: Perfect. Thank you.
+
+Doctor: You're welcome. The prescription's heading to your pharmacy now. Feel better.

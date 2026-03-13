@@ -1,0 +1,64 @@
+{
+  "transcript_id": "14-multimorbid",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The note states 'His A1C is 8.1, indicating a higher risk for developing type 2 diabetes' \u2014 the patient already has diabetes, this is fabricated framing. It also repeatedly states 'His diabetes is well-controlled' which contradicts the transcript (A1C 8.1, up from 7.6, diet fell off). States 'kidney function is stable' when the transcript explicitly says it dropped meaningfully and faster than expected.",
+      "flagged_content": [
+        "His A1C is 8.1, indicating a higher risk for developing type 2 diabetes",
+        "His diabetes is well-controlled",
+        "His kidney function is stable"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note is severely malformed. It ignores template instructions to omit systems not discussed, fails to use 'Not documented' where required, is missing the entire Objective section, Assessment, and Plan. The Review of Systems contains physical exam findings instead of ROS content. The note is largely incoherent repetition rather than following instructions."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note is missing the vast majority of transcript content: no physical exam details (weight, BMI, heart/lung exam, pedal pulses, monofilament testing details), no Assessment section, no Plan (no medication changes, no referrals, no counseling, no follow-up, no labs ordered), missing cholesterol panel, missing ibuprofen discontinuation, missing aspirin/atorvastatin, missing nocturia, missing exertional dyspnea, missing dialysis discussion, missing home BP readings, missing holiday diet discussion.",
+      "missed_items": [
+        "Physical exam findings (weight 234, BMI 33.5, heart/lung exam, pedal pulses, no ankle edema, monofilament testing)",
+        "Assessment section entirely",
+        "Plan section entirely (all medication changes, referrals, counseling, follow-up, labs)",
+        "Cholesterol panel (LDL 98, triglycerides 210)",
+        "Atorvastatin 40 to 80 change",
+        "Ibuprofen discontinuation and acetaminophen switch",
+        "Aspirin 81 mg",
+        "Home BP readings (140s/85-90)",
+        "Fasting blood sugars 150-160",
+        "Holiday diet discussion",
+        "Nocturia 2-3 times/night",
+        "Exertional dyspnea",
+        "Dialysis discussion",
+        "Podiatry referral",
+        "Ophthalmology referral",
+        "Nutrition referral",
+        "Urine albumin-to-creatinine ratio 220",
+        "Dr. Khatri nephrologist visit",
+        "Wife involvement in care",
+        "Social history"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The note is missing the entire Objective section (vital signs, physical examination), Assessment section, and Plan section. The sections that are present are poorly structured with content misplaced throughout. The note ends abruptly after Allergies."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is used."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Extreme duplication throughout \u2014 'His blood pressure is 158/94' is repeated dozens of times, kidney function and medication lists are repeated multiple times across sections, and entire paragraphs are near-duplicates of each other."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.91,
+      "input_tokens": 4443,
+      "output_tokens": 873
+    }
+  }
+}

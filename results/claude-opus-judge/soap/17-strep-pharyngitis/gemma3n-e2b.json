@@ -1,0 +1,49 @@
+{
+  "transcript_id": "17-strep-pharyngitis",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "\"Patient appears to be in distress due to sore throat\" is an embellishment not supported by the transcript. The transcript does not describe the patient's general appearance. Also, the allergies section says \"No known drug allergies\" which is a clinical default, but the transcript specifically states no known allergy to amoxicillin or penicillin, so this is a reasonable generalization. Social History says \"Not documented\" but the template says to only include items that were mentioned \u2014 this is an instruction issue, not hallucination.",
+      "flagged_content": [
+        "Patient appears to be in distress due to sore throat."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "Social History should have been omitted entirely per template instructions (\"Only include items that were mentioned\"), but instead states \"Not documented.\" The template says to omit the Review of Systems sections not discussed, but respiratory (denies cough) was discussed and not included under ROS. The allergies section should reflect the specific penicillin/amoxicillin allergy information from the transcript rather than a generic statement."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Missing key physical exam findings: red and swollen tonsils with white patches, tender submandibular lymphadenopathy. Missing the rapid strep test being performed. Missing the specific detail that fever was '101 and some change.' Missing the contagious-until-24-hours-on-antibiotics counseling detail. Missing that the patient should feel better within 24-48 hours. Missing no known allergy to amoxicillin or penicillin specifically. Missing denial of cough and runny nose in ROS.",
+      "missed_items": [
+        "Red and swollen tonsils with white patches",
+        "Tender submandibular lymphadenopathy",
+        "Rapid strep test performed and positive",
+        "No known allergy to amoxicillin or penicillin specifically",
+        "Contagious until on antibiotic for at least 24 hours",
+        "Should feel noticeably better within 24-48 hours",
+        "Denial of cough/runny nose not captured in ROS (only in HPI)"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "Overall structure follows the template well, but Social History should have been omitted entirely per instructions. Vital Signs section is present but says 'Not documented' when the fever of 101 was reported (though as subjective, not a documented vital sign, this is debatable). The Respiratory ROS line was omitted despite cough being discussed (denied)."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Correctly marked {{condition:strep throat}} and {{drug:amoxicillin}} with proper syntax and first-occurrence-only. However, missed marking {{drug:Tylenol}} and {{drug:ibuprofen}} as drug entities."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content found."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.32,
+      "input_tokens": 2595,
+      "output_tokens": 761
+    }
+  }
+}

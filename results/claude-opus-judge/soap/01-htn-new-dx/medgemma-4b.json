@@ -1,0 +1,48 @@
+{
+  "transcript_id": "01-htn-new-dx",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems lists 'Constitutional: Fatigue' which is not mentioned anywhere in the transcript. The transcript only mentions headaches with no fatigue. Also, Social History lists 'Not documented' for tobacco, alcohol, recreational drugs, and occupation \u2014 these were not discussed, but the template says to only include items that were mentioned, so listing them as 'Not documented' is an instruction-following issue rather than hallucination. The vital signs listing 'right arm' and 'left arm' is a reasonable inference from 'rechecked it on the other arm.' General exam findings are standard clinical defaults.",
+      "flagged_content": [
+        "Constitutional: Fatigue"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include Social History items that were mentioned, but the note lists all four sub-items as 'Not documented.' The template says to only include vitals that were documented, but the note lists HR, Temp, RR, SpO2 as 'Not documented.' The template says to only include ROS systems that were discussed, but 'Constitutional: Fatigue' was not discussed. The template also says to omit ROS entirely if not mentioned, but some systems were fabricated.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured. However, the note omits that the patient hasn't seen a doctor in 4-5 years and was not aware of any prior history of high blood pressure, and the counseling that elevated blood pressure could be contributing to his headaches. The negative ROS items (no nausea, no vision changes, no photosensitivity) are mentioned in HPI but not properly reflected in ROS.",
+      "missed_items": [
+        "Patient hasn't seen a doctor in 4-5 years",
+        "Patient was not aware of any prior history of high blood pressure",
+        "Counseling that elevated blood pressure could be contributing to headaches"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The overall structure follows the template well. Minor issues include listing undocumented vitals and social history items when the template says to omit them, and the ROS has a non-standard 'Headache' sub-section that duplicates HPI content. The Chief Complaint formatting deviates slightly from the template's bracket style.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Medications (acetaminophen, ibuprofen, antihypertensive medication) and conditions (hypertension) should have been marked with {{drug:...}} and {{condition:...}} syntax.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication detected, though headache details appear in both HPI and ROS, this is a minor structural issue rather than full duplication."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.3,
+      "input_tokens": 2579,
+      "output_tokens": 740
+    }
+  }
+}

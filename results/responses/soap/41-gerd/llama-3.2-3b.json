@@ -1,0 +1,14 @@
+{
+  "transcript_id": "41-gerd",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "generated_note": "**Subjective**\nThe patient has been experiencing burning chest discomfort for about three weeks.\n\n**Chief Complaint**\nThe patient's primary reason for visit is about three weeks of burning chest discomfort.\n\n**History of Present Illness**\nThe patient describes the burning sensation as a burning sensation right behind the breastbone, midsternal area, that sometimes creeps up into the throat with an associated sour taste. This discomfort is worse after dinner, particularly with trigger foods such as spicy foods, tomato-based sauces (specifically pasta), and coffee, which they consume about two to three cups a day. There is no dysphagia, odynophagia, or sensation of food getting stuck. The patient has also not experienced vomiting, hematemesis, melena, or blood in the stool. There is no unintentional weight loss. \n\n**Review of Systems**\nConstitutional: No fever, chills, or fatigue.\nHEENT: No vision, hearing, throat, or nasal symptoms.\nCardiovascular: No chest pain, palpitations, or edema.\nRespiratory: No shortness of breath, cough, or wheezing.\nGastrointestinal: No nausea, vomiting, diarrhea, abdominal pain, or blood in the stool.\nGenitourinary: No urinary symptoms or menstrual history.\nMusculoskeletal: No joint pain, muscle weakness, or mobility issues.\nNeurological: No headache, dizziness, numbness, or weakness.\nPsychiatric: No mood, anxiety, or sleep disturbances.\nSkin: No rashes, lesions, or wounds.\n\n**Past Medical History**\nThe patient has a history of GERD.\n\n**Medications**\nThe patient is currently taking omeprazole 20 milligrams once daily, to be taken on an empty stomach about 30 minutes before breakfast.\n\n**Allergies**\nNo known drug allergies.\n\n**Social History**\nTobacco: The patient uses coffee, which they consume about two to three cups a day.\nAlcohol: No information provided.\nRecreational drugs: No information provided.\nOccupation: No information provided.\n\n**Family History**\nNo relevant family medical history was documented.\n\n**Objective**\n**Physical Examination**\nGeneral: The patient appears to be in good overall condition.\n\n**Vital Signs**\nBP: No blood pressure was documented.\nHR: No heart rate was documented.\nTemp: No temperature was documented.\nRR: No respiratory rate was documented.\nSpO2: No oxygen saturation was documented.\n\n**Assessment**\nThe patient's primary diagnosis is GERD.\n\n**Plan**\n1. Follow up in six weeks to reassess the patient's response to omeprazole.\n2. If the omeprazole is not working well, further evaluation and treatment will be considered.",
+  "metadata": {
+    "inference_time_s": 7.63,
+    "prompt_tokens": 1463,
+    "tokens_generated": 557,
+    "prompt_tps": 589.4,
+    "tokens_per_sec": 73.0,
+    "peak_memory_gb": 3.69
+  }
+}

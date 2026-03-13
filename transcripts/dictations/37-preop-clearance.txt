@@ -1,0 +1,32 @@
+---
+id: 37
+scenario: Pre-operative clearance for knee surgery
+category: Acute
+density: Medium
+---
+
+So I saw Tom today for a preoperative clearance visit. He's got a right total knee replacement scheduled for March twenty-eighth with Dr. Volkov, and I had the clearance request from Dr. Volkov's office here.
+
+So in terms of the history — Tom's had knee problems for years, been putting it off, but it's gotten to the point where he can barely walk a block. Cortisone shots stopped helping, PT didn't do much, and Dr. Volkov's X-rays showed basically bone-on-bone arthritis. So he's ready to move forward.
+
+His medical history includes hypertension, controlled on losartan; type 2 diabetes on metformin; hyperlipidemia on atorvastatin; and osteoarthritis. He also had a laparoscopic cholecystectomy about twelve years ago — same-day procedure, no complications with anesthesia. No family history of malignant hyperthermia or anesthesia problems. Allergy to sulfa drugs — causes a rash.
+
+Cardiac review of systems: no chest pain, no palpitations, no syncope or presyncope. He does get short of breath walking uphill, but he attributes that to the knee limiting him and being deconditioned. He sleeps with one pillow, no lower extremity edema beyond the knee itself. He had a stress test about five years ago that was normal.
+
+Using the Revised Cardiac Risk Index — he has diabetes, which gives him one point. No history of heart failure, coronary artery disease, stroke, or renal disease. So he's at low to intermediate cardiac risk for a total knee replacement, which is an intermediate-risk surgery. Based on his functional capacity and overall risk profile, I did not feel a preoperative stress test was indicated.
+
+Vitals today: blood pressure one-thirty over seventy-eight, heart rate sixty-eight, oxygen saturation ninety-seven percent, temperature normal. On exam, heart sounds are regular, no murmurs. Lungs are clear.
+
+Medication management discussed in detail. Metformin — hold the morning of surgery, restart after surgery once he's eating normally and kidney function is confirmed. Losartan — hold the morning of surgery as well given the risk of intraoperative hypotension with anesthesia; resume the day after surgery. Atorvastatin — continue as usual, no changes needed.
+
+He's also on a daily baby aspirin and fish oil. Dr. Volkov's office requested he stop both of those seven days before surgery — so that's March twenty-first. He should not resume the aspirin until Dr. Volkov clears him postoperatively.
+
+Additional history worth noting: he's a former smoker, smoked for about fifteen years, quit eight years ago. And importantly, he has obstructive sleep apnea and uses a CPAP machine — he's been on it for about four years. I counseled him to bring his CPAP to the hospital and I'll make sure that's prominently noted in the clearance documentation for the anesthesia team.
+
+For labs, I ordered a CBC, basic metabolic panel, hemoglobin A1C, coagulation studies, and a type and screen. He's going to the lab today after the visit. His last A1C three months ago was seven point one — I want to see where it is now, since elevated blood sugar increases infection risk perioperatively. He says he's been doing well with his diet lately.
+
+I also performed an EKG today as requested by Dr. Volkov's office given his age and diabetes history. EKG showed normal sinus rhythm, no ST changes, no conduction delays. I'll send a copy to Dr. Volkov's office and the anesthesia team along with my clearance note.
+
+I counseled him on the recovery timeline — first two weeks are the toughest, PT starts essentially the day after surgery, most patients feel significantly better by three months, and improvement continues up to about a year. Outcomes for total knee replacement are generally very good.
+
+Bottom line: Tom is cleared for surgery. I'll send the clearance note to Dr. Volkov's office today. He has his instructions — stop aspirin and fish oil March twenty-first, hold metformin and losartan the morning of surgery, bring the CPAP, and call us if anything changes before the twenty-eighth, including any illness or fever.

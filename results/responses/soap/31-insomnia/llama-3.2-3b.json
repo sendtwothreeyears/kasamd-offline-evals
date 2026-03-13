@@ -1,0 +1,14 @@
+{
+  "transcript_id": "31-insomnia",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "generated_note": "**Subjective**\nThe patient has difficulty sleeping, which has been a problem for about four to five months.\n\n**Chief Complaint**\nThe patient's primary reason for visit is difficulty sleeping.\n\n**History of Present Illness**\nThe patient has sleep onset insomnia, getting into bed around 10-10:30 PM but not falling asleep until midnight or later most nights. They lose a good hour to two hours of potential sleep just lying there. Once they're asleep, they say they're generally okay, but staying asleep isn't really the problem, it's the getting there. The pre-bed routine includes watching TV in bed, scrolling on their phone, and sometimes answering work emails in the evening. This is considered classic screen exposure and cognitive activation right before bed.\n\n**Review of Systems**\nConstitutional: No fever, chills, or fatigue mentioned.\nHEENT: No vision, hearing, throat, or nasal symptoms mentioned.\nCardiovascular: No chest pain, palpitations, or edema mentioned.\nRespiratory: No shortness of breath, cough, or wheezing mentioned.\nGastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain mentioned.\nGenitourinary: No urinary symptoms or menstrual history mentioned.\nMusculoskeletal: No joint pain, muscle weakness, or mobility issues mentioned.\nNeurological: No headache, dizziness, numbness, or weakness mentioned.\nPsychiatric: No mood, anxiety, or sleep issues mentioned.\nSkin: No rashes, lesions, or wounds mentioned.\n\n**Past Medical History**\nThe patient has no documented history of chronic conditions or prior diagnoses.\n\n**Medications**\nThe patient is not currently taking any medications.\n\n**Allergies**\nThe patient is not aware of any drug allergies.\n\n**Social History**\nTobacco: No tobacco usage details mentioned.\nAlcohol: No alcohol usage details mentioned.\nRecreational drugs: No recreational drug usage details mentioned.\nOccupation: No job details mentioned.\n\n**Family History**\nThe patient has no documented family medical history.\n\n**Objective**\n**Physical Examination**\nNo physical examination was performed.\n\n**Vital Signs**\nBP: Not documented\nHR: Not documented\nTemp: Not documented\nRR: Not documented\nSpO2: Not documented\n\nGeneral: The patient's overall appearance and condition were not evaluated.\n\n**Assessment**\nThe primary diagnosis is sleep onset insomnia. Secondary diagnoses are not applicable.\n\n**Plan**\n1. Try the sleep hygiene changes and low-dose melatonin consistently for three to four weeks.\n2. If the patient is still struggling after that, they will come back and explore further options.\n3. No medications will be prescribed at this time.",
+  "metadata": {
+    "inference_time_s": 7.51,
+    "prompt_tokens": 1536,
+    "tokens_generated": 540,
+    "prompt_tps": 593.5,
+    "tokens_per_sec": 71.9,
+    "peak_memory_gb": 3.69
+  }
+}

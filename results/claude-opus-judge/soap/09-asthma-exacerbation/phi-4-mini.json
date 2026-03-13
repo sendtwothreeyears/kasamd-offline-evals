@@ -1,0 +1,61 @@
+{
+  "transcript_id": "09-asthma-exacerbation",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "Multiple fabricated details: The ROS includes systems never discussed in the transcript (constitutional, cardiovascular, GI, GU, musculoskeletal, neurological, psychiatric, skin) with negative findings that were never mentioned. Objective exam findings (wheezing, O2 sat, peak flow) were placed in the ROS as subjective findings. The Medications section lists Advair as a current medication when it was newly prescribed. 'Twice daily' rescue inhaler use is a misrepresentation \u2014 the transcript says he used it twice 'just yesterday,' not twice daily.",
+      "flagged_content": [
+        "Constitutional: No fever, chills, fatigue, or weight changes reported.",
+        "Cardiovascular: No chest pain, palpitations, or edema reported.",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain reported.",
+        "Genitourinary: No urinary symptoms or menstrual history provided.",
+        "Musculoskeletal: No joint pain, muscle weakness, or mobility issues reported.",
+        "Neurological: No headache, dizziness, numbness, or weakness reported.",
+        "Psychiatric: No mood, anxiety, or sleep concerns provided.",
+        "Skin: No rashes, lesions, or wounds reported.",
+        "Advair (fluticasone/salmeterol)"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit the section entirely if not mentioned, but the note includes many undiscussed systems. The template parenthetical instruction text '(Only include systems that were discussed. If not mentioned, omit this section entirely)' was literally included in the output. Physical exam findings were not documented despite being present in the transcript. Social History and Family History used 'Not documented' appropriately but the template says to only include Social History items that were mentioned."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing or inadequately captured.",
+      "missed_items": [
+        "Chest tightness as a symptom",
+        "SpO2 97% not documented in vitals or objective",
+        "Bilateral expiratory wheezing worse on right not in objective exam",
+        "Peak flow 380 vs personal best 480 (79%) not in objective",
+        "Spacer prescription and counseling on spacer use",
+        "Mouth rinsing after inhaled steroid counseling",
+        "Counseling about LABA safety concerns in combination inhalers",
+        "Exercise counseling details (2 puffs albuterol 15 min before exercise)",
+        "Return precautions about nighttime symptoms more than once a week or rescue inhaler not lasting 4 hours",
+        "Fluticasone 110 one puff twice daily as prior maintenance therapy",
+        "Patient admitted inconsistency with maintenance inhaler especially over winter"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Physical exam findings are missing from the Objective section despite being documented in the transcript. Vital Signs section is placed after the Physical Examination line instead of before/within it. The template parenthetical instruction was left in the output. Objective exam findings were misplaced into the subjective ROS section."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used for any medications or conditions."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.7,
+      "input_tokens": 3468,
+      "output_tokens": 883
+    }
+  }
+}

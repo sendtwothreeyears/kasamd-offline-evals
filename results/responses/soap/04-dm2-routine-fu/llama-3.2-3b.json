@@ -1,0 +1,14 @@
+{
+  "transcript_id": "04-dm2-routine-fu",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "generated_note": "**Subjective**\nNot documented\n\n**Chief Complaint**\nLinda's primary reason for visit was a diabetes follow-up visit.\n\n**History of Present Illness**\nLinda has been doing well with her diabetes management. Her A1c came back at 6.8, which is right at our target, and she's been keeping up with her home glucose monitoring. Fasting sugars in the mornings are running between 100 and 120, sometimes a little higher after a big dinner, which is reasonable. Postprandial sugars, when she checks them, are generally under 180, sometimes around 160. She's on metformin 1,000 milligrams twice daily and tolerating it well \u2014 no nausea, no diarrhea, as long as she takes it with food.\n\n**Review of Systems**\nConstitutional: Not documented\nHEENT: Not documented\nCardiovascular: Not documented\nRespiratory: Not documented\nGastrointestinal: Not documented\nGenitourinary: Not documented\nMusculoskeletal: Not documented\nNeurological: Not documented\nPsychiatric: Not documented\nSkin: Not documented\n\n**Past Medical History**\nLinda has type 2 diabetes managed with metformin 1,000 milligrams twice daily.\n\n**Medications**\nLinda is currently on metformin 1,000 milligrams twice daily.\n\n**Allergies**\nNot documented\n\n**Social History**\nTobacco: Not documented\nAlcohol: Not documented\nRecreational drugs: Not documented\nOccupation: Not documented\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\n**Vital Signs:**\nBP: Not documented\nHR: Not documented\nTemp: Not documented\nRR: Not documented\nSpO2: Not documented\n\nGeneral: Linda's skin is intact, no ulcers, pulses are good, and sensation is intact on monofilament testing. Everything looks healthy.\n\n**Assessment**\nPrimary diagnosis or clinical impression: Linda's diabetes is well-managed, and she's tolerating her metformin 1,000 milligrams twice daily well.\n\n**Plan**\n1. Continue metformin 1,000 milligrams twice daily.\n2. Recheck the A1c in three months.\n3. Continue home glucose monitoring.\n4. Schedule her annual eye exam again around February.",
+  "metadata": {
+    "inference_time_s": 6.59,
+    "prompt_tokens": 1539,
+    "tokens_generated": 480,
+    "prompt_tps": 582.1,
+    "tokens_per_sec": 72.8,
+    "peak_memory_gb": 3.69
+  }
+}

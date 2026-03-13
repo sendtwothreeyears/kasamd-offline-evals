@@ -1,0 +1,53 @@
+{
+  "transcript_id": "42-ibs",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "RR and SpO2 are listed as 'Normal' but were never mentioned in the transcript. These are fabricated vitals. All other content is supported by the transcript.",
+      "flagged_content": [
+        "RR: Normal",
+        "SpO2: Normal"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "Template instructions in brackets and parentheses are left throughout the note (e.g., '[Patient's primary reason for visit]', '[Chronic conditions and prior diagnoses]', 'Only include items that were mentioned', '[Overall appearance and condition]', etc.). The Review of Systems section includes all template placeholder systems rather than only those discussed. The Social History includes placeholder items not mentioned in the transcript (Tobacco, Alcohol, Recreational drugs) with bracket text."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important items from the transcript are missing: denial of blood in stool/fevers/night sweats/weight loss (pertinent negatives), stable weight at 142 lbs, prior workup details (CBC, CRP, sed rate, celiac panel, TSH, fecal calprotectin, CT abdomen), psychosocial stress details and sleep history, psyllium husk/Metamucil fiber recommendation, loperamide/Imodium instructions, CBT referral details, sleep counseling, Rome IV criteria discussion, and the explanation of IBS as gut-brain interaction.",
+      "missed_items": [
+        "Denial of blood in stool, fevers, night sweats, weight loss",
+        "Weight stable at 142 pounds",
+        "Prior workup: CBC normal, CRP/sed rate normal, celiac panel (tTG) negative, TSH normal, fecal calprotectin normal, CT abdomen normal",
+        "High-stress occupation details (immigration attorney, 5-6 hours sleep, worst flare during trial week)",
+        "Psyllium husk/Metamucil fiber recommendation with titration instructions",
+        "Loperamide/Imodium as needed instructions",
+        "Referral to behavioral health for gut-directed CBT with explanation",
+        "Sleep counseling to aim for 7 hours",
+        "Rome IV criteria met",
+        "No family history of Crohn's or ulcerative colitis"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template bracket/parenthetical instructions are left in the output throughout multiple sections. The Review of Systems lists all template systems with placeholder text instead of only those discussed. Social History includes undiscussed items with placeholder text. The overall structure follows the template sections but is marred by retained instructions."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is used for any medications (dicyclomine, loperamide, eluxadoline, amitriptyline, psyllium, Metamucil) or conditions (IBS, colon cancer)."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 20.89,
+      "input_tokens": 4122,
+      "output_tokens": 776
+    }
+  }
+}

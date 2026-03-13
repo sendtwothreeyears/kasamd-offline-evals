@@ -1,0 +1,44 @@
+---
+id: 41
+scenario: GERD, heartburn, PPI initiation
+category: GI
+density: Sparse
+---
+
+Doctor: Hi there, come on in. What brings you in today?
+
+Patient: Hey, yeah, so I've been having this, um, burning feeling right here in my chest. Like after I eat? It's been going on maybe three weeks now.
+
+Doctor: Okay. And when you say burning, is it like right behind the breastbone area?
+
+Patient: Yeah, exactly. Right in the middle. Sometimes it kind of creeps up into my throat too. I get this sour taste. It's honestly pretty miserable after dinner.
+
+Doctor: I bet. Any particular foods that seem to make it worse?
+
+Patient: Oh, definitely. Spicy stuff, tomato sauce — I had pasta the other night and it was awful. Coffee too, I think. I usually have two or three cups a day.
+
+Doctor: Got it. Any trouble swallowing, or does it feel like food gets stuck?
+
+Patient: No, nothing like that.
+
+Doctor: Any vomiting, or have you noticed any blood in your stool or anything dark and tarry?
+
+Patient: No, no. Nothing like that at all.
+
+Doctor: Good. And any unintentional weight loss recently?
+
+Patient: No, I've been about the same.
+
+Doctor: Alright. So this sounds pretty classic for acid reflux — gastroesophageal reflux disease, or GERD. The good news is we have very effective treatment for this. I'm going to start you on omeprazole, 20 milligrams, once a day. You take it about 30 minutes before breakfast on an empty stomach.
+
+Patient: Okay. How long until it starts working?
+
+Doctor: Most people notice improvement within a few days, but give it a good two weeks for the full effect. I'd also recommend cutting back on the coffee if you can, avoiding those trigger foods you mentioned — the spicy stuff, tomato-based sauces. Try not to eat within two to three hours of lying down. And if you can, elevate the head of your bed a little bit.
+
+Patient: Alright, I can try that. The coffee's gonna be hard but I'll cut down.
+
+Doctor: I know, I hear that a lot. Even going from three cups to one can make a difference. Let's plan to follow up in about six weeks. If the omeprazole is doing the job, great. If not, we'll reassess and maybe look into things further.
+
+Patient: Sounds good. Thanks, Doc.
+
+Doctor: You're welcome. Take care.

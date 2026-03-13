@@ -1,0 +1,57 @@
+{
+  "transcript_id": "04-dm2-routine-fu",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is supported by the transcript. No fabricated findings or diagnoses. 'No known drug allergies' is an acceptable clinical default.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note retains numerous template instructions/placeholders in brackets and parentheses throughout (Review of Systems, Social History, Family History, Vital Signs, Physical Examination, Assessment, Plan sections all contain raw template text). The instructions explicitly state these should not appear in the output. The ROS section was supposed to be omitted entirely if systems were not discussed, yet the full template placeholder text is included. Social History includes placeholder items that were not mentioned.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note is missing numerous key findings: foot exam results (skin intact, no ulcers, pulses good, sensation intact on monofilament), foot care counseling, annual eye exam with Dr. Okafor in February, kidney labs (microalbumin and creatinine normal), nutritionist sessions, dietary changes, exercise habits (water aerobics, gardening), family history of sister losing a toe, and the detailed plan (continue metformin, recheck A1c in 3 months, continue home glucose monitoring, schedule annual eye exam in February, follow-up in 3 months).",
+      "missed_items": [
+        "Foot exam findings (skin intact, no ulcers, pulses good, sensation intact on monofilament testing)",
+        "Foot care counseling (check feet daily, between toes, well-fitting shoes, avoid walking barefoot)",
+        "Sister lost a toe from diabetes complications",
+        "Annual eye exam in February with Dr. Okafor - normal",
+        "Kidney labs normal (microalbumin and creatinine)",
+        "Completed 3 sessions with nutritionist",
+        "Dietary changes (less rice, more vegetables, mindful about treats)",
+        "Water aerobics twice a week at the Y",
+        "Gardening when weather permits",
+        "Plan: recheck A1c in 3 months",
+        "Plan: continue home glucose monitoring",
+        "Plan: schedule annual eye exam around February",
+        "Plan: follow-up in 3 months",
+        "Postprandial sugars sometimes around 160"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "Multiple sections contain raw template placeholders and instructions in brackets/parentheses. The Review of Systems section includes all placeholder systems despite the instruction to omit if not discussed. Social History, Family History, Vital Signs, Physical Examination, Assessment, and Plan sections all retain template instructions verbatim.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 1,
+      "rationale": "Metformin is marked correctly with {{drug:metformin}} syntax, but it is marked twice (in HPI and Medications) instead of first occurrence only. Additionally, 'diabetes mellitus' / 'diabetes' is never marked with {{condition:...}} syntax.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant content duplication detected beyond the repeated metformin entity marking."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.78,
+      "input_tokens": 2967,
+      "output_tokens": 796
+    }
+  }
+}

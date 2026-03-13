@@ -1,0 +1,14 @@
+{
+  "transcript_id": "50-polypharmacy",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nMedication review visit.\n\n**History of Present Illness**\nPatient presented for a medication review, with a total of fourteen active prescriptions. The patient brought all medications in a bag organized by her daughter.\n\n**Review of Systems**\nConstitutional: No reported changes.\nHEENT: No reported changes.\nCardiovascular: Patient reports blood pressure of 118/68.\nRespiratory: No reported changes.\nGastrointestinal: No reported changes.\nGenitourinary: Patient reports urinary urgency and frequency with some incontinence.\n\n**Past Medical History**\nHypertension (managed with metoprolol, lisinopril, and amlodipine).\nHip fracture (history).\n\n**Medications**\nMetoprolol, lisinopril, amlodipine, atorvastatin, metformin, aspirin 81 milligrams, omeprazole, lorazepam, diphenhydramine, zolpidem, oxybutynin, gabapentin, calcium supplement, and a multivitamin.\n\n**Allergies**\nNo known drug allergies.\n\n**Social History**\nNo reported social history details.\n\n**Family History**\nNo reported family history details.\n\n**Objective**\n**Physical Examination**\nPhysical examination not documented.\n\n**Vital Signs**\nBP: 118/68\n\n**Assessment**\nPolypharmacy review. Patient on multiple medications, including sedating agents (lorazepam, zolpidem, diphenhydramine) and anticholinergic medications (oxybutynin, diphenhydramine). Patient has a history of falls and is at increased risk for cognitive decline with long-term use of benzodiazepines and anticholinergics.\n\n**Plan**\n1. **Medication Adjustments:**\n    * Stop diphenhydramine effective today.\n    * Stop aspirin 81 milligrams effective today.\n    * Switch oxybutynin to mirabegron 25 milligrams.\n    * Begin omeprazole taper to every other day then as needed.\n    * Begin lorazepam taper (approximately a quarter dose reduction every two to four weeks) starting in two weeks.\n    * Begin zolpidem taper, one at a time, starting in two weeks.\n    * Reduce amlodipine from 10 milligrams to 5 milligrams at next visit in two weeks after home blood pressure monitoring.\n2. **Monitoring:** Patient to monitor home blood pressure and report any dizziness, confusion, or worsening bladder issues.\n3. **Referral:** Referral to clinic pharmacist for medication therapy management visit within one week.\n4. **Patient Education:** Patient educated on the risks of long-term use of benzodiazepines and anticholinergic medications, including the Beers Criteria and potential for cognitive decline. Patient was reassured that the taper will be slow and that abrupt discontinuation is not planned.\n5. **Follow-up:** Follow-up in two weeks.\n",
+  "metadata": {
+    "inference_time_s": 12.37,
+    "prompt_tokens": 2847,
+    "tokens_generated": 618,
+    "prompt_tps": 660.7,
+    "tokens_per_sec": 49.9,
+    "peak_memory_gb": 3.87
+  }
+}

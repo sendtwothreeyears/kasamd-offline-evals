@@ -1,0 +1,222 @@
+---
+id: 34
+scenario: Adult annual physical, healthy 45yo male
+category: Preventive
+density: Dense
+---
+
+Doctor: Hey there, Kevin. Come on in. It's that time of year again, huh?
+
+Patient: Yep, annual checkup. My wife makes sure I don't skip it.
+
+Doctor: Smart woman. Alright, so before we jump in, anything specific bothering you or any concerns you want to make sure we cover today?
+
+Patient: Not really. I feel pretty good overall. Maybe a little more tired than usual but I figured that's just getting older.
+
+Doctor: We'll talk about that. Let me start by going through your history and making sure everything's up to date. You're forty-five, correct?
+
+Patient: Forty-five in January, yeah.
+
+Doctor: And you're still at the same accounting firm?
+
+Patient: Yep. Senior partner now, so more stress, more hours, same pay. Well, a little more pay.
+
+Doctor: Congratulations on that. Are you married — still with Jennifer?
+
+Patient: Yes, married fifteen years. Two kids — Emma's twelve and Jake's nine.
+
+Doctor: Great. And you're living in the same place?
+
+Patient: Same house, yeah.
+
+Doctor: Let me run through your social history. Do you smoke or have you ever smoked?
+
+Patient: I smoked in college, maybe for two years. Pack a week kind of thing, not heavy. Haven't touched one since I was like twenty-three.
+
+Doctor: Good. Alcohol use?
+
+Patient: A couple beers on the weekend usually. Maybe a glass of wine with dinner once or twice a week. Nothing crazy.
+
+Doctor: So maybe four to six drinks a week?
+
+Patient: That sounds about right.
+
+Doctor: Any recreational drugs?
+
+Patient: No. Tried pot a couple times in college but that's ancient history.
+
+Doctor: Exercise — what's your routine like?
+
+Patient: It's gotten worse. I used to play basketball twice a week with guys from work, but that kind of fell apart. Now I try to walk the dog most mornings, maybe twenty minutes. And I'll get on the Peloton maybe once a week if I'm feeling ambitious.
+
+Doctor: So maybe two to three days a week of moderate activity?
+
+Patient: That's generous, but yeah, somewhere in there.
+
+Doctor: Diet — what does a typical day of eating look like?
+
+Patient: Uh, coffee for breakfast, usually with some cream and sugar. I skip actual breakfast most days. Lunch is usually from the cafeteria at work — I try to get a salad but honestly it's often a sandwich or whatever looks good. Dinner Jennifer cooks, and she's pretty healthy about it. Chicken, vegetables, rice, that kind of thing. My weakness is snacking at night. Chips, crackers, whatever's in the pantry.
+
+Doctor: Sleep — how many hours are you getting?
+
+Patient: Six, maybe six and a half on a good night. I'm usually up late working or watching TV, and the alarm goes off at six.
+
+Doctor: And that's probably related to the fatigue you mentioned. We'll come back to that. Let me go through your family history. I have some from last year but let's update it. Parents?
+
+Patient: Dad is sixty-nine, he had a heart attack at sixty-two. He's doing okay now, on a bunch of medications. Mom is sixty-seven, she has type 2 diabetes, diagnosed maybe ten years ago. High blood pressure too.
+
+Doctor: Siblings?
+
+Patient: One brother, forty-two. He's healthy as far as I know. One sister, forty-eight. She has high cholesterol.
+
+Doctor: Any cancer in the family?
+
+Patient: My mom's dad — my grandpa — had colon cancer. He was in his seventies. And my aunt on my dad's side had breast cancer.
+
+Doctor: Okay, the colon cancer history is relevant for you. We'll talk about screening. Anyone in the family with diabetes besides your mom?
+
+Patient: Her mother had it too. So my maternal grandmother.
+
+Doctor: Got it. Let me do a review of systems. Any headaches?
+
+Patient: Occasional. Tension headaches when I'm stressed. Nothing that Advil doesn't handle.
+
+Doctor: Vision changes?
+
+Patient: I got reading glasses last year. The eye doctor said it's normal for my age.
+
+Doctor: Hearing problems?
+
+Patient: No.
+
+Doctor: Any chest pain, palpitations, shortness of breath?
+
+Patient: No chest pain. I do get a little winded going up stairs faster than I used to, but I figured I'm just out of shape.
+
+Doctor: Cough, wheezing?
+
+Patient: No.
+
+Doctor: Any heartburn, abdominal pain, changes in bowel habits?
+
+Patient: I get heartburn maybe once or twice a month. Usually after spicy food. No belly pain. Bowels are normal.
+
+Doctor: Urinary symptoms? Getting up at night to pee?
+
+Patient: Once a night sometimes. Not every night.
+
+Doctor: Joint pain, muscle aches?
+
+Patient: My right knee gets stiff after the Peloton sometimes. Nothing major.
+
+Doctor: Skin — any new moles, rashes, anything concerning?
+
+Patient: Not that I've noticed. Jennifer would probably know better than me, she's always telling me to wear sunscreen.
+
+Doctor: She's right. Any mood changes, anxiety, depression?
+
+Patient: I get stressed at work but I wouldn't say I'm depressed. I'm generally a pretty even-keeled guy.
+
+Doctor: Sexual health — any concerns? Erectile function?
+
+Patient: No issues there. Everything's working fine.
+
+Doctor: Good. Alright, let me get your vitals and do the exam. So your blood pressure today is one-thirty-two over eighty-four. Heart rate seventy-six. Temperature ninety-eight point four. Respiratory rate fourteen. Oxygen saturation ninety-eight percent. Height five-ten, weight two-oh-six. That puts your BMI at twenty-nine point six.
+
+Patient: Is the blood pressure okay?
+
+Doctor: It's borderline. Stage one hypertension starts at one-thirty over eighty. Last year you were one-twenty-six over seventy-eight, so it's trended up a little. With your family history, this is something to watch. We might not need medication yet — lifestyle changes can make a big difference. Let me do the exam.
+
+Patient: Okay.
+
+Doctor: Starting with your head and neck. Eyes — pupils are equal, round, reactive. Conjunctivae are clear. I'm going to look in your ears... eardrums look normal bilaterally. Nose is clear. Open your mouth — oropharynx looks good, no lesions, tonsils are normal. Thyroid is normal size, no nodules. No lymphadenopathy in the neck, axillae, or groin.
+
+Doctor: Okay, heart — regular rate and rhythm, no murmurs, gallops, or rubs. Lungs are clear to auscultation bilaterally, good air movement. Deep breath for me... good.
+
+Doctor: Abdomen — soft, non-tender, non-distended. No organomegaly. Normal bowel sounds. No masses.
+
+Doctor: Let me check your skin. I'm going to do a quick survey. You've got some sun damage on your forearms and the back of your neck — nothing that looks worrisome but more reason to listen to Jennifer about the sunscreen. I don't see any atypical moles. I'd recommend an annual skin check with a dermatologist though, given your complexion and the sun exposure.
+
+Patient: Yeah, I spent a lot of time at the pool as a kid without sunscreen. Different era.
+
+Doctor: Didn't we all. Musculoskeletal looks good. Full range of motion in your extremities. That right knee has no swelling, no instability, good range of motion. Neurologically you're alert and oriented, cranial nerves are intact, sensation and strength are normal.
+
+Doctor: And I need to do a testicular exam — any lumps or changes you've noticed?
+
+Patient: No, nothing.
+
+Doctor: Testes are normal, no masses, no hernias. Alright, you can relax.
+
+Patient: Do I need a prostate exam?
+
+Doctor: At forty-five, current guidelines don't recommend routine prostate screening. We'll talk about PSA testing when you're around fifty, or sooner if anything changes. Now, let's talk about your labs. I had you do fasting bloodwork last week so I have those results. Your complete blood count is normal. Your fasting glucose is one-oh-four.
+
+Patient: Is that high?
+
+Doctor: It's in the pre-diabetic range. Normal is under one hundred, pre-diabetes is one hundred to one-twenty-five. Given your family history of diabetes — mom and maternal grandmother — this is important. Your hemoglobin A1C is five point seven, which also falls in the pre-diabetes range. That's the three-month average of your blood sugar.
+
+Patient: So I'm going to get diabetes?
+
+Doctor: Not necessarily. Pre-diabetes is a warning sign, not a sentence. Lifestyle changes can prevent or significantly delay progression. We're talking about the exercise we discussed, diet modifications — particularly reducing refined carbs and nighttime snacking — and the weight. If you could lose fifteen to twenty pounds, that would make a huge difference.
+
+Patient: Okay.
+
+Doctor: Your lipid panel — total cholesterol is two-twenty-two. LDL is one-forty-one. HDL is forty-four. Triglycerides are one-eighty-five.
+
+Patient: That doesn't sound great.
+
+Doctor: It's not ideal. Your LDL is elevated, your HDL is a little low — we like to see it above forty but ideally above fifty for cardiovascular protection — and your triglycerides are above normal. Combined with the family history of early heart disease in your dad, the pre-diabetes, and the borderline blood pressure, your cardiovascular risk is something we need to be proactive about. I'm going to calculate your ten-year ASCVD risk score. With your numbers... you're at about eight percent.
+
+Patient: Is that high?
+
+Doctor: It's intermediate. It means we should be aggressive with lifestyle modifications, and if your LDL doesn't come down with diet and exercise in three to six months, we should talk about a statin. Your liver enzymes are normal, kidney function is normal, thyroid is normal.
+
+Patient: Okay, so what do I need to do?
+
+Doctor: Let me put together the plan. Number one — exercise. You need at least a hundred and fifty minutes of moderate-intensity exercise per week. That's thirty minutes, five days a week. The walking and Peloton are great starts, but you need more consistency. Number two — diet. Cut back on the nighttime snacking, reduce processed carbs, increase vegetables and fiber. Even swapping the chips for nuts or hummus would help. Number three — sleep. You need seven hours minimum. The fatigue you're feeling is almost certainly from chronic sleep deprivation.
+
+Patient: That's going to be the hardest one.
+
+Doctor: I know. But it affects everything — your weight, your blood sugar, your blood pressure, your energy. It's the foundation. Now, let's talk screening. The colon cancer — with your grandfather's history, I want you to get a colonoscopy. Current guidelines recommend starting at forty-five for average risk, and you've got a first-degree... well, grandfather is second-degree, but combined with your age, you're due.
+
+Patient: I've been dreading that.
+
+Doctor: The prep is worse than the procedure, and even the prep has gotten better. I'll put in a referral to GI. How about immunizations — when was your last tetanus shot?
+
+Patient: I honestly have no idea.
+
+Doctor: I'll check your records. Looks like your last Tdap was in two thousand fifteen, so you're due for a Td booster. Have you had the flu shot this year?
+
+Patient: No, not yet.
+
+Doctor: Let's do both today. COVID booster — you had the updated one last fall?
+
+Patient: Yeah, in October.
+
+Doctor: Good. Shingles vaccine isn't until fifty, so you've got a few years. Pneumonia vaccine isn't needed yet either. Let me check — hepatitis B series?
+
+Patient: I think I got that as a kid.
+
+Doctor: Yes, I see it in your records. You're covered. Alright, and one more thing — you should know the warning signs of a heart attack and stroke, given your risk factors. Chest pain, pressure, shortness of breath, pain radiating to the arm or jaw — go to the ER, don't wait it out. Same for sudden weakness, speech changes, facial drooping.
+
+Patient: Got it. You're kind of scaring me, doc.
+
+Doctor: I don't mean to scare you. I mean to motivate you. You're forty-five with modifiable risk factors. If we get ahead of this now, you could completely change your trajectory. If we ignore it, you could end up where your dad was at sixty-two. The good news is you have a lot of control here.
+
+Patient: Fair enough. I hear you.
+
+Doctor: Let me summarize. Colonoscopy referral, dermatology referral for skin check, Td booster and flu shot today. Recheck blood pressure in one month — I want another reading before we decide if you need medication. Recheck fasting glucose and lipids in three months after lifestyle changes. Follow up with me in three months to reassess everything.
+
+Patient: Three months, got it.
+
+Doctor: And Kevin — the exercise and diet changes aren't optional here. I know that sounds blunt, but you're at a fork in the road. This is the time to make changes while they're still easy.
+
+Patient: No, I appreciate the honesty. I'll talk to Jennifer about it tonight. She'll be thrilled to have ammunition for getting me off the couch.
+
+Doctor: Ha, I'll let her know she has doctor's orders. Any questions for me?
+
+Patient: I don't think so. Thank you.
+
+Doctor: Alright, I'll see you in three months. The nurse will be in with the shots. Take care.
+
+Patient: Thanks, doc.

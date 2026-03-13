@@ -1,0 +1,62 @@
+{
+  "transcript_id": "05-dm2-elevated-a1c",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "Two major fabrications: (1) 'Tobacco: Robert uses tobacco' \u2014 there is no mention of tobacco use in the transcript. (2) 'Robert has a family history of certain thyroid cancers' \u2014 the transcript explicitly states he does NOT have a history of certain thyroid cancers; the note inverts this and misattributes it as family history. The Constitutional ROS also incorrectly states 'No fatigue mentioned' when fatigue was explicitly reported.",
+      "flagged_content": [
+        "Tobacco: Robert uses tobacco.",
+        "Robert has a family history of certain thyroid cancers.",
+        "Constitutional: No fever, chills, or fatigue mentioned."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit unmentioned systems, but the note includes all systems with 'not mentioned' statements. Vital signs that were not documented should have been omitted per template instructions. The template also says to state 'Not documented' for certain sections, but the note inconsistently handles this."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing: ran out of test strips, missed metformin doses while traveling for work, detailed discussion of insulin (glargine/Lantus/Basaglar) and patient's refusal, father's difficult experience with insulin, semaglutide side effect counseling details (GI effects, pancreatitis risk), insurance/prior authorization discussion, empagliflozin as backup option, ophthalmology referral, foot exam findings (monofilament, pulses), kidney labs (creatinine 1.0, urine microalbumin 45), early diabetic nephropathy discussion, 15-pound weight gain, advice about smaller meals and avoiding fatty foods, and glucose monitoring instructions (fasting and before dinner).",
+      "missed_items": [
+        "Ran out of test strips",
+        "Missed metformin doses while traveling for work",
+        "Detailed insulin discussion (basal insulin glargine, Lantus/Basaglar, 10 units at bedtime)",
+        "Patient's father had difficult experience with insulin",
+        "Patient strongly opposed to insulin",
+        "Semaglutide GI side effects counseling (nausea, vomiting, diarrhea)",
+        "Rare pancreatitis risk",
+        "Sensitive stomach concern and slow titration protocol",
+        "Insurance coverage/prior authorization discussion",
+        "Empagliflozin as backup option",
+        "Ophthalmology referral",
+        "Foot exam findings (monofilament intact, pulses strong, no skin breakdown)",
+        "Kidney labs (creatinine 1.0, urine microalbumin 45)",
+        "Early diabetic nephropathy discussion",
+        "15-pound weight gain",
+        "Smaller meals and avoiding fatty/greasy foods advice",
+        "Glucose monitoring instructions (fasting and before dinner)",
+        "Previous walking routine 3-4 times/week for 30 minutes"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Chief Complaint appears before Subjective content rather than nested under it properly. The ROS includes all systems instead of only discussed ones. The Physical Examination section is largely empty and duplicates ROS content. Vital Signs are placed after the physical exam section rather than within it. Blood pressure is misplaced in the ROS/Cardiovascular section. The objective section structure is disorganized."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted at all \u2014 no {{drug:...}} or {{condition:...}} syntax is present anywhere in the note."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Blood pressure (138 over 86) is documented three times: in ROS Cardiovascular, Physical Examination Cardiovascular, and Vital Signs. The entire ROS system listing is essentially duplicated in the Physical Examination section."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 18.84,
+      "input_tokens": 4102,
+      "output_tokens": 961
+    }
+  }
+}

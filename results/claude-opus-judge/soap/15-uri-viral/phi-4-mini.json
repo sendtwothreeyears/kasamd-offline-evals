@@ -1,0 +1,50 @@
+{
+  "transcript_id": "15-uri-viral",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The ROS section states 'No fever, chills, fatigue, or weight changes reported' under Constitutional, but the patient DID report feeling warm (low-grade fever of 99.1) and feeling generally run down (fatigue). The ROS also states 'No...cough...reported' under Respiratory, but the patient clearly has a cough. Additionally, many ROS systems are listed as negative when they were simply not discussed, which is misleading though not strictly fabricated. The Cardiovascular, GI, GU, Musculoskeletal, Psychiatric, and Skin ROS entries were never discussed.",
+      "flagged_content": [
+        "No fever, chills, fatigue, or weight changes reported",
+        "No shortness of breath, cough, or wheezing reported",
+        "Cardiovascular: No chest pain, palpitations, or edema reported",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain reported",
+        "Genitourinary: No urinary symptoms or menstrual history provided"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template explicitly states for ROS: 'Only include systems that were discussed. If not mentioned, omit this section entirely.' The note includes many undiscussed systems (Cardiovascular, GI, GU, Musculoskeletal, Psychiatric, Skin). Social History was also instructed to 'Only include items that were mentioned' but all items are listed as 'Not documented.' The note also contradicts transcript content in the ROS (denying cough and fatigue)."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "The note misses the patient education about antibiotics (that they are viral, won't help, can cause side effects, and the illness should run its course in 7-10 days). The HPI doesn't fully integrate the cold symptoms well. The scratchy throat and feeling run down are mentioned but the ROS contradicts them.",
+      "missed_items": [
+        "Patient education about antibiotics being inappropriate for viral illness and potential side effects",
+        "Wife suggested antibiotics",
+        "Illness expected to run its course in 7-10 days",
+        "Feeling run down/fatigue is contradicted in ROS as denied"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The overall structure follows the template, but Vital Signs are placed after the General exam findings instead of before them. Physical exam findings (throat, ears) are mixed into the General section rather than being listed under appropriate subsections like HEENT. Social History includes all items as 'Not documented' instead of being omitted per instructions."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Medications like pseudoephedrine, Flonase, dextromethorphan and conditions like viral upper respiratory infection should have been marked with {{drug:...}} and {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.58,
+      "input_tokens": 2832,
+      "output_tokens": 773
+    }
+  }
+}

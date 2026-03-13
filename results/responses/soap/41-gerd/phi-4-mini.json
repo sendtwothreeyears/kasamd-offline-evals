@@ -1,0 +1,14 @@
+{
+  "transcript_id": "41-gerd",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nPatient presenting with burning chest discomfort for three weeks.\n\n**History of Present Illness**\nPatient experiences a burning sensation behind the breastbone and midsternal area, sometimes extending into the throat with a sour taste, notably after dinner. Trigger foods include spicy foods, tomato-based sauces, and coffee (specifically pasta and 2-3 cups of coffee daily).\n\n**Review of Systems**\n(Only include systems that were discussed. If not mentioned, omit this section entirely)\nConstitutional: No fever, chills, fatigue, or weight changes noted.\nHEENT: No vision, hearing, throat, or nasal symptoms reported.\nCardiovascular: No chest pain, palpitations, or edema reported.\nRespiratory: No shortness of breath, cough, or wheezing reported.\nGastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain reported.\nGenitourinary: No urinary symptoms or menstrual history provided.\nMusculoskeletal: No joint pain, muscle weakness, or mobility issues reported.\nNeurological: No headache, dizziness, numbness, or weakness reported.\nPsychiatric: No mood, anxiety, or sleep issues provided.\nSkin: No rashes, lesions, or wounds provided.\n\n**Past Medical History**\nNot documented\n\n**Medications**\nThe patient was started on omeprazole 20 milligrams once daily, taken on an empty stomach 30 minutes before breakfast.\n\n**Allergies**\nNo known drug allergies provided.\n\n**Social History**\n(Only include items that were mentioned)\n- Tobacco: Not discussed\n- Alcohol: Not discussed\n- Recreational drugs: Not discussed\n- Occupation: Not discussed\n\n**Family History**\nNot discussed\n\n**Objective**\nPhysical examination not documented\n\n**Vital Signs:**\nBP: Not documented\nHR: Not documented\nTemp: Not documented\nRR: Not documented\nSpO2: Not documented\n\nGeneral: Not examined\n\n**Assessment**\nPrimary diagnosis is gastroesophageal reflux disease (GERD).\n\n**Plan**\n1. Prescribe omeprazole 20 milligrams once daily, take on an empty stomach 30 minutes before breakfast.\n2. Advise lifestyle modifications: reduce coffee intake, avoid trigger foods, do not eat within two to three hours before lying down, elevate head of the bed.\n3. Follow-up in six weeks to reassess treatment efficacy and discuss further evaluation if needed.",
+  "metadata": {
+    "inference_time_s": 8.09,
+    "prompt_tokens": 1410,
+    "tokens_generated": 488,
+    "prompt_tps": 494.7,
+    "tokens_per_sec": 60.3,
+    "peak_memory_gb": 4.81
+  }
+}

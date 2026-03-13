@@ -1,0 +1,82 @@
+{
+  "transcript_id": "29-anxiety-gad",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The note contains numerous fabricated details not present in the transcript: wheezing, abdominal pain, numbness in hands and feet, weakness, respiratory rate of 20, oxygen saturation of 98%, pulse of 120, a three-minute walk test, chest X-ray, thyroid results being normal (labs were ordered, not resulted), the patient currently taking a benzodiazepine (explicitly not prescribed), drinking more coffee (he actually cut back), drinking more alcohol, and orthostatic hypotension (transcript says mild orthostatic lightheadedness).",
+      "flagged_content": [
+        "wheezing, particularly in his chest",
+        "abdominal pain and difficulty with bowel movements",
+        "numbness in his hands and feet",
+        "weakness",
+        "respiratory rate was 20",
+        "oxygen saturation was 98%",
+        "pulse was 120",
+        "able to perform a three-minute walk without stopping",
+        "A chest X-ray was performed, and the results were normal",
+        "A thyroid function test was performed, and the results were normal",
+        "He has also been taking a benzodiazepine for acute episodes of anxiety",
+        "he has been drinking more coffee than usual",
+        "he has been drinking more alcohol",
+        "orthostatic hypotension"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note fabricates information rather than stating 'Not documented' where appropriate, misrepresents the medications section (listing escitalopram as a current medication when it was newly prescribed), and fails to follow template instructions regarding omitting undiscussed systems and using proper formatting."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "While some key elements are captured (anxiety duration, sleep issues, GI symptoms, escitalopram prescription, CBT referral, follow-up), many important details are missing.",
+      "missed_items": [
+        "GAD-7 score of 17/21",
+        "wife urging him to seek help and the school play anecdote",
+        "teeth grinding and cracked molar/night guard",
+        "tension headaches 3-4 times a week",
+        "prior GI workup with normal endoscopy and colonoscopy",
+        "IBS diagnosis from GI doctor",
+        "Monday morning worsening of GI symptoms",
+        "45 minutes to an hour to fall asleep",
+        "podcast listening habit",
+        "tired but wired description",
+        "hand tremor hidden under table in meetings",
+        "palmar diaphoresis",
+        "work presentation palpitation episode",
+        "denies true panic attacks",
+        "brother on escitalopram",
+        "mother described as always a worrier",
+        "no prior psychiatric treatment",
+        "family culture around mental health",
+        "detailed medication counseling about side effects",
+        "discussion about benzodiazepines and why not first-line",
+        "exercise recommendation of three 30-minute walks",
+        "mindfulness meditation apps",
+        "sleep hygiene counseling including screen time",
+        "alcohol reduction recommendation",
+        "suggestion to loop wife into treatment plan",
+        "white coat hypertension discussion",
+        "SNRIs and buspirone discussed as alternatives"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The note follows the general template structure but has significant issues: vital signs are duplicated in two separate sections, Social History appears twice, the Review of Systems is poorly organized with subjective content mixed in, and the Past Medical History section is missing entirely."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Vital signs (BP 138/86, HR 84) are duplicated across the Physical Examination and a separate Vital Signs section, and Social History appears twice with different content."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 18.13,
+      "input_tokens": 4986,
+      "output_tokens": 917
+    }
+  }
+}

@@ -1,0 +1,80 @@
+---
+id: 48
+scenario: Iron deficiency anemia, fatigue and low hemoglobin
+category: Endocrine/Other
+density: Medium
+---
+
+Doctor: Hi Naomi, thanks for coming in. I know we had you come back sooner than planned because of your lab results. How are you feeling?
+
+Patient: Tired. Like all the time tired. I thought it was just stress or not sleeping enough, but it's gotten to the point where I'm winded going up a flight of stairs. That's not normal for me.
+
+Doctor: No, that's not normal, and your labs help explain it. Your hemoglobin came back at 9.2 — normal for women is around 12 to 16. So you're significantly anemic. Your MCV, which measures the size of your red blood cells, is low at 72, suggesting they're smaller than they should be. That pattern points to iron deficiency.
+
+Patient: Iron deficiency? Really? I mean, I eat pretty well. I think.
+
+Doctor: It's more common than people realize. We also ran iron studies to confirm. Your ferritin — that's your iron stores — is only 6. Normal is above 20 at a minimum, and ideally above 50. Your iron saturation is low too, at 8 percent. So this is a clear-cut iron deficiency anemia.
+
+Patient: Okay. So why is my iron so low?
+
+Doctor: That's the important question. There are a few common causes. First, let me ask about your periods. Are they heavy?
+
+Patient: Um, yeah, actually. They've been heavier the last year or so. I go through like a super tampon every couple hours on my heavy days, and my period lasts about seven days. I've just kind of dealt with it.
+
+Doctor: That's likely the biggest contributor. Losing that much blood monthly depletes your iron stores over time. Have you seen your gynecologist recently about the heavy periods?
+
+Patient: Not in a while. I should probably go.
+
+Doctor: I'd strongly recommend it. They can evaluate for causes like fibroids and discuss treatment options. In the meantime, let me ask about your diet. Do you eat red meat?
+
+Patient: Not really. I was mostly vegetarian for a while, and now I eat chicken and fish but rarely red meat.
+
+Doctor: That's relevant. Red meat is the most bioavailable source of iron — meaning your body absorbs it most efficiently. Plant-based iron is absorbed at a much lower rate. It doesn't mean you need to eat steak every day, but it's part of the picture.
+
+Patient: What about spinach? I eat a lot of spinach. I thought that was high in iron.
+
+Doctor: It is, but plant iron — called non-heme iron — is absorbed at about 2 to 5 percent compared to 15 to 35 percent for heme iron from meat. So you'd have to eat a lot of spinach to equal a small serving of beef. A trick that helps is pairing plant iron with vitamin C — like squeezing lemon on your spinach — which boosts absorption.
+
+Patient: Huh. I had no idea.
+
+Doctor: Now, the other thing we need to consider, especially since you're — how old are you now?
+
+Patient: Thirty-six.
+
+Doctor: Okay, at 36 with heavy periods, the menstrual blood loss is by far the most likely explanation. But I do want to ask — any blood in your stool? Dark or tarry stools? Any abdominal pain or changes in bowel habits?
+
+Patient: No, nothing like that.
+
+Doctor: Good. If you were older, say over 50, or if the iron deficiency didn't correct with treatment, we'd want to look at the GI tract — things like ulcers or polyps that could bleed slowly. For now, with your history, I think we have our answer.
+
+Patient: So what do we do?
+
+Doctor: Two-pronged approach. First, iron supplementation. I'm going to prescribe ferrous sulfate, 325 milligrams, once daily. Take it on an empty stomach if you can tolerate it — it absorbs best that way. Take it with a glass of orange juice for the vitamin C. Avoid taking it with coffee, tea, or calcium supplements because those interfere with absorption.
+
+Patient: My sister said iron supplements upset her stomach.
+
+Doctor: That's the most common side effect. If it bothers you, you can take it with a small amount of food — it won't absorb quite as well but it's better than not taking it at all. It can also cause constipation and dark stools, which is normal and not a reason to worry. The other option is an every-other-day dosing schedule, which some studies suggest is actually better tolerated with similar absorption.
+
+Patient: I'll try the every-day first and see.
+
+Doctor: Sounds good. Second, I want you to see your gynecologist about the heavy periods. Treating the source of the blood loss is just as important as replacing the iron.
+
+Patient: Makes sense.
+
+Doctor: I'd also like you to try to incorporate more iron-rich foods. Lean beef once or twice a week if you're open to it. Fortified cereals, lentils with vitamin C, that kind of thing. And here's one people forget — cooking in a cast iron skillet actually leaches small amounts of iron into food, especially acidic foods like tomato sauce.
+
+Patient: Really? My mom used to cook everything in cast iron.
+
+Doctor: Your mom was onto something. Alright, let's recheck your labs in six to eight weeks. I'd expect the hemoglobin to start climbing within a month or so, but it can take three to six months to fully replenish your iron stores. So don't stop the supplement just because you feel better.
+
+Patient: Okay. How soon should I feel less tired?
+
+Doctor: Many people notice improvement in energy within two to three weeks of starting iron, sometimes sooner. But the full recovery takes time. If in three to four weeks you feel no different at all, call me and we'll reassess.
+
+Patient: Got it. Thanks for explaining all of that. I feel better just knowing what's going on.
+
+Doctor: Of course. We'll get you sorted out. Anything else before you go?
+
+Patient: No, I think that's everything. I'll make that gyno appointment today.
+
+Doctor: Perfect. See you in six to eight weeks.

@@ -1,0 +1,22 @@
+---
+id: 22
+scenario: Acute low back pain from lifting, no red flags, conservative management
+category: Acute
+density: Medium
+---
+
+So I saw Mr. Okonkwo today — he's a 43-year-old gentleman coming in for acute low back pain. He was helping his brother-in-law move furniture four days ago, on Saturday, and felt something pull in his lower back while lifting a dresser. He had to stop and sit down at the time, described it as a sharp pain right across his low back. He tried to continue helping but the pain worsened, so he ended up sitting out the rest of the move.
+
+He describes the pain as across the lower back, bilateral but worse on the right, with radiation into the right buttock and occasionally into the upper thigh — but nothing below the knee. No numbness, no tingling, no weakness, no difficulty lifting the foot, no tripping, no leg buckling. Importantly, no bladder or bowel changes. No fever. He does have a history of occasional mild back soreness with yard work, but nothing like this.
+
+Pain at rest today is about a five or six out of ten, spikes to an eight with transitions like standing up from a chair or getting out of bed in the morning. He's been taking ibuprofen 400 milligrams — two of the 200 milligram tablets — three times a day, and using a heating pad. He says the ibuprofen takes the edge off but doesn't fully relieve it.
+
+On exam, lumbar flexion was limited to about thirty degrees with tightening at that point. Extension was actually better tolerated than flexion. Palpation revealed tenderness at the L4-L5 level and in the right paraspinal muscles, which felt tight and spasmed. Straight leg raise was negative bilaterally — he had hamstring tightness but no reproduction of back pain. Patellar and Achilles reflexes were normal and symmetric bilaterally. Motor strength was intact — foot plantarflexion and dorsiflexion were strong, toe wiggling normal.
+
+So, no red flag symptoms, negative straight leg raise, normal neuro exam. This is consistent with acute mechanical low back strain — muscle and likely ligamentous injury from the lifting incident. No imaging indicated at this time given the absence of red flags and the acute presentation under six weeks.
+
+Plan: I'm bumping his ibuprofen up to 600 milligrams three times a day with food for seven to ten days — a proper anti-inflammatory dose. I counseled him about GI side effects and told him to let me know if his stomach is sensitive. I'm also adding cyclobenzaprine 10 milligrams at bedtime as a short course muscle relaxant — counseled him that it will cause drowsiness, which is intentional to help with sleep and muscle relaxation overnight, and that he should not take it during the day if he needs to drive or operate anything. He does have a desk job, which is helpful.
+
+I counseled him to stay active within his pain tolerance — avoid prolonged bed rest, which slows recovery. Walking and gentle movement are encouraged. He should avoid heavy lifting for the next couple of weeks. I also recommended alternating ice twenty minutes a few times a day in the early phase, then transitioning more to heat, which he's already been using.
+
+Once the acute pain settles, I'd like to get him into physical therapy for core strengthening and body mechanics training to help prevent recurrence. I told him most acute back strains improve significantly in two to four weeks and most people are back to baseline by six weeks. He should follow up in two weeks if he's not improving, and he should return sooner or go to the ER if he develops any new numbness, tingling, weakness in the legs, or any bladder or bowel changes.

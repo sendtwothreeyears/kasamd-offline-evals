@@ -1,0 +1,52 @@
+{
+  "transcript_id": "01-htn-new-dx",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note mentions 'hearing loss' as a denied symptom, which was not discussed in the transcript. Otherwise, content is generally consistent with the transcript.",
+      "flagged_content": [
+        "hearing loss"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The output is not a clinical note at all \u2014 it is a stream-of-consciousness internal monologue repeated dozens of times in <think> tags. It completely ignores the instruction to produce a structured clinical note following the template."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "No structured clinical note was produced. While some transcript content appears scattered in the thinking blocks, there is no actual note output capturing the required clinical information in any usable form.",
+      "missed_items": [
+        "Chief complaint",
+        "HPI details (onset, duration, quality, location, timing)",
+        "Vital signs (BP readings)",
+        "Review of systems",
+        "Past medical history",
+        "Medications",
+        "Allergies",
+        "Assessment/diagnoses",
+        "Plan (labs, lifestyle modifications, follow-up, acetaminophen recommendation, ibuprofen avoidance)",
+        "Patient agreement"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "No template structure was followed whatsoever. The output consists entirely of repeated <think> blocks with no Subjective, Objective, Assessment, or Plan sections."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the output."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The same <think> block content is repeated over 30 times verbatim."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 9.49,
+      "input_tokens": 19943,
+      "output_tokens": 439
+    }
+  }
+}

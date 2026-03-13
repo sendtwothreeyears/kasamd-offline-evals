@@ -1,0 +1,55 @@
+{
+  "transcript_id": "25-headache-migraine",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note states 'Reports fatigue' under Constitutional ROS, but the transcript does not mention fatigue \u2014 only sleep deprivation. The 'Cardiovascular: No reported cardiovascular symptoms' and 'Respiratory: No reported respiratory symptoms' and 'Skin: No reported skin symptoms' sections were not discussed in the transcript and should have been omitted per template instructions. These are minor embellishments.",
+      "flagged_content": [
+        "Constitutional: Reports fatigue.",
+        "Cardiovascular: No reported cardiovascular symptoms.",
+        "Respiratory: No reported respiratory symptoms.",
+        "Skin: No reported skin symptoms."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to 'Only include systems that were discussed' in ROS, but the note includes Cardiovascular, Respiratory, Genitourinary, and Skin sections that were never discussed. The vital signs section lists undocumented vitals rather than omitting them. Family history was placed in Past Medical History section as well as its own section."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured well. However, several details are missing: the aura occurs about half the time, the aura precedes headache by 20-30 minutes, she vomited during two episodes, the headache duration of 6 hours to nearly 2 days, the friend's sumatriptan use and counseling not to do that again, the 4-6 week timeline for amitriptyline effect, the 50% reduction goal, and discussion of propranolol and topiramate as alternatives.",
+      "missed_items": [
+        "Aura occurs about half the time",
+        "Headache duration 6 hours to nearly 2 days",
+        "Vomited during two episodes specifically mentioned",
+        "Used a friend's sumatriptan once and was counseled not to do that again",
+        "Amitriptyline takes 4-6 weeks for full effect",
+        "Goal of at least 50% reduction in frequency",
+        "Propranolol and topiramate discussed as alternative first-line options",
+        "Patient age 34 and occupation as project manager at tech company",
+        "Children ages 2 and 5",
+        "No history of stroke, blood clots, or heart disease"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note generally follows the template structure well. Minor issues include listing vital signs that were not documented (template says 'Only include vitals that were documented'), including ROS systems not discussed, and family history content partially placed in Past Medical History."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Medications (ibuprofen, Excedrin Migraine, sumatriptan, amitriptyline, propranolol, topiramate) and conditions (migraine with aura) should have been marked with {{drug:...}} and {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.69,
+      "input_tokens": 4518,
+      "output_tokens": 768
+    }
+  }
+}

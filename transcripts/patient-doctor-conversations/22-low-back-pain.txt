@@ -1,0 +1,120 @@
+---
+id: 22
+scenario: Acute low back pain from lifting, no red flags, conservative management
+category: Acute
+density: Medium
+---
+
+Doctor: Mr. Okonkwo, come on in. What's going on?
+
+Patient: Hey, Doc. So I was helping my brother-in-law move some furniture on Saturday — four days ago — and I felt something pull in my lower back when I was lifting a dresser. It's been killing me since.
+
+Doctor: Ouch. Were you able to keep going after it happened, or did it stop you in your tracks?
+
+Patient: I kind of had to set it down and sit for a minute. It was a sharp pain, right across my low back. I tried to keep helping but it just got worse, so I ended up sitting on the couch watching everyone else work. Felt pretty useless.
+
+Doctor: No shame in that. Where exactly is the pain?
+
+Patient: It's like across my lower back, both sides but a little worse on the right. And it sort of goes into my right buttock too, like a deep ache.
+
+Doctor: Does it go any further than that? Down the back of your thigh, into your calf, your foot?
+
+Patient: No, it kind of stops at my buttock. Sometimes maybe into the upper thigh a tiny bit, but nothing below the knee.
+
+Doctor: Important question — any numbness or tingling in your legs or feet?
+
+Patient: No.
+
+Doctor: Any weakness? Trouble lifting your foot, tripping over things, legs giving out?
+
+Patient: No, nothing like that.
+
+Doctor: Any changes in your bladder or bowel function? Difficulty urinating, loss of control?
+
+Patient: No, everything's normal there.
+
+Doctor: Good — those are the things I really needed to rule out. Any fever?
+
+Patient: No fever.
+
+Doctor: Have you had back problems before?
+
+Patient: Not really. I mean, I'll get a sore back once in a while if I've been doing a lot of yard work, but nothing like this. This is a whole different level.
+
+Doctor: On a scale of zero to ten, where's the pain right now?
+
+Patient: Sitting here it's maybe a five or six. But when I go to stand up from a chair or get out of bed in the morning, it spikes to like an eight.
+
+Doctor: What have you been doing for it so far?
+
+Patient: I've been taking ibuprofen — two of the 200 milligram ones, maybe three times a day. And I've been using a heating pad. The ibuprofen takes the edge off but it doesn't really fix it.
+
+Doctor: Okay. Let me examine you. Can you stand up for me? I'm going to have you do a few things. First, just try bending forward at the waist — go as far as you comfortably can.
+
+Patient: Ugh... I can get to about there. That's where it tightens up.
+
+Doctor: About thirty degrees of flexion. How about leaning backward?
+
+Patient: That's a little better actually. I can go further back than forward.
+
+Doctor: Now I'm going to press along your spine here — tell me where it's tender. Here?
+
+Patient: No, that's okay.
+
+Doctor: Here?
+
+Patient: Yeah — right there. And a little to the right of center.
+
+Doctor: That's your L4-L5 area, and the paraspinal muscles on the right. They feel pretty tight and spasmed. Go ahead and lie down on the table for me. I'm going to lift your right leg — keep it straight. Tell me if this reproduces your pain.
+
+Patient: It's pulling a little in my hamstring...
+
+Doctor: How about now, at about seventy degrees?
+
+Patient: Just hamstring tightness. No back pain from that.
+
+Doctor: Left side... same thing?
+
+Patient: Yeah, just tight hamstrings. No pain.
+
+Doctor: Great. Negative straight leg raise bilaterally — that's a good sign. Let me check your reflexes. Knees... ankles... both normal and symmetric. Push down on my hand with your foot — good, strong. Now pull your foot up toward you — great. Wiggle your toes — perfect.
+
+Patient: So what's the verdict? Do I need an MRI or something?
+
+Doctor: I know it probably feels like something major is going on in there, but based on your exam, this is what we call a mechanical low back strain — basically, you strained the muscles and possibly some of the ligaments in your low back when you lifted that dresser. The good news is there's no sign of nerve compression. Your strength, sensation, and reflexes are all normal, and the straight leg raise test was negative.
+
+Patient: So no imaging?
+
+Doctor: At this point, no. I know that might be surprising, but for acute low back pain without any red flag symptoms — and you don't have any — imaging in the first six weeks doesn't change what we do and can actually lead to findings that look scary on the image but aren't causing your symptoms. Most people your age — you're forty-two, right?
+
+Patient: Forty-three.
+
+Doctor: Forty-three — most people your age have some degenerative changes on MRI that are completely normal and not causing any pain. Finding those can lead to unnecessary worry or even unnecessary procedures.
+
+Patient: That makes sense, I guess. So what should I do?
+
+Doctor: Let's optimize your pain management first. The ibuprofen is a good start, but I'd bump up the dose to 600 milligrams three times a day with food for the next seven to ten days. That's a therapeutic anti-inflammatory dose. If your stomach is sensitive to it, let me know and we can add something to protect your stomach or switch to a different medication.
+
+Patient: Six hundred, three times a day. Got it.
+
+Doctor: I also want to add a short course of a muscle relaxant — cyclobenzaprine, 10 milligrams at bedtime. It's going to make you drowsy, which is actually a feature, not a bug — it'll help you sleep and let those muscles relax overnight. Don't take it during the day if you need to drive or work.
+
+Patient: I do have to work — I have a desk job, thankfully.
+
+Doctor: That's actually good. One of the worst things you can do with back pain is stay in bed. I know it's tempting, but prolonged bed rest actually slows recovery. Stay active within your pain tolerance. Walk, move around, take breaks from sitting to stretch. Avoid heavy lifting for the next couple weeks, obviously.
+
+Patient: Should I be doing any exercises?
+
+Doctor: Gentle stretching and walking are great right now. Once the acute pain settles down — hopefully within a week or two — I'd like to get you into physical therapy. PT can teach you core strengthening exercises and proper body mechanics that'll help prevent this from happening again.
+
+Patient: Okay, that sounds reasonable.
+
+Doctor: I also want you to alternate ice and heat. Ice for twenty minutes a few times a day during the first couple days, then transition more to heat. The heating pad you've been using is fine.
+
+Patient: How long before I'm back to normal?
+
+Doctor: Most acute back strains improve significantly within two to four weeks, and most people are back to their baseline by six weeks. If you're not seeing improvement in two weeks, come back and we'll reassess. And obviously, if you develop any new symptoms — numbness, tingling, weakness in your legs, any bladder or bowel changes — come in right away or go to the ER. Those would change the picture.
+
+Patient: Alright, Doc. Thanks. I'll try not to help anyone move for a while.
+
+Doctor: Ha — that's probably wise. Take care, Mr. Okonkwo.

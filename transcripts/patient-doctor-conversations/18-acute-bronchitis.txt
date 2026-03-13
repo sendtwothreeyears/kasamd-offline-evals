@@ -1,0 +1,94 @@
+---
+id: 18
+scenario: Acute bronchitis with persistent cough, antibiotics not indicated
+category: Acute
+density: Medium
+---
+
+Doctor: Ms. Hartwell, hi. I see you're here for a cough?
+
+Patient: Yes, this cough will not go away. It's been two weeks now and I'm losing my mind.
+
+Doctor: Tell me how it started.
+
+Patient: I had a cold about three weeks ago — stuffy nose, scratchy throat, the usual. That all cleared up after maybe five or six days, but the cough just... stuck around. It's actually gotten worse if anything.
+
+Doctor: What kind of cough? Dry? Producing anything?
+
+Patient: It was dry at first, now I'm coughing up some stuff. Clear, sometimes yellowish.
+
+Doctor: Any fever?
+
+Patient: No. I checked a few times — always normal.
+
+Doctor: Shortness of breath?
+
+Patient: Not really. I mean, when I'm in the middle of a coughing fit I feel like I can't catch my breath, but between those, no.
+
+Doctor: Any chest pain?
+
+Patient: My ribs are sore from all the coughing. Right here on the sides. But not like a chest pain chest pain, you know?
+
+Doctor: I do — that's muscular from the cough itself. Any wheezing?
+
+Patient: A little bit at night. I can hear it when I breathe out.
+
+Doctor: Do you have a history of asthma?
+
+Patient: No, never. I'm generally pretty healthy. I don't even come to the doctor that often.
+
+Doctor: Do you smoke?
+
+Patient: Never.
+
+Doctor: Anyone at home been sick?
+
+Patient: My husband had the same cold I did, but his went away completely. Mine just turned into this cough.
+
+Doctor: Okay. Let me examine you. Temperature is 98.2, so no fever. Oxygen saturation 99%, which is excellent. Let me listen to your lungs... take some deep breaths... I hear a few scattered rhonchi — those are just upper airway sounds from mucus. No crackles, no consolidation. Your lungs sound good underneath the noise.
+
+Patient: So it's not pneumonia?
+
+Doctor: Based on your exam — normal temperature, normal oxygen, no crackles — I'm not concerned about pneumonia. This is very consistent with acute bronchitis, which is basically inflammation and irritation of the airways after a viral infection. The cold virus irritated your bronchial tubes and they're still recovering.
+
+Patient: But the yellow stuff I'm coughing up — doesn't that mean it's bacterial?
+
+Doctor: That's a really common misconception. Yellow or even green mucus can happen with viral bronchitis — it's from inflammatory cells, not necessarily bacteria. The color alone doesn't mean you need antibiotics.
+
+Patient: My mom told me to come in and get a Z-pack. She swears by them.
+
+Doctor: I understand, and I hear that a lot. But the evidence is really clear that antibiotics don't help acute bronchitis in otherwise healthy people. It's almost always viral. Antibiotics would expose you to side effects — stomach upset, yeast infections, potential allergic reactions — without actually making you better faster.
+
+Patient: So I just have to tough it out?
+
+Doctor: Not exactly. There are things we can do for the cough. First, honey — a tablespoon in warm tea. Studies actually show it works as well as over-the-counter cough suppressants. For nighttime when the cough is bothering you most, dextromethorphan — that's the DM in Robitussin DM — can help you sleep. And for the wheezing, I can prescribe an albuterol inhaler to use as needed. It opens up the airways a bit.
+
+Patient: How long is this going to last? Two weeks already feels like an eternity.
+
+Doctor: So here's the thing most people don't realize — a post-viral cough can last three to six weeks total. I know that sounds awful, but it typically gets gradually better. You're probably at the peak of it now.
+
+Patient: Six weeks? Are you serious?
+
+Doctor: I wish I weren't. But each day should be a little better than the last. The airways just take time to heal. Think of it like a scrape on your skin — it doesn't heal overnight, and every time you cough, it's like re-irritating the area.
+
+Patient: That actually makes sense. What about those cough drops — the menthol ones?
+
+Doctor: Sure, those can soothe the throat and reduce the urge to cough temporarily. And staying well hydrated helps thin out the mucus so it's easier to clear.
+
+Patient: Is there anything that should worry me? Like, when should I come back?
+
+Doctor: Good question. If you develop a fever — anything over 100.4 — that would make me reconsider. Same if you start having real shortness of breath at rest, not just during coughing fits. Coughing up blood — even small streaks. Or if it's not improving at all after four to six weeks total. Any of those and I'd want to see you back, and we might get a chest X-ray at that point.
+
+Patient: Okay. So albuterol inhaler, honey, the Robitussin stuff at night, and patience.
+
+Doctor: That about sums it up. I know it's frustrating. Your body is doing the right thing — coughing to clear the irritation — it's just an uncomfortable process.
+
+Patient: Tell my coworkers that. They keep giving me looks every time I have a coughing fit.
+
+Doctor: Tell them your doctor says you're not contagious — the cold itself has passed. You're just dealing with the aftermath.
+
+Patient: That'll help. Thanks, doctor. I was really expecting antibiotics, but what you're saying makes sense.
+
+Doctor: I appreciate you being open to hearing it. A lot of people aren't. Feel better, Ms. Hartwell. Call us if anything changes.
+
+Patient: Will do. Thank you.

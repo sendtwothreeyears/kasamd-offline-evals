@@ -1,0 +1,41 @@
+{
+  "transcript_id": "14-multimorbid",
+  "template": "soap",
+  "model": "qwen3.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The generated note is entirely the model's thinking/planning process and never produces an actual clinical note. There is no final output to evaluate for hallucination, but the lack of any completed note means it fundamentally failed.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The output is entirely a thinking/reasoning process and does not produce a completed clinical note. The instructions explicitly state to return ONLY the completed note with no preamble or explanations."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "No actual clinical note was generated. The output is only internal reasoning/planning text, so no transcript content was captured in a proper note format.",
+      "missed_items": [
+        "All transcript content \u2014 no note was produced"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "No structured clinical note was output. The entire output is unstructured thinking/planning text rather than a note following the template."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was applied in any final output since no clinical note was produced."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The thinking process contains massive amounts of repeated/duplicated reasoning loops about the Physical Examination section structure."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 9.04,
+      "input_tokens": 20522,
+      "output_tokens": 362
+    }
+  }
+}

@@ -1,0 +1,9 @@
+Model,No Halluc.,Complete,Instruct.,Format,Entities,No Dup.,Overall
+Gemini 2.5 Flash,81%,75%,84%,76%,68%,100%,81%
+Gemma 3n E2B,56%,35%,39%,61%,24%,84%,50%
+MedGemma 4B,53%,48%,28%,44%,3%,88%,49%
+Phi-4 Mini,49%,37%,21%,37%,3%,76%,41%
+Llama 3.2 3B,44%,37%,27%,37%,3%,48%,37%
+MedGemma 1.5 4B,79%,12%,3%,4%,1%,28%,29%
+Llama3 Medical COT,12%,15%,0%,11%,0%,0%,9%
+Qwen 3.5 4B,16%,0%,0%,0%,0%,20%,7%

@@ -1,0 +1,45 @@
+{
+  "transcript_id": "17-strep-pharyngitis",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly stated or reasonably inferred from the transcript. No fabricated findings or embellishments.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 3,
+      "rationale": "The note follows all template instructions: uses 'Not documented' where appropriate, omits social history since it wasn't mentioned (except occupation which was tangentially referenced but correctly omitted as a formal history item), only includes discussed ROS systems, and omits undocumented vitals."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "The note captures nearly all transcript content but misses that the rapid strep test was performed and came back positive (only the diagnosis is listed, not the diagnostic test itself). Also, the prescription being sent to pharmacy is not mentioned.",
+      "missed_items": [
+        "Rapid strep test performed and positive result",
+        "Prescription sent to his pharmacy"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well but is missing the Vital Signs subsection under Objective (temperature of 101+ was reported and could have been listed there), and the Social History section is omitted entirely rather than including occupation-related details (the transcript mentions work). Minor formatting issue: no General finding under Physical Examination."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Entity marking syntax is correct. First occurrences are properly marked for Tylenol, amoxicillin, penicillin, ibuprofen, and streptococcal pharyngitis. However, the second occurrence of 'amoxicillin' in the Plan is marked with {{drug:}} when it should not be (only first occurrence should be marked). Also 'Tylenol' in Plan item 2 is not marked but it was already marked in HPI, so that's correct.",
+      "flagged_content": [
+        "{{drug:amoxicillin}} 500 milligrams"
+      ]
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 12.29,
+      "input_tokens": 2697,
+      "output_tokens": 546
+    }
+  }
+}

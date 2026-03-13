@@ -1,0 +1,14 @@
+{
+  "transcript_id": "01-htn-new-dx",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nHeadaches for approximately one week.\n\n**History of Present Illness**\nPatient reports a dull pressure headache, primarily located in the back of the head, that is worse in the mornings. Denies nausea, visual changes, or photosensitivity.\n\n**Review of Systems**\nConstitutional: Reports no fever or chills.\nCardiovascular: Reports elevated blood pressure.\nNeurological: Reports headache.\n\n**Past Medical History**\nNot documented\n\n**Medications**\nNot documented\n\n**Allergies**\nNot documented\n\n**Social History**\nNot documented\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\n**Vital Signs:**\nBP: 162/98 (right arm), 158/96 (left arm)\nHR: Not documented\nTemp: Not documented\nRR: Not documented\nSpO2: Not documented\n\nGeneral: Patient appears to be alert and oriented.\n\n**Assessment**\nElevated blood pressure, likely contributing to headache.\n\n**Plan**\n1. Baseline labs: kidney function, cholesterol, and other relevant workup.\n2. Follow-up: Return in two weeks for blood pressure recheck.\n3. Antihypertensive medication: Consider if blood pressure remains elevated after two weeks.\n4. Lifestyle modifications: Recommend reducing salt intake, increasing regular exercise (30 minutes of walking daily), and reducing caffeine intake.\n5. Headache management: Recommend acetaminophen as needed. Advise to avoid ibuprofen due to potential for raising blood pressure.\n\n\n\n",
+  "metadata": {
+    "inference_time_s": 6.53,
+    "prompt_tokens": 1462,
+    "tokens_generated": 330,
+    "prompt_tps": 615.1,
+    "tokens_per_sec": 50.6,
+    "peak_memory_gb": 3.82
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "transcript_id": "17-strep-pharyngitis",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems states 'No fever or chills mentioned' under Constitutional, which directly contradicts the transcript where the patient had a fever of 101. The ROS also says 'No vision, hearing, throat, or nasal symptoms mentioned' under HEENT, contradicting the sore throat complaint. Additionally, 'severity is moderate' and 'Onset was sudden' and 'duration is unknown' are fabricated details not in the transcript.",
+      "flagged_content": [
+        "Constitutional: No fever or chills mentioned.",
+        "HEENT: No vision, hearing, throat, or nasal symptoms mentioned.",
+        "severity is moderate",
+        "Onset was sudden",
+        "duration is unknown"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit the section entirely if not mentioned, but the note includes all systems with 'not mentioned' statements. Social History similarly includes items not mentioned, violating the 'only include items that were mentioned' instruction. The template also says to omit vitals not documented, but all undocumented vitals are listed.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "The note misses the contagiousness counseling (contagious until 24 hours on antibiotic, stay home from work tomorrow, return day after), the 24-48 hour improvement timeline, the fact that the prescription was sent to his pharmacy, and the specific allergy information (no known allergy to amoxicillin or penicillin). The fever of 101 is not captured in the HPI or ROS properly.",
+      "missed_items": [
+        "Contagious until 24 hours on antibiotic",
+        "Stay home from work tomorrow, okay to return day after",
+        "Should feel noticeably better within 24-48 hours",
+        "Prescription sent to pharmacy",
+        "No known allergy to amoxicillin or penicillin specifically mentioned",
+        "Denied cough and runny nose should appear in ROS"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Subjective section appears before Chief Complaint, reversing the template order. Vital Signs appear after Physical Examination instead of before it. The ROS includes all systems despite instructions to only include discussed ones. Social History includes all items despite instructions to only include mentioned ones.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. Medications like Tylenol, amoxicillin, ibuprofen and conditions like strep throat, sore throat, submandibular lymphadenopathy should have been marked.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The sore throat complaint and associated symptoms are duplicated across the initial Subjective paragraph, the Chief Complaint section, and the History of Present Illness section with largely redundant content."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.2,
+      "input_tokens": 2934,
+      "output_tokens": 758
+    }
+  }
+}

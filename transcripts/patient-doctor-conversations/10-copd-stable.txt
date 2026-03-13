@@ -1,0 +1,182 @@
+---
+id: 10
+scenario: COPD stable follow-up, spirometry review, comprehensive management
+category: Chronic disease
+density: Dense
+---
+
+Doctor: Good morning, Earl. How are you holding up?
+
+Patient: Oh, can't complain. Well, I can, but nobody listens.
+
+Doctor: Ha. Well, I'm listening today. Let's start with how you've been feeling. Any changes since our last visit three months ago?
+
+Patient: About the same. I still get winded going up stairs. Carrying groceries is tough. But it's not really worse. I mean, it's been like this for a while.
+
+Doctor: Okay. Any coughing?
+
+Patient: Every morning. You know that. That's just my morning routine at this point — wake up, cough for ten minutes, bring up some junk, then I'm okay.
+
+Doctor: What does the sputum look like? Color?
+
+Patient: White. Kind of grayish white. Same as always.
+
+Doctor: No green or yellow? No blood?
+
+Patient: No, nothing like that.
+
+Doctor: Good. Any fevers, chills, night sweats?
+
+Patient: No.
+
+Doctor: Chest pain?
+
+Patient: No.
+
+Doctor: How about your legs — any swelling in the ankles?
+
+Patient: Maybe a tiny bit by the end of the day. My shoes get a little tight. But it goes away overnight.
+
+Doctor: I'll keep an eye on that. Let me check your vitals. Blood pressure is 126 over 76, heart rate 78, respiratory rate 18, and your oxygen saturation is 93 percent on room air.
+
+Patient: Is 93 okay?
+
+Doctor: It's on the lower end of acceptable. Normal is 95 to 100. At your last visit you were 94. So it's been gradually trending down, which I want to monitor. If you get to 88 consistently, we'd talk about supplemental oxygen.
+
+Patient: I don't want to be dragging around an oxygen tank.
+
+Doctor: Let's not get ahead of ourselves. We're not there yet. Now, I have your spirometry results from last week. Let me pull those up. So your FEV1 — that's how much air you can blow out in one second — is 52 percent of predicted. Three months ago it was 55 percent.
+
+Patient: So it's getting worse.
+
+Doctor: It's a small change, and spirometry can vary a little day to day. But the overall trajectory over the past two years has been a slow decline, which is typical for COPD. The goal is to slow that decline as much as possible. Your FEV1 to FVC ratio is 0.58, which confirms moderate to severe obstruction. The post-bronchodilator FEV1 didn't change much — went from 52 to 54 — so not a lot of reversibility, which is consistent with COPD rather than asthma.
+
+Patient: What stage does that put me at?
+
+Doctor: GOLD stage 3, which is severe. But the staging is just one piece — how you function day to day matters more to me. Let me ask you the COPD assessment questions. On a scale of 0 to 5, how much does your breathlessness affect your daily activities?
+
+Patient: I'd say a 3. I have to go slower than people my age. I can't keep up with my grandkids at the park.
+
+Doctor: How many exacerbations have you had in the past year?
+
+Patient: The one in October when I had that bad cold and ended up on prednisone and the Z-pack. That was the only one I think.
+
+Doctor: Right, I see that. One moderate exacerbation requiring oral steroids and antibiotics. You didn't need hospitalization, which is good. Any other times you felt significantly worse?
+
+Patient: There was a week in January where I was coughing more, but it settled on its own. I didn't call.
+
+Doctor: Next time, call. It's better to catch those early. Okay, let me go through your medications. Tell me what you're taking and how you're using each one.
+
+Patient: Alright. I've got the Spiriva — the one I use once a day in the morning. That's the dry powder one. Then I have the Breo, also once a day. And the albuterol for when I need it.
+
+Doctor: Good. So tiotropium — Spiriva Respimat — 2 puffs once daily, fluticasone-vilanterol — Breo Ellipta — 100/25 one puff daily, and albuterol rescue inhaler. How often are you using the albuterol?
+
+Patient: Maybe three, four times a week? Mostly when I'm doing something physical. Sometimes at night if I wake up wheezy.
+
+Doctor: Are you waking up at night often?
+
+Patient: Once a week, maybe. Depends on the weather.
+
+Doctor: Okay. And are you having any issues with the inhalers? Any mouth sores, hoarseness?
+
+Patient: My voice gets a little raspy sometimes. My wife says I sound like I swallowed gravel.
+
+Doctor: That can be from the Breo — the inhaled steroid component. Make sure you're rinsing your mouth out thoroughly after using it. Gargling helps too.
+
+Patient: I do rinse, but maybe I'm not doing it well enough.
+
+Doctor: Really swish and gargle for 30 seconds. Spit, don't swallow. That usually helps. If the hoarseness gets worse, we may need to consider adjusting the steroid component. Now — let me watch you use the Ellipta. Show me your technique.
+
+Patient: Okay. Open the cover, breathe out, put it in my mouth, breathe in deep, hold it.
+
+Doctor: Good. One thing — try to breathe in a little more steadily. You're sort of gasping at it. A slow, deep, steady breath in gets the powder deeper into your lungs. And hold for about 10 seconds at the end if you can.
+
+Patient: I'm not sure I can hold for 10 seconds.
+
+Doctor: Do what you can. Even five seconds is better than nothing. Let me also watch the Spiriva. Good — technique looks fine on that one. Alright, let me listen to your chest. Deep breaths. In and out. Again. And again. Okay — I'm hearing diminished breath sounds bilaterally, which is your baseline. Some scattered expiratory wheezes, no crackles. Your chest is mildly hyperinflated but that's unchanged.
+
+Patient: Same old lungs.
+
+Doctor: Pretty much. Now — Earl, I need to ask. Are you still smoking?
+
+Patient: I'm down to about half a pack a day.
+
+Doctor: When we met a year ago, you were at a pack a day, so you've cut in half. That's progress. But I have to be straight with you — the single most important thing you can do for your COPD is to quit completely. Nothing I prescribe comes close to the benefit of stopping cigarettes.
+
+Patient: I know. Believe me, I know. I've been smoking since I was 16. I'm 68 years old. It's like asking me to stop breathing. Which, I guess, is the problem.
+
+Doctor: I understand. It's an addiction — it's not a character flaw. Have you tried any of the cessation aids? Nicotine patches, gum, the prescription medication?
+
+Patient: I tried the patches years ago. They gave me a rash. Never tried the pills.
+
+Doctor: There's a medication called varenicline — brand name Chantix — that works on the nicotine receptors in the brain. It reduces cravings and makes cigarettes less satisfying if you do smoke. The success rates are the best of any cessation tool — about 30 percent quit rate at one year. I'd like you to think about trying it.
+
+Patient: What are the side effects?
+
+Doctor: The most common ones are nausea — take it with food — and vivid dreams. There used to be concerns about mood changes and depression, but the large safety studies didn't confirm that. I'd feel comfortable prescribing it for you. You start it one to two weeks before your quit date.
+
+Patient: I'll think about it. I'm not saying no.
+
+Doctor: That's all I ask. And the VA has a tobacco cessation program with counseling support. I can refer you if you're interested. Combining medication with counseling gives the best results.
+
+Patient: Let me chew on it.
+
+Doctor: Okay. Let me also go through some other management items. Vaccinations — did you get your flu shot this fall?
+
+Patient: Yeah, I got that at the pharmacy in October.
+
+Doctor: Good. COVID booster?
+
+Patient: I got the updated one back in September.
+
+Doctor: Okay. And the pneumonia vaccines — let me check. You had the Prevnar 20 last year. That's good, you're up to date. RSV vaccine — have you had that? The new one that came out?
+
+Patient: No, nobody's mentioned that.
+
+Doctor: It's recommended now for adults 60 and older, especially with chronic lung disease. It's a one-time shot. I'd like to give it to you today if you're willing.
+
+Patient: Sure, one more shot won't kill me.
+
+Doctor: Great, we'll do that before you leave. Now — pulmonary rehabilitation. We talked about this last time. Have you looked into it?
+
+Patient: I called the place you mentioned. They said my insurance covers 36 sessions. But I haven't started yet. The drive is 30 minutes each way.
+
+Doctor: I hear you on the drive. But pulmonary rehab is one of the most evidence-based treatments for COPD. It improves exercise capacity, reduces shortness of breath, and even reduces hospitalizations. It's supervised exercise and education. People who do it feel significantly better.
+
+Patient: The grandkids thing is motivating me. I want to be able to play with them without having to sit down every five minutes.
+
+Doctor: That's the best motivation there is. I'd really encourage you to start. Even if the drive is a pain, think of it as three months of investment for a real improvement in your quality of life.
+
+Patient: Alright. I'll sign up this week.
+
+Doctor: I'm going to hold you to that. Now — the ankle swelling you mentioned. Let me take a look. Mild bilateral pitting edema, maybe 1 plus. Heart sounds are regular, no murmur, no extra sounds. Your JVP looks normal. Given your COPD, I want to make sure we're not seeing early right-sided heart strain. I'm going to order an echocardiogram to check your heart function and specifically look at the right side and pulmonary pressures.
+
+Patient: Is that the ultrasound of the heart?
+
+Doctor: Exactly. Non-invasive, no needles. We'll schedule it in the next couple of weeks. And I want a set of labs — CBC, BMP, and a BNP to check for any heart failure markers.
+
+Patient: Okay.
+
+Doctor: I'm also going to order a six-minute walk test when you do pulmonary rehab. That gives us an objective measure of your exercise capacity that we can track over time.
+
+Patient: So what's the game plan? I'm on a lot of stuff.
+
+Doctor: Let me summarize. Continue all current inhalers — Spiriva, Breo, albuterol rescue — with the technique adjustments we discussed. Consider varenicline for smoking cessation — take your time but let me know. Start pulmonary rehab — call this week. We'll get the echocardiogram and labs scheduled. RSV vaccine today. And I want to see you back in three months, or sooner if you have any worsening symptoms. If your sputum turns green, if you're more short of breath than usual, if you develop a fever — call us right away. Don't wait. Early treatment of exacerbations keeps you out of the hospital.
+
+Patient: Got it.
+
+Doctor: One more thing — do you have a COPD action plan? A written plan for what to do if you start getting worse?
+
+Patient: I don't think so.
+
+Doctor: I'm going to give you one. It's a simple color-coded sheet — green zone is your normal, yellow zone is when to increase rescue inhaler and call us, red zone is when to go to the emergency room. Keep it on the fridge.
+
+Patient: Like a traffic light.
+
+Doctor: Exactly. Alright, Earl. You're doing okay. I know it's frustrating to deal with all of this, but you're engaged, you're showing up, and you're making progress with the smoking. That matters.
+
+Patient: Thanks, doc. I appreciate you not just yelling at me about the cigarettes.
+
+Doctor: Yelling doesn't work. Partnering does. Let's get that RSV shot and get you out of here. See you in three months.
+
+Patient: Sounds good. Thanks.

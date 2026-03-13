@@ -1,0 +1,14 @@
+{
+  "transcript_id": "15-uri-viral",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nA three-day history of a cold \u2014 runny nose, nasal congestion, and a cough that started yesterday.\n\n**History of Present Illness**\nPatient reports a three-day history of cold symptoms including runny nose, nasal congestion, and a cough that began yesterday. Patient reported feeling a little warm on Monday, with a temperature of 99.1\u00b0F at home, but states his temperature has been normal since then. Patient also has a mild scratchy throat, not painful, and feels generally run down. Patient denies significant body aches or headache.\n\n**Review of Systems**\nConstitutional: [Fever, chills, fatigue, weight changes]\nHEENT: [Vision, hearing, throat, nasal symptoms]\nCardiovascular: [Chest pain, palpitations, edema]\nRespiratory: [Shortness of breath, cough, wheezing]\nGastrointestinal: [Nausea, vomiting, diarrhea, abdominal pain]\nGenitourinary: [Urinary symptoms, menstrual history]\nMusculoskeletal: [Joint pain, muscle weakness, mobility issues]\nNeurological: [Headache, dizziness, numbness, weakness]\nPsychiatric: [Mood, anxiety, sleep]\nSkin: [Rashes, lesions, wounds]\n\n**Past Medical History**\n[Chronic conditions and prior diagnoses]\n(If not documented, state \"Not documented\")\n\n**Medications**\n[Current medications with dosages]\n(If not documented, state \"Not documented\")\n\n**Allergies**\n[Drug allergies and reactions]\n(If not documented, state \"No known drug allergies\" or \"Not documented\")\n\n**Social History**\nTobacco: [Usage details]\nAlcohol: [Usage details]\nRecreational drugs: [Usage details]\nOccupation: [Job details]\n(Only include items that were mentioned)\n\n**Family History**\n[Relevant family medical history]\n(If not documented, state \"Not documented\")\n\n**Objective**\n**Physical Examination**\n**Vital Signs:**\nBP: [Blood pressure]\nHR: [Heart rate]\nTemp: [Temperature]\nRR: [Respiratory rate]\nSpO2: [Oxygen saturation]\n(Only include vitals that were documented)\n\nGeneral: [Overall appearance and condition]\n(Only document examination findings that were explicitly mentioned. If no physical exam was performed, state \"Physical examination not documented\")\n\n**Assessment**\n[Primary diagnosis or clinical impression]\n[Secondary diagnoses if applicable]\n\n**Plan**\n1. [Diagnostic workup - labs, imaging, referrals]\n2. [Therapeutic interventions - medications, procedures]\n3. [Patient education and counseling provided]\n4. [Follow-up instructions]\n(Only include plan elements that were specifically discussed)\n\n---",
+  "metadata": {
+    "inference_time_s": 11.29,
+    "prompt_tokens": 1475,
+    "tokens_generated": 586,
+    "prompt_tps": 290.4,
+    "tokens_per_sec": 51.9,
+    "peak_memory_gb": 3.29
+  }
+}

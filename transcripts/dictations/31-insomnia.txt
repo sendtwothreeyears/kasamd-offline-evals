@@ -1,0 +1,18 @@
+---
+id: 31
+scenario: Chronic insomnia, sleep hygiene discussion
+category: Mental health
+density: Sparse
+---
+
+So I saw this patient today who came in with a chief complaint of difficulty sleeping. They've been dealing with this for about four to five months, maybe longer — they said it kind of crept up on them gradually.
+
+The main issue is sleep onset insomnia. They're getting into bed around ten, ten-thirty, but not actually falling asleep until midnight or later most nights. Alarm goes off at six-fifteen for work. So they're losing a good hour to two hours of potential sleep just lying there. Once they're asleep, they say they're generally okay — staying asleep isn't really the problem, it's the getting there.
+
+When I asked about their pre-bed routine, they described watching TV in bed, scrolling on their phone, and sometimes answering work emails in the evening. So there's pretty classic screen exposure and cognitive activation right before bed.
+
+I went ahead and counseled them on sleep hygiene. We talked about no screens for at least thirty minutes before bed, ideally an hour, and keeping the bed for sleep only — no TV, no phone, no laptop in bed. I also reviewed stimulus control — if they're not asleep within twenty minutes, get up, go to another room, do something low-key, and return to bed only when drowsy.
+
+They asked about melatonin. I said it can be helpful for sleep timing and recommended a low dose — half a milligram to one milligram — taken about an hour before their target bedtime. I specifically counseled them that higher doses aren't better and that the evidence supports lower doses. They mentioned their coworker takes ten milligrams, so I made sure to address that.
+
+Plan is to try the sleep hygiene changes and low-dose melatonin consistently for three to four weeks. If they're still struggling after that, they'll come back and we'll explore further options. No medications prescribed at this time.

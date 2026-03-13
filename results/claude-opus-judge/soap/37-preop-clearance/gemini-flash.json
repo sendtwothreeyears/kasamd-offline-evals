@@ -1,0 +1,45 @@
+{
+  "transcript_id": "37-preop-clearance",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note describes the patient as 'a male' in the Assessment, which is not explicitly stated in the transcript (though 'Tom' and 'he/him' pronouns make it a reasonable inference). The note also states 'Mr. Tom' which adds a title not in the transcript. Marking 'malignant hyperthermia' as a condition entity is slightly misleading since it was denied in family history, but the content itself is accurate. Overall very minor embellishments.",
+      "flagged_content": [
+        "Patient is a male presenting for preoperative clearance"
+      ]
+    },
+    "instruction_following": {
+      "score": 3,
+      "rationale": "The note follows all template instructions well. Systems not discussed are omitted from ROS. Items not documented (like alcohol, recreational drugs, occupation) are appropriately excluded. No template instruction text appears in the output."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "The note captures nearly all transcript content. However, it omits the detail that the last A1C three months ago was 7.1 and the rationale about elevated blood sugar increasing perioperative infection risk, as well as the patient's statement about doing well with his diet lately.",
+      "missed_items": [
+        "Last A1C three months ago was 7.1",
+        "Elevated blood sugar increases infection risk perioperatively",
+        "Patient reports doing well with diet lately"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well overall. Minor issue: the Chief Complaint section contains HPI-level detail (history of knee problems, cortisone shots, PT, X-ray findings) that should be in HPI only. The EKG findings are placed in Assessment rather than Objective, which is a minor placement issue."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Entity marking syntax is correct and first-occurrence-only is generally followed. However, 'malignant hyperthermia' is marked as a condition even though it was denied in family history (debatable but acceptable). 'Sulfa drugs' in Allergies is marked as a drug, which is correct. Conditions and drugs are appropriately identified. Minor issue: CPAP is not a drug or condition so correctly not marked."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 27.67,
+      "input_tokens": 3983,
+      "output_tokens": 608
+    }
+  }
+}

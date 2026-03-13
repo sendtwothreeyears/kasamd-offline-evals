@@ -1,0 +1,80 @@
+---
+id: 06
+scenario: Hyperlipidemia, statin initiation discussion
+category: Chronic disease
+density: Medium
+---
+
+Doctor: Afternoon, James. So we've got your lipid panel results back — want to go over them?
+
+Patient: Yeah, please. I've been a little nervous about it, honestly.
+
+Doctor: Well, let's look at the numbers. Your total cholesterol is 258, LDL — that's the bad cholesterol — is 172, HDL — the good one — is 44, and triglycerides are 210.
+
+Patient: That sounds... not great?
+
+Doctor: It's definitely elevated. We like to see LDL under 100, ideally under 130 at minimum for most people. And HDL we want above 40, so you're just barely there. Triglycerides above 150 is high.
+
+Patient: Is that genetic? My brother's on cholesterol medication.
+
+Doctor: It can be. There's definitely a familial component. But diet and activity level play a role too. Tell me about your typical diet.
+
+Patient: I mean, I eat okay. I could probably eat less red meat. We grill out a lot. And I love cheese — I put cheese on everything.
+
+Doctor: Ha, you and most of America. And exercise?
+
+Patient: I play golf on weekends. That's about it during the week — I'm at a desk all day.
+
+Doctor: Okay. So here's the thing — I ran your ten-year cardiovascular risk score, which takes into account your age, blood pressure, cholesterol, and other factors. You're 54, male, your blood pressure today is 134 over 82, and you don't have diabetes. Your ten-year risk comes out to about 12 percent.
+
+Patient: Is that high?
+
+Doctor: It's in the borderline to intermediate range. The guidelines say that above 7.5 percent, we should have a conversation about statins. Above 20 percent, it's a strong recommendation. You're in that gray zone where the evidence supports starting one, but it's a conversation, not a mandate.
+
+Patient: I've heard bad things about statins. My buddy says they destroyed his muscles.
+
+Doctor: That's the most common concern people have. So let me give you the real numbers. About 5 to 10 percent of people on statins experience some degree of muscle aching. It's usually mild and goes away if we switch to a different statin or adjust the dose. True muscle damage — like rhabdomyolysis — is extremely rare, less than 1 in 10,000.
+
+Patient: What about the liver?
+
+Doctor: We used to worry about that more, but the data shows serious liver problems are also very rare. We don't even routinely monitor liver enzymes anymore unless you have symptoms. The benefits of statins in someone with your risk profile — they reduce heart attack and stroke risk by 25 to 35 percent. That's significant.
+
+Patient: Hmm. What statin would you put me on?
+
+Doctor: I'd start with atorvastatin 20 milligrams — that's a moderate intensity statin. Take it at night. We'd recheck your lipids in about 6 to 8 weeks to see the response.
+
+Patient: And if I get the muscle pain?
+
+Doctor: Call me. We'll either lower the dose, try a different statin like rosuvastatin, or discuss alternatives. I won't force you to stay on something that's making you miserable.
+
+Patient: Can I try diet first?
+
+Doctor: You absolutely can, and I'd encourage dietary changes regardless. Cut back on saturated fats — that's the red meat, cheese, butter, fried food. Add more fish, nuts, olive oil, fiber. Exercise more — aim for 150 minutes a week of moderate activity. Those changes can drop LDL by maybe 10 to 15 percent in a good scenario.
+
+Patient: So it wouldn't be enough on its own?
+
+Doctor: With an LDL of 172, probably not to get you to goal. But it would help. Some people try lifestyle for three months and then we recheck. If it's not enough, we add the statin.
+
+Patient: I think I'd rather try that first. Give me three months.
+
+Doctor: I'm okay with that, as long as you're committed to actually making the changes. And I want to recheck in three months — not six, not a year.
+
+Patient: Fair enough. Three months. I'll cut the cheese.
+
+Doctor: Ha. Well, you don't have to eliminate it — just moderate it. And get moving more than just the golf cart on weekends.
+
+Patient: Ouch. Fair point.
+
+Doctor: I'll also say — the triglycerides respond really well to cutting alcohol and refined sugars. How much are you drinking?
+
+Patient: A beer or two most nights. More on weekends.
+
+Doctor: Cutting that back would help the triglycerides significantly. Even going to weekends only would make a difference.
+
+Patient: I can try.
+
+Doctor: Alright. So the plan — aggressive lifestyle modifications for three months, then recheck lipid panel. If we're not where we need to be, we start the statin. In the meantime, I'll send you some resources on heart-healthy eating. Sound good?
+
+Patient: Sounds good. I'll give it my best shot.
+
+Doctor: That's all I ask. See you in three months.

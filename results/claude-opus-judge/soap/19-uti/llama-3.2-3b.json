@@ -1,0 +1,56 @@
+{
+  "transcript_id": "19-uti",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems fabricates multiple negative findings (HEENT, Cardiovascular, Respiratory, Musculoskeletal, Neurological, Psychiatric, Skin) that were never discussed in the transcript. The Social History fabricates 'No usage details' entries for tobacco, alcohol, recreational drugs, and occupation, which were never mentioned. 'She appeared well' in the physical exam is not documented in the transcript.",
+      "flagged_content": [
+        "HEENT: No vision, hearing, throat, nasal symptoms.",
+        "Cardiovascular: No chest pain, palpitations, edema.",
+        "Respiratory: No shortness of breath, cough, wheezing.",
+        "Musculoskeletal: No joint pain, muscle weakness, mobility issues.",
+        "Neurological: No headache, dizziness, numbness, weakness.",
+        "Psychiatric: No mood, anxiety, sleep.",
+        "Skin: No rashes, lesions, wounds.",
+        "Tobacco: No usage details.",
+        "Alcohol: No usage details.",
+        "Recreational drugs: No usage details.",
+        "Occupation: No job details.",
+        "General: She appeared well."
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template explicitly instructs to only include ROS systems that were discussed and to omit the section if not mentioned, but the note includes all systems with fabricated negatives. Social History should only include items that were mentioned, but all items are listed with 'No usage details.' The template says to omit vitals not documented, but all are listed as 'Not documented.'"
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most key transcript content is captured including symptoms, onset, hematuria, dipstick results, treatment, counseling, and return precautions. However, the dipstick findings (positive leukocyte esterase, positive nitrites, trace blood) are not explicitly documented in the objective section, and the electronic prescription detail is missing.",
+      "missed_items": [
+        "Dipstick results: positive leukocyte esterase, positive nitrites, trace blood",
+        "Prescription sent electronically to pharmacy",
+        "Concern that worsening symptoms could indicate infection spread to kidneys"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Subjective section appears before Chief Complaint, reversing the template order. Prior UTI history is placed in the Genitourinary ROS instead of Past Medical History (though it is also in PMH). Vital Signs are listed after Physical Examination instead of before. Multiple sections that should have been omitted per template instructions are included."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used for medications like nitrofurantoin/Macrobid or conditions like UTI."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The burning with urination and urinary urgency symptoms are duplicated between the Subjective section and the History of Present Illness. The prior UTI history is duplicated between the Genitourinary ROS and Past Medical History."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.0,
+      "input_tokens": 2907,
+      "output_tokens": 784
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "transcript_id": "04-dm2-routine-fu",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nDiabetes follow-up visit.\n\n**History of Present Illness**\nPatient reports being on {{drug:metformin}} 1,000 milligrams twice daily and tolerating it well. Fasting sugars are between 100 and 120, sometimes a little higher after a big dinner. Postprandial sugars are generally under 180, sometimes around 160.\n\n**Review of Systems**\nConstitutional: No reported fever or chills.\nHEENT: No reported visual changes.\nCardiovascular: No reported palpitations.\nRespiratory: No reported shortness of breath.\nGastrointestinal: Tolerating {{drug:metformin}} well; no nausea or diarrhea.\nGenitourinary: No reported urinary symptoms.\nMusculoskeletal: No reported joint pain.\nNeurological: No reported numbness or weakness.\nPsychiatric: No reported mood changes.\nSkin: Skin is intact.\n\n**Past Medical History**\nDiabetes Mellitus\n\n**Medications**\n{{drug:metformin}} 1,000 milligrams twice daily\n\n**Allergies**\nNo known drug allergies\n\n**Social History**\nNot documented\n\n**Family History**\nSister experienced toe loss due to diabetes complications.\n\n**Objective**\n**Physical Examination**\n**Vital Signs:**\nBP: Not documented\nHR: Not documented\nTemp: Not documented\nRR: Not documented\nSpO2: Not documented\n\nGeneral: Patient appears well.\n\n**Assessment**\nDiabetes Mellitus, well-controlled on {{drug:metformin}} 1,000 milligrams twice daily. A1c is 6.8.\n\n**Plan**\n1. Continue {{drug:metformin}} 1,000 milligrams twice daily.\n2. Recheck A1c in three months.\n3. Continue home glucose monitoring.\n4. Schedule annual eye exam around February.\n5. Continue counseling on foot care, including daily foot checks, wearing well-fitting shoes, and avoiding barefoot exposure.\n6. Continue encouraging balanced plate intake and mindful treat consumption.\n7. Continue encouraging water aerobics twice a week and regular gardening.\n",
+  "metadata": {
+    "inference_time_s": 9.13,
+    "prompt_tokens": 1566,
+    "tokens_generated": 460,
+    "prompt_tps": 661.7,
+    "tokens_per_sec": 50.4,
+    "peak_memory_gb": 3.82
+  }
+}

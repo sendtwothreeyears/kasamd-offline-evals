@@ -1,0 +1,136 @@
+---
+id: 42
+scenario: IBS, chronic abdominal pain workup
+category: GI
+density: Dense
+---
+
+Doctor: Good morning, Priya. How are you doing today?
+
+Patient: Honestly? Not great. My stomach has just been a wreck for months and I'm kind of at the end of my rope with it.
+
+Doctor: I'm sorry to hear that. Let's dig into this. Tell me what's been going on.
+
+Patient: So it started — I want to say maybe seven or eight months ago? I keep getting these cramps, like lower belly, mostly on the left side. And then some days I have diarrhea, like three or four loose stools, and then other days I'm completely backed up and can't go for two or three days. It just alternates. There's no pattern I can figure out.
+
+Doctor: That sounds really frustrating. When you get the cramping, how would you rate the pain on a scale of one to ten?
+
+Patient: It depends. Sometimes it's like a four or five, just kind of nagging. But when it's bad, it's a seven easily. It'll double me over sometimes.
+
+Doctor: And does anything seem to bring on the pain or make it better?
+
+Patient: Eating usually makes it worse. And then — this is kind of embarrassing — but passing gas or having a bowel movement actually helps. Like the pain eases up after.
+
+Doctor: That's actually a very helpful detail, and nothing to be embarrassed about. What about the bloating? You mentioned that to the nurse.
+
+Patient: Oh, the bloating is constant. By the end of the day I look like I'm six months pregnant. I'll put on jeans in the morning and by 3 PM I can barely button them. It's awful.
+
+Doctor: I can imagine. Let me ask about some specific foods. Do you notice it's worse with dairy?
+
+Patient: Maybe? I've kind of tried cutting out milk but I wasn't very systematic about it. Cheese didn't seem to bother me as much. But like, onions and garlic — those definitely set me off. And beans, forget about it.
+
+Doctor: What about wheat or bread products?
+
+Patient: I've wondered about that. Bread does seem to make the bloating worse but I'm not sure if it's gluten or just, you know, carbs in general.
+
+Doctor: Fair point. We'll come back to the dietary piece. Let me ask some other things first. Any blood in your stool?
+
+Patient: No, never.
+
+Doctor: Any fevers, night sweats, or weight loss?
+
+Patient: No fevers. No night sweats. My weight's been stable — I'm around 142, which is what I usually am.
+
+Doctor: Family history — anyone with inflammatory bowel disease, Crohn's, ulcerative colitis? Colon cancer?
+
+Patient: My uncle had colon cancer but he was in his 70s. Nobody with Crohn's or anything like that that I know of.
+
+Doctor: How old are you now, Priya?
+
+Patient: Thirty-one.
+
+Doctor: Okay. And tell me about your stress levels. How are things going at work, at home?
+
+Patient: I mean... yeah. Work has been really intense. I'm an immigration attorney and my caseload has been insane. I bring work home every night. I don't sleep well. I'm probably averaging five or six hours. My husband keeps telling me I need to slow down but it's not really an option right now.
+
+Doctor: And you've noticed the stomach issues are worse during high-stress periods?
+
+Patient: Absolutely. The week I had a trial, it was the worst it's ever been. I was running to the bathroom between sessions.
+
+Doctor: That tracks with what I'm thinking. Let me review what we've already done workup-wise. You had labs drawn last month — your CBC was completely normal, no anemia. Your CRP and sed rate were both normal, which argues against an inflammatory process. Your celiac panel — the tissue transglutaminase antibody — was negative. And your TSH was normal.
+
+Patient: Right, and I had that stool test too.
+
+Doctor: Yes, the fecal calprotectin. That was normal as well, which is reassuring because when that's elevated it can point toward inflammatory bowel disease. And you had a CT of the abdomen about three months ago?
+
+Patient: Yeah, my old doctor ordered it because I was so worried. It was normal.
+
+Doctor: Good. So we've done a pretty thorough workup and everything has come back reassuring. Based on your symptoms — the abdominal pain that improves with defecation, the change in stool frequency and form, the bloating, the duration of over six months, and the normal workup — this fits the criteria for irritable bowel syndrome. Specifically the Rome IV criteria, which is what we use to diagnose IBS.
+
+Patient: So it's just IBS? I mean, I know that's a real thing but it feels like such a... I don't know, like a catch-all diagnosis.
+
+Doctor: I understand that feeling, and you're not the first person to say that. But IBS is a real, well-defined condition. It's a disorder of gut-brain interaction — basically, your gut and your nervous system aren't communicating well, and stress amplifies that miscommunication. It's not that nothing is wrong; it's that the problem is functional rather than structural.
+
+Patient: Okay. So what do we actually do about it?
+
+Doctor: Several things, and we'll layer them. First, diet. I want to talk about the low-FODMAP approach. FODMAP stands for fermentable oligosaccharides, disaccharides, monosaccharides, and polyols — basically certain types of carbohydrates that are poorly absorbed and get fermented in the gut, causing gas and bloating. The foods you mentioned — onions, garlic, beans — those are all high-FODMAP foods.
+
+Patient: So I'd cut all of those out?
+
+Doctor: For a period of time, yes. The way it works is a strict elimination phase for about four to six weeks, and then you systematically reintroduce foods one category at a time to figure out which ones are your specific triggers. Not everyone reacts to every FODMAP group. I'm going to refer you to our dietitian, Sarah Park — she's excellent with this and can walk you through it step by step. It's much more manageable with guidance.
+
+Patient: Okay, I'd appreciate that. I tried doing an elimination diet on my own from stuff I read online and it was overwhelming.
+
+Doctor: It really is hard to do alone. The other dietary thing — I'd like you to increase your soluble fiber intake. Soluble fiber, specifically. Things like oats, psyllium husk — Metamucil is a common brand. Start low and go slow because too much too fast can actually worsen the bloating initially.
+
+Patient: How much should I start with?
+
+Doctor: One teaspoon of psyllium in a full glass of water, once a day. After a week, if you're tolerating it, go to twice a day. You can work up to the full dose on the label over a few weeks.
+
+Patient: Got it.
+
+Doctor: Now for medications. Given your cramping, I want to try an antispasmodic. I'm going to prescribe dicyclomine, 20 milligrams, to take before meals — specifically before your bigger meals, so lunch and dinner. It relaxes the smooth muscle in the gut and can really help with the cramping and urgency.
+
+Patient: Any side effects I should know about?
+
+Doctor: It can cause some dry mouth, and occasionally a little dizziness. Most people tolerate it well. If the dry mouth is bothersome, we can adjust. For the diarrhea-predominant days, I'd also like you to have loperamide — that's Imodium — on hand. You don't need to take it every day, just when you're having one of those diarrhea flare days. One or two tabs as needed.
+
+Patient: Okay, I actually already keep Imodium in my purse.
+
+Doctor: Smart. Now the other big piece — and I know this is easier said than done — is stress management. The gut-brain connection in IBS is profound. Have you ever tried any kind of mindfulness practice or cognitive behavioral therapy?
+
+Patient: I did a meditation app for like two weeks. Does that count?
+
+Doctor: It's a start. There's actually really good evidence for a specific type of CBT that's targeted at IBS. Our behavioral health team has a psychologist who specializes in it. I'd like to refer you. It's not talk therapy in the traditional sense — it's very skills-based, teaching you techniques to interrupt the stress-gut cycle.
+
+Patient: I mean, I'll try it. At this point I'll try anything.
+
+Doctor: Good. And the sleep is important too. Five to six hours is not enough, and sleep deprivation alone can worsen GI symptoms. I know your schedule is demanding, but even getting to seven hours would help.
+
+Patient: I'll work on it. My husband will be thrilled to hear a doctor said that.
+
+Doctor: Use me as your excuse. Let me do a quick exam. Can you lie back for me?
+
+Patient: Sure.
+
+Doctor: Abdomen is soft. I do feel some tenderness in the left lower quadrant — not severe, no guarding, no rebound. No masses. Bowel sounds are active. That's consistent with what we've been talking about. Your vitals today look good — blood pressure is 118 over 74, heart rate is 72, temp is normal.
+
+Patient: Good.
+
+Doctor: Alright. So let me summarize the plan. Referral to our dietitian for the low-FODMAP diet. Start soluble fiber, go slow. Dicyclomine 20 mg before lunch and dinner for the cramping. Imodium as needed for diarrhea days. Referral to behavioral health for gut-directed CBT. And genuinely prioritize sleep. I'd like to see you back in six weeks to see how things are going. If the dicyclomine isn't cutting it, we have other options — there's a medication called eluxadoline for the diarrhea-predominant days, or we could consider a low-dose antidepressant like amitriptyline that works on the gut nerves.
+
+Patient: A low-dose antidepressant? I'm not depressed.
+
+Doctor: I know, and that's an important distinction. At the doses we use for IBS, it's not acting as an antidepressant — it's modulating pain signaling in the gut. But we don't need to go there yet. Let's see how you do with this first round.
+
+Patient: Okay. That's a lot to take in but it actually feels good to have a plan. I've just been kind of suffering through it.
+
+Doctor: You don't have to just suffer through it. We have real tools. And one more thing — given your uncle's colon cancer history, even though he was older and your risk is low, I do want to flag that we should think about a screening colonoscopy when you turn 45, or sooner if anything changes. For now, with your age and normal workup, I'm comfortable with the IBS diagnosis.
+
+Patient: That makes sense. Thank you, really.
+
+Doctor: Of course. We'll get those referrals going today. If things take a turn — any blood in the stool, unexplained weight loss, fevers — call us right away. Otherwise, I'll see you in six weeks.
+
+Patient: Will do. Thanks, Doctor.
+
+Doctor: Take care, Priya.

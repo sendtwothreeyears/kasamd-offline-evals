@@ -1,0 +1,14 @@
+{
+  "transcript_id": "06-hyperlipidemia-statin",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nNot documented\n\n**History of Present Illness**\nNot documented\n\n**Review of Systems**\nConstitutional: Not documented\nHEENT: Not documented\nCardiovascular: Not documented\nRespiratory: Not documented\nGastrointestinal: Not documented\nGenitourinary: Not documented\nMusculoskeletal: Not documented\nNeurological: Not documented\nPsychiatric: Not documented\nSkin: Not documented\n\n**Past Medical History**\nNot documented\n\n**Medications**\nNot documented\n\n**Allergies**\nNot documented\n\n**Social History**\nTobacco: Not documented\nAlcohol: Patient reports drinking a beer or two most nights with more on weekends.\nRecreational drugs: Not documented\nOccupation: Not documented\n\n**Family History**\nFamily history of hyperlipidemia; patient's brother is on cholesterol medication.\n(Not documented)\n\n**Objective**\n**Physical Examination**\nPhysical examination not documented\n\n**Vital Signs:**\nBP: Not documented\nHR: Not documented\nTemp: Not documented\nRR: Not documented\nSpO2: Not documented\n(Not documented)\n\n**General**\nNot documented\n\n**Assessment**\nElevated lipids: Total cholesterol 258, LDL 172, HDL 44, triglycerides 210. Ten-year cardiovascular risk score 12%.\n(Not documented)\n\n**Plan**\n1.  Aggressive lifestyle modifications for three months: diet, exercise, and alcohol reduction.\n2.  Repeat lipid panel in three months.\n3.  If lipid panel is not at goal, initiate statin therapy.\n4.  Patient will receive educational resources on heart-healthy eating.\n(Not documented)\n\n---\n",
+  "metadata": {
+    "inference_time_s": 7.19,
+    "prompt_tokens": 1842,
+    "tokens_generated": 362,
+    "prompt_tps": 654.3,
+    "tokens_per_sec": 50.3,
+    "peak_memory_gb": 3.82
+  }
+}

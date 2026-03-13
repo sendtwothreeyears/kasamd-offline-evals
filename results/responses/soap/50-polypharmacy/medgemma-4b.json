@@ -1,0 +1,14 @@
+{
+  "transcript_id": "50-polypharmacy",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "generated_note": "**Subjective**\nChief Complaint\nMedication review visit\n\n**History of Present Illness**\nPatient presented for a dedicated medication review visit. She brought all her bottles in a bag \u2014 her daughter had organized them \u2014 and we spread them out and went through them together.\n\n**Review of Systems**\nConstitutional: Fatigue\nHEENT: Vision, hearing\nCardiovascular: Chest pain, palpitations, edema\nRespiratory: Shortness of breath, cough, wheezing\nGastrointestinal: Nausea, vomiting, diarrhea, abdominal pain\nGenitourinary: Urinary symptoms, menstrual history\nMusculoskeletal: Joint pain, muscle weakness, mobility issues\nNeurological: Headache, dizziness, numbness, weakness\nPsychiatric: Mood, anxiety, sleep\nSkin: Rashes, lesions, wounds\n\n**Past Medical History**\nNot documented\n\n**Medications**\nMetoprolol\nLisinopril\nAmlodipine\nAtorvastatin\nMetformin\nAspirin 81 milligrams\nOmeprazole\nLorazepam\nDiphenhydramine\nZolpidem\nGabapentin\nCalcium supplement\nMultivitamin\n\n**Allergies**\nNo known drug allergies\n\n**Social History**\nTobacco:\nAlcohol:\nRecreational drugs:\nOccupation:\n(Only include items that were mentioned)\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\n**Vital Signs:**\nBP: 118 over 68\nHR:\nTemp:\nRR:\nSpO2:\n(Only include vitals that were documented)\n\nGeneral:\n(Only document examination findings that were explicitly mentioned. If no physical exam was performed, state \"Physical examination not documented\")\n\n**Assessment**\nPolypharmacy, fall risk, anticholinergic burden, cognitive function\n\n**Plan**\n1.  Stop diphenhydramine effective today.\n2.  Stop aspirin 81 milligrams today.\n3.  Switch oxybutynin to mirabegron 25 milligrams.\n4.  Begin omeprazole taper to every other day for a couple of weeks, then as needed.\n5.  Begin lorazepam taper \u2014 approximately a quarter dose reduction every two to four weeks \u2014 in two weeks.\n6.  Begin zolpidem taper, one at a time, alongside lorazepam taper, in two weeks.\n7.  After two weeks of home blood pressure monitoring: reassess and reduce amlodipine from 10 to 5 milligrams at her next visit.\n8.  Create a detailed written medication action plan for her to share with her daughter, who is actively involved in her care.\n9.  Refer her to our clinic pharmacist Jim for a medication therapy management visit within the next week.\n10. Follow-up is in two weeks.\n11. Tell her to call sooner if she experiences dizziness, confusion, withdrawal symptoms, or worsening bladder issues.\n12. Invite her daughter to join future visits or call with questions.\n",
+  "metadata": {
+    "inference_time_s": 12.32,
+    "prompt_tokens": 2847,
+    "tokens_generated": 629,
+    "prompt_tps": 293.1,
+    "tokens_per_sec": 51.1,
+    "peak_memory_gb": 3.69
+  }
+}

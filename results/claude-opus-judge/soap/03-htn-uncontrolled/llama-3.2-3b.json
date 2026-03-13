@@ -1,0 +1,55 @@
+{
+  "transcript_id": "03-htn-uncontrolled",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The Review of Systems section lists many systems as 'No [symptoms] mentioned' which is technically accurate but the template says to omit systems not discussed. The note also lists 'Tobacco: No usage details mentioned' and 'Recreational drugs: No usage details mentioned' \u2014 these were never discussed in the transcript. Listing lisinopril under current Medications (rather than as a new addition in the plan) is a minor misrepresentation since it was just being added.",
+      "flagged_content": [
+        "Tobacco: No usage details mentioned.",
+        "Recreational drugs: No usage details mentioned."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template explicitly states to only include ROS systems that were discussed and to omit the section entirely if not mentioned, yet the note lists all systems with 'not mentioned' language. Template instructions like 'Primary diagnosis or clinical impression:' appear verbatim in the output. Vitals not documented should be omitted per template ('Only include vitals that were documented'), but HR, Temp, RR, SpO2 are listed as 'No documentation'. Social history items not mentioned should be omitted per template instructions."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing: medication adherence issues (missing doses 1-2 times/week, inconsistent timing), the portal message that prompted the visit, counseling about anchoring medication to toothbrush routine, discussion of hypertension risks (heart attack, stroke, kidney problems), ACE inhibitor mechanism explanation, dry cough side effect counseling, lightheadedness warning, sodium counseling specifics (under 2000mg, 5-10 point reduction), wife's support with label reading, current exercise details (walking dog 20 min), and the 2-4 week timeline for lisinopril effectiveness.",
+      "missed_items": [
+        "Medication adherence issues (missing 1-2 doses/week, inconsistent timing)",
+        "Portal message prompting visit",
+        "Counseling on anchoring medication to toothbrush/nighttime routine",
+        "Discussion of hypertension risks (heart attack, stroke, kidney damage)",
+        "ACE inhibitor mechanism explanation",
+        "Dry cough side effect counseling and plan to switch if bothersome",
+        "Lightheadedness warning",
+        "Sodium counseling specifics (under 2000mg/day, 5-10 point BP reduction)",
+        "Wife's support with label reading",
+        "Current exercise baseline (walking dog 20 min most days)",
+        "2-4 week timeline for lisinopril effectiveness",
+        "Diet details (cooking more at home, eating out couple times/week)"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Chief Complaint appears after the initial Subjective paragraph rather than as the first item under Subjective. The ROS section includes all systems despite instructions to omit undiscussed ones. Template placeholder text ('Primary diagnosis or clinical impression:') appears in the Assessment. Vital signs not documented are listed instead of omitted. The Subjective opening paragraph is oddly placed before Chief Complaint."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used for medications like amlodipine, lisinopril, or conditions like hypertension, stroke."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 17.03,
+      "input_tokens": 3316,
+      "output_tokens": 866
+    }
+  }
+}

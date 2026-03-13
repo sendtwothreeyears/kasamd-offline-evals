@@ -1,0 +1,46 @@
+{
+  "transcript_id": "34-annual-physical",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the generated note is directly stated or reasonably inferred from the transcript. No fabricated findings, diagnoses, or details were identified.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 3,
+      "rationale": "The note follows all template instructions correctly. Sections not documented are marked as 'Not documented,' only discussed systems are included in ROS, and no template instructions in brackets/parentheses appear in the output."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "The note captures nearly all transcript content but has minor omissions.",
+      "missed_items": [
+        "Cardiovascular ROS: no chest pain was discussed in the transcript but omitted from the ROS section",
+        "Marital status (married 15 years, two kids) not mentioned in social history",
+        "Previous basketball activity that declined",
+        "Last year's BP of 126/78 mentioned in assessment context but not explicitly noted",
+        "Lab details: total cholesterol 222, liver enzymes normal, kidney function normal, thyroid normal",
+        "Last Tdap was in 2015 (noted as reason for Td booster)"
+      ]
+    },
+    "template_adherence": {
+      "score": 3,
+      "rationale": "The note follows the template structure precisely with all required sections present and properly formatted. Subjective, Objective, Assessment, and Plan sections are all correctly organized."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Entity marking syntax is correct and first-occurrence-only rule is generally followed. However, 'borderline stage one hypertension' and 'right knee stiffness with exercise' are questionable as condition entities (overly specific phrases), and some entities like 'heartburn' in ROS is marked but then 'occasional heartburn' in Assessment is not (which is correct). Marking 'depression' as a condition when it was denied is debatable but acceptable. The marking of 'statin' as a drug is appropriate even though it's a class."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No sections or content are duplicated in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.53,
+      "input_tokens": 5604,
+      "output_tokens": 547
+    }
+  }
+}

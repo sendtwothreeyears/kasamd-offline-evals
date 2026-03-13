@@ -1,0 +1,60 @@
+{
+  "transcript_id": "26-gout-flare",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The HPI content that is present is accurate to the transcript. The note says 'diet modification' which is a minor embellishment \u2014 the transcript says they 'told him to watch his diet,' not that diet modification was a treatment.",
+      "flagged_content": [
+        "diet modification"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note catastrophically fails instruction following. Template placeholder text and instructions in brackets are left throughout the entire note (e.g., '[Fever, chills, fatigue, weight changes]', '(If not documented, state \"Not documented\")'). The Review of Systems should have been omitted entirely per instructions. Nearly every section beyond the Chief Complaint and HPI contains raw template instructions instead of actual content or appropriate handling."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note only captures the chief complaint and HPI. It is missing the entire physical examination findings, assessment/diagnosis, all medications (colchicine, prednisone, allopurinol discussion), labs ordered, social history (alcohol use, diet), dietary counseling, treatment plan, follow-up instructions, past medical history of gout, and all other substantive content from the transcript.",
+      "missed_items": [
+        "Physical exam findings (swelling, erythema, taut/shiny skin, warmth, tenderness of left 1st MTP, other joints normal)",
+        "Afebrile, vitals stable",
+        "Assessment of acute gouty arthritis",
+        "Colchicine prescription with dosing details",
+        "Prednisone taper 40mg daily x5 days",
+        "Discussion of joint aspiration declined",
+        "Labs ordered (uric acid, CBC, BMP)",
+        "Allopurinol discussion for future urate-lowering therapy",
+        "Dietary counseling (red meat, organ meats, shellfish, beer)",
+        "Alcohol use (4-5 beers/week)",
+        "Regular steak consumption",
+        "Ice and elevation instructions",
+        "Follow-up in 3-4 weeks",
+        "Call if no improvement in 48 hours",
+        "No history of diabetes, stomach ulcers, or kidney problems",
+        "Side effect counseling for colchicine and prednisone",
+        "Past medical history of gout",
+        "No current daily medications"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The output contains raw template placeholder text and instructions in brackets/parentheses throughout virtually every section. The entire note from Review of Systems onward is just the unfilled template repeated dozens of times."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The entire note structure is duplicated approximately 25+ times, with the same Chief Complaint and HPI repeated over and over along with the unfilled template sections."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 17.18,
+      "input_tokens": 21363,
+      "output_tokens": 738
+    }
+  }
+}

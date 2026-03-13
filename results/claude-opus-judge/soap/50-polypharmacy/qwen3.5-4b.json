@@ -1,0 +1,41 @@
+{
+  "transcript_id": "50-polypharmacy",
+  "template": "soap",
+  "model": "qwen3.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The generated note is not a clinical note at all \u2014 it is the model's internal reasoning/chain-of-thought that was never resolved into an actual output. No clinical content was produced to evaluate.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The output is entirely the model's internal deliberation and planning process, not a formatted clinical note. It completely fails to follow the instruction to produce a structured clinical note."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "No clinical note was produced. All transcript content is missing from any usable output.",
+      "missed_items": [
+        "All transcript content \u2014 no note was generated"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "No structured output was produced. The entire output is unstructured internal reasoning with no template sections."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted in any final output, as no clinical note was generated."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The output contains massive repetition of the same internal reasoning text repeated thousands of times in an apparent infinite loop."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 7.78,
+      "input_tokens": 20972,
+      "output_tokens": 338
+    }
+  }
+}

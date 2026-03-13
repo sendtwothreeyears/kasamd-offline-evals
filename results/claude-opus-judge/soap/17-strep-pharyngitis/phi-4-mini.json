@@ -1,0 +1,50 @@
+{
+  "transcript_id": "17-strep-pharyngitis",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The ROS Constitutional section lists 'chills, fatigue, weight changes' which were never mentioned in the transcript. The exam findings (tonsils, lymphadenopathy) and rapid strep test are placed in the HPI (subjective) section, which is a misplacement issue but also misrepresents them as patient-reported. 'Secondary diagnosis: None' is fabricated.",
+      "flagged_content": [
+        "Constitutional: Fever, chills, fatigue, weight changes",
+        "Secondary diagnosis: None"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit the section entirely if not mentioned, yet the note lists nearly all systems with 'Not discussed.' The template also says to state 'Not documented' for certain sections, but the note uses inconsistent phrasing like 'Not discussed' and 'Current medications not discussed.' Exam findings were placed in the subjective HPI section. Social History should say 'Not documented' per template pattern but says 'Not discussed.'"
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Missing several key details: the fever temperature was '101 and some change' (note says 101\u00b0F, close but slightly off), patient counseled to finish full course of antibiotics, told he should feel better within 24-48 hours, no known allergy specifically to amoxicillin or penicillin (note just says NKDA), Tylenol as a current/prior medication. Physical exam findings are mentioned but placed in wrong section and the objective exam section is inadequately documented.",
+      "missed_items": [
+        "Counseling to finish full course of antibiotics",
+        "Expected improvement within 24-48 hours",
+        "No known allergy specifically to amoxicillin or penicillin",
+        "Tylenol listed as current medication",
+        "Detailed physical exam findings in objective section (red/swollen tonsils with white patches, tender submandibular lymphadenopathy)",
+        "Negative cough and runny nose in ROS",
+        "Rapid strep test positive in objective/assessment"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Physical exam findings are placed in the HPI instead of the Objective section. The Physical Examination section is nearly empty. Vital Signs section is placed after Physical Examination instead of before/within it. ROS includes systems not discussed, violating template instructions. The Plan section has an odd trailing 'Not documented' appended."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. No {{drug:...}} or {{condition:...}} syntax was used anywhere in the note."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.5,
+      "input_tokens": 2695,
+      "output_tokens": 714
+    }
+  }
+}

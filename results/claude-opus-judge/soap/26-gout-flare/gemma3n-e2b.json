@@ -1,0 +1,56 @@
+{
+  "transcript_id": "26-gout-flare",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The Review of Systems section includes multiple systems (HEENT, Cardiovascular, Respiratory, GI, GU, Neurological, Psychiatric) reported as 'No reported issues' which were never discussed in the transcript. The template instructs to only include systems that were discussed. While these aren't fabricated findings per se, they are embellishments beyond what the transcript supports.",
+      "flagged_content": [
+        "HEENT: No reported issues.",
+        "Cardiovascular: No reported issues.",
+        "Respiratory: No reported issues.",
+        "Gastrointestinal: No reported issues.",
+        "Genitourinary: No reported issues.",
+        "Neurological: No reported issues.",
+        "Psychiatric: No reported issues."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template explicitly states for Review of Systems: 'Only include systems that were discussed. If not mentioned, omit this section entirely.' The note includes many systems that were never discussed. Social History includes 'Not documented' for items not mentioned, but the template says 'Only include items that were mentioned.' Also lists individual vitals as 'Not documented' rather than summarizing that vitals were stable/afebrile as stated."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing: the discussion about joint aspiration being offered and declined, confirmation of no history of diabetes/stomach ulcers/kidney problems before prescribing, the explanation that allopurinol shouldn't be started during acute flare, the target uric acid level of below 6 mg/dL, the explanation that allopurinol is typically long-term and prevents joint damage, and the patient's regular steak consumption.",
+      "missed_items": [
+        "Joint aspiration discussed and declined by patient",
+        "No history of diabetes, stomach ulcers, or kidney problems confirmed prior to prescribing",
+        "Allopurinol not started during acute flare as it can worsen it - will wait 2-4 weeks",
+        "Target serum uric acid below 6 mg/dL",
+        "Allopurinol is typically long-term medication preventing future flares and joint damage",
+        "Patient eats steak regularly",
+        "Flare should start improving within a few days and resolve within about a week",
+        "Beer is a 'double hit' - high in purines and alcohol impairs uric acid excretion"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note generally follows the template structure but has 'Physical Examination' header appearing twice. The vital signs are listed individually as 'Not documented' rather than noting what was documented (afebrile, stable vitals). Skin findings from the exam are placed in the subjective ROS section."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. The note contains multiple drugs (colchicine, prednisone, allopurinol) and conditions (gout, gouty arthritis) that should have been marked with {{drug:...}} and {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed, though 'Physical Examination' header appears twice which is a formatting issue rather than content duplication."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.58,
+      "input_tokens": 3683,
+      "output_tokens": 814
+    }
+  }
+}

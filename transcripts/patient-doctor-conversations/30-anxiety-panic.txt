@@ -1,0 +1,120 @@
+---
+id: 30
+scenario: Acute visit after panic attack, differentiate from cardiac, discuss panic disorder
+category: Mental health
+density: Medium
+---
+
+Doctor: Mr. Ferrara, the nurse told me you came in because of an episode this morning. Are you feeling okay right now?
+
+Patient: I'm better than I was. But I'm still kind of shaky. I honestly thought I was having a heart attack.
+
+Doctor: Tell me exactly what happened.
+
+Patient: So I was at work, just at my desk, nothing crazy. I was answering emails. And out of nowhere my chest got really tight. Like someone was sitting on my chest. Then my heart started pounding — racing — and I couldn't catch my breath. I tried to take a deep breath and it felt like my lungs wouldn't expand.
+
+Doctor: How quickly did it come on?
+
+Patient: Like, instantly. Zero to sixty. One second I was fine, the next second I was convinced I was dying.
+
+Doctor: What else did you feel?
+
+Patient: My hands and my face went tingly — like pins and needles. I was sweating. I got really dizzy. And this wave of — I don't know how else to describe it — just absolute terror. Like pure dread. I genuinely thought this is it, I'm dying right now.
+
+Doctor: How long did the whole episode last?
+
+Patient: My coworker said it was about ten minutes, but it felt like an hour. I was sitting in my chair gripping the armrests and just trying not to pass out. She almost called 911. I talked her out of it and drove straight here, which maybe wasn't the smartest choice if it was actually a heart attack.
+
+Doctor: Yeah, next time — if there is a next time — please call 911. Has anything like this ever happened before?
+
+Patient: Kind of. About a month ago I had a smaller version of this. I was in line at the grocery store and I started feeling short of breath and my heart was pounding. But it went away in a couple minutes and I just figured I was dehydrated or something. Nothing like today though. Today was terrifying.
+
+Doctor: Any chest pain specifically? Sharp, stabbing, squeezing?
+
+Patient: More like tightness and pressure. Not a sharp pain.
+
+Doctor: Any pain radiating to your arm, jaw, or back?
+
+Patient: No.
+
+Doctor: How old are you, Mr. Ferrara?
+
+Patient: Thirty-one.
+
+Doctor: Any history of heart problems? High blood pressure, high cholesterol?
+
+Patient: No, nothing.
+
+Doctor: Family history of heart disease? Anyone have a heart attack young?
+
+Patient: No. My grandpa had a heart attack but he was like seventy-five.
+
+Doctor: Do you smoke?
+
+Patient: No.
+
+Doctor: Use cocaine or any stimulants?
+
+Patient: No, nothing like that.
+
+Doctor: Okay. Your vitals right now — blood pressure is 128 over 82, heart rate is 88. When you first came in it was 108, so it's already come down. Oxygen saturation is 99 percent. Let me listen to your heart and lungs. Deep breath in... and out. Again. Heart sounds are regular, no murmurs. Lungs are clear bilaterally. Let me feel your chest wall — any tenderness when I press here?
+
+Patient: No.
+
+Doctor: I'm going to do an EKG to be safe. The nurse will set that up. I'm also going to order a troponin level — that's a blood test that tells us if there's been any damage to the heart muscle.
+
+Patient: Okay. Do you think it's my heart?
+
+Doctor: Honestly? I think this was a panic attack. Your age, your risk profile, the symptoms — the tingling, the sense of impending doom, the rapid onset and resolution — all point very strongly toward panic. But I never want to assume, so we'll do the workup to rule out cardiac causes. The EKG and troponin will give us confidence.
+
+[EKG and labs performed]
+
+Doctor: Alright, results are in. Your EKG is completely normal — normal sinus rhythm, no ST changes, no arrhythmia. Troponin is negative. Your heart is fine.
+
+Patient: Oh thank God.
+
+Doctor: What you experienced was a panic attack. It's essentially your body's fight-or-flight system misfiring. Your brain sends out a massive surge of adrenaline — for no external reason — and your body reacts as if you're in danger. The chest tightness is from your intercostal muscles tensing up. The tingling is from hyperventilation — when you breathe fast, you blow off too much CO2 and that changes the pH in your blood, which causes the pins and needles. The racing heart is the adrenaline. The dizziness is from the combination of hyperventilation and adrenaline. And the feeling of doom — that's the adrenaline telling your brain something terrible is happening.
+
+Patient: So my brain just... does this for no reason?
+
+Doctor: There's usually an underlying vulnerability — stress, sleep deprivation, genetics. But the trigger for any individual attack can seem random, which is part of what makes them so frightening. You mentioned you had a milder episode a month ago. When you have recurrent panic attacks, especially if you start worrying about having another one, that's what we call panic disorder.
+
+Patient: I have been worried about it. After that grocery store thing, I've been kind of nervous in crowded places. I keep wondering when it's going to happen again.
+
+Doctor: That anticipatory anxiety is actually one of the hallmarks of panic disorder. And it can become a cycle — you worry about having an attack, the worry raises your baseline anxiety, which makes another attack more likely.
+
+Patient: Great. So how do I make it stop?
+
+Doctor: There are a few approaches. First, the immediate — if you feel another attack coming on, the most effective thing you can do is controlled breathing. Breathe in slowly through your nose for four counts, hold for four counts, exhale through your mouth for six counts. This counteracts the hyperventilation that drives most of the physical symptoms. Your coworker can even talk you through it.
+
+Patient: Four in, hold four, six out.
+
+Doctor: Exactly. It sounds simple, but it's remarkably effective because it directly addresses the physiological cascade. Another technique — focus on your physical surroundings. Name five things you can see, four you can touch, three you can hear. It pulls your brain out of the panic loop and into the present moment.
+
+Patient: Okay.
+
+Doctor: Beyond acute management, I'd strongly recommend therapy — specifically CBT, cognitive behavioral therapy, with a focus on panic disorder. A good CBT therapist can help you understand the cycle, reduce your fear of the attacks themselves, and eventually even do controlled exposure to the physical sensations so they stop triggering the fear response.
+
+Patient: What about medication?
+
+Doctor: If the attacks continue, an SSRI like sertraline or paroxetine can reduce the frequency and intensity of panic attacks. We don't have to start that today — let's see how things go with the breathing techniques and therapy first. But it's in our back pocket. What I do want to avoid is relying on benzodiazepines — Xanax, Ativan — as a regular thing. They work fast but they can create dependence and they prevent you from learning that your body can get through a panic attack on its own.
+
+Patient: My buddy takes Xanax for anxiety. He swears by it.
+
+Doctor: It does work acutely. And I might prescribe a very small quantity for emergency use — like two or three pills — that you can carry with you as a safety net. Sometimes just knowing you have it in your pocket reduces the anticipatory anxiety enough that you never need to take it. But daily or regular use is not the path we want to go down.
+
+Patient: That makes sense.
+
+Doctor: A couple other things. Cut back on caffeine if you're a coffee drinker — caffeine can lower the threshold for panic attacks. Regular exercise helps regulate the stress response. And prioritize sleep — sleep deprivation is a major trigger.
+
+Patient: I do drink a lot of coffee. And I've been sleeping badly lately because of work stress.
+
+Doctor: Both of those are modifiable risk factors. I'm going to put in a therapy referral and I'll prescribe a small supply of lorazepam — five tablets, 0.5 milligrams — for genuine emergencies only. Practice the breathing technique. And I want to see you in two to three weeks to check in. If you have another severe attack before then, come in.
+
+Patient: Okay. I can't tell you how relieved I am that it's not my heart. That was the scariest part.
+
+Doctor: That's the cruelest irony of panic attacks — they mimic the exact thing everyone is most afraid of. But now that you know what it is, that knowledge itself is therapeutic. Next time, you'll be able to say, "This is a panic attack. It's awful but it's not dangerous and it will pass." That reframing changes everything.
+
+Patient: I hope so. Thank you, Doctor.
+
+Doctor: You're welcome, Mr. Ferrara. You're going to be okay. Call us if you need anything before the follow-up.

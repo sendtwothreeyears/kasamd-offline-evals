@@ -1,0 +1,104 @@
+---
+id: 11
+scenario: Osteoarthritis bilateral knee pain, chronic management visit
+category: Chronic disease
+density: Medium
+---
+
+Doctor: Good morning, Mrs. Delgado. Come on in, have a seat. How are you doing today?
+
+Patient: Oh, not so great, honestly. These knees are really giving me trouble lately.
+
+Doctor: I'm sorry to hear that. So it's the knees that brought you in today?
+
+Patient: Yeah. Both of them, actually. The left one's been bad for a while but now the right one's catching up.
+
+Doctor: When did you first start noticing it getting worse?
+
+Patient: The left knee, oh gosh, probably been bothering me on and off for two, three years? But the last couple months it's been — I can barely do the stairs at my house. And the right one started aching maybe six weeks ago.
+
+Doctor: And what does the pain feel like? Is it a sharp pain, more of an ache?
+
+Patient: It's like a deep ache. Stiff in the morning, takes me a good ten, fifteen minutes to get going. And then the stairs — going down is the worst. It's like this grinding feeling.
+
+Doctor: Does it swell up at all?
+
+Patient: The left one does, yeah. End of the day especially if I've been on my feet a lot. It puffs up around here — around the kneecap area.
+
+Doctor: Have you tried anything for it?
+
+Patient: I take Advil. Two or three a day usually. It takes the edge off but doesn't really fix it. My neighbor told me to try glucosamine so I've been doing that for about a month. Can't say I notice a difference.
+
+Doctor: How much ibuprofen are you taking — the 200 milligram tablets?
+
+Patient: Yeah, the regular ones from the store. Usually two at a time, maybe twice a day? Sometimes three times if it's a bad day.
+
+Doctor: Okay. And have you ever had any X-rays of your knees?
+
+Patient: Not that I remember. My old doctor mentioned it once but I never got around to it.
+
+Doctor: Alright. Let me take a look. Can you roll up your pant legs for me? ... Okay, so I can see the left knee is a little swollen compared to the right. Let me feel around here — does this hurt?
+
+Patient: Ow — yeah, right there on the inside.
+
+Doctor: And the right side?
+
+Patient: A little, not as bad.
+
+Doctor: I'm going to bend your knee now... any grinding sensation?
+
+Patient: Yeah, you can probably feel that too, right? It's like sandpaper in there.
+
+Doctor: I do feel some crepitus, yes. Both knees actually, but more prominent on the left. Range of motion looks pretty good though — you're getting to about 120 degrees on both sides. No ligament instability that I can detect. Let me check for any fluid... there's a small effusion on the left.
+
+Patient: Is that the swelling?
+
+Doctor: Exactly, it's a little extra fluid in the joint. So Mrs. Delgado, what I'm seeing is consistent with osteoarthritis. The grinding, the morning stiffness, the pattern of pain with stairs — it all fits. I'd like to get X-rays to confirm and see how much wear we're dealing with.
+
+Patient: Is that like... bone on bone?
+
+Doctor: It can range. Sometimes it's mild thinning of the cartilage, sometimes it's more advanced. The X-ray will help us know where you stand. But regardless of what the X-ray shows, there are things we can do to help.
+
+Patient: Okay, good. Because I can't keep living like this. I used to walk every morning and I've had to stop.
+
+Doctor: I hear you. So let's talk about a plan. First — the ibuprofen. It's okay short-term, but taking it every day long-term can be hard on your stomach and kidneys. I'd like to switch you to a scheduled approach — maybe naproxen twice a day with food, and we'll add a stomach protector.
+
+Patient: Naproxen, is that like Aleve?
+
+Doctor: Exactly, same thing. Just a prescription strength. Now, the other big thing I want to bring up — and I know this isn't always easy to hear — is weight. You're carrying about 210 pounds at five-foot-four, and every pound of body weight puts about four pounds of pressure on your knees.
+
+Patient: I know, I know. My daughter keeps telling me.
+
+Doctor: She's not wrong. Even losing ten or fifteen pounds can make a meaningful difference in your pain. I'm not saying you need to run a marathon — even walking in a pool, or a stationary bike, things that are easy on the joints.
+
+Patient: The pool's not a bad idea actually. There's one at the community center.
+
+Doctor: That would be perfect. The other thing I want to do is refer you to physical therapy. A good PT can strengthen the muscles around your knees, improve your stability, and teach you exercises you can do at home.
+
+Patient: How often would I have to go?
+
+Doctor: Usually twice a week for about six weeks to start. They'll assess you and come up with a tailored program.
+
+Patient: I can probably make that work. My schedule's flexible since I retired.
+
+Doctor: Great. And then down the road — if the pain doesn't improve enough with PT and the medication and weight loss — we can consider a cortisone injection into the knee. That can give pretty good relief for a few months.
+
+Patient: My friend had that done. She said it helped a lot.
+
+Doctor: It does for many people. I'd rather try the conservative route first though and save injections for if we need them.
+
+Patient: That makes sense. What about the glucosamine? Should I keep taking it?
+
+Doctor: The evidence on glucosamine is mixed — some people feel it helps, some studies say it doesn't do much. It's not harmful, so if you feel like it's worth continuing, that's fine. I wouldn't count on it as your main treatment though.
+
+Patient: Fair enough. Anything else I should be doing? Ice? Heat?
+
+Doctor: Both can help. Ice is usually better after activity when the knee is swollen or sore — fifteen minutes on, fifteen off. Heat or a warm compress in the morning can help with that stiffness. And one more thing — try to avoid prolonged kneeling or squatting if you can. Those positions really load the joint.
+
+Patient: Ha — there goes my gardening.
+
+Doctor: Well, maybe a raised garden bed. There are ways to adapt. Okay, so let me put in the orders — X-rays of both knees, PT referral, prescription for naproxen and omeprazole for stomach protection. And let's see you back in about six weeks to see how things are going.
+
+Patient: Sounds like a plan. Thank you, doctor.
+
+Doctor: You're welcome. And really try to get to that pool — I think it'll help a lot. Take care, Mrs. Delgado.

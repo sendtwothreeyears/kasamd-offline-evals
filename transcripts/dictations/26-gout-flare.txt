@@ -1,0 +1,24 @@
+---
+id: 26
+scenario: Acute gout flare in great toe, treatment and urate-lowering discussion
+category: Acute
+density: Medium
+---
+
+So I saw Mr. Delacroix today — he came in limping, and right away you could see he was in significant discomfort. He's presenting with acute onset left big toe pain that woke him out of a dead sleep last night, so roughly twelve hours prior to the visit. He says the pain has been getting worse since then and he can barely put any weight on the foot. He couldn't even tolerate a sheet touching the toe. He has a prior history of gout — same toe, about three years ago — treated at urgent care during that episode, but he never followed up and was never started on any urate-lowering therapy. They just treated the acute flare and told him to watch his diet. No daily medications for gout since then.
+
+On exam, he's afebrile, vitals are stable. Looking at the left foot, there is significant swelling and erythema of the left first MTP joint. The skin over the joint is taut and shiny. It's warm to touch, and on palpation — even minimal palpation — it's exquisitely tender. No break in the skin, no discharge. I examined the other joints — ankles, knees, hands — and everything else looks fine. Isolated to the left great toe.
+
+So this is a classic presentation of acute gouty arthritis. Sudden onset, overnight, first MTP joint, exquisitely tender, warm, red, swollen, with a prior history of gout. I'm quite confident in the diagnosis. I discussed joint aspiration with the patient — that being the gold standard for confirming gout via urate crystal identification under microscopy — but given the classic presentation and his prior history, and given that he preferred not to have a needle in his toe, we elected to forgo aspiration at this time.
+
+Went ahead and ordered labs — uric acid level, CBC, and a basic metabolic panel to check kidney function.
+
+For treatment of the acute flare, I started him on colchicine using the low-dose regimen — 1.2 milligrams, which is two tablets, taken immediately, followed by 0.6 milligrams one hour later, then 0.6 milligrams once to twice daily until the flare resolves. I also added a prednisone taper starting at 40 milligrams daily for five days to help knock the inflammation down more aggressively. I confirmed no history of diabetes, stomach ulcers, or kidney problems prior to prescribing. I counseled him on the side effects — colchicine can cause diarrhea at higher doses but the low-dose regimen has a much lower risk, and the short course of prednisone may temporarily raise blood sugar and affect sleep.
+
+I also advised him to ice the toe — twenty minutes on, twenty minutes off — keep the foot elevated, and wear loose shoes or sandals. Told him the flare should start improving within a few days and resolve within about a week. I instructed him to call us if there's no improvement in forty-eight hours or if things get worse.
+
+We also had a longer conversation about prevention. He's now had two gout flares, and I explained that the underlying issue is uric acid accumulation and crystal deposition in the joints, and that the acute treatment doesn't address that. I discussed urate-lowering therapy with allopurinol — the goal being to get serum uric acid below 6 milligrams per deciliter, the level at which crystals dissolve. I explained that we don't start allopurinol during an acute flare as it can worsen it, so we'll wait two to four weeks until this settles down and then start at a low dose and titrate up. I explained this is typically a long-term medication but that it prevents future flares and the joint damage that repeated flares can cause over time.
+
+Dietary counseling was provided — I discussed high-purine foods including red meat, organ meats, shellfish, and beer. He does eat steak regularly and drinks approximately four to five beers per week, sometimes more on weekends. I explained that beer is a double hit — high in purines and alcohol also impairs uric acid excretion — and encouraged him to cut back, particularly on beer. Also emphasized the importance of staying well hydrated to help the kidneys excrete uric acid.
+
+Plan: colchicine and prednisone as described for the acute flare, labs today, and follow up in three to four weeks once the flare has fully resolved to initiate allopurinol, assuming uric acid comes back elevated as expected.

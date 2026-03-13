@@ -1,0 +1,14 @@
+{
+  "transcript_id": "44-eczema",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nPatient presents with a rash on the arms, primarily presenting with intense itching, especially at night.\n\n**History of Present Illness**\nPatient reports a rash on the arms that has been present for the past two weeks. The primary complaint is intense itching, particularly at night, which is disrupting sleep. The patient reports scratching in their sleep and waking up with skin under their fingernails. This issue has recurred every winter, with last year being particularly severe.\n\n**Review of Systems**\nConstitutional: No reported fever or chills.\nSkin: Reports a rash on the arms.\n\n**Past Medical History**\nHistory of eczema as a child, which is reported to have resolved but recurred a few years ago.\n\n**Medications**\nNot documented.\n\n**Allergies**\nNo known drug allergies.\n\n**Social History**\nNot documented.\n\n**Family History**\nNot documented.\n\n**Objective**\n**Physical Examination**\n**Vital Signs:**\nBP: Not documented\nHR: Not documented\nTemp: Not documented\nRR: Not documented\nSpO2: Not documented\n\nGeneral: Patient appears to have dry, scaly skin.\n\n**Assessment**\nEczema (Atopic Dermatitis)\n\n**Plan**\n1. Prescribed {{drug:triamcinolone 0.1% ointment}} to be applied twice daily to the affected areas for two weeks.\n2. Patient was instructed to use a thick, fragrance-free cream such as {{drug:CeraVe cream}} or {{drug:Vanicream}} applied right after showering while the skin is still slightly damp, at least twice a day.\n3. Advised to keep showers warm rather than hot and to keep them short to avoid stripping the skin of its natural oils.\n4. Advised to avoid skin irritants such as harsh soaps and wool clothing.\n5. Recommended over-the-counter {{drug:Benadryl}} for nighttime itching, as needed.\n6. Patient was instructed to follow up in two weeks if there is no improvement for reassessment.\n\n\n\n",
+  "metadata": {
+    "inference_time_s": 8.75,
+    "prompt_tokens": 1517,
+    "tokens_generated": 441,
+    "prompt_tps": 657.9,
+    "tokens_per_sec": 50.4,
+    "peak_memory_gb": 3.87
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "transcript_id": "06-hyperlipidemia-statin",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content present in the note is supported by the transcript. No fabricated findings or embellishments.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template instructs to omit the Review of Systems section entirely if not mentioned, but instead every subsystem is listed as 'Not documented'. The template says to state 'No known drug allergies' or 'Not documented' for allergies, but just says 'Not documented'. Parenthetical instructions like '(Not documented)' appear repeatedly in the output, which is a clear instruction-following failure. The chief complaint and HPI are listed as 'Not documented' when there is substantial transcript content for both. Many items that were discussed (occupation, blood pressure, no diabetes, patient age) are omitted or marked 'Not documented' despite being in the transcript."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note misses the vast majority of transcript content: chief complaint (lipid panel review), HPI details (patient age 54, no diabetes, concerns about statins, muscle problem counseling, liver concern counseling, statin risk reduction stats, proposed atorvastatin 20mg plan, dietary counseling details, exercise recommendations, LDL target discussion), blood pressure 134/82, occupation (desk job, golf on weekends), tobacco not mentioned but occupation was.",
+      "missed_items": [
+        "Chief complaint: review of lipid panel results",
+        "Patient age 54, male",
+        "No diabetes",
+        "Blood pressure 134/82",
+        "Ten-year CV risk discussion and guideline thresholds (7.5% and 20%)",
+        "Patient concerns about statins and muscle problems",
+        "Counseling on muscle aching (5-10%), rhabdomyolysis (<1 in 10,000)",
+        "Counseling on liver concerns and hepatotoxicity",
+        "Statin risk reduction of 25-35%",
+        "Proposed atorvastatin 20mg at night if starting statin",
+        "Rosuvastatin as alternative if muscle pain",
+        "Recheck lipids in 6-8 weeks if statin started",
+        "Dietary counseling details (reduce saturated fats, red meat, cheese, butter, fried foods; increase fish, nuts, olive oil, fiber)",
+        "Dietary changes may reduce LDL by 10-15%",
+        "Exercise recommendation: 150 minutes/week moderate exercise",
+        "Current activity level: sedentary, desk job, golf on weekends",
+        "Alcohol counseling: cut back to weekends only",
+        "Refined sugars counseling for triglycerides",
+        "LDL target under 130",
+        "HDL at lower threshold of acceptable",
+        "Triglycerides above 150 high range"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The template structure is partially followed but parenthetical instructions '(Not documented)' appear as output text in multiple sections. Vital Signs are placed under Objective but after Physical Examination instead of before/within it. The Review of Systems section should have been omitted entirely per template instructions but was included with all subsystems listed.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. Medications like atorvastatin and conditions like hyperlipidemia are not marked with {{drug:...}} or {{condition:...}} syntax.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content found in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 18.19,
+      "input_tokens": 2976,
+      "output_tokens": 933
+    }
+  }
+}

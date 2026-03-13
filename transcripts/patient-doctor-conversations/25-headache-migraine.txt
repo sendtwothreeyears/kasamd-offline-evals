@@ -1,0 +1,178 @@
+---
+id: 25
+scenario: New-onset recurrent headaches, migraine diagnosis, comprehensive evaluation
+category: Acute
+density: Dense
+---
+
+Doctor: Good afternoon, Ms. Pereira. I see from the intake form you're here about headaches. Tell me what's been going on.
+
+Patient: Yeah, so I've been getting these really bad headaches over the last — I'd say three months? Maybe a little longer. At first I thought it was just stress, you know, but they keep coming back and they're getting worse.
+
+Doctor: When you say they keep coming back, how often are you getting them?
+
+Patient: It started as maybe once or twice a month. But this last month I've had four. Four really bad ones.
+
+Doctor: And how long does each headache last?
+
+Patient: Anywhere from like six hours to... the worst one lasted almost two days. I couldn't do anything.
+
+Doctor: Let's talk about what they feel like. Describe the pain for me.
+
+Patient: It's like this pounding, throbbing pain. Usually on one side — mostly the right side — kind of around my temple and behind my eye. It's not like a regular headache where your whole head just aches. It's very... focused, I guess.
+
+Doctor: How severe? On a zero to ten scale?
+
+Patient: The bad ones are like a seven or eight. The milder ones — I hesitate to call them mild — are maybe a five or six.
+
+Doctor: Is there anything that happens before the headache starts? Any warning signs?
+
+Patient: Actually, yes. I didn't connect it at first but sometimes — maybe half the time — I get these weird visual things about twenty or thirty minutes before. Like shimmery zigzag lines in my vision. It's hard to describe. Like looking through a kaleidoscope almost? It lasts maybe fifteen or twenty minutes and then the headache starts.
+
+Doctor: That's very characteristic. That's what we call a visual aura. Do you get any other symptoms with it — numbness, tingling, trouble finding words?
+
+Patient: I don't think so. Just the visual stuff.
+
+Doctor: What about during the headache itself? Any nausea?
+
+Patient: Oh god, yes. I get really nauseous. I've actually thrown up during two of them. And I absolutely cannot deal with light — I have to go into a dark room and close the blinds. Sound bothers me too. My kids being loud makes it so much worse.
+
+Doctor: Do you notice any particular triggers? Things that tend to bring them on?
+
+Patient: I've been trying to figure that out. I think stress is a big one. A couple of them came on after really hectic days at work. One time it started during my period. And — this sounds random — but I had one after I had a glass of red wine, which never used to bother me.
+
+Doctor: Those are all actually very common migraine triggers. How about sleep — are you getting enough?
+
+Patient: Honestly, not really. I have a two-year-old and a five-year-old, so... sleep is kind of a luxury. I probably average five or six hours on a good night.
+
+Doctor: And how about caffeine intake?
+
+Patient: I drink a lot of coffee. Three, sometimes four cups a day. Probably too much, I know.
+
+Doctor: We'll come back to that. What do you do for work?
+
+Patient: I'm a project manager at a tech company. Lots of screen time, lots of deadlines. It's stressful.
+
+Doctor: Do the headaches affect your work?
+
+Patient: That's actually why I'm here. I had to leave work early twice last month because of them. And even on the days when I push through, I'm not functioning well. I'm worried my boss is starting to notice.
+
+Doctor: That's significant. Have you tried anything to treat them?
+
+Patient: Ibuprofen, which kind of helps if I take it right when the headache starts. But once it's fully going, ibuprofen barely touches it. I tried Excedrin Migraine a couple times — that worked better but it took like an hour to kick in. My friend gave me one of her sumatriptan pills once and that actually worked really well, but I felt guilty about using someone else's prescription.
+
+Doctor: Understandable. Don't do that again, but it's useful information that it worked. Any family history of headaches or migraines?
+
+Patient: My mom gets migraines. She's been on some kind of medication for them for years. And I think my aunt — my mom's sister — gets them too.
+
+Doctor: Strong family history. Any other medical conditions? Surgeries?
+
+Patient: No, I'm pretty healthy. I had my two kids by C-section. I'm on birth control pills — the combination kind. No other medications.
+
+Doctor: That's actually an important detail. We'll need to discuss your birth control. Any history of stroke, blood clots, heart disease?
+
+Patient: No, nothing like that.
+
+Doctor: Okay. Do you smoke?
+
+Patient: No, never have.
+
+Doctor: Drink alcohol besides the occasional wine?
+
+Patient: Just socially. Maybe a couple drinks on the weekend. Less now since the headaches started.
+
+Doctor: Any recreational drug use?
+
+Patient: No.
+
+Doctor: Let me ask a few review of systems questions. Any changes in your vision outside of the aura episodes?
+
+Patient: No, my vision is fine otherwise.
+
+Doctor: Any neck stiffness or pain?
+
+Patient: I get tense shoulders and neck, especially on headache days. But I think that's more of a stress thing.
+
+Doctor: Any dizziness or balance problems?
+
+Patient: No.
+
+Doctor: Any weakness or numbness anywhere?
+
+Patient: No.
+
+Doctor: Any recent weight changes, fevers, night sweats?
+
+Patient: No.
+
+Doctor: Alright, let me do a neurological exam. I'm going to check a few things. Follow my finger with your eyes... good, smooth pursuit, no nystagmus. Now look at this light — I'm checking your pupils. Equal, round, reactive bilaterally. Read this line on the chart for me?
+
+Patient: P, E, C, F, D.
+
+Doctor: Good, 20/25 — we can optimize that later. Let me check your visual fields. Tell me when you see my finger wiggle... here... here... here. Full visual fields. Now, smile for me — good, symmetric. Raise your eyebrows. Puff out your cheeks. Good, facial nerve is intact.
+
+Patient: You're being really thorough.
+
+Doctor: Want to make sure we're not missing anything. Hold your arms out in front of you, palms up, close your eyes. Hold that for ten seconds. Good, no drift. Now touch your nose, then my finger, back to your nose — good. Other hand — good. No tremor, no dysmetria. Let me check your reflexes... biceps, triceps, knees, ankles — all normal and symmetric. Gait — walk to the door and back for me. Turn around. Walk on your heels. Now on your toes. All normal.
+
+Doctor: Your neurological exam is completely normal, which is reassuring.
+
+Patient: So what's going on? Is it migraines?
+
+Doctor: Yes, I'm very confident this is migraine with aura. You meet the diagnostic criteria — recurrent headaches that are unilateral, pulsating, moderate to severe, aggravated by activity, associated with nausea, photophobia, and phonophobia, preceded by visual aura, lasting hours to days. Family history is consistent too. This is a textbook presentation, honestly.
+
+Patient: Is it dangerous? Should I get an MRI or anything?
+
+Doctor: With a normal neurological exam and a classic migraine presentation, imaging isn't required by guidelines. However, given that these are new for you at age thirty-four and you're having aura, I would feel comfortable ordering a brain MRI without contrast just for peace of mind and completeness. I don't expect it to show anything concerning, but I think it's reasonable. Does that sound okay?
+
+Patient: Yes, I'd feel better knowing.
+
+Doctor: Good. Now let's talk treatment. There are two sides to this — treating the attacks when they happen, and preventing them from happening in the first place. On the acute side, the sumatriptan your friend gave you is actually exactly what I'd prescribe. It's a triptan — it's specifically designed for migraines and it works on the serotonin receptors involved in the migraine cascade. I'm going to prescribe sumatriptan 50 milligram tablets. You take it at the onset of the headache — not during the aura, but when the actual pain starts. If it doesn't work after two hours, you can take a second dose.
+
+Patient: Are there side effects?
+
+Doctor: Some people feel tightness in the chest or throat, tingling, warmth or flushing, mild dizziness. These are usually brief and not dangerous. But I need to tell you — and this is important — triptans should not be used by people who have migraine with aura AND are on combination oral contraceptives. Both aura and estrogen-containing birth control independently increase stroke risk, and triptans add another layer of concern.
+
+Patient: Oh. So I can't take it?
+
+Doctor: You can take sumatriptan, but we need to address the birth control. I'd strongly recommend switching from your combination pill to a progestin-only method. Migraine with aura is actually a contraindication to estrogen-containing contraceptives. This isn't about the sumatriptan — even without the triptan, you should switch. The stroke risk with aura plus estrogen is elevated, particularly in reproductive-age women.
+
+Patient: I had no idea. Nobody ever asked me about headaches when I got my birth control prescription.
+
+Doctor: It's something that often gets missed. We can discuss progestin-only options — the minipill, the Depo shot, a hormonal IUD, or the implant. Any of those would be fine. I'd suggest scheduling a separate visit with your OB-GYN or we can handle it here.
+
+Patient: Okay, I'll make an appointment. What about the prevention side? You said something about preventing them?
+
+Doctor: Right. Given that you're now having four migraines a month and they're affecting your work and quality of life, you're a good candidate for prophylactic therapy. There are several options. First-line medications include propranolol, which is a beta-blocker, topiramate, which is an anti-seizure medication, and amitriptyline, which is a low-dose antidepressant. Each has its own side effect profile.
+
+Patient: Which one would you recommend?
+
+Doctor: Given that your headaches are associated with stress and you mentioned poor sleep, I'd lean toward starting with amitriptyline. It's taken at bedtime, it can improve sleep, and it has good evidence for migraine prevention. We'd start at a low dose — 10 milligrams — and gradually increase if needed. Common side effects are drowsiness and dry mouth, but at these low doses most people tolerate it well.
+
+Patient: And that would reduce how many headaches I get?
+
+Doctor: The goal is to cut the frequency by at least fifty percent. So going from four a month down to two or fewer. It takes about four to six weeks to see the full effect, so we need to be patient with it.
+
+Patient: Okay, I'm willing to try it.
+
+Doctor: Good. Now, there are also lifestyle modifications that can make a real difference. Sleep hygiene is big — I know it's hard with young kids, but try to get consistent sleep, even if you can't get more of it. Same bedtime, same wake time. The caffeine — I wouldn't tell you to quit cold turkey because caffeine withdrawal is itself a headache trigger, but I'd like you to gradually taper down to one cup a day over the next two weeks.
+
+Patient: That's going to be tough, but I'll try.
+
+Doctor: Staying hydrated is important. Dehydration is a common trigger that people underestimate. Try to drink at least sixty-four ounces of water a day. Regular exercise — even thirty minutes of moderate activity three times a week — has been shown to reduce migraine frequency. And I'd encourage you to start keeping a headache diary. Track when they happen, what you ate, how you slept, where you are in your menstrual cycle, stress level. It'll help us identify your specific trigger patterns.
+
+Patient: I can use my phone for that, I'm sure there's an app.
+
+Doctor: There are several good ones — Migraine Buddy is popular. One more thing — I want you to be careful about how often you take acute medications. If you're using triptans or even ibuprofen more than two or three days per week, that can actually cause medication overuse headache, which makes everything worse. If you find you're needing acute treatment that often, it means we need to adjust the prevention strategy.
+
+Patient: That's a lot to take in.
+
+Doctor: It is. Let me summarize. We're going to start sumatriptan 50 mg for acute attacks. Start amitriptyline 10 mg at bedtime for prevention. Get a brain MRI. Switch your birth control — that's urgent. Lifestyle changes — sleep, caffeine taper, hydration, exercise, headache diary. I want to see you back in six weeks to see how the amitriptyline is working and review your MRI results. Sound like a plan?
+
+Patient: Yes. I'm honestly just relieved to have an actual plan. I've been kind of suffering in silence.
+
+Doctor: You don't have to do that. Migraines are a real neurological condition and there's a lot we can do. If you have questions before your follow-up, don't hesitate to message me through the patient portal.
+
+Patient: Thank you so much, Doctor.
+
+Doctor: Of course. Take care, Ms. Pereira.

@@ -1,0 +1,43 @@
+{
+  "transcript_id": "26-gout-flare",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The vital signs section lists BP, HR, RR, and SpO2 as 'Stable' when the transcript only says 'vitals are stable' without specifying individual values. Expanding this into separate vital sign entries is a minor embellishment. The rest of the content is well-supported by the transcript.",
+      "flagged_content": [
+        "BP: Stable",
+        "HR: Stable",
+        "RR: Stable",
+        "SpO2: Stable"
+      ]
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The template instructs to only include vitals that were documented and to only include ROS systems that were discussed. Physical exam findings (swelling, erythema, skin appearance) were placed in the Review of Systems section, which is a misplacement. Also, the second occurrence of 'Gout' in Past Medical History is marked with entity syntax when it was already marked in HPI."
+    },
+    "completeness": {
+      "score": 3,
+      "rationale": "The note captures essentially all content from the transcript including the detailed HPI, prior gout history, lack of urate-lowering therapy, exam findings, assessment, all medications with dosing, labs ordered, aspiration discussion, dietary counseling details (steak, beer), hydration advice, side effect counseling, and follow-up plan."
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well overall, but physical exam findings (skin appearance, tenderness, swelling) are misplaced into the Review of Systems section. Also, individual vital signs are listed when only 'afebrile' and 'vitals stable' were documented, which doesn't match the template instruction to only include vitals that were documented."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Entity marking syntax is correct. Gout is marked twice (once in HPI and once in Past Medical History) \u2014 only the first occurrence should be marked. Diabetes, stomach ulcers, and kidney problems are marked as conditions, which is reasonable since they were mentioned as negated history. Colchicine, prednisone, and allopurinol are correctly marked on first occurrence. The second gout marking is an error."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No sections or content are duplicated in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 32.87,
+      "input_tokens": 4000,
+      "output_tokens": 601
+    }
+  }
+}

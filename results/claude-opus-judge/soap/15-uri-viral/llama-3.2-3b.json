@@ -1,0 +1,54 @@
+{
+  "transcript_id": "15-uri-viral",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The note fabricates specific vital signs (BP: 98/64, HR: 72, RR: 18, SpO2: 98%) that are not in the transcript. The transcript only mentions temp 98.4 and that 'other vitals were normal.' These are fabricated clinical findings.",
+      "flagged_content": [
+        "BP: 98/64",
+        "HR: 72",
+        "RR: 18",
+        "SpO2: 98%"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include vitals that were documented, but fabricated vitals were included. The ROS includes many systems not discussed in the transcript, violating the instruction to only include systems that were discussed. Social History items were included despite not being mentioned, violating the 'only include items that were mentioned' instruction. Template bracketed instructions like 'Primary diagnosis or clinical impression:' appear in the output."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Missing the fever history (temp 99.1 on Monday, normal since then), honey in tea recommendation, hydration and rest advice. The ROS incorrectly states 'No fever or chills mentioned' when fever was discussed, and states cough was 'not mentioned' under Respiratory when it clearly was.",
+      "missed_items": [
+        "Fever of 99.1 on Monday that has since normalized",
+        "Honey in tea for cough",
+        "Stay hydrated and rest recommendations",
+        "Wife suggested antibiotics detail",
+        "ROS should note feeling warm/low-grade fever was reported",
+        "ROS should note cough was reported",
+        "Ears clear bilaterally on exam",
+        "Throat pink but no exudates on exam",
+        "Lungs clear bilaterally on exam"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Subjective section appears before Chief Complaint, reversing the template order. Template placeholder language like 'Primary diagnosis or clinical impression:' and 'Diagnostic workup - labs, imaging, referrals:' is retained in the output. Social History includes items not mentioned, violating template instructions."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Medications like pseudoephedrine, Flonase, dextromethorphan and conditions like viral upper respiratory infection are not marked with the required {{drug:...}} or {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content, though the cold symptoms are mentioned in both Subjective and HPI, which is a minor structural issue rather than true duplication."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.6,
+      "input_tokens": 2853,
+      "output_tokens": 680
+    }
+  }
+}

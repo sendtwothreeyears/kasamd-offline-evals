@@ -1,0 +1,65 @@
+{
+  "transcript_id": "42-ibs",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "Multiple fabricated details: Temp 98.6\u00b0F and RR 20/min and SpO2 98% were not in the transcript. 'Serum electrolytes and stool tests will be done to assess the gut-brain interaction' is fabricated \u2014 labs were already done, not planned. 'Dicyclomine 20 mg twice daily' is incorrect; it was prescribed before lunch and dinner (before larger meals). The colonoscopy age range '45 and 55' is fabricated; transcript says age 45. 'At the patient's discretion' is not stated.",
+      "flagged_content": [
+        "Temp: 98.6\u00b0F",
+        "RR: 20/min",
+        "SpO2: 98%",
+        "serum electrolytes, and stool tests will be done to assess the gut-brain interaction",
+        "dicyclomine 20 mg twice daily",
+        "ideally between 45 and 55 years old",
+        "at the patient's discretion"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "Template bracket instructions are left in the output verbatim (e.g., '[Patient's primary reason for visit]', '[Patient's detailed description of current problem...]'). Multiple sections that should have been omitted per instructions (HEENT, Cardiovascular, Respiratory, Genitourinary, Musculoskeletal, Skin) are included with placeholder text. The note fabricated vitals instead of omitting undocumented ones.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note is mostly placeholder text with no actual clinical content filled in for the Subjective section. Missing: all HPI details (onset, duration, severity, location, pain scale, bowel pattern, bloating details, dietary triggers), ROS pertinent negatives (no blood in stool, no fevers, no night sweats, no weight loss), social history details (immigration attorney, stress, sleep hours), family history details, prior workup results, psyllium husk recommendation, dicyclomine side effect counseling, discussion of eluxadoline/amitriptyline as next steps, Rome IV criteria explanation, and red flag instructions.",
+      "missed_items": [
+        "All HPI details",
+        "Pertinent negatives (no blood in stool, fevers, night sweats, weight loss)",
+        "Weight 142 lbs stable",
+        "Prior workup results (CBC, CRP, ESR, celiac panel, TSH, fecal calprotectin, CT abdomen)",
+        "Social history (immigration attorney, stress, sleep 5-6 hours)",
+        "Family history details (uncle with colon cancer in 70s, no Crohn's/UC)",
+        "Psyllium husk/Metamucil recommendation with titration instructions",
+        "Dicyclomine dosing instructions (before lunch and dinner)",
+        "Dicyclomine side effects counseling",
+        "Eluxadoline and amitriptyline as potential next steps",
+        "Rome IV criteria discussion",
+        "Red flag instructions",
+        "Dietary trigger details (onions, garlic, beans, milk, bread)",
+        "Sleep counseling"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "While the general section structure is present, many sections contain only template placeholder text. Social History appears twice. An 'Additional Notes' section was added that is not in the template. Past Medical History section is missing. Content is misplaced (e.g., exam findings described under 'General' incorrectly).",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Social History section appears twice, colonoscopy screening information is duplicated between Plan and Additional Notes, and behavioral health referral is duplicated between Plan and Additional Notes."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 18.79,
+      "input_tokens": 3942,
+      "output_tokens": 988
+    }
+  }
+}

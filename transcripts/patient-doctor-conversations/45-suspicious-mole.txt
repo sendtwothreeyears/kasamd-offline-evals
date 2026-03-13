@@ -1,0 +1,68 @@
+---
+id: 45
+scenario: Skin check, suspicious mole, biopsy discussion
+category: Derm
+density: Medium
+---
+
+Doctor: Afternoon, Claire. I see you're here about a mole that's been bothering you?
+
+Patient: Yeah. So there's this mole on my upper back — my husband actually noticed it. He said it looks different than it used to. Darker, maybe bigger? I can't really see it well myself.
+
+Doctor: How long has he noticed the change?
+
+Patient: He thinks it's been changing over the past few months. Maybe three or four months. He kept saying I should get it looked at, and I finally made the appointment.
+
+Doctor: Glad you did. Any itching or bleeding from it?
+
+Patient: It bled a little bit once when I caught it on my bra strap. But that was just from the friction, I figured.
+
+Doctor: Okay. Let me take a look. I'm going to have you sit forward and I'll examine your back. Let me grab my dermatoscope too.
+
+Patient: Is that the magnifying thing?
+
+Doctor: Exactly — it lets me see the structure of the mole more closely. Alright... I see it. It's on your right upper back. So let me walk through what I'm looking at. We use something called the ABCDE criteria when we evaluate moles. A is for asymmetry — if I drew a line down the middle, the two halves wouldn't match. This one is asymmetric. B is borders — the edges here are irregular, kind of jagged in a couple spots. C is color — I'm seeing more than one shade. There's some dark brown, a lighter tan area, and a small area that's almost black. D is diameter — this is roughly 8 millimeters, which is larger than the 6 millimeter cutoff we look at. And E is evolving, which your husband confirmed — it's been changing.
+
+Patient: That... doesn't sound good.
+
+Doctor: I want to be straightforward with you. It checks several of those boxes, which means I can't just watch it. I'd like to remove it and send it to pathology for analysis. That's the only way to know for sure what we're dealing with.
+
+Patient: You mean like a biopsy?
+
+Doctor: Yes. Specifically an excisional biopsy, which means we'd remove the entire mole along with a small margin of normal skin around it. We do it right here in the office.
+
+Patient: Is it a big deal? Like, is it painful?
+
+Doctor: It's a minor procedure. We numb the area with a local anesthetic — you'll feel a little pinch and some stinging from the lidocaine, and then you won't feel the actual removal. The whole thing takes about 15 to 20 minutes. You'll have a few stitches that we'll take out in 10 to 14 days.
+
+Patient: And then what? How long until we know what it is?
+
+Doctor: Pathology results typically come back in five to seven business days. I'll call you personally as soon as I have them. If it turns out to be just an atypical mole — which is one possibility — we may already be done. If it shows anything more concerning, like a melanoma, then we'd discuss next steps, which might include a wider excision and possibly a referral to dermatology or surgical oncology.
+
+Patient: Melanoma. That's skin cancer.
+
+Doctor: It is. And I don't want to alarm you unnecessarily because we don't know what this is yet. Many suspicious-looking moles turn out to be benign or atypical but not cancerous. But the change over time combined with the irregular features means we need to find out.
+
+Patient: Okay. Yeah. Let's do it. I mean, I'd rather know.
+
+Doctor: Absolutely. I can schedule you for the excision either later this week or early next week. Does that work?
+
+Patient: Can we do Thursday?
+
+Doctor: Let me check. Yes, Thursday at 2:30. Perfect. A few things for that appointment — don't take aspirin or ibuprofen for three days before, since those thin the blood. Tylenol is fine. Wear a loose-fitting top so we can get to the area easily. After the procedure, keep the site clean and dry for 24 hours, then you can shower normally. We'll give you detailed wound care instructions.
+
+Patient: Okay. Should I be checking my other moles?
+
+Doctor: Great question. Yes. Do monthly self-checks — your husband can help with areas you can't see. Look for the same ABCDE changes. And given this finding, I'd recommend you get a full skin exam annually. I can do that or refer you to a dermatologist.
+
+Patient: I'll probably see a dermatologist too. I'm pretty fair-skinned and I was terrible about sunscreen when I was younger.
+
+Doctor: That's a common story. Going forward, daily sunscreen on exposed skin — SPF 30 or higher — and reapply every two hours if you're outside. Hats, protective clothing when you can. It's never too late to start protecting your skin.
+
+Patient: Consider me converted. I'll be buying stock in sunscreen.
+
+Doctor: That's the spirit. Alright, so Thursday at 2:30 for the excision. Try not to worry too much in the meantime — we're being proactive and that's a good thing. Any other questions?
+
+Patient: No, I think that covers it. Thank you for being so thorough.
+
+Doctor: Of course. We'll take good care of you. See you Thursday.

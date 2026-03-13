@@ -1,0 +1,38 @@
+{
+  "transcript_id": "27-depression-new",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "CBT is marked as a condition ({{condition:cognitive behavioral therapy}}), which is a minor conceptual issue but not a fabrication. The note says 'Not documented' for allergies rather than 'No known drug allergies,' which is acceptable. The content is otherwise faithful to the transcript. Labeling CBT as a condition is an entity marking error, not a hallucination per se.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The template instructs that if allergies are not documented, the note should state 'No known drug allergies' or 'Not documented.' The note says 'Not documented,' which is acceptable. However, the template says to only include social history items that were mentioned \u2014 'Occupation: Works (implied by coming home from work...)' uses inference with an editorial parenthetical, which is a minor deviation. Overall instructions were mostly followed well."
+    },
+    "completeness": {
+      "score": 3,
+      "rationale": "The note captures virtually all transcript content: chief complaint, full HPI details, safety screening, PHQ-9 score, diagnosis, CBT referral with virtual visit option, sertraline prescription with dosing and side effects, medication counseling/reframing, exercise recommendation, safety planning including 988, roommate support, follow-up in three weeks, and treatment duration discussion. The patient's decision to try both medication and therapy is also captured."
+    },
+    "template_adherence": {
+      "score": 3,
+      "rationale": "All template sections are present and properly structured. Content is placed in appropriate sections. The formatting follows the template closely with correct headings and organization."
+    },
+    "entity_marking": {
+      "score": 1,
+      "rationale": "{{condition:Major depressive disorder}} and {{drug:sertraline}} are correctly marked. However, {{condition:cognitive behavioral therapy}} is incorrectly marked \u2014 CBT is a treatment/therapy, not a condition. This is an incorrect entity type marking."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No sections or content are duplicated in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 11.03,
+      "input_tokens": 3862,
+      "output_tokens": 539
+    }
+  }
+}

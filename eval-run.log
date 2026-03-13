@@ -1,0 +1,40 @@
+Using Python: /Users/Shared/Code/kasamd_offline/sidecar/.venv/bin/python3
+Found 7 local models.
+Eval plan: 200 total (175 done, 25 remaining)
+  Templates: ['soap']
+  Models: ['medgemma-1.5-4b', 'medgemma-4b', 'llama3-medical-cot', 'llama-3.2-3b', 'gemma3n-e2b', 'phi-4-mini', 'qwen3.5-4b', 'gemini-flash']
+  Transcripts: 25
+
+
+============================================================
+Model: Gemini 2.5 Flash
+============================================================
+  soap/01-htn-new-dx... 393 tokens, 41.8 tok/s
+  soap/03-htn-uncontrolled... 558 tokens, 70.9 tok/s
+  soap/04-dm2-routine-fu... 456 tokens, 45.1 tok/s
+  soap/05-dm2-elevated-a1c... 1045 tokens, 62.7 tok/s
+  soap/06-hyperlipidemia-statin... 742 tokens, 96.6 tok/s
+  soap/09-asthma-exacerbation... 784 tokens, 62.5 tok/s
+  soap/14-multimorbid... 1579 tokens, 66.3 tok/s
+  soap/15-uri-viral... 460 tokens, 51.8 tok/s
+  soap/17-strep-pharyngitis... 394 tokens, 31.6 tok/s
+  soap/19-uti... 381 tokens, 30.0 tok/s
+  soap/22-low-back-pain... 838 tokens, 74.3 tok/s
+  soap/25-headache-migraine... 1294 tokens, 79.1 tok/s
+  soap/26-gout-flare... 975 tokens, 71.3 tok/s
+  soap/27-depression-new... 916 tokens, 88.2 tok/s
+  soap/29-anxiety-gad... 1340 tokens, 89.5 tok/s
+  soap/31-insomnia... 412 tokens, 58.5 tok/s
+  soap/33-substance-use... 715 tokens, 57.0 tok/s
+  soap/34-annual-physical... 1680 tokens, 77.0 tok/s
+  soap/35-well-child... 1332 tokens, 97.2 tok/s
+  soap/37-preop-clearance... 971 tokens, 78.6 tok/s
+  soap/41-gerd... 495 tokens, 71.5 tok/s
+  soap/42-ibs... 1002 tokens, 63.6 tok/s
+  soap/44-eczema... 412 tokens, 56.4 tok/s
+  soap/45-suspicious-mole... 577 tokens, 52.6 tok/s
+  soap/50-polypharmacy... 1247 tokens, 91.1 tok/s
+
+============================================================
+Complete: 25 runs, 0 errors, 175 skipped
+Results in: /Users/Shared/Code/kasamd_offline/evals/results/responses

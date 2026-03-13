@@ -1,0 +1,72 @@
+{
+  "transcript_id": "06-hyperlipidemia-statin",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The ROS section lists negatives for systems that were never discussed, which is fabricated information. The note states 'Constitutional: No fever, chills, fatigue, or weight changes noted' etc., none of which were discussed in the transcript.",
+      "flagged_content": [
+        "Constitutional: No fever, chills, fatigue, or weight changes noted.",
+        "HEENT: No vision, hearing, throat, or nasal symptoms discussed.",
+        "Cardiovascular: No chest pain, palpitations, or edema discussed.",
+        "Respiratory: No shortness of breath, cough, or wheezing discussed.",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain discussed.",
+        "Genitourinary: No urinary symptoms or menstrual history discussed.",
+        "Musculoskeletal: No joint pain, muscle weakness, or mobility issues discussed.",
+        "Neurological: No headache, dizziness, numbness, or weakness discussed.",
+        "Psychiatric: No mood, anxiety, or sleep issues discussed.",
+        "Skin: No rashes, lesions, or wounds discussed."
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template explicitly states to omit the ROS section entirely if not mentioned, yet the note includes all ROS subsystems. The Chief Complaint and HPI contain bracketed template instructions instead of actual content. Vital signs (BP 134/82) were documented in the transcript but listed as 'Not documented.' Social history omits alcohol use which was clearly discussed. The Assessment section says 'Not documented' despite clear diagnoses in the transcript."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note is missing the vast majority of transcript content: lipid panel results (total cholesterol 258, LDL 172, HDL 44, triglycerides 210), 10-year cardiovascular risk score of 12%, patient's age (54), blood pressure (134/82), no diabetes, statin counseling details, dietary counseling specifics, alcohol use details, exercise recommendations, and the assessment/diagnosis of hyperlipidemia/dyslipidemia.",
+      "missed_items": [
+        "Total cholesterol 258",
+        "LDL 172",
+        "HDL 44",
+        "Triglycerides 210",
+        "10-year cardiovascular risk score ~12%",
+        "Patient age 54",
+        "Blood pressure 134/82",
+        "No diabetes",
+        "Patient concerns about statins/muscle problems",
+        "Statin counseling details (muscle aching 5-10%, rhabdomyolysis <1 in 10,000, liver concerns)",
+        "Statins reduce heart attack/stroke risk 25-35%",
+        "Dietary counseling specifics (reduce saturated fats, increase fish/nuts/olive oil/fiber)",
+        "LDL target under 130",
+        "Dietary changes may reduce LDL 10-15%",
+        "Exercise recommendation 150 min/week moderate exercise",
+        "Currently sedentary",
+        "Alcohol use (beer or two most nights, more on weekends)",
+        "Alcohol reduction counseling",
+        "Rosuvastatin as alternative",
+        "Assessment of hyperlipidemia/dyslipidemia",
+        "Hypertriglyceridemia"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template bracketed instructions remain in the Chief Complaint and HPI sections. The ROS section is included when it should be omitted. Vital Signs are placed after Physical Examination instead of within the standard structure. The Assessment section is left as 'Not documented' despite available information."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. Atorvastatin, rosuvastatin, hyperlipidemia, and other drugs/conditions are not marked with {{drug:...}} or {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.32,
+      "input_tokens": 3101,
+      "output_tokens": 976
+    }
+  }
+}

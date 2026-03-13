@@ -1,0 +1,69 @@
+{
+  "transcript_id": "06-hyperlipidemia-statin",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note states 'James is not currently taking any medications' which is not explicitly stated in the transcript \u2014 it's inferred but not confirmed. The ROS section fabricates negative findings that were never discussed. Blood pressure of 134/82 is not 'elevated' per standard clinical thresholds (it's borderline/normal).",
+      "flagged_content": [
+        "Constitutional: No fever, chills, or fatigue was mentioned.",
+        "HEENT: No vision, hearing, throat, or nasal symptoms were mentioned.",
+        "Respiratory: No shortness of breath, cough, or wheezing was mentioned.",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain was mentioned.",
+        "Genitourinary: No urinary symptoms or menstrual history was mentioned.",
+        "Musculoskeletal: No joint pain, muscle weakness, or mobility issues was mentioned.",
+        "Neurological: No headache, dizziness, numbness, or weakness was mentioned.",
+        "Psychiatric: No mood, anxiety, or sleep issues was mentioned.",
+        "Skin: No rashes, lesions, or wounds was mentioned.",
+        "James is not currently taking any medications"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template explicitly says to omit the Review of Systems section entirely if not mentioned, but the note includes all ROS subsystems with 'not mentioned' statements. Vital signs that were not documented should be omitted per template instructions, but HR, Temp, RR, SpO2 are listed as not mentioned. Social history has tobacco listed with alcohol content instead of tobacco information."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing.",
+      "missed_items": [
+        "Ten-year cardiovascular risk score of approximately 12 percent",
+        "Discussion of guidelines: above 7.5% supports statin conversation, above 20% strong recommendation",
+        "25-35% reduction in heart attack and stroke risk with statins",
+        "True rhabdomyolysis risk less than 1 in 10,000",
+        "Routine liver enzyme monitoring no longer done",
+        "Specific dietary counseling details (reducing red meat, cheese, butter, fried foods; increasing fish, nuts, olive oil, fiber)",
+        "Dietary changes alone might reduce LDL by 10-15%",
+        "150 minutes per week of moderate exercise recommendation",
+        "Currently fairly sedentary",
+        "HDL of 44 and its significance",
+        "Triglycerides above 150 in high range",
+        "LDL target of under 130",
+        "Reducing alcohol and refined sugars for triglycerides",
+        "Suggested cutting alcohol to weekends only",
+        "If muscle pain, consider lowering dose or switching to rosuvastatin",
+        "Sending educational resources on heart-healthy eating",
+        "Patient is 54 years old, male, no diabetes",
+        "Friend had bad experience with statins"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Subjective header has an extraneous line before Chief Complaint. ROS should have been omitted entirely. Family history is placed under Past Medical History as well as in its proper section. Vital signs that weren't documented are listed. The template structure is partially followed but with significant deviations."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted at all. Medications like atorvastatin, rosuvastatin and conditions like hyperlipidemia, diabetes should have been marked with {{drug:...}} and {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Family history of hyperlipidemia with brother on cholesterol medication is duplicated in both Past Medical History and Family History sections. Alcohol use is duplicated under both Tobacco and Alcohol in Social History."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 17.22,
+      "input_tokens": 3305,
+      "output_tokens": 979
+    }
+  }
+}

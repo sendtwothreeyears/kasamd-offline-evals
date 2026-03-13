@@ -1,0 +1,182 @@
+---
+id: 36
+scenario: Medicare annual wellness visit, cognitive screen
+category: Preventive
+density: Dense
+---
+
+Doctor: Good morning, Dolores. How are you doing today?
+
+Patient: Oh, I'm alright. Can't complain. Well, I could complain, but who wants to hear it.
+
+Doctor: Ha, I always want to hear it. That's what I'm here for. So today is your annual Medicare wellness visit. It's a little different from a regular physical — we're going to review your health risk assessment, talk about fall risk, do a few screenings, and make sure you're up to date on everything. Sound good?
+
+Patient: Whatever you need to do, doctor. I've got all morning.
+
+Doctor: Good. So let me start by going over what you filled out on the health risk assessment form. I see you're seventy-eight years old, living alone since Robert passed.
+
+Patient: Three years now.
+
+Doctor: I'm sorry. That's got to be hard. How are you managing at home on your own?
+
+Patient: I manage. My daughter Karen lives about twenty minutes away and she comes over once or twice a week. She does my groceries mostly. I can still cook, still clean — well, the house isn't as clean as it used to be, I'll admit that. I drive myself to church on Sundays and to my appointments.
+
+Doctor: That's good. Are you doing your own finances? Bills, banking?
+
+Patient: Karen helps me with some of that. The online stuff confuses me. But I can still write checks and keep track of what's coming in and going out. Mostly.
+
+Doctor: And how about bathing, dressing, getting around the house — any difficulties?
+
+Patient: I have trouble with the bathtub. Getting in and out is scary. Karen had a grab bar put in and one of those bath seats and that helps a lot. Dressing is fine. I'm slower than I used to be on the stairs — my knees, you know — but I manage. I sleep downstairs some nights if the knees are bad.
+
+Doctor: That's important. I want to talk about fall risk. Have you had any falls in the past year?
+
+Patient: I tripped on the rug in the hallway about — oh, maybe six months ago? I didn't break anything. Just bruised my hip. But it shook me up pretty good.
+
+Doctor: Falls are one of the biggest risks at your age, and a fall followed by a hip fracture can be life-changing. Are you doing anything to stay active? Any exercise?
+
+Patient: I walk around the block when the weather's nice. Maybe three or four times a week in the summer. In the winter I don't go out much. I do some stretching in the morning, nothing formal.
+
+Doctor: I'd like to recommend you look into a balance and strength program. There are some great ones designed specifically for fall prevention. I can give you a referral to physical therapy — even a few sessions can teach you exercises to do at home. Would you be open to that?
+
+Patient: I suppose so. If you think it'll help.
+
+Doctor: The evidence is really strong on this. Let me also ask about your medications. You're on — let me pull up the list — lisinopril ten milligrams, amlodipine five milligrams, atorvastatin twenty milligrams, metformin five hundred twice daily, and vitamin D three thousand units. And aspirin eighty-one milligrams?
+
+Patient: That's right. And I take the Tylenol for my knees, but that's over the counter.
+
+Doctor: How often are you taking the Tylenol?
+
+Patient: Oh, twice a day most days. Morning and night.
+
+Doctor: What strength?
+
+Patient: The extra strength, the five hundred milligram ones.
+
+Doctor: Okay, so a thousand milligrams a day. That's within the safe range. Are you having any side effects from any of your medications? Dizziness, nausea, anything?
+
+Patient: The metformin gives me loose stools sometimes. It's been that way since I started it.
+
+Doctor: Are you taking it with food?
+
+Patient: Most of the time. Sometimes I forget and take it on an empty stomach and that's when it's worse.
+
+Doctor: Try to always take it with meals. If it's still bothersome we could switch you to the extended-release version, which tends to be gentler. Let me make a note to reconsider that. Now, I want to do a couple of screening assessments. First, I'm going to ask you two questions about your mood. Over the past two weeks, have you had little interest or pleasure in doing things?
+
+Patient: Not really. I still enjoy my shows, my books, going to church. I miss Robert, of course, but I wouldn't say I've lost interest in things.
+
+Doctor: And over the past two weeks, have you been feeling down, depressed, or hopeless?
+
+Patient: Some days are harder than others. But overall, no. I think I'm doing okay. Karen keeps me busy.
+
+Doctor: Good. Your PHQ-2 screen is negative, which is reassuring. Now, I'd like to do a brief cognitive screen. This is something we do at every wellness visit — it's not because I think there's a problem, it's just part of the standard screening. Okay?
+
+Patient: Oh, you're going to test my memory? Go ahead, I'm warning you, it's not what it used to be.
+
+Doctor: Whose is? Okay, I'm going to say three words and I want you to repeat them back to me and try to remember them. The words are: banana, sunrise, chair.
+
+Patient: Banana, sunrise, chair.
+
+Doctor: Great. Now I'm going to ask you to draw a clock for me. Here's a piece of paper. Draw a circle, put the numbers on it like a clock face, and set the time to ten minutes after eleven.
+
+Patient: Alright... let me... there's the circle... okay, one, two, three... up to twelve... and ten after eleven would be... the big hand on the two and the little hand on the eleven.
+
+Doctor: Very good. The numbers are all there, reasonably well spaced, and the hands are in the correct position. Now, can you tell me those three words I asked you to remember?
+
+Patient: Um... banana... and chair. What was the middle one? Was it... something about the sun? Sunrise!
+
+Doctor: Excellent, you got all three. So your Mini-Cog score is five out of five, which is normal. Your clock drawing was well-organized and accurate.
+
+Patient: Well thank goodness. Karen keeps telling me I repeat myself but I think she just doesn't listen.
+
+Doctor: Ha, I won't get in the middle of that. Now, one thing I want to bring up is advance care planning. Have you and Karen ever talked about what you'd want if you got very sick and couldn't make decisions for yourself?
+
+Patient: We've talked about it a little. I don't want to be on machines. I told her that. If my time comes, my time comes.
+
+Doctor: Have you put that in writing? A living will or advance directive?
+
+Patient: I have a will, but I don't think it covers the medical stuff.
+
+Doctor: They're different documents. A living will or advance directive spells out your medical wishes — things like resuscitation, ventilators, feeding tubes. And a healthcare power of attorney names someone to make decisions if you can't. I'd strongly recommend getting those done. We can provide you with the forms, or your attorney can do it.
+
+Patient: Karen should probably be in charge of that. She's sensible.
+
+Doctor: She'd be a natural choice. Let's plan to get those forms to you, and you can fill them out and bring them in at your next visit. Now, let me review your preventive services. Your last colonoscopy was at age seventy-three?
+
+Patient: I think so. They found one polyp and took it out.
+
+Doctor: Right, I see that. It was a small tubular adenoma. Given your age and the finding, you could consider one more colonoscopy at age seventy-eight, which is now. But I'll be honest with you — at your age, the risks of the procedure start to balance against the benefits. We could also do an annual stool test instead. What are your thoughts?
+
+Patient: The prep was just awful last time. I'd rather do the stool test if that's an option.
+
+Doctor: That's a perfectly reasonable choice. I'll order a FIT test — fecal immunochemical test. It's a kit you do at home and mail in. We'll do it annually. Mammogram — when was your last one?
+
+Patient: I think two years ago? Maybe three?
+
+Doctor: I see one from two years ago, it was normal. At your age, screening mammography is a shared decision. The guidelines say you can stop at seventy-five, but if your overall health is good and your life expectancy is over ten years, continuing makes sense. You're in pretty good health overall.
+
+Doctor: How do you feel about continuing?
+
+Patient: I'll keep doing it. My friend Betty found hers through a mammogram and caught it early. I'd rather know.
+
+Doctor: Then we'll schedule one. Flu shot — have you had it this year?
+
+Patient: Yes, I got the senior one at the pharmacy in September.
+
+Doctor: The high-dose one?
+
+Patient: I believe so.
+
+Doctor: Good. COVID booster?
+
+Patient: I got that at the same time.
+
+Doctor: Shingrix — the shingles vaccine. Did you get both doses?
+
+Patient: I got the first one but I never went back for the second. It made my arm so sore I couldn't lift it for two days.
+
+Doctor: That's a common reaction, unfortunately. But the second dose is important — the first dose alone only gives partial protection. I'd really encourage you to get the second dose. We can give it today if you want.
+
+Patient: Oh, alright. Let's get it over with.
+
+Doctor: Good. Pneumococcal vaccine — you received your PCV20 last year according to your records, so you're covered there. Now, your labs from last week — your A1C is six point eight, which is well-controlled for your age. We have more relaxed targets for older adults with diabetes, and under seven point five is where we want you. Your kidney function is stable, GFR is fifty-eight, which is mild chronic kidney disease stage three-A — that's been stable for the past three years and is consistent with age-related changes. Your blood pressure today is one-thirty-eight over seventy-two.
+
+Patient: Is that okay?
+
+Doctor: For your age, a target under one-fifty systolic is reasonable. You're well within that. I don't want to push it too low because that can cause dizziness and increase fall risk. Your cholesterol is well-controlled on the statin.
+
+Doctor: Let me also ask — are you getting your eyes checked regularly? Diabetic eye exams?
+
+Patient: Oh yes, I go to Dr. Nishimura every year. He says everything looks stable.
+
+Doctor: Perfect. And podiatry — are you checking your feet?
+
+Patient: Karen looks at them when she comes over. I can't really see the bottoms anymore.
+
+Doctor: That's fine as long as someone is checking. Let me take a quick look today. Any numbness or tingling?
+
+Patient: A little tingling in the toes, but it's been like that for a while.
+
+Doctor: That's likely mild diabetic neuropathy. Your monofilament test — can you feel this? How about here?
+
+Patient: Yes to both. The second one was a little faint.
+
+Doctor: You've got some decreased sensation on the left foot. I'd like to send you to podiatry for regular checks, every six months. And make sure you're wearing shoes that fit well, checking inside your shoes before you put them on for pebbles or anything that could cause a sore.
+
+Patient: Alright.
+
+Doctor: So let me give you the summary. We're going to do the FIT colon cancer screening kit, schedule a mammogram, give you the second Shingrix dose today, refer you to physical therapy for fall prevention and balance exercises. I'll put in a podiatry referral. We'll get you those advance directive forms. Continue all your current medications — I'll consider switching you to extended-release metformin if the stomach issues continue. Follow up in six months for your diabetes check, and we'll do this wellness visit again in a year.
+
+Patient: That's a lot of referrals.
+
+Doctor: It is, but they're all important. Karen can help you schedule them. You know, Dolores, you're doing really well for seventy-eight. You're independent, your mind is sharp, your diabetes is controlled. I just want to keep you that way.
+
+Patient: Well, I appreciate that. Robert always said I was too stubborn to get old.
+
+Doctor: Sounds like Robert was a smart man.
+
+Patient: He was. He really was.
+
+Doctor: I'll see you in six months. Don't forget to schedule those appointments.
+
+Patient: I'll have Karen call. Thank you, doctor.

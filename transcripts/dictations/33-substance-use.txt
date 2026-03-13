@@ -1,0 +1,24 @@
+---
+id: 33
+scenario: Alcohol use, brief intervention (SBIRT)
+category: Mental health
+density: Medium
+---
+
+So I saw Sandra today — she came in primarily for knee pain, and I'll be getting that MRI referral in for her. But before we wrapped up, I wanted to address something she flagged on her intake questionnaire around alcohol use, and I'm glad I did.
+
+So Sandra disclosed that her drinking has increased significantly over the past few months. She used to be a weekend-only drinker — maybe a glass of wine on a Friday night — but over the last several months it's shifted to essentially nightly drinking. She estimates two to three glasses most nights, though she acknowledged the pours are generous, so we're probably talking more like three to four standard drinks on drinking nights. She skips maybe one to two nights per week.
+
+I went ahead and did a formal AUDIT-C screening. She reports drinking four to five times per week, two to three drinks on a typical day, sometimes four, and six or more drinks on one occasion roughly once a month — usually a social event like a birthday. Her AUDIT-C score puts her in a range that warrants clinical attention. By her own estimate she's probably averaging somewhere around fifteen to twenty drinks per week, which is well above the low-risk guidelines for women — those being no more than seven drinks per week and no more than three on any single occasion.
+
+I talked with her about the pattern and she was very open. She identified significant psychosocial stressors — her mother had a stroke in October and Sandra has been coordinating her care while working full time, with her husband traveling frequently for work. She described the nightly wine as taking the edge off at the end of the day, which is a very classic stress-driven pattern. I counseled her that while alcohol does temporarily reduce anxiety, over time it worsens both anxiety and sleep and can shift from a choice to a dependency.
+
+Notably, Sandra mentioned she attempted to stop drinking entirely last week and was only able to sustain it for two days before returning to her usual pattern. She said this scared her, which I think reflects good insight. I validated that and framed it positively.
+
+We discussed options. I counseled her on structured reduction strategies — for example, capping at one drink on no more than three nights per week with alcohol-free days in between — as well as a thirty-day abstinence reset as an alternative approach. I also discussed the value of addressing the underlying stressor through counseling or therapy. I specifically mentioned the BASICS program — brief alcohol intervention, two sessions, no labels — and she responded well to that. I'll be putting in a referral for BASICS.
+
+In the meantime, I recommended she keep a drinking diary over the next couple of weeks, logging what she drinks each day along with contextual notes — stress level, social situation, mood, et cetera — to help her identify her patterns.
+
+On the medical side, given her current consumption level, I went ahead and ordered a comprehensive metabolic panel to check liver function, a CBC, and B12 and folate levels, since alcohol can deplete those. I reassured her that it's likely to be fine but that it's good to have a baseline.
+
+Plan is to follow up in approximately six weeks to review labs, check in on the drinking diary, and see how she's doing with the BASICS referral and any counseling. She was very receptive throughout the conversation and I think she's at a good stage of awareness for making some changes.

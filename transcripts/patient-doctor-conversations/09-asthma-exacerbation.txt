@@ -1,0 +1,88 @@
+---
+id: 09
+scenario: Adult asthma exacerbation with seasonal triggers, inhaler review
+category: Chronic disease
+density: Medium
+---
+
+Doctor: Hey, Kevin. What's going on? You don't look too happy.
+
+Patient: I've been struggling to breathe the last couple weeks. My chest feels tight, especially at night, and I've been using my rescue inhaler way more than usual.
+
+Doctor: How often are you using it?
+
+Patient: Like, four or five times a week? Maybe more. Used it twice yesterday.
+
+Doctor: Okay, that's definitely more than it should be. When was the last time your asthma was this bad?
+
+Patient: Maybe two years ago? Same time of year, actually. Right when spring kicks in and everything starts blooming.
+
+Doctor: So seasonal triggers are a pattern for you. Any upper respiratory symptoms — runny nose, sneezing, postnasal drip?
+
+Patient: Yeah, actually, all of that. I thought it was just allergies.
+
+Doctor: It probably is allergies, and the allergies are driving the asthma. They go hand in hand. Are you on any allergy medications?
+
+Patient: I take Claritin sometimes. When I remember.
+
+Doctor: Let me listen to your lungs. Take a deep breath for me. Again. One more. Okay — I'm hearing some mild expiratory wheezing bilaterally, worse on the right. Your O2 sat is 97, which is fine. Peak flow?
+
+Patient: I don't have a peak flow meter at home.
+
+Doctor: We'll check one here. Blow into this as hard and fast as you can. Okay, you got 380. Your personal best was what — around 480, 500?
+
+Patient: I think 480 last time we checked.
+
+Doctor: So you're at about 79 percent of your personal best. That puts you in the yellow zone. Not an emergency, but not where we want you. Now, remind me what you're on for maintenance?
+
+Patient: I have the Flovent. The orange one. 110 I think?
+
+Doctor: Fluticasone 110, one puff twice a day. Are you taking it consistently?
+
+Patient: Uh... I take it most days. I'll be honest, when I feel fine I slack on it. And I've been okay most of the winter so I wasn't really taking it.
+
+Doctor: That's a really common thing, but the maintenance inhaler only works if you take it every day. It prevents inflammation in the airways — it's not something you feel working in the moment like the albuterol. When you stop it, the inflammation builds back up silently, and then when a trigger hits — like pollen season — you flare.
+
+Patient: Yeah, that makes sense.
+
+Doctor: Let me also ask — when you use the Flovent, do you use a spacer?
+
+Patient: No. Am I supposed to?
+
+Doctor: It helps a lot with getting the medication deep into your lungs instead of just coating the back of your throat. I'm going to prescribe you a spacer. Also — do you rinse your mouth after using the Flovent?
+
+Patient: Sometimes?
+
+Doctor: Every time. It prevents a yeast infection in your mouth called thrush. Swish and spit after every use.
+
+Patient: Got it.
+
+Doctor: Okay so here's what I want to do. First, I want to step up your controller. Instead of just the fluticasone alone, I'm going to switch you to a combination inhaler — fluticasone and salmeterol, which is Advair. The salmeterol is a long-acting bronchodilator that keeps the airways open. I'll put you on the 250/50 strength, one puff twice daily.
+
+Patient: Is that safe? I've heard things about the long-acting inhalers.
+
+Doctor: The concerns were about using long-acting bronchodilators alone — without a steroid. In the combination inhaler, the research shows they're safe. It's actually the guideline-recommended step-up for your situation.
+
+Patient: Okay.
+
+Doctor: For the allergies, let's get you on a daily antihistamine — cetirizine, the generic Zyrtec, 10 milligrams every day through the season. And I'd add a nasal steroid spray — fluticasone nasal, Flonase — two sprays each nostril once a day. Treating the allergies will help the asthma.
+
+Patient: How long will I need all this?
+
+Doctor: Through the spring at least — probably through early summer depending on when pollen dies down. Then we can reassess and possibly step back down. For now, keep the albuterol as your rescue inhaler. If you're using it more than twice a week, that's a sign we need to adjust further.
+
+Patient: What about exercising? I've been avoiding the gym because I'm worried about triggering an attack.
+
+Doctor: I don't want you to avoid exercise. If exercise triggers symptoms, use two puffs of albuterol 15 minutes before working out. That should cover you. Regular exercise actually helps lung function long-term.
+
+Patient: Alright, that's good to know.
+
+Doctor: I want to see you back in three to four weeks. If things get worse before then — if you're waking up at night short of breath more than once a week or the rescue inhaler isn't lasting four hours — call us or go to urgent care. Don't tough it out.
+
+Patient: Will do. Thanks, doc.
+
+Doctor: Oh, one more thing — do you have an asthma action plan at home? The written one we made?
+
+Patient: I think it's in a drawer somewhere.
+
+Doctor: Dig it out. It's useful. I'll print you an updated one at checkout. Alright, take care, Kevin.

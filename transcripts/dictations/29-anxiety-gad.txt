@@ -1,0 +1,42 @@
+---
+id: 29
+scenario: Generalized anxiety disorder, initial comprehensive evaluation
+category: Mental health
+density: Dense
+---
+
+So I saw Mr. Nakamura today — he's a gentleman coming in for a new complaint of anxiety. He was actually brought in largely at the urging of his wife, who's been encouraging him to seek help for months. The presenting example that really crystallized things for him was last week at his seven-year-old daughter's school play — he was sitting in the audience and found himself mentally running through work spreadsheets instead of watching his daughter perform on stage. His wife noticed, told him this wasn't normal, and he agreed to come in.
+
+So in terms of history — he's been experiencing significant anxiety for approximately a year and a half to two years, but the last six months have been notably worse. The worry has generalized well beyond work. He worries about his kids' health, finances — he noted they're actually financially stable — whether he left the stove on, whether he said something wrong to someone at a party weeks prior. He describes it as a radio he can't turn off. It's present most of the day, starting within about ten minutes of waking up. He's tried to redirect his attention but the worry slides back in. Importantly, he recognizes that most of his worries are irrational, but he cannot control them — the logic doesn't help.
+
+Physical symptoms are significant. He carries a lot of muscle tension — shoulders, neck, trapezius area. His wife reports he grinds his teeth at night, and he actually cracked a molar last year and was fitted with a night guard by his dentist. He gets tension headaches three to four times a week. GI symptoms include a constant low-grade nausea — not emesis, just an unsettled feeling — and looser stools, not frank diarrhea but not normal. He saw a GI doctor six months ago, had both an endoscopy and colonoscopy, both of which were normal, and was told it was likely irritable bowel syndrome and advised to increase fiber intake. He noted that his GI symptoms are worst on Monday mornings, which correlates with his dread of going into work.
+
+Sleep is significantly impaired. He has difficulty falling asleep — takes forty-five minutes to an hour most nights — due to racing thoughts about what could go wrong tomorrow, next week, next year. He's started listening to podcasts to drown out the thoughts, which ends up keeping him up even later. He mostly stays asleep once he's out, but wakes feeling unrestored. He describes his daytime state as "tired but wired" — exhausted but unable to relax, like he's had ten cups of coffee.
+
+Cardiovascular symptoms — he does experience occasional palpitations when highly anxious. He had an episode during a work presentation last month where he felt his heart thumping and briefly thought he might be having a heart attack, but it resolved within about fifteen seconds and did not escalate into a full panic attack. He denies true panic attacks. He has mild hand tremor, particularly noticeable in meetings — he's been hiding his hands under the table. He has occasional shortness of breath, noting he sometimes catches himself taking shallow breaths and has to consciously take a deep breath. Mild palmar diaphoresis in stressful situations. Mild orthostatic lightheadedness, nothing significant. He is also extremely irritable — snaps at his kids, feels guilty afterward. His wife has told him she feels like she's walking on eggshells.
+
+Social history — caffeine is one cup of coffee in the morning; he previously drank three cups and cut back on his own after reading it could worsen anxiety. Alcohol is one to two beers in the evening occasionally, which he uses to quiet his mind. He has noticed that mornings after drinking are worse — he acknowledged this when I mentioned the concept of rebound anxiety. No recreational drugs, no tobacco.
+
+He has no prior psychiatric treatment — never been to therapy, never been on medication. He grew up in a family where mental health wasn't discussed and he was expected to just manage. Family history is notable — his mother was described as always a worrier, no formal diagnosis known. His older brother is on escitalopram for anxiety and reportedly does well on it.
+
+Medical history — he had a checkup six months ago with reportedly normal blood work, though he was uncertain whether his thyroid was checked. No known thyroid disease, no cardiac history.
+
+On exam today — blood pressure was 138 over 86, which is mildly elevated. He mentioned prior borderline readings attributed to white coat hypertension, but I noted that chronic anxiety can genuinely contribute to elevated blood pressure and we'll monitor that. Heart rate 84. Cardiac exam — regular rate and rhythm, no murmurs. Lungs clear. Thyroid normal to palpation. I did note significant bilateral trapezius muscle tension on palpation. Neurological exam grossly normal — reflexes, coordination, and sensation all intact.
+
+He completed the GAD-7 in office and scored a 17 out of 21, which is in the severe range.
+
+Assessment — Mr. Nakamura meets full criteria for generalized anxiety disorder. He has persistent, uncontrollable worry across multiple life domains lasting well over six months, accompanied by muscle tension, sleep disturbance, GI symptoms, fatigue, difficulty concentrating, irritability, and associated physical symptoms. This is significantly impacting his work performance, his marriage, and his relationship with his children.
+
+Plan — I ordered labs including a TSH to rule out hyperthyroidism, which can mimic anxiety with the palpitations, tremor, GI symptoms, and sleep disruption, as well as a CBC and a comprehensive metabolic panel.
+
+For treatment, I discussed the evidence base for combined psychotherapy and pharmacotherapy. I explained CBT as the gold standard for GAD, as well as ACT as an alternative evidence-based approach. He expressed openness to therapy and I placed a referral to behavioral health.
+
+For medication, I discussed SSRIs, SNRIs, and buspirone. Given the severity of his symptoms — GAD-7 of 17, significant functional impairment — and the family history of his brother responding well to escitalopram, I went ahead and prescribed escitalopram. Starting at 5 milligrams daily for the first week to minimize startup side effects, then increasing to 10 milligrams. I counseled him that it takes two to four weeks to begin working and six to eight weeks for full effect. I reviewed common side effects including initial nausea, headache, possible transient increase in anxiety in the first few days, and the potential for longer-term sexual side effects including decreased libido and difficulty with orgasm, and noted we have strategies to address those if they arise. I also counseled him on when to call — if startup side effects are severe or if he feels significantly worse, to contact us before the follow-up. Standard safety counseling given regarding any thoughts of self-harm — I told him to call us or go to the ER immediately if that occurs, though I don't anticipate it.
+
+He asked about benzodiazepines. I explained that while they work quickly, they're not appropriate as a long-term solution for GAD given the chronic nature of his anxiety and the risks of dependence, tolerance, and rebound anxiety. I may consider a very small supply for acute overwhelming moments while waiting for the escitalopram to take effect, but I made clear this is not the primary treatment. He was receptive to this.
+
+Lifestyle counseling — I discussed exercise as a potent anxiolytic and he agreed to commit to three thirty-minute walks this week as a starting goal. He used to run and wants to get back to it. I discussed mindfulness meditation — ten minutes daily — and mentioned apps including Headspace, Calm, and Insight Timer. Sleep hygiene counseling — consistent bedtime, no screens for at least one hour before bed. He acknowledged he's on his phone until he falls asleep and I encouraged him to replace that with reading a physical book. I also recommended he limit alcohol and monitor whether his mornings improve, given that he's already noticed a rebound effect.
+
+I also suggested he loop his wife in on the treatment plan — let her know what to expect over the coming weeks and that she may notice improvement before he does.
+
+Follow-up in four weeks to review labs and assess medication response. He was appreciative and engaged throughout the visit.

@@ -1,0 +1,58 @@
+{
+  "transcript_id": "03-htn-uncontrolled",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note says the patient 'is concerned about the seriousness of hypertension' \u2014 the transcript actually says the patient finds it hard to take it seriously because he's asymptomatic, which is the opposite sentiment. The Review of Systems lists many systems as negative that were never actually reviewed in the transcript. The note also says 'Physical Examination: Not performed' when no exam was discussed but that's acceptable.",
+      "flagged_content": [
+        "is concerned about the seriousness of hypertension given a family history of stroke",
+        "HEENT: No vision, hearing, throat, or nasal symptoms reported",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain reported",
+        "Genitourinary: No urinary symptoms or menstrual history provided",
+        "Musculoskeletal: No joint pain, muscle weakness, or mobility issues reported",
+        "Psychiatric: No mood, anxiety, or sleep issues reported",
+        "Skin: No rashes, lesions, or wounds reported"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit the section entirely if not mentioned, yet the note includes a full ROS with systems never discussed. Template parenthetical instructions appear verbatim in the output (e.g., '(Only include systems that were discussed...)' and '(If not documented, state \"Not documented\")' under Medications). Social history includes 'Not discussed' items when the template says to only include items that were mentioned."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing: the discussion about hypertension being asymptomatic until causing damage and risks (heart attack, stroke, kidney problems), the specific adherence counseling about putting medication next to toothbrush, the explanation of lisinopril as an ACE inhibitor working through a different mechanism, the discussion about potential lightheadedness, the 2-4 week timeline for effectiveness, the wife's support with label reading, the detail about sodium reduction potentially reducing BP by 5-10 points, and the current exercise of walking the dog 20 minutes.",
+      "missed_items": [
+        "Discussion of hypertension risks (heart attack, stroke, kidney problems)",
+        "Specific adherence tip: putting medication next to toothbrush",
+        "Lisinopril explained as ACE inhibitor with different mechanism",
+        "Potential lightheadedness as side effect",
+        "2-4 week timeline for medication effectiveness",
+        "Wife reading labels and providing support",
+        "Sodium reduction can reduce BP by 5-10 points",
+        "Current exercise is walking the dog about 20 minutes most days",
+        "Patient missing doses once or twice a week specifically due to forgetting",
+        "Diet details: trying to cook more at home, eating out a couple times a week"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template parenthetical instructions are left in the output in multiple places. The ROS section is included despite the instruction to omit it if not discussed. The Objective section formatting deviates with 'Physical Examination: Not performed' placed before vital signs. Social history includes items marked 'Not discussed' contrary to template instructions."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Neither medications (amlodipine, lisinopril) nor conditions (hypertension) were marked with {{drug:...}} or {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.68,
+      "input_tokens": 3253,
+      "output_tokens": 891
+    }
+  }
+}

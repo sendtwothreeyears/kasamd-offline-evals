@@ -1,0 +1,41 @@
+{
+  "transcript_id": "37-preop-clearance",
+  "template": "soap",
+  "model": "qwen3.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The generated note is entirely a thinking/planning process and does not contain a completed clinical note. There is no actual output to evaluate for hallucination, but the failure to produce a note is a fundamental problem.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The output is a massive internal thinking process/planning document rather than a completed clinical note. The instructions required returning ONLY the completed note, and no actual note was produced."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "No completed clinical note was generated. While the thinking process references transcript content, no actual documentation was produced.",
+      "missed_items": [
+        "Entire clinical note is missing - no actual output was generated, only a thinking/planning process"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "No structured clinical note was produced. The output is an unstructured thinking process that repeatedly loops through template sections without generating actual content."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was applied in any completed note since no note was actually generated."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The thinking process contains extreme duplication, with the same template section analysis repeated dozens of times in an apparent loop."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 8.77,
+      "input_tokens": 20160,
+      "output_tokens": 363
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "transcript_id": "44-eczema",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note lists 'Constitutional: Fatigue' in the Review of Systems, but the transcript only mentions sleep disruption from itching, not fatigue per se. Listing triamcinolone under current Medications is misleading since it was newly prescribed, not a current medication. The rest is faithful to the transcript.",
+      "flagged_content": [
+        "Constitutional: Fatigue"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include Social History items that were mentioned, but the note lists all four items as 'Not documented.' The template also says to only include ROS systems that were discussed, yet 'Constitutional: Fatigue' was not discussed. Triamcinolone was placed under Medications (current) rather than only in the Plan, which is misleading."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured well. Minor omission: the note does not mention that regular lotion is mostly water and not sufficient, which was part of the counseling.",
+      "missed_items": [
+        "Counseling that regular lotion is mostly water and not sufficient"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well overall. However, the Chief Complaint is not bolded as a separate sub-header (it's on the same line), vital signs section is omitted without explanation, and the skin exam findings are placed under 'General' rather than a dedicated Skin section."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Drugs (triamcinolone, CeraVe, Vanicream, Benadryl) and conditions (eczema, atopic dermatitis) were not marked with {{drug:...}} or {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 10.39,
+      "input_tokens": 2777,
+      "output_tokens": 514
+    }
+  }
+}

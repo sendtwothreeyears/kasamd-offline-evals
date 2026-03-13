@@ -1,0 +1,44 @@
+{
+  "transcript_id": "29-anxiety-gad",
+  "template": "soap",
+  "model": "qwen3.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "The generated note is entirely internal reasoning/scratchpad and never produces a final clinical note. However, the content discussed in the reasoning is faithful to the transcript with no fabricated findings.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The output is raw chain-of-thought reasoning rather than a formatted clinical note. It completely fails to produce the requested output, instead exposing internal deliberation including an infinite loop on vital signs formatting.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "No actual clinical note was produced. While the reasoning touches on most transcript content, the final deliverable is missing entirely, so no transcript content is captured in a usable note.",
+      "missed_items": [
+        "No final note produced \u2014 all transcript content is effectively missing from the output"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "No structured clinical note was output. The entire output is unstructured internal reasoning with no template sections rendered.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No final note was produced, so no entity marking appears in any deliverable output.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The output contains massive duplication \u2014 the same vital signs reasoning block is repeated hundreds of times in an apparent infinite loop."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 9.52,
+      "input_tokens": 20284,
+      "output_tokens": 398
+    }
+  }
+}

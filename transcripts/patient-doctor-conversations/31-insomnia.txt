@@ -1,0 +1,48 @@
+---
+id: 31
+scenario: Chronic insomnia, sleep hygiene discussion
+category: Mental health
+density: Sparse
+---
+
+Doctor: Hi there, come on in. What brings you in today?
+
+Patient: Hey, thanks. Um, so I've been having a really hard time sleeping. It's been going on for a while now and I'm just... I'm exhausted all the time.
+
+Doctor: I'm sorry to hear that. When you say a while, how long are we talking?
+
+Patient: Probably like four or five months? Maybe longer honestly. It kind of crept up on me.
+
+Doctor: And what's the main issue — is it falling asleep, staying asleep, or both?
+
+Patient: Falling asleep mostly. I'll lay there for like an hour, sometimes two, just staring at the ceiling. Once I'm out I'm usually okay, but getting there is the problem.
+
+Doctor: That sounds really frustrating. What time are you typically getting into bed, and what time do you need to be up?
+
+Patient: I usually get in bed around ten, ten-thirty. My alarm goes off at six-fifteen for work. But I'm probably not actually falling asleep until midnight or later most nights.
+
+Doctor: And what are you doing in the time before bed? Like in that last hour or two?
+
+Patient: Um, usually watching TV in bed or scrolling on my phone. Sometimes I'll answer work emails if something comes in.
+
+Doctor: Okay, that's actually a really common pattern I see. The screens and the light they emit can really interfere with your brain's ability to wind down. And doing work emails — that keeps your mind activated right when you want it to settle.
+
+Patient: Yeah, I've heard that before but I never really took it seriously I guess.
+
+Doctor: It makes a bigger difference than most people expect. So here's what I'd recommend — and I want to try this before we go to any medications. First, no screens for at least thirty minutes before bed, ideally an hour. Second, the bed is for sleep only — no TV, no phone, no laptop. If you're not asleep within twenty minutes, get up, go to another room, do something boring, and come back when you feel drowsy.
+
+Patient: Okay. What about melatonin? My coworker swears by it.
+
+Doctor: Melatonin can be helpful for some people, especially to reset your sleep timing. I'd say you could try a low dose — half a milligram to one milligram — about an hour before your target bedtime. People often take way too much. More isn't better with melatonin.
+
+Patient: Really? My coworker takes like ten milligrams.
+
+Doctor: Yeah, that's a lot. The evidence actually supports lower doses. Start with one milligram and see how you do. But honestly the sleep hygiene changes are going to be the bigger lever here.
+
+Patient: Alright, I'll give it a shot. Should I come back if it doesn't help?
+
+Doctor: Absolutely. Give it three to four weeks of really consistent effort with the sleep hygiene, and if you're still struggling, come back and we'll dig deeper. There are other options we can explore. Sound good?
+
+Patient: Sounds good. Thanks, doc.
+
+Doctor: You got it. Take care.

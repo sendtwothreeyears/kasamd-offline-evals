@@ -1,0 +1,96 @@
+---
+id: 27
+scenario: New depression diagnosis with PHQ-9, discuss treatment options and safety
+category: Mental health
+density: Medium
+---
+
+Doctor: Hi, Ms. Rao. Thanks for coming in today. I see on the check-in form you indicated you've been feeling down. I'd like to talk about that if you're comfortable.
+
+Patient: Yeah. I, um... it's been a rough couple months. I just don't feel like myself.
+
+Doctor: Can you tell me more about what you've been experiencing?
+
+Patient: I don't know. I just feel... flat. Like, I used to love going out with friends, cooking, reading — and now I just don't care about any of it. I come home from work and I sit on the couch and stare at my phone for hours. I can't even motivate myself to make dinner most nights.
+
+Doctor: How long has this been going on?
+
+Patient: Probably about two and a half months? It kind of crept up on me. I thought I was just tired at first, but it's not getting better. My roommate actually told me she was worried about me, and that's what made me call and make this appointment.
+
+Doctor: I'm glad you did. Can I ask about your sleep?
+
+Patient: It's terrible. I can fall asleep fine but I wake up at like three or four in the morning and just lie there. I can't fall back asleep. My mind just kind of... churns. And then I'm exhausted all day.
+
+Doctor: What about your appetite?
+
+Patient: Not great. I'm eating, but I have to force myself. I've lost about eight pounds in the last two months without trying.
+
+Doctor: How's your energy level?
+
+Patient: So low. Everything feels like it takes ten times more effort than it should. Even getting in the shower in the morning feels like this huge task.
+
+Doctor: You mentioned you can't motivate yourself to do things you used to enjoy. How about at work — has your concentration been affected?
+
+Patient: Yes, actually. I'm making mistakes I wouldn't normally make. I forgot about a meeting last week that I had set up myself. My manager asked if everything was okay. It was embarrassing.
+
+Doctor: Have you been feeling guilty or down on yourself?
+
+Patient: All the time. I keep thinking I should be able to just snap out of this. I feel like I'm letting everyone down. I'm twenty-nine — I shouldn't be falling apart.
+
+Doctor: I want you to know that what you're describing isn't falling apart, and it's definitely not a character flaw. This sounds like depression, and it's a medical condition just like any other. Before we go further, I need to ask you a question that I ask everyone I screen for depression, and I want you to be honest with me. Have you had any thoughts of hurting yourself, or any thoughts that you'd be better off dead?
+
+Patient: I... sometimes I think everyone would be better off without me. But I don't have a plan or anything. I wouldn't do that.
+
+Doctor: Thank you for being honest with me. Those kinds of passive thoughts — feeling like a burden — are very common with depression. But I take them seriously. Do you feel safe right now?
+
+Patient: Yes. I'm not going to hurt myself. I just... I want to feel better.
+
+Doctor: And we're going to work on that. I'd like you to fill out this questionnaire — it's called the PHQ-9. It's nine questions about how you've been feeling over the last two weeks. Just rate each one from zero to three.
+
+Patient: Okay.
+
+Doctor: Take your time.
+
+[Patient completes PHQ-9]
+
+Doctor: Alright, let me tally this up. You've scored an 18 out of 27. That falls in the moderately severe range for depression. Combined with what you've told me — the duration, the sleep disruption, the loss of interest, weight loss, fatigue, concentration problems, and the feelings of worthlessness — you meet the criteria for major depressive disorder.
+
+Patient: That sounds serious when you put a name on it.
+
+Doctor: It is a real diagnosis, but it's very treatable. I want to discuss the two main approaches, and they work best together. The first is psychotherapy — specifically cognitive behavioral therapy, or CBT. It teaches you to identify and challenge the negative thought patterns that fuel depression. It's not just venting to someone — it's a structured, evidence-based treatment.
+
+Patient: Like a therapist?
+
+Doctor: Exactly. I can refer you to someone in our behavioral health network. Many of them do virtual visits, which makes it easier to fit into a work schedule. The second approach is medication. The first-line medications for depression are SSRIs — selective serotonin reuptake inhibitors. Sertraline, which you might know as Zoloft, is one I prescribe often. It's well-studied, generally well-tolerated, and effective.
+
+Patient: I've been going back and forth about medication. I keep thinking I should be able to handle this on my own.
+
+Doctor: That's a really common feeling, and I understand it. But I want to reframe it for you — if you had high blood pressure, you wouldn't hesitate to take a blood pressure pill. Depression involves a real chemical imbalance in the brain, and medication addresses that biology. It's not a crutch. It's treatment.
+
+Patient: What are the side effects?
+
+Doctor: The most common ones in the first week or two are mild nausea, headache, and sometimes increased anxiety or jitteriness. Those almost always go away as your body adjusts. Longer term, some people experience sexual side effects — decreased libido or difficulty reaching orgasm. Not everyone gets them, and if it's an issue, we can adjust. I'd start you at 50 milligrams daily, and it takes about four to six weeks to reach full effect.
+
+Patient: And I wouldn't have to be on it forever?
+
+Doctor: Not necessarily. For a first episode of depression, the general recommendation is to continue medication for at least six to twelve months after you feel better, then we'd discuss tapering. Some people stay on longer, and that's okay too. We'll figure it out together.
+
+Patient: I think I'd like to try both — the medication and therapy.
+
+Doctor: I think that's a really good choice. The combination tends to be more effective than either alone. I'm going to prescribe sertraline 50 milligrams, take it in the morning with food. I'm also going to put in a referral to behavioral health. In the meantime, even though it's the last thing you feel like doing, try to get some physical activity — even a twenty-minute walk. Exercise has genuine antidepressant effects.
+
+Patient: I'll try.
+
+Doctor: I want to see you back in three weeks. That's earlier than usual because of the passive suicidal thoughts you mentioned. I want to check in on how you're doing, how the medication is settling, and make sure you're safe. If at any point before then you feel worse, or the thoughts become more specific or active, I want you to call us immediately, go to the ER, or call the 988 Suicide and Crisis Lifeline. Can you save that number in your phone?
+
+Patient: 988. Okay. I will.
+
+Doctor: And is there someone in your life — your roommate maybe — who you can talk to about how you're feeling?
+
+Patient: Yeah, my roommate has been really supportive. She's the one who pushed me to come in.
+
+Doctor: Good. Lean on her. You don't have to do this alone. Any other questions?
+
+Patient: No. I just... thank you. I've been dreading this appointment but I feel a little bit better just having talked about it.
+
+Doctor: That's a great first step, Ms. Rao. We'll get through this. I'll see you in three weeks.

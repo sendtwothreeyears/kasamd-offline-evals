@@ -1,0 +1,55 @@
+{
+  "transcript_id": "04-dm2-routine-fu",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems section fabricates multiple negative findings (no fever/chills, no palpitations, no shortness of breath, no urinary symptoms, no joint pain, no mood changes, no visual changes) that were never discussed in the transcript. Only GI symptoms (no nausea, no diarrhea) were actually discussed. The template instructions say to only include systems that were discussed.",
+      "flagged_content": [
+        "Constitutional: No reported fever or chills.",
+        "HEENT: No reported visual changes.",
+        "Cardiovascular: No reported palpitations.",
+        "Respiratory: No reported shortness of breath.",
+        "Genitourinary: No reported urinary symptoms.",
+        "Musculoskeletal: No reported joint pain.",
+        "Neurological: No reported numbness or weakness.",
+        "Psychiatric: No reported mood changes."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template explicitly states for ROS: 'Only include systems that were discussed. If not mentioned, omit this section entirely.' The note includes many undiscussed systems. Vital signs were listed as 'Not documented' when the template says to only include vitals that were documented. Social history says 'Not documented' but exercise and nutrition details were discussed."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Missing several important details: foot exam findings (pulses, monofilament sensation testing), annual eye exam with Dr. Okafor in February with normal results, kidney labs (microalbumin and creatinine normal), nutritionist sessions (3 completed), and the A1c target context. Exercise and nutrition details are only in the plan, not captured as patient-reported history.",
+      "missed_items": [
+        "Foot exam details: pulses good, sensation intact on monofilament testing, no ulcers",
+        "Annual eye exam in February with Dr. Okafor - normal findings",
+        "Kidney labs normal - microalbumin and creatinine both fine",
+        "Completed three sessions with nutritionist",
+        "Water aerobics twice a week and gardening as current activities (in subjective/social history)",
+        "A1c at target"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "Overall structure follows the template well, but vital signs are listed as 'Not documented' instead of being omitted per template instructions, and social history says 'Not documented' when exercise/lifestyle information was discussed. Some content is misplaced (foot exam findings partially in ROS skin section rather than physical exam)."
+    },
+    "entity_marking": {
+      "score": 1,
+      "rationale": "Metformin is marked correctly on first occurrence, but subsequent occurrences are also marked (in Medications, Assessment, and Plan). The condition 'diabetes' / 'Diabetes Mellitus' is never marked with {{condition:...}} syntax despite appearing multiple times."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No sections or content are duplicated in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.44,
+      "input_tokens": 2810,
+      "output_tokens": 742
+    }
+  }
+}

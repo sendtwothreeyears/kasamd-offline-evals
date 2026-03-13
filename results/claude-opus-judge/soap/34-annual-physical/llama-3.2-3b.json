@@ -1,0 +1,67 @@
+{
+  "transcript_id": "34-annual-physical",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems section actively contradicts the transcript by stating 'No fatigue noted,' 'No headache,' 'No shortness of breath,' etc., when the transcript explicitly documents fatigue, tension headaches, increased exertional dyspnea, heartburn, nocturia, and right knee stiffness. The prior year BP is listed as 120/78 instead of 126/78. The note states 'Kevin is currently not taking any medications' which is not confirmed in the transcript. 'Kevin's overall appearance and condition are generally stable' is a vague embellishment not stated in the transcript.",
+      "flagged_content": [
+        "Constitutional: No fever, chills, or fatigue noted.",
+        "Neurological: No headache, dizziness, numbness, or weakness noted.",
+        "Respiratory: No shortness of breath, cough, or wheezing noted.",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain noted.",
+        "Genitourinary: No urinary symptoms, menstrual history, or genital issues noted.",
+        "Musculoskeletal: No joint pain, muscle weakness, or mobility issues noted.",
+        "Psychiatric: No mood, anxiety, or sleep issues noted.",
+        "up from 120/78 last year",
+        "Kevin is currently not taking any medications"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The ROS section contradicts the transcript by denying symptoms that were actually reported. The template says to only include systems that were discussed, but the note includes them with incorrect negative findings. The Chief Complaint and Subjective sections are oddly structured with the chief complaint appearing after a subjective blurb. Family history is placed in Past Medical History section as well."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "The ROS section omits or contradicts many documented findings: fatigue, tension headaches, exertional dyspnea, heartburn, nocturia, right knee stiffness, reading glasses. The note also omits the brother (age 42, healthy), paternal aunt with breast cancer, maternal grandfather with colon cancer from the family history section. Lab results (CBC, fasting glucose, A1C, lipid panel, liver/kidney/thyroid) are not presented in the objective section. Warning signs counseling for MI/stroke is missing. The discussion about BP trending up and lifestyle changes being sufficient is partially captured.",
+      "missed_items": [
+        "ROS: fatigue reported",
+        "ROS: tension headaches managed with ibuprofen",
+        "ROS: increased exertional dyspnea on stairs",
+        "ROS: heartburn once or twice a month",
+        "ROS: occasional nocturia",
+        "ROS: right knee stiffness after Peloton",
+        "ROS: reading glasses last year",
+        "ROS: mood stable but work-related stress, denies depression",
+        "ROS: no sexual dysfunction",
+        "Family history: brother age 42 healthy",
+        "Family history: paternal aunt with breast cancer",
+        "Family history: maternal grandfather with colon cancer in his seventies",
+        "Lab results in objective section",
+        "Height and weight in vitals",
+        "Counseling on MI/stroke warning signs",
+        "Father's age (69)",
+        "Mother's age (67)"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The note has significant structural issues: Chief Complaint appears after a Subjective blurb rather than under it, Vital Signs are placed after the physical exam instead of before, family history content is duplicated in Past Medical History, labs are not documented in the Objective section, and the entire Assessment and Plan section is duplicated with a separate Assessment/Plan block at the end. Lungs and abdomen findings are placed under Cardiovascular."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. Medications like ibuprofen and statin, and conditions like hypertension, pre-diabetes, dyslipidemia, type 2 diabetes, hypercholesterolemia, etc. are all unmarked."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The Assessment and Plan content is fully duplicated \u2014 it appears once as separate 'Assessment' and 'Plan' sections, and then again as a combined 'Assessment and Plan' section at the end of the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 44.72,
+      "input_tokens": 5704,
+      "output_tokens": 1062
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "transcript_id": "06-hyperlipidemia-statin",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The note states 'No type 2 diabetes' in Past Medical History, but the transcript only says 'no diabetes' \u2014 specifying 'type 2' is a fabricated detail. The Assessment describes HDL as 'elevated' alongside total cholesterol, LDL, and triglycerides, which is incorrect \u2014 HDL at 44 is low/borderline, not elevated.",
+      "flagged_content": [
+        "No {{condition:type 2 diabetes}}",
+        "elevated total cholesterol, LDL, HDL, triglycerides"
+      ]
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The template instructs to state 'No known drug allergies' or 'Not documented' for allergies \u2014 the note says 'Not documented' which is acceptable. However, the Review of Systems section says 'Not documented' when the template says to omit the section entirely if not mentioned. Minor deviation."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "The note captures most transcript content comprehensively. Minor omissions include the specific saturated fat examples in the HPI (red meat, cheese, butter, fried foods are in the Plan but not fully in HPI counseling section), and the explicit mention that dietary changes alone 'likely won't be sufficient given his LDL of 172' is somewhat softened. The 10-year risk discussion about the 20% strong recommendation threshold is omitted.",
+      "missed_items": [
+        "Explicit mention that above 20% is a strong recommendation for statins (the 'gray zone' context)"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well overall. Minor issues: Review of Systems should have been omitted entirely per template instructions rather than stating 'Not documented'. The tobacco and recreational drugs fields under Social History were appropriately omitted since not mentioned."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Drug entities (atorvastatin, rosuvastatin) are correctly marked on first occurrence. Condition entities for hyperlipidemia are marked. However, 'type 2 diabetes' is marked as a condition when the transcript only says 'no diabetes' (and this is a hallucinated specification). The note also fails to mark 'rhabdomyolysis' and 'hepatotoxicity' as conditions."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication detected in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 12.84,
+      "input_tokens": 3387,
+      "output_tokens": 634
+    }
+  }
+}

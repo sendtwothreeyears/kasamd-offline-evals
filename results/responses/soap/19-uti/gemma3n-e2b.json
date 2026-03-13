@@ -1,0 +1,14 @@
+{
+  "transcript_id": "19-uti",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nPatient reports burning with urination and urinary urgency.\n\n**History of Present Illness**\nPatient states onset of symptoms two days ago, with progressive worsening. Reports pinkish discoloration in urine. Denies back pain, nausea, or vomiting.\n\n**Review of Systems**\nConstitutional: No fever reported.\nGenitourinary: Reports burning with urination and urinary urgency.\n\n**Past Medical History**\nHistory of one prior UTI two years ago, treated with antibiotics.\n\n**Medications**\nNot documented\n\n**Allergies**\nNo known drug allergies\n\n**Social History**\nNot documented\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\nPhysical examination not documented\n\n**Vital Signs**\nBP: Not documented\nHR: Not documented\nTemp: Not documented\nRR: Not documented\nSpO2: Not documented\n\n**General**\nNot documented\n\n**Assessment**\nDiagnosis of {{condition:urinary tract infection}} based on symptoms and urine analysis.\n\n**Plan**\n1. Started on {{drug:nitrofurantoin}} (Macrobid) 100 mg twice daily for five days.\n2. Advised patient to take medication with food for better absorption and to manage potential nausea.\n3. Instructed patient to drink plenty of water.\n4. Return precautions: Contact if symptoms do not improve within 48 hours, develop fever, back pain, or vomiting. Complete full course of antibiotics otherwise.\n5. Prescription sent electronically to pharmacy.\n\n\n\n",
+  "metadata": {
+    "inference_time_s": 6.4,
+    "prompt_tokens": 1465,
+    "tokens_generated": 323,
+    "prompt_tps": 662.4,
+    "tokens_per_sec": 50.5,
+    "peak_memory_gb": 3.84
+  }
+}

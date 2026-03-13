@@ -1,0 +1,28 @@
+---
+id: 05
+scenario: Type 2 diabetes with newly elevated A1c, detailed medication discussion
+category: Chronic disease
+density: Dense
+---
+
+So I saw Robert this afternoon — he came in for a diabetes follow-up and, um, unfortunately his labs are not where we want them to be. Let me go through the visit.
+
+He's been feeling tired, getting up to urinate two to three times a night, and has been more thirsty than usual. Those symptoms are consistent with what we're seeing in his labs. His A1c came back at 9.2, which is up significantly from 7.4 six months ago. When he has been checking at home, he's been seeing blood sugars in the 200s, sometimes higher — though he ran out of test strips and hadn't been checking as regularly as he should.
+
+He's on metformin 1,000 milligrams twice daily and says he's been mostly taking it, missed a few days here and there while traveling for work last month. The bigger issue is that his diet and exercise have really fallen apart over the past several weeks. His mother was hospitalized with a hip fracture and he was essentially a full-time caregiver — eating vending machine food and fast food, not exercising. He's gained about 15 pounds. He's currently 240 pounds, height five-nine, BMI 35.4.
+
+So given the A1c of 9.2, the weight gain, and the dietary changes, metformin alone is clearly not sufficient. I had a detailed conversation with him about his options. He was strongly opposed to starting insulin — his father was on insulin and had a difficult experience with it. I discussed that option anyway, specifically basal insulin glargine, something like Lantus or Basaglar, starting at 10 units at bedtime with titration based on fasting sugars. I explained the lower hypoglycemia risk with basal insulin compared to older regimens, but he remained hesitant.
+
+We spent more time discussing GLP-1 receptor agonists, specifically semaglutide — Ozempic. I explained the mechanism, the once-weekly injection, the expected weight loss of 10 to 15 percent of body weight, the cardiovascular benefits, and the low hypoglycemia risk. I also counseled him on the side effects — primarily GI, nausea, vomiting, diarrhea, especially during initiation and dose escalation. I mentioned the rare risk of pancreatitis and noted that we would not use it if he had a history of certain thyroid cancers, which he does not. He does have some concern about nausea given a sensitive stomach, so I explained the slow titration protocol.
+
+He agreed to start semaglutide. Plan is to start at 0.25 milligrams subcutaneous once weekly for four weeks, then titrate to 0.5 milligrams, and up to 1 milligram as needed. I advised smaller meals and avoiding fatty or greasy foods to help with the nausea. I also counseled him that insurance coverage can be an issue with this medication — it can run over a thousand dollars a month without coverage — and that we'll run it through his insurance and pursue prior authorization as needed. I mentioned that if coverage is a barrier, we have other options including empagliflozin, an SGLT2 inhibitor, which is more affordable and also has weight loss benefit.
+
+I also discussed the importance of getting back on track with diet and exercise. He understands the low-carb framework — protein and vegetables first, limit refined carbs, watch portions — and says now that his mother is more stable he can get back to cooking. He was previously walking three to four times a week for about 30 minutes and wants to resume that. I encouraged him to start wherever he can and build up.
+
+On to complications screening. His last eye exam was over a year ago, possibly a year and a half — went ahead and put in an ophthalmology referral given the A1c of 9.2 and the need to check for retinal changes. Kidney labs today: creatinine is normal at 1.0, but urine microalbumin is mildly elevated at 45, which is early diabetic nephropathy. I counseled him that this is reversible at this stage with better glucose control. He's on lisinopril 20 milligrams daily, which is good for renal protection. Blood pressure today was 138 over 86 — a little elevated. We'll monitor and may need to increase the lisinopril if it stays in that range.
+
+I did a foot exam — monofilament sensation intact bilaterally, pulses strong, no skin breakdown. Counseled him to wear good shoes and check his feet daily.
+
+Going ahead and ordering a new glucometer and test strips. I want him checking fasting sugars every morning and before dinner and logging them. Also ordered a basic metabolic panel for the follow-up visit.
+
+Plan summary: start semaglutide 0.25 milligrams subcutaneous once weekly, continue metformin 1,000 milligrams twice daily, continue lisinopril 20 milligrams daily, resume diet and exercise, new glucometer and strips, ophthalmology referral, and follow up in four weeks to assess semaglutide tolerance and review glucose logs and BMP.

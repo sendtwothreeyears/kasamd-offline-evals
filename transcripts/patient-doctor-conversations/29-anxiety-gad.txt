@@ -1,0 +1,196 @@
+---
+id: 29
+scenario: Generalized anxiety disorder, initial comprehensive evaluation
+category: Mental health
+density: Dense
+---
+
+Doctor: Good morning, Mr. Nakamura. I'm Dr. Whitfield. I understand you're here because you've been dealing with some anxiety?
+
+Patient: Yeah. It's been, uh — I don't even know where to start. It's been bad. For a while now.
+
+Doctor: Take your time. Why don't you start with what made you decide to come in today?
+
+Patient: Honestly, my wife kind of made me. She's been saying for months that I need to talk to someone. I kept brushing it off, thinking I just needed to manage my stress better. But last week I was at my daughter's school play and I was sitting in the audience and I just could not stop thinking about a work project that's due next week. Like, my seven-year-old is on stage singing and I'm running through spreadsheets in my head. My wife saw I wasn't paying attention and she just looked at me and said, "This isn't normal. Please go see someone." And she's right.
+
+Doctor: That's a really telling example. How long have you been feeling this level of worry?
+
+Patient: If I'm being honest, probably a year and a half? Maybe two years? But the last six months it's really ramped up. It used to be just work stuff, but now I worry about everything. My kids' health, finances — we're fine financially, by the way — whether I left the stove on, whether I said the wrong thing to somebody at a party three weeks ago. It just never stops.
+
+Doctor: When you say it never stops, do you mean you're worrying most of the day, or is it more episodic?
+
+Patient: Most of the day. I wake up and within ten minutes the thoughts start. Like a radio I can't turn off. I try to focus on something else and it works for a little while, but then the worry just slides back in.
+
+Doctor: Do you feel like you can control the worrying? Can you tell yourself to stop and actually stop?
+
+Patient: No. That's the frustrating part. I know logically that most of what I'm worrying about is irrational. Like, I know my kids are healthy. I know we have money in the bank. But the worry doesn't care about logic. It just keeps going.
+
+Doctor: That disconnect between knowing something rationally and feeling it emotionally is very characteristic of generalized anxiety. Let me ask about some physical symptoms. Do you carry a lot of tension in your body?
+
+Patient: Oh, God, yes. My shoulders are basically up by my ears. My wife says I grind my teeth at night — I actually cracked a molar last year and my dentist made me a night guard. My neck is always tight. I get tension headaches probably three or four times a week.
+
+Doctor: Any gastrointestinal symptoms? Stomach issues?
+
+Patient: Yes, actually. My stomach has been a mess. I get this sort of... unsettled feeling, like low-grade nausea. Not like I'm going to throw up, just this constant unease in my gut. And I've had more loose stools — not diarrhea exactly, but definitely not normal. I actually went to a GI doctor six months ago, and they did an endoscopy and a colonoscopy and said everything looked fine.
+
+Doctor: Did they mention IBS?
+
+Patient: Yeah, they said it might be irritable bowel. Told me to eat more fiber.
+
+Doctor: GI symptoms are very commonly linked to anxiety. The gut-brain connection is real — your gut has its own nervous system and it responds strongly to stress hormones. Have you noticed the stomach symptoms get worse on days when you're more anxious?
+
+Patient: Now that you say it... yeah, actually. Mondays are the worst. I dread going into work on Monday mornings and my stomach is always terrible.
+
+Doctor: How about your sleep?
+
+Patient: Takes me forever to fall asleep. My body is exhausted but my mind won't shut up. I lie there going through every possible thing that could go wrong tomorrow, next week, next year. It probably takes me forty-five minutes to an hour most nights. I've started listening to podcasts to try to drown out the thoughts, but then I end up staying up even later.
+
+Doctor: Once you're asleep, do you stay asleep?
+
+Patient: Mostly. But I wake up feeling like I haven't rested. Like the sleep isn't restoring me.
+
+Doctor: How's your energy during the day?
+
+Patient: I'm tired but wired. That's the best way I can describe it. Exhausted but I can't relax. I feel like I've had ten cups of coffee even when I've only had one.
+
+Doctor: Speaking of which, how much caffeine do you consume?
+
+Patient: One coffee in the morning. I actually cut back from three cups because I read it could make anxiety worse. I don't think it helped much, honestly.
+
+Doctor: That was a good instinct though. Any alcohol?
+
+Patient: A beer or two in the evening sometimes. It's the only thing that quiets my brain. I know that's probably not great.
+
+Doctor: It's worth being aware of. Alcohol can seem like it helps in the moment, but it actually disrupts sleep quality and can increase anxiety the next day — sometimes called "hangxiety." I wouldn't say you need to stop completely, but try to notice if there's a rebound effect the following morning.
+
+Patient: I have noticed that, actually. After I drink, the next morning is usually worse.
+
+Doctor: Any recreational drugs? Marijuana?
+
+Patient: No, nothing.
+
+Doctor: Tobacco?
+
+Patient: No.
+
+Doctor: Let me ask about some other things that can mimic or contribute to anxiety. Any heart palpitations? Feeling your heart racing?
+
+Patient: Sometimes. When I'm really wound up, I can feel my heart thumping. It happened during a presentation at work last month. I thought I was having a heart attack for a second.
+
+Doctor: Did that episode escalate into a full panic attack — intense fear, feeling like you can't breathe, feeling like you're dying?
+
+Patient: No, it wasn't that dramatic. It was more like fifteen seconds of "whoa, what's happening" and then it passed. I don't have panic attacks. It's more this constant baseline of dread.
+
+Doctor: That distinction is helpful. Any trembling or shaking?
+
+Patient: My hands shake a little sometimes. Especially if I'm in a meeting and I'm anxious. I've started keeping my hands under the table.
+
+Doctor: Any shortness of breath?
+
+Patient: Occasionally. Sometimes I realize I'm taking these shallow little breaths and I have to consciously take a deep breath. Like I forget how to breathe normally.
+
+Doctor: Dizziness or lightheadedness?
+
+Patient: Not really. Maybe a tiny bit when I stand up fast, but nothing significant.
+
+Doctor: Any sweating beyond what's normal?
+
+Patient: My palms get sweaty in meetings. Kind of embarrassing.
+
+Doctor: Have you ever been treated for anxiety before? Therapy, medication?
+
+Patient: No. I've never talked to anyone about this professionally. I grew up in a family where you just dealt with things. My dad would have said I need to toughen up.
+
+Doctor: That's a common experience, and I want to push back on it gently — there's nothing tough about suffering when effective treatment exists. Let me ask about your family history. Anyone in your family with anxiety, depression, or other mental health conditions?
+
+Patient: My mom was always a worrier. I don't know if she was ever diagnosed with anything. My older brother takes medication for anxiety — I think Lexapro? We don't really talk about it.
+
+Doctor: Okay. Any medical conditions of your own? Thyroid problems, heart issues?
+
+Patient: No. I'm pretty healthy physically. I had a checkup about six months ago and everything was fine. Blood work was normal.
+
+Doctor: Did they check your thyroid?
+
+Patient: I think so? I'm not sure.
+
+Doctor: I'm going to order some labs including a TSH — that's a thyroid test. Hyperthyroidism can cause symptoms that look a lot like anxiety — the racing heart, tremor, GI issues, difficulty sleeping. I want to rule that out. I'll also check a basic metabolic panel and a CBC.
+
+Patient: Okay.
+
+Doctor: Let me do a brief physical exam. Your vitals today — blood pressure is 138 over 86, which is a bit elevated. Heart rate 84. Have you had high blood pressure before?
+
+Patient: It's been borderline a couple times. They always say it's probably white coat hypertension — you know, being nervous at the doctor's office.
+
+Doctor: Possibly, but chronic anxiety can genuinely elevate blood pressure over time. We'll keep an eye on that. Let me listen to your heart... regular rhythm, no murmurs. Lungs are clear. Your thyroid feels normal on palpation. I can feel some significant tension in your trapezius muscles bilaterally. Neurological exam is grossly normal — reflexes, coordination, sensation all look fine.
+
+Doctor: Now, I'd like you to fill out a questionnaire called the GAD-7. It's seven questions about anxiety symptoms over the last two weeks. Rate each zero to three.
+
+Patient: Sure.
+
+[Patient completes GAD-7]
+
+Doctor: Let me score this. You've got a 17 out of 21, which is in the severe range. Combined with everything you've told me — the persistent, uncontrollable worry about multiple domains of life, the muscle tension, sleep disturbance, GI symptoms, fatigue, difficulty concentrating, and irritability — have you been irritable, by the way?
+
+Patient: Extremely. I snap at my kids over nothing. Then I feel terrible about it. My wife says she feels like she's walking on eggshells.
+
+Doctor: That fits. You meet the full criteria for generalized anxiety disorder. This has clearly been impacting your work, your relationships, and your quality of life significantly.
+
+Patient: It's kind of a relief to have a name for it. I was starting to think I was just... broken.
+
+Doctor: You're not broken. Your brain's alarm system is stuck in the "on" position. Let me talk about treatment. Like depression, the best evidence is for a combination of psychotherapy and medication. On the therapy side, cognitive behavioral therapy — CBT — is the gold standard for GAD. It teaches you to recognize anxious thought patterns, challenge them, and develop coping strategies. There's also something called acceptance and commitment therapy — ACT — that's shown good results. Both are structured, evidence-based approaches.
+
+Patient: I'm open to therapy. I think I need it.
+
+Doctor: Good. I'll put in a referral. Now, for medication — there are several options. SSRIs like sertraline or escitalopram are first-line. SNRIs like duloxetine or venlafaxine are also very effective for GAD. Buspirone is another option — it's specifically designed for anxiety, not an antidepressant, and has very few side effects, but it takes a while to work and isn't as potent for severe cases.
+
+Patient: What would you recommend for me?
+
+Doctor: Given the severity of your symptoms — a GAD-7 of 17, the physical symptoms, the impact on your daily life — I'd recommend escitalopram, which is Lexapro. It's well-tolerated, it's effective for both the psychological and physical symptoms of anxiety, and interestingly, your brother does well on it, which sometimes predicts a good response in family members.
+
+Patient: How does it work?
+
+Doctor: It increases the availability of serotonin in your brain. Low serotonin is associated with both anxiety and depression. It takes about two to four weeks to start working and six to eight weeks for full effect. I'd start you at 5 milligrams for the first week — that's actually half the target dose — to minimize startup side effects, then increase to 10 milligrams.
+
+Patient: Side effects?
+
+Doctor: The most common are mild nausea, headache, and sometimes increased anxiety in the first few days — I know that seems counterintuitive. These usually resolve within a week or two. Longer term, some people experience sexual side effects — decreased libido, difficulty with orgasm. If that happens, we have strategies to address it.
+
+Patient: I've heard about benzos — like Xanax. Is that an option?
+
+Doctor: Benzodiazepines do work quickly for anxiety, but I'm cautious with them for GAD. Your type of anxiety is chronic and persistent, and benzos are really designed for short-term or acute use. They carry risks of dependence, tolerance — meaning you need more over time to get the same effect — and they can actually worsen anxiety when they wear off. I might prescribe a very small supply for truly overwhelming moments while we wait for the escitalopram to kick in, but I want to be clear that they're not the long-term solution.
+
+Patient: No, that's fair. I don't want to depend on something like that.
+
+Doctor: Smart. Let me also mention lifestyle factors that genuinely help. Exercise is one of the most effective natural anxiolytics we have. Even thirty minutes of moderate exercise — a brisk walk, a bike ride — three to five times a week can significantly reduce baseline anxiety. Are you exercising at all?
+
+Patient: I used to run. I haven't in months. I keep meaning to start again.
+
+Doctor: Let's make that a specific, measurable goal. Can you commit to three thirty-minute walks this week?
+
+Patient: Yeah, I can do that.
+
+Doctor: Mindfulness meditation has strong evidence for GAD as well. Even ten minutes a day. There are good apps — Headspace, Calm, Insight Timer. Sleep hygiene is important — consistent bedtime, no screens for an hour before bed. And I'd suggest limiting alcohol to see if your mornings improve.
+
+Patient: The screens thing is going to be hard. I'm on my phone until the second I close my eyes.
+
+Doctor: That's very common, and it's working against you. The blue light suppresses melatonin, and scrolling keeps your brain in activation mode when it should be winding down. Try reading a physical book instead. I know it sounds old-fashioned, but it works.
+
+Patient: My wife will be thrilled to hear a doctor told me to put my phone down.
+
+Doctor: Ha. I'm going to order those labs we discussed — TSH, CBC, CMP. I'm prescribing escitalopram, starting at 5 milligrams daily for one week, then increasing to 10 milligrams. Referral to behavioral health for CBT. I want to see you back in four weeks to check on how the medication is settling and review your labs. If the startup side effects are unbearable or you feel significantly worse, call us before then.
+
+Patient: What do you mean by "significantly worse"?
+
+Doctor: Occasionally — and I want to emphasize occasionally — when starting an SSRI, people can feel more anxious or agitated in the first week or two. If that happens to a degree that's really distressing, I want to know about it. Also, and this is standard protocol — any thoughts of self-harm, which I don't expect, but if they occur, call us or go to the ER immediately.
+
+Patient: Okay. I appreciate you being thorough.
+
+Doctor: One more thing — it might be worth having a conversation with your wife about what to expect. Let her know you're starting treatment, that it'll take a few weeks to work, and that she can be a good observer of your progress. Sometimes the people around us notice improvement before we notice it ourselves.
+
+Patient: That's a good idea. She'll be happy I'm doing something about this.
+
+Doctor: You're taking a really important step, Mr. Nakamura. This is very treatable, and most people with GAD see significant improvement with the right combination of therapy and medication. Any other questions?
+
+Patient: No, I think we covered everything. Thank you, Dr. Whitfield. Really.
+
+Doctor: You're very welcome. I'll see you in four weeks.

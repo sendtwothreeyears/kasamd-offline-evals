@@ -1,0 +1,65 @@
+{
+  "transcript_id": "05-dm2-elevated-a1c",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The HPI content that is present is accurate and from the transcript. However, the note is essentially just the template placeholders repeated dozens of times with only a minimal HPI filled in, so there is little opportunity for hallucination. No fabricated clinical content is present.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note catastrophically fails to follow instructions. Template placeholder text (brackets, parenthetical instructions) is left throughout every section. Sections that had documented content were not filled in. The entire note is duplicated approximately 30 times. The instruction to state 'Not documented' where appropriate was ignored in favor of leaving raw template text.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note captures only the chief complaint and a brief HPI. It is missing virtually all transcript content: medications (metformin, lisinopril, semaglutide), weight/BMI, diet/exercise context, mother's hospitalization, medication adherence details, discussion of insulin vs GLP-1, semaglutide plan details, insurance discussion, empagliflozin alternative, complications screening (eye exam, kidney labs, foot exam), blood pressure, assessment/diagnoses, and the entire plan.",
+      "missed_items": [
+        "metformin 1000mg BID",
+        "lisinopril 20mg daily",
+        "semaglutide 0.25mg SQ weekly start",
+        "insulin glargine discussion",
+        "empagliflozin alternative",
+        "weight 240 lbs, BMI 35.4, 15 lb weight gain",
+        "blood pressure 138/86",
+        "creatinine 1.0",
+        "urine microalbumin 45",
+        "diabetic nephropathy",
+        "foot exam findings",
+        "ophthalmology referral",
+        "new glucometer and test strips",
+        "BMP ordered",
+        "diet and exercise counseling",
+        "mother's hospitalization/caregiving context",
+        "blood sugars in 200s",
+        "insurance/prior authorization discussion",
+        "family history (father on insulin)",
+        "social history (traveling for work)",
+        "follow-up in 4 weeks",
+        "assessment of uncontrolled diabetes/obesity"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The template structure is present but entirely unfilled \u2014 raw placeholder text with brackets and parenthetical instructions remains in every section. The note is duplicated approximately 30 times, making it completely unusable.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The entire note (with the same minimal HPI and unfilled template) is duplicated approximately 30 times."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 17.65,
+      "input_tokens": 21552,
+      "output_tokens": 738
+    }
+  }
+}

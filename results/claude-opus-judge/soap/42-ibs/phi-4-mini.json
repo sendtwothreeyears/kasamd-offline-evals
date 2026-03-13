@@ -1,0 +1,56 @@
+{
+  "transcript_id": "42-ibs",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The ROS lists 'no chills, fatigue' which were not discussed in the transcript. The social history mentions 'Consumes a diet high in potential triggers' which is an embellishment \u2014 the transcript mentions dietary triggers but doesn't characterize her overall diet this way. 'Average seven to six hours of sleep' appears to be a typo (should be five to six).",
+      "flagged_content": [
+        "no fever, chills, fatigue",
+        "Consumes a diet high in potential triggers (onions, garlic, beans, milk, bread)",
+        "Average seven to six hours of sleep"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructions say to omit systems not discussed, but the ROS includes 'Not discussed' for multiple systems. Template parenthetical instructions like '(Only include systems that were discussed)' appear in the output. The note also includes extraneous sections at the end that duplicate content and a disclaimer note that was not requested.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured. However, some details are missing: the description of bloating as 'constant' and the specific detail about not being able to button jeans by afternoon, the detail that cheese bothers her less than milk, the counseling on dicyclomine side effects (dry mouth, dizziness), the explanation that IBS is a disorder of gut-brain interaction, the clarification that amitriptyline at IBS doses is not acting as an antidepressant, and the instruction to call immediately if blood in stool/weight loss/fevers.",
+      "missed_items": [
+        "cheese seems to bother her less than milk",
+        "bloating described as constant, can't button jeans by afternoon",
+        "dicyclomine side effects counseling (dry mouth, dizziness)",
+        "IBS explained as disorder of gut-brain interaction",
+        "amitriptyline clarification about not acting as antidepressant at IBS doses",
+        "instruction to call immediately if blood in stool, weight loss, or fevers",
+        "psyllium titration details (increase to twice daily after a week, titrate to full label dose over several weeks)",
+        "no masses on exam",
+        "CBT described as skills-based rather than traditional talk therapy"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The note has massive structural problems: after the main note, there are duplicated sections with headers like 'Physical Examination Not Documented', 'Vital Signs Not Documented', 'Past Workup Not Documented', etc., which are not part of the template and create a confusing, malformed document. Family history is placed in HPI rather than the Family History section. Medications section lists newly prescribed medications rather than current/prior medications.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. No {{drug:...}} or {{condition:...}} syntax was used anywhere in the note.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Multiple sections are duplicated at the end of the note: Physical Examination, Vital Signs, Allergies, Family History, Past Medical History, Social History, Assessment, and Plan all appear again with 'Not Documented' headers, and some contain repeated content (e.g., vitals, allergies)."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.4,
+      "input_tokens": 4226,
+      "output_tokens": 850
+    }
+  }
+}

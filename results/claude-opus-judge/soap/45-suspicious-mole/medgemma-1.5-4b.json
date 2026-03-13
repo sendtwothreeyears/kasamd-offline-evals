@@ -1,0 +1,60 @@
+{
+  "transcript_id": "45-suspicious-mole",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "The content that is present (Chief Complaint and HPI) accurately reflects the transcript with no fabricated information.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note fails catastrophically on instruction following: template placeholder text and instructions in brackets/parentheses are left unfilled throughout every section, the Review of Systems should have been omitted (per template instructions) since those systems were not discussed, and sections like Past Medical History, Medications, Allergies, Social History, Family History, Physical Examination, Assessment, and Plan are all left as raw template placeholders rather than being filled in or marked 'Not documented.'",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note only captures the chief complaint and HPI. It is missing the entire physical examination (dermatoscope findings, ABCDE criteria details, lesion description), assessment (suspicious mole), plan (excisional biopsy Thursday 2:30, lidocaine, avoid aspirin/ibuprofen, Tylenol OK, pathology in 5-7 days, wound care, sunscreen counseling, monthly self-skin checks, annual full skin exams, dermatology referral interest), social history (fair-skinned, poor sun protection history), and all medications mentioned.",
+      "missed_items": [
+        "Dermatoscope examination findings",
+        "ABCDE criteria details (asymmetry, irregular borders, variegated color, 8mm diameter, evolving)",
+        "Lesion location: right upper back",
+        "Excisional biopsy scheduled Thursday 2:30",
+        "Lidocaine local anesthetic",
+        "Avoid aspirin and ibuprofen 3 days prior",
+        "Tylenol is fine",
+        "Suture removal 10-14 days",
+        "Pathology results 5-7 business days",
+        "Possible outcomes discussed (atypical benign mole vs melanoma)",
+        "Wider excision and referral to dermatology/surgical oncology if needed",
+        "Wound care instructions",
+        "Monthly self-skin checks",
+        "Annual full skin exams",
+        "Sunscreen SPF 30+ counseling",
+        "Fair-skinned with poor sun protection history",
+        "Interest in seeing dermatologist"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The template structure is present but every section beyond Chief Complaint and HPI contains raw template placeholder text with brackets and parenthetical instructions, making it essentially an unfilled template repeated dozens of times.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The entire note structure is duplicated approximately 25+ times, which is an extreme case of output repetition."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 17.45,
+      "input_tokens": 21189,
+      "output_tokens": 751
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "transcript_id": "42-ibs",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The note includes 'Reports fatigue' under Constitutional ROS, which was never mentioned in the transcript. Multiple ROS systems are listed as 'No reported symptoms' when they were never discussed \u2014 these should have been omitted per template instructions. 'Dicyclomine 20 mg PO q6h' fabricates a q6h frequency; the transcript says before lunch and dinner. 'Patient appears comfortable' is not stated in the transcript (though close to a clinical default, it goes slightly beyond 'well-appearing').",
+      "flagged_content": [
+        "Constitutional: Reports fatigue.",
+        "HEENT: No reported symptoms.",
+        "Cardiovascular: No reported symptoms.",
+        "Respiratory: No reported symptoms.",
+        "Genitourinary: No reported symptoms.",
+        "Musculoskeletal: No reported symptoms.",
+        "Neurological: No reported symptoms.",
+        "Dicyclomine 20 mg PO q6h for cramping, taken with meals",
+        "Patient appears comfortable"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit the rest, but the note includes many undiscussed systems with 'No reported symptoms.' The template also says to only include social history items that were mentioned, but tobacco, alcohol, and recreational drugs are listed as 'Not documented.' Medications section says 'Not documented' when loperamide (Imodium) was clearly mentioned as a current medication."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing: the description of 3-4 loose stools on diarrhea days and 2-3 days of constipation, the detail about bread worsening bloating, the milk/cheese dietary trial details, the prior workup results (CBC, CRP, ESR, celiac panel, TSH, fecal calprotectin, CT abdomen), the explanation of IBS as gut-brain interaction, the Rome IV criteria mention, sleep counseling (5-6 hours, goal of 7), the discussion of potential next-step medications (eluxadoline, amitriptyline), and the low-FODMAP elimination/reintroduction phases.",
+      "missed_items": [
+        "3-4 loose stools on diarrhea days, constipated 2-3 days",
+        "Bread worsening bloating, uncertainty about gluten vs carbs",
+        "Milk trial with some benefit, cheese less bothersome",
+        "Prior workup: CBC normal, CRP/ESR normal, celiac panel (tTG) negative, TSH normal, fecal calprotectin normal, CT abdomen normal",
+        "Rome IV criteria mentioned",
+        "IBS explained as disorder of gut-brain interaction",
+        "Sleep: currently 5-6 hours, counseled to aim for 7",
+        "Discussion of potential next steps: eluxadoline, low-dose amitriptyline",
+        "Low-FODMAP elimination phase 4-6 weeks followed by systematic reintroduction",
+        "Worst flare during trial week",
+        "Loperamide 1-2 tabs as needed dosing detail",
+        "Pain bad enough to double her over",
+        "Psyllium titration to full label dose over several weeks"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The overall structure follows the template well with appropriate sections. Minor issues include listing undiscussed ROS systems and social history items that should have been omitted, and the abdominal exam findings are somewhat misplaced under General rather than having a dedicated abdominal section."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. Medications (dicyclomine, psyllium/Metamucil, loperamide/Imodium, eluxadoline, amitriptyline) and conditions (IBS, colon cancer, Crohn's disease, ulcerative colitis) should have been marked with {{drug:...}} and {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "The dietitian referral is mentioned twice (items 1 and 6) which is redundant but not a full section duplication."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 18.89,
+      "input_tokens": 3789,
+      "output_tokens": 1036
+    }
+  }
+}

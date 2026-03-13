@@ -1,0 +1,62 @@
+{
+  "transcript_id": "14-multimorbid",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems states 'No fever, chills, or fatigue mentioned' when fatigue was explicitly mentioned. It also says 'No shortness of breath' when mild exertional dyspnea was reported, and 'No urinary symptoms' when nocturia was discussed. The General section fabricates that the patient's appearance is 'described as being overweight, with a significant amount of weight gain over the past four months' \u2014 the transcript never describes his appearance this way. The medications list is a confused mix of pre- and post-visit medications (e.g., Tresiba listed as 22 units but dapagliflozin and HCTZ already included; atorvastatin listed as 40mg instead of the new 80mg). Social history items like tobacco, alcohol, recreational drugs were not discussed but are listed as 'not mentioned' which borders on fabrication of negative findings for undiscussed topics.",
+      "flagged_content": [
+        "No fever, chills, or fatigue mentioned",
+        "No shortness of breath, cough, or wheezing mentioned",
+        "No urinary symptoms or menstrual history mentioned",
+        "The patient's overall appearance and condition are described as being overweight, with a significant amount of weight gain over the past four months"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit unmentioned ones, but the note includes all systems with 'not mentioned' statements. Social history items not discussed in the transcript are listed. The template says to state 'Not documented' for certain sections, but the note uses inconsistent phrasing. The medications section mixes pre-visit and post-visit medications incorrectly."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing: the specific kidney numbers (creatinine 1.8, GFR 42, urine albumin-to-creatinine ratio 220), the prior values for comparison, the LDL of 98 and triglycerides of 210, the discussion about dialysis, the patient's wife's involvement, the ibuprofen prescription from orthopedics for back pain context, the holiday diet admission, the low sodium diet counseling specifics, labs ordered in 4 weeks, follow-up in 6 weeks, and the after-visit summary details.",
+      "missed_items": [
+        "Creatinine 1.8 up from 1.5",
+        "GFR 42 down from 51",
+        "Urine albumin-to-creatinine ratio 220",
+        "LDL 98 with target under 70",
+        "Triglycerides 210",
+        "Dr. Khatri nephrologist coordination",
+        "Holiday diet admission details",
+        "Dialysis discussion and reassurance",
+        "Wife's involvement in care",
+        "Low sodium diet under 2000mg counseling",
+        "Labs ordered in 4 weeks (BMP, A1C, lipids, urine protein, CBC)",
+        "Follow-up in 6 weeks",
+        "After-visit summary and updated medication list printed",
+        "No hematuria",
+        "Fasting blood sugars 150-160",
+        "Full updated medication list with aspirin 81",
+        "No chest pain"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Subjective section appears before Chief Complaint, reversing the template order. Vital Signs and General sections appear separately after the Physical Examination section rather than being nested within it as the template specifies. Nocturia and exertional dyspnea are placed in the Physical Examination (Objective) rather than in the Subjective/ROS where they belong. The ROS section includes systems that should have been omitted per template instructions."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used for any medications or conditions."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Blood pressure reading of 158 over 94 is documented in the HPI, ROS, Physical Examination, and Vital Signs sections \u2014 excessive repetition across multiple sections."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 19.46,
+      "input_tokens": 4693,
+      "output_tokens": 1026
+    }
+  }
+}

@@ -1,0 +1,22 @@
+---
+id: 03
+scenario: Uncontrolled hypertension despite monotherapy, medication adjustment
+category: Chronic disease
+density: Medium
+---
+
+So I saw Mr. Delgado today for a blood pressure follow-up. He had gotten a message through the portal indicating his numbers were still too high, which is what brought him in.
+
+Blood pressure in the office today was 152 over 94. He's also been logging home readings, and those have been running in the 140s to 150s over 90s consistently over the past month. So, not where we want to be.
+
+He says he's been feeling totally fine — no symptoms — and he mentioned that's part of why it's hard for him to take it seriously. We talked about that, you know, the fact that hypertension is usually asymptomatic until it's causing real damage, and at these levels we're looking at increased risk for heart attack, stroke, kidney problems over time. He did mention that his father had a stroke at age 62, so there's a significant family history there.
+
+He's currently on amlodipine 5 milligrams daily. When I asked about adherence, he said he's missing doses maybe once or twice a week — just forgets. He's also been taking it at inconsistent times, sometimes morning, sometimes night. I counseled him on anchoring it to a consistent routine, specifically suggested putting it next to his toothbrush and taking it at night when he brushes his teeth.
+
+That said, even with better adherence, I don't think amlodipine 5 alone is going to get us to goal here. So I went ahead and added lisinopril 10 milligrams daily. I explained that it's an ACE inhibitor, works through a different mechanism — relaxes the blood vessels from a different angle. We talked about side effects — the dry cough, which some people get and some don't, and the possibility of some lightheadedness early on as his body adjusts. He understands that if the cough becomes bothersome, we'll switch to a different class. He asked how long until we'd know if it's working, and I told him typically two to four weeks.
+
+On the lifestyle side — diet has been hit or miss. He's been trying to cook more at home but still eating out a couple times a week and acknowledges restaurant food is high in sodium. I counseled him on aiming for under 2,000 milligrams of sodium per day, which can reduce blood pressure by 5 to 10 points on its own, and encouraged label reading. He mentioned his wife has actually been reading labels and pushing him on this, so it sounds like he's got some good support at home.
+
+For exercise, he's walking the dog most days, about 20 minutes. I encouraged him to build that up to 30 to 45 minutes of brisk walking most days of the week. Alcohol use is a couple of beers on the weekend — nothing excessive, that's fine.
+
+So the plan: continuing amlodipine 5 milligrams, adding lisinopril 10 milligrams daily, work on consistent medication timing, continue sodium reduction efforts, increase exercise duration. He'll come back in four weeks for a recheck. Told him to keep logging his home readings and to call us if the cough is a problem so we can switch it out.

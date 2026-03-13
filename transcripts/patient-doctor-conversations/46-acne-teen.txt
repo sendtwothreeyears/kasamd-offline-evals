@@ -1,0 +1,44 @@
+---
+id: 46
+scenario: Acne in teenager, first-line treatment
+category: Derm
+density: Sparse
+---
+
+Doctor: Hey Jayden, how's it going? What brings you in?
+
+Patient: Um, my mom made me come in because of my face. The acne.
+
+Doctor: Okay. How long has it been an issue?
+
+Patient: I don't know, like since the beginning of the school year? So maybe six months.
+
+Doctor: Let me take a look. Yeah, I see some whiteheads and blackheads mostly on the forehead and cheeks, and a few inflamed red bumps along the jawline. Any on your chest or back?
+
+Patient: A little on my back.
+
+Doctor: Have you tried anything for it so far?
+
+Patient: I wash my face with that, um, Clearasil stuff. It doesn't really help though.
+
+Doctor: Alright. So here's what I'd recommend. Two things. First, a benzoyl peroxide wash — 5 percent is a good starting strength. Use it once a day, at night. Lather it on, let it sit for a minute or two, then rinse off. Second, a topical retinoid — I'm going to prescribe adapalene gel 0.1 percent. You apply a thin layer to your whole face at bedtime after the wash, once your skin is dry.
+
+Patient: Both every night?
+
+Doctor: Yep. Wash first, wait a few minutes, then the adapalene. Now here's the thing — your skin might get a little dry and irritated at first, especially the first couple weeks. That's normal. Use a gentle, oil-free moisturizer if that happens. And sunscreen during the day because the retinoid makes your skin more sensitive to sun.
+
+Patient: How long until it actually works?
+
+Doctor: This is the hard part. Give it at least six to eight weeks before you judge it. Acne treatments are slow. It might even look a little worse before it gets better — that's called purging and it's temporary.
+
+Patient: That kinda sucks.
+
+Doctor: I know. But stick with it. If we're not seeing improvement in two months, we have next steps. Sound good?
+
+Patient: Yeah, okay.
+
+Doctor: And one more thing — don't pick at them. I know it's tempting. But it makes scarring worse. Alright?
+
+Patient: Fine.
+
+Doctor: Cool. I'll see you in about eight weeks to check progress. You got this.

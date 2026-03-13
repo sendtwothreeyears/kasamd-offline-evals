@@ -1,0 +1,28 @@
+---
+id: 08
+scenario: Hypothyroidism, TSH slightly elevated, dose adjustment
+category: Endocrine/Other
+density: Sparse
+---
+
+Doctor: Hi, Susan. I wanted to go over your thyroid labs from last week.
+
+Patient: Yeah, I was wondering about those. I've been feeling more sluggish lately.
+
+Doctor: So your TSH came back at 6.8. You're on levothyroxine 75 micrograms right now — that TSH tells us we need a little more. We want it between about 0.5 and 4.5 ideally.
+
+Patient: What does that mean, the TSH is high? I always get confused — does high mean too much or too little thyroid?
+
+Doctor: Good question. TSH is like the brain yelling at the thyroid to work harder. When it's high, it means the thyroid isn't producing enough on its own, so the brain is sending louder signals. You need more medication.
+
+Patient: Oh okay, that makes sense. So the tiredness — that's from the thyroid?
+
+Doctor: Very likely. I'm going to bump you up to 88 micrograms. Take it the same way — first thing in the morning, empty stomach, wait 30 to 60 minutes before eating. And especially don't take it with calcium or iron supplements, those block absorption.
+
+Patient: Right, I remember that. I take my calcium at night.
+
+Doctor: Perfect. We'll recheck the TSH in six weeks to see if 88 is the right dose. You should start feeling the difference in two to three weeks.
+
+Patient: Great. That's all I needed to know.
+
+Doctor: Easy visit. Call us if anything changes. See you in six weeks.

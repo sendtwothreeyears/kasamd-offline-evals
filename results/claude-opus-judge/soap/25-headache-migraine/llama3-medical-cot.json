@@ -1,0 +1,70 @@
+{
+  "transcript_id": "25-headache-migraine",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The note contains multiple fabricated details with no basis in the transcript: history of hypertension, lisinopril, 'aminoprofen' (a nonexistent medication), back pain, and diabetes mention. The transcript explicitly states past medical history is unremarkable. The note also incorrectly states she doesn't drink alcohol, when the transcript says she drinks socially.",
+      "flagged_content": [
+        "Ms. Pereira has a history of hypertension, which she's been managing with lisinopril",
+        "She's been taking aminoprofen for migraines",
+        "She's been taking aminoprofen for her back pain",
+        "She's not on any medications for her hypertension or diabetes",
+        "doesn't drink alcohol or use recreational drugs",
+        "She's also had a few episodes where she's had trouble sleeping and has had to take extra medication"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note ignores key template instructions: the Objective section contains subjective narrative instead of exam findings, Review of Systems contains physical exam findings instead of patient-reported symptoms, Family History is placed under Social History, Allergies section is missing, Vital Signs section is missing, and the note fabricates content rather than stating 'Not documented' where appropriate."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note misses numerous critical details from the transcript including: headache severity ratings (7-8/10, 5-6/10), specific aura description (zigzag lines, kaleidoscope), vomiting during two episodes, specific triggers (menstruation, red wine), sumatriptan prescription details, contraceptive contraindication counseling, brain MRI order, medication overuse counseling, caffeine taper plan, hydration recommendations, exercise recommendations, Migraine Buddy app, follow-up timing, and many more.",
+      "missed_items": [
+        "headache severity 7-8/10 and 5-6/10",
+        "visual aura description (zigzag lines, kaleidoscope)",
+        "vomited during two episodes",
+        "triggers: menstruation and red wine",
+        "sumatriptan 50mg prescription with dosing instructions",
+        "contraceptive contraindication counseling and OB-GYN referral",
+        "brain MRI without contrast order",
+        "medication overuse headache counseling",
+        "caffeine taper from 3-4 cups to 1 cup over 2 weeks",
+        "hydration 64oz daily",
+        "exercise 30 min 3x/week",
+        "Migraine Buddy app recommendation",
+        "6-week follow-up",
+        "propranolol and topiramate discussed as alternatives",
+        "two C-sections",
+        "combination oral contraceptive as current medication",
+        "Excedrin Migraine use",
+        "friend's sumatriptan use",
+        "neck and shoulder tension",
+        "sleep deprivation 5-6 hours/night",
+        "children ages 2 and 5",
+        "left work early twice",
+        "patient portal messaging"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The note severely deviates from the template structure: the Objective section contains subjective narrative instead of exam findings, Review of Systems contains exam findings, Family History is misplaced under Social History, Allergies section is entirely missing, Vital Signs section is missing, and the Chief Complaint section contains HPI-level detail while the actual HPI is redundant and incomplete."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is used for any medications or conditions."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "There is significant duplication of content between the Chief Complaint and HPI sections, and between the Review of Systems and Physical Examination sections, with nearly identical information repeated."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 17.33,
+      "input_tokens": 4432,
+      "output_tokens": 942
+    }
+  }
+}

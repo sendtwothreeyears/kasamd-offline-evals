@@ -1,0 +1,61 @@
+{
+  "transcript_id": "03-htn-uncontrolled",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The HPI content that is present is accurate. Minor embellishment: 'prompting him to seek medical attention' \u2014 the transcript says it was a portal message about high numbers that brought him in, not the home readings per se. Otherwise no fabricated content since most sections were left as template placeholders.",
+      "flagged_content": [
+        "prompting him to seek medical attention"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note left template instructions/placeholders (brackets and parenthetical instructions) throughout nearly every section instead of filling them in or stating 'Not documented.' The ROS section was included in full despite the instruction to omit it if systems were not discussed. This represents a fundamental failure to follow instructions.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note is missing nearly all key transcript content: current medication (amlodipine 5mg), new medication (lisinopril 10mg), adherence issues, medication counseling, lifestyle counseling (diet, sodium, exercise), office BP reading (152/94), alcohol use, assessment of uncontrolled hypertension, the entire plan (continue amlodipine, add lisinopril, sodium reduction, exercise, 4-week follow-up, home BP logging).",
+      "missed_items": [
+        "Office BP 152/94",
+        "Amlodipine 5mg daily current medication",
+        "Medication adherence issues (missing 1-2 doses/week, inconsistent timing)",
+        "Addition of lisinopril 10mg daily",
+        "ACE inhibitor mechanism discussion",
+        "Side effect counseling (dry cough, lightheadedness)",
+        "2-4 week timeline for effect",
+        "Sodium reduction counseling (<2000mg/day)",
+        "Diet details (cooking at home, eating out, wife reading labels)",
+        "Exercise details (walking dog 20 min, goal 30-45 min)",
+        "Alcohol use (couple beers on weekends)",
+        "Portal message about high numbers",
+        "Risk discussion (heart attack, stroke, kidney problems)",
+        "Medication timing counseling (toothbrush anchor)",
+        "4-week follow-up plan",
+        "Home BP logging instructions"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "Template placeholders with brackets and parenthetical instructions are left verbatim throughout the note in ROS, Past Medical History, Medications, Allergies, Social History, Family History, Vital Signs, Physical Examination, Assessment, and Plan sections. The structure is present but unfilled.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used despite mentions of hypertension, stroke, and cardiovascular disease in the HPI.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The entire note is duplicated \u2014 the full content appears twice in the output."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.1,
+      "input_tokens": 3910,
+      "output_tokens": 759
+    }
+  }
+}

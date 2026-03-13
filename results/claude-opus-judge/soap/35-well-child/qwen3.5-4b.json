@@ -1,0 +1,54 @@
+{
+  "transcript_id": "35-well-child",
+  "template": "soap",
+  "model": "qwen3.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "The generated output is entirely a thinking/planning process and does not contain a final clinical note. No fabricated clinical content is present since no note was actually produced.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The output is entirely a thinking/reasoning process and does not produce a completed clinical note. The instructions explicitly state to return ONLY the completed note with no preamble or explanations, which was completely violated."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "No clinical note was generated. All transcript content is missing from the output since only internal reasoning was produced.",
+      "missed_items": [
+        "Chief complaint (picky eating)",
+        "All HPI details",
+        "Developmental milestones",
+        "Sleep history",
+        "Diet/nutrition details",
+        "Growth measurements",
+        "Physical exam findings",
+        "Vision/hearing screening",
+        "Immunizations",
+        "Anticipatory guidance",
+        "Assessment",
+        "Plan",
+        "Family history",
+        "Social history"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "No structured clinical note was produced. The output is entirely unstructured internal reasoning with no template sections."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No clinical note was generated, so no entity marking was attempted in any output."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The thinking process contains massive repetitive loops where the same checks and considerations are duplicated dozens of times."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 9.74,
+      "input_tokens": 20582,
+      "output_tokens": 403
+    }
+  }
+}

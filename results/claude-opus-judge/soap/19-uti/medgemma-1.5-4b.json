@@ -1,0 +1,51 @@
+{
+  "transcript_id": "19-uti",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note describes 'decreased urine output' which is a minor embellishment \u2014 the transcript says 'urinary urgency with very little output,' which could mean low volume per void rather than overall decreased output. Otherwise, content in the HPI is accurate.",
+      "flagged_content": [
+        "decreased urine output"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note left template placeholders and bracketed instructions throughout most sections (Review of Systems, Past Medical History, Medications, Allergies, Social History, Family History, Vital Signs, Physical Examination, Assessment, Plan) instead of filling them in or following the instructions to omit/state 'Not documented'. This is a massive instruction-following failure."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The HPI captures the subjective complaint, but the Assessment and Plan sections are entirely blank (just template placeholders), missing the UTI diagnosis, urinalysis results, nitrofurantoin prescription, counseling, and follow-up instructions.",
+      "missed_items": [
+        "Urinalysis results (positive leukocyte esterase, positive nitrites, trace blood)",
+        "Urine culture sent",
+        "Diagnosis of UTI",
+        "Nitrofurantoin (Macrobid) 100mg BID x 5 days",
+        "Counseling to take with food",
+        "Advised to drink plenty of water",
+        "Return precautions (fever, back pain, vomiting, no improvement in 48 hours)",
+        "Prescription sent electronically to pharmacy",
+        "Complete full course instruction"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The template structure is present but most sections contain raw template placeholders and bracketed instructions rather than actual content, making it essentially an unfilled template."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note \u2014 no {{drug:...}} or {{condition:...}} syntax was used."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 10.94,
+      "input_tokens": 2875,
+      "output_tokens": 567
+    }
+  }
+}

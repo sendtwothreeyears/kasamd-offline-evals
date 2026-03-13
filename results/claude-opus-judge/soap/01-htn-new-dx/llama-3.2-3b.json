@@ -1,0 +1,47 @@
+{
+  "transcript_id": "01-htn-new-dx",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note says 'The physical examination is otherwise unremarkable' which is not supported by the transcript \u2014 no physical exam beyond vitals was documented. The assessment states 'The patient's elevated blood pressure is contributing to his headaches' as a definitive statement, whereas the transcript says the doctor counseled that it 'could actually be contributing.' Also 'primary diagnosis is hypertension' is a reasonable inference but slightly beyond what was stated.",
+      "flagged_content": [
+        "The physical examination is otherwise unremarkable",
+        "The patient's elevated blood pressure is contributing to his headaches"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed, but the note includes all systems with 'not mentioned' language. Social History similarly includes all items with 'not mentioned' instead of omitting unmentioned items. The template says to only include vitals that were documented, but undocumented vitals are listed. Medications lists acetaminophen, which was a recommendation in the plan, not a current medication."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured. However, the note omits that the patient hasn't seen a doctor in 4-5 years and was not aware of any prior history of high blood pressure, and the specific recommendation of 30 minutes of walking a day.",
+      "missed_items": [
+        "Patient hasn't seen a doctor in about 4-5 years",
+        "Patient was not aware of any prior history of high blood pressure",
+        "Specific exercise recommendation of 30 minutes of walking a day",
+        "Patient understood the plan and was agreeable"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Subjective section appears before Chief Complaint, reversing the template order. Blood pressure (an objective finding) is placed in the ROS under Cardiovascular. Vital Signs section is placed after the Physical Examination narrative instead of before it. Multiple sections include items the template says to omit if not mentioned."
+    },
+    "entity_marking": {
+      "score": 1,
+      "rationale": "Acetaminophen is correctly marked as a drug, but ibuprofen is not marked in the Plan. The condition 'hypertension' is not marked with {{condition:...}} syntax. 'Elevated blood pressure' or 'high blood pressure' as conditions are also unmarked."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The headache description (dull pressure, back of head, worse in mornings) is duplicated in both the Subjective opening paragraph and the History of Present Illness section."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.66,
+      "input_tokens": 2861,
+      "output_tokens": 662
+    }
+  }
+}

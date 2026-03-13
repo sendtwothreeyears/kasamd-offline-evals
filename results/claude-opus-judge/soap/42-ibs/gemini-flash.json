@@ -1,0 +1,44 @@
+{
+  "transcript_id": "42-ibs",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note marks 'low-FODMAP diet' as a condition ({{condition:low-FODMAP diet}}), which is not a condition \u2014 it's a dietary intervention. This is a minor mischaracterization. Otherwise, all content is well-supported by the transcript.",
+      "flagged_content": [
+        "{{condition:low-FODMAP diet}}"
+      ]
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The note mostly follows instructions well. However, loperamide was already a current medication the patient keeps on hand and should have been listed under Medications rather than only in the Plan. The template instructs to state 'Not documented' for Medications, but loperamide use was documented in the transcript. Minor deviation."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "The note captures nearly all transcript content. However, it omits the explanation that IBS is a disorder of gut-brain interaction (not a catch-all diagnosis), and the clarification that amitriptyline at IBS doses is not acting as an antidepressant but modulating pain signaling \u2014 though the latter is partially captured. The explanation that CBT is skills-based rather than traditional talk therapy, focused on interrupting the stress-gut cycle, is also omitted.",
+      "missed_items": [
+        "Explanation that IBS is a disorder of gut-brain interaction, not a catch-all diagnosis, and that the functional nature is real and treatable",
+        "CBT described as skills-based rather than traditional talk therapy, focused on interrupting the stress-gut cycle"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well. Minor issues: psychosocial history and prior workup are placed in HPI rather than being separated appropriately; the Psychiatric review of systems (sleep, stress/anxiety) was discussed but not included in the ROS section. Social history could include the sleep detail more naturally."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Entity marking syntax is correct and first-occurrence-only is generally followed. However, 'low-FODMAP diet' is incorrectly marked as a condition \u2014 it is a dietary intervention, not a condition. All actual drugs and conditions are appropriately marked."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 12.4,
+      "input_tokens": 4201,
+      "output_tokens": 605
+    }
+  }
+}

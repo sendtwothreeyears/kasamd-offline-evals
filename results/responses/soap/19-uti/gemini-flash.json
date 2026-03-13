@@ -1,0 +1,12 @@
+{
+  "transcript_id": "19-uti",
+  "template": "soap",
+  "model": "gemini-flash",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nPatient presented with suspected bladder infection.\n\n**History of Present Illness**\nPatient reports burning with urination and urinary urgency with very little output, starting approximately two days ago and progressively worsening. This morning, she noticed pinkish discoloration in her urine, prompting the visit. Denies back pain, fever, nausea, or vomiting.\n\n**Review of Systems**\nConstitutional: Denies fever.\nGastrointestinal: Denies nausea or vomiting.\nGenitourinary: Reports burning with urination, urinary urgency with little output, and pinkish discoloration in urine.\nMusculoskeletal: Denies back pain.\n\n**Past Medical History**\nHistory of one prior {{condition:UTI}} about two years ago, treated with antibiotics and resolved without issue.\n\n**Medications**\nNot documented\n\n**Allergies**\nNo known drug allergies\n\n**Social History**\nNot documented\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\nPhysical examination not documented\n\n**Assessment**\nUrinary Tract Infection (UTI) based on symptoms and positive urine dipstick (leukocyte esterase, nitrites, trace blood).\n\n**Plan**\n1. Urine sample sent for culture.\n2. Started {{drug:nitrofurantoin}} (Macrobid) 100 mg twice daily for five days.\n3. Patient counseled to take medication with food for better absorption and to mitigate nausea. Advised to drink plenty of water. Informed that significant improvement should be felt within one to two days.\n4. Return precautions provided: patient should call if symptoms do not improve within 48 hours, or if fever, back pain, or vomiting develop, as these could indicate kidney infection. Instructed to complete the full course of antibiotics. Prescription sent electronically to pharmacy.",
+  "metadata": {
+    "inference_time_s": 12.72,
+    "prompt_tokens": 1457,
+    "tokens_generated": 381,
+    "tokens_per_sec": 30.0
+  }
+}

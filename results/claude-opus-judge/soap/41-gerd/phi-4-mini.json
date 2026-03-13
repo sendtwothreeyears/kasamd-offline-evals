@@ -1,0 +1,56 @@
+{
+  "transcript_id": "41-gerd",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems fabricates numerous negative findings across systems never discussed in the transcript (cardiovascular, respiratory, genitourinary, musculoskeletal, neurological, psychiatric, skin, HEENT). The transcript only discussed GI-related negatives (no dysphagia, odynophagia, vomiting, hematemesis, melena, weight loss). Constitutional 'no fever, chills, fatigue' is also fabricated.",
+      "flagged_content": [
+        "Constitutional: No fever, chills, fatigue, or weight changes noted.",
+        "HEENT: No vision, hearing, throat, or nasal symptoms reported.",
+        "Cardiovascular: No chest pain, palpitations, or edema reported.",
+        "Respiratory: No shortness of breath, cough, or wheezing reported.",
+        "Genitourinary: No urinary symptoms or menstrual history provided.",
+        "Musculoskeletal: No joint pain, muscle weakness, or mobility issues reported.",
+        "Neurological: No headache, dizziness, numbness, or weakness reported.",
+        "Psychiatric: No mood, anxiety, or sleep issues provided.",
+        "Skin: No rashes, lesions, or wounds provided."
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template explicitly instructs to 'Only include systems that were discussed. If not mentioned, omit this section entirely' for ROS, yet the note includes all systems with fabricated negatives. Template instructions in parentheses are left verbatim in the output (e.g., '(Only include systems that were discussed...)', '(Only include items that were mentioned)'). Social History items not mentioned should have been omitted per template instructions."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most key transcript content is captured including chief complaint, HPI details, trigger foods, negative alarm symptoms, medication, lifestyle modifications, and follow-up plan. However, specific negatives discussed (no dysphagia, no odynophagia, no food getting stuck, no hematemesis, no melena) are not explicitly listed, and the counseling about expecting improvement within a few days but full effect in two weeks is missing.",
+      "missed_items": [
+        "No dysphagia explicitly stated",
+        "No odynophagia explicitly stated",
+        "No sensation of food getting stuck",
+        "No hematemesis",
+        "No melena/blood in stool",
+        "Counseling that improvement expected within a few days but full effect in two weeks"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template parenthetical instructions are left in the output verbatim. Vital Signs section is placed under Objective but outside/after the Physical Examination header, deviating from the template structure. Social History includes items that should have been omitted per template instructions."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. No {{drug:...}} or {{condition:...}} syntax was used for omeprazole, GERD, or any other entities."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content detected, though omeprazole details appear in both Medications and Plan, which is acceptable as they serve different purposes."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.63,
+      "input_tokens": 2812,
+      "output_tokens": 804
+    }
+  }
+}

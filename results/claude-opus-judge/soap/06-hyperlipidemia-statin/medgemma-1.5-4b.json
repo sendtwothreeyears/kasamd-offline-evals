@@ -1,0 +1,57 @@
+{
+  "transcript_id": "06-hyperlipidemia-statin",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "The content that is present in the note is accurate and derived from the transcript. No fabricated findings or diagnoses were added.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "Template bracketed/parenthetical instructions are left verbatim throughout the note instead of being filled in or omitted. The Review of Systems section was included in full despite no ROS being discussed. Sections like Past Medical History, Medications, Allergies, Social History, Family History, Assessment, and Plan all retain raw template placeholders instead of being completed or marked as 'Not documented'. The chief complaint is just the patient's name rather than the reason for visit.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note is missing the vast majority of transcript content: 10-year cardiovascular risk score, statin counseling details (muscle aching percentages, rhabdomyolysis risk, liver concerns, risk reduction statistics), proposed atorvastatin 20mg plan, lifestyle modification counseling (diet specifics, exercise recommendations, alcohol reduction), social history (alcohol use, sedentary lifestyle, desk job, golf), family history (brother on cholesterol medication), the entire assessment (hyperlipidemia, hypertriglyceridemia), and the entire plan (3-month lifestyle trial, repeat lipid panel, educational resources, follow-up).",
+      "missed_items": [
+        "10-year cardiovascular risk score of 12%",
+        "statin counseling details (muscle aching 5-10%, rhabdomyolysis <1 in 10,000, liver concerns, 25-35% risk reduction)",
+        "proposed atorvastatin 20mg at night",
+        "rosuvastatin as alternative",
+        "lifestyle modification counseling (diet details, exercise 150 min/week)",
+        "alcohol use (beer or two most nights, more on weekends)",
+        "alcohol reduction counseling",
+        "occupation (desk job)",
+        "recreational activity (golf on weekends)",
+        "family history (brother on cholesterol medication, family history of hyperlipidemia)",
+        "assessment/diagnosis of hyperlipidemia and hypertriglyceridemia",
+        "plan (3-month lifestyle trial, repeat lipid panel, educational resources, follow-up in 3 months)",
+        "HDL 44 missing from second copy",
+        "patient age 54"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "Template placeholder text and instructions are left throughout the note in brackets and parentheses. Multiple sections are completely unfilled. The structure is present but non-functional as a clinical note.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. Medications (atorvastatin, rosuvastatin) and conditions (hyperlipidemia, hypertriglyceridemia, diabetes) are not marked, though most are also missing from the note entirely.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The entire note is duplicated \u2014 the full note appears twice in the output."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.0,
+      "input_tokens": 3855,
+      "output_tokens": 788
+    }
+  }
+}

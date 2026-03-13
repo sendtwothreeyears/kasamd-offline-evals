@@ -1,0 +1,56 @@
+{
+  "transcript_id": "37-preop-clearance",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "BP is listed as 131/78 instead of 130/78 as stated in the transcript. The note also includes systems in the ROS that were not discussed (Constitutional, HEENT, GI, GU, Neuro, Psychiatric, Skin), stating they were 'not mentioned' rather than omitting them per template instructions. The CPAP machine is listed as a 'medication' which is inaccurate. The 'Losartan (controlled on hypertension)' reverses the meaning.",
+      "flagged_content": [
+        "BP: 131/78"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed, but the note includes all systems with 'not mentioned' notes. The template says to omit items not mentioned in Social History, but alcohol, recreational drugs, and occupation are included with 'No information was mentioned.' The note also adds a spurious 'Subjective' line before Chief Complaint stating complaints were not mentioned.",
+      "missed_items": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing: the Revised Cardiac Risk Index assessment, the stress test from five years ago being normal, the EKG findings (normal sinus rhythm, no ST changes, no conduction delays), the specific instruction to not resume aspirin until Dr. Volkov clears him, the last A1C of 7.1, the discussion about elevated blood sugar and infection risk, and the note being sent to Dr. Volkov's office and anesthesia team.",
+      "missed_items": [
+        "Revised Cardiac Risk Index assessment (1 point for diabetes, low to intermediate risk)",
+        "Prior stress test 5 years ago was normal",
+        "EKG performed today showing normal sinus rhythm, no ST changes, no conduction delays",
+        "Last A1C was 7.1 three months ago",
+        "Aspirin not to be resumed until Dr. Volkov clears him postoperatively",
+        "Elevated blood sugar increases infection risk perioperatively",
+        "No syncope or presyncope",
+        "No lower extremity edema beyond the knee",
+        "Sleeps with one pillow",
+        "Clearance note to be sent to Dr. Volkov's office and anesthesia team",
+        "Dr. Volkov performing the surgery",
+        "Losartan to resume the day after surgery specifically"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Subjective section has an unnecessary preamble before Chief Complaint. Physical exam findings (heart, lungs) are incorrectly placed under 'General' labels. Vital Signs section is placed after Physical Examination instead of before it as in the template. The overall structure deviates from the template in multiple ways.",
+      "missed_items": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted at all. No {{drug:...}} or {{condition:...}} syntax was used anywhere in the note."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.07,
+      "input_tokens": 3869,
+      "output_tokens": 784
+    }
+  }
+}

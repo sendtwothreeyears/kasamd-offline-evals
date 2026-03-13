@@ -1,0 +1,52 @@
+---
+id: 50
+scenario: Elderly patient, 12+ medications, deprescribing visit
+category: Endocrine/Other
+density: Dense
+---
+
+So I saw Dorothy today — she's an 82-year-old woman who came in for a dedicated medication review visit. I had set aside extra time specifically for this because when I looked at her chart, she had fourteen active prescriptions, and I wanted to go through every single one with her. She brought all her bottles in a bag — her daughter had organized them — and we spread them out and went through them together.
+
+The fourteen medications are: metoprolol, lisinopril, amlodipine, atorvastatin, metformin, aspirin 81 milligrams, omeprazole, lorazepam, diphenhydramine, zolpidem, oxybutynin, gabapentin, a calcium supplement, and a multivitamin.
+
+So let me go through what we discussed and what the plan is.
+
+Blood pressure was 118 over 68 today, taken by the nurse. She's on three antihypertensives — metoprolol, lisinopril, and amlodipine 10 milligrams. That pressure is on the lower end, and she's had two falls in the last six months — one in the bathroom, one in the kitchen — both associated with lightheadedness when standing, which is consistent with orthostatic hypotension. I explained to her that for adults over 80, current evidence supports a systolic target of around 140 to 150, and that being too aggressive with blood pressure control at her age causes more harm than benefit, particularly with fall risk. A hip fracture at 82 is far more dangerous than a slightly elevated blood pressure. So the plan is to reduce amlodipine from 10 milligrams to 5 milligrams, and then potentially discontinue it depending on how her home blood pressure readings look. We're going to have her — with her daughter's help — monitor blood pressure at home, and we'll reassess the amlodipine reduction at her next visit in two weeks after we have those readings.
+
+Now, the sedating medications — this was a big part of the visit. She's on lorazepam, zolpidem, and diphenhydramine, all three of which are sedating, and all three of which are problematic in an 82-year-old.
+
+The lorazepam — she's been on it since 2013, so thirteen years, started by Dr. Patterson after her husband passed. She takes half a tablet at bedtime and sometimes half a tablet during the day for anxiety. I counseled her extensively on the fact that benzodiazepines are on the Beers Criteria as potentially inappropriate in adults over 65, and that long-term use is associated with falls, confusion, cognitive decline, and increased dementia risk. She was understandably concerned about withdrawal given the duration of use, and I reassured her we would never stop this abruptly — we'll taper very slowly over months, reducing by approximately a quarter of the dose every two to four weeks. The lorazepam taper will begin in two weeks.
+
+The zolpidem — she's using this as her primary sleep medication. Also on the Beers list, associated with falls, confusion, and sleepwalking. We'll taper this as well, starting in two weeks, one taper at a time alongside the lorazepam.
+
+The diphenhydramine — she's been using Benadryl when she's particularly restless at night. I explained that this is one of the worst offenders in older adults due to its strong anticholinergic effects — confusion, dry mouth, constipation, urinary retention, worsening cognition. I also noted that just because it's over the counter doesn't mean it's safe for everyone. We are stopping the diphenhydramine effective today.
+
+Her daughter has apparently noticed increased confusion recently and has been worried it might be early cognitive decline. I discussed with Dorothy that some of what her daughter is observing may be medication-related rather than true dementia — these anticholinergic and sedating medications can absolutely cause or worsen confusion, and I've seen meaningful improvement in patients after deprescribing these agents. I didn't make any promises, but I wanted to give her some hope that it's worth finding out.
+
+For sleep going forward as we taper the sedating medications, I discussed low-dose melatonin, sleep hygiene strategies, and a possible referral to behavioral health for cognitive behavioral therapy for insomnia, which has better long-term outcomes than pharmacotherapy.
+
+The oxybutynin — she's on this for urinary urgency and frequency with some incontinence. Oxybutynin is also strongly anticholinergic with the same cognitive concerns. I'm switching her to mirabegron 25 milligrams — brand name Myrbetriq — which works by a different mechanism and has a much more favorable cognitive side effect profile. She was clear that managing her bladder symptoms is a priority for her dignity, and I reassured her we'd monitor closely and adjust if needed. This switch is happening now.
+
+The omeprazole — she's been on it since approximately 2017, so about nine years, for a hiatal hernia. When I asked about current heartburn symptoms, she said she rarely gets it anymore — maybe occasionally after Italian food. I counseled her on the concerns with long-term PPI use in older adults, including increased risk of C. diff, potential effects on bone density, and low magnesium. The plan is to taper — go from daily to every other day for a couple of weeks, then to as-needed dosing. If heartburn returns significantly, we'll reassess. Starting this taper now.
+
+The aspirin 81 milligrams — this was started by a cardiologist, apparently after a heart catheterization, but she has no history of myocardial infarction or stent placement. So this is primary prevention. I explained that current guidelines have moved away from routine aspirin for primary prevention in older adults given that the GI bleeding risk outweighs the cardiovascular benefit, particularly at her age and without established cardiovascular disease. The atorvastatin is doing the heavy lifting for her cardiovascular risk management. We are stopping the aspirin today.
+
+The atorvastatin — she's on 20 milligrams. We're keeping this.
+
+The gabapentin — 300 milligrams three times a day, started by Dr. Cho for sciatica and back pain. She says her back pain has actually been better lately, some days barely noticeable. I decided not to change this one right now — we have enough changes happening simultaneously. I did discuss that at a future visit we could consider a gradual dose reduction to see if she still needs the full dose, as pain conditions can evolve. One thing at a time.
+
+Metoprolol, lisinopril, metformin, calcium supplement, and multivitamin — all unchanged for now.
+
+So to summarize the action plan:
+
+Effective today: stop diphenhydramine, stop aspirin 81 milligrams, switch oxybutynin to mirabegron 25 milligrams, and begin omeprazole taper to every other day then as needed.
+
+In two weeks: begin lorazepam taper — approximately a quarter dose reduction every two to four weeks — and begin zolpidem taper, one at a time.
+
+After two weeks of home blood pressure monitoring: reassess and reduce amlodipine from 10 to 5 milligrams at her next visit.
+
+I'm going to create a detailed written medication action plan for her to share with her daughter, who is actively involved in her care. I also referred her to our clinic pharmacist Jim for a medication therapy management visit within the next week — she knows him well from the pharmacy counter and was very receptive to this.
+
+Follow-up is in two weeks. I told her to call sooner if she experiences dizziness, confusion, withdrawal symptoms, or worsening bladder issues. I also invited her daughter to join future visits or call with questions.
+
+This was a thorough polypharmacy review visit, and I think we made meaningful progress in reducing her fall risk and anticholinergic burden. Hopefully we'll also see some improvement in her cognition as we remove these agents.

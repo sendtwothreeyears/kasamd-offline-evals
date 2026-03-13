@@ -1,0 +1,28 @@
+---
+id: 42
+scenario: IBS, chronic abdominal pain workup
+category: GI
+density: Dense
+---
+
+So I saw Priya today, she's a 31-year-old woman coming in for evaluation of chronic GI symptoms that have been going on for about seven or eight months now. She describes lower abdominal cramping, predominantly on the left side, with an alternating bowel pattern — some days she's having three or four loose stools, other days she's constipated for two to three days, and she can't identify a consistent pattern. The pain ranges from a four or five out of ten on the milder days up to a seven on the bad days, bad enough to double her over at times. She notes that eating tends to worsen the pain, and that passing gas or having a bowel movement provides relief. She also has significant bloating — she describes it as constant, worse as the day goes on, to the point where she can't button her jeans by the afternoon. Dietary triggers she's identified include onions, garlic, and beans. She's tried cutting out milk with some possible benefit but wasn't systematic about it; cheese seems to bother her less. She's also noticed that bread worsens her bloating, though she's unsure whether it's gluten specifically or carbohydrates in general.
+
+Importantly, she denies any blood in the stool, fevers, night sweats, or weight loss. Her weight is stable at 142 pounds. Family history is notable for an uncle with colon cancer in his 70s; no known family history of Crohn's disease or ulcerative colitis.
+
+Psychosocial history is relevant here — she's an immigration attorney with a very high-stress caseload, brings work home every night, and is averaging only five to six hours of sleep. She clearly identifies a correlation between high-stress periods and worsening GI symptoms; her worst flare was during a trial week.
+
+In terms of prior workup, she had labs drawn last month — CBC was completely normal, no anemia. CRP and sed rate were both normal, arguing against an inflammatory process. Celiac panel, specifically the tissue transglutaminase antibody, was negative. TSH was normal. Fecal calprotectin was normal, which is reassuring against inflammatory bowel disease. She also had a CT of the abdomen about three months ago, ordered by her previous doctor, which was normal.
+
+On exam today, abdomen is soft. There is tenderness in the left lower quadrant — not severe, no guarding, no rebound tenderness, no masses. Bowel sounds are active. Vitals today: blood pressure 118 over 74, heart rate 72, temperature normal.
+
+So based on the clinical picture — abdominal pain improving with defecation, change in stool frequency and form, significant bloating, duration of over six months, and a reassuringly normal workup — this meets Rome IV criteria for irritable bowel syndrome. I explained to her that IBS is a disorder of gut-brain interaction, not a catch-all diagnosis, and that the functional nature of the condition is real and treatable.
+
+The plan is as follows. First, dietary intervention — I'm referring her to our dietitian Sarah Park for guidance on the low-FODMAP diet. We talked about the elimination phase of four to six weeks followed by systematic reintroduction of food categories to identify her specific triggers. I also want her to increase soluble fiber intake — starting with one teaspoon of psyllium husk, like Metamucil, in a full glass of water once daily, then increasing to twice daily after a week if tolerated, and slowly titrating up to the full label dose over several weeks.
+
+For medications, I'm prescribing dicyclomine 20 milligrams to be taken before her larger meals — lunch and dinner — for the cramping. I counseled her on potential side effects including dry mouth and occasional dizziness. She already keeps loperamide — Imodium — on hand, and I told her to continue using it as needed on her diarrhea-predominant days, one to two tabs as needed, rather than daily.
+
+I'm also referring her to our behavioral health team — there's a psychologist there who specializes in gut-directed cognitive behavioral therapy, which has good evidence in IBS. I explained this is skills-based rather than traditional talk therapy, focused on interrupting the stress-gut cycle. I also counseled her on the importance of sleep — she's currently getting five to six hours and I encouraged her to work toward at least seven.
+
+I want to see her back in six weeks. If the dicyclomine isn't providing adequate relief, we discussed next steps including eluxadoline for the diarrhea-predominant component, or a low-dose antidepressant such as amitriptyline for its gut pain-modulating properties — I clarified for her that at the doses used for IBS this is not acting as an antidepressant but rather modulating pain signaling in the gut. We don't need to go there yet.
+
+I also flagged that given her uncle's history of colon cancer, even though he was in his 70s and her overall risk is low, we should plan for a screening colonoscopy at age 45, or sooner if her clinical picture changes. I instructed her to call immediately if she develops any blood in the stool, unexplained weight loss, or fevers. Referrals to dietitian and behavioral health going in today.

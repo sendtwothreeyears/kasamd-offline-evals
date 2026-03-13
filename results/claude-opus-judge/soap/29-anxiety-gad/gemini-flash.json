@@ -1,0 +1,48 @@
+{
+  "transcript_id": "29-anxiety-gad",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly stated or reasonably inferred from the transcript. No fabricated findings or diagnoses were identified.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 3,
+      "rationale": "The note follows all template instructions correctly. Sections not documented use appropriate defaults (e.g., 'Not documented' for medications, 'No known drug allergies' for allergies). Only discussed systems are included in ROS. No template instructions appear in the output."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "The note captures nearly all transcript content but misses a few details: the specific triggering event of the daughter's school play where he was mentally running through work spreadsheets, the detail about his wife saying she feels like she's walking on eggshells, the mention that he used to run and wants to get back to it, the detail about the heart attack episode resolving within 15 seconds, and the mention of hiding hands under the table in meetings. The note also omits that he grew up in a family where mental health wasn't discussed.",
+      "missed_items": [
+        "Specific triggering event: daughter's school play, mentally running through work spreadsheets",
+        "Wife feels like she's walking on eggshells (mentioned but not captured)",
+        "He used to run and wants to get back to it",
+        "Heart episode resolved within about 15 seconds",
+        "Hides hands under the table in meetings",
+        "Grew up in a family where mental health wasn't discussed, expected to just manage",
+        "No prior psychiatric treatment - never been to therapy, never been on medication",
+        "Prior borderline BP readings attributed to white coat hypertension and doctor's note about chronic anxiety contributing to elevated BP"
+      ]
+    },
+    "template_adherence": {
+      "score": 3,
+      "rationale": "The note follows the template structure precisely, with all required sections present and properly formatted. Vitals only include those documented. Only discussed systems are included in ROS."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Entity marking syntax is correct and first-occurrence-only rule is mostly followed. However, escitalopram first appears in Family History (brother's medication) and is marked there, then marked again in the Plan section \u2014 the second marking is appropriate since the first was correctly placed. Some conditions that could be marked are missed, such as 'tension headaches' and 'bruxism/teeth grinding'. The note also marks 'cardiac history' and 'thyroid disease' as conditions, which are more like negated history items rather than true conditions, though this is a minor issue."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content found in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.03,
+      "input_tokens": 5255,
+      "output_tokens": 678
+    }
+  }
+}

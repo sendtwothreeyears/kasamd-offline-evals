@@ -1,0 +1,53 @@
+{
+  "transcript_id": "33-substance-use",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems lists 'Fatigue, weight changes' under Constitutional, which were never mentioned in the transcript. The Assessment states 'Alcohol Use Disorder (AUD)' as a diagnosis, but the transcript never diagnoses AUD \u2014 it only says the AUDIT-C score warrants clinical attention.",
+      "flagged_content": [
+        "Constitutional: Fatigue, weight changes",
+        "Alcohol Use Disorder (AUD) - likely in range for clinical attention"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "Template instructions in parentheses were left in the output (e.g., '(Only include items that were mentioned)', '(If not documented, state \"Not documented\")', '(Physical examination not documented)' uses parentheses matching template style). Systems not discussed should have been omitted per instructions, but instead 'No mention' was listed for multiple systems. The ROS section should have been limited to discussed systems only.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Missing several important details: the specific AUDIT-C score range/significance, the 15-20 drinks per week estimate, the low-risk guidelines for women (7 drinks/week, no more than 3 per occasion), the psychosocial stressors detail (mother's stroke care coordination, husband traveling), the counseling about alcohol worsening anxiety and sleep, structured reduction strategies (capping at one drink on no more than three nights per week), and the 30-day abstinence reset option.",
+      "missed_items": [
+        "15-20 drinks per week estimate",
+        "Low-risk guidelines for women (7 drinks/week, no more than 3 per occasion)",
+        "Detailed psychosocial stressors (coordinating mother's care while working full time, husband traveling frequently)",
+        "Counseling that alcohol worsens anxiety and sleep over time",
+        "Structured reduction strategies (cap at one drink, no more than three nights per week, alcohol-free days)",
+        "30-day abstinence reset as alternative approach",
+        "Reassurance that labs likely to be fine but good to have baseline"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template instructions in parentheses were left in the output. The ROS section lists systems that were not discussed with 'No mention' instead of omitting them per template instructions. Bold formatting is inconsistently applied (Chief Complaint lacks bold). Family History includes a parenthetical template instruction.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. There are multiple conditions (knee pain, alcohol use disorder, stroke, anxiety) and nutrients/supplements (B12, folate) that should have been marked with {{condition:...}} or {{drug:...}} syntax.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 36.47,
+      "input_tokens": 3235,
+      "output_tokens": 747
+    }
+  }
+}

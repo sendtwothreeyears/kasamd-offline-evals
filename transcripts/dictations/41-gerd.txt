@@ -1,0 +1,16 @@
+---
+id: 41
+scenario: GERD, heartburn, PPI initiation
+category: GI
+density: Sparse
+---
+
+So I saw this patient today coming in for about three weeks of burning chest discomfort. Um, they describe it as a burning sensation right behind the breastbone, midsternal area, that sometimes creeps up into the throat with an associated sour taste. Sounds like it's been pretty miserable, especially after dinner. Trigger foods include spicy foods, tomato-based sauces — they mentioned pasta specifically set it off — and coffee, which they're drinking about two to three cups a day.
+
+I asked about dysphagia, and there's none. No odynophagia, no sensation of food getting stuck. No vomiting, no hematemesis, no melena or blood in the stool. No unintentional weight loss. So no alarm symptoms here.
+
+This is pretty classic for GERD. Went ahead and started them on omeprazole 20 milligrams once daily, to be taken on an empty stomach about 30 minutes before breakfast. I counseled them that they should start feeling better within a few days but to give it a full two weeks for the complete effect.
+
+We also talked about lifestyle modifications — cutting back on coffee, ideally reducing from their current two to three cups down, avoiding the trigger foods like spicy foods and tomato-based sauces, not eating within two to three hours of lying down, and elevating the head of the bed.
+
+Plan is to follow up in six weeks. If the omeprazole is working well, great, we'll reassess at that point. If not, we'll look into things further.

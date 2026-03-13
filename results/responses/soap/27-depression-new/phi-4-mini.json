@@ -1,0 +1,14 @@
+{
+  "transcript_id": "27-depression-new",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nMs. Rao, a 29-year-old woman, presented with a complaint of feeling \"flat\" and a lack of interest in activities she once enjoyed for approximately two and a half months.\n\n**History of Present Illness**\nMs. Rao reports experiencing anhedonia, early morning awakening, fatigue, poor concentration, and feelings of guilt and worthlessness. She has lost approximately eight pounds unintentionally over the last two months and has a reduced appetite. Her sleep is poor, and she experiences increased anxiety during the first week or two after starting sertraline.\n\n**Review of Systems**\nConstitutional: Fatigue, weight loss\nHEENT: No specific symptoms mentioned\nCardiovascular: No specific symptoms mentioned\nRespiratory: No specific symptoms mentioned\nGastrointestinal: No specific symptoms mentioned\nGenitourinary: No specific symptoms mentioned\nMusculoskeletal: No specific symptoms mentioned\nNeurological: No specific symptoms mentioned\nPsychiatric: Decreased interest, fatigue, poor concentration, early morning awakening, feelings of guilt and worthlessness\nSkin: No specific symptoms mentioned\n\n**Past Medical History**\nNot documented\n\n**Medications**\nSertraline 50 milligrams daily, taken in the morning with food\n\n**Allergies**\nNo known drug allergies\n\n**Social History**\nMs. Rao is a 29-year-old woman with a supportive roommate who encouraged her to seek medical care.\n\n**Family History**\nNot documented\n\n**Objective**\nPhysical examination not documented\n\n**Vital Signs:**\nNot documented\n\nGeneral: Not documented\n\n**Assessment**\nMajor depressive disorder, moderately severe\nPassive suicidal ideation\n\n**Plan**\n1. Sertraline 50 milligrams daily, reassess in three weeks\n2. Refer to behavioral health network for cognitive behavioral therapy (CBT)\n3. Patient education on safety planning and emergency contacts provided\n4. Follow-up appointment in three weeks\n\nNot documented: Follow-up interval (usual interval), reassessment of safety (specific or active suicidal ideation), and patient teaching on medication adherence and expectations (first episode of major depressive disorder).",
+  "metadata": {
+    "inference_time_s": 7.33,
+    "prompt_tokens": 2007,
+    "tokens_generated": 429,
+    "prompt_tps": 500.3,
+    "tokens_per_sec": 58.5,
+    "peak_memory_gb": 4.8
+  }
+}

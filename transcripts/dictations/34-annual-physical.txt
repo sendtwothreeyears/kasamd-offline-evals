@@ -1,0 +1,46 @@
+---
+id: 34
+scenario: Adult annual physical, healthy 45yo male
+category: Preventive
+density: Dense
+---
+
+So I saw Kevin today for his annual physical. He's a forty-five-year-old male, married fifteen years, two kids, works as a senior partner at an accounting firm. His wife basically makes sure he comes in every year, which is great.
+
+His chief concern today — he says he feels pretty good overall but has noticed he's been a little more tired than usual, which he attributed to getting older. We'll come back to that.
+
+Social history — he smoked in college for about two years, roughly a pack a week, quit at age twenty-three, hasn't smoked since. Alcohol is about four to six drinks a week — a couple beers on the weekend, glass of wine with dinner once or twice a week. Denies recreational drug use currently, tried marijuana a couple times in college. Exercise has declined — he used to play basketball twice a week but that fell apart, now he's walking the dog about twenty minutes most mornings and getting on the Peloton maybe once a week. So roughly two to three days a week of moderate activity. Diet — skips breakfast, just coffee with cream and sugar in the morning. Lunch is usually from the work cafeteria, tries for salads but often ends up with sandwiches. Dinner is home-cooked by his wife, generally healthy — chicken, vegetables, rice. His main issue is nighttime snacking, chips and crackers. Sleep is about six to six and a half hours a night, up late working or watching TV, alarm at six.
+
+Family history — father is sixty-nine, had a myocardial infarction at sixty-two, currently on medications. Mother is sixty-seven, has type 2 diabetes diagnosed about ten years ago and hypertension. One brother, forty-two, healthy. One sister, forty-eight, has hypercholesterolemia. Maternal grandmother also had type 2 diabetes. Maternal grandfather had colon cancer in his seventies. Paternal aunt had breast cancer.
+
+Review of systems — occasional tension headaches, managed with ibuprofen. Got reading glasses last year, eye doctor said age-appropriate. No hearing problems. No chest pain. Does note he gets a little more winded going up stairs than he used to. No cough or wheezing. Heartburn once or twice a month, usually after spicy food. No abdominal pain. Bowel habits normal. Nocturia occasionally, once a night, not every night. Right knee stiffness after Peloton use. No concerning skin changes noted by the patient. Mood is generally stable, gets work-related stress but denies depression. No sexual dysfunction.
+
+Vitals today — blood pressure one-thirty-two over eighty-four, heart rate seventy-six, temperature ninety-eight point four, respiratory rate fourteen, oxygen saturation ninety-eight percent on room air. Height five-ten, weight two-oh-six pounds, BMI twenty-nine point six. I noted to him that his blood pressure is borderline — stage one hypertension starts at one-thirty over eighty — and that last year he was one-twenty-six over seventy-eight, so it has trended up. We discussed that lifestyle changes may be sufficient at this point and that we'd recheck before considering medication.
+
+Physical exam — head and neck: pupils equal, round, and reactive to light, conjunctivae clear. Tympanic membranes normal bilaterally. Nares clear. Oropharynx without lesions, tonsils normal. Thyroid normal size, no nodules palpated. No lymphadenopathy in the neck, axillae, or groin. Cardiovascular — regular rate and rhythm, no murmurs, gallops, or rubs. Lungs clear to auscultation bilaterally with good air movement. Abdomen soft, non-tender, non-distended, no organomegaly, normal bowel sounds, no masses. Skin — some sun damage noted on the forearms and back of the neck, nothing that looks atypical or worrisome, no concerning moles identified. Musculoskeletal — full range of motion in all extremities. Right knee with no swelling, no instability, good range of motion. Neurologically alert and oriented, cranial nerves intact, sensation and strength normal. Genitourinary — testes normal, no masses, no hernias.
+
+Labs from fasting bloodwork done last week — CBC normal. Fasting glucose one-oh-four, which is in the pre-diabetic range. Hemoglobin A1C five point seven, also in the pre-diabetes range. I counseled him extensively on this given his family history of type 2 diabetes on both his mother's and maternal grandmother's side. Lipid panel — total cholesterol two-twenty-two, LDL one-forty-one, HDL forty-four, triglycerides one-eighty-five. So elevated LDL, low-normal HDL, and elevated triglycerides. Liver enzymes normal, kidney function normal, thyroid normal. I calculated his ten-year ASCVD risk at approximately eight percent, which is intermediate, and I discussed this with him in the context of his family history of early coronary artery disease, the pre-diabetes, and the borderline blood pressure.
+
+Assessment and plan — so Kevin is a forty-five-year-old male presenting for annual physical with the following issues:
+
+One, borderline stage one hypertension at one-thirty-two over eighty-four, up from one-twenty-six over seventy-eight last year. Plan is lifestyle modification — exercise, weight loss, dietary sodium reduction — and recheck blood pressure in one month. Will reassess need for pharmacotherapy at that time.
+
+Two, pre-diabetes — fasting glucose one-oh-four, A1C five point seven. Counseled on lifestyle modifications including increased physical activity, dietary changes particularly reducing refined carbohydrates and nighttime snacking, and weight loss. Goal weight loss of fifteen to twenty pounds discussed. Recheck fasting glucose and lipids in three months.
+
+Three, dyslipidemia — elevated LDL at one-forty-one, low HDL at forty-four, elevated triglycerides at one-eighty-five. Intermediate ASCVD risk at approximately eight percent with significant family history. Plan is aggressive lifestyle modification first. If LDL does not improve in three to six months, will discuss initiating a statin.
+
+Four, overweight — BMI twenty-nine point six. Addressed as part of overall cardiovascular and metabolic risk reduction.
+
+Five, fatigue — most likely related to chronic sleep deprivation, averaging six to six and a half hours per night. Counseled that he needs a minimum of seven hours and that sleep affects weight, blood sugar, blood pressure, and energy levels.
+
+Six, right knee stiffness with exercise — no swelling or instability on exam, likely mechanical. Advised to monitor.
+
+Seven, occasional heartburn — once or twice a month with spicy food. No further workup at this time.
+
+Preventive care — went ahead and gave him a Td booster today, as his last Tdap was in two thousand fifteen. Also administered the flu vaccine today. COVID booster was done last October, up to date. Hepatitis B series confirmed in records. Shingles and pneumococcal vaccines deferred, not yet indicated at his age.
+
+Referrals placed — GI for colonoscopy, given he's forty-five and has a family history of colon cancer in his maternal grandfather. Also placing a referral to dermatology for a full skin check given sun damage noted on exam and history of significant sun exposure in childhood.
+
+I counseled him on warning signs of myocardial infarction and stroke — chest pain, pressure, shortness of breath, arm or jaw pain, sudden weakness, speech changes, facial drooping — and instructed him to go to the ER immediately if any of those occur.
+
+I was pretty direct with him about the fact that he's at a fork in the road here and that lifestyle changes are not optional. He was receptive and said he'd discuss it with his wife tonight. He'll follow up with me in three months for reassessment of blood pressure, glucose, and lipids, and to review any referral results.

@@ -1,0 +1,60 @@
+{
+  "transcript_id": "50-polypharmacy",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The HPI content that is present is directly from the transcript with no fabricated details. However, the note is essentially just the template with unfilled placeholders repeated dozens of times, so there is minimal content to evaluate for hallucination. No false clinical content was added.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note catastrophically fails to follow instructions. Template placeholder text with brackets and parenthetical instructions are left throughout. Sections that should have been filled with transcript content are left as raw template placeholders. Sections that should have been omitted per instructions (e.g., Social History items not mentioned) are included with placeholder text."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note captures virtually nothing from the transcript beyond the chief complaint and a brief HPI opening sentence. All fourteen medications, all medication changes, the assessment, the detailed plan, vital signs, past medical history, review of systems details, and all counseling are completely missing.",
+      "missed_items": [
+        "All 14 medications and dosages",
+        "Blood pressure 118/68",
+        "Two falls in six months with orthostatic hypotension",
+        "Amlodipine reduction plan",
+        "Lorazepam taper plan",
+        "Zolpidem taper plan",
+        "Diphenhydramine discontinuation",
+        "Oxybutynin to mirabegron switch",
+        "Omeprazole taper",
+        "Aspirin discontinuation",
+        "Gabapentin discussion",
+        "Daughter's concern about cognitive decline",
+        "Sleep hygiene and melatonin discussion",
+        "CBT-I referral discussion",
+        "Pharmacist Jim referral",
+        "Written medication action plan",
+        "Follow-up in two weeks",
+        "All assessment diagnoses (polypharmacy, orthostatic hypotension, hypertension, anxiety, insomnia, urinary urgency, hiatal hernia, sciatica)",
+        "Beers Criteria counseling",
+        "Home BP monitoring plan"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The output is the raw template repeated approximately 25+ times with placeholder brackets and parenthetical instructions left intact throughout. No sections are properly filled in."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The entire note structure is duplicated approximately 25+ times, making this an extreme case of duplication."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.88,
+      "input_tokens": 22045,
+      "output_tokens": 652
+    }
+  }
+}

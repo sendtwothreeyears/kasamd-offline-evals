@@ -1,0 +1,42 @@
+{
+  "transcript_id": "05-dm2-elevated-a1c",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note lists 'Type 2 Diabetes Mellitus' when the transcript only says 'diabetes' without specifying type. 'Hypertension' is listed as a past medical history item but was not explicitly stated as a diagnosis in the transcript \u2014 it is inferred from the BP reading and lisinopril use, which is a minor embellishment. 'SGLT2 inhibitor' is marked as a drug entity, which is incorrect (it's a drug class, not a drug), but this is more of an entity marking issue. 'Obesity' as a diagnosis is reasonably inferred from BMI 35.4.",
+      "flagged_content": [
+        "Type 2 Diabetes Mellitus",
+        "Hypertension (in Past Medical History)"
+      ]
+    },
+    "instruction_following": {
+      "score": 3,
+      "rationale": "The note follows all template instructions well. Sections not documented use appropriate defaults (e.g., 'No known drug allergies'). Only discussed systems are included in ROS. Template bracketed instructions do not appear in the output."
+    },
+    "completeness": {
+      "score": 3,
+      "rationale": "The note captures essentially all content from the transcript: symptoms, lab values, medication history, caregiver context, weight gain, detailed discussion of insulin vs. semaglutide, titration protocol, insurance concerns, empagliflozin alternative, diet/exercise counseling, complications screening (eye exam, kidney labs, foot exam), and follow-up plan. The patient's hesitancy about insulin due to father's experience, the sensitive stomach concern, and the slow titration explanation are all captured."
+    },
+    "template_adherence": {
+      "score": 3,
+      "rationale": "The note follows the template structure precisely with all required sections present and properly formatted. Vital signs only include what was documented, and the plan is organized into the four specified subcategories."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Entity marking syntax is correct and first-occurrence-only is mostly followed. However, 'SGLT2 inhibitor' is marked as {{drug:SGLT2 inhibitor}} which is a drug class, not a specific drug. 'Diabetes' is marked twice (once in Chief Complaint, once in Past Medical History as a separate occurrence). 'Early diabetic nephropathy' is marked twice. 'Retinal changes' is debatable as a condition entity. 'Hip fracture' is appropriately marked as a condition but it's the mother's condition, not the patient's.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No sections or content are duplicated in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.74,
+      "input_tokens": 4192,
+      "output_tokens": 677
+    }
+  }
+}

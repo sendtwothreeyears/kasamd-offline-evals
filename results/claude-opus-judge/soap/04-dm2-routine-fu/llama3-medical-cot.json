@@ -1,0 +1,70 @@
+{
+  "transcript_id": "04-dm2-routine-fu",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The note contains massive fabrications with no basis in the transcript: cardiovascular symptoms (shortness of breath, coughing, wheezing), respiratory symptoms, GI symptoms (nausea and vomiting), genitourinary symptoms (kidney problems), musculoskeletal symptoms, neurological symptoms (numbness, weakness), psychiatric symptoms, skin symptoms (rashes, lesions), vital signs (BP 130/80, HR 80, Temp 98.6, RR 20, SpO2 98%), fabricated labs (HbA1c 4.2%, Hb 6.2, Hct 20.3%), imaging results, tobacco use as a smoker, and family history of hypertension.",
+      "flagged_content": [
+        "She's experiencing shortness of breath and has been experiencing coughing and wheezing",
+        "She's experiencing shortness of breath and has been experiencing wheezing",
+        "She's experiencing nausea and vomiting",
+        "She's experiencing urinary symptoms and has a history of kidney problems",
+        "She's experiencing joint pain and muscle weakness",
+        "She's experiencing numbness and weakness",
+        "She's experiencing mood swings and anxiety",
+        "She's experiencing rashes and lesions",
+        "Tobacco: She's a smoker",
+        "Family History: She has a history of hypertension",
+        "BP: 130/80",
+        "HR: 80/min",
+        "Temp: 98.6\u00b0F",
+        "RR: 20/min",
+        "SpO2: 98%",
+        "HbA1c: 4.2%",
+        "Hb: 6.2 g/dL",
+        "Hct: 20.3%",
+        "Chest X-ray: normal",
+        "CT scan: normal"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template instructs to only include systems that were discussed and only include vitals that were documented, yet the note fabricated entire ROS sections and vital signs. The instruction to state 'Not documented' where appropriate was ignored, and the note fabricated content instead."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "While some key items are captured (A1c 6.8, metformin dosing, glucose ranges, water aerobics, dietary changes, 3-month follow-up), many important details are missing.",
+      "missed_items": [
+        "Foot exam findings (skin intact, no ulcers, pulses good, monofilament sensation intact)",
+        "Foot care counseling (check feet daily, between toes, well-fitting shoes, avoid walking barefoot)",
+        "Sister lost a toe from diabetes complications",
+        "Annual eye exam in February with Dr. Okafor - normal",
+        "Kidney labs normal (microalbumin and creatinine)",
+        "Three sessions with nutritionist completed",
+        "Recheck A1c in 3 months",
+        "Schedule annual eye exam around February",
+        "Metformin tolerance - takes with food"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The note follows some template structure but has significant issues: Past Medical History section contains medications instead of conditions, Assessment section is empty, sections are poorly organized, and the ROS formatting is inconsistent with subsections broken out as separate headers."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used for metformin, diabetes, or any other entities."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Multiple instances of duplication: HR: 80/min is repeated three times in the labs section, respiratory symptoms are duplicated across Cardiovascular and Respiratory sections, and metformin dosing is repeated multiple times across sections."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.07,
+      "input_tokens": 3260,
+      "output_tokens": 925
+    }
+  }
+}

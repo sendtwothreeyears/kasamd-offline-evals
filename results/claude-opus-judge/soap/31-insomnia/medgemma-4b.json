@@ -1,0 +1,51 @@
+{
+  "transcript_id": "31-insomnia",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note mentions 'falling asleep occurring between midnight and 1:00 AM' \u2014 the transcript says 'midnight or later' but never specifies 1:00 AM. The 'Constitutional: Fatigue' in ROS is not explicitly stated in the transcript. The Social History items listed as 'Not documented' are technically correct except that occupation was implicitly mentioned (patient works, alarm at 6:15 for work).",
+      "flagged_content": [
+        "falling asleep occurring between midnight and 1:00 AM",
+        "Constitutional: Fatigue"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to omit the Review of Systems section entirely if systems were not discussed, yet it was included with fabricated fatigue. Social History includes items not mentioned (tobacco, alcohol, recreational drugs) marked as 'Not documented' when the template says to only include items that were mentioned. The template also says to omit ROS if not mentioned."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "The note misses significant counseling details: sleep hygiene specifics (no screens 30 min to 1 hour before bed, bed for sleep only), stimulus control technique (get up after 20 minutes, go to another room), melatonin dosing details (0.5-1mg, taken 1 hour before bedtime), counseling that higher doses aren't better, and the coworker's 10mg dose discussion.",
+      "missed_items": [
+        "No screens for at least 30 minutes before bed, ideally an hour",
+        "Keeping the bed for sleep only \u2014 no TV, no phone, no laptop in bed",
+        "Stimulus control: if not asleep within 20 minutes, get up, go to another room, do something low-key, return when drowsy",
+        "Melatonin dosing: half a milligram to one milligram",
+        "Take melatonin about an hour before target bedtime",
+        "Counseling that higher doses aren't better, evidence supports lower doses",
+        "Coworker takes 10 milligrams \u2014 addressed this specifically",
+        "Patient has a job (occupation mentioned implicitly)"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note generally follows the template structure but includes Social History sub-items that weren't mentioned (tobacco, alcohol, recreational drugs) against template instructions, and includes ROS when it should have been omitted. The Chief Complaint formatting is slightly different from template but acceptable."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. 'Melatonin' should have been marked as {{drug:melatonin}} and 'sleep onset insomnia' as {{condition:sleep onset insomnia}}."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.53,
+      "input_tokens": 2634,
+      "output_tokens": 746
+    }
+  }
+}

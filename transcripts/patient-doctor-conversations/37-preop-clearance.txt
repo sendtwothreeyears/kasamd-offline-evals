@@ -1,0 +1,108 @@
+---
+id: 37
+scenario: Pre-operative clearance for knee surgery
+category: Acute
+density: Medium
+---
+
+Doctor: Hey, Tom. So you're here for pre-op clearance — you've got the knee replacement coming up?
+
+Patient: Right knee, yeah. March twenty-eighth with Dr. Volkov.
+
+Doctor: Good. I've got the request from his office here. Let me go through everything. First, tell me about the knee — how long has this been going on?
+
+Patient: Oh, it's been years. I've been putting off the surgery forever but it's gotten to the point where I can barely walk a block. The cortisone shots stopped helping, PT didn't do much. Dr. Volkov showed me the X-rays and said it's basically bone on bone. So here we are.
+
+Doctor: Alright. So my job today is to make sure you're safe to go under anesthesia and through the surgery. Let me review your medical history. You've got hypertension, controlled on losartan. Type 2 diabetes on metformin. High cholesterol on atorvastatin. And the osteoarthritis obviously. Anything I'm missing?
+
+Patient: That's everything. Oh, and I had my gallbladder out about twelve years ago. That's my only surgery.
+
+Doctor: And that went fine? No complications with anesthesia?
+
+Patient: No, went smooth. In and out the same day.
+
+Doctor: Good. Any family history of problems with anesthesia? Malignant hyperthermia, anything like that?
+
+Patient: Not that I know of.
+
+Doctor: Allergies to medications?
+
+Patient: Sulfa drugs. I get a rash.
+
+Doctor: Noted. Let me ask about your cardiac risk. Any chest pain, shortness of breath at rest, palpitations, fainting, or dizziness?
+
+Patient: No chest pain. I get short of breath walking uphill but I think that's just the knee limiting me and being out of shape. No palpitations, no fainting.
+
+Doctor: Have you ever had a stress test or any cardiac workup?
+
+Patient: I had one maybe five years ago. It was normal.
+
+Doctor: Do you sleep flat or do you need extra pillows? Any swelling in your legs?
+
+Patient: I use one pillow. No swelling beyond what the knee does.
+
+Doctor: Okay. Using the Revised Cardiac Risk Index — you have diabetes, which is one point. No history of heart failure, coronary artery disease, stroke, or kidney disease. You're at low to intermediate cardiac risk for a total knee replacement, which is considered an intermediate-risk surgery. Based on your functional capacity and risk profile, I don't think you need a preoperative stress test.
+
+Patient: That's a relief. I didn't want to delay this any longer.
+
+Doctor: Let me check your vitals. Blood pressure today is one-thirty over seventy-eight. Heart rate sixty-eight. Oxygen sat ninety-seven percent. Temperature normal. Let me listen to your heart and lungs.
+
+Patient: Sure.
+
+Doctor: Heart sounds are regular, no murmurs. Lungs are clear. Good. Now, medications — this is the important part. The metformin, you'll need to hold that the morning of surgery. Don't take it the day of. You can restart it after surgery once you're eating normally and your kidney function is confirmed.
+
+Patient: Okay.
+
+Doctor: Losartan — hold that the morning of surgery as well. Blood pressure meds and anesthesia can interact and cause your blood pressure to drop. Resume it the day after surgery.
+
+Patient: Got it.
+
+Doctor: Atorvastatin you can take as usual, no changes. Are you on any blood thinners? Aspirin?
+
+Patient: I take a baby aspirin every day.
+
+Doctor: Dr. Volkov's office wants you to stop the aspirin seven days before surgery. So that would be... March twenty-first. Stop it that day and don't resume until Dr. Volkov tells you to. Are you on any other supplements — fish oil, vitamin E, anything that could thin the blood?
+
+Patient: I take fish oil.
+
+Doctor: Stop that seven days before surgery too. Fish oil can increase bleeding risk.
+
+Patient: Okay. I'll set reminders on my phone.
+
+Doctor: Smart. Now, labs — I need a CBC, basic metabolic panel, hemoglobin A1C, coagulation studies, and a type and screen. Dr. Volkov's office also requested an EKG given your age and the diabetes. We'll do the EKG today and I'll have you get bloodwork done this week.
+
+Patient: Can I do the blood draw today?
+
+Doctor: Absolutely, we'll send you to the lab after this. Your A1C from three months ago was seven point one. If it's come down, great. If it's crept up, we may need to optimize before surgery because high blood sugar increases infection risk.
+
+Patient: I've been pretty good about the diet lately, actually. Trying to get myself in the best shape possible before the surgery.
+
+Doctor: That's the right mindset. Let me do the EKG now... okay, this looks normal, normal sinus rhythm, no ST changes, no conduction delays. I'll send a copy to Dr. Volkov and the anesthesia team.
+
+Patient: Good.
+
+Doctor: A couple other things. Are you a smoker?
+
+Patient: Quit eight years ago. Smoked for about fifteen years before that.
+
+Doctor: Good that you quit. Any sleep apnea?
+
+Patient: I use a CPAP machine. Been on it for about four years.
+
+Doctor: Oh, that's important — make sure you bring your CPAP to the hospital. Anesthesia needs to know about the sleep apnea. I'll put it in my clearance note.
+
+Patient: I always forget to mention that. Good thing you asked.
+
+Doctor: That's why we go through everything. Alright, any other questions about the surgery prep?
+
+Patient: Just — how long until I'm back to normal? Dr. Volkov said six to twelve weeks.
+
+Doctor: That's about right for a total knee. The first two weeks are the toughest. Physical therapy starts almost immediately — usually the day after surgery. Full recovery varies but most people feel significantly better by three months and continue improving up to a year.
+
+Patient: I just want to be able to walk without wincing.
+
+Doctor: You will. The outcomes for total knee replacement are really good. Alright, Tom — I'm clearing you for surgery. I'll send my clearance note to Dr. Volkov's office today. To recap: stop aspirin and fish oil on March twenty-first. Hold metformin and losartan the morning of surgery. Bring your CPAP. Labs and EKG today. And call us if anything changes between now and the twenty-eighth — any illness, fever, anything.
+
+Patient: Will do. Thanks, doc. Appreciate it.
+
+Doctor: Good luck with the surgery. I'll see you on the other side.

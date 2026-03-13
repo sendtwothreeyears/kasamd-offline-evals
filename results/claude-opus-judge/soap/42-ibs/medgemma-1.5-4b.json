@@ -1,0 +1,58 @@
+{
+  "transcript_id": "42-ibs",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note includes 'Appears well-nourished' under General which is not stated in the transcript. The transcript only mentions abdominal exam findings. This is a minor embellishment beyond standard clinical defaults.",
+      "flagged_content": [
+        "Appears well-nourished"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "Template instructions in parentheses and brackets are left in the output throughout (e.g., '(Only include items that were mentioned)', '[Relevant family medical history]', '(If not documented, state \"Not documented\")', '[Not mentioned]', '[Diagnostic workup - labs, imaging, referrals]'). The Plan section contains only placeholder text with no actual content filled in. The note is repeated approximately 28 times, indicating a catastrophic generation failure."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note is missing enormous amounts of transcript content: the entire prior workup (CBC, CRP, sed rate, celiac panel, TSH, fecal calprotectin, CT abdomen), the full physical exam (LLQ tenderness, no guarding, no rebound, no masses, active bowel sounds), psychosocial history (stress correlation, sleep deprivation, worst flare during trial week), the entire detailed plan (dicyclomine, psyllium, loperamide, low-FODMAP diet referral, behavioral health referral, CBT, sleep counseling, follow-up in 6 weeks, contingency plans with eluxadoline/amitriptyline, screening colonoscopy at 45, red flag instructions), Rome IV criteria mention, loperamide as current medication, and the Review of Systems section.",
+      "missed_items": [
+        "Prior labs (CBC, CRP, ESR, celiac panel, TSH, fecal calprotectin)",
+        "CT abdomen results",
+        "Psychosocial history (high stress, 5-6 hours sleep, stress-GI correlation, worst flare during trial week)",
+        "Abdominal exam findings (LLQ tenderness, no guarding, no rebound, no masses, active bowel sounds)",
+        "Dietary plan (low-FODMAP diet, referral to dietitian Sarah Park, elimination/reintroduction phases)",
+        "Psyllium husk/Metamucil prescription with titration instructions",
+        "Dicyclomine 20mg prescription with dosing and side effects",
+        "Loperamide as current medication with PRN instructions",
+        "Behavioral health referral for gut-directed CBT",
+        "Sleep counseling",
+        "Follow-up in 6 weeks",
+        "Contingency medications (eluxadoline, amitriptyline)",
+        "Screening colonoscopy at age 45",
+        "Red flag instructions",
+        "Rome IV criteria",
+        "Review of Systems section"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "Template placeholder text and instructions are left throughout the note. The Plan section has no actual content. The Family History section contains raw template text. The Review of Systems section is entirely omitted. The note is duplicated dozens of times."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The entire note is duplicated approximately 28 times in the output."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 17.44,
+      "input_tokens": 20993,
+      "output_tokens": 849
+    }
+  }
+}

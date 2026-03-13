@@ -1,0 +1,61 @@
+{
+  "transcript_id": "37-preop-clearance",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The note fabricates extensive content not in the transcript: 'Preoperative consent form completed and signed by Mr. Tom,' 'Preoperative consent form sent to Mr. Tom's physician and hospital,' 'Tom is advised to monitor his blood sugar levels and contact office if they rise prior to surgery.' Also, the ROS includes many systems not discussed in the transcript (Constitutional, HEENT, GI, GU, Neurological, Psychiatric, Skin) presented as negative findings. BP is listed as 133/78 instead of 130/78.",
+      "flagged_content": [
+        "Preoperative consent form completed and signed by Mr. Tom",
+        "Preoperative consent form sent to Mr. Tom's physician and hospital",
+        "Tom is advised to monitor his blood sugar levels and contact office if they rise prior to surgery",
+        "Constitutional: No fever, chills, fatigue, or weight changes reported",
+        "HEENT: No visual or auditory concerns, throat, or nasal symptoms noted",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain described",
+        "Genitourinary: No urinary symptoms or menstrual history provided",
+        "Neurological: No headache, dizziness, numbness, or weakness reported",
+        "Psychiatric: No mood or anxiety concerns raised",
+        "BP: 133/78"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template instruction '(Only include systems that were discussed. If not mentioned, omit this section entirely)' was literally copied into the output. Multiple ROS systems not discussed in the transcript were included. The note states 'Physical examination not documented' despite exam findings being in the transcript. Massive runaway repetition of fabricated content demonstrates a fundamental failure to follow instructions."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Missing key items: RCRI assessment and cardiac risk stratification, stress test history (5 years ago, normal), no preoperative stress test indicated, bone-on-bone arthritis on X-rays, Dr. Volkov's name as surgeon, no murmurs on exam, last A1C of 7.1, aspirin not to resume until Dr. Volkov clears, losartan resume day after surgery, osteoarthritis as a diagnosis in PMH.",
+      "missed_items": [
+        "RCRI assessment with 1 point for diabetes, low to intermediate cardiac risk",
+        "Prior stress test 5 years ago was normal",
+        "No preoperative stress test indicated",
+        "Bone-on-bone arthritis on X-rays by Dr. Volkov",
+        "No murmurs on cardiac exam",
+        "Last A1C 7.1 three months ago",
+        "Aspirin not to resume until Dr. Volkov clears postoperatively",
+        "Losartan resume day after surgery",
+        "One pillow, no lower extremity edema beyond knee",
+        "No syncope or presyncope"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Physical exam findings (heart sounds regular, lungs clear) are placed under Vital Signs/General instead of a proper Physical Examination section. The note states 'Physical examination not documented' contradicting the findings listed. Template instruction text was left in the output. The Assessment section is minimal and lacks secondary diagnoses."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used for any medications or conditions."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Massive duplication: 'Preoperative consent form received prior to discharge' is repeated hundreds of times in the Plan section, representing a severe runaway generation error."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 21.16,
+      "input_tokens": 22882,
+      "output_tokens": 924
+    }
+  }
+}

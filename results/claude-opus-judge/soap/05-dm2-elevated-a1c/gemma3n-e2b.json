@@ -1,0 +1,64 @@
+{
+  "transcript_id": "05-dm2-elevated-a1c",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "Several fabricated details: 'Diabetes Mellitus (diagnosed 6 months ago)' \u2014 the transcript says A1c was 7.4 six months ago, not that diabetes was diagnosed then. Multiple ROS negatives (cardiovascular, respiratory, musculoskeletal, neurological, psychiatric, skin) were never discussed in the transcript and are fabricated. 'Patient appears overweight' was not stated in the exam. The GI ROS entry about metformin adherence is misplaced content, not a GI finding.",
+      "flagged_content": [
+        "Diabetes Mellitus (diagnosed 6 months ago)",
+        "Cardiovascular: No reported chest pain or palpitations",
+        "Respiratory: No reported shortness of breath",
+        "Musculoskeletal: No reported joint pain or muscle weakness",
+        "Neurological: No reported headache or dizziness",
+        "Psychiatric: No reported anxiety or sleep issues",
+        "Skin: No reported rashes or lesions",
+        "General: Patient appears overweight"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "Template instructions in parentheses are left in the output verbatim (e.g., '(If not documented, state \"Not documented\")', '(Only include items that were mentioned)', '(Only include vitals that were documented)', '(Only document examination findings that were explicitly mentioned...)'). The ROS includes systems not discussed, violating the instruction to only include discussed systems. Social history includes undiscussed items despite the instruction to only include mentioned items."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Missing significant content: A1c values (9.2 current, 7.4 prior), detailed discussion of insulin glargine option and patient's refusal, father's difficult experience with insulin, semaglutide counseling details (mechanism, weight loss expectations, CV benefits, GI side effects, pancreatitis risk, thyroid cancer contraindication, slow titration), insurance/cost discussion, empagliflozin as backup option, kidney labs (creatinine 1.0, microalbumin 45), foot exam findings (monofilament intact, pulses strong, no skin breakdown), foot care counseling, glucose monitoring instructions (fasting and before dinner), blood pressure monitoring plan, potential lisinopril increase, height 5'9\", eye exam timing details.",
+      "missed_items": [
+        "A1c 9.2 current and 7.4 six months ago",
+        "Discussion of insulin glargine (Lantus/Basaglar) and patient refusal",
+        "Father's difficult experience with insulin",
+        "Semaglutide counseling details (mechanism, weight loss, CV benefits, GI side effects, pancreatitis risk, thyroid cancer screening)",
+        "Insurance/cost discussion and prior authorization",
+        "Empagliflozin as alternative option",
+        "Creatinine 1.0 and urine microalbumin 45",
+        "Foot exam findings (monofilament, pulses, no breakdown)",
+        "Foot care counseling",
+        "Glucose monitoring instructions (fasting and before dinner)",
+        "Blood pressure monitoring and potential lisinopril increase",
+        "Semaglutide starting at 0.25 mg for four weeks specifically",
+        "Patient's previous walking routine 3-4 times/week for 30 minutes"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template parenthetical instructions are left in the output. Vital signs that were not documented are listed as 'Not documented' instead of being omitted per template instructions. Social history items not mentioned are listed rather than omitted. Weight/BMI placed in HPI rather than vitals/objective. Foot exam findings not documented in physical exam section.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 1,
+      "rationale": "Entity marking syntax is correct, but metformin is marked multiple times (repeated in duplicated note). Missing entity marking for several conditions (diabetes mellitus first occurrence should be {{condition:...}}, diabetic nephropathy, obesity/overweight) and drugs (insulin glargine, semaglutide marked but empagliflozin missing from note entirely). Conditions are not marked at all with {{condition:...}} syntax.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The entire clinical note is duplicated \u2014 the full note appears twice in the output."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 20.58,
+      "input_tokens": 4621,
+      "output_tokens": 1080
+    }
+  }
+}

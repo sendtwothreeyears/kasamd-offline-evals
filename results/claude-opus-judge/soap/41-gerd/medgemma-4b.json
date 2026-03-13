@@ -1,0 +1,50 @@
+{
+  "transcript_id": "41-gerd",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The Review of Systems section fabricates multiple system reviews that were never discussed in the transcript, including Constitutional (fatigue), GI (nausea, diarrhea, abdominal pain), GU, MSK, Neuro, Psych, and Skin findings. These are template placeholder texts copied verbatim as if they were actual findings.",
+      "flagged_content": [
+        "Constitutional: Fatigue",
+        "Gastrointestinal: Nausea, vomiting, diarrhea, abdominal pain",
+        "Genitourinary: Urinary symptoms, menstrual history",
+        "Musculoskeletal: Joint pain, muscle weakness, mobility issues",
+        "Neurological: Headache, dizziness, numbness, weakness",
+        "Psychiatric: Mood, anxiety, sleep",
+        "Skin: Rashes, lesions, wounds"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note includes template instructions verbatim in parentheses (e.g., '(If not documented, state \"Not documented\")', '(Only include systems that were discussed)', '(Only include items that were mentioned)'). It also failed to follow the ROS instruction to only include systems that were discussed, instead copying template placeholders as content. Multiple sections left blank with instructions rather than following them."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "The HPI captures the key symptoms and triggers well. The plan captures medication, lifestyle modifications, and follow-up. However, the note misses the counseling about expecting improvement within a few days and full effect in two weeks, and the negative alarm symptoms are in HPI rather than properly organized in ROS.",
+      "missed_items": [
+        "Counseling that patient should start feeling better within a few days but to give it a full two weeks for complete effect",
+        "Proper documentation of pertinent negatives (no dysphagia, no odynophagia, etc.) in ROS"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "Template instructions appear verbatim in the output. Multiple sections are left with raw template instructions instead of being properly filled in or stating 'Not documented'. The ROS section includes template placeholder text as if it were clinical content. Social History has empty subheadings that should have been omitted per instructions."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. No {{drug:...}} or {{condition:...}} syntax was used for omeprazole or GERD or any other entities."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or full note content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 12.48,
+      "input_tokens": 2803,
+      "output_tokens": 675
+    }
+  }
+}

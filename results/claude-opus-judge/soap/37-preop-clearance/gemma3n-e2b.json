@@ -1,0 +1,69 @@
+{
+  "transcript_id": "37-preop-clearance",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems includes multiple systems (HEENT, GI, GU, Neurological, Psychiatric, Skin, Constitutional) that were never discussed in the transcript, fabricating negative findings. The template instructs to only include systems that were discussed.",
+      "flagged_content": [
+        "Constitutional: No reported fever or chills.",
+        "HEENT: No reported vision, hearing, or nasal symptoms.",
+        "Respiratory: No reported cough or wheezing.",
+        "Gastrointestinal: No reported nausea or vomiting.",
+        "Genitourinary: No reported urinary symptoms.",
+        "Neurological: No reported headache or dizziness.",
+        "Psychiatric: No reported mood or anxiety.",
+        "Skin: No reported rashes or lesions.",
+        "Patient appears to be in reasonable condition."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template explicitly states 'Only include systems that were discussed' for ROS, but the note includes many undiscussed systems. The note also includes a trailing summary note section not part of the template. Medications in Past Medical History mix drugs with conditions against template structure."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing from the note.",
+      "missed_items": [
+        "Scheduled surgery date of March 28th with Dr. Volkov",
+        "No family history of malignant hyperthermia or anesthesia problems (should be documented under Family History instead of 'Not documented')",
+        "Stress test five years ago was normal",
+        "Revised Cardiac Risk Index details (diabetes = 1 point, no HF/CAD/stroke/renal disease)",
+        "Metformin restart instructions (after eating normally and kidney function confirmed)",
+        "Losartan resume instructions (day after surgery)",
+        "Atorvastatin continue as usual",
+        "Aspirin not to resume until Dr. Volkov clears postoperatively",
+        "Labs ordered: CBC, BMP, HbA1c, coagulation studies, type and screen",
+        "Last A1C was 7.1 three months ago",
+        "Elevated blood sugar increases perioperative infection risk counseling",
+        "Patient going to lab today",
+        "No lower extremity edema beyond the knee",
+        "Sleeps with one pillow",
+        "Recovery timeline counseling (first 2 weeks toughest, PT day after surgery, better by 3 months, improvement up to a year)",
+        "EKG copy to be sent to Dr. Volkov's office and anesthesia team",
+        "Clearance note to be sent to Dr. Volkov's office today",
+        "CPAP noted in clearance documentation for anesthesia team",
+        "No complications with prior anesthesia during cholecystectomy"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The note includes an extra trailing summary section not in the template. Medications are listed within Past Medical History. The Assessment section is thin and doesn't list secondary diagnoses. Many plan elements are misplaced or missing proper organization."
+    },
+    "entity_marking": {
+      "score": 1,
+      "rationale": "Drug entities are marked with correct syntax, but drugs in Past Medical History are marked (losartan, metformin, atorvastatin) and then re-marked in Medications section. Additionally, conditions like hypertension, type 2 diabetes, hyperlipidemia, osteoarthritis, obstructive sleep apnea, and bone-on-bone arthritis are never marked with {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The trailing 'Note' section at the end duplicates information already present in the Past Medical History, Allergies, Social History, and Medications sections."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.93,
+      "input_tokens": 3663,
+      "output_tokens": 915
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "transcript_id": "35-well-child",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nLily Thompson, a four-year-old girl, is coming in for her well-child visit.\n\n**History of Present Illness**\nLily is a new patient who was transferred from Dr. Parekh's office. Her mother, Danielle, is present and is concerned about Lily's picky eating habits, preferring foods like chicken nuggets and mac and cheese while avoiding vegetables. There are no other concerns.\n\nSocially, Lily is happy in preschool and is involved in swimming and dance lessons on weekends. She is social and verbalizing her feelings, including fear of the dark and dogs, which she has overcome.\n\nDevelopmentally, Lily is meeting milestones in language, motor skills, and self-dressing but struggles with buttons and zippers on clothing.\n\nRegarding potty training, Lily is mostly trained but experiences occasional nighttime accidents, using a pull-up at bedtime.\n\nDental hygiene is good, with Lily brushing her teeth and seeing a dentist regularly without issues.\n\nBehaviorally, Lily experiences meltdowns but is verbalizing her feelings and negotiating instead of melting down.\n\nSleep pattern is typical, with Lily falling asleep quickly and needing approximately ten and a half hours of sleep.\n\nRegarding growth measurements, Lily is on track with her growth curves.\n\nOn physical exam, Lily is cooperative and her examination findings are normal across various systems.\n\n**Assessment**\nLily is doing great overall, with normal growth and development.\n\n**Plan**\n1. Follow-up on picky eating strategy and reassess in a few visits.\n2. Continue current child safety measures (car seat, water safety, screen time).\n3. Next well-child visit scheduled in one year unless needed sooner.",
+  "metadata": {
+    "inference_time_s": 5.81,
+    "prompt_tokens": 2353,
+    "tokens_generated": 334,
+    "prompt_tps": 490.2,
+    "tokens_per_sec": 57.4,
+    "peak_memory_gb": 4.8
+  }
+}

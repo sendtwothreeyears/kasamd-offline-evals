@@ -1,0 +1,65 @@
+{
+  "transcript_id": "09-asthma-exacerbation",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The note contains numerous fabricated findings: BP 130/80, HR 110, Temp 36.2\u00b0C, RR 24, SpO2 98% (transcript says 97%), coughing (not mentioned in transcript), tobacco use (not mentioned), and 'summer seasons' (only spring/pollen mentioned). These are significant fabrications with no basis in the transcript.",
+      "flagged_content": [
+        "BP: 130/80 mm Hg",
+        "HR: 110/min",
+        "Temp: 36.2\u00b0C",
+        "RR: 24/min",
+        "SpO2: 98%",
+        "Kevin is a tobacco user. He has been using tobacco products for a long time and is not currently using tobacco products.",
+        "coughing",
+        "summer seasons"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "Template instructions in brackets are left in the output (e.g., '[Patient's primary reason for visit]', '[Detailed description of current problem...]'). The note fabricates vital signs and social history instead of stating 'Not documented'. The Allergies section does not address drug allergies at all. The Plan section is entirely missing. The Review of Systems includes exam findings rather than patient-reported symptoms."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note is missing the entire Plan section, which contained the bulk of the clinical encounter: step-up to Advair, cetirizine prescription, spacer prescription, exercise counseling, albuterol pre-exercise instructions, return precautions, asthma action plan, and follow-up in 3-4 weeks. It also misses peak flow results (380/480, 79%, yellow zone), postnasal drip, sneezing, Claritin use, spacer counseling, mouth rinsing counseling, and LABA safety discussion.",
+      "missed_items": [
+        "Plan section entirely missing",
+        "Peak flow 380, personal best 480, 79% of personal best, yellow zone",
+        "Stepping up to Advair 250/50",
+        "Cetirizine 10mg daily",
+        "Fluticasone nasal spray prescription",
+        "Spacer prescription and counseling",
+        "Mouth rinsing after inhaled steroid counseling",
+        "Exercise counseling and pre-exercise albuterol instructions",
+        "Return precautions",
+        "Asthma action plan to be printed",
+        "Follow-up in 3-4 weeks",
+        "Claritin occasional use",
+        "Postnasal drip",
+        "Sneezing",
+        "LABA safety discussion",
+        "Counseling about daily maintenance inhaler use"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Plan section is entirely missing. Template bracketed instructions are left in the output. The Review of Systems is not formatted by system as the template requires. Social History includes fabricated tobacco information and omits the template's instruction to only include items mentioned. The Allergies section does not address drug allergies."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The same block of text about rescue inhaler use, wheezing, coughing, nasal congestion, and seasonal pattern is repeated nearly verbatim across the Chief Complaint, HPI, Review of Systems, and General sections."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.77,
+      "input_tokens": 3973,
+      "output_tokens": 862
+    }
+  }
+}

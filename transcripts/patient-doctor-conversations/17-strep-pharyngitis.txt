@@ -1,0 +1,42 @@
+---
+id: 17
+scenario: Strep pharyngitis with positive rapid strep test
+category: Acute
+density: Sparse
+---
+
+Doctor: Hey there, Marcus. What's bothering you today?
+
+Patient: My throat's been killing me since yesterday. Hurts to swallow, hurts to talk, honestly just hurts.
+
+Doctor: Any other symptoms? Runny nose, cough?
+
+Patient: No cough, no runny nose. I had a fever last night — 101 point something. Took some Tylenol.
+
+Doctor: Let me take a look. Open wide and say "ahh"... okay, I can see your tonsils are red and swollen, and there's some white patches on them. Let me feel your neck... you've got some tender lymph nodes right here under your jaw.
+
+Patient: Yeah, that's sore.
+
+Doctor: I'm going to do a rapid strep test. Quick throat swab — just hold still for a sec... okay, all done. Give me about five minutes.
+
+Patient: Okay.
+
+Doctor: Alright, Marcus — it's positive for strep. I'm going to prescribe amoxicillin, 500 milligrams three times a day for ten days. It's important you finish the whole course even when you start feeling better.
+
+Patient: How long until it starts working?
+
+Doctor: You should feel noticeably better within 24 to 48 hours. Keep taking Tylenol or ibuprofen for the pain and fever. Warm tea, cold things like popsicles — whatever feels good on your throat.
+
+Patient: Am I contagious?
+
+Doctor: Yes, until you've been on the antibiotic for at least 24 hours. So stay home from work tomorrow and you should be good to go back the day after, as long as you're feeling up to it.
+
+Patient: Sounds good. Anything to worry about?
+
+Doctor: If the fever doesn't break within 48 hours on the antibiotic, or you're having trouble breathing or swallowing liquids, come back in. Otherwise, you'll be fine. Any allergies to amoxicillin or penicillin?
+
+Patient: Nope.
+
+Doctor: Perfect. I'm sending it to your pharmacy now. Feel better.
+
+Patient: Thanks, doc. Appreciate it.

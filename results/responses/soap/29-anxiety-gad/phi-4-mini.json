@@ -1,0 +1,14 @@
+{
+  "transcript_id": "29-anxiety-gad",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nMr. Nakamura presenting with generalized anxiety disorder (GAD).\n\n**History of Present Illness**\nMr. Nakamura has been experiencing significant anxiety for approximately 1.5 to 2 years, with a notable worsening over the last six months. His anxiety has generalized beyond work-related concerns to include worries about his children's health, finances, daily tasks, and social interactions. He describes a persistent worry that is present most of the day, starting within ten minutes of waking up, and is difficult to control despite recognizing its irrationality. He has tried to redirect his attention but the worry returns. He experiences muscle tension, particularly in the shoulders and neck area.\n\nPhysical symptoms include significant muscle tension, teeth grinding, tension headaches, constant low-grade nausea, and looser stools, which are worst on Monday mornings correlating with work-related anxiety. He had an episode of palpitations during a work presentation last month but denied true panic attacks. He experiences mild hand tremor, occasional shortness of breath, mild orthostatic lightheadedness, and increased irritability.\n\nSocial history indicates Mr. Nakamura consumes one cup of coffee in the morning and has a history of consuming three cups daily, which he associated with worsening anxiety and therefore reduced his intake on his own. Alcohol consumption is one to two beers in the evening on occasion, but he noted mornings after drinking are worse and acknowledged a rebound effect on anxiety.\n\nPast medical history is unremarkable, with a checkup six months prior showing borderline high blood pressure but otherwise normal blood work. There is a family history of anxiety in his mother and a brother on escitalopram.\n\n**Objective**\n**Physical Examination**\nGeneral: Mr. Nakamura is alert and oriented, appearing anxious but in no acute distress.\n\nVital Signs:\nBP: 138/86\nHR: 84\nTemp: 98.6 F\nRR: 16\nSpO2: 98%\n\nGeneral: Notable bilateral trapezius muscle tension on palpation. Neurological exam is grossly normal \u2014 reflexes, coordination, and sensation are intact.\n\n**Assessment**\nGeneralized anxiety disorder (GAD) meeting full criteria.\n\n**Plan**\n1. Labs - TSH, CBC, comprehensive metabolic panel\n2. Medications - Escitalopram 5 mg daily, starting at 5 mg and increasing to 10 mg after one week\n3. Patient education and counseling provided on safety issues, medication response, and lifestyle modifications\n4. Follow-up in four weeks to review labs and assess medication response\n\nMr. Nakamura was receptive and engaged throughout the visit.",
+  "metadata": {
+    "inference_time_s": 9.57,
+    "prompt_tokens": 2760,
+    "tokens_generated": 535,
+    "prompt_tps": 493.4,
+    "tokens_per_sec": 55.9,
+    "peak_memory_gb": 4.8
+  }
+}

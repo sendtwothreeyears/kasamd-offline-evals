@@ -1,0 +1,58 @@
+{
+  "transcript_id": "27-depression-new",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The note states she wakes up '3-4 times per night' which is a fabrication \u2014 the transcript says she wakes up 'around three or four in the morning' (early morning awakening, not multiple awakenings). The ROS includes multiple systems (HEENT, Cardiovascular, Respiratory, GU, MSK) marked as 'No reported issues' which were never discussed. The General exam states 'Patient appears to be experiencing significant emotional distress' which is fabricated \u2014 no physical exam was documented.",
+      "flagged_content": [
+        "waking up 3-4 times per night",
+        "HEENT: No reported issues",
+        "Cardiovascular: No reported issues",
+        "Respiratory: No reported issues",
+        "Genitourinary: No reported issues",
+        "Musculoskeletal: No reported issues",
+        "Patient appears to be experiencing significant emotional distress"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit the section entirely if not mentioned, but the note includes multiple undiscussed systems. The template says to state 'Physical examination not documented' if no exam was performed, which was done, but then a General finding was fabricated. Vital signs were listed as 'Not documented' individually rather than omitting per the 'only include vitals that were documented' instruction."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing: the PHQ-9 score interpretation as 'moderately severe,' the discussion about medication ambivalence and the high blood pressure analogy, the counseling about duration of treatment (6-12 months after remission before tapering), the instruction to take sertraline in the morning specifically, the safety planning details (calling the clinic), and saving 988 in her phone.",
+      "missed_items": [
+        "PHQ-9 moderately severe range interpretation",
+        "patient's ambivalence about medication and the high blood pressure analogy reframing",
+        "duration of treatment recommendation (6-12 months after remission before tapering)",
+        "take sertraline in the morning",
+        "safety planning to call the clinic",
+        "patient agreed to save 988 in her phone",
+        "CBT described as structured evidence-based treatment helping identify and challenge negative thought patterns",
+        "virtual visit availability mentioned",
+        "exercise has genuine antidepressant effects",
+        "condition:major depressive disorder not entity-marked in Assessment"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The overall structure follows the template well, but Vital Signs are listed under Objective when they should be omitted since none were documented, and the General finding appears after stating physical exam was not documented, which is contradictory. Social History should have included occupation (employed, works) rather than 'Not documented.'"
+    },
+    "entity_marking": {
+      "score": 1,
+      "rationale": "The drug sertraline is correctly marked with {{drug:sertraline}} on first occurrence, but the second occurrence is also marked. The condition 'major depressive disorder' is not marked with {{condition:...}} syntax. Other conditions like passive suicidal ideation could also be marked."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.78,
+      "input_tokens": 3603,
+      "output_tokens": 811
+    }
+  }
+}

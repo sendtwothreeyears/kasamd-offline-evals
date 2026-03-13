@@ -1,0 +1,63 @@
+{
+  "transcript_id": "03-htn-uncontrolled",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The note fabricates vital signs (HR: 94, Temp: 94, RR: 20, SpO2: 98%) that are not in the transcript. It also lists 'Blood pressure in the office: 140/90' which is not an accurate representation of the transcript data.",
+      "flagged_content": [
+        "HR: 94",
+        "Temp: 94",
+        "RR: 20",
+        "SpO2: 98%",
+        "Blood pressure in the office: 140/90"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note retains template bracketed instructions as placeholder text instead of filling them in with actual content (e.g., '[Patient's primary reason for visit]', '[Patient's symptoms and medical history...]'). It fails to follow virtually all template instructions and produces a catastrophically broken output.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note captures almost none of the transcript content. Missing: chief complaint details, HPI narrative, patient's asymptomatic status, family history of stroke, medication adherence issues, counseling on medication timing, lisinopril side effect discussion, diet/sodium counseling, exercise details, alcohol use, follow-up plan details.",
+      "missed_items": [
+        "Chief complaint: blood pressure follow-up prompted by portal message",
+        "Patient asymptomatic",
+        "Family history: father had stroke at age 62",
+        "Medication adherence issues (missing 1-2 doses/week, inconsistent timing)",
+        "Counseling on anchoring medication to toothbrush routine",
+        "Addition of lisinopril 10mg with ACE inhibitor explanation",
+        "Side effect counseling (dry cough, lightheadedness)",
+        "2-4 week timeline for effect",
+        "Sodium reduction counseling (<2000mg/day)",
+        "Wife supporting label reading",
+        "Exercise: walking dog 20 min, encouraged 30-45 min",
+        "Alcohol: couple beers on weekend",
+        "4-week follow-up plan",
+        "Continue home BP logging"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "While section headers are present, the content is either placeholder template text or a massively repeated loop of blood pressure entries. The note is essentially non-functional as a clinical document.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is used.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The Plan section contains a catastrophic repetition loop of 'Blood pressure in the home: 140/90' and 'Blood pressure in the home: 150/90' repeated hundreds of times."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.99,
+      "input_tokens": 19028,
+      "output_tokens": 716
+    }
+  }
+}

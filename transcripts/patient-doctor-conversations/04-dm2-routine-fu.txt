@@ -1,0 +1,66 @@
+---
+id: 04
+scenario: Type 2 diabetes routine follow-up, A1c at goal
+category: Chronic disease
+density: Medium
+---
+
+Doctor: Hi, Linda. Good to see you. How have things been going?
+
+Patient: Pretty good, I think. I've been keeping up with my sugars.
+
+Doctor: I can see that. So your A1c came back at 6.8, which is right at our target. That's really nice work. How have your fasting sugars been running at home?
+
+Patient: Usually between 100 and 120 in the mornings. Sometimes a little higher if I have a big dinner.
+
+Doctor: That's reasonable. And after meals?
+
+Patient: I don't check those as much, but when I do they're usually under 180. Sometimes closer to 160.
+
+Doctor: That's great. You're on metformin 1,000 twice a day — any stomach issues? Nausea, diarrhea, anything like that?
+
+Patient: No, I've been fine with it. As long as I take it with food I'm okay.
+
+Doctor: Good. I want to do a quick foot exam while you're here. Go ahead and slip your shoes and socks off for me.
+
+Patient: Sure.
+
+Doctor: Alright, I'm going to touch your feet in a few spots with this monofilament — just tell me when you feel it. Can you feel that?
+
+Patient: Yes.
+
+Doctor: And here?
+
+Patient: Yep.
+
+Doctor: Good. And this side? Okay. Skin looks intact, no ulcers, pulses are good. Sensation is intact. Everything looks healthy.
+
+Patient: Oh good. My sister lost a toe from her diabetes, so I'm always worried about that.
+
+Doctor: I'm glad you're aware of it. Keep checking your feet daily, especially between the toes. And make sure you're wearing shoes that fit well — no walking around barefoot outside.
+
+Patient: I know, I know. My husband yells at me about that.
+
+Doctor: Smart man. Now — have you had your eye exam this year?
+
+Patient: I went in... I think it was February? Dr. Okafor. She said everything looked normal.
+
+Doctor: Perfect, I see that note actually. Good. We'll want that yearly. And your kidney labs from today look normal — your microalbumin and creatinine are both fine.
+
+Patient: Okay, great.
+
+Doctor: How's the diet going? You were working with the nutritionist last time.
+
+Patient: I did three sessions with her. She was really helpful, actually. I've been doing more balanced plates — you know, less rice, more vegetables. I still have my treats sometimes but I'm more mindful about it.
+
+Doctor: That's exactly the right approach. It's about sustainability, not perfection. Are you getting any exercise?
+
+Patient: I do water aerobics twice a week at the Y. And I garden a lot when the weather's nice.
+
+Doctor: Love it. Okay, so the plan — keep going with metformin 1,000 twice daily, we'll recheck your A1c in three months, continue the home monitoring, and schedule your annual eye exam around February again. Anything else on your mind?
+
+Patient: No, I think that covers it. I feel good about where things are.
+
+Doctor: You should. You're doing a great job managing this. I'll see you in three months.
+
+Patient: Thank you, doctor.

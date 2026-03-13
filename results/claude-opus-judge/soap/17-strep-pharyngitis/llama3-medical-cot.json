@@ -1,0 +1,55 @@
+{
+  "transcript_id": "17-strep-pharyngitis",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The note states amoxicillin '500mg twice a day' when the transcript says 'three times a day.' The note specifies '101.4\u00b0F' when the transcript says '101 and some change.' The note says 'sore throat that's been bothering him for a few days' when it started yesterday. Physical exam findings (tonsils, lymphadenopathy) are placed in the HPI as patient-reported findings. 'Extra pain meds' is vague and fabricated beyond what was discussed.",
+      "flagged_content": [
+        "500mg twice a day",
+        "101.4\u00b0F",
+        "sore throat that's been bothering him for a few days",
+        "some extra pain meds for throat pain"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note ignores multiple template instructions: Review of Systems contains physical exam findings instead of symptom review, Social History contains allergy information, Family History is missing, Objective/Physical Examination section is entirely missing, the note uses first-person casual language instead of clinical documentation style, and the Plan section is duplicated. Template parenthetical guidance was not followed (e.g., 'Not documented' for missing sections).",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Key details are missing or incorrect: amoxicillin dosing frequency is wrong (twice vs three times daily), rapid strep test is mentioned but not clearly documented as a diagnostic finding, ibuprofen recommendation is missing, warm tea and popsicles are not clearly documented, specific return precautions (fever not breaking in 48 hours) are vaguely mentioned, and prescription sent to pharmacy is only vaguely referenced.",
+      "missed_items": [
+        "amoxicillin three times a day (not twice)",
+        "ibuprofen recommendation",
+        "warm tea or popsicles for comfort",
+        "rapid strep test as diagnostic finding in objective",
+        "specific return precaution: fever not breaking within 48 hours",
+        "no cough explicitly",
+        "no runny nose explicitly"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The note is severely misstructured: the Objective section with Physical Examination and Vital Signs is completely missing, Review of Systems contains exam findings, Social History contains allergy info, Family History is absent, Assessment is placed after Plan, and the Plan section is fully duplicated. A 'Conclusion' section was added that doesn't exist in the template.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The entire Plan section is duplicated nearly verbatim, appearing twice in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.07,
+      "input_tokens": 3684,
+      "output_tokens": 730
+    }
+  }
+}

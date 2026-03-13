@@ -1,0 +1,49 @@
+{
+  "transcript_id": "34-annual-physical",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly stated or reasonably inferred from the transcript. No fabricated findings or diagnoses were identified.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "Template instructions in parentheses were left in the output verbatim (e.g., '(Only include items that were mentioned)' under Social History, and '(Only document examination findings that were explicitly mentioned...)' under General). The ROS section lacks the organized system-by-system format specified in the template. The Chief Complaint should note this is an annual physical. The HPI section is missing entirely.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured, but the note omits the patient's demographics (45-year-old male, married 15 years, two kids), the discussion about ASCVD risk at approximately 8%, the lab results context (CBC normal, liver enzymes normal, kidney function normal, thyroid normal), the intermediate ASCVD risk discussion in context of family history, and the fact that the visit is an annual physical. The note also omits the blood pressure trending discussion and the note about the sister's hypercholesterolemia context.",
+      "missed_items": [
+        "Annual physical as reason for visit",
+        "Patient demographics (married 15 years, two kids)",
+        "Lab results: CBC normal, liver enzymes normal, kidney function normal, thyroid normal",
+        "Ten-year ASCVD risk approximately 8% (intermediate) discussed in context of family history of early CAD, pre-diabetes, and borderline BP",
+        "Blood pressure trending discussion (last year 126/78)",
+        "Occasional heartburn - no further workup at this time mentioned in assessment"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Major structural issues: Social History and Family History appear twice (once under Subjective and once as standalone sections). HPI section is completely missing. The Chief Complaint is placed correctly but the note lacks the HPI section. Template parenthetical instructions are left in the output. The ROS is not organized by system as the template specifies.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. Medications (ibuprofen, statin), conditions (hypertension, pre-diabetes, dyslipidemia, type 2 diabetes, hypercholesterolemia, colon cancer, breast cancer, etc.), and drugs (Td booster, flu vaccine) were not marked with {{drug:...}} or {{condition:...}} syntax.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Social History and Family History are duplicated \u2014 they appear both within the Subjective section and again as separate standalone sections."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 44.64,
+      "input_tokens": 5516,
+      "output_tokens": 724
+    }
+  }
+}

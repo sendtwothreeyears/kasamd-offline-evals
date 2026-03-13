@@ -1,0 +1,146 @@
+---
+id: 12
+scenario: CHF volume status check with medication adjustment
+category: Chronic disease
+density: Dense
+---
+
+Doctor: Mr. Kowalski, come on in. I see you're here for your heart failure check. How have you been doing?
+
+Patient: Well, doc, I've been better. I'm more winded than usual and my legs are puffing up again.
+
+Doctor: When did that start?
+
+Patient: Maybe a week, week and a half ago? I noticed my shoes were feeling tight, and then my wife pointed out my ankles looked swollen.
+
+Doctor: And the shortness of breath — is that with activity or at rest?
+
+Patient: Mostly activity. Like, I can walk from the living room to the kitchen fine, but if I try to go up to the bedroom — we've got a two-story — I'm huffing and puffing by the top. I used to be able to do that no problem, maybe a month ago.
+
+Doctor: How about lying flat? Any trouble breathing when you lie down at night?
+
+Patient: Actually, yeah. I've been using three pillows now. If I go down to two, I feel like I can't catch my breath. And a couple times I woke up in the middle of the night gasping.
+
+Doctor: Okay, those nighttime episodes are important — that's called paroxysmal nocturnal dyspnea. It's a sign of fluid building up. Have you been checking your daily weights like we talked about?
+
+Patient: I have, mostly. I've got the log here — my wife makes me do it. Let me pull it up on my phone... okay, so two weeks ago I was about 198. Last week I was 202. This morning I was 205.
+
+Doctor: So a seven-pound weight gain over two weeks. That's significant. That's almost certainly fluid. Let me ask — how's your diet been? Have you been watching the sodium?
+
+Patient: I try, but honestly... my daughter's been in town and we went out to eat a few times. And she brought over some Polish food — you know, my mother's recipes. It's not exactly low salt.
+
+Doctor: I understand. Family's important and food is part of that. But for your heart, the sodium really matters. We've talked about keeping it under 2,000 milligrams a day — even one restaurant meal can blow past that.
+
+Patient: I know, I know. I felt guilty eating it but it's hard to say no to kielbasa.
+
+Doctor: I get it. How about your fluid intake? Are you sticking to the two-liter restriction?
+
+Patient: More or less. Some days I probably go over a little. I drink a lot of coffee.
+
+Doctor: How much coffee?
+
+Patient: Three, four cups in the morning. And then water throughout the day.
+
+Doctor: Those cups add up. A standard mug is about 8 ounces, so four mugs is already a liter right there. Then if you're drinking water on top of that, you could easily be hitting three liters.
+
+Patient: Huh. I didn't think about it that way.
+
+Doctor: Let's go through your medications. Can you tell me what you're taking?
+
+Patient: Sure. I've got the — let me look at my list — lisinopril 20 milligrams, metoprolol succinate 50 milligrams, the furosemide 40 milligrams once a day, spironolactone 25, and then the Eliquis for my afib. Oh, and aspirin 81.
+
+Doctor: And you're taking all of those every day? No missed doses?
+
+Patient: I take them every morning with breakfast. I'm pretty good about it. Maybe missed one or two days this month.
+
+Doctor: Even one or two missed doses of the furosemide — that's your water pill — can contribute to fluid buildup. Alright, let me examine you. Let's start with your vitals. Blood pressure today is 148 over 88, heart rate 82 and irregular — that's your afib. Oxygen sat is 94% on room air, which is a touch lower than your usual. Weight here is 204.8, which matches your home scale.
+
+Patient: My blood pressure's usually better than that, isn't it?
+
+Doctor: It is — you've been running around 130s over 70s at recent visits. The higher pressure today is likely related to the fluid overload. Okay, let me listen to your heart... I'm hearing the irregular rhythm, which is baseline for you. No new murmurs. Now your lungs... take some deep breaths for me... I'm hearing some crackles at the bases, both sides, left more than right.
+
+Patient: Crackles? That doesn't sound good.
+
+Doctor: It means there's some fluid in the lower parts of your lungs. It's consistent with what you're describing — the shortness of breath, the nighttime symptoms. Let me look at your legs... yeah, I'm seeing 2+ pitting edema to about mid-shin bilaterally. When I press here, you can see the indentation stays.
+
+Patient: Yeah, my socks leave deep marks now.
+
+Doctor: And your JVP — let me look at your neck veins — those are elevated too. So the picture is pretty clear. You're volume overloaded. The good news is this is something we can fix with medication adjustments.
+
+Patient: Are you going to change my water pill?
+
+Doctor: Yes. I want to increase your furosemide from 40 milligrams once daily to 40 milligrams twice daily — once in the morning and once in the early afternoon, say around 1 or 2 PM. I don't want you taking it too late or you'll be up all night going to the bathroom.
+
+Patient: Oh, I already get up twice a night as it is.
+
+Doctor: I know — it's one of the less fun parts of managing heart failure. But this fluid needs to come off. I also want to bump up your lisinopril from 20 to 40 milligrams, since your blood pressure can tolerate it and it'll help with the fluid and protect your heart long-term.
+
+Patient: Any side effects I should worry about?
+
+Doctor: The main one with lisinopril is that dry cough — have you had any cough?
+
+Patient: No, been fine with it.
+
+Doctor: Good. At the higher dose, just watch for dizziness when you stand up. Take it slow getting out of bed or out of a chair. And with the extra diuretic, we need to watch your kidney function and potassium, so I'm going to order labs for early next week.
+
+Patient: Okay, I can do that.
+
+Doctor: Now, I want you to weigh yourself every single morning. Same time, after you use the bathroom, before breakfast, same amount of clothing. And I want you to call our office if you gain more than three pounds in one day, or five pounds in a week.
+
+Patient: Three pounds in one day? That can happen?
+
+Doctor: It can, and it's a red flag for rapid fluid retention. Also call if your breathing gets worse, if you can't lie down at all, if you have chest pain, or if you notice your legs swelling despite the medication change. Those would all be reasons to come in sooner or potentially go to the emergency room.
+
+Patient: Got it. What about the sodium? Should I be even stricter?
+
+Doctor: I'd really like you at 1,500 milligrams or less while we're getting this under control. That means no restaurant food for the next couple weeks, reading every label, and — I'm sorry — going easy on the kielbasa.
+
+Patient: My daughter's going home tomorrow anyway, so that'll help.
+
+Doctor: And the fluids — let's stick to 1.5 liters total while we're diuresing you. That includes coffee, water, soup, everything. You might want to measure it out in the morning so you know where you stand.
+
+Patient: Can I still have my coffee?
+
+Doctor: You can, but maybe cut it down to two cups and count it toward your total. Coffee also has a mild diuretic effect, so it's not the worst thing.
+
+Patient: Alright, two cups I can live with. Barely.
+
+Doctor: I also want to check a BNP level along with your basic metabolic panel. The BNP is a marker for how much stress your heart is under from the fluid.
+
+Patient: I think I had that checked last time?
+
+Doctor: You did — it was 380 in October. I want to see where it is now. And while we're at it, I'll check a CBC and your liver function. Sometimes when the heart's backed up, the liver gets congested too.
+
+Patient: Is that dangerous?
+
+Doctor: It can be if it goes on too long, but usually it improves once we get the fluid off. Okay, a few more things. Your ejection fraction on your last echo was 35%. We talked about that being reduced. I want to repeat the echo in about a month to see if it's changed, especially with adjusting medications.
+
+Patient: What should it be?
+
+Doctor: Normal is 55 to 65%. Yours at 35% means your heart isn't pumping as efficiently as it should. But plenty of people with your EF lead active lives with the right medications. Speaking of which — have we ever discussed entresto?
+
+Patient: I don't think so. What is that?
+
+Doctor: It's a medication called sacubitril-valsartan. It's shown to be more effective than lisinopril alone for heart failure with reduced ejection fraction. It can improve symptoms and actually help the heart recover some function. The thing is, we can't take it at the same time as lisinopril — we'd have to switch. I'd like to bring this up with your cardiologist and potentially make that transition at your next cardiology visit.
+
+Patient: I see Dr. Patel in... I think March?
+
+Doctor: That's about six weeks from now, which is perfect timing. I'll send her a note about today's visit and suggest discussing the switch to entresto. In the meantime, let's get this fluid off with the diuretic increase.
+
+Patient: Sounds like a lot of changes.
+
+Doctor: It is, and I know it's a lot to keep track of. Let me summarize the action items. Furosemide goes to 40 twice daily, morning and early afternoon. Lisinopril goes to 40 once daily. Everything else stays the same. Sodium under 1,500 milligrams. Fluids under 1.5 liters. Daily weights, call us with any three-pound jump. Labs on Monday or Tuesday. I'll order the echo for about a month from now. And we'll see you back in two weeks to check your progress.
+
+Patient: Two weeks, okay. And if things get worse before then?
+
+Doctor: Call us right away. If it's after hours and you're having significant trouble breathing, go to the ER. Don't tough it out.
+
+Patient: My wife will make sure of that, trust me.
+
+Doctor: Good — she's your best ally in this. Any other questions?
+
+Patient: I don't think so. I just want to feel like I can breathe again going up those stairs.
+
+Doctor: That's the goal. Let's get this fluid off and I think you'll notice a difference within a few days. Take care, Mr. Kowalski. We'll see you in two weeks.
+
+Patient: Thanks, doc. I appreciate it.

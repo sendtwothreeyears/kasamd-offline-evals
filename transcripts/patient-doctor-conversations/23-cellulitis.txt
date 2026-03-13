@@ -1,0 +1,48 @@
+---
+id: 23
+scenario: Cellulitis of lower leg after a scrape, uncomplicated
+category: Acute
+density: Sparse
+---
+
+Doctor: Hi, Mr. Brandt. The nurse said you're here about your leg?
+
+Patient: Yeah, I've got this red area on my shin that's been getting bigger. It's pretty sore.
+
+Doctor: When did you first notice it?
+
+Patient: Maybe three days ago? I scraped my shin on a metal garden edging — I don't even know, a week ago? — and it seemed like it was healing fine, but then the skin around it got red and puffy.
+
+Doctor: And it's been spreading?
+
+Patient: Yeah. I mean, it was like the size of a quarter at first and now it's... I don't know, bigger than my palm.
+
+Doctor: Any fevers or chills?
+
+Patient: No, I feel fine otherwise. Just the leg is bothering me.
+
+Doctor: Let me take a look. Pull up your pant leg for me. Okay, I can see what you mean. There's an area of erythema — redness — on your left anterior shin, roughly eight by six centimeters. It's warm to the touch, and I can feel some mild swelling. I can see the original scrape here in the center — there's a small amount of crusting but no pus draining. The borders of the redness are fairly well-defined. Any red streaks going up your leg?
+
+Patient: I don't think so.
+
+Doctor: No, I don't see any lymphangitic streaking. Let me feel behind your knee... no enlarged lymph nodes there. Your foot is warm, good pulses. Can you wiggle your toes for me? Good.
+
+Patient: So what is it?
+
+Doctor: This is cellulitis — a bacterial skin infection that got in through that scrape. The good news is it looks uncomplicated. No abscess, no signs of it spreading into deeper tissues.
+
+Patient: Do I need antibiotics?
+
+Doctor: Yes. I'm going to prescribe cephalexin, 500 milligrams four times a day for seven days. Before you leave, the nurse is going to take a skin marker and draw a line around the border of the redness. That way you can monitor at home — if the redness spreads past that line, I need you to call us.
+
+Patient: Okay.
+
+Doctor: Keep the original scrape clean — wash it gently with soap and water once a day and keep it covered with a clean bandage. Elevate your leg when you're sitting — prop it up on some pillows. That'll help with the swelling. You can take ibuprofen for the pain and swelling too.
+
+Patient: Got it. Should I come back?
+
+Doctor: If it's not improving in forty-eight to seventy-two hours, or if you develop a fever, or if the redness is expanding past the line we draw, come back in. Otherwise, finish the full course of antibiotics. Any questions?
+
+Patient: No, I think that covers it. Thanks, Doctor.
+
+Doctor: You're welcome. The nurse will be right in to mark that border.

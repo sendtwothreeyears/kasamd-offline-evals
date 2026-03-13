@@ -1,0 +1,53 @@
+{
+  "transcript_id": "14-multimorbid",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The medications section lists amlodipine as 'twice daily' and losartan as 'twice daily' when the transcript says both are taken 'in the morning' (once daily). The Review of Systems section includes fabricated template placeholder text for systems not discussed (HEENT, GI, Skin, Psychiatric), implying these were reviewed when they were not. Physical exam findings (nocturia, exertional dyspnea) are placed in the objective section but are subjective complaints.",
+      "flagged_content": [
+        "amlodipine 10mg twice daily",
+        "losartan 100mg twice daily",
+        "HEENT: Vision, hearing, throat, nasal symptoms",
+        "Gastrointestinal: Nausea, vomiting, diarrhea, abdominal pain",
+        "Psychiatric: Mood, anxiety, sleep",
+        "Skin: Rashes, lesions, wounds"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The Review of Systems section includes raw template placeholder text for systems not discussed, directly violating the instruction 'Only include systems that were discussed. If not mentioned, omit this section entirely.' The Social History section includes the literal template instruction '(Only include items that were mentioned)' in the output. Physical exam findings are mixed with subjective complaints.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured. However, the note misses the counseling about positional changes with HCTZ, the instruction to start checking post-meal blood sugars (2 hours after biggest meal), and the detail about the wife helping with medications.",
+      "missed_items": [
+        "Counseled on positional changes/lightheadedness with HCTZ",
+        "Asked to start checking post-meal blood sugars two hours after biggest meal",
+        "Wife helps with medications"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Multiple structural issues: the HPI contains physical exam findings that belong in the Objective section; the Physical Examination section lacks proper vital signs formatting; the ROS contains unprocessed template placeholders; subjective symptoms (nocturia, dyspnea) are in the physical exam. The Medications section mixes pre-visit and post-visit medications without clarity.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 1,
+      "rationale": "Entity marking syntax is correct, but there are significant errors: 'type 2 diabetes' and 'hypertension' and 'chronic kidney disease' are marked again in the Assessment after being marked in Past Medical History. Several conditions are missed (diabetic peripheral neuropathy first occurrence in HPI, nocturia, exertional dyspnea, back pain). Hydrochlorothiazide and acetaminophen are not marked.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The Review of Systems section has 'Psychiatric: Mood, anxiety, sleep' and 'Skin: Rashes, lesions, wounds' duplicated. Physical exam findings are largely duplicated between HPI and the Objective section."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.35,
+      "input_tokens": 5090,
+      "output_tokens": 794
+    }
+  }
+}

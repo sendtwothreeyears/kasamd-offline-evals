@@ -1,0 +1,14 @@
+---
+id: 44
+scenario: Eczema flare in adult, topical management
+category: Derm
+density: Sparse
+---
+
+So I saw a patient today coming in with a rash on the arms that's been going on for a couple of weeks. Main complaint is intense itching, especially at night — bad enough that it's disrupting sleep. The patient actually reports scratching in their sleep and waking up with skin under their fingernails. They mention this happens every winter, and last year was bad as well. History of eczema as a child, apparently grew out of it, but it came back a few years ago.
+
+On exam, I can see dry, scaly patches on the bilateral antecubital fossae — so the insides of both elbows — and also on the wrists. There's erythema and visible excoriations from scratching. Overall this is consistent with eczema, atopic dermatitis.
+
+So for the plan, I went ahead and prescribed triamcinolone 0.1% ointment — ointment, not cream — to be applied twice daily to the affected areas for two weeks. I counseled the patient on the importance of moisturizing, specifically recommending a thick, fragrance-free cream like CeraVe cream or Vanicream, applied right after showering while the skin is still slightly damp, at least twice a day. I explained that regular lotion is mostly water and not sufficient. Also advised keeping showers warm rather than hot, and keeping them short, to avoid stripping the skin of its natural oils.
+
+Additional counseling included avoiding skin irritants such as harsh soaps and wool clothing. For nighttime itching, I recommended over-the-counter Benadryl as needed, which should also help with sleep. Patient was instructed to follow up in two weeks if there's no improvement so we can reassess at that point.

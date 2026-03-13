@@ -1,0 +1,88 @@
+---
+id: 39
+scenario: Abnormal mammogram follow-up
+category: Acute
+density: Medium
+---
+
+Doctor: Natalie, come in. Thanks for coming in so quickly. I know getting a callback after a mammogram is nerve-wracking.
+
+Patient: I'm not going to lie, I've been a wreck since I got the call. I barely slept last night.
+
+Doctor: I understand completely. Let me walk you through exactly what we're dealing with so you have real information instead of worry filling in the gaps. Okay?
+
+Patient: Okay.
+
+Doctor: So your screening mammogram from last week showed an area of concern in your left breast. The radiologist classified it as BI-RADS 4, which means there's a finding that's suspicious enough to warrant further evaluation. I want to explain what that means and what it doesn't mean.
+
+Patient: Just... is it cancer?
+
+Doctor: We don't know yet. BI-RADS 4 means the finding has somewhere between a two and ninety-five percent chance of being malignant — that's a very wide range. The category is subdivided into 4A, 4B, and 4C. Yours is 4A, which is at the low end of suspicion. The majority of 4A findings turn out to be benign. But we need more testing to be sure.
+
+Patient: What did they see exactly?
+
+Doctor: The radiologist identified a small irregular density — about one centimeter — in the upper outer quadrant of your left breast. It wasn't present on your mammogram two years ago, which means it's new. It doesn't have the classic features of a cyst, which is why they flagged it.
+
+Patient: I can't feel anything there. I check every month.
+
+Doctor: That's actually very common. Most mammographic findings can't be felt by hand, especially at this size. The fact that you're doing self-exams is great — keep doing them. But this is exactly why we do mammograms, to catch things before they're palpable.
+
+Patient: Okay. So what happens now?
+
+Doctor: The next step is a diagnostic mammogram with possible ultrasound. This is different from the screening mammogram you had. They'll zoom in specifically on that area with additional views and different angles. Often the ultrasound is done at the same visit. The ultrasound helps characterize whether the density is solid or fluid-filled, and it gives more detail about the shape and borders.
+
+Patient: And then?
+
+Doctor: Based on what they see, one of a few things happens. If it looks clearly benign on the additional imaging, they may downgrade it and just recommend a follow-up mammogram in six months. If it's still suspicious, they'll recommend a biopsy.
+
+Patient: A biopsy. That sounds scary.
+
+Doctor: I know it sounds scary, but the most common type they'd do is a core needle biopsy. It's done under local anesthesia — they numb the area, use imaging guidance to place a small needle into the lesion, and take a few tiny tissue samples. It takes about twenty to thirty minutes. Most women describe it as uncomfortable but not terrible. You'd have a small bandage, maybe a bruise, and you can go back to normal activities the next day.
+
+Patient: How long for results?
+
+Doctor: Typically three to five business days. I know the waiting is the hardest part.
+
+Patient: My sister had breast cancer. She was forty-seven when she was diagnosed. I'm forty-four. I've been terrified of this.
+
+Doctor: That family history is important and it's understandable that this feels more loaded because of it. Was your sister's cancer treated successfully?
+
+Patient: Yes, she had a lumpectomy and radiation. She's been cancer-free for six years now. But it was — it was horrible to watch her go through it.
+
+Doctor: I can imagine. I do want you to know that even if this does turn out to be something — and again, BI-RADS 4A is more likely benign than not — catching something at one centimeter is early. Early-stage breast cancer has excellent outcomes, especially with modern treatment.
+
+Patient: I know. I know that rationally. But it's hard to be rational about it when it's you.
+
+Doctor: Absolutely. And you don't have to be rational about it. Your feelings are completely valid. Is there someone who can come with you to the diagnostic appointment? It helps to have support and a second set of ears.
+
+Patient: My husband will come. And my sister probably.
+
+Doctor: Good. Let me get this scheduled for you as soon as possible. I'm going to call the breast center personally and see if we can get you in this week. The sooner we get answers, the sooner you can stop imagining worst-case scenarios.
+
+Patient: That would be amazing. The uncertainty is the worst part.
+
+Doctor: Agreed. While I make that call, a couple of practical things — you don't need to do anything special to prepare. Don't wear deodorant or lotion on the day of the appointment. Wear a two-piece outfit so you only need to change the top. And bring a list of questions — write down anything that comes to mind between now and then, because when you're anxious it's easy to forget what you wanted to ask.
+
+Patient: Should I be worried about the family history piece? My sister's cancer, should I be getting genetic testing or something?
+
+Doctor: That's a great question. With a first-degree relative diagnosed under fifty, you do meet criteria for genetic counseling and potentially BRCA testing. We should pursue that regardless of what this biopsy shows. I'll put in a referral to our genetic counselor. That's a separate conversation but an important one.
+
+Patient: Okay. Okay, that's a lot to take in.
+
+Doctor: I know. Let me give you a quick summary so you have something concrete to hold onto. Your mammogram showed a small suspicious finding, BI-RADS 4A, which is low-suspicion. Next step is diagnostic mammogram plus ultrasound, hopefully this week. Based on those results, we'll decide about biopsy. Most 4A findings are benign. Separately, we'll pursue genetic counseling given your family history. And I'm here if you need anything between now and the appointment — you can call the office anytime.
+
+Patient: Thank you. I really appreciate you taking the time to explain all this. The radiology office just said "you need to come back for more imaging" and I spiraled.
+
+Doctor: That's unfortunately how callbacks often go, and it leaves patients in a terrible limbo. I wish they'd give more context. You did the right thing calling us.
+
+Patient: I'll try to stay off Google.
+
+Doctor: That's probably wise. Google will give you every scenario from benign cyst to stage four, and none of it applies to your specific situation until we have more data. Deal?
+
+Patient: Deal.
+
+Doctor: Alright, I'm going to get on the phone with the breast center right after this. You'll hear from us today with the appointment time.
+
+Patient: Thank you, doctor. Really.
+
+Doctor: We'll get through this. One step at a time.

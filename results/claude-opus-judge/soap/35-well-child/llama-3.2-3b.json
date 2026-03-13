@@ -1,0 +1,67 @@
+{
+  "transcript_id": "35-well-child",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The Review of Systems includes several negatives (no fever, chills, fatigue, no headache, dizziness, numbness, no urinary symptoms, no mood/anxiety issues) that were never discussed in the transcript \u2014 these are fabricated negatives. The Social History section reporting no tobacco, alcohol, or recreational drug use is absurd for a 4-year-old and not discussed. Physical exam findings are placed in the ROS section, which is incorrect content rather than hallucination per se, but the fabricated negative ROS items are embellishments.",
+      "flagged_content": [
+        "No fever, chills, or fatigue reported",
+        "No urinary symptoms reported",
+        "No headache, dizziness, numbness, or weakness reported",
+        "No mood, anxiety, or sleep issues reported",
+        "No tobacco use reported",
+        "No alcohol use reported",
+        "No recreational drug use reported",
+        "Continue to counsel mom on family history of refractive error and the need for glasses"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit the section if not mentioned, but the note includes many systems with fabricated negatives. The template says to only include social history items that were mentioned, yet tobacco/alcohol/drugs are listed for a 4-year-old. Physical exam findings are placed in the ROS. The template instruction to state 'Not documented' for vitals not documented was followed literally when the instruction said to only include vitals that were documented.",
+      "missed_items": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Many important details from the transcript are missing: growth measurements (height, weight, BMI with percentiles), specific immunizations given (DTaP, IPV, MMR, varicella), sleep schedule details, dietary counseling specifics (division of responsibility, switch from whole milk to 2%), gross motor assessment details, swim lessons/dance class/preschool details, car seat specifics, water safety counseling details, screen time specifics, nighttime wetting reassurance, nap dropping discussion, dental hygiene details, and the fact this is a new patient transferred from Dr. Parekh.",
+      "missed_items": [
+        "Growth measurements (39.2 inches, 35.6 lbs, BMI 58th percentile)",
+        "Specific immunizations (DTaP, IPV, MMR, varicella as three injections)",
+        "Flu vaccine in October",
+        "Sleep schedule details (bath 7:15, books 7:30, lights out 8, wakes 6:30, 10.5 hours)",
+        "Division of responsibility counseling details",
+        "Switch from whole milk to 2%",
+        "Gross motor assessment (hopping, ball catching, single-leg stance)",
+        "New patient transferred from Dr. Parekh",
+        "Preschool 4 mornings/week, swim lessons Saturdays, dance class",
+        "Car seat specifics (forward-facing Graco, 5-point harness, keep as long as fits)",
+        "Water safety direct supervision emphasis",
+        "Screen time specifics (1 hour TV after school, 30 min iPad weekends)",
+        "Nighttime wetting reassurance (normal until age 6-7)",
+        "Nap dropping normal at 4",
+        "Next vaccines at 11-12"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Chief Complaint appears after the initial subjective paragraph instead of at the top. Physical exam findings (cardiovascular, respiratory, GI, MSK, skin) are placed in the Review of Systems section. Vital Signs section is placed after the Physical Examination instead of before it. The overall structure deviates significantly from the template.",
+      "missed_items": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Medications like DTaP, IPV, MMR, varicella (though mostly missing from the note) and conditions should have been marked with {{drug:...}} or {{condition:...}} syntax.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "Some content appears in both ROS and Physical Exam (cardiovascular, lungs, abdomen, MSK, skin findings), which constitutes duplication of information across sections."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 38.46,
+      "input_tokens": 4117,
+      "output_tokens": 1049
+    }
+  }
+}

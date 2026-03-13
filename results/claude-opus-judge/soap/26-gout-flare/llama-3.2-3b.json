@@ -1,0 +1,66 @@
+{
+  "transcript_id": "26-gout-flare",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems section fabricates negative findings for nearly every system (HEENT, cardiovascular, respiratory, GI, GU, neurological, psychiatric, skin) that were never discussed in the transcript. The template explicitly says to only include systems that were discussed and omit the section entirely if not mentioned. Additionally, 'Tobacco: No usage details' and 'Recreational drugs: No usage details' imply these were discussed when they were not.",
+      "flagged_content": [
+        "HEENT: No vision, hearing, throat, or nasal symptoms.",
+        "Cardiovascular: No chest pain, palpitations, or edema.",
+        "Respiratory: No shortness of breath, cough, or wheezing.",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain.",
+        "Genitourinary: No urinary symptoms or menstrual history.",
+        "Neurological: No headache, dizziness, numbness, or weakness.",
+        "Psychiatric: No mood, anxiety, or sleep issues.",
+        "Skin: No rashes, lesions, or wounds.",
+        "Musculoskeletal: No joint pain, muscle weakness, or mobility issues"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template explicitly instructs to only include ROS systems that were discussed and to omit the section entirely if not mentioned, but the note includes fabricated negatives for all systems. The template says to only include social history items that were mentioned, but the note includes tobacco, recreational drugs, and occupation with placeholder text. Template instructions like 'Primary diagnosis or clinical impression:' appear in the output."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing: the patient couldn't tolerate a sheet touching the toe, no history of diabetes/stomach ulcers/kidney problems confirmed before prescribing, colchicine side effect counseling (diarrhea), prednisone side effects (blood sugar, sleep), ice/elevation/loose shoes advice, instruction to call if no improvement in 48 hours, discussion about joint aspiration being declined, explanation of allopurinol mechanism and long-term nature, specific dietary details (red meat, organ meats, shellfish, beer), beer being a 'double hit', and his alcohol consumption details (4-5 beers/week).",
+      "missed_items": [
+        "Patient couldn't tolerate a sheet touching the toe",
+        "No history of diabetes, stomach ulcers, or kidney problems confirmed",
+        "Colchicine side effect counseling (diarrhea risk)",
+        "Prednisone side effects (blood sugar, sleep)",
+        "Ice 20 on/20 off, elevation, loose shoes/sandals advice",
+        "Call if no improvement in 48 hours or worsening",
+        "Joint aspiration discussed and declined by patient",
+        "Allopurinol mechanism - uric acid below 6 mg/dL target",
+        "Don't start allopurinol during acute flare explanation",
+        "Allopurinol is long-term medication",
+        "Specific dietary items: red meat, organ meats, shellfish, beer",
+        "Beer double hit explanation",
+        "Alcohol consumption: 4-5 beers per week, more on weekends",
+        "Steak consumption regularly",
+        "Pain onset approximately 12 hours prior to visit",
+        "Exam of other joints (ankles, knees, hands) normal"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Subjective section appears before Chief Complaint, reversing the template order. There are two 'Physical Examination' headers. Template placeholder language appears in the output ('Primary diagnosis or clinical impression:'). The Medications section lists newly prescribed medications rather than current/prior medications. Social history includes items not discussed with placeholder-like text."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used for any medications (colchicine, prednisone, allopurinol) or conditions (gout, gouty arthritis)."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The chief complaint information is duplicated between the Subjective and Chief Complaint sections, and the Physical Examination header and content appear twice in the Objective section."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 18.13,
+      "input_tokens": 3749,
+      "output_tokens": 1056
+    }
+  }
+}

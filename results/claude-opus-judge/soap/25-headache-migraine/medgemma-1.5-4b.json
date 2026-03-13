@@ -1,0 +1,54 @@
+{
+  "transcript_id": "25-headache-migraine",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The ROS section includes several systems (Cardiovascular, Respiratory, GU, Skin) with negative findings that were never discussed in the transcript. These are fabricated negatives, not standard clinical defaults. The note also states 'No chest pain or palpitations reported' and 'No shortness of breath, cough, or wheezing reported' which were never addressed.",
+      "flagged_content": [
+        "No chest pain or palpitations reported",
+        "No shortness of breath, cough, or wheezing reported",
+        "No urinary symptoms reported",
+        "No rashes, lesions, or wounds reported",
+        "No diarrhea or abdominal pain reported",
+        "No joint pain or muscle weakness reported",
+        "No mood or anxiety issues reported"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template instructions in parentheses and brackets are extensively left in the output throughout the note (e.g., '(Only include systems that were discussed. If not mentioned, omit this section entirely)', '[Blood pressure]', '[Chronic conditions and prior diagnoses]', etc.). The ROS instruction explicitly says to omit systems not discussed, yet all systems are included. This is a major instruction-following failure."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "The detailed neurological examination findings are entirely missing \u2014 the note states 'Physical examination not documented' despite the transcript containing a comprehensive neuro exam. The note also omits the elevated stroke risk discussion, amitriptyline side effects (drowsiness, dry mouth), and the aura occurring 'about half the time.'",
+      "missed_items": [
+        "Complete neurological examination findings (pupils, EOM, visual acuity, visual fields, facial nerve, pronator drift, finger-nose-finger, DTRs, gait)",
+        "Aura occurs about half the time",
+        "Amitriptyline side effects (drowsiness, dry mouth)",
+        "Elevated stroke risk independent of triptan",
+        "Past medical history otherwise unremarkable",
+        "No history of stroke, blood clots, or heart disease"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template bracket/parenthetical instructions are left throughout the note. The vital signs section lists all vitals as 'Not documented' instead of omitting undocumented ones per template instructions. ROS includes all systems instead of only discussed ones. The physical exam section is incorrectly stated as not documented."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present for any medications (ibuprofen, sumatriptan, amitriptyline, etc.) or conditions (migraine with aura, etc.)."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.86,
+      "input_tokens": 5161,
+      "output_tokens": 723
+    }
+  }
+}

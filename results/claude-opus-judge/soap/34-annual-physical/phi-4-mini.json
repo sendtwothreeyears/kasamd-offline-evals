@@ -1,0 +1,64 @@
+{
+  "transcript_id": "34-annual-physical",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The ROS states 'No fever, chills, fatigue, or weight changes reported' which contradicts the transcript where the patient explicitly reports fatigue/tiredness. The HPI mentions diagnoses like 'borderline stage one hypertension, pre-diabetes, dyslipidemia' which are assessment findings, not part of the patient's presenting history. The COVID booster is listed under 'Preventive care provided' but it was not administered at this visit \u2014 it was done last October.",
+      "flagged_content": [
+        "No fever, chills, fatigue, or weight changes reported",
+        "Concerns include borderline stage one hypertension, pre-diabetes, dyslipidemia, being overweight",
+        "COVID booster"
+      ]
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The note mostly follows instructions but has some issues: the ROS contradicts the transcript by denying fatigue, and the HEENT system was discussed in the transcript but not included in the ROS. The template says to omit systems not discussed, but HEENT was discussed and omitted from ROS while included systems contain inaccuracies."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Multiple important details are missing from the note.",
+      "missed_items": [
+        "Specific lab values (fasting glucose 104, A1C 5.7, total cholesterol 222, LDL 141, HDL 44, triglycerides 185)",
+        "ASCVD risk score of approximately 8%",
+        "Last year's blood pressure of 126/78 for comparison",
+        "Height 5'10, weight 206 lbs, BMI 29.6 specific values",
+        "Sleep details (6-6.5 hours, counseled on minimum 7 hours)",
+        "Goal weight loss of 15-20 pounds",
+        "Specific family history details (father age 69, MI at 62; mother age 67, type 2 diabetes 10 years ago, hypertension; brother 42 healthy; sister 48 hypercholesterolemia; maternal grandmother type 2 diabetes; maternal grandfather colon cancer in 70s; paternal aunt breast cancer)",
+        "HEENT ROS findings (reading glasses last year, no hearing problems)",
+        "Exercise details (walking dog 20 min, Peloton once a week, 2-3 days moderate activity)",
+        "Diet details (skips breakfast, coffee with cream and sugar, cafeteria lunch, nighttime snacking on chips and crackers)",
+        "Detailed physical exam findings (PERRL, TMs normal, nares clear, oropharynx without lesions, tonsils normal, thyroid normal, no lymphadenopathy, no hernias, testes normal)",
+        "Counseling on sleep affecting weight, blood sugar, blood pressure, and energy",
+        "Shingles and pneumococcal vaccines deferred",
+        "Last Tdap was in 2015",
+        "Hepatitis B series confirmed",
+        "Married 15 years, two kids",
+        "Smoking details (pack a week for two years)",
+        "Warning signs counseling details (chest pain, pressure, shortness of breath, arm/jaw pain, sudden weakness, speech changes, facial drooping)",
+        "Winded going up stairs more than before",
+        "No sexual dysfunction"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure but places Vital Signs after the physical exam findings rather than before as specified in the template. The General section of the physical exam mixes in vital sign commentary ('normal vitals and a borderline high BMI') rather than describing appearance."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. Medications like ibuprofen and statin, and conditions like hypertension, pre-diabetes, dyslipidemia, type 2 diabetes, hypercholesterolemia, colon cancer, breast cancer, and myocardial infarction should have been marked."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 18.72,
+      "input_tokens": 4601,
+      "output_tokens": 1048
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "transcript_id": "37-preop-clearance",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly supported by the transcript. No fabricated findings or diagnoses.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "Template instructions in brackets and parentheses are left throughout the note (e.g., '[Chronic conditions and prior diagnoses]', '(If not documented, state \"Not documented\")', '[Usage details]', etc.). The Review of Systems section includes all system categories with their bracketed placeholders instead of only including systems that were discussed or omitting the section. This is a severe instruction-following failure.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Missing several important details: cardiac ROS findings (no chest pain, no palpitations, no syncope/presyncope, dyspnea on exertion details), stress test history from 5 years ago, no history of heart failure/CAD/stroke/renal disease, diabetes as the RCRI point, obstructive sleep apnea diagnosis, CPAP use for 4 years, no family history of malignant hyperthermia, no anesthesia complications from prior surgery, EKG findings (normal sinus rhythm, no ST changes, no conduction delays), last A1C of 7.1, atorvastatin continuation instructions, aspirin resumption instructions, metformin restart conditions, losartan resume timing, clearance note being sent to Dr. Volkov's office.",
+      "missed_items": [
+        "Cardiac ROS details (no chest pain, no palpitations, no syncope/presyncope, dyspnea on exertion attributed to knee/deconditioning)",
+        "Stress test 5 years ago was normal",
+        "Obstructive sleep apnea as a diagnosis in PMH",
+        "CPAP use for 4 years",
+        "No family history of malignant hyperthermia or anesthesia problems",
+        "No complications with anesthesia from prior cholecystectomy",
+        "EKG performed and results (normal sinus rhythm, no ST changes, no conduction delays)",
+        "Last A1C was 7.1 three months ago",
+        "Atorvastatin to continue as usual",
+        "Metformin restart conditions (eating normally, kidney function confirmed)",
+        "Losartan resume day after surgery",
+        "Aspirin not to resume until Dr. Volkov clears",
+        "Diabetes as the one RCRI point",
+        "Clearance note to be sent to Dr. Volkov's office and anesthesia team",
+        "Patient sleeping with one pillow, no lower extremity edema beyond knee"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "Template placeholders and instructions are left throughout the note in brackets and parentheses. The Review of Systems lists all system categories with placeholder text instead of only those discussed. The structure is severely compromised by retained template artifacts.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. No {{drug:...}} or {{condition:...}} syntax was used anywhere in the note.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The entire note is duplicated \u2014 the full content from Subjective through Plan appears twice in the output."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.52,
+      "input_tokens": 4618,
+      "output_tokens": 834
+    }
+  }
+}

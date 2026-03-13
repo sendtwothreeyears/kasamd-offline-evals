@@ -1,0 +1,74 @@
+---
+id: 43
+scenario: Fatty liver disease, abnormal LFTs, lab review
+category: GI
+density: Medium
+---
+
+Doctor: Hey Marcus, thanks for coming in. I wanted to go over your lab results from last week's annual physical.
+
+Patient: Yeah, you said something was off? That made me a little nervous, honestly.
+
+Doctor: Understandable. So most of your labs look great — your cholesterol is fine, kidney function is normal, blood sugar is in the normal range. But your liver enzymes came back elevated. Your ALT is 68 — normal is under 40 — and your AST is 52, also a little high.
+
+Patient: Huh. Is that like... serious? I mean, I feel fine.
+
+Doctor: It can mean different things, so let's work through it. The most common cause of mildly elevated liver enzymes in somebody your age — you're 47, right?
+
+Patient: Forty-eight. Just had my birthday.
+
+Doctor: Happy belated. So in someone your age, the most common cause is something called non-alcoholic fatty liver disease, or NAFLD. But I want to rule out a few other things first. Let me ask you about alcohol. How much would you say you drink in a typical week?
+
+Patient: Not much. Maybe a beer or two on the weekends. Sometimes a glass of wine with dinner if my wife opens a bottle. So, I don't know, three or four drinks a week? Some weeks less.
+
+Doctor: That's well within a safe range and wouldn't explain these numbers. Are you taking any medications or supplements I should know about? Anything over the counter?
+
+Patient: I take the lisinopril you prescribed for my blood pressure. And a multivitamin. Oh, and I've been taking this turmeric supplement — my buddy swore by it for joint pain.
+
+Doctor: How long have you been on the turmeric?
+
+Patient: Maybe four months?
+
+Doctor: Interesting. Turmeric supplements can occasionally cause liver enzyme elevations, so that's worth noting. I'd actually like you to stop that and we'll recheck. But I also want to tell you about the ultrasound.
+
+Patient: Right, I got that done on Monday.
+
+Doctor: I have the results. It showed increased echogenicity of the liver, which is the radiologist's way of saying there's fat in the liver. No masses, no bile duct issues, everything else looked normal. So that, combined with your enzymes, points toward fatty liver disease.
+
+Patient: But I don't drink that much. How do I have a fatty liver?
+
+Doctor: It's actually not always about alcohol. The "non-alcoholic" part of NAFLD means it happens independent of drinking. It's very closely tied to weight and metabolic factors. And looking at your chart, your BMI is 33, which puts you in the obese range. I know that word isn't fun to hear.
+
+Patient: Yeah. I mean, I know I've put on weight. The pandemic, and then the new job is all desk work. I used to be pretty active.
+
+Doctor: You're not alone in that. The good news is that fatty liver is very responsive to lifestyle changes, particularly weight loss. Studies show that losing even 7 to 10 percent of your body weight can significantly reduce liver fat and bring those enzymes back to normal. For you, that would be somewhere around 15 to 20 pounds.
+
+Patient: That feels doable. I mean, not easy, but doable.
+
+Doctor: Absolutely doable, and we can help. I'd recommend starting with dietary changes — reducing refined carbs and sugars, which are big drivers of liver fat. And increasing your physical activity. Even 30 minutes of brisk walking most days makes a measurable difference.
+
+Patient: I've been meaning to start walking again. My wife's been on my case about it.
+
+Doctor: Listen to your wife. Now, I also want to run a couple more labs to make sure we're not missing anything else. I'm going to check a hepatitis B and C panel — it's routine when we see elevated enzymes. And I'll check an iron level and a test called ferritin, just to rule out hemochromatosis, which is an iron storage condition.
+
+Patient: Okay. Should I be worried about the hepatitis thing?
+
+Doctor: I don't expect it to come back positive based on your history, but it's standard practice to check. We want to be thorough.
+
+Patient: Fair enough.
+
+Doctor: So here's the plan. Stop the turmeric supplement. Work on the diet and exercise — I'll have our front desk set you up with a nutrition counseling appointment if you're interested. We'll draw the additional labs today. And I want to recheck your liver enzymes in about three months to see if the numbers are trending in the right direction.
+
+Patient: And if they're not?
+
+Doctor: Then we may consider further evaluation — possibly a referral to a hepatologist, or a more specialized test called a FibroScan that looks at liver stiffness to check for any scarring. But I'd really expect improvement with the lifestyle changes and stopping the turmeric.
+
+Patient: Alright. I can do that. Anything else I should avoid? Like, should I not drink at all?
+
+Doctor: With your level of drinking, I wouldn't say you need to be completely abstinent, but it wouldn't hurt to cut back even more while we're working on this. Your liver is already a little stressed, so giving it a break is reasonable.
+
+Patient: Makes sense. Alright, let's do the labs today and I'll get started on the walking.
+
+Doctor: Sounds like a plan. I'll see you in three months, Marcus. Call if anything comes up before then.
+
+Patient: Will do. Thanks, Doc.

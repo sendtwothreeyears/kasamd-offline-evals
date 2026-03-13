@@ -1,0 +1,58 @@
+{
+  "transcript_id": "22-low-back-pain",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The ROS includes fabricated entries: HEENT, Cardiovascular, Respiratory, Psychiatric, and Skin were never discussed in the transcript. 'Reports mild pain with ibuprofen' under GI is fabricated \u2014 the doctor counseled about potential GI side effects but the patient did not report GI pain. 'Patient appears in mild discomfort' under General is not stated in the transcript.",
+      "flagged_content": [
+        "HEENT: No reported symptoms.",
+        "Cardiovascular: No reported symptoms.",
+        "Respiratory: No reported symptoms.",
+        "Gastrointestinal: Reports mild pain with ibuprofen, but no other GI symptoms.",
+        "Psychiatric: No reported symptoms.",
+        "Skin: No reported symptoms.",
+        "Patient appears in mild discomfort."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit the section entirely if not mentioned, but the note includes many systems that were never discussed. Vital signs are listed even though none were documented, which is acceptable per template but adds clutter. Cyclobenzaprine is listed under current Medications even though it was newly prescribed in the plan, not a current medication."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most key findings are captured. Minor omissions include: pain severity ratings (5-6/10 at rest, 8/10 with transitions), the specific detail about the heating pad use, the counseling about GI side effects of ibuprofen and to take with food, the detail that ibuprofen takes the edge off but doesn't fully relieve pain, the timeline that most strains improve in 2-4 weeks and back to baseline by 6 weeks, and the note about no imaging being indicated.",
+      "missed_items": [
+        "Pain severity 5-6/10 at rest, 8/10 with transitions",
+        "Ibuprofen takes the edge off but doesn't fully relieve pain",
+        "Heating pad already being used",
+        "Counseling to take ibuprofen with food",
+        "GI side effect counseling details",
+        "No imaging indicated at this time",
+        "Most acute back strains improve in 2-4 weeks, baseline by 6 weeks",
+        "Should not take cyclobenzaprine during the day if driving or operating machinery",
+        "Pain described as bilateral but worse on the right",
+        "No difficulty lifting foot, no tripping, no leg buckling"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note generally follows the template structure, but has a duplicated 'Physical Examination' header (once under Objective and again for the detailed findings). The vital signs section lists all vitals as 'Not documented' rather than omitting undocumented ones per the template instruction '(Only include vitals that were documented)'."
+    },
+    "entity_marking": {
+      "score": 1,
+      "rationale": "Cyclobenzaprine is marked but its second occurrence in the Plan is also marked. Ibuprofen is never marked as a drug entity. No conditions are marked (e.g., acute mechanical low back strain). The first occurrence of cyclobenzaprine is in the Medications section but it arguably should not be there as a current medication."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant content duplication, though the Physical Examination header appears twice which is a formatting issue rather than content duplication."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.9,
+      "input_tokens": 3455,
+      "output_tokens": 848
+    }
+  }
+}

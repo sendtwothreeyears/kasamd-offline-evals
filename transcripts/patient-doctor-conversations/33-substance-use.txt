@@ -1,0 +1,86 @@
+---
+id: 33
+scenario: Alcohol use, brief intervention (SBIRT)
+category: Mental health
+density: Medium
+---
+
+Doctor: Hey, Sandra. So we've covered the main reason you came in today — the knee pain — and I'll get that MRI referral in. Before we wrap up, I wanted to circle back to something on your intake questionnaire. You mentioned on the screening that your alcohol use has changed a bit recently?
+
+Patient: Oh. Yeah, I figured someone would bring that up. It's not... I mean, I don't think it's a big deal, but yeah, I've been drinking more than I used to.
+
+Doctor: I appreciate you being honest on the form. A lot of people aren't. Can you tell me a little more about what that looks like?
+
+Patient: So, I used to be like a glass of wine on the weekends kind of person. Maybe with dinner on a Friday night. But the last few months... I don't know. It's been more like every night. Sometimes two glasses, sometimes three.
+
+Doctor: Every night, roughly two to three glasses of wine?
+
+Patient: Yeah. Most nights. I skip sometimes. Maybe once or twice a week I won't have any.
+
+Doctor: And the glasses — are we talking like a normal five-ounce pour, or more generous?
+
+Patient: Probably generous, if I'm being honest. I just pour until the glass looks right, you know?
+
+Doctor: I do. So if we're estimating, it might be more like three to four standard drinks on the nights you're drinking. Let me ask you the screening questions more formally, if that's okay. In the past year, how often have you had a drink containing alcohol?
+
+Patient: Four or five times a week.
+
+Doctor: And how many drinks on a typical drinking day?
+
+Patient: Two or three. Sometimes four.
+
+Doctor: And how often have you had six or more drinks on one occasion?
+
+Patient: Rarely. Maybe once a month if I'm out with friends. A birthday or something.
+
+Doctor: Okay. So your AUDIT-C score puts you in a range where it's worth having a conversation. Not because you're in crisis, but because the pattern you're describing is above what we consider low-risk for women, and it's escalating. That's the part that catches my attention.
+
+Patient: What's low-risk for women?
+
+Doctor: The guidelines say no more than seven drinks per week and no more than three on any single occasion. It sounds like you're probably averaging somewhere around fifteen to twenty per week.
+
+Patient: That sounds like a lot when you put it that way.
+
+Doctor: It can be surprising. And I want to be clear — I'm not here to lecture you or tell you you're an alcoholic. That's not what this is about. I'm more curious about what's been driving the change.
+
+Patient: I mean... things have been stressful. My mom's been sick — she had a stroke in October — and I've been coordinating her care while working full time. My husband helps, but he travels a lot for work. It's just been... a lot. And at the end of the day the wine just takes the edge off.
+
+Doctor: That makes complete sense. Stress is the number one reason people's drinking patterns shift. It works in the short term — alcohol does reduce anxiety temporarily. But over time it actually makes anxiety and sleep worse, and it becomes the thing you need rather than the thing you choose.
+
+Patient: I know. I know that intellectually. I just... it's hard.
+
+Doctor: It is hard. And you're dealing with a genuinely stressful situation. Can I ask — have you thought about cutting back at all? Or has it crossed your mind that this might be becoming a problem?
+
+Patient: I've thought about it. I actually tried not drinking at all last week and I lasted two days before I was right back to it. That scared me a little, honestly.
+
+Doctor: That's actually really insightful. The fact that you tried and found it difficult — and that it scared you — tells me you're already thinking about this in a healthy way. That matters.
+
+Patient: So what should I do?
+
+Doctor: Well, there's a few options and it depends on what feels right for you. Some people do well with a structured reduction plan — like setting a maximum of one drink three nights a week and having alcohol-free days in between. Some people find it easier to stop entirely for a period, like a thirty-day reset, and then reassess. And some people benefit from counseling support, especially when the drinking is tied to a stressor.
+
+Patient: I don't think I need rehab or anything.
+
+Doctor: No, and I'm not suggesting that. What I'm thinking is more along the lines of talking to someone — a therapist or counselor — about the stress you're under with your mom's situation. If we address the root cause, the drinking often takes care of itself. I can also refer you to a program called BASICS, which is a brief alcohol intervention that's literally two sessions. Very practical, no labels attached.
+
+Patient: That sounds more manageable.
+
+Doctor: I'll get you that referral. In the meantime, I'd like to suggest keeping a drinking diary for the next couple weeks. Just jot down what you drink each day and what was happening that day — were you stressed, bored, socializing, whatever. It helps you see the pattern.
+
+Patient: Okay. I can do that.
+
+Doctor: And one medical note — at the level you're drinking, I'd like to check your liver function. Just a simple blood draw. It's probably fine, but it's good to know where you stand.
+
+Patient: Sure. Should I be worried?
+
+Doctor: Probably not, but it's better to have the data. We'll check a comprehensive metabolic panel and a CBC. I'll also check your B12 and folate since alcohol can affect those.
+
+Patient: Alright.
+
+Doctor: Sandra, I really appreciate you being open about this. It takes guts to talk about it. This is something we can absolutely work on together, and I think you're already more aware of it than most people at this stage. Let's check in at your next appointment in about six weeks?
+
+Patient: Yeah, that works. Thanks for not making me feel like a terrible person about it.
+
+Doctor: You are not a terrible person. You're a person dealing with hard stuff who found a coping mechanism that's starting to cost more than it's worth. We'll find better tools. Sound good?
+
+Patient: Sounds good. Thanks, doctor.

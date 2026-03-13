@@ -1,0 +1,58 @@
+{
+  "transcript_id": "26-gout-flare",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems section fabricates a comprehensive negative ROS across multiple systems (HEENT, Cardiovascular, Respiratory, GI, GU, Neurological, Psychiatric, Skin) that were never discussed in the transcript. The transcript only mentions afebrile status and musculoskeletal findings. This is significant fabrication beyond standard clinical defaults.",
+      "flagged_content": [
+        "HEENT: No vision, hearing, throat, nasal symptoms",
+        "Cardiovascular: No chest pain, palpitations, edema",
+        "Respiratory: No shortness of breath, cough, wheezing",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, abdominal pain",
+        "Genitourinary: No urinary symptoms, menstrual history",
+        "Neurological: No headache, dizziness, numbness, weakness",
+        "Psychiatric: No mood, anxiety, sleep",
+        "Skin: No rashes, lesions, wounds"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template explicitly states for ROS: 'Only include systems that were discussed. If not mentioned, omit this section entirely.' The note includes a full fabricated negative ROS. Template parenthetical instructions like '(Only include items that were mentioned)' and '(Only include vitals that were documented)' and '(Only document examination findings...)' appear verbatim in the output, which is a clear instruction-following failure."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured, but several items are missing: ice the toe (20 min on/20 min off), keep foot elevated, wear loose shoes/sandals, call if no improvement in 48 hours or if things get worse, side effects counseling for colchicine (diarrhea) and prednisone (blood sugar, sleep), confirmation of no history of diabetes/stomach ulcers/kidney problems, and the explanation that allopurinol is typically a long-term medication that prevents future flares and joint damage.",
+      "missed_items": [
+        "Ice the toe 20 minutes on/20 minutes off",
+        "Keep foot elevated",
+        "Wear loose shoes or sandals",
+        "Call if no improvement in 48 hours or if things get worse",
+        "Side effects counseling: colchicine can cause diarrhea, prednisone may raise blood sugar and affect sleep",
+        "Confirmed no history of diabetes, stomach ulcers, or kidney problems",
+        "Allopurinol is typically a long-term medication preventing future flares and joint damage",
+        "Patient was limping and in significant discomfort on presentation (general appearance)",
+        "Vitals are stable"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template parenthetical instructions are left in the output verbatim in multiple places. The physical exam findings are placed entirely under 'General' rather than being organized appropriately (e.g., musculoskeletal). The General section should describe overall appearance, not detailed joint exam findings."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. There are no {{drug:...}} or {{condition:...}} tags anywhere in the note despite multiple drugs (colchicine, prednisone, allopurinol) and conditions (gout, gouty arthritis) being mentioned."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content detected, though alcohol use is mentioned in both Social History and Plan (dietary counseling), which is contextually appropriate."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.02,
+      "input_tokens": 3922,
+      "output_tokens": 887
+    }
+  }
+}

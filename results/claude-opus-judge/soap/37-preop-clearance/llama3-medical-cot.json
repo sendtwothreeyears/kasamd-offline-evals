@@ -1,0 +1,55 @@
+{
+  "transcript_id": "37-preop-clearance",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note does not contain significant fabricated findings, but the content is largely unprocessed and placed in wrong sections. No major clinical hallucinations detected, though the note is missing some details like the type and screen lab order and the last A1C value of 7.1.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note completely failed to fill in the template. All template placeholders and bracketed instructions remain verbatim (e.g., '[Patient's primary reason for visit]', '(Only include systems that were discussed...)'). The actual clinical content was dumped into non-template sections ('Additional Information' and 'Conclusion') rather than populating the template fields. This is a fundamental failure to follow the core instruction of filling in the template.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "While some transcript content appears in the 'Additional Information' and 'Conclusion' sections, many important details are missing: allergy to sulfa drugs, cardiac ROS details (no chest pain, no palpitations, no syncope), RCRI assessment, stress test history, prior cholecystectomy, baby aspirin and fish oil as current medications, vital sign values, physical exam findings, and the last A1C value of 7.1. The type and screen lab is also omitted.",
+      "missed_items": [
+        "sulfa drug allergy causing rash",
+        "cardiac ROS (no chest pain, no palpitations, no syncope/presyncope)",
+        "RCRI assessment and risk stratification",
+        "stress test 5 years ago was normal",
+        "laparoscopic cholecystectomy 12 years ago",
+        "baby aspirin and fish oil as current medications",
+        "vital signs (BP 130/78, HR 68, SpO2 97%, temp normal)",
+        "physical exam (regular heart sounds, no murmurs, lungs clear)",
+        "last A1C value of 7.1",
+        "type and screen lab order",
+        "family history negative for malignant hyperthermia/anesthesia problems",
+        "medication management details for perioperative period (hold metformin/losartan specifics, continue atorvastatin)"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The template was not filled in at all \u2014 all placeholder text and parenthetical instructions remain. Content was placed in invented sections ('Additional Information' and 'Conclusion') that are not part of the template. The structured template is essentially untouched.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Multiple pieces of content are duplicated: knee issues/pain mentioned repeatedly, CPAP machine mentioned twice, diet compliance mentioned twice, and the lab ordering information is repeated in the Additional Information section."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.25,
+      "input_tokens": 3964,
+      "output_tokens": 768
+    }
+  }
+}

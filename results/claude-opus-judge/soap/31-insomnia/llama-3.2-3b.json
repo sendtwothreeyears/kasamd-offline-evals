@@ -1,0 +1,52 @@
+{
+  "transcript_id": "31-insomnia",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The Review of Systems section states 'Psychiatric: No mood, anxiety, or sleep issues mentioned' which is incorrect \u2014 sleep issues were the entire reason for the visit. The Social History lists items as 'not mentioned' rather than omitting them, which is misleading but not fabricated. The note says 'The patient is not currently taking any medications' which is not explicitly stated in the transcript.",
+      "flagged_content": [
+        "Psychiatric: No mood, anxiety, or sleep issues mentioned.",
+        "The patient is not currently taking any medications."
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template explicitly instructs to omit the Review of Systems section entirely if systems were not discussed, yet the note includes all ROS subsystems with 'not mentioned' entries. The template says to only include Social History items that were mentioned, but the note lists all items as not mentioned. The template says to only include vitals that were documented, but all are listed as 'Not documented'. These are major instruction violations."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "The note misses several important details: melatonin dosing recommendation (0.5-1mg), timing (one hour before bedtime), counseling that higher doses aren't better, the coworker's 10mg dose discussion, stimulus control counseling (20-minute rule), specific sleep hygiene advice (no screens 30 min to 1 hour before bed, bed for sleep only), the gradual onset description, and the alarm time of 6:15 AM.",
+      "missed_items": [
+        "Melatonin dose recommendation of 0.5-1mg",
+        "Melatonin timing one hour before target bedtime",
+        "Counseling that higher doses aren't better",
+        "Coworker taking 10mg of melatonin",
+        "Stimulus control technique (20-minute rule, get up, go to another room)",
+        "No screens 30 minutes to 1 hour before bed",
+        "Keep bed for sleep only",
+        "Alarm at 6:15 AM for work",
+        "Gradual onset of symptoms"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Chief Complaint appears after the initial Subjective line rather than as the first subsection under Subjective. The ROS is included when it should be omitted. Vital Signs appear after Physical Examination header rather than within it. Social History includes all items despite instructions to only include mentioned items."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. 'Melatonin' should be marked as {{drug:melatonin}} and 'sleep onset insomnia' should be marked as {{condition:sleep onset insomnia}}."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The chief complaint of difficulty sleeping is stated twice \u2014 once under the initial 'Subjective' line and again under the 'Chief Complaint' subsection."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.32,
+      "input_tokens": 2917,
+      "output_tokens": 742
+    }
+  }
+}

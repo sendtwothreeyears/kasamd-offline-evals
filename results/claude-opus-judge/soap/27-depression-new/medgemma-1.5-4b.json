@@ -1,0 +1,54 @@
+{
+  "transcript_id": "27-depression-new",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The Review of Systems lists 'anxiety (increased)' under Psychiatric, but the transcript does not describe the patient as having increased anxiety \u2014 possible increased anxiety was mentioned only as a potential side effect of sertraline. This is a minor embellishment.",
+      "flagged_content": [
+        "anxiety (increased)"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template instructions in parentheses and brackets were left in the output throughout (e.g., '[Chronic conditions and prior diagnoses]', '(If not documented, state \"Not documented\")', '[Blood pressure]', etc.). The Review of Systems includes systems that were not discussed, violating the instruction to omit them. The Plan section lists placeholder items as 'Not mentioned' instead of populating with the extensive plan content from the transcript, which is a critical failure."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The Plan section is entirely empty despite the transcript containing extensive plan details: sertraline 50mg daily prescription, CBT referral, exercise counseling, safety planning (988 Lifeline, ER instructions), 3-week follow-up, side effect counseling, duration of treatment discussion. The PHQ-9 score of 18/27 is also missing. The roommate's role and the context of what prompted the visit are mentioned in HPI but the social support aspect is not in the plan.",
+      "missed_items": [
+        "Sertraline 50mg daily, taken in the morning with food",
+        "CBT referral to behavioral health network with virtual visit option",
+        "PHQ-9 score of 18/27 (moderately severe)",
+        "Side effect counseling (nausea, headache, jitteriness, sexual side effects)",
+        "4-6 weeks to full effect",
+        "6-12 months treatment duration after remission",
+        "Exercise counseling (20-minute walk)",
+        "Safety planning (call clinic, ER, 988 Lifeline)",
+        "Patient agreed to save 988 in phone",
+        "3-week follow-up appointment",
+        "Roommate as social support",
+        "Discussion about medication ambivalence and reframing depression as medical condition"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "Template instructions in brackets and parentheses are left throughout the output. Systems not discussed are included in the ROS instead of being omitted. The Plan section retains placeholder numbering with 'Not mentioned' instead of being populated. Social History includes items not mentioned rather than omitting them per instructions."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. Sertraline and major depressive disorder should have been marked with {{drug:...}} and {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.54,
+      "input_tokens": 3837,
+      "output_tokens": 743
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "transcript_id": "41-gerd",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note includes 'No palpitations' under Cardiovascular ROS, which was never discussed in the transcript. This is a minor fabrication. The rest of the content is supported by the transcript.",
+      "flagged_content": [
+        "No palpitations"
+      ]
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to only include social history items that were mentioned. The Cardiovascular ROS was not discussed. Vital signs were listed individually as 'Not documented' rather than being omitted or handled more cleanly, but the template did list them. The second occurrence of omeprazole should not have been entity-marked. Minor deviations overall."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Missing several important details: trigger foods mentioned specifically (pasta, tomato-based sauces, spicy foods, coffee 2-3 cups/day) are partially captured in the plan but not in HPI; counseling that patient should feel better within a few days but give it two weeks for full effect is missing; the note omits coffee consumption details from HPI.",
+      "missed_items": [
+        "Trigger foods (spicy foods, tomato-based sauces, pasta, coffee 2-3 cups/day) not mentioned in HPI",
+        "Counseling that improvement expected within a few days but full effect in two weeks",
+        "No alarm symptoms summary statement"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well overall. Minor issues: Vital Signs and General are placed under Objective but outside/after Physical Examination header rather than nested within it as the template shows. Social History section should have been omitted per template instructions since nothing was mentioned, or at minimum coffee intake could have been placed there."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "The first occurrences of GERD and omeprazole are correctly marked with proper syntax. However, the second occurrence of omeprazole in the plan is also marked, violating the first-occurrence-only rule."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 12.97,
+      "input_tokens": 2621,
+      "output_tokens": 574
+    }
+  }
+}

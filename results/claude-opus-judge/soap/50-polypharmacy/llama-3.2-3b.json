@@ -1,0 +1,68 @@
+{
+  "transcript_id": "50-polypharmacy",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The Review of Systems section includes 'No fever, chills, or fatigue mentioned' and similar statements for systems not discussed, which is filler rather than hallucination. The ROS entry for Neurological says 'Headache, dizziness, numbness, and weakness were discussed' \u2014 headache and numbness were not discussed in the transcript. These are minor embellishments.",
+      "flagged_content": [
+        "Headache, dizziness, numbness, and weakness were discussed",
+        "Constitutional: No fever, chills, or fatigue mentioned.",
+        "HEENT: No vision, hearing, throat, or nasal symptoms mentioned.",
+        "Respiratory: No shortness of breath, cough, or wheezing mentioned.",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain mentioned.",
+        "Musculoskeletal: No joint pain, muscle weakness, or mobility issues mentioned.",
+        "Skin: No rashes, lesions, or wounds mentioned."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit the section entirely if not mentioned, but the note includes many systems that were not discussed with 'not mentioned' statements. Social History includes items not mentioned despite the instruction to only include items that were mentioned. The Chief Complaint section appears after the opening line rather than before HPI as templated."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing from the note.",
+      "missed_items": [
+        "Lorazepam history: started in 2013 by Dr. Patterson after husband passed, half tablet at bedtime and sometimes half during the day",
+        "Beers Criteria counseling for lorazepam and zolpidem",
+        "Anticholinergic effects counseling for diphenhydramine (confusion, dry mouth, constipation, urinary retention)",
+        "Daughter's observation of increased confusion and discussion that it may be medication-related rather than true dementia",
+        "Sleep alternatives discussed: low-dose melatonin, sleep hygiene, possible CBT-I referral",
+        "Omeprazole history: on since 2017 for hiatal hernia, rarely gets heartburn now",
+        "Long-term PPI risks discussed: C. diff, bone density, low magnesium",
+        "Aspirin context: started by cardiologist after heart catheterization, no MI or stent history, primary prevention discussion",
+        "Gabapentin 300mg TID for sciatica/back pain started by Dr. Cho, back pain improving, future dose reduction discussed",
+        "Atorvastatin 20mg dose",
+        "Written medication action plan to be created for daughter",
+        "Pharmacist name (Jim)",
+        "Instructions to call if dizziness, confusion, withdrawal symptoms, or worsening bladder issues",
+        "Daughter invited to join future visits",
+        "Timing details: lorazepam and zolpidem tapers start in two weeks, not immediately",
+        "Amlodipine reduction timing: after two weeks of home BP monitoring",
+        "Past medical history incomplete: hiatal hernia, sciatica/back pain, urinary urgency/frequency/incontinence, anxiety, insomnia, diabetes (implied by metformin)",
+        "Home blood pressure monitoring plan with daughter's help",
+        "Hip fracture risk discussion",
+        "Systolic target of 140-150 for adults over 80"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note generally follows the template structure but has minor issues: Chief Complaint appears after an introductory line rather than as the first subsection under Subjective, and the Objective section has redundant sub-sections (both 'Physical Examination' header and a separate 'Vital Signs' section outside it). The ROS violates the template instruction to omit undiscussed systems."
+    },
+    "entity_marking": {
+      "score": 1,
+      "rationale": "Only {{condition:hypertension}} is marked. Many drugs (metoprolol, lisinopril, amlodipine, atorvastatin, metformin, aspirin, omeprazole, lorazepam, diphenhydramine, zolpidem, oxybutynin, gabapentin, mirabegron) and conditions (orthostatic hypotension, hiatal hernia, polypharmacy, anxiety, insomnia, urinary urgency/incontinence, sciatica) at their first occurrence are not marked."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 20.65,
+      "input_tokens": 4571,
+      "output_tokens": 1166
+    }
+  }
+}

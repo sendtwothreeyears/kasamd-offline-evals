@@ -1,0 +1,14 @@
+{
+  "transcript_id": "01-htn-new-dx",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "generated_note": "**Subjective**\nChief Complaint: Headaches\n\n**History of Present Illness**\nPatient presents with a week of headaches described as a dull pressure, mostly in the back of his head, worse in the mornings. No nausea, no vision changes, no photosensitivity \u2014 just the pressure sensation.\n\n**Review of Systems**\nConstitutional: Fatigue\nNeurological: Headache\nHeadache: Dull pressure, back of head, worse in the mornings\n\n**Past Medical History**\nNot documented\n\n**Medications**\nNot documented\n\n**Allergies**\nNo known drug allergies\n\n**Social History**\nTobacco: Not documented\nAlcohol: Not documented\nRecreational drugs: Not documented\nOccupation: Not documented\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\nGeneral: Patient appears alert and oriented, in no acute distress.\n**Vital Signs:**\nBP: 162/98 (right arm), 158/96 (left arm)\nHR: Not documented\nTemp: Not documented\nRR: Not documented\nSpO2: Not documented\n\n**Assessment**\nHypertension\n\n**Plan**\n1. Order baseline labs: kidney function, cholesterol.\n2. Follow-up in two weeks for blood pressure recheck.\n3. If blood pressure remains elevated, discuss starting antihypertensive medication.\n4. Counsel on lifestyle modifications: reducing salt intake, getting regular exercise (30 minutes of walking a day), cutting back on caffeine.\n5. Recommend acetaminophen as needed for headaches, avoid ibuprofen due to potential to raise blood pressure.\n6. Educate patient on plan and obtain agreement.\n",
+  "metadata": {
+    "inference_time_s": 6.68,
+    "prompt_tokens": 1462,
+    "tokens_generated": 345,
+    "prompt_tps": 287.9,
+    "tokens_per_sec": 51.7,
+    "peak_memory_gb": 3.65
+  }
+}

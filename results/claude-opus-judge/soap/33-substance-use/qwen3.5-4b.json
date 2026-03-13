@@ -1,0 +1,41 @@
+{
+  "transcript_id": "33-substance-use",
+  "template": "soap",
+  "model": "qwen3.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The generated note contains only the thinking/planning process and no actual clinical note was produced. There is no clinical content to evaluate, but the output itself is a complete failure to generate the note.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The output is entirely a thinking/reasoning process and does not contain a completed clinical note. The instruction to 'Return ONLY the completed note' was completely violated."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "No clinical note was generated, so no transcript content was captured in a structured note format.",
+      "missed_items": [
+        "All transcript content - no note was produced"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "No structured clinical note was output. The entire output is an internal reasoning/thinking process with no template-based sections."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted because no clinical note was generated."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The thinking process contains massive repetitive loops of the same reasoning steps duplicated dozens of times."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 7.69,
+      "input_tokens": 20022,
+      "output_tokens": 333
+    }
+  }
+}

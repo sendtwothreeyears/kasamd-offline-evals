@@ -1,0 +1,69 @@
+{
+  "transcript_id": "29-anxiety-gad",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "\"Appears anxious\" under General is a minor embellishment \u2014 the transcript does not describe his general appearance. The rest of the content is supported by the transcript.",
+      "flagged_content": [
+        "Appears anxious"
+      ]
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The note mostly follows instructions well, using 'Not documented' appropriately for medications and allergies. However, the template says to state 'Not documented' for allergies, and the note does so, which is acceptable. Minor issue: vitals not documented are listed as 'Not documented' rather than omitted per template instructions ('Only include vitals that were documented')."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing.",
+      "missed_items": [
+        "Wife urged him to come in for months",
+        "Specific worry examples: kids' health, finances (noting financial stability), stove left on, social interactions",
+        "Worry starts within 10 minutes of waking",
+        "Teeth grinding (bruxism) reported by wife",
+        "GI workup details: endoscopy and colonoscopy both normal, diagnosed with IBS, advised to increase fiber",
+        "Sleep: takes 45 minutes to an hour to fall asleep, listens to podcasts",
+        "Work presentation episode with palpitations lasting ~15 seconds, thought heart attack, not a full panic attack",
+        "Denies true panic attacks",
+        "Mild hand tremor, hiding hands under table in meetings",
+        "Mild palmar diaphoresis",
+        "Mild orthostatic lightheadedness",
+        "Irritability \u2014 snaps at kids, feels guilty; wife walking on eggshells",
+        "Cut back caffeine on his own after reading it could worsen anxiety",
+        "Alcohol rebound anxiety discussion",
+        "No prior psychiatric treatment, grew up in family where mental health wasn't discussed",
+        "Prior borderline BP readings attributed to white coat hypertension; discussion of chronic anxiety contributing to elevated BP",
+        "GAD-7 score of 17/21 (severe range)",
+        "Discussion of CBT as gold standard and ACT as alternative",
+        "Discussion of SSRIs, SNRIs, and buspirone",
+        "Brother's response to escitalopram as factor in prescribing decision",
+        "Escitalopram counseling details: 2-4 weeks to begin, 6-8 weeks full effect, specific side effects listed",
+        "Benzodiazepine discussion \u2014 patient asked, risks explained, possible small supply considered",
+        "Specific exercise recommendation: three 30-minute walks, used to run",
+        "Specific apps mentioned: Headspace, Calm, Insight Timer",
+        "Sleep hygiene: no screens 1 hour before bed, phone use until falling asleep, replace with physical book",
+        "Medical history: checkup 6 months ago with normal blood work, uncertain if thyroid checked",
+        "Reflexes, coordination, sensation intact on neuro exam"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well overall. Minor issues include listing 'Temp: Not documented', 'RR: Not documented', 'SpO2: Not documented' when the template says to only include vitals that were documented. Sleep-related findings are placed under Neurological ROS rather than Psychiatric."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. Medications (escitalopram, buspirone) and conditions (generalized anxiety disorder, irritable bowel syndrome, hyperthyroidism) should have been marked."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 18.26,
+      "input_tokens": 4498,
+      "output_tokens": 962
+    }
+  }
+}

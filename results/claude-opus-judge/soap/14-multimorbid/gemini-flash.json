@@ -1,0 +1,38 @@
+{
+  "transcript_id": "14-multimorbid",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note includes 'Diabetic peripheral neuropathy' in Past Medical History as a prior diagnosis, but in the transcript it is a new finding being identified at this visit. Also, 'Hypertension' is listed as a repeated entity in Past Medical History when it was already marked. The conditions listed in Past Medical History are reasonable inferences but the neuropathy being listed as a past diagnosis is a minor embellishment. Additionally, entities like atorvastatin and aspirin are listed in the pre-visit medications section, which is correct per the transcript's final medication list mention, but atorvastatin 40 mg as a current medication is only implied (the transcript mentions increasing it from 40 to 80).",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 3,
+      "rationale": "The note follows all template instructions well. Sections not documented are appropriately marked as 'Not documented.' Only discussed systems are included in the ROS. No template instructions appear in the output."
+    },
+    "completeness": {
+      "score": 3,
+      "rationale": "The note captures virtually all content from the transcript including all subjective complaints, lab values, exam findings, the full plan with medication changes, referrals, counseling, dialysis discussion, wife's involvement, and follow-up details. The weight gain of 6 pounds from last visit is captured via the weight documentation."
+    },
+    "template_adherence": {
+      "score": 3,
+      "rationale": "The note follows the template structure precisely with all required sections present and properly formatted. Vital signs only include documented values, and the overall organization matches the template."
+    },
+    "entity_marking": {
+      "score": 1,
+      "rationale": "While the syntax is correct, many entities are marked on subsequent occurrences rather than only the first. For example, hypertension, chronic kidney disease, diabetic peripheral neuropathy, metformin, Tresiba, atorvastatin, aspirin, and dapagliflozin are all marked multiple times. Conditions like 'Type 2 diabetes' and 'Hypertension' are re-marked in Past Medical History and Assessment after being marked earlier."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No sections or content are duplicated in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.4,
+      "input_tokens": 5193,
+      "output_tokens": 582
+    }
+  }
+}

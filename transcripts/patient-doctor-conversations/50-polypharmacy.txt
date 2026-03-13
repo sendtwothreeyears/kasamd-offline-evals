@@ -1,0 +1,164 @@
+---
+id: 50
+scenario: Elderly patient, 12+ medications, deprescribing visit
+category: Endocrine/Other
+density: Dense
+---
+
+Doctor: Good morning, Dorothy. Come in, come in. Let me help you with that — here, have a seat.
+
+Patient: Thank you, dear. These old knees don't work like they used to.
+
+Doctor: I hear you. So today's visit is a little different from our usual check-in. I wanted to set aside some extra time to go through all of your medications together. When I looked at your chart, I counted fourteen active prescriptions, and I want to make sure every single one is still serving you well.
+
+Patient: Fourteen? Is that a lot?
+
+Doctor: It is on the higher side, and honestly, the more medications someone takes, the higher the risk of side effects and drug interactions. So let's go through them one by one. Did you bring your medication bottles like I asked?
+
+Patient: I did — my daughter put them all in this bag for me. She's the organized one.
+
+Doctor: Perfect. Let's spread them out here. Alright, I see metoprolol, lisinopril, amlodipine, atorvastatin, metformin, aspirin, omeprazole, lorazepam, diphenhydramine — that's Benadryl — zolpidem, oxybutynin, gabapentin, a calcium supplement, and a multivitamin. Fourteen exactly.
+
+Patient: I've been on most of these for years. They just kind of... accumulated.
+
+Doctor: That's exactly how it happens. Every doctor along the way added something for a good reason at the time. But we need to periodically ask: is this still necessary? Are the risks still worth the benefits? Especially at 82.
+
+Patient: You're saying some of these might be doing more harm than good?
+
+Doctor: Potentially. Let's go through them. Your blood pressure medications — metoprolol, lisinopril, and amlodipine. Three blood pressure meds. What was your pressure when the nurse took it today?
+
+Patient: She said 118 over something. 68?
+
+Doctor: 118 over 68. That's actually on the lower end, and at your age, being too low is a concern because it increases the risk of dizziness and falls. You've had two falls in the last six months, correct?
+
+Patient: Yes, one in the bathroom and one in the kitchen. I just got lightheaded when I stood up.
+
+Doctor: That lightheadedness when you stand — that's called orthostatic hypotension, and it's often caused by blood pressure running too low. I'd like to reduce one of your blood pressure medications. I'm thinking we could taper down the amlodipine. You're on 10 milligrams — we'd go to 5, and then possibly stop it, depending on how your pressures look.
+
+Patient: But won't my blood pressure go up?
+
+Doctor: It might come up a little, and honestly, that would be okay. For someone your age, guidelines say a systolic pressure up to around 140 to 150 is acceptable. We've been running you too tight, and it's probably contributing to your falls.
+
+Patient: My old doctor was very insistent about keeping it low. He always said under 130.
+
+Doctor: And for a younger person, that's a great target. But the evidence has shifted — for adults over 80, being too aggressive with blood pressure treatment causes more harm than benefit. Falls at your age can be life-threatening. A hip fracture at 82 is far more dangerous than a slightly higher blood pressure reading.
+
+Patient: Well, that makes sense when you put it that way.
+
+Doctor: Good. Now let's talk about the lorazepam. You've been on that for how long?
+
+Patient: Oh, years and years. Dr. Patterson started me on it after my husband passed. That was — goodness — 2013. So thirteen years.
+
+Doctor: And what are you taking it for now?
+
+Patient: Sleep, mostly. And sometimes when I feel anxious. I take half a tablet at bedtime and then sometimes half during the day if I'm wound up.
+
+Doctor: Dorothy, this is one I really want to address. Lorazepam is a benzodiazepine, and in people over 65, it's on a list of medications — called the Beers Criteria — that are considered potentially inappropriate. It increases the risk of falls, confusion, and cognitive decline. Studies have shown a significant link between long-term benzodiazepine use and dementia risk.
+
+Patient: Dementia? Oh my. But I've been on it so long. Won't I have withdrawal if I stop?
+
+Doctor: You absolutely could if we stopped it abruptly, which is why we would never do that. We'd taper it very slowly — over months, not weeks. A gradual reduction so your body adjusts. I'm thinking we'd cut your dose by about a quarter every two to four weeks. And we'd make sure you have other strategies in place for sleep and anxiety first.
+
+Patient: I'm a little scared about that, to be honest. It's the only thing that helps me sleep.
+
+Doctor: I understand, and that fear is completely valid. Here's the thing though — you're also taking zolpidem, which is Ambien, for sleep. And diphenhydramine, which is Benadryl, which you're taking for sleep too. Is that right?
+
+Patient: The Benadryl helps when I'm really restless. And the Ambien is my main sleep pill.
+
+Doctor: So you're on three sedating medications. That's a major fall risk. The zolpidem is also on the Beers list for older adults — it's been associated with falls, confusion, and even sleepwalking. And diphenhydramine — Benadryl — is one of the worst offenders in older adults. It has strong anticholinergic effects, which means it can cause confusion, dry mouth, constipation, urinary retention, and worsening cognition.
+
+Patient: I had no idea Benadryl was a problem. You can buy it at any drugstore.
+
+Doctor: I know, and it's one of the most common pitfalls. Just because something is over the counter doesn't mean it's safe for everyone. I'd like to stop the Benadryl first — that one can go right away. For the zolpidem, we'd taper that down too. And as we taper the lorazepam, we can discuss alternatives. Melatonin at a low dose, sleep hygiene strategies, maybe a referral to our behavioral health team for cognitive behavioral therapy for insomnia, which actually works better than pills long-term.
+
+Patient: My daughter has been saying I seem more confused lately. She thinks it's the beginning of — you know.
+
+Doctor: It's possible that some of what she's noticing is medication-related rather than true cognitive decline. These medications can absolutely cause or worsen confusion. I've seen patients whose memory and clarity significantly improved after we removed anticholinergic and sedating medications. I'm not making any promises, but it's worth finding out.
+
+Patient: That gives me some hope, actually.
+
+Doctor: Good. Now let me address a couple more. The oxybutynin — that's for your bladder, the urgency and frequency?
+
+Patient: Yes, I was having a lot of accidents. It helped somewhat.
+
+Doctor: Oxybutynin is another strongly anticholinergic medication. Same concerns about cognition, dry mouth, constipation. There are newer bladder medications with fewer cognitive effects — mirabegron, brand name Myrbetriq, works by a completely different mechanism. I'd like to switch you over.
+
+Patient: As long as I'm not having accidents. That's one thing I will not tolerate.
+
+Doctor: Completely understood. We'll make the switch carefully and monitor. If the mirabegron doesn't work as well, we'll adjust. Your dignity is a priority.
+
+Patient: Thank you for saying that.
+
+Doctor: The gabapentin — what's that for? I see it was started by Dr. Cho.
+
+Patient: My back pain. The sciatica. It helps some, I think. I'm on 300 three times a day.
+
+Doctor: How's the back pain been lately?
+
+Patient: Better than it was, honestly. Some days I barely notice it. But I'm afraid to stop anything because what if it comes back?
+
+Doctor: That's a reasonable concern. Here's what I'd suggest — we don't touch the gabapentin yet. We've got enough changes happening with the other medications. But at a future visit, we could try a gradual dose reduction to see if you still need the full dose. Sometimes pain conditions evolve and you may be able to get by on less. One thing at a time though.
+
+Patient: I appreciate that. This is already a lot to take in.
+
+Doctor: I know, and I don't want to overwhelm you. Let's talk about a few more quickly. The omeprazole — how long have you been on it?
+
+Patient: Since my hiatal hernia. That was maybe 2017? So nine years.
+
+Doctor: Long-term PPI use has been associated with some concerns in older adults — increased risk of C. diff infections, possible effects on bone density, low magnesium levels. When's the last time you actually had heartburn?
+
+Patient: Hmm. I don't really get it much anymore. Once in a while after Italian food.
+
+Doctor: So we could try stepping down. Go from daily to every other day for a couple weeks, then to just as needed. If the heartburn comes roaring back, we'll put you back on it. But many people find they've been on it far longer than necessary.
+
+Patient: Okay, we can try.
+
+Doctor: The aspirin — you're on 81 milligrams daily. Was this prescribed for your heart, or did you start it on your own?
+
+Patient: My old cardiologist put me on it, I think. After my heart catheterization — but they said my arteries looked okay. That was years ago.
+
+Doctor: So you've never had a heart attack or stent?
+
+Patient: No, nothing like that.
+
+Doctor: For primary prevention — meaning in people who haven't had a heart event — the guidelines have shifted away from routine aspirin in older adults. The bleeding risk, especially GI bleeding, often outweighs the benefit. Given your age and the fact that you don't have established cardiovascular disease, I'd recommend stopping the aspirin.
+
+Patient: Even with the high cholesterol? I'm on the statin for that.
+
+Doctor: The statin is doing the heavy lifting for your cardiovascular risk, and that one I'd keep. Atorvastatin at 20 milligrams is reasonable. The aspirin in your case is adding risk without clear benefit.
+
+Patient: My daughter's going to want to know about all of this. Can you write it down?
+
+Doctor: Absolutely. I'm going to create a detailed medication action plan that you can share with her. In fact, I'd like to involve your pharmacist too. Our clinic pharmacist, Jim, does medication therapy management visits. He can review everything, check for interactions we might have missed, and help coordinate the tapers. Would you be open to seeing him?
+
+Patient: Oh sure, I love Jim. He's always so patient with me at the pharmacy counter.
+
+Doctor: Perfect. Let me summarize what we're doing, and I'll go slowly. First: reduce amlodipine from 10 to 5 milligrams. Monitor blood pressure at home — your daughter can help. Second: stop diphenhydramine, effective now. Third: begin slow taper of lorazepam — I'll give you a specific schedule. Fourth: begin slow taper of zolpidem. Fifth: switch oxybutynin to mirabegron 25 milligrams. Sixth: taper omeprazole to every other day, then as needed. Seventh: stop aspirin 81 milligrams. We're keeping metoprolol, lisinopril, atorvastatin, metformin, gabapentin, calcium, and the multivitamin unchanged for now.
+
+Patient: That's seven changes. Oh my.
+
+Doctor: It is, but we're not doing them all at once. We'll stagger them. This week, the easy ones — stop the Benadryl and the aspirin, switch the oxybutynin to mirabegron, and start the omeprazole taper. The lorazepam and zolpidem tapers will start in two weeks, one at a time, with very gradual reductions. The amlodipine reduction will happen at your next visit after we see two weeks of home blood pressure readings.
+
+Patient: Okay. That's more manageable.
+
+Doctor: I want to see you back in two weeks to check in — sooner if anything feels off. And call me if you have any dizziness, confusion, withdrawal symptoms, or if the bladder issues get worse. I'll also schedule you with Jim the pharmacist within the next week.
+
+Patient: And if I feel worse after stopping something, we can put it back?
+
+Doctor: Absolutely. This isn't about taking away your medications — it's about making sure every pill in that bag is earning its place. If something was helping, we'll know soon enough and we'll bring it back. This is a process, not an event.
+
+Patient: You know, no one has ever sat down and gone through all of these with me like this before. Each doctor just adds their thing and nobody looks at the whole picture.
+
+Doctor: That's unfortunately very common, and it's something we need to do better at in medicine. You deserve to have someone looking at the whole picture. That's what today was about.
+
+Patient: Well, I appreciate it. My daughter will be relieved. She's been worried about all the pills I rattle around with every morning.
+
+Doctor: Tell her she's welcome to call me or come to the next visit. Having a family member involved makes this whole process smoother. Now, is there anything else on your mind while we're here?
+
+Patient: No, I think that's plenty for one day. My head is spinning a little.
+
+Doctor: Understandable. Take the printed plan, share it with your daughter, and remember — we're going slow and safe. You're in good hands.
+
+Patient: Thank you, Doctor. Really.
+
+Doctor: My pleasure, Dorothy. I'll see you in two weeks.

@@ -1,0 +1,14 @@
+{
+  "transcript_id": "45-suspicious-mole",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nMole on upper back, noticed by husband, changing appearance over 3-4 months.\n\n**History of Present Illness**\nPatient reports a mole on her upper back that her husband noticed has been changing over the past 3-4 months. She states the mole bled once when she caught it on her bra strap, which she attributed to friction.\n\n**Review of Systems**\nConstitutional: No reported fever or chills.\nHEENT: No reported visual symptoms.\nSkin: Patient reports a mole on her upper back.\n\n**Past Medical History**\nNot documented\n\n**Medications**\nNot documented\n\n**Allergies**\nNo known drug allergies\n\n**Social History**\nNot documented\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\n**Vital Signs:**\nBP: Not documented\nHR: Not documented\nTemp: Not documented\nRR: Not documented\nSpO2: Not documented\n**General:** Patient appears to be alert and oriented.\n\n**Assessment**\nSuspicious mole on upper back, ABCDE criteria met.\n\n**Plan**\n1. Excisional biopsy of the mole on the right upper back.\n2. Pathology results to follow; patient will be personally contacted with results.\n3. Patient instructed to avoid aspirin and ibuprofen for three days prior to the procedure.\n4. Patient instructed to wear a loose-fitting top.\n5. Patient instructed to keep the site clean and dry for 24 hours post-procedure.\n6. Patient instructed to shower normally post-procedure.\n7. Patient recommended monthly self-skin checks using the ABCDE criteria.\n8. Patient recommended annual full skin exams with a dermatologist.\n9. Patient counseled on daily sunscreen use (SPF 30 or higher, reapplying every two hours when outdoors, using hats and protective clothing when possible).\n\n\n\n",
+  "metadata": {
+    "inference_time_s": 7.91,
+    "prompt_tokens": 1812,
+    "tokens_generated": 398,
+    "prompt_tps": 656.1,
+    "tokens_per_sec": 50.3,
+    "peak_memory_gb": 3.87
+  }
+}

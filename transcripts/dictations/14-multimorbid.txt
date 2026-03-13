@@ -1,0 +1,44 @@
+---
+id: 14
+scenario: Complex multimorbid visit — HTN, DM, and CKD combined management
+category: Chronic disease
+density: Dense
+---
+
+So I saw Mr. Patton today — it's been about four months since his last visit. He's coming in with a lot going on, so let me go through everything.
+
+He's been feeling tired, low energy, and he's been getting afternoon headaches three to four times a week — describes it as a pressure sensation in the back of his head. Those headaches, I suspect, are related to his blood pressure. BP today was 158 over 94, which is above target. He's been checking at home a couple times a week and says it's been running in the 140s over 85 to 90, sometimes higher. He's on amlodipine 10 milligrams and losartan 100 milligrams, both in the morning, and he says he's taking them every day without fail. Target for him given his diabetes and kidney disease is under 130 over 80, so we've got work to do.
+
+His A1C came back at 8.1, up from 7.6 last time — so it's drifted in the wrong direction. He's on metformin 1000 milligrams twice daily and Tresiba insulin 22 units at bedtime. He's checking fasting blood sugars at home and they're running 150 to 160, sometimes higher. He's not checking post-meal sugars. He admitted the holiday season was rough — diet fell off significantly, lots of sweets and parties — though he says he's been doing better the last couple of weeks.
+
+Now, the kidney numbers. Creatinine is 1.8, up from 1.5 last visit. GFR is 42, down from 51 — so a meaningful drop over four months, faster than I'd like to see. That puts him in stage 3B CKD. Urine albumin-to-creatinine ratio is 220, elevated. He had a recent visit with Dr. Khatri, his nephrologist, who was concerned about the protein and mentioned potentially starting an SGLT2 inhibitor — dapagliflozin — and wanted to coordinate with me first. I reviewed her note and I'm in agreement.
+
+Cholesterol panel: LDL is 98, which is okay but for his risk level I want it under 70. Triglycerides are 210, elevated, likely partly diet-related.
+
+On physical exam today: weight is 234 pounds, up 6 pounds from last visit. Height is five-ten, BMI approximately 33.5. Blood pressure as noted 158 over 94. Heart sounds regular, no murmurs. Lungs clear. No ankle edema — which is reassuring given the kidney function. Pedal pulses intact bilaterally. No open sores or calluses on the feet. However, he reports numbness and pins-and-needles sensation in the right toes for the past few months. On monofilament testing, sensation was diminished on the right foot and intact on the left — consistent with diabetic peripheral neuropathy. He also reports nocturia, up two to three times per night, no hematuria.
+
+He also mentioned mild exertional dyspnea with yard work, nothing severe. No chest pain.
+
+So here's the plan — there's a lot of moving parts here.
+
+For blood pressure: I'm adding hydrochlorothiazide 25 milligrams. Counseled him to be careful with positional changes given potential for lightheadedness. So his BP regimen is now losartan 100, amlodipine 10, and HCTZ 25.
+
+For diabetes: Given the GFR of 42, I'm reducing the metformin from 1000 milligrams twice daily down to 500 milligrams twice daily. I'm increasing the Tresiba from 22 units to 26 units at bedtime — instructed him to titrate up by 2 units every three days until fasting sugars are under 130. I also asked him to start checking post-meal blood sugars — two hours after his biggest meal. And I'm starting dapagliflozin 10 milligrams daily, which will help with both kidney protection and glucose lowering.
+
+For cholesterol: Increasing atorvastatin from 40 milligrams to 80 milligrams. The triglycerides I'm hoping will improve with better diet and sugar control.
+
+For the neuropathy: Referred him to podiatry for regular foot exams. Counseled him on the importance of foot care given the neuropathy and diabetes.
+
+Ophthalmology referral placed — he hasn't had an eye exam in about two years and needs annual screening for diabetic retinopathy given his A1C and kidney changes.
+
+Nutrition referral placed as well — for a refresher visit focused on his specific situation: diabetes, CKD, and hypertension. Counseled him on low sodium diet under 2,000 milligrams, moderate protein, and controlled carbohydrates.
+
+Importantly — I told him to stop the ibuprofen. He has a prescription from orthopedics for back pain and has been taking it a few times a week. NSAIDs are contraindicated at this stage of kidney disease. Switching him to acetaminophen, up to 2,000 milligrams per day. If that's not adequate for the back pain, we'll revisit.
+
+His full medication list at this point is: losartan 100, amlodipine 10, hydrochlorothiazide 25, metformin 500 twice daily, Tresiba 26 units at bedtime, dapagliflozin 10, atorvastatin 80, and aspirin 81. That's eight medications plus the insulin.
+
+I counseled him extensively on the interconnected nature of his conditions — that elevated blood pressure is accelerating kidney decline, that poor sugar control damages the kidneys further, and that it's a cycle we need to break. He was receptive. His wife is involved in his care and helps with medications, which is a positive. I encouraged him to lean on her for support with diet and foot checks as well.
+
+He asked directly about dialysis. I told him it's not imminent at his current GFR but that the trend is concerning, and that with aggressive management — blood pressure control, sugar control, and the kidney-protective medications — we can significantly slow progression and that many patients at his stage never reach dialysis. That's the goal.
+
+Labs ordered in four weeks: BMP, A1C, lipids, urine protein, and CBC. Follow-up appointment in six weeks. New prescriptions sent electronically to his pharmacy. After-visit summary and updated medication list printed for him.

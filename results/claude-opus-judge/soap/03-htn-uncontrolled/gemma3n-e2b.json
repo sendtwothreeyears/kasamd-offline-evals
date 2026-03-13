@@ -1,0 +1,62 @@
+{
+  "transcript_id": "03-htn-uncontrolled",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The Review of Systems includes multiple systems (HEENT, GI, GU, MSK, Neurological, Psychiatric, Skin) that were never discussed in the transcript \u2014 listing them as 'No reported symptoms' is a minor embellishment. 'Patient appears to be in reasonable condition' under General is a minor embellishment not supported by the transcript. The template instructions say to only include systems that were discussed.",
+      "flagged_content": [
+        "HEENT: No reported symptoms.",
+        "Gastrointestinal: No reported symptoms.",
+        "Genitourinary: No reported symptoms.",
+        "Musculoskeletal: No reported symptoms.",
+        "Neurological: No reported symptoms.",
+        "Psychiatric: No reported symptoms.",
+        "Skin: No reported symptoms.",
+        "Patient appears to be in reasonable condition."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template explicitly states for Review of Systems: 'Only include systems that were discussed. If not mentioned, omit this section entirely.' The note includes many undiscussed systems. It also lists vitals that were not documented (HR, Temp, RR, SpO2) instead of omitting them per the 'Only include vitals that were documented' instruction. Tobacco and recreational drugs are listed as 'Not documented' despite the instruction to 'Only include items that were mentioned.'"
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing.",
+      "missed_items": [
+        "Patient received portal message about high numbers prompting the visit",
+        "Discussion about hypertension being asymptomatic until causing damage (heart attack, stroke, kidney problems)",
+        "Patient's difficulty taking it seriously because asymptomatic",
+        "Medication adherence issues - missing doses once or twice a week, inconsistent timing",
+        "Lisinopril mechanism explanation (ACE inhibitor, relaxes blood vessels)",
+        "Side effect discussion including lightheadedness early on",
+        "Plan to switch medication class if cough is bothersome",
+        "Expected timeline of 2-4 weeks to see if lisinopril is working",
+        "Diet details - cooking more at home but eating out a couple times a week, restaurant food high in sodium",
+        "Sodium reduction can reduce BP by 5-10 points",
+        "Wife reading labels and providing support at home",
+        "Current exercise of walking dog 20 minutes most days",
+        "Continuing amlodipine 5 mg as part of the plan"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The overall structure follows the template, but Vital Signs are placed under Objective after Physical Examination instead of within it, and Family History is duplicated (once under Past Medical History and once as its own section). The General finding appears outside the Physical Examination subsection."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Family history (father with stroke at age 62) is duplicated \u2014 appearing both under Past Medical History and under its own Family History section."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.59,
+      "input_tokens": 3149,
+      "output_tokens": 784
+    }
+  }
+}

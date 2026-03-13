@@ -1,0 +1,57 @@
+{
+  "transcript_id": "09-asthma-exacerbation",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The Review of Systems section states 'No fever, chills, or fatigue mentioned' for Constitutional and similar negative statements for systems not discussed, which is a minor issue. The ROS also places wheezing (an exam finding) under Respiratory ROS, which is a mischaracterization. The Allergies section conflates drug allergies with the patient's seasonal allergies, which is a minor embellishment/misrepresentation.",
+      "flagged_content": [
+        "Constitutional: No fever, chills, or fatigue mentioned.",
+        "HEENT: No vision, hearing, throat, or nasal symptoms discussed.",
+        "Respiratory: Mild expiratory wheezing bilaterally, worse on the right."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit the section entirely if not mentioned, but the note includes all systems with negative statements. The template says to state 'No known drug allergies' or 'Not documented' for allergies if not documented, but instead the note discusses seasonal allergies. Social History includes items not mentioned, violating the 'only include items that were mentioned' instruction.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing or inadequately captured.",
+      "missed_items": [
+        "Spacer prescription",
+        "Mouth rinsing/spitting after inhaled steroid use counseling",
+        "LABA safety concern discussion and patient reassurance",
+        "Exercise counseling details (use 2 puffs albuterol 15 min before exercise, exercise beneficial for lung function)",
+        "Albuterol continuation as rescue inhaler",
+        "Return precautions details (waking at night >1x/week, rescue inhaler not lasting 4 hours)",
+        "Updated written asthma action plan to be printed at checkout",
+        "Claritin as current occasional medication",
+        "HEENT ROS findings: runny nose, sneezing, postnasal drip (mentioned in HPI but should also be in ROS)",
+        "Peak flow at 79% of personal best"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Subjective section appears before Chief Complaint instead of after it. Vital Signs section appears after Physical Examination instead of within it. The ROS includes all systems despite instructions to only include discussed ones. The Allergies section is misused for seasonal allergies rather than drug allergies. New medications are listed under current Medications section rather than the Plan.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted at all \u2014 no {{drug:...}} or {{condition:...}} syntax is present anywhere in the note.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or full note content was observed, though some information appears in multiple sections (e.g., wheezing in ROS and Physical Exam, medications in Medications and Plan)."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.11,
+      "input_tokens": 3623,
+      "output_tokens": 799
+    }
+  }
+}

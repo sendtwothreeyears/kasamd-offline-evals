@@ -1,0 +1,49 @@
+{
+  "transcript_id": "01-htn-new-dx",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly supported by or reasonably inferred from the transcript. No fabricated findings or diagnoses.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit the section entirely if not mentioned, yet the note lists many systems as 'Not discussed.' Similarly, Social History and Family History should say 'Not documented' per template instructions but say 'Not discussed.' Vital signs that were not documented should be omitted rather than listed as 'Not discussed.' Blood pressure was placed in the HPI (subjective) rather than only in the objective vitals section.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Missing several important details: patient hasn't seen a doctor in 4-5 years, no prior history of high blood pressure, counseling that elevated BP could be contributing to headaches, specific exercise recommendation of 30 minutes of walking a day, specific instruction to avoid ibuprofen because it can raise blood pressure, and the plan to discuss starting antihypertensive medication if BP remains elevated.",
+      "missed_items": [
+        "Patient hasn't seen a doctor in 4-5 years",
+        "No prior known history of high blood pressure",
+        "Counseling that elevated BP could be contributing to headaches",
+        "Specific exercise recommendation of 30 minutes of walking a day",
+        "Rationale for avoiding ibuprofen (can raise blood pressure)",
+        "Plan to discuss starting antihypertensive medication if BP still elevated at follow-up"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "ROS lists systems not discussed instead of omitting them per template instructions. Social History and Family History don't follow the template's 'Not documented' instruction. Vital signs in the HPI is misplaced content. 'Physical Examination: Not performed' is placed before Vital Signs rather than after, and non-documented vitals are listed instead of omitted.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Medications like acetaminophen and ibuprofen, and conditions like hypertension, headache, and elevated blood pressure were not marked with {{drug:...}} or {{condition:...}} syntax.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content detected, though blood pressure values appear in both HPI and Vital Signs (which is a placement issue, not duplication per se)."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 12.55,
+      "input_tokens": 2602,
+      "output_tokens": 671
+    }
+  }
+}

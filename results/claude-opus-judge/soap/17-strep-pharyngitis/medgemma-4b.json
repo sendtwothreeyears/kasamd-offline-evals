@@ -1,0 +1,56 @@
+{
+  "transcript_id": "17-strep-pharyngitis",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems includes multiple systems (Cardiovascular, GI, GU, Musculoskeletal, Neurological, Psychiatric, Skin) with negative findings that were never discussed in the transcript. The template explicitly says to only include systems that were discussed. 'Patient appears uncomfortable' in the General exam is a minor embellishment. The physical exam findings (tonsils, lymphadenopathy) are misplaced in the ROS rather than the objective section, but that's a template issue, not hallucination.",
+      "flagged_content": [
+        "Cardiovascular: No chest pain, palpitations, edema",
+        "Respiratory: No shortness of breath, cough, wheezing",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, abdominal pain",
+        "Genitourinary: No urinary symptoms, menstrual history",
+        "Musculoskeletal: No joint pain, muscle weakness, mobility issues",
+        "Neurological: No headache, dizziness, numbness, weakness",
+        "Psychiatric: No mood changes, anxiety, sleep disturbances",
+        "Skin: No rashes, lesions, wounds",
+        "Patient appears uncomfortable"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template explicitly states 'Only include systems that were discussed. If not mentioned, omit this section entirely' for ROS, but the note includes many undiscussed systems. Social History should only include items that were mentioned, but all four items are listed as 'Not documented.' Vital signs that were not documented should be omitted per template instructions but are listed. No entity marking was used at all."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured. The rapid strep test and its positive result are missing from the note. The contagious-until-24-hours-on-antibiotics counseling is partially captured. The no allergy to amoxicillin or penicillin specifically is simplified to generic NKDA. Tylenol as a current/prior medication is not listed under Medications.",
+      "missed_items": [
+        "Rapid strep test performed and positive result",
+        "Specific mention of no allergy to amoxicillin or penicillin",
+        "Tylenol listed as current medication",
+        "Expected improvement within 24-48 hours counseling",
+        "Contagious until 24 hours on antibiotic"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Physical exam findings (tonsils red/swollen with white patches, tender submandibular lymphadenopathy) are placed in the ROS instead of the Objective/Physical Examination section. The note says 'Physical examination not documented' despite having exam findings. Vital signs not documented are listed instead of omitted. Social History items not mentioned are listed instead of omitted.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. Medications like amoxicillin, Tylenol, ibuprofen and conditions like pharyngitis, streptococcal, fever should have been marked."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication detected in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.95,
+      "input_tokens": 2806,
+      "output_tokens": 824
+    }
+  }
+}

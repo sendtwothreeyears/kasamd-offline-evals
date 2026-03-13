@@ -1,0 +1,46 @@
+---
+id: 24
+scenario: Acute viral gastroenteritis, hydration and supportive care
+category: GI
+density: Sparse
+---
+
+Doctor: Ms. Huang, what brings you in?
+
+Patient: I've been throwing up and having diarrhea for two days and I just feel terrible. I can barely keep anything down.
+
+Doctor: I'm sorry to hear that. How many times are you vomiting per day, roughly?
+
+Patient: Yesterday was the worst — maybe six or seven times. Today it's slowed down to maybe twice so far. But the diarrhea is still pretty constant, like five or six watery stools today.
+
+Doctor: Any blood in the stool or the vomit?
+
+Patient: No blood.
+
+Doctor: Fever?
+
+Patient: I felt warm yesterday but I didn't take my temperature. I don't think I have one today.
+
+Doctor: Let me check. You're at 99.2, so just barely elevated. Blood pressure and heart rate look fine. Anyone else at home or at work sick?
+
+Patient: Actually yeah, my daughter had the same thing last week. She got over it in a couple days.
+
+Doctor: That's very helpful. This is almost certainly a viral gastroenteritis — a stomach bug. It's going around, and the fact that your daughter just had it makes a viral cause even more likely. The vomiting tapering off after two days is a good sign.
+
+Patient: Is there anything you can give me to stop the diarrhea?
+
+Doctor: The most important thing right now is staying hydrated. Small, frequent sips of clear fluids — water, broth, Pedialyte or a sports drink. Don't try to gulp a big glass of water; your stomach will just reject it. Little sips every few minutes. As you start tolerating liquids, you can try bland foods — toast, rice, bananas, applesauce. Avoid dairy, greasy food, and caffeine until you're feeling better.
+
+Patient: What about that pink stuff, Pepto-Bismol?
+
+Doctor: You can try it for the diarrhea. Loperamide — Imodium — is another option if the diarrhea is really disruptive. But honestly, the diarrhea is your body flushing the virus out, so I usually recommend just letting it run its course unless it's really interfering with your life.
+
+Patient: Okay. When should I worry?
+
+Doctor: If you can't keep any fluids down for more than twenty-four hours, if you see blood in your stool, if you develop a high fever over 102, or if you start feeling dizzy or lightheaded when you stand up — those are all reasons to come back in or go to urgent care. Otherwise, this should resolve on its own in another two to three days.
+
+Patient: Alright. I just wanted to make sure it wasn't something worse.
+
+Doctor: Totally understandable. Rest up, focus on hydration, and you should be turning the corner soon. Feel better, Ms. Huang.
+
+Patient: Thank you.

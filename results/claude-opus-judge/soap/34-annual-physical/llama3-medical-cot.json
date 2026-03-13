@@ -1,0 +1,64 @@
+{
+  "transcript_id": "34-annual-physical",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "Multiple fabricated details: states he was 'a heavy smoker for most of his life' (he smoked ~1 pack/week for 2 years in college), weight listed as '2.6 pounds (1.2 kg)', total cholesterol stated as 252 (actual 222), HDL stated as 49 (actual 44), triglycerides stated as 175 (actual 185), fasting glucose stated as '1.04 mg/dL', claims 'no nocturia' (transcript says occasional nocturia), claims 'no sun damage noted' (transcript says sun damage was noted), and fabricates that patient noticed 'a change in his blood pressure.'",
+      "flagged_content": [
+        "He has been a heavy smoker for most of his life",
+        "his weight is 2.6 pounds (1.2 kg)",
+        "his total cholesterol is 252 mg/dL",
+        "his HDL is 49 mg/dL",
+        "his triglycerides are 175 mg/dL",
+        "his fasting glucose is 1.04 mg/dL",
+        "He has no nocturia",
+        "He has no sun damage noted",
+        "he has noticed a change in his blood pressure, which he attributes to his age"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note ignores key template instructions: social history, family history, and ROS content are dumped into wrong sections repeatedly; the Objective/Physical Examination section is entirely missing; a non-template 'Preventive Care' section is added; and the note devolves into an infinite repetition loop."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The entire physical examination is missing, the Objective section is absent, the Plan section is absent, lab results are mostly missing or incorrect, referrals are not documented, counseling on MI/stroke warning signs is missing, follow-up instructions are missing, and many ROS details are omitted or incorrect.",
+      "missed_items": [
+        "Complete physical examination findings",
+        "Plan section with all 7 assessment items",
+        "Lab results (CBC, liver enzymes, kidney function, thyroid, A1C correctly)",
+        "Referrals to GI and dermatology",
+        "Counseling on MI/stroke warning signs",
+        "Follow-up in 3 months",
+        "Sleep details and counseling",
+        "Td booster and flu vaccine administration details",
+        "ASCVD risk calculation",
+        "Dyspnea on exertion",
+        "Heartburn details",
+        "Brother age 42 healthy",
+        "Paternal aunt breast cancer",
+        "Maternal grandmother type 2 diabetes"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The note is severely malformed: no Objective section, no Physical Examination, no Vital Signs section, no Plan section, content is massively misplaced across sections, and a non-template 'Preventive Care' section is added. The note devolves into an infinite repetition loop."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note \u2014 no {{drug:...}} or {{condition:...}} syntax is present."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Extreme duplication throughout: the blood pressure sentence is repeated hundreds of times, social/family history content is duplicated across multiple sections, and preventive care bullets are repeated."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 18.7,
+      "input_tokens": 23589,
+      "output_tokens": 853
+    }
+  }
+}

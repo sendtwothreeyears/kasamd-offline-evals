@@ -1,0 +1,22 @@
+---
+id: 06
+scenario: Hyperlipidemia, statin initiation discussion
+category: Chronic disease
+density: Medium
+---
+
+So I saw James this afternoon — went over his lipid panel results with him. His total cholesterol is 258, LDL is 172, HDL is 44, and triglycerides are 210. So definitely elevated across the board. LDL is well above our target of under 130, HDL is just barely at 44 which is right at the lower threshold of acceptable, and triglycerides are above 150 which puts them in the high range.
+
+I went ahead and calculated his ten-year cardiovascular risk score. He's a 54-year-old male, blood pressure today was 134 over 82, no diabetes. His ten-year risk came out to approximately 12 percent, which puts him in that borderline to intermediate range. I explained to him that above 7.5 percent the guidelines support a conversation about statins, and above 20 percent it's a strong recommendation — so he's in that gray zone.
+
+He had concerns about statins, specifically muscle problems — his friend apparently had a bad experience. I counseled him that muscle aching occurs in about 5 to 10 percent of patients, is usually mild, and typically resolves with dose adjustment or switching agents. True rhabdomyolysis is extremely rare, less than 1 in 10,000. I also addressed liver concerns — explained that serious hepatotoxicity is very rare and that we don't even routinely monitor liver enzymes anymore. I told him statins in someone with his risk profile reduce heart attack and stroke risk by about 25 to 35 percent.
+
+If we were to start a statin, I would use atorvastatin 20 milligrams at night, moderate intensity, with a recheck of lipids in 6 to 8 weeks. If he developed muscle pain, we'd consider lowering the dose or switching to rosuvastatin.
+
+However, James expressed a preference to try lifestyle modifications first, and I agreed to a three-month trial. I counseled him on dietary changes — reducing saturated fats including red meat, cheese, butter, and fried foods, and increasing fish, nuts, olive oil, and fiber. I told him dietary changes alone might reduce LDL by 10 to 15 percent in a good scenario, which likely won't be sufficient given his LDL of 172, but it would help. I also recommended increasing physical activity to 150 minutes per week of moderate exercise — he's currently fairly sedentary, desk job during the week, golf on weekends.
+
+I also addressed his triglycerides specifically — he reports drinking a beer or two most nights with more on weekends. I counseled him that reducing alcohol and refined sugars can significantly improve triglycerides, and suggested cutting back to weekends only at minimum.
+
+He does have a family history of hyperlipidemia — his brother is on cholesterol medication.
+
+So the plan is aggressive lifestyle modifications for three months — diet, exercise, and alcohol reduction — followed by a repeat lipid panel. If we're not at goal at that point, we'll start the statin. I'm also sending him educational resources on heart-healthy eating. Follow-up in three months.

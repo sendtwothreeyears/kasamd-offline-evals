@@ -1,0 +1,59 @@
+{
+  "transcript_id": "04-dm2-routine-fu",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems section fabricates negative findings for nearly every system (constitutional, HEENT, cardiovascular, respiratory, genitourinary, musculoskeletal, psychiatric) that were never discussed in the transcript. Only GI (no nausea/diarrhea with metformin) and neurological (sensation intact) and skin (no ulcers) have any basis. The family history lists 'hypertension' which was never mentioned \u2014 the sister's condition was diabetes complications. The note also says 'Continue nutrition counseling sessions' which is not in the plan; the transcript says she completed 3 sessions.",
+      "flagged_content": [
+        "Constitutional: No fever, chills, fatigue, or weight changes reported.",
+        "HEENT: No vision, hearing, throat, or nasal symptoms reported.",
+        "Cardiovascular: No chest pain or palpitations reported.",
+        "Respiratory: No shortness of breath, cough, or wheezing reported.",
+        "Genitourinary: No urinary symptoms reported.",
+        "Musculoskeletal: No joint pain, muscle weakness, or mobility issues reported.",
+        "Psychiatric: No mood changes or sleep disturbances reported.",
+        "{{condition:hypertension}} (sister lost a toe from diabetes complications)",
+        "Continue nutrition counseling sessions."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template explicitly states to only include ROS systems that were discussed and to omit the section entirely if not mentioned, yet the note includes all systems with fabricated negatives. Template instructions in parentheses like '(Only include items that were mentioned)' and '(Only include vitals that were documented)' appear verbatim in the output. Social history includes items that were not mentioned, violating the 'only include items that were mentioned' instruction.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Missing key details: foot exam findings (skin intact, pulses good, sensation intact on monofilament testing), kidney labs (microalbumin and creatinine normal), annual eye exam with Dr. Okafor in February noted normal, nutritionist sessions details (3 sessions completed, balanced plates, less rice, more vegetables), and the sister's diabetes complication context is misrepresented.",
+      "missed_items": [
+        "Foot exam findings (skin intact, pulses good, sensation intact on monofilament testing)",
+        "Kidney labs normal (microalbumin and creatinine)",
+        "Annual eye exam in February with Dr. Okafor - normal findings",
+        "Details of nutritionist sessions (completed 3 sessions, balanced plates, less rice, more vegetables)",
+        "Gardening when weather permits (partially captured)",
+        "Sister lost a toe from diabetes complications (misrepresented as hypertension)"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template parenthetical instructions appear verbatim in the output. Vital signs are listed as 'Not documented' when the template says to only include vitals that were documented. Foot exam findings belong in the Physical Examination section but are absent there and partially in the Plan. Social history includes 'Not mentioned' items when the template says to only include items that were mentioned.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 1,
+      "rationale": "Metformin is marked twice (should be first occurrence only). 'Hypertension' is incorrectly marked as a condition entity when it was never mentioned in the transcript. 'Diabetes' in the HPI is not marked on first occurrence. The condition 'type 2 diabetes' is reasonable but the transcript only says 'diabetes.'",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.81,
+      "input_tokens": 2925,
+      "output_tokens": 931
+    }
+  }
+}

@@ -1,0 +1,100 @@
+---
+id: 16
+scenario: Influenza-like illness with positive flu test, Tamiflu discussion
+category: Acute
+density: Medium
+---
+
+Doctor: Ms. Riordan, you look pretty miserable. Tell me what's going on.
+
+Patient: I feel like I got hit by a truck. It came on so fast — yesterday morning I was fine and by the afternoon I was shivering under a blanket with a 102 fever.
+
+Doctor: And today?
+
+Patient: Still terrible. Fever's been going up and down, body aches everywhere, my head is pounding. I barely slept.
+
+Doctor: Any cough, sore throat, runny nose?
+
+Patient: Cough started this morning, dry and hacking. My throat's a little sore. Not much runny nose actually.
+
+Doctor: Any nausea or vomiting?
+
+Patient: A little nauseous but I haven't thrown up. I just have zero appetite.
+
+Doctor: Okay. Any shortness of breath or chest pain?
+
+Patient: No, just the cough. It hurts my ribs when I cough hard.
+
+Doctor: Has anyone around you been sick?
+
+Patient: Actually yes — my coworker was out all last week with the flu. And my son's school sent home a note about a flu outbreak in his class.
+
+Doctor: That's helpful to know. Let me check you over. Temperature right now is 101.8. Heart rate's a little up at 98, which isn't unusual with a fever. Blood pressure and oxygen are fine. Throat is red but no pus on the tonsils. Ears are clear. Lungs — I hear a few scattered rhonchi but no crackles or wheezing. No sinus tenderness.
+
+Patient: Is it the flu?
+
+Doctor: Given the sudden onset, the high fever, body aches, the known exposures — I'm highly suspicious. Let me do a rapid flu test to confirm. I'm going to swab your nose — it's not the most pleasant thing.
+
+Patient: Oh, I know. I've had it before.
+
+Doctor: Alright, hold still... okay, that's done. We'll have results in about fifteen minutes. While we wait — are you up to date on your flu vaccine?
+
+Patient: I didn't get it this year. I kept meaning to and just never got around to it.
+
+Doctor: That's unfortunately common. The vaccine isn't perfect but it does reduce severity. Something to think about for next year.
+
+Patient: Believe me, I will.
+
+Doctor: Okay, results are in — it's positive for influenza A.
+
+Patient: Great. So what now?
+
+Doctor: So we have an antiviral medication called oseltamivir — Tamiflu is the brand name. It works best when started within the first 48 hours of symptom onset. You said symptoms started yesterday afternoon?
+
+Patient: Yeah, around 2 or 3 PM. So about 24 hours ago.
+
+Doctor: Good, we're well within the window. Tamiflu can shorten the illness by about a day and reduce the severity of symptoms. It's a five-day course — 75 milligrams twice a day.
+
+Patient: Does it have side effects?
+
+Doctor: The most common one is nausea. Take it with food and it's usually manageable. Some people get headaches. Rarely, vomiting. Given how you're feeling, I think the benefit outweighs the risk.
+
+Patient: I'll take anything at this point. Is it an antibiotic?
+
+Doctor: No, it's an antiviral — works specifically against the flu virus. Antibiotics wouldn't help here since this is viral. Now, beyond the Tamiflu, you need rest. I know that's not exciting advice, but your body needs it.
+
+Patient: I was supposed to go back to work tomorrow.
+
+Doctor: Not happening. Plan on being out the rest of this week. You're contagious for at least another three to five days, and even after the fever breaks you'll feel wiped out for a while. The CDC recommends staying home until you've been fever-free for at least 24 hours without using fever-reducing medication.
+
+Patient: My boss isn't going to love that.
+
+Doctor: Your coworkers will love it even less if you go in and give it to all of them. Push fluids — water, broth, electrolyte drinks. Tylenol or ibuprofen for the fever and body aches. Alternate them if one isn't enough — Tylenol every six hours, ibuprofen every eight, staggered.
+
+Patient: What about my kids? Should I worry about them?
+
+Doctor: How old are they?
+
+Patient: Seven and four.
+
+Doctor: Wash your hands constantly, try to keep some distance if you can — I know that's hard with young kids. If either of them develops sudden fever and body aches, bring them in quickly so we can test and potentially start treatment early. The four-year-old especially — younger kids can get hit harder.
+
+Patient: Should they take Tamiflu preventively?
+
+Doctor: We don't routinely do prophylactic Tamiflu for healthy household contacts, but if either of them is immunocompromised or has asthma or other risk factors, we'd consider it. Are they generally healthy?
+
+Patient: Yeah, both healthy. My daughter has mild eczema but that's it.
+
+Doctor: Then just watch and bring them in if they spike a fever. Okay, one more thing — reasons to come back or go to the ER. If your fever goes above 104 and isn't responding to medication, if you develop significant shortness of breath, chest pain, you're unable to keep fluids down, or you seem to be getting better and then suddenly get worse — that last one could mean a secondary bacterial infection like pneumonia.
+
+Patient: How will I know the difference between regular bad flu and something worse?
+
+Doctor: Trust your gut. If it feels like it's getting better each day, even slowly, that's normal flu course. If day four or five you suddenly feel worse again, or if at any point you feel like you genuinely can't breathe well, that's the red flag.
+
+Patient: Okay. I think I've got it. Tamiflu, rest, fluids, fever meds, and basically quarantine myself.
+
+Doctor: That about covers it. I'm sending the Tamiflu to your pharmacy now. Start it as soon as you pick it up — timing matters. Feel better, Ms. Riordan.
+
+Patient: Thank you. I'll be getting that flu shot next year, I promise.
+
+Doctor: I'll hold you to it. Take care.

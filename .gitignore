@@ -1,0 +1,17 @@
+# Model weights (too large to commit — run ./download-models.sh)
+models/
+
+# Gemini Pro judge scores (not yet generated)
+results/gemini-pro-judge/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Environment & secrets
+.env
+!.env.example
+
+# OS
+.DS_Store

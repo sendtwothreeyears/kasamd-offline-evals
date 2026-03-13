@@ -1,0 +1,60 @@
+{
+  "transcript_id": "26-gout-flare",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The note fabricates 'Follow-up telephonically in 72 hours unless improved or worsened' \u2014 the transcript says to call if no improvement in 48 hours or if things get worse, not a telephonic follow-up in 72 hours. The full ROS with negatives across all systems was not discussed in the transcript. The Medications section lists colchicine and prednisone as current medications, but these were newly prescribed, not prior medications.",
+      "flagged_content": [
+        "Follow-up telephonically in 72 hours unless improved or worsened",
+        "Constitutional: No fever, chills, fatigue, or weight changes reported.",
+        "HEENT: No vision, hearing, throat, or nasal symptoms reported.",
+        "Cardiovascular: No chest pain, palpitations, or edema reported.",
+        "Respiratory: No shortness of breath, cough, or wheezing reported.",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain reported.",
+        "Genitourinary: No urinary symptoms or menstrual history reported.",
+        "Neurological: No headache, dizziness, numbness, or weakness reported.",
+        "Psychiatric: No mood, anxiety, or sleep issues reported."
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template instruction for ROS says 'If not mentioned, omit this section entirely' but the note includes a full ROS with fabricated negatives. The template parenthetical instruction text '(Only include systems that were discussed. If not mentioned, omit this section entirely)' is literally included in the output. Social history omits alcohol details that were discussed. Massive repetitive text generation failure."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Missing colchicine dosing details (1.2mg then 0.6mg regimen), prednisone dosing (40mg daily for 5 days), alcohol intake (4-5 beers/week), dietary counseling specifics (red meat, organ meats, shellfish, beer), ice/elevation/footwear advice, discussion of joint aspiration being declined, side effect counseling, discussion about not starting allopurinol during acute flare, uric acid target of <6 mg/dL, and confirmation of no diabetes/ulcers/kidney problems.",
+      "missed_items": [
+        "Colchicine dosing details (1.2mg followed by 0.6mg)",
+        "Prednisone 40mg daily for 5 days",
+        "Alcohol intake 4-5 beers per week",
+        "Dietary counseling specifics (red meat, organ meats, shellfish, beer)",
+        "Ice 20 on/20 off, elevation, loose shoes/sandals",
+        "Joint aspiration discussed and declined",
+        "Side effect counseling (diarrhea, blood sugar, sleep)",
+        "No diabetes/ulcers/kidney problems confirmed",
+        "Allopurinol not started during acute flare rationale",
+        "Uric acid target <6 mg/dL"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template parenthetical instruction text is included verbatim in the ROS section. Social History includes items marked 'Not discussed' for tobacco, recreational drugs, and occupation when the template says to only include items that were mentioned. Alcohol was discussed but listed as 'Not discussed'."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax used for any medications or conditions."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Massive duplication of 'Follow-up telephonically in 72 hours unless improved or worsened' repeated hundreds of times in the Plan section."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 20.07,
+      "input_tokens": 22548,
+      "output_tokens": 947
+    }
+  }
+}

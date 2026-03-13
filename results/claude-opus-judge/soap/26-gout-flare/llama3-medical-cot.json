@@ -1,0 +1,64 @@
+{
+  "transcript_id": "26-gout-flare",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The note contains numerous fabricated details: specific vital signs (BP 150/90, HR 100, Temp 98.6, RR 20, SpO2 98%) were never stated in the transcript; 'sharp and stabbing' pain quality was not described; 'palpable mass' is fabricated; 'He has been taking colchicine for acute gouty arthritis' is false (he was never on daily medications); 'Urine uric acid level' instead of serum; allopurinol dosing of '1 mg daily then 0.5 mg daily' is fabricated; 'pain worsening over the past 24 hours' contradicts the 12-hour timeline; tobacco use is fabricated.",
+      "flagged_content": [
+        "BP: 150/90",
+        "HR: 100/min",
+        "Temp: 98.6\u00b0F",
+        "RR: 20/min",
+        "SpO2: 98%",
+        "sharp and stabbing",
+        "there is a palpable mass",
+        "He has been taking colchicine for acute gouty arthritis",
+        "Urine uric acid level",
+        "Start at 1 mg daily, then gradually increase to 0.5 mg daily",
+        "Tobacco: Tobacco use",
+        "pain had been worsening over the past 24 hours",
+        "The patient is able to bear weight on the foot"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note includes template placeholder text verbatim in the Review of Systems (e.g., 'Fever, chills, fatigue, weight changes' as placeholder content rather than actual findings). The instruction to omit undiscussed systems was ignored. Multiple sections contain fabricated content rather than 'Not documented'."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing or misrepresented: no mention of the discussion about joint aspiration being declined, dietary counseling details (red meat, organ meats, shellfish, beer specifics like 4-5 beers/week), ice/elevation/loose shoes advice, the 48-hour callback instruction, confirmation of no diabetes/ulcers/kidney problems, side effect counseling, and the rationale for not starting allopurinol during acute flare.",
+      "missed_items": [
+        "Joint aspiration discussion and patient declining",
+        "Dietary counseling details (red meat, organ meats, shellfish, beer as double hit)",
+        "Beer consumption 4-5 per week",
+        "Ice 20 on/20 off, elevation, loose shoes/sandals",
+        "Call if no improvement in 48 hours",
+        "Confirmed no diabetes, stomach ulcers, or kidney problems",
+        "Side effect counseling for colchicine and prednisone",
+        "Rationale for delaying allopurinol (can worsen acute flare)",
+        "Hydration advice",
+        "Colchicine dosing detail: 0.6 mg once to twice daily until flare resolves"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Review of Systems section contains raw template placeholders instead of actual content. The Assessment section is empty with no diagnosis listed. Past Medical History, Medications, Allergies, and Family History sections are improperly structured or missing. Social History is poorly formatted with incorrect content."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Vital signs are duplicated \u2014 listed individually and then repeated in a combined 'Vital Signs' line. The history of gout and colchicine use is repeated in both Chief Complaint and HPI."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.79,
+      "input_tokens": 3848,
+      "output_tokens": 938
+    }
+  }
+}

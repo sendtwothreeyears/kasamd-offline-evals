@@ -1,0 +1,50 @@
+{
+  "transcript_id": "17-strep-pharyngitis",
+  "template": "soap",
+  "model": "qwen3.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The generated note is entirely a thinking/planning process and never produces an actual clinical note. There is no final output to evaluate for hallucination, but the lack of any completed note means it fails fundamentally.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The output is entirely a thinking process with massively repeated loops of self-checking. No actual clinical note was produced. The instruction to return ONLY the completed note was completely violated."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "No clinical note was generated. All transcript content is missing from any final output.",
+      "missed_items": [
+        "chief complaint",
+        "HPI details",
+        "review of systems",
+        "physical exam findings",
+        "rapid strep test result",
+        "amoxicillin prescription",
+        "patient education",
+        "return precautions",
+        "contagion counseling",
+        "allergy information"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "No structured clinical note was produced. The output is entirely unstructured thinking/planning text."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was applied in any final output since no clinical note was generated."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The thinking process contains extreme repetitive duplication, with the same 'Wait, I need to check' lines repeated hundreds of times."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 8.6,
+      "input_tokens": 19248,
+      "output_tokens": 392
+    }
+  }
+}

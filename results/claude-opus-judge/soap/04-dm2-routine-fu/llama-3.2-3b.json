@@ -1,0 +1,50 @@
+{
+  "transcript_id": "04-dm2-routine-fu",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note states 'type 2 diabetes' in Past Medical History, but the transcript only says 'diabetes' without specifying type 2. This is a minor embellishment. All other content is supported by the transcript.",
+      "flagged_content": [
+        "type 2 diabetes"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to omit the Review of Systems section entirely if not discussed, but the note lists all ROS systems as 'Not documented.' The template also says to only include Social History items that were mentioned, but all items are listed as 'Not documented.' The Subjective header appears as 'Not documented' which is incorrect \u2014 it should be a section header containing Chief Complaint and HPI. Allergies should say 'No known drug allergies' or 'Not documented' per template \u2014 it says 'Not documented' which is acceptable but the GI ROS could have noted denial of nausea/diarrhea."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important items from the transcript are missing from the note.",
+      "missed_items": [
+        "Annual eye exam in February with Dr. Okafor showing normal results",
+        "Kidney labs (microalbumin and creatinine) normal",
+        "Completed three sessions with nutritionist",
+        "Lifestyle changes: less rice, more vegetables, more balanced plates",
+        "Exercise: water aerobics twice a week at the Y, gardens regularly",
+        "Counseling on daily foot checks, checking between toes, well-fitting shoes, avoiding walking barefoot",
+        "Family history: sister lost a toe from diabetes complications",
+        "Follow-up in three months"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The 'Subjective' header is misused as 'Not documented' instead of being a section header. Chief Complaint is placed outside the Subjective section. ROS is fully listed when it should be omitted. Foot exam findings are placed under 'General' rather than a dedicated extremities/foot exam section. Social History lists all sub-items despite instructions to only include mentioned items."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No sections or content were duplicated in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 11.97,
+      "input_tokens": 2833,
+      "output_tokens": 642
+    }
+  }
+}

@@ -1,0 +1,150 @@
+---
+id: 32
+scenario: Adult ADHD evaluation
+category: Mental health
+density: Dense
+---
+
+Doctor: Good morning, Marcus. I see from the intake form you're here to talk about attention and focus concerns?
+
+Patient: Yeah, morning. So, this is something I've been thinking about for a long time and I finally decided to actually come in. I think I might have ADHD.
+
+Doctor: Okay, I'm glad you came in. Let's talk through it. What's been going on that makes you think that?
+
+Patient: So at work — I'm a project manager at a tech company — I just cannot stay on task. Like, I'll be in a meeting and realize I zoned out for the last five minutes and have no idea what anyone said. I have to read emails three or four times before they sink in. My desk is a disaster. I miss deadlines that I knew about weeks in advance.
+
+Doctor: How long has this been going on at work?
+
+Patient: Honestly, it's been a problem everywhere I've worked. I've been at this job two years and it's the same pattern as the last three jobs. But I think it's gotten worse lately because I got promoted last year and there's more on my plate.
+
+Doctor: And going back further — what about school? Grade school, high school, college?
+
+Patient: Oh man, school was rough. I mean, I got through it, but I was always the kid who forgot his homework at home or lost the assignment sheet. My mom used to say I'd lose my head if it wasn't attached. Teachers always wrote on my report cards that I was smart but needed to apply myself. Classic, right?
+
+Doctor: It is a pattern I hear a lot, actually. Did you ever get evaluated as a kid?
+
+Patient: No. My mom brought it up once to my pediatrician and he said I was just being a boy. This was the early nineties, so... different time I guess.
+
+Doctor: Right. And what about college?
+
+Patient: I almost didn't finish. I changed my major three times, took six years to graduate. Not because the material was hard, but because I could not make myself sit down and do papers or study. I'd wait until the absolute last minute and then cram. Somehow I'd pull a B minus and scrape by.
+
+Doctor: How about currently — walk me through a typical day. What does the disorganization and inattention actually look like day to day?
+
+Patient: Okay, so I'll get to work, sit down, open my laptop, and immediately get pulled in ten different directions. I'll start on one task, then remember something else, switch to that, then check Slack, then realize I forgot to respond to an email from yesterday. By the end of the day I feel like I was busy the entire time but accomplished almost nothing. My wife gets frustrated because I forget things she tells me. Like she'll ask me to pick up groceries and I'll come home empty-handed because it just... left my brain.
+
+Doctor: Does your wife — what's her name?
+
+Patient: Angela.
+
+Doctor: Does Angela notice other things?
+
+Patient: She says I interrupt her constantly. Which I know I do, and I feel terrible about it. It's like if I don't say the thought right now, it's gone. She also gets annoyed that I can't sit through a movie. I'm always fidgeting or getting up to get a snack or checking my phone.
+
+Doctor: That's helpful context. Now I want to ask about some other things that can look like ADHD but might have different causes. How's your mood been generally?
+
+Patient: My mood is... okay? I mean, I get frustrated with myself a lot. Sometimes I feel down because I feel like I'm not living up to my potential. But I wouldn't say I'm depressed. I still enjoy things. I still get excited about stuff.
+
+Doctor: Do you find yourself worrying a lot? Racing thoughts, feeling keyed up or on edge?
+
+Patient: I do worry, but it's usually about specific things — like did I forget to do something, am I going to miss that deadline. I don't think I have generalized anxiety or anything. It's more like anxiety that comes from dropping balls all the time.
+
+Doctor: That makes sense — the anxiety can be secondary to the ADHD rather than the primary issue. How about sleep? How are you sleeping?
+
+Patient: Not great, honestly. I have trouble turning my brain off at night. I'll lay there thinking about everything I didn't get done. I usually fall asleep around midnight and my alarm's at six-thirty. On weekends I'll sleep until nine or ten if Angela lets me.
+
+Doctor: So roughly six, six and a half hours on weeknights. That's not a lot. Have you ever been evaluated for sleep apnea? Do you snore?
+
+Patient: Angela says I snore sometimes but she's never noticed me stop breathing or anything. I don't wake up gasping.
+
+Doctor: Okay. And I have to ask about substance use — any alcohol, marijuana, other drugs?
+
+Patient: I drink socially. Maybe two or three beers on a weekend. I tried marijuana in college but I didn't really like it. No other drugs, never.
+
+Doctor: Caffeine?
+
+Patient: Oh. Yeah, a lot. Like three or four cups of coffee a day. Sometimes an energy drink in the afternoon to get through.
+
+Doctor: That's worth noting. The caffeine might be a form of self-medication, which is actually pretty common with ADHD. How much is a lot — like sixteen-ounce cups?
+
+Patient: More like the big mugs, so yeah probably sixteen ounces each.
+
+Doctor: Okay. Any history of head injuries? Concussions?
+
+Patient: No, nothing like that.
+
+Doctor: Medical conditions, medications?
+
+Patient: I take Prilosec for acid reflux. That's it. No other medical stuff.
+
+Doctor: Family history — anyone in your family with ADHD, learning disabilities, or mental health conditions?
+
+Patient: My younger brother was diagnosed with ADHD as a kid. He was on Ritalin in middle school. My mom has anxiety. My dad — I honestly don't know much about his side, my parents divorced when I was young and I didn't see him much.
+
+Doctor: Okay. Now, I had you fill out the Adult ADHD Self-Report Scale in the waiting room. Let me pull up your scores. So your Part A screening score was five out of six, which is above the clinical threshold. Your inattentive symptoms scored quite high — you endorsed eight of nine inattentive criteria at the "often" or "very often" level. Hyperactive-impulsive was a bit lower — you endorsed four of nine, mainly the fidgeting, difficulty with leisure activities, talking excessively, and interrupting.
+
+Patient: So what does that mean?
+
+Doctor: It means your symptoms are very consistent with ADHD, predominantly inattentive presentation, with some hyperactive-impulsive features. Combined with what you've told me about childhood symptoms, the persistence across settings — work, home, school — and the functional impairment, I'm quite confident this is ADHD.
+
+Patient: Wow. I mean, I thought so, but hearing you say it is... I don't know. Kind of a relief actually?
+
+Doctor: A lot of adults who get diagnosed later in life say that. It reframes a lot of experiences. Now, I do want to make sure we're not missing anything. Your sleep is suboptimal, and sleep deprivation can mimic ADHD. But given your history going back to childhood, I don't think sleep is the primary driver. I'd still like to address it though.
+
+Patient: Yeah, that makes sense.
+
+Doctor: Let's talk treatment. There are a few approaches and they work best together. First, behavioral strategies — things like external organizational systems, timers, breaking tasks into smaller chunks, reducing distractions. Have you tried any of that?
+
+Patient: I've tried apps and planners and stuff but I never stick with them.
+
+Doctor: That's the ADHD tax, right? The thing that would help requires the executive function you don't have. That's actually where medication can really help — it gives you enough focus to actually implement the strategies. So let's talk medication options. There are two main categories: stimulants and non-stimulants.
+
+Patient: Okay.
+
+Doctor: Stimulants are the first-line treatment. They're the most effective and they work fast — you can tell within the first day or two if they're helping. The two types are methylphenidate-based, like Ritalin or Concerta, and amphetamine-based, like Adderall or Vyvanse. About seventy percent of people respond well to the first stimulant they try, and if you include people who respond to the second type, it's up around eighty to ninety percent.
+
+Patient: What about side effects? I've heard they can make you feel like a zombie.
+
+Doctor: The zombie thing usually means the dose is too high. Common side effects are decreased appetite, dry mouth, maybe some trouble sleeping — which is why we dose it in the morning. Increased heart rate and blood pressure are possible, which is why I want to check yours today. We start low and titrate up. If one type doesn't agree with you, we switch to the other.
+
+Patient: And the non-stimulant option?
+
+Doctor: The main ones are atomoxetine, which is Strattera, and some off-label options like bupropion or guanfacine. They're less effective on average but some people do well on them. They take longer to kick in — weeks rather than days. I usually reserve them for people who can't tolerate stimulants or have specific contraindications.
+
+Patient: I don't have a history of addiction or anything. I think I'd want to try what works best.
+
+Doctor: Then I'd recommend starting with a stimulant. Given your profile — mostly inattentive, some sleep difficulties — I'm going to suggest we start with Vyvanse. It's a long-acting amphetamine prodrug, so it has a smooth onset and offset and less abuse potential than immediate-release options. We'll start at twenty milligrams in the morning and see how you do.
+
+Patient: Okay. How long before I know if it's working?
+
+Doctor: You should notice something within the first few days. But I want to see you back in three to four weeks to check in. We'll assess how the dose is working, side effects, your blood pressure, heart rate. We may need to adjust the dose up.
+
+Patient: Got it.
+
+Doctor: Let me get your vitals now. Your blood pressure today is one-twenty-four over seventy-eight, heart rate seventy-two. That's normal, which is great. BMI is twenty-six point three. Height five-eleven, weight one-eighty-four. Let me listen to your heart real quick. Heart sounds normal, regular rate and rhythm, no murmurs.
+
+Patient: Good.
+
+Doctor: A couple more things. I'd recommend looking into whether your insurance covers any ADHD coaching or therapy — specifically cognitive behavioral therapy adapted for ADHD. There's a lot of good evidence behind it and it pairs really well with medication.
+
+Patient: I'll look into it.
+
+Doctor: Also — the caffeine. Once you're on medication you may find you need a lot less. I'd suggest cutting back gradually, especially the afternoon energy drinks. The combination of a stimulant and heavy caffeine can make you jittery and increase your heart rate.
+
+Patient: Yeah, that makes sense. Should I just quit cold turkey?
+
+Doctor: No, taper down. Drop one cup at a time over a week or two. Caffeine withdrawal headaches are real.
+
+Patient: Ha, I know all about those.
+
+Doctor: Last thing — the sleep. Try to get to bed earlier, aim for seven hours minimum. The medication shouldn't affect your sleep if you take it first thing in the morning, but let me know if it does. If it does, we'll troubleshoot.
+
+Patient: Will do.
+
+Doctor: So to recap — Vyvanse twenty milligrams every morning, cut back on caffeine gradually, work on sleep hygiene, look into CBT for ADHD. Follow up in four weeks. And Marcus, I want you to know — getting this diagnosed and treated can be really life-changing for adults. A lot of people feel like they finally have the tools they needed all along.
+
+Patient: I appreciate that. I really do. This has been... honestly I've been anxious about this appointment for weeks but I feel a lot better now.
+
+Doctor: Glad to hear it. We'll get you sorted out. See you in four weeks.
+
+Patient: Thanks, doc. See you then.

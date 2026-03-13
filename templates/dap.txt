@@ -1,0 +1,18 @@
+# DAP Note
+Date: [Date of session]
+Session Type: [Individual/Family/Group]
+Duration: [Minutes]
+
+## Data
+[Objective observations: appearance, behavior, mood, affect, speech, thought process, thought content, attention, memory, insight, judgment]
+
+[Subjective information: client's self-report, presenting concerns, symptoms, stressors, progress on goals]
+
+## Assessment
+[Clinical interpretation of data: progress toward treatment goals, changes in symptoms, clinical impressions, response to interventions, risk assessment]
+
+## Plan
+[Specific interventions used in session]
+[Homework or between-session tasks]
+[Modifications to treatment plan if needed]
+[Next appointment scheduled]

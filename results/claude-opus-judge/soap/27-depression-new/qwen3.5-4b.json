@@ -1,0 +1,51 @@
+{
+  "transcript_id": "27-depression-new",
+  "template": "soap",
+  "model": "qwen3.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The generated note contains only a thinking/planning process and no actual clinical note output. There is no clinical content to evaluate, but the failure to produce a note is a fundamental problem.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The output is entirely a thinking process with no actual clinical note generated. The instructions required a structured clinical note, not internal reasoning. This is a complete failure to follow instructions."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "No clinical note was produced. All transcript content is missing from the output.",
+      "missed_items": [
+        "Chief complaint",
+        "HPI details",
+        "PHQ-9 score",
+        "Major depressive disorder diagnosis",
+        "Sertraline prescription",
+        "CBT referral",
+        "Safety screening",
+        "Side effect counseling",
+        "Follow-up plan",
+        "Exercise counseling",
+        "Safety planning"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "No structured clinical note was produced. The output is entirely unstructured internal reasoning/thinking process with no template sections."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted as no clinical note was generated."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The thinking process contains an extreme amount of duplicated content \u2014 the same line 'Wait, I'll check the instruction again: Only include items that were mentioned / Okay, I will only include Occupation.' is repeated hundreds of times."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 8.93,
+      "input_tokens": 20342,
+      "output_tokens": 411
+    }
+  }
+}

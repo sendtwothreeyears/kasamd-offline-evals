@@ -1,0 +1,44 @@
+{
+  "transcript_id": "19-uti",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems lists 'Constitutional: Fatigue' which was never mentioned in the transcript. Pinkish discoloration in urine is listed under 'Skin' which is a mischaracterization. The transcript never mentions fatigue.",
+      "flagged_content": [
+        "Constitutional: Fatigue",
+        "Skin: Pinkish discoloration in urine"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include Social History items that were mentioned, but the note lists all items as 'Not documented.' The template says to use 'Not documented' for certain sections but the note awkwardly appends '(Not documented)' after content in Past Medical History and Medications. The template says to omit ROS systems not discussed, but fabricated systems were included."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured including symptoms, UA results, treatment, counseling, and return precautions. The dipstick results (positive leukocyte esterase, positive nitrites, trace blood) are mentioned only implicitly through the culture being sent but the specific dipstick findings are missing from the note.",
+      "missed_items": [
+        "Dipstick results: positive leukocyte esterase, positive nitrites, trace blood"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Chief Complaint is not properly formatted as a separate bolded subsection under Subjective. Social History includes all items marked 'Not documented' instead of being omitted per instructions. The Medications section conflates the newly prescribed medication with current medications. Past Medical History awkwardly includes '(Not documented)' after actual content."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. There are no {{drug:...}} or {{condition:...}} tags anywhere in the note despite multiple drugs (nitrofurantoin/Macrobid) and conditions (UTI) being mentioned."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or full note content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 11.52,
+      "input_tokens": 2761,
+      "output_tokens": 555
+    }
+  }
+}

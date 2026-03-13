@@ -1,0 +1,49 @@
+{
+  "transcript_id": "01-htn-new-dx",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The ROS includes 'Reports no fever or chills' which was not discussed in the transcript \u2014 this is a minor fabrication. 'Reports elevated blood pressure' in cardiovascular ROS is also not something the patient reported subjectively; it was found on exam. The note says BP was taken on 'right arm' and 'left arm' specifically, but the transcript only says 'other arm' without specifying which was first. 'Alert and oriented' is a standard clinical default.",
+      "flagged_content": [
+        "Constitutional: Reports no fever or chills.",
+        "Cardiovascular: Reports elevated blood pressure.",
+        "162/98 (right arm), 158/96 (left arm)"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed, but constitutional and cardiovascular were not discussed as ROS items. The template says to include only vitals that were documented, but HR, Temp, RR, SpO2 are listed as 'Not documented' instead of being omitted. Social History should only include items mentioned, but it's listed as 'Not documented' instead of being omitted. Allergies should say 'No known drug allergies' or 'Not documented' per template \u2014 it says 'Not documented' which is acceptable but the template parenthetical instructions about what to state were not fully followed.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Missing important details: patient hasn't seen a doctor in 4-5 years, no prior history of high blood pressure, the counseling that elevated BP could be contributing to headaches (partially captured in assessment but not as counseling), and patient understanding/agreement with the plan.",
+      "missed_items": [
+        "Patient hasn't seen a doctor in 4-5 years",
+        "Patient was not aware of any prior history of high blood pressure",
+        "Patient understood the plan and was agreeable",
+        "Counseling that elevated blood pressure could be contributing to headaches (as patient education)"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "Generally follows the template structure, but includes vitals that were not documented (HR, Temp, RR, SpO2 listed as 'Not documented') instead of omitting them per template instructions, and includes ROS systems not discussed in the transcript."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Medications (acetaminophen, ibuprofen) and conditions (elevated blood pressure/hypertension, headache) were not marked with {{drug:...}} or {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.4,
+      "input_tokens": 2556,
+      "output_tokens": 697
+    }
+  }
+}

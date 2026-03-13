@@ -1,0 +1,14 @@
+{
+  "transcript_id": "17-strep-pharyngitis",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nSore throat\n\n**History of Present Illness**\nPatient presented complaining of a sore throat that started yesterday. Patient reports pain upon swallowing and speaking, describing it as general pain. Patient denies cough or runny nose. Patient reports having a fever last night, measuring 101 degrees Fahrenheit, and took Tylenol for it.\n\n**Review of Systems**\nConstitutional: [Fever]\nHEENT: [Throat pain]\nCardiovascular: [N/A]\nRespiratory: [N/A]\nGastrointestinal: [N/A]\nGenitourinary: [N/A]\nMusculoskeletal: [N/A]\nNeurological: [N/A]\nPsychiatric: [N/A]\nSkin: [N/A]\n\n**Past Medical History**\n[N/A]\n\n**Medications**\n[Tylenol]\n\n**Allergies**\n[N/A]\n\n**Social History**\nTobacco: [N/A]\nAlcohol: [N/A]\nRecreational drugs: [N/A]\nOccupation: [N/A]\n\n**Family History**\n[N/A]\n\n**Objective**\n**Physical Examination**\n**Vital Signs:**\nBP: [N/A]\nHR: [N/A]\nTemp: [N/A]\nRR: [N/A]\nSpO2: [N/A]\nGeneral: [N/A]\n(Physical examination not documented)\n\n**Assessment**\n[Streptococcal pharyngitis]\n\n**Plan**\n1. Prescribe amoxicillin 500 mg three times a day for ten days.\n2. Advise patient to continue Tylenol or ibuprofen for pain and fever.\n3. Recommend warm tea or cold things like popsicles for throat comfort.\n4. Advise patient to stay home from work tomorrow.\n5. Advise patient to return if fever persists after 48 hours of starting amoxicillin or if difficulty breathing or trouble swallowing liquids develops.\n6. Prescription sent to pharmacy.",
+  "metadata": {
+    "inference_time_s": 8.73,
+    "prompt_tokens": 1484,
+    "tokens_generated": 454,
+    "prompt_tps": 292.0,
+    "tokens_per_sec": 52.0,
+    "peak_memory_gb": 3.29
+  }
+}

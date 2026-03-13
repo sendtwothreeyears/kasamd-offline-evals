@@ -1,0 +1,50 @@
+{
+  "transcript_id": "15-uri-viral",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note states 'Patient appears to be in mild discomfort' under General, which is not supported by the transcript. The transcript does not describe the patient's general appearance. This is a minor embellishment beyond standard clinical defaults.",
+      "flagged_content": [
+        "Patient appears to be in mild discomfort."
+      ]
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The template instructs to state 'No known drug allergies' or 'Not documented' for allergies, and the note says 'Not documented' which is acceptable. However, the template says to only include vitals that were documented, yet the note lists BP, HR, RR, SpO2 as 'Not documented' instead of omitting them. Social History should have been omitted or handled differently per template instructions (only include items mentioned)."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "The note misses several important details from the transcript: the physical exam findings for throat (pink but no exudates), ears (clear bilaterally), lungs (clear bilaterally), the mention that other vitals were normal, the discussion about antibiotics (wife suggested them, doctor explained why they aren't appropriate), and the expected course of 7-10 days.",
+      "missed_items": [
+        "Throat was a little pink but no exudates",
+        "Ears were clear bilaterally",
+        "Lungs were clear on both sides",
+        "Other vitals were normal",
+        "Patient asked about antibiotics / wife suggested antibiotics",
+        "Doctor explained antibiotics are not helpful for viral illness and can cause side effects",
+        "Expected course of 7-10 days",
+        "Low-grade fever on Monday (99.1) mentioned in HPI but onset/duration of cold symptoms not well integrated"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure generally well, but lists undocumented vitals instead of omitting them, and Social History is listed as 'Not documented' rather than being omitted per template instructions."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Medications like pseudoephedrine, Flonase, dextromethorphan and the condition 'viral upper respiratory infection' should have been marked with {{drug:...}} and {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 11.66,
+      "input_tokens": 2605,
+      "output_tokens": 626
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "transcript_id": "27-depression-new",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The note fabricates vital signs (BP: 130/80, HR: 80, Temp: 98.6, RR: 20, SpO2: 98%) that are entirely absent from the transcript. It also states 'Tobacco: None, Alcohol: None, Recreational drugs: None' which were never discussed. The statement about 'cognitive restructuring and behavioral activation' as 'two main approaches of CBT' was not in the transcript.",
+      "flagged_content": [
+        "BP: 130/80",
+        "HR: 80",
+        "Temp: 98.6",
+        "RR: 20",
+        "SpO2: 98%",
+        "Tobacco: None",
+        "Alcohol: None",
+        "Recreational drugs: None",
+        "cognitive restructuring and behavioral activation"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note includes template instructions verbatim in the Review of Systems section (e.g., 'Fever, chills, fatigue, weight changes', 'Vision, hearing, throat, nasal symptoms', etc.), which is a major instruction-following failure. The template explicitly states to only include systems that were discussed and to omit the section if not mentioned. Fabricated vitals instead of stating 'not documented'.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "The note misses several important details from the transcript including: passive suicidal ideation and safety screening, PHQ-9 score of 18, safety planning and 988 Lifeline instructions, early morning awakening details, roommate's role in prompting the visit, SSRI side effect counseling details, duration of treatment discussion (6-12 months), the referral to behavioral health network, and the analogy about high blood pressure.",
+      "missed_items": [
+        "Passive suicidal ideation and safety screening details",
+        "PHQ-9 score of 18/27",
+        "Safety planning including 988 Lifeline",
+        "Early morning awakening at 3-4 AM with racing mind",
+        "Roommate's concern prompting the visit",
+        "Detailed SSRI side effect counseling (nausea, headache, jitteriness, sexual side effects)",
+        "Duration of treatment recommendation (6-12 months after remission)",
+        "Referral to behavioral health network with virtual visit option",
+        "4-6 weeks to reach full effect",
+        "8-pound weight loss specified",
+        "Patient's ambivalence about medication and the high blood pressure analogy"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The Review of Systems section is completely garbled with template placeholder text left in and misaligned headers. There are duplicate Plan sections and an extra 'Interventions' section not in the template. Past Medical History, Medications, and Allergies sections are malformed. The overall structure is severely broken.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. There are no {{drug:...}} or {{condition:...}} tags for sertraline, major depressive disorder, or any other entities.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The Plan section is duplicated, and there is an additional 'Interventions' section that largely repeats the same content about sertraline, physical activity, and CBT."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.41,
+      "input_tokens": 3802,
+      "output_tokens": 853
+    }
+  }
+}

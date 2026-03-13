@@ -1,0 +1,58 @@
+{
+  "transcript_id": "27-depression-new",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The HPI states 'she experiences increased anxiety during the first week or two after starting sertraline,' which conflates a counseled potential side effect with an actual reported symptom. This is a fabricated detail about the patient's current experience. The 'Not documented' paragraph at the end implies certain things were not documented when they actually were discussed in the transcript.",
+      "flagged_content": [
+        "she experiences increased anxiety during the first week or two after starting sertraline"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit unmentioned ones, but the note includes multiple systems with 'No specific symptoms mentioned.' The final 'Not documented' paragraph is confusing and not part of the template structure. Template parenthetical instructions should not appear in output.",
+      "missed_items": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Multiple important details from the transcript are missing or inadequately captured.",
+      "missed_items": [
+        "PHQ-9 score of 18/27",
+        "Detailed description of onset (crept up, thought she was just tired)",
+        "Specific examples of anhedonia (cooking, reading, going out with friends)",
+        "Roommate's concern prompting the visit (partially captured but not in HPI)",
+        "Detailed side effect counseling (nausea, headache, sexual side effects)",
+        "Duration of treatment discussion (6-12 months after remission)",
+        "4-6 weeks to reach full effect",
+        "Exercise counseling (20-minute walk, antidepressant effects)",
+        "Safety planning details (call clinic, ER, 988 Lifeline, save 988 in phone)",
+        "Patient's ambivalence about medication and the high blood pressure analogy",
+        "Patient's decision to try both medication and therapy",
+        "Virtual visit availability for therapy",
+        "Denied plan or intent for suicidal ideation",
+        "Concentration issues at work (mistakes, forgot meeting, manager concern)"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Vital Signs section is placed under Objective but after the Physical Examination line rather than before General, and the ROS includes systems that should have been omitted per template instructions. The final 'Not documented' paragraph does not belong to any template section.",
+      "missed_items": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Neither {{drug:...}} nor {{condition:...}} syntax was used anywhere in the note."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.96,
+      "input_tokens": 3369,
+      "output_tokens": 703
+    }
+  }
+}

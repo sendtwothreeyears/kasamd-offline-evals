@@ -1,0 +1,174 @@
+---
+id: 35
+scenario: Well-child visit, 4-year-old
+category: Preventive
+density: Dense
+---
+
+Doctor: Hi there! You must be Lily. And you're mom — Danielle, right?
+
+Patient's Mother: Yes, hi, nice to meet you. We just transferred from Dr. Parekh's office.
+
+Doctor: Welcome. I got Lily's records transferred over, so I'm up to speed on her history. And who's this big girl? Lily, how old are you?
+
+Lily: Four!
+
+Doctor: Four! Wow. Can you show me four fingers?
+
+Lily: One, two, three, four.
+
+Doctor: Perfect. She's counting, that's great. Okay, so Danielle, this is her four-year well-child visit. Let me start by going over how she's been doing. Any concerns from your end?
+
+Patient's Mother: She's been doing really well overall. My only concern is she's a really picky eater. She basically lives on chicken nuggets and mac and cheese. I can't get her to eat vegetables no matter what I try.
+
+Doctor: That is extremely common at four. We'll talk strategies. Anything else? How's she doing in preschool?
+
+Patient's Mother: She loves preschool. She goes four mornings a week. Her teacher says she's social, she plays well with the other kids. She's starting to recognize some letters, which I was excited about.
+
+Doctor: That's wonderful. Is she in any activities?
+
+Patient's Mother: Swim lessons on Saturdays and she just started a little dance class.
+
+Doctor: Great. Let me go through the developmental milestones. So at four, we're looking at a bunch of things. Lily, can you tell me your full name?
+
+Lily: Lily Marie Thompson.
+
+Doctor: Perfect. And Lily, what do you like to play?
+
+Lily: I like playing princess and I like coloring and I like playing with my dog Biscuit.
+
+Doctor: You have a dog named Biscuit? That's a great name. Is Biscuit big or little?
+
+Lily: He's really big. He's fluffy.
+
+Doctor: Danielle, her speech is excellent — full sentences, clear articulation, uses pronouns correctly, can tell me about things not present. That's all right on track. Can she dress herself?
+
+Patient's Mother: Mostly. She needs help with buttons and zippers but she can do shirts, pants, shoes — though she gets them on the wrong feet half the time.
+
+Doctor: Normal. What about potty training?
+
+Patient's Mother: Fully trained during the day. She has the occasional accident at night, maybe once a week. We still do a pull-up at bedtime just in case.
+
+Doctor: Nighttime wetting is completely normal at four. The general rule is we don't even think about it as an issue until age six or seven. No worries there. How about other self-care — can she brush her teeth?
+
+Patient's Mother: She tries. I always go back and do it again after her though.
+
+Doctor: Good — keep doing that. Kids don't have the dexterity to really brush well until about six or seven. Is she seeing a dentist?
+
+Patient's Mother: Yes, she goes every six months. No cavities so far.
+
+Doctor: Excellent. Does she know her colors?
+
+Patient's Mother: Oh yeah, she's been doing colors since she was two and a half.
+
+Doctor: Can she draw? Like a person — what does that look like?
+
+Patient's Mother: She draws people with a head and a body and legs and arms. Sometimes they have fingers. No necks yet.
+
+Doctor: Ha, necks come later. That's actually very good for four. What about her behavior — tantrums, defiance, anything like that?
+
+Patient's Mother: She has her moments. She can be very dramatic when she doesn't get her way. But it's gotten way better than when she was three. She'll negotiate now instead of just melting down.
+
+Doctor: That's actually a sign of emotional development — negotiation is higher-level than tantrums. How does she handle frustration?
+
+Patient's Mother: Better than she used to. She'll sometimes say she's mad, which I've been trying to teach her to do. But she can still have a full meltdown if she's tired.
+
+Doctor: Sounds perfectly age-appropriate. Any fears or anxieties?
+
+Patient's Mother: She's afraid of the dark. We do a nightlight and she's fine. And she went through a phase of being afraid of dogs, which was ironic given we have one, but she's over that.
+
+Doctor: Let's talk about sleep. What's her routine?
+
+Patient's Mother: Bath at seven-fifteen, books at seven-thirty, lights out by eight. She usually falls asleep within fifteen, twenty minutes. She sleeps until about six-thirty most mornings.
+
+Doctor: So ten and a half hours. That's right in the ideal range for a four-year-old. Does she still nap?
+
+Patient's Mother: Not consistently. Maybe twice a week at school but at home on weekends she won't nap.
+
+Doctor: That's fine. Nap dropping is normal at four. Okay, let me go back to the eating concerns. So what does a typical day look like food-wise?
+
+Patient's Mother: Breakfast is usually cereal — Cheerios — with milk, or a waffle. Sometimes a banana if I'm lucky. Lunch at school they say she eats okay, but at home it's always nuggets, mac and cheese, plain pasta, grilled cheese. Dinner she'll eat what we eat maybe a third of the time. The rest of the time I end up making her something separate because I don't want her going to bed hungry.
+
+Doctor: What does she drink?
+
+Patient's Mother: Milk — whole milk — and water. Juice occasionally, maybe twice a week.
+
+Doctor: Okay, good on the limited juice. First thing I'd say is switch to two percent milk at age four, we transition from whole. For the picky eating — the number one thing is to keep offering the foods without pressure. Put a small amount of the vegetable on her plate alongside the foods she likes. Don't make her eat it, don't negotiate about it, don't reward her for eating it. Just normalize its presence. It can take ten to fifteen exposures before a kid will try a new food.
+
+Patient's Mother: That feels impossible when she won't even touch it.
+
+Doctor: I know. It's a long game. Also, try involving her in food prep. Kids who help wash the vegetables or stir the pot are more likely to try the food. And stop making separate meals — I know that's hard. Serve what the family eats and offer one thing you know she'll eat alongside it. She won't starve, I promise.
+
+Patient's Mother: Okay. I'll try harder with that.
+
+Doctor: Let me do her growth measurements and then the exam. So Lily is thirty-nine point two inches tall, which puts her at the forty-fifth percentile. Weight is thirty-five point six pounds, fifty-fifth percentile. BMI is at the fifty-eighth percentile. All tracking beautifully on her curve, very consistent with her previous measurements.
+
+Doctor: Alright, Lily, I'm going to check you out now, okay? Can you open your mouth really wide for me like a lion?
+
+Lily: Raaahh!
+
+Doctor: Ha! Great lion. Tonsils look normal, no cavities that I can see, teeth look good. Let me look in your ears... left ear looks good... right ear looks good. Eyes — let me do a quick look... pupils are equal, red reflex is normal bilaterally. Lily, can you follow my finger? Good, good, good. Eye movements are normal.
+
+Doctor: We did the vision screen in the hall — Danielle, she passed at twenty-twenty-five in both eyes, which is normal for her age. The hearing screen she also passed.
+
+Patient's Mother: Oh good. I was a little worried about the vision because I wear glasses and so does my husband.
+
+Doctor: She might eventually need them, but right now she's fine. Heart... regular rate, no murmur. Lungs clear. Belly is soft, non-tender. Let me check her legs and hips... normal alignment, full range of motion. Spine is straight, no curvature. Skin looks clear. Lily, can you hop on one foot for me?
+
+Lily: Like this?
+
+Doctor: Yes! Three, four, five hops. Can you catch this ball? Nice! And can you stand on one foot for as long as you can?
+
+Patient's Mother: She's wobbling a lot.
+
+Doctor: She held it for about four seconds. That's fine for four. These are all gross motor checks and she's right on track.
+
+Doctor: Let me pull up her immunization records. So she's due for her four-year-old shots today. That's DTaP, IPV — the polio vaccine — MMR, and varicella. So it's going to be three injections total because we combine a couple.
+
+Patient's Mother: Oh boy. She's not going to like that.
+
+Doctor: No one does. But she's been a champ so far. She also needs her second flu shot — did she get her first one this season?
+
+Patient's Mother: She got the flu shot in October.
+
+Doctor: Perfect, so she's covered for flu. After today, her next big round of vaccines won't be until eleven or twelve. So that's a nice break.
+
+Patient's Mother: Thank the Lord.
+
+Doctor: A few more things for anticipatory guidance. Car seat — what's she in?
+
+Patient's Mother: She's in a forward-facing car seat. The Graco one with the five-point harness.
+
+Doctor: Is she still within the weight and height limits?
+
+Patient's Mother: I think so? She's been in it since she was two.
+
+Doctor: Check the label on the side. Most of those harness to at least forty pounds, some up to sixty-five. Keep her in the five-point harness as long as she fits. Don't rush to a booster.
+
+Patient's Mother: Okay, good to know.
+
+Doctor: Water safety — with the swim lessons that's great. But at four, she still needs direct supervision around any water, every single time. No exceptions, even if she's a good swimmer. It takes seconds.
+
+Patient's Mother: Oh, absolutely. I'm always right there.
+
+Doctor: Screen time — what does that look like?
+
+Patient's Mother: She probably watches about an hour of TV after school. And she plays on the iPad maybe thirty minutes on weekends. Sometimes more if I need to get things done, if I'm being honest.
+
+Doctor: An hour a day of high-quality content is the guideline, so you're right in range. The iPad is fine too as long as it's not replacing physical play. The bigger thing is no screens close to bedtime, which it sounds like you're already doing with the bath and books routine.
+
+Doctor: Anything else? Questions?
+
+Patient's Mother: Is she where she should be? Overall? I mean compared to other kids?
+
+Doctor: She's doing great. Her development is right on track across the board — language, motor, social, cognitive. She's engaging, she's verbal, she's curious. The picky eating is normal and manageable. You're doing a great job, Danielle.
+
+Patient's Mother: Thank you. That's really nice to hear. You always wonder if you're doing it right.
+
+Doctor: Everyone does. Alright, the nurse will be in with the shots. We'll put some numbing spray on first to help. Lily, you're going to be so brave, and I bet there's a sticker out there with your name on it.
+
+Lily: Can I have two?
+
+Doctor: You can have three. I'll see you back at her five-year well check, unless you need us before then.
+
+Patient's Mother: Thank you so much.

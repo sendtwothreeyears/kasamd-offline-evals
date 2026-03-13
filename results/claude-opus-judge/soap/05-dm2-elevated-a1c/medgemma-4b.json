@@ -1,0 +1,66 @@
+{
+  "transcript_id": "05-dm2-elevated-a1c",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The note states 'Patient appears tired and uncomfortable' under General exam, but the transcript never describes the patient's appearance \u2014 only that he reports feeling tired (a subjective symptom). The ROS includes 'HEENT: No reported issues' through 'Skin: No reported issues' for systems never discussed, which fabricates negative findings. 'Past Medical History: Not documented' is incorrect \u2014 the transcript clearly establishes diabetes, obesity, and early diabetic nephropathy as known conditions, and lisinopril use implies hypertension.",
+      "flagged_content": [
+        "Patient appears tired and uncomfortable",
+        "HEENT: No reported issues",
+        "Cardiovascular: No reported issues",
+        "Respiratory: No reported issues",
+        "Gastrointestinal: No reported issues",
+        "Musculoskeletal: No reported issues",
+        "Neurological: No reported issues",
+        "Psychiatric: No reported issues",
+        "Skin: No reported issues"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit the section entirely if not mentioned, but the note lists many undiscussed systems as 'No reported issues.' The template instruction '(Only include items that were mentioned)' appears verbatim in the Social History section. Past Medical History should list known conditions rather than 'Not documented.'",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing: 15 pounds of weight gain, home blood sugars in the 200s, the detailed discussion about insulin (basal insulin glargine/Lantus/Basaglar at 10 units bedtime) and patient's refusal with rationale (father's experience), GLP-1 mechanism/benefits/side effects counseling, empagliflozin as backup option, insurance/prior authorization discussion, blood pressure 138/86, creatinine 1.0, urine microalbumin 45, lisinopril for renal protection and possible dose increase, foot care counseling, dietary counseling details (smaller meals, avoid fatty foods), prior walking routine.",
+      "missed_items": [
+        "15 pounds weight gain",
+        "home blood sugars in the 200s",
+        "detailed insulin discussion (glargine/Lantus/Basaglar 10 units at bedtime)",
+        "patient's refusal of insulin and father's experience rationale",
+        "semaglutide counseling details (mechanism, cardiovascular benefits, GI side effects, pancreatitis risk, thyroid cancer contraindication)",
+        "empagliflozin as alternative if insurance denies",
+        "insurance coverage/prior authorization discussion",
+        "blood pressure 138/86",
+        "creatinine 1.0",
+        "urine microalbumin 45",
+        "possible lisinopril dose increase",
+        "foot care counseling",
+        "smaller meals and avoiding fatty foods advice",
+        "prior walking routine 3-4 times per week"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the general template structure with appropriate sections, but includes the template instruction text '(Only include items that were mentioned)' verbatim in Social History. Vital signs section is missing (BP was documented). Lisinopril is missing from the Medications section (misplaced only to Plan).",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. The note contains multiple drugs (metformin, semaglutide, lisinopril, empagliflozin) and conditions (diabetes, diabetic nephropathy, etc.) that should have been marked with {{drug:...}} and {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication detected in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 19.18,
+      "input_tokens": 3769,
+      "output_tokens": 943
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "transcript_id": "19-uti",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly supported by or reasonably inferred from the transcript. No fabricated findings or diagnoses.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "Minor deviations: Social History section is included with 'Not documented' rather than being omitted per the instruction to 'Only include items that were mentioned.' Vital signs are listed individually as 'Not documented' rather than simply omitting them per the template instruction to 'Only include vitals that were documented.' However, the note correctly states 'Not documented' for medications and family history."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Minor omissions: the note does not mention the urine dipstick results (positive leukocyte esterase, positive nitrites, trace blood) or that a urine culture was sent. The HPI also omits that the patient had very little output and that the pinkish discoloration prompted her to call.",
+      "missed_items": [
+        "Urine dipstick results: positive leukocyte esterase, positive nitrites, trace blood",
+        "Urine culture sent",
+        "Urinary urgency with very little output",
+        "Pinkish discoloration prompted her to call",
+        "Counseling that she should feel significantly better within a day or two",
+        "Nausea described as the most common side effect"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The structure mostly follows the template, but Vital Signs and General are placed under Objective after Physical Examination rather than within it, and the lab/diagnostic results (urinalysis) are not placed in the Objective section where they belong. Social History is included when it should have been omitted."
+    },
+    "entity_marking": {
+      "score": 3,
+      "rationale": "Correct syntax used for both {{condition:urinary tract infection}} and {{drug:nitrofurantoin}}, each marked only on first occurrence."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content found."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 10.77,
+      "input_tokens": 2584,
+      "output_tokens": 544
+    }
+  }
+}

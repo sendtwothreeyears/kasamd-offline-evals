@@ -1,0 +1,52 @@
+{
+  "transcript_id": "31-insomnia",
+  "template": "soap",
+  "model": "qwen3.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "The generated output is entirely a thinking/reasoning process and does not contain a final clinical note with any fabricated clinical content. No hallucinated findings are present.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The output is entirely a thinking/reasoning process and never produces an actual clinical note. The instructions required returning ONLY the completed note, but instead the model output its internal deliberation repeatedly without generating the final product.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "No clinical note was actually generated. All transcript content is missing from any usable output.",
+      "missed_items": [
+        "Chief complaint of difficulty sleeping",
+        "Sleep onset insomnia details",
+        "Pre-bed routine (screens, phone, work emails)",
+        "Sleep hygiene counseling",
+        "Stimulus control counseling",
+        "Melatonin discussion (0.5-1mg dosing)",
+        "Coworker's 10mg melatonin mention",
+        "3-4 week follow-up plan",
+        "No medications prescribed"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "No structured clinical note was produced. The output is entirely unstructured reasoning/thinking text with no template sections.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No clinical note was generated, so no entity marking was applied to any output.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The thinking process contains massive repetitive loops where the same reasoning steps are duplicated dozens of times."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 12.46,
+      "input_tokens": 19450,
+      "output_tokens": 447
+    }
+  }
+}

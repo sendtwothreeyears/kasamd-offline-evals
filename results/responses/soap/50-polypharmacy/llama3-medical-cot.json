@@ -1,0 +1,14 @@
+{
+  "transcript_id": "50-polypharmacy",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "generated_note": "**Medication Review and Management**\n\n**Subjective**\n**Chief Complaint**\n[Patient's primary reason for visit]\n\n**History of Present Illness**\n[Detailed description of current problem including onset, duration, severity, location, quality, timing, context, modifying factors, and associated symptoms]\n\n**Review of Systems**\n(Only include systems that were discussed. If not mentioned, omit this section entirely)\n\nThe patient, a 82-year-old woman, presented with a comprehensive medication review. She was on fourteen medications, and the primary concern was her high blood pressure, which was 118/68 on her latest reading. She was on metoprolol, lisinopril, amlodipine, atorvastatin, metformin, aspirin 81 mg, oxymetazosin, lorazepam, zolpidem, diphenhydramine, gabapentin, a calcium supplement, and a multivitamin. The blood pressure was 118/68, and she was on three antihypertensive medications \u2014 metoprolol, lisinopril, and amlodipine at 10 mg. The patient has experienced several falls in the past six months, which she attributes to orthostatic hypotension. The primary concern is her risk of falls, which is a significant concern for her age.\n\n**Medications**\n[Current medications with dosages]\n\nThe patient is on the following medications:\n\n1. Metoprolol: 500 mg twice daily\n2. Lisinopril: 10 mg\n3. Amlodipine: 10 mg\n4. Metformin: 500 mg twice daily\n5. Aspirin 81 mg: 81 mg daily\n6. Oxybutynin: 25 mg daily\n7. Gabapentin: 300 mg three times a day\n8. Diphenhydramine: 50 mg twice a day\n9. Zolpidem: 0.5 mg daily\n10. Oxymetazosin: 0.5 mg daily\n11. Lorazepam: 0.5 mg daily\n12. Omeprazole: 0.5 mg daily\n13. Atorvastatin: 20 mg daily\n14. Metoprolol: 0.5 mg daily\n\n**Allergies**\n[Drug allergies and reactions]\n\nThe patient has no known drug allergies.",
+  "metadata": {
+    "inference_time_s": 3.8,
+    "prompt_tokens": 2846,
+    "tokens_generated": 507,
+    "prompt_tps": 1663.1,
+    "tokens_per_sec": 133.3,
+    "peak_memory_gb": 3.69
+  }
+}

@@ -1,0 +1,24 @@
+---
+id: 27
+scenario: New depression diagnosis with PHQ-9, discuss treatment options and safety
+category: Mental health
+density: Medium
+---
+
+So I saw Ms. Rao today — she's a 29-year-old woman who came in reporting that she's been feeling down. She described about two and a half months of what she called feeling "flat." She's had a significant loss of interest in things she used to enjoy — going out with friends, cooking, reading — none of it appeals to her anymore. She comes home from work and just sits on the couch, can't motivate herself to make dinner. She said it kind of crept up on her, thought she was just tired at first, but it hasn't gotten better. Her roommate actually expressed concern about her, and that's what prompted her to make the appointment.
+
+Sleep has been poor — she can fall asleep okay but wakes up around three or four in the morning and can't get back to sleep, mind racing. She's exhausted during the day. Appetite is reduced — she's eating but has to force herself, and she's lost about eight pounds over the last two months without trying. Energy is very low — she described everything feeling like it takes ten times more effort than it should, even getting in the shower in the morning. Concentration has been affected at work — she's making mistakes she wouldn't normally make, forgot about a meeting she had set up herself, and her manager asked if she was okay. She's been experiencing significant feelings of guilt and worthlessness — feeling like she should be able to snap out of it, that she's letting everyone down.
+
+On safety screening, she did endorse passive suicidal ideation — specifically thoughts that everyone would be better off without her. She denied any plan or intent and stated she would not act on these thoughts. She said she feels safe. I took these passive thoughts seriously and addressed them directly.
+
+I had her complete the PHQ-9, which she scored an 18 out of 27, placing her in the moderately severe range. Combined with the clinical picture — two and a half months of duration, anhedonia, early morning awakening, eight-pound unintentional weight loss, fatigue, poor concentration, and feelings of worthlessness — she meets criteria for major depressive disorder.
+
+We had a thorough discussion about treatment. I explained the two main approaches and that they work best in combination. First, I discussed cognitive behavioral therapy — explained that it's a structured, evidence-based treatment that helps identify and challenge negative thought patterns, not just venting. I put in a referral to our behavioral health network, and I mentioned that many of the providers offer virtual visits which may be easier to fit around her work schedule. Second, I discussed SSRIs as first-line pharmacotherapy. I addressed her ambivalence about medication directly — she felt she should be able to handle this on her own — and I reframed it using the analogy of treating high blood pressure, emphasizing that depression involves a real chemical imbalance and medication is treatment, not a crutch. She seemed to receive that well.
+
+I prescribed sertraline 50 milligrams daily, to be taken in the morning with food. I counseled her on side effects — early ones including mild nausea, headache, and possible increased anxiety or jitteriness in the first week or two, which typically resolve. Longer term, I mentioned the possibility of sexual side effects including decreased libido or difficulty with orgasm, and that we can adjust if needed. I told her it takes about four to six weeks to reach full effect. We also discussed duration — for a first episode, the general recommendation is to continue for at least six to twelve months after remission before considering tapering, and we'll reassess together.
+
+She decided she'd like to try both medication and therapy, which I think is a great choice. I also counseled her on exercise — encouraged even a twenty-minute walk, explaining that physical activity has genuine antidepressant effects, even though it's the last thing she feels like doing.
+
+Given the passive suicidal ideation, I'm bringing her back in three weeks rather than the usual interval, to check in on how she's doing, how the medication is settling, and to reassess safety. I gave her safety planning — instructed her to call us, go to the ER, or call the 988 Suicide and Crisis Lifeline if thoughts become more specific or active, or if she feels worse before her next appointment. She agreed to save 988 in her phone. I also encouraged her to lean on her roommate, who has been supportive and was the one who encouraged her to come in.
+
+She had no further questions. Follow-up in three weeks.

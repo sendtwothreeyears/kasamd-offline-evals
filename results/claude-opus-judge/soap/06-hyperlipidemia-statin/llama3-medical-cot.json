@@ -1,0 +1,65 @@
+{
+  "transcript_id": "06-hyperlipidemia-statin",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "Massive fabrication throughout. The note fabricates vital signs (HR 80, Temp 98, RR 20, SpO2 98%), fabricates entire Review of Systems findings (fatigue, normal vision, normal hearing, normal liver function tests, normal kidney function tests, normal neurological exam, respiratory rate, etc.), states James has 'a history of hypertension and diabetes' then contradicts itself, and states James is 'currently taking atorvastatin 20 mg' when the transcript explicitly says he chose lifestyle modifications first.",
+      "flagged_content": [
+        "history of hypertension and diabetes",
+        "HR: 80",
+        "Temp: 98",
+        "RR: 20",
+        "SpO2: 98%",
+        "James reports feeling tired and experiencing fatigue",
+        "His vision is normal, hearing is normal, throat is normal",
+        "His respiratory rate is 20 per minute, and his oxygen saturation is 98% on room air",
+        "His liver function tests are normal",
+        "His kidney function tests are normal",
+        "James is currently taking atorvastatin 20 mg at night",
+        "His physical examination reveals a 5-10% risk of muscle aches, which he attributes to statin use"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template instructs to only include ROS systems that were discussed (none were), to state 'Not documented' for missing items, and to only document exam findings explicitly mentioned. The note fabricates entire ROS sections, fabricates vital signs, includes systems not discussed, and includes template-violating sections like 'Liver', 'Kidney', 'Reproductive' which are not in the template."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "While some key data points are present (lipid values, 10-year risk, alcohol use, family history), the note misses many important details: the specific dietary counseling content, the 150 minutes/week exercise recommendation, the plan for 3-month lifestyle trial followed by repeat lipid panel, the statin risk/benefit counseling details (25-35% reduction), the alternative of rosuvastatin, the educational resources, and the specific follow-up plan.",
+      "missed_items": [
+        "Specific dietary counseling (reduce saturated fats, red meat, cheese, butter, fried foods; increase fish, nuts, olive oil, fiber)",
+        "150 minutes/week moderate exercise recommendation",
+        "3-month lifestyle modification trial plan",
+        "Repeat lipid panel after 3 months",
+        "Statin benefit of 25-35% reduction in heart attack/stroke risk",
+        "Rosuvastatin as alternative if muscle pain develops",
+        "Educational resources on heart-healthy eating",
+        "Alcohol reduction counseling to weekends only",
+        "Dietary changes alone may reduce LDL by 10-15%",
+        "Currently sedentary with desk job and weekend golf",
+        "Rhabdomyolysis risk less than 1 in 10,000",
+        "Liver enzyme monitoring no longer routine"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The note adds non-template sections (Liver, Kidney, Reproductive), duplicates sections (Social History appears twice, Cardiovascular appears twice), is missing the Plan section entirely, places objective data in subjective sections, and the overall structure is chaotic and does not follow the template."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is used for any medications or conditions."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Multiple sections are duplicated: Social History appears twice, Cardiovascular appears twice, and constitutional/fatigue content is repeated across sections."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 22.31,
+      "input_tokens": 3726,
+      "output_tokens": 920
+    }
+  }
+}

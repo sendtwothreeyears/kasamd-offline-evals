@@ -1,0 +1,62 @@
+{
+  "transcript_id": "03-htn-uncontrolled",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems section fabricates a comprehensive negative ROS across all organ systems, none of which were discussed in the transcript. The patient only said he was 'feeling totally fine \u2014 no symptoms,' which does not equate to a full system-by-system negative review. Additionally, 'No fever, chills, fatigue, or weight changes reported' and many other system-specific negatives are fabricated details.",
+      "flagged_content": [
+        "Constitutional: No fever, chills, fatigue, or weight changes reported.",
+        "HEENT: No vision, hearing, throat, or nasal symptoms reported.",
+        "Cardiovascular: No chest pain or palpitations reported.",
+        "Respiratory: No shortness of breath, cough, or wheezing reported.",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain reported.",
+        "Genitourinary: No urinary symptoms reported.",
+        "Musculoskeletal: No joint pain, muscle weakness, or mobility issues reported.",
+        "Neurological: No headache, dizziness, numbness, or weakness reported.",
+        "Psychiatric: No mood changes or anxiety reported.",
+        "Skin: No rashes or lesions reported."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template explicitly states for ROS: 'Only include systems that were discussed. If not mentioned, omit this section entirely.' The note includes a full ROS with all systems despite none being individually discussed. Also, the parenthetical instruction '(Only include items that were mentioned)' was left in the Social History section. The template also says to only include social history items that were mentioned, yet Tobacco, Recreational drugs, and Occupation are listed as 'Not documented.'"
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing: medication adherence issues (missing doses 1-2 times/week, inconsistent timing), counseling on anchoring medication to toothbrush routine, the discussion about hypertension risks (heart attack, stroke, kidney problems), the explanation of lisinopril as an ACE inhibitor and its mechanism, side effect counseling (dry cough, lightheadedness), the 2-4 week timeline for effectiveness, specific sodium target (<2000mg/day), the 5-10 point BP reduction from sodium reduction, wife's support with label reading, current exercise details (walking dog 20 min), target exercise (30-45 min brisk walking), and instruction to keep logging home readings.",
+      "missed_items": [
+        "Medication adherence issues (missing 1-2 doses/week, inconsistent timing)",
+        "Counseling on anchoring medication to toothbrush/nighttime routine",
+        "Discussion of hypertension risks (heart attack, stroke, kidney problems)",
+        "Lisinopril described as ACE inhibitor with different mechanism",
+        "Side effect counseling (dry cough, lightheadedness)",
+        "2-4 week timeline for lisinopril effectiveness",
+        "Sodium target under 2000mg/day and potential 5-10 point BP reduction",
+        "Wife's support with label reading",
+        "Current exercise (walking dog 20 min) and target (30-45 min brisk walking)",
+        "Continue logging home readings",
+        "Portal message prompted visit"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The overall structure follows the template well, but the Vital Signs subsection is missing (BP should be listed there rather than only in HPI), the parenthetical instruction text '(Only include items that were mentioned)' was left in the output, and the ROS section should have been omitted per template instructions."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. No {{drug:...}} or {{condition:...}} syntax was used anywhere in the note despite multiple medications (amlodipine, lisinopril) and conditions (hypertension, stroke) being mentioned."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 17.1,
+      "input_tokens": 3130,
+      "output_tokens": 995
+    }
+  }
+}

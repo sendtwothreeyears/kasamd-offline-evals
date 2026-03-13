@@ -1,0 +1,14 @@
+{
+  "transcript_id": "42-ibs",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nEvaluation of chronic lower abdominal pain.\n\n**History of Present Illness**\nPatient presents with chronic lower abdominal cramping for 7-8 months. Pain is predominantly on the left side, alternating bowel pattern (loose stools and constipation), ranging from 4-7/10. Pain is worsened by eating and relieved by gas or bowel movements. Reports significant bloating, particularly noticeable in the afternoon, preventing her from buttoning her jeans. Dietary triggers identified include onions, garlic, and beans. She denies blood in the stool, fevers, night sweats, or weight loss. Weight is stable at 142 pounds.\n\n**Review of Systems**\nConstitutional: Reports fatigue.\nHEENT: No reported symptoms.\nCardiovascular: No reported symptoms.\nRespiratory: No reported symptoms.\nGastrointestinal: Detailed history of abdominal pain, bloating, and altered bowel habits.\nGenitourinary: No reported symptoms.\nMusculoskeletal: No reported symptoms.\nNeurological: No reported symptoms.\nPsychiatric: Reports correlation between high-stress periods and worsening GI symptoms.\n\n**Past Medical History**\nNot documented.\n\n**Medications**\nNot documented.\n\n**Allergies**\nNo known drug allergies.\n\n**Social History**\nTobacco: Not documented.\nAlcohol: Not documented.\nRecreational drugs: Not documented.\nOccupation: Immigration attorney with a high-stress caseload.\n\n**Family History**\nUncle with colon cancer in his 70s. No known family history of Crohn's disease or ulcerative colitis.\n\n**Objective**\n**Physical Examination**\n**Vital Signs:**\nBP: 118/74\nHR: 72\nTemp: Normal\nRR: Not documented\nSpO2: Not documented\n\nGeneral: Patient appears comfortable. Abdomen is soft.\n\n**Assessment**\nIrritable Bowel Syndrome (IBS).\n\n**Plan**\n1. Dietary intervention: Referral to dietitian Sarah Park for guidance on a low-FODMAP diet.\n2. Increase soluble fiber intake: Initiate psyllium husk (Metamucil) 1 tsp daily, increasing to 2 tsp daily after a week if tolerated.\n3. Prescribing: Dicyclomine 20 mg PO q6h for cramping, taken with meals. Counselled on potential side effects (dry mouth, dizziness).\n4. Loperamide: Continue as needed for diarrhea-predominant days.\n5. Referral: Referral to behavioral health team for gut-directed cognitive behavioral therapy.\n6. Referral: Referral to dietitian and behavioral health team.\n7. Follow-up: Schedule follow-up in six weeks.\n8. Screening: Plan for colonoscopy at age 45, or sooner if clinical picture changes. Instructed to seek immediate medical attention if experiencing blood in stool, unexplained weight loss, or fever.\n\n\n\n",
+  "metadata": {
+    "inference_time_s": 12.14,
+    "prompt_tokens": 2272,
+    "tokens_generated": 608,
+    "prompt_tps": 656.0,
+    "tokens_per_sec": 50.1,
+    "peak_memory_gb": 3.84
+  }
+}

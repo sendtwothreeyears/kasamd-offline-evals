@@ -1,0 +1,50 @@
+{
+  "transcript_id": "35-well-child",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "Marking 'whole milk' and 'two percent milk' as drugs is conceptually incorrect but not a factual hallucination. The note also lists 'occasional nocturnal enuresis' as an assessment item, which is a slight embellishment \u2014 the doctor explicitly reassured mom this is normal and not a clinical concern. The skin ROS entry 'No rashes, lesions, or wounds noted' uses template language rather than transcript content, but skin was mentioned as clear on exam.",
+      "flagged_content": [
+        "{{drug:whole milk}}",
+        "{{drug:two percent milk}}",
+        "Occasional nocturnal enuresis"
+      ]
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The note mostly follows instructions well, using 'Not documented' where appropriate. Minor issues include including Social History items like 'Occupation' for a 4-year-old (template says only include items mentioned, and tobacco/alcohol/drugs were appropriately omitted, but 'Occupation' is awkward for a child). The template says to omit ROS systems not discussed, but some included systems are stretches."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "The note captures the vast majority of transcript content. Minor omissions include: BMI at 58th percentile, growth tracking consistently on her curve, the hearing screen pass (mentioned in ROS but not in objective exam findings explicitly), the counseling about next vaccine round at 11-12, the specific car seat detail (forward-facing Graco with five-point harness), and the percentiles for height (45th) and weight (55th).",
+      "missed_items": [
+        "BMI at 58th percentile",
+        "Height 45th percentile and weight 55th percentile mentioned explicitly",
+        "Growth tracking consistently on her curve and consistent with prior measurements",
+        "Next big vaccine round not until age 11-12",
+        "Forward-facing Graco car seat detail",
+        "Hearing screen passed (in objective exam section)"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well overall. Minor issues: height and weight are placed under Vital Signs rather than having their own growth section, hearing screen results are in ROS but not clearly in the objective exam findings, and the gross motor assessment is placed under musculoskeletal rather than a separate section."
+    },
+    "entity_marking": {
+      "score": 1,
+      "rationale": "The syntax is correct, but 'whole milk' and 'two percent milk' are not drugs/medications \u2014 they are foods. Vaccines (DTaP, IPV, MMR, varicella) are appropriately marked. 'Refractive error' is correctly marked as a condition. However, marking foods as drugs is an incorrect entity type error, and 'nocturnal enuresis' could arguably be marked as a condition but wasn't (though the doctor didn't diagnose it)."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.33,
+      "input_tokens": 4753,
+      "output_tokens": 756
+    }
+  }
+}

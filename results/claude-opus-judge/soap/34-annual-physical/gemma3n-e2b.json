@@ -1,0 +1,61 @@
+{
+  "transcript_id": "34-annual-physical",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "Several factual errors: The brother (42) is described as healthy in the transcript, but the note says 'Brother has hypercholesterolemia' \u2014 that's the sister (48). The transcript says 'paternal aunt had breast cancer' but the note says 'Maternal aunt had breast cancer.' The note also places sun damage in the ROS as patient-reported, but the transcript says the patient denied concerning skin changes and the sun damage was noted on physical exam by the physician. The note says 'Reports family history of hypertension and type 2 diabetes' under Past Medical History, which conflates family history with the patient's own history.",
+      "flagged_content": [
+        "Brother has hypercholesterolemia",
+        "Maternal aunt had breast cancer",
+        "Reports family history of hypertension and type 2 diabetes"
+      ]
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The note mostly follows instructions but uses 'Not documented' for Allergies instead of 'No known drug allergies' (which would be the standard default). The Past Medical History section contains family history information rather than the patient's own medical history. The template instruction to state 'Not documented' if no past medical history was discussed was not properly followed. The Psychiatric ROS system was omitted despite mood/stress being discussed."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing: patient demographics (45-year-old, married, two kids, occupation details beyond mention), height/weight/BMI, reading glasses from last year, mother's hypertension, sister's hypercholesterolemia (attributed to wrong family member), father's current age and medication status, mother's age, ASCVD risk calculation (~8%), last year's BP comparison (126/78), goal weight loss of 15-20 pounds, sleep details (6-6.5 hours, up late), psychiatric ROS (mood stable, work stress, denies depression, no sexual dysfunction), HEENT exam findings (PERRL, TMs, oropharynx, thyroid), lymphadenopathy assessment, counseling on MI/stroke warning signs details, and the 3-month follow-up plan specifics.",
+      "missed_items": [
+        "Height 5'10\", weight 206 lbs, BMI 29.6",
+        "Mother has hypertension",
+        "Sister (48) has hypercholesterolemia (attributed to brother incorrectly)",
+        "Father age 69, on medications",
+        "Mother age 67",
+        "ASCVD risk ~8%",
+        "Last year BP 126/78",
+        "Goal weight loss 15-20 pounds",
+        "Sleep details: 6-6.5 hours, up late working/watching TV, alarm at 6",
+        "Psychiatric ROS: mood stable, work stress, denies depression, no sexual dysfunction",
+        "HEENT exam: PERRL, conjunctivae clear, TMs normal, nares clear, oropharynx without lesions, tonsils normal, thyroid normal",
+        "No lymphadenopathy",
+        "Liver enzymes normal, kidney function normal, thyroid normal",
+        "Reading glasses last year",
+        "Occupation as senior partner at accounting firm",
+        "Refined carbohydrate reduction counseling",
+        "3-month follow-up specifics"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure reasonably well but adds sections not in the template (Labs, Preventive Care, Referrals, Instructions) rather than incorporating them into the Plan section. The Past Medical History section contains family history content instead of the patient's own history. The Head/Neck exam findings are missing from the physical exam section."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. Medications like ibuprofen and statin, and conditions like hypertension, pre-diabetes, dyslipidemia, type 2 diabetes, hypercholesterolemia, etc. should have been marked with {{drug:...}} and {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 19.13,
+      "input_tokens": 4769,
+      "output_tokens": 1019
+    }
+  }
+}

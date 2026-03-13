@@ -1,0 +1,54 @@
+{
+  "transcript_id": "29-anxiety-gad",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly stated or reasonably inferred from the transcript. No fabricated findings or diagnoses.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "Template instructions in parentheses were left in the output (e.g., '(Only include vitals that were documented)', '(Only document examination findings that were explicitly mentioned...)'). Vitals not documented show bracketed placeholders like '[Not documented]' instead of being omitted. The Review of Systems section was omitted entirely rather than being populated with the relevant systems discussed.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important items are missing: the Review of Systems section is absent (cardiovascular, respiratory, GI, musculoskeletal, neurological, psychiatric findings discussed in transcript), the cardiac exam findings (regular rate and rhythm, no murmurs), lungs clear, thyroid normal to palpation, neurological exam findings (reflexes, coordination, sensation intact), the GAD-7 score of 17, the discussion about benzodiazepines, the prior medical history (checkup six months ago with normal blood work, uncertain thyroid check, no known thyroid disease, no cardiac history, borderline BP readings attributed to white coat hypertension), the referral to behavioral health, and the prior psychiatric treatment history.",
+      "missed_items": [
+        "Review of Systems section with relevant systems",
+        "Cardiac exam: regular rate and rhythm, no murmurs",
+        "Lungs clear",
+        "Thyroid normal to palpation",
+        "Neurological exam: reflexes, coordination, sensation intact",
+        "GAD-7 score of 17 in objective/assessment",
+        "Discussion about benzodiazepines and rationale for not prescribing long-term",
+        "Past medical history: checkup six months ago with normal blood work, uncertain thyroid check, no known thyroid disease, no cardiac history, borderline BP readings/white coat hypertension",
+        "No prior psychiatric treatment history",
+        "Referral placed to behavioral health",
+        "Caffeine reduction details in social history section"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Review of Systems section is entirely missing despite multiple systems being discussed. Template instructions in parentheses are left in the output. The physical exam section is incomplete, missing most documented findings. Social history content appears both in HPI and in the Social History section (misplaced/duplicated). 'Anxiety' appears above Chief Complaint as a floating line.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Multiple drugs (escitalopram, buspirone, SSRIs, SNRIs) and conditions (generalized anxiety disorder, irritable bowel syndrome, hyperthyroidism) should have been marked with {{drug:...}} and {{condition:...}} syntax.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "Social history content appears in both HPI and the Social History section, but this is minor organizational overlap rather than wholesale section duplication."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.22,
+      "input_tokens": 5412,
+      "output_tokens": 788
+    }
+  }
+}

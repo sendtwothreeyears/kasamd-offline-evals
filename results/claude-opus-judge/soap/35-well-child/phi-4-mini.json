@@ -1,0 +1,60 @@
+{
+  "transcript_id": "35-well-child",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note says 'swimming and dance lessons on weekends' but the transcript says swim lessons on Saturdays and dance class was just started (no mention of it being on weekends). The note says fear of dogs 'which she has overcome' \u2014 the transcript says the phase 'has resolved,' which is close but the note omits that the dark fear is managed with a nightlight. 'Follow-up on picky eating strategy and reassess in a few visits' is not stated in the transcript. Minor embellishments overall.",
+      "flagged_content": [
+        "Follow-up on picky eating strategy and reassess in a few visits",
+        "swimming and dance lessons on weekends"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "Multiple template sections are missing entirely: Review of Systems, Past Medical History, Medications, Allergies, Social History, Family History, Vital Signs, and detailed Physical Examination findings. The template instructs to state 'Not documented' for missing items, which was not done. Physical exam findings were placed in the Subjective section rather than Objective."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note is missing a vast amount of transcript content: specific developmental milestones (counting, colors, drawing details), specific dietary details and counseling (division of responsibility, switch to 2% milk, food prep involvement), specific growth measurements (39.2 inches, 35.6 lbs, percentiles), detailed physical exam findings, vision/hearing screen results, immunizations (DTaP, IPV, MMR, varicella), anticipatory guidance details (car seat specifics, screen time amounts), family history of refractive error, sleep schedule details, and nighttime wetting reassurance.",
+      "missed_items": [
+        "Specific growth measurements (39.2 inches, 35.6 lbs, BMI percentiles)",
+        "Immunizations given (DTaP, IPV, MMR, varicella as three injections; flu vaccine in October)",
+        "Detailed physical exam findings (tonsils, TMs, eyes, cardiovascular, lungs, abdomen, MSK, skin)",
+        "Vision screen results (20/25 bilaterally)",
+        "Hearing screen passed",
+        "Dietary counseling details (division of responsibility, switch to 2% milk, 10-15 exposures)",
+        "Specific developmental milestones (counting, colors since 2.5, drawing details, full sentences)",
+        "Gross motor assessment (hopping, ball catching, single-leg stance)",
+        "Car seat specifics (forward-facing Graco, 5-point harness, keep as long as fits)",
+        "Water safety counseling (direct supervision)",
+        "Screen time details (1 hour TV, 30 min iPad weekends)",
+        "Family history of refractive error (both parents wear glasses)",
+        "Sleep schedule details (bath 7:15, books 7:30, lights out 8, wakes 6:30)",
+        "Nighttime wetting reassurance (normal until age 6-7)",
+        "Nap dropping counseling",
+        "Next vaccine round at 11-12",
+        "Dental details (every 6 months, no cavities)"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Many required template sections are entirely missing (Review of Systems, Past Medical History, Medications, Allergies, Social History, Family History, Vital Signs, detailed Physical Examination under Objective). Physical exam content is placed in the Subjective section. The Objective section is absent entirely."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.64,
+      "input_tokens": 3681,
+      "output_tokens": 968
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "transcript_id": "09-asthma-exacerbation",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nPatient reports increased shortness of breath for the past two weeks.\n\n**History of Present Illness**\nPatient reports chest tightness, particularly at night, for the past two weeks. He has been using his {{drug:albuterol}} rescue inhaler four to five times per week, and twice yesterday. He states his asthma was worse two years ago, around the same time of year as spring pollen season. He reports upper respiratory symptoms including a runny nose, sneezing, and postnasal drip, attributing it to allergies. He takes {{drug:claritin}} occasionally but not consistently.\n\n**Review of Systems**\nConstitutional: Not documented\nHEENT: Not documented\nCardiovascular: Not documented\nRespiratory: Shortness of breath\nGastrointestinal: Not documented\nGenitourinary: Not documented\nMusculoskeletal: Not documented\nNeurological: Not documented\nPsychiatric: Not documented\nSkin: Not documented\n\n**Past Medical History**\nNot documented\n\n**Medications**\n{{drug:albuterol}} (rescue inhaler)\n{{drug:fluticasone}} (Flovent) - one puff twice a day (inconsistent use)\nNot documented\n\n**Allergies**\nNot documented\n\n**Social History**\nNot documented\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\n**Vital Signs:**\nBP: Not documented\nHR: Not documented\nTemp: Not documented\nRR: Not documented\nSpO2: 97%\n\nGeneral: Patient appears to be in mild respiratory distress.\n\n**Assessment**\nAsthma exacerbation, likely triggered by seasonal allergies.\n\n**Plan**\n1. Step up controller therapy: Switch from {{drug:fluticasone}} to {{drug:fluticasone/salmeterol}} (Advair 250/50) one puff twice daily.\n2. Initiate allergy management: Start {{drug:cetirizine}} 10 mg daily and prescribe {{drug:fluticasone nasal spray}} (Flonase) two sprays each nostril once daily.\n3. Continue {{drug:albuterol}} as rescue inhaler.\n4. Educate patient on consistent use of {{drug:fluticasone}} and spacer device.\n5. Instruct patient to use {{drug:albuterol}} if symptoms are greater than twice per week.\n6. Return precautions: Instruct patient to seek urgent care or call for advice if experiencing worsening shortness of breath, especially at night, or if the {{drug:albuterol}} is not lasting for four hours.\n7. Obtain updated asthma action plan.\n8. Follow-up in three to four weeks.\n\n\n\n",
+  "metadata": {
+    "inference_time_s": 11.29,
+    "prompt_tokens": 1990,
+    "tokens_generated": 567,
+    "prompt_tps": 648.9,
+    "tokens_per_sec": 50.2,
+    "peak_memory_gb": 3.82
+  }
+}

@@ -1,0 +1,32 @@
+---
+id: 02
+scenario: Hypertension stable follow-up, medication refill
+category: Chronic disease
+density: Sparse
+---
+
+Doctor: Hey, Margaret. Come on in. How've you been?
+
+Patient: Oh, doing fine. Just need my refills, you know how it is.
+
+Doctor: I do. Let's take a peek at your blood pressure here. 128 over 78 — that's great. How are you feeling on the lisinopril?
+
+Patient: Fine, no problems. I take it every morning with breakfast.
+
+Doctor: Perfect. Any dizziness, cough, swelling in the feet?
+
+Patient: Nope, nothing.
+
+Doctor: Good. Any other concerns while you're here?
+
+Patient: No, I think I'm good. Just the refill.
+
+Doctor: Alright, I'll send the lisinopril 10 milligrams to your pharmacy. Same one on Maple Street?
+
+Patient: Yes, that one.
+
+Doctor: Done. I'll see you back in six months for your next check, and we'll get labs at that point too. If anything comes up before then, don't hesitate to call.
+
+Patient: Sounds good. Thank you, doctor.
+
+Doctor: Take care, Margaret.

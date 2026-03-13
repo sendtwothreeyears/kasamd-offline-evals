@@ -1,0 +1,42 @@
+{
+  "transcript_id": "31-insomnia",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly stated or reasonably inferred from the transcript. No fabricated findings or embellishments detected.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 3,
+      "rationale": "The note follows all instructions: uses 'Not documented' where appropriate, omits Review of Systems (since only sleep was discussed and it's captured in HPI), omits Social History except occupation is implied but not fully detailed, and includes only discussed plan elements."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured well, but the coworker's mention of taking 10 mg melatonin (which the provider specifically addressed) is omitted. Occupation is implied (wakes for work) but not given its own mention in Social History.",
+      "missed_items": [
+        "Coworker takes 10 mg melatonin - specifically addressed by provider",
+        "Social History with occupation mention (patient works, implied by alarm for work)"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well but omits the Social History section entirely (occupation was mentioned \u2014 patient works and has an alarm at 6:15 for work). The Review of Systems section is appropriately omitted per instructions. Vital Signs header is present but physical exam statement is placed under it rather than under General."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Correct syntax used for drug (melatonin) and condition (sleep onset insomnia). However, 'sleep onset insomnia' is marked twice \u2014 once in HPI and once in Assessment \u2014 violating the first-occurrence-only rule."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No sections or content are duplicated in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 24.55,
+      "input_tokens": 2737,
+      "output_tokens": 482
+    }
+  }
+}

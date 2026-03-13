@@ -1,0 +1,28 @@
+---
+id: 09
+scenario: Adult asthma exacerbation with seasonal triggers, inhaler review
+category: Chronic disease
+density: Medium
+---
+
+So I saw Kevin today — he came in because he's been struggling to breathe for the last couple of weeks. Chest tightness, especially at night, and he's been using his rescue inhaler way more than usual — he said four or five times a week, maybe more, and actually used it twice just yesterday. He mentioned his asthma was this bad maybe two years ago, and interestingly, it was around the same time of year — right when spring starts and pollen season kicks in. So seasonal triggers are definitely a pattern for him.
+
+He also endorsed upper respiratory symptoms — runny nose, sneezing, postnasal drip — he thought it was just allergies. He takes Claritin occasionally but not consistently.
+
+On exam, I heard mild expiratory wheezing bilaterally, worse on the right. O2 sat was 97 percent. We checked a peak flow here in the office — he blew 380, and his personal best is around 480, so he's at about 79 percent of his personal best. That puts him in the yellow zone. Not an emergency, but not where we want him.
+
+For his maintenance therapy, he's been on fluticasone 110 — the Flovent — one puff twice a day, but he admitted he's been inconsistent with it, especially over the winter when he was feeling well. I counseled him that the maintenance inhaler needs to be taken every day to prevent airway inflammation — it's not something you feel working in the moment, and stopping it allows inflammation to build back up silently, so when a trigger like pollen hits, he flares. He understood that.
+
+I also asked about spacer use — he's not using one. I explained that a spacer helps get the medication deeper into the lungs rather than just coating the throat, and I'm going to prescribe him a spacer. I also counseled him to rinse his mouth and spit after every use of the inhaled steroid to prevent oral thrush.
+
+So for the plan — I'm stepping up his controller therapy. Instead of fluticasone alone, I'm switching him to a combination inhaler — fluticasone/salmeterol, Advair 250/50, one puff twice daily. He had some concerns about the long-acting bronchodilator component, and I explained that the safety concerns were about using long-acting bronchodilators without a steroid — in the combination inhaler, the data shows they're safe and it's actually the guideline-recommended step-up for his situation. He was okay with that.
+
+For the allergies, which are clearly driving the asthma, I'm starting him on cetirizine 10 milligrams daily through the season, and adding fluticasone nasal spray — Flonase — two sprays each nostril once a day. I explained that treating the allergies should help the asthma as well.
+
+He asked about exercise — he's been avoiding the gym out of concern about triggering an attack. I told him I don't want him avoiding exercise, and that if exercise triggers symptoms, he should use two puffs of albuterol 15 minutes before working out. I also mentioned that regular exercise is actually beneficial for lung function long-term.
+
+He'll continue albuterol as his rescue inhaler. I told him if he's using it more than twice a week, that's a sign we need to adjust further. I also gave him return precautions — if he's waking up at night short of breath more than once a week, or if the rescue inhaler isn't lasting four hours, he should call us or go to urgent care and not tough it out.
+
+He wasn't sure where his written asthma action plan was — said it's in a drawer somewhere — so I'm going to have an updated one printed for him at checkout.
+
+Follow-up in three to four weeks.

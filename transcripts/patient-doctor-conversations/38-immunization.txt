@@ -1,0 +1,52 @@
+---
+id: 38
+scenario: Travel vaccines + routine catch-up
+category: Preventive
+density: Sparse
+---
+
+Doctor: Hey, Priya. So I see on the schedule you're here for travel vaccines?
+
+Patient: Yeah, I'm going to Thailand and Vietnam in about six weeks. My friend told me I'd need a bunch of shots.
+
+Doctor: Your friend is right. Where exactly are you going and for how long?
+
+Patient: Three weeks total. Mostly Bangkok, Chiang Mai, then Hanoi and Ha Long Bay. A mix of cities and some more rural areas — we're doing a trek in northern Thailand.
+
+Doctor: The trek is relevant because that puts you in more rural, potentially mosquito-heavy areas. Let me pull up your immunization records first and see what you're current on. Okay, so your Tdap is up to date, that's good. You've had your hepatitis B series. MMR from childhood. No hepatitis A vaccine on file.
+
+Patient: I don't think I've ever had that one.
+
+Doctor: That's going to be the most important one for your trip. Hepatitis A is transmitted through contaminated food and water, which is a real risk in Southeast Asia. It's a two-dose series — we'll give you the first one today and the second six months from now. Even one dose gives you good protection before your trip.
+
+Patient: Okay, great.
+
+Doctor: Typhoid — you'll want that too, especially with street food. Have you had typhoid vaccine before?
+
+Patient: No, never.
+
+Doctor: There are two options — an injection or oral capsules. The injection is one shot, good for two years. The oral is four capsules over a week, good for five years. Most people just do the shot.
+
+Patient: Let's do the shot. Easier.
+
+Doctor: Done. Now, Japanese encephalitis — this one depends on your itinerary. For a three-week trip with rural trekking, I'd recommend it. It's two doses, the second one a week after the first. We can start that today.
+
+Patient: Okay.
+
+Doctor: And then malaria prophylaxis. There's no vaccine for malaria, but you'll need prescription medication. For Thailand and Vietnam, the recommended options are atovaquone-proguanil — that's Malarone — or doxycycline. Malarone you start two days before entering the malaria zone and continue for seven days after leaving. Doxycycline you start two days before and continue for twenty-eight days after.
+
+Patient: Which one do you recommend?
+
+Doctor: Malarone is easier because the tail is shorter — only a week after versus four weeks. It's well tolerated. Main downside is cost. Doxycycline is cheap but it can cause sun sensitivity, which matters in tropical sun, and stomach upset.
+
+Patient: I'll go with the Malarone.
+
+Doctor: I'll write that prescription. Let me also mention — regardless of malaria meds, use insect repellent with DEET, wear long sleeves and pants in the evenings, and sleep under a bed net if your accommodations don't have good screens or AC.
+
+Patient: Got it.
+
+Doctor: So today we're doing hepatitis A, typhoid, and the first Japanese encephalitis. You'll come back in a week for the second JE dose. I'm prescribing Malarone. Make sure you have a good travel first aid kit — Imodium, oral rehydration salts, hand sanitizer. Avoid ice in drinks from street vendors, and stick to bottled or boiled water.
+
+Patient: Will do. Thanks for squeezing me in.
+
+Doctor: Happy to help. Have an amazing trip. Nurse will be in with the shots.

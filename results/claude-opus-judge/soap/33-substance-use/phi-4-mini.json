@@ -1,0 +1,47 @@
+{
+  "transcript_id": "33-substance-use",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is supported by the transcript. No fabricated findings or diagnoses were identified.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "Multiple template instructions in parentheses and brackets are left in the output (e.g., '(Only include systems that were discussed. If not mentioned, omit this section entirely)', '[Current medications with dosages]', '[Drug allergies and reactions]', '[Relevant family medical history]'). The Review of Systems section was supposed to be omitted entirely if not discussed, but instead lists 'Not discussed' for each system. The note also includes 'Not documented' and '(End of transcription)' as extraneous text.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured, but the note omits that Sandra was only able to sustain abstinence for two days specifically, that her mother's stroke was in October, and the MRI referral for knee pain in the plan. The counseling about alcohol worsening anxiety and sleep over time is also not explicitly stated.",
+      "missed_items": [
+        "Abstinence lasted only two days",
+        "Mother's stroke occurred in October",
+        "MRI referral for knee pain in the plan",
+        "Counseling that alcohol worsens anxiety and sleep over time"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Review of Systems section includes systems that were not discussed (should have been omitted entirely per instructions). Template bracketed/parenthetical instructions are left in the output. Much of the plan, counseling, labs, and diary information is placed in the HPI rather than the Plan section. Vital Signs appear under Objective but after Physical Examination rather than before General.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. There are no {{drug:...}} or {{condition:...}} tags anywhere in the note, despite conditions like knee pain and alcohol use disorder/increased drinking being present.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "There is significant redundancy (e.g., drinking pattern details repeated in HPI and Social History, BASICS mentioned multiple times), but no wholesale section or note duplication."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.0,
+      "input_tokens": 3558,
+      "output_tokens": 607
+    }
+  }
+}

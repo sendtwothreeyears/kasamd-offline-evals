@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Clinical Note Generation Model Evaluation</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --blue: #0bb4ff;
+  --red: #e60049;
+  --green: #50e991;
+  --yellow: #ffe019;
+  --orange: #ffa300;
+  --purple: #9b19f5;
+  --bg: #0a0a0f;
+  --surface: #14141f;
+  --surface2: #1e1e2e;
+  --text: #e0e0e8;
+  --muted: #8888a0;
+}
+
+.reveal-viewport {
+  background: var(--bg);
+}
+
+.reveal {
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  color: var(--text);
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.reveal h1 { font-size: 2.2em; line-height: 1.15; }
+.reveal h2 { font-size: 1.5em; margin-bottom: 0.6em; }
+.reveal h3 { font-size: 1.15em; color: var(--muted); font-weight: 500; }
+
+.reveal p, .reveal li {
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.reveal ul { list-style: none; padding-left: 0; }
+.reveal ul li { padding: 0.2em 0; }
+.reveal ul li::before {
+  content: "\2022";
+  color: var(--blue);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.reveal section ul { padding-left: 1em; }
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--blue), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-warm {
+  background: linear-gradient(135deg, var(--orange), var(--red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-green {
+  background: linear-gradient(135deg, var(--green), var(--blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.15em 0.6em;
+  border-radius: 4px;
+  font-size: 0.65em;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  vertical-align: middle;
+  margin-right: 0.3em;
+}
+
+.tag-blue { background: rgba(11, 180, 255, 0.15); color: var(--blue); border: 1px solid rgba(11, 180, 255, 0.3); }
+.tag-red { background: rgba(230, 0, 73, 0.15); color: var(--red); border: 1px solid rgba(230, 0, 73, 0.3); }
+.tag-green { background: rgba(80, 233, 145, 0.15); color: var(--green); border: 1px solid rgba(80, 233, 145, 0.3); }
+.tag-yellow { background: rgba(255, 224, 25, 0.15); color: var(--yellow); border: 1px solid rgba(255, 224, 25, 0.3); }
+.tag-orange { background: rgba(255, 163, 0, 0.15); color: var(--orange); border: 1px solid rgba(255, 163, 0, 0.3); }
+.tag-purple { background: rgba(155, 25, 245, 0.15); color: var(--purple); border: 1px solid rgba(155, 25, 245, 0.3); }
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.subtitle {
+  font-size: 0.75em;
+  color: var(--muted);
+  margin-top: 0.5em;
+  font-weight: 400;
+}
+
+.small {
+  font-size: 0.7em;
+  color: var(--muted);
+}
+
+.brand {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-top: 2em;
+}
+
+/* Bar chart */
+.bar-chart {
+  width: 100%;
+  margin: 0.5em auto;
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  margin: 0.35em 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65em;
+}
+
+.bar-label {
+  width: 180px;
+  text-align: right;
+  padding-right: 12px;
+  white-space: nowrap;
+  color: var(--text);
+  flex-shrink: 0;
+}
+
+.bar-track {
+  flex: 1;
+  height: 28px;
+  background: var(--surface);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.8s ease;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+
+.bar-value {
+  width: 55px;
+  text-align: right;
+  padding-left: 10px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.bar-cloud .bar-fill { background: linear-gradient(90deg, var(--purple), var(--blue)); }
+.bar-local-1 .bar-fill { background: linear-gradient(90deg, var(--green), #2dd4a0); }
+.bar-local-2 .bar-fill { background: linear-gradient(90deg, #2dd4a0, var(--blue)); }
+.bar-local-3 .bar-fill { background: linear-gradient(90deg, var(--blue), #3a90d0); }
+.bar-local-4 .bar-fill { background: linear-gradient(90deg, var(--orange), var(--yellow)); }
+.bar-local-5 .bar-fill { background: linear-gradient(90deg, var(--yellow), #ccb800); }
+.bar-local-6 .bar-fill { background: linear-gradient(90deg, var(--red), #cc0040); }
+.bar-local-7 .bar-fill { background: linear-gradient(90deg, #cc0040, #880030); }
+
+/* Delta chart */
+.delta-row {
+  display: flex;
+  align-items: center;
+  margin: 0.5em 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7em;
+}
+
+.delta-label {
+  width: 180px;
+  text-align: right;
+  padding-right: 12px;
+  white-space: nowrap;
+  color: var(--text);
+  flex-shrink: 0;
+}
+
+.delta-bar {
+  height: 24px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+  font-weight: 600;
+  font-size: 0.85em;
+  color: #fff;
+}
+
+.delta-positive { background: linear-gradient(90deg, var(--green), #2dd4a0); }
+.delta-neutral { background: var(--surface2); color: var(--muted); }
+
+/* Heatmap */
+.heatmap {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6em;
+  margin: 0.5em auto;
+}
+
+.heatmap th {
+  padding: 8px 10px;
+  font-weight: 600;
+  color: var(--muted);
+  text-align: center;
+  border-bottom: 1px solid var(--surface2);
+  font-size: 0.9em;
+}
+
+.heatmap th:first-child {
+  text-align: left;
+}
+
+.heatmap td {
+  padding: 10px 10px;
+  text-align: center;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.heatmap td:first-child {
+  text-align: left;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.heatmap .winner {
+  border: 2px solid var(--green);
+  border-radius: 4px;
+}
+
+.heat-high { background: rgba(80, 233, 145, 0.2); color: var(--green); }
+.heat-mid { background: rgba(255, 224, 25, 0.15); color: var(--yellow); }
+.heat-low { background: rgba(255, 163, 0, 0.15); color: var(--orange); }
+.heat-bad { background: rgba(230, 0, 73, 0.12); color: var(--red); }
+
+/* Cards */
+.card-row {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--surface2);
+  border-radius: 8px;
+  padding: 1em 1.2em;
+  flex: 1;
+  min-width: 200px;
+  max-width: 320px;
+}
+
+.card h4 {
+  margin: 0 0 0.4em 0;
+  font-size: 0.85em;
+  color: var(--blue);
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.7em;
+  line-height: 1.5;
+}
+
+/* Problem slides */
+.problem-box {
+  background: rgba(230, 0, 73, 0.06);
+  border-left: 3px solid var(--red);
+  padding: 0.8em 1.2em;
+  border-radius: 0 6px 6px 0;
+  margin: 0.5em 0;
+  text-align: left;
+}
+
+.problem-box p {
+  font-size: 0.75em;
+  margin: 0.3em 0;
+}
+
+.fix-box {
+  background: rgba(80, 233, 145, 0.06);
+  border-left: 3px solid var(--green);
+  padding: 0.8em 1.2em;
+  border-radius: 0 6px 6px 0;
+  margin: 0.5em 0;
+  text-align: left;
+}
+
+.fix-box p {
+  font-size: 0.75em;
+  margin: 0.3em 0;
+}
+
+/* Quote */
+.quote-block {
+  background: var(--surface);
+  border-left: 3px solid var(--purple);
+  padding: 0.6em 1em;
+  border-radius: 0 6px 6px 0;
+  margin: 0.8em auto;
+  max-width: 85%;
+  text-align: left;
+}
+
+.quote-block code {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--yellow);
+  font-size: 0.85em;
+}
+
+/* Stat highlight */
+.stat-row {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.stat-block {
+  text-align: center;
+}
+
+.stat-number {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 2.2em;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.stat-desc {
+  font-size: 0.6em;
+  color: var(--muted);
+  margin-top: 0.3em;
+}
+
+/* vs layout */
+.vs-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 0.5em;
+  align-items: start;
+  margin: 0.5em 0;
+}
+
+.vs-divider {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: var(--muted);
+  padding-top: 1em;
+}
+
+.reveal .slides section .fragment.visible {
+  opacity: 1;
+}
+
+/* Override reveal defaults */
+.reveal section img {
+  border: none;
+  box-shadow: none;
+}
+
+.reveal .slide-number {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.5em;
+  color: var(--muted);
+  background: transparent;
+}
+
+.reveal .progress span {
+  background: var(--blue);
+}
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- ====== SLIDE 1: TITLE ====== -->
+<section>
+  <h1>Finding the Right Model<br/>for <span class="gradient-text">Offline Clinical Notes</span></h1>
+  <p class="subtitle">Evaluating 8 models for transcript &rarr; SOAP note generation</p>
+  <div class="brand">KasaMD Offline</div>
+</section>
+
+<!-- ====== SLIDE 2: THE GOAL ====== -->
+<section>
+  <h2><span class="tag tag-blue">Context</span> The Goal</h2>
+  <div class="stat-row" style="margin-top:1.5em;">
+    <div class="stat-block">
+      <div class="stat-number" style="color:var(--blue);">8GB</div>
+      <div class="stat-desc">Apple Silicon target</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-number" style="color:var(--green);">0</div>
+      <div class="stat-desc">Cloud dependencies</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-number" style="color:var(--red);">0</div>
+      <div class="stat-desc">Tolerable hallucinations</div>
+    </div>
+  </div>
+  <p style="margin-top:1.5em; font-size:0.8em; color:var(--muted);">
+    Run clinical note generation locally. Patient data never leaves the device.<br/>
+    Find the best small model that doesn't fabricate medical facts.
+  </p>
+</section>
+
+<!-- ====== SLIDE 3: THE CANDIDATES ====== -->
+<section>
+  <h2><span class="tag tag-purple">Models</span> The Candidates</h2>
+  <div class="card-row" style="margin-top:1em;">
+    <div class="card" style="flex:2; max-width:480px;">
+      <h4>7 Local Models <span class="small">(3-4B params, Q4)</span></h4>
+      <p class="mono" style="font-size:0.65em; line-height:2;">
+        MedGemma 1.5 4B &middot; MedGemma 4B &middot; Llama3 Medical COT<br/>
+        Llama 3.2 3B &middot; Gemma 3n E2B &middot; Phi-4 Mini &middot; Qwen 3.5 4B
+      </p>
+    </div>
+    <div class="card" style="border-color:var(--purple); max-width:250px;">
+      <h4 style="color:var(--purple);">1 Cloud Frontier</h4>
+      <p class="mono" style="font-size:0.65em; line-height:2;">
+        Gemini 2.5 Flash
+      </p>
+      <p style="font-size:0.6em; color:var(--muted); margin-top:0.5em;">
+        The ceiling. How close can local models get?
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SLIDE 4: THE TEST SUITE ====== -->
+<section>
+  <h2><span class="tag tag-green">Data</span> The Test Suite</h2>
+  <div style="text-align:left; max-width:85%; margin:1em auto 0;">
+    <ul>
+      <li><span class="mono" style="color:var(--blue);">25</span> doctor dictation transcripts across primary care</li>
+      <li>Distribution mirrors real-world visit frequency <span class="small">(CDC NAMCS)</span></li>
+      <li>Density mix to stress-test both failure modes:</li>
+    </ul>
+    <div class="card-row" style="margin-top:0.8em;">
+      <div class="card" style="min-width:150px; text-align:center;">
+        <h4 style="color:var(--yellow);">Sparse</h4>
+        <p style="font-size:0.65em;">Tests hallucination resistance.<br/>Will the model invent content?</p>
+      </div>
+      <div class="card" style="min-width:150px; text-align:center;">
+        <h4 style="color:var(--orange);">Medium</h4>
+        <p style="font-size:0.65em;">Balanced signal.<br/>Standard clinical encounters.</p>
+      </div>
+      <div class="card" style="min-width:150px; text-align:center;">
+        <h4 style="color:var(--red);">Dense</h4>
+        <p style="font-size:0.65em;">Tests completeness.<br/>Will the model drop content?</p>
+      </div>
+    </div>
+    <p style="font-size:0.65em; color:var(--muted); margin-top:0.8em;">SOAP note template with entity marking instructions provided to all models.</p>
+  </div>
+</section>
+
+<!-- ====== SLIDE 5: THE SCORING RUBRIC ====== -->
+<section>
+  <h2><span class="tag tag-orange">Method</span> The Scoring Rubric <span class="small">v1</span></h2>
+  <p style="font-size:0.75em; color:var(--muted); margin-bottom:0.8em;">6 dimensions, each scored 0&ndash;3 by LLM-as-judge</p>
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.4em 1.5em; max-width:80%; margin:0 auto; text-align:left; font-size:0.75em;">
+    <div><span class="mono" style="color:var(--red);">Hallucination</span> &mdash; fabricated medical content</div>
+    <div><span class="mono" style="color:var(--green);">Completeness</span> &mdash; clinical facts captured</div>
+    <div><span class="mono" style="color:var(--blue);">Instruction Following</span> &mdash; prompt adherence</div>
+    <div><span class="mono" style="color:var(--yellow);">Template Adherence</span> &mdash; SOAP structure</div>
+    <div><span class="mono" style="color:var(--purple);">Entity Marking</span> &mdash; bracket notation</div>
+    <div><span class="mono" style="color:var(--orange);">Duplication</span> &mdash; repeated content</div>
+  </div>
+  <div class="card-row" style="margin-top:1.2em;">
+    <div class="card" style="text-align:center;">
+      <h4>Primary Judge</h4>
+      <p class="mono" style="font-size:0.75em;">Claude Opus</p>
+      <p style="font-size:0.55em; color:var(--muted);">No conflict of interest</p>
+    </div>
+    <div class="card" style="text-align:center;">
+      <h4 style="color:var(--purple);">Second Judge</h4>
+      <p class="mono" style="font-size:0.75em;">Gemini 2.5 Pro</p>
+      <p style="font-size:0.55em; color:var(--muted);">Bias experiment</p>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SLIDE 6: RUN 1 RESULTS ====== -->
+<section>
+  <h2><span class="tag tag-blue">Run 1</span> The First Leaderboard</h2>
+  <p class="small" style="margin-bottom:0.6em;">Equal weights across all 6 dimensions &mdash; Claude Opus judge</p>
+  <div class="bar-chart">
+    <div class="bar-row bar-cloud">
+      <div class="bar-label">Gemini Flash</div>
+      <div class="bar-track"><div class="bar-fill" style="width:78%;"></div></div>
+      <div class="bar-value" style="color:var(--purple);">78%</div>
+    </div>
+    <div class="bar-row bar-local-1">
+      <div class="bar-label">Gemma 3n</div>
+      <div class="bar-track"><div class="bar-fill" style="width:49%;"></div></div>
+      <div class="bar-value" style="color:var(--green);">49%</div>
+    </div>
+    <div class="bar-row bar-local-2">
+      <div class="bar-label">MedGemma 4B</div>
+      <div class="bar-track"><div class="bar-fill" style="width:41%;"></div></div>
+      <div class="bar-value" style="color:var(--blue);">41%</div>
+    </div>
+    <div class="bar-row bar-local-3">
+      <div class="bar-label">Phi-4 Mini</div>
+      <div class="bar-track"><div class="bar-fill" style="width:34%;"></div></div>
+      <div class="bar-value">34%</div>
+    </div>
+    <div class="bar-row bar-local-4">
+      <div class="bar-label">Llama 3.2 3B</div>
+      <div class="bar-track"><div class="bar-fill" style="width:31%;"></div></div>
+      <div class="bar-value">31%</div>
+    </div>
+    <div class="bar-row bar-local-5">
+      <div class="bar-label">MedGemma 1.5</div>
+      <div class="bar-track"><div class="bar-fill" style="width:21%;"></div></div>
+      <div class="bar-value">21%</div>
+    </div>
+    <div class="bar-row bar-local-6">
+      <div class="bar-label">Llama3 COT</div>
+      <div class="bar-track"><div class="bar-fill" style="width:7%;"></div></div>
+      <div class="bar-value">7%</div>
+    </div>
+    <div class="bar-row bar-local-7">
+      <div class="bar-label">Qwen 3.5</div>
+      <div class="bar-track"><div class="bar-fill" style="width:7%;"></div></div>
+      <div class="bar-value">7%</div>
+    </div>
+  </div>
+  <p class="small" style="margin-top:0.6em;">Gemma 3n leads local models. MedGemma 4B trails by <span class="mono" style="color:var(--orange);">8 points</span>.</p>
+</section>
+
+<!-- ====== SLIDE 7: SOMETHING DIDN'T ADD UP ====== -->
+<section>
+  <h2><span class="gradient-text-warm">Something Didn't Add Up</span></h2>
+  <div style="text-align:left; max-width:85%; margin:1em auto 0; font-size:0.8em;">
+    <p>Side-by-side review of generated notes told a different story.</p>
+    <div class="vs-grid" style="margin-top:1em;">
+      <div class="card" style="border-color:var(--green);">
+        <h4 style="color:var(--green);">Gemma 3n</h4>
+        <p style="font-size:0.8em;">Cleaner formatting, well-structured SOAP sections. But on dense visits: <span style="color:var(--red);">missing critical details</span>.</p>
+      </div>
+      <div class="vs-divider">vs</div>
+      <div class="card" style="border-color:var(--blue);">
+        <h4>MedGemma 4B</h4>
+        <p style="font-size:0.8em;">Messier structure, content in wrong sections. But on dense visits: <span style="color:var(--green);">capturing more clinical content</span>.</p>
+      </div>
+    </div>
+    <p style="margin-top:1em; color:var(--yellow); font-size:0.85em;">The scores weren't reflecting clinical utility.</p>
+  </div>
+</section>
+
+<!-- ====== SLIDE 8: PROBLEM 1 ====== -->
+<section>
+  <h2><span class="tag tag-red">Problem 1</span> Double-Penalization</h2>
+  <div class="problem-box" style="max-width:85%; margin:1em auto;">
+    <p style="font-size:0.8em; color:var(--text);">When MedGemma puts exam findings in the wrong SOAP section, the judge penalizes <strong style="color:var(--red);">both</strong> completeness AND template adherence.</p>
+    <p style="color:var(--muted);">Same clinical error counted twice.</p>
+  </div>
+  <div class="quote-block" style="margin-top:1em;">
+    <p style="font-size:0.7em; color:var(--muted); margin:0 0 0.3em 0;">Transcript 14 &mdash; Multimorbid patient</p>
+    <p style="font-size:0.75em; color:var(--text); margin:0;">MedGemma captures labs, exam findings, and dialysis counseling&hellip; but places them in the wrong section.</p>
+    <p style="font-size:0.75em; margin:0.3em 0 0 0;">
+      Judge docks <span style="color:var(--red);">completeness</span> AND <span style="color:var(--red);">format</span>.
+    </p>
+  </div>
+  <p class="small" style="margin-top:1em;">Models that capture more content get penalized more for structural errors.</p>
+</section>
+
+<!-- ====== SLIDE 9: PROBLEM 2 ====== -->
+<section>
+  <h2><span class="tag tag-red">Problem 2</span> Clinical Boilerplate as Hallucination</h2>
+  <div style="max-width:85%; margin:1em auto; text-align:left;">
+    <div class="quote-block" style="margin-left:0;">
+      <code>"Alert and oriented"</code>
+      <p style="font-size:0.7em; margin:0.3em 0 0;">In virtually every clinical note. Flagged as fabrication.</p>
+    </div>
+    <div class="quote-block" style="margin-left:0;">
+      <code>"No known drug allergies"</code>
+      <p style="font-size:0.7em; margin:0.3em 0 0;">Standard documentation default. Flagged as fabrication.</p>
+    </div>
+    <div style="margin-top:1.2em;">
+      <p style="font-size:0.8em;">Models that behave like real clinicians get penalized.</p>
+      <p style="font-size:0.8em; color:var(--orange);">Perverse incentive: omitting standard documentation is "safer" under this rubric.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SLIDE 10: PROBLEM 3 ====== -->
+<section>
+  <h2><span class="tag tag-red">Problem 3</span> Equal Weighting</h2>
+  <div style="max-width:85%; margin:1em auto; text-align:left;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1em; font-size:0.75em;">
+      <div class="problem-box" style="margin:0;">
+        <p><span class="mono" style="color:var(--purple);">Entity Marking</span></p>
+        <p>Broken for <strong>all</strong> local models: 0&ndash;3% scores.</p>
+        <p>Carries the same weight as hallucination.</p>
+      </div>
+      <div class="problem-box" style="margin:0;">
+        <p><span class="mono" style="color:var(--yellow);">Template Adherence</span></p>
+        <p>Structure weighted equally with content.</p>
+        <p>A well-formatted empty note scores higher than messy completeness.</p>
+      </div>
+    </div>
+    <p style="margin-top:1.2em; font-size:0.85em; color:var(--yellow); text-align:center;">
+      The rubric rewards structure over substance.
+    </p>
+  </div>
+</section>
+
+<!-- ====== SLIDE 11: THE FIX ====== -->
+<section>
+  <h2><span class="tag tag-green">Rubric v2</span> The Fix</h2>
+  <div style="max-width:85%; margin:1em auto;">
+    <div class="fix-box" style="margin-bottom:0.8em;">
+      <p style="font-size:0.8em; color:var(--text);"><strong style="color:var(--green);">1.</strong> Misplaced content penalizes template adherence <em>only</em>, not completeness</p>
+      <p style="font-size:0.65em; color:var(--muted);">Eliminates double-penalization</p>
+    </div>
+    <div class="fix-box" style="margin-bottom:0.8em;">
+      <p style="font-size:0.8em; color:var(--text);"><strong style="color:var(--green);">2.</strong> Clinical defaults exempt from hallucination scoring</p>
+      <p style="font-size:0.65em; color:var(--muted);">"A&O", "NKDA", "well-appearing", "no acute distress"</p>
+    </div>
+    <div class="fix-box" style="margin-bottom:0.8em;">
+      <p style="font-size:0.8em; color:var(--text);"><strong style="color:var(--green);">3.</strong> Weighted scoring replaces equal weights</p>
+      <p style="font-size:0.65em; color:var(--muted);">
+        <span class="mono">Hallucination 2x</span> &middot;
+        <span class="mono">Completeness 2x</span> &middot;
+        <span class="mono">Entity Marking 0.5x</span>
+      </p>
+    </div>
+    <p class="small" style="text-align:center; margin-top:0.8em;">
+      Re-scored all <span class="mono">200</span> SOAP notes with both judges.
+    </p>
+  </div>
+</section>
+
+<!-- ====== SLIDE 12: RUN 2 RESULTS ====== -->
+<section>
+  <h2><span class="tag tag-green">Run 2</span> Updated Leaderboard</h2>
+  <p class="small" style="margin-bottom:0.6em;">Weighted scoring &mdash; Claude Opus judge</p>
+  <div class="bar-chart">
+    <div class="bar-row bar-cloud">
+      <div class="bar-label">Gemini Flash</div>
+      <div class="bar-track"><div class="bar-fill" style="width:81%;"></div></div>
+      <div class="bar-value" style="color:var(--purple);">81%</div>
+    </div>
+    <div class="bar-row bar-local-1">
+      <div class="bar-label">Gemma 3n</div>
+      <div class="bar-track"><div class="bar-fill" style="width:50%;"></div></div>
+      <div class="bar-value" style="color:var(--green);">50%</div>
+    </div>
+    <div class="bar-row bar-local-2">
+      <div class="bar-label">MedGemma 4B</div>
+      <div class="bar-track"><div class="bar-fill" style="width:49%;"></div></div>
+      <div class="bar-value" style="color:var(--blue);">49%</div>
+    </div>
+    <div class="bar-row bar-local-3">
+      <div class="bar-label">Phi-4 Mini</div>
+      <div class="bar-track"><div class="bar-fill" style="width:41%;"></div></div>
+      <div class="bar-value">41%</div>
+    </div>
+    <div class="bar-row bar-local-4">
+      <div class="bar-label">Llama 3.2 3B</div>
+      <div class="bar-track"><div class="bar-fill" style="width:37%;"></div></div>
+      <div class="bar-value">37%</div>
+    </div>
+    <div class="bar-row bar-local-5">
+      <div class="bar-label">MedGemma 1.5</div>
+      <div class="bar-track"><div class="bar-fill" style="width:29%;"></div></div>
+      <div class="bar-value">29%</div>
+    </div>
+    <div class="bar-row bar-local-6">
+      <div class="bar-label">Llama3 COT</div>
+      <div class="bar-track"><div class="bar-fill" style="width:9%;"></div></div>
+      <div class="bar-value">9%</div>
+    </div>
+    <div class="bar-row bar-local-7">
+      <div class="bar-label">Qwen 3.5</div>
+      <div class="bar-track"><div class="bar-fill" style="width:7%;"></div></div>
+      <div class="bar-value">7%</div>
+    </div>
+  </div>
+  <p class="small" style="margin-top:0.6em;">The gap between Gemma 3n and MedGemma 4B: <span class="mono" style="color:var(--yellow);">8 pts &rarr; 1 pt</span></p>
+</section>
+
+<!-- ====== SLIDE 13: THE SHIFT ====== -->
+<section>
+  <h2><span class="tag tag-yellow">Shift</span> Before vs After</h2>
+  <p class="small" style="margin-bottom:1em;">Score change after rubric fix + weighted scoring</p>
+  <div style="max-width:75%; margin:0 auto;">
+    <div class="delta-row">
+      <div class="delta-label">MedGemma 4B</div>
+      <div class="delta-bar delta-positive" style="width:200px; color:#fff;">+8 pts</div>
+      <span class="small" style="margin-left:10px;">41% &rarr; 49%</span>
+    </div>
+    <div class="delta-row">
+      <div class="delta-label">Phi-4 Mini</div>
+      <div class="delta-bar delta-positive" style="width:175px; color:#fff;">+7 pts</div>
+      <span class="small" style="margin-left:10px;">34% &rarr; 41%</span>
+    </div>
+    <div class="delta-row">
+      <div class="delta-label">MedGemma 1.5</div>
+      <div class="delta-bar delta-positive" style="width:200px; color:#fff;">+8 pts</div>
+      <span class="small" style="margin-left:10px;">21% &rarr; 29%</span>
+    </div>
+    <div class="delta-row">
+      <div class="delta-label">Llama 3.2 3B</div>
+      <div class="delta-bar delta-positive" style="width:150px; color:#fff;">+6 pts</div>
+      <span class="small" style="margin-left:10px;">31% &rarr; 37%</span>
+    </div>
+    <div class="delta-row">
+      <div class="delta-label">Gemini Flash</div>
+      <div class="delta-bar delta-positive" style="width:75px; color:#fff;">+3 pts</div>
+      <span class="small" style="margin-left:10px;">78% &rarr; 81%</span>
+    </div>
+    <div class="delta-row">
+      <div class="delta-label">Gemma 3n</div>
+      <div class="delta-bar delta-neutral" style="width:30px;">+1</div>
+      <span class="small" style="margin-left:10px;">49% &rarr; 50%</span>
+    </div>
+  </div>
+  <p style="font-size:0.75em; color:var(--yellow); margin-top:1.2em;">
+    The old rubric was unfairly penalizing MedGemma's content-heavy approach.
+  </p>
+</section>
+
+<!-- ====== SLIDE 14: HEAD TO HEAD ====== -->
+<section>
+  <h2><span class="tag tag-blue">Head to Head</span> Gemma 3n vs MedGemma 4B</h2>
+  <table class="heatmap" style="max-width:90%; margin:0.8em auto;">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Halluc.</th>
+        <th>Complete</th>
+        <th>Instruct</th>
+        <th>Format</th>
+        <th>Entities</th>
+        <th>No Dup</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="color:var(--green);">Gemma 3n</td>
+        <td class="heat-mid winner">56%</td>
+        <td class="heat-low">35%</td>
+        <td class="heat-low winner">39%</td>
+        <td class="heat-mid winner">61%</td>
+        <td class="heat-bad winner">24%</td>
+        <td class="heat-high">84%</td>
+      </tr>
+      <tr>
+        <td style="color:var(--blue);">MedGemma 4B</td>
+        <td class="heat-mid">53%</td>
+        <td class="heat-mid winner">48%</td>
+        <td class="heat-bad">28%</td>
+        <td class="heat-mid">44%</td>
+        <td class="heat-bad">3%</td>
+        <td class="heat-high winner">88%</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="stat-row" style="margin-top:1em;">
+    <div class="stat-block">
+      <div class="stat-number" style="color:var(--green);">+13</div>
+      <div class="stat-desc">MedGemma completeness lead</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-number" style="color:var(--blue);">+17</div>
+      <div class="stat-desc">Gemma format lead</div>
+    </div>
+  </div>
+  <p style="font-size:0.75em; color:var(--muted); margin-top:0.5em;">Which failure mode is more acceptable?</p>
+</section>
+
+<!-- ====== SLIDE 15: JUDGE VS JUDGE ====== -->
+<section>
+  <h2><span class="tag tag-purple">Bias Check</span> Claude vs Gemini as Judge</h2>
+  <div style="max-width:85%; margin:1em auto; text-align:left; font-size:0.78em;">
+    <p>Not self-preference bias &mdash; Gemini only gives itself <span class="mono" style="color:var(--green);">+3</span> over Claude's score.</p>
+    <p style="margin-top:0.6em;">Real finding: judges disagree on <em>what constitutes failure</em>.</p>
+    <div class="problem-box" style="margin-top:1em;">
+      <p style="font-size:0.85em; color:var(--text);"><strong>Qwen case study:</strong></p>
+      <p>Qwen outputs <span class="mono" style="color:var(--yellow);">60K chars</span> of thinking dump with a note buried inside.</p>
+      <div class="card-row" style="margin-top:0.6em; gap:0.6em;">
+        <div class="card" style="background:rgba(230,0,73,0.08); border-color:var(--red); min-width:0;">
+          <h4 style="color:var(--red);">Claude: 7%</h4>
+          <p style="font-size:0.8em;">"This is not a clinical note."<br/>Scores the output as a product.</p>
+        </div>
+        <div class="card" style="background:rgba(80,233,145,0.08); border-color:var(--green); min-width:0;">
+          <h4 style="color:var(--green);">Gemini: 73%</h4>
+          <p style="font-size:0.8em;">Finds the buried note.<br/>Scores the clinical content.</p>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:0.8em; color:var(--blue);">For our use case &mdash; output must be directly usable &mdash; Claude is the right judge.</p>
+  </div>
+</section>
+
+<!-- ====== SLIDE 16: THE RECOMMENDATION ====== -->
+<section>
+  <h2><span class="gradient-text-green">Recommendation: MedGemma 4B</span></h2>
+  <div style="max-width:85%; margin:0.8em auto; text-align:left; font-size:0.78em;">
+    <div class="fix-box">
+      <p style="font-size:0.9em; color:var(--text);"><strong>Completeness wins over structure.</strong></p>
+      <p>Physicians can fix bad formatting. They cannot add back missing content.</p>
+      <p style="color:var(--green);">48% completeness vs 35% &mdash; a 13-point gap on the dimension that matters most.</p>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.8em; margin-top:0.8em;">
+      <div class="problem-box" style="margin:0;">
+        <p style="font-size:0.85em; color:var(--text);"><strong>Gemma 3n's risks</strong></p>
+        <p>Factual errors in family history</p>
+        <p>Note duplication bug</p>
+        <p style="color:var(--red);">Dangerous, hard to catch</p>
+      </div>
+      <div class="fix-box" style="margin:0;">
+        <p style="font-size:0.85em; color:var(--text);"><strong>MedGemma 4B's issues</strong></p>
+        <p>Template leakage (post-processable)</p>
+        <p>Section reordering</p>
+        <p style="color:var(--green);">Fixable in post-processing</p>
+      </div>
+    </div>
+    <p style="margin-top:1em; color:var(--muted); text-align:center;">
+      Both at ~50% of frontier quality. Physician review is mandatory regardless.
+    </p>
+  </div>
+</section>
+
+<!-- ====== SLIDE 17: WHAT'S NEXT ====== -->
+<section>
+  <h2><span class="tag tag-blue">Next</span> What's Next</h2>
+  <div style="max-width:80%; margin:1.5em auto; text-align:left;">
+    <ul style="font-size:0.85em;">
+      <li>Score H&P and DAP templates to confirm MedGemma holds across note types</li>
+      <li>Post-processing pipeline for MedGemma's known failure modes</li>
+      <li>Prompt engineering: simpler template, few-shot examples</li>
+      <li>Target: close the gap from <span class="mono" style="color:var(--blue);">49%</span> toward frontier quality</li>
+    </ul>
+    <div style="text-align:center; margin-top:2em;">
+      <span class="stat-number" style="font-size:1.8em; color:var(--blue);">49%</span>
+      <span style="font-size:1.5em; color:var(--muted); margin:0 0.5em;">&rarr;</span>
+      <span class="stat-number" style="font-size:1.8em; color:var(--green);">?</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SLIDE 18: END ====== -->
+<section>
+  <h2 style="margin-bottom:1.5em;">Full methodology, scores, and reflections in <span class="mono gradient-text">evals/</span></h2>
+  <div style="font-size:0.7em; color:var(--muted); font-family:'JetBrains Mono',monospace;">
+    <p style="margin:0.3em 0;"><span style="color:var(--blue);">evals/plan.md</span> &mdash; evaluation design and rubric</p>
+    <p style="margin:0.3em 0;"><span style="color:var(--green);">evals/reflections/</span> &mdash; analysis and methodology notes</p>
+    <p style="margin:0.3em 0;"><span style="color:var(--purple);">evals/results/</span> &mdash; raw scores and model outputs</p>
+  </div>
+  <div class="brand" style="margin-top:3em;">KasaMD Offline</div>
+</section>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+Reveal.initialize({
+  hash: true,
+  slideNumber: true,
+  width: 1280,
+  height: 720,
+  margin: 0.08,
+  transition: 'fade',
+  transitionSpeed: 'default',
+  backgroundTransition: 'fade',
+  center: true,
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{
+  "transcript_id": "45-suspicious-mole",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is supported by the transcript. No fabricated findings or diagnoses.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "Multiple template instructions left in the output verbatim: '(Only include items that were mentioned)', '(Only include vitals that were documented)', '[Secondary diagnoses if applicable]', '(Only include plan elements that were specifically discussed)'. The Review of Systems lists systems that were not discussed with 'No mention' instead of omitting the section or only including discussed systems. Social History similarly lists unmentioned items.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Missing significant details from the transcript including the detailed ABCDE criteria findings (asymmetry, irregular borders, variegated color, 8mm diameter, evolving), the location specified as right upper back, procedure details (lidocaine, 15-20 minutes, sutures removed in 10-14 days), pathology results timeline (5-7 business days), pre-procedure instructions (avoid aspirin/ibuprofen for 3 days, Tylenol is fine, wear loose-fitting top), post-procedure wound care instructions, counseling about possible outcomes (atypical benign mole vs melanoma, wider excision, referral to surgical oncology), patient's fair skin and poor sun protection history, and patient's interest in seeing a dermatologist.",
+      "missed_items": [
+        "ABCDE criteria detailed findings (asymmetry, irregular borders, variegated color with dark brown/tan/black, 8mm diameter)",
+        "Right upper back location specificity",
+        "Lidocaine local anesthetic",
+        "Procedure duration 15-20 minutes",
+        "Suture removal in 10-14 days",
+        "Pathology results in 5-7 business days",
+        "Pre-procedure instructions: avoid aspirin and ibuprofen for 3 days, Tylenol is fine, wear loose-fitting top",
+        "Post-procedure wound care: keep clean and dry for 24 hours",
+        "Counseling on possible outcomes (benign atypical mole vs melanoma, wider excision, referral to dermatology/surgical oncology)",
+        "Patient's fair skin and poor sun protection history",
+        "Patient's interest in seeing a dermatologist"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template instructions are left in the output as raw text. The Review of Systems includes all systems with 'No mention' instead of being omitted per template instructions. Vital signs are all listed as 'Not documented' instead of being omitted. Physical examination findings are minimal and placed partly under General rather than having a dedicated skin exam section. Bold formatting inconsistencies exist (Chief Complaint not bolded).",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Medications like lidocaine, aspirin, ibuprofen, Tylenol and conditions like melanoma should have been marked with {{drug:...}} and {{condition:...}} syntax.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content found."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 31.83,
+      "input_tokens": 3047,
+      "output_tokens": 815
+    }
+  }
+}

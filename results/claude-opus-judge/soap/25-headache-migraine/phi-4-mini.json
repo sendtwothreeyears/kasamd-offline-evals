@@ -1,0 +1,63 @@
+{
+  "transcript_id": "25-headache-migraine",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The ROS section includes multiple systems (cardiovascular, respiratory, skin, GI) that were never discussed in the transcript, fabricating negative findings. The note also states 'No fever, chills, fatigue' under Constitutional when the transcript only mentions no fevers, weight changes, or night sweats. The GI ROS says 'No nausea, vomiting' which contradicts the HPI where nausea and vomiting are clearly present.",
+      "flagged_content": [
+        "Cardiovascular: No chest pain, palpitations, or edema.",
+        "Respiratory: No shortness of breath, cough, or wheezing.",
+        "Skin: No rashes, lesions, or wounds.",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain.",
+        "BP, HR, Temp, RR, SpO2 not provided in detail but would be recorded on physical examination.",
+        "General: Overall appearance and condition not detailed but would be noted in a comprehensive examination."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed, yet the note includes many undiscussed systems. Template parenthetical instructions appear verbatim in the output (e.g., '(Only include systems that were discussed)'). Vital signs and General sections include speculative language about what 'would be' documented rather than stating 'Not documented'."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing: the 3-month duration of headaches, milder episode severity (5-6/10), prior treatment with ibuprofen and Excedrin Migraine and the friend's sumatriptan, counseling not to use borrowed medications, two C-sections in past medical history, detailed contraceptive counseling (specific alternatives discussed), lifestyle modification details (sleep hygiene, caffeine taper specifics, hydration goal, exercise recommendations, headache diary, Migraine Buddy app), neck/shoulder tension, and the discussion of propranolol and topiramate as alternatives.",
+      "missed_items": [
+        "3-month duration of headaches",
+        "Milder episode severity 5-6/10",
+        "Prior ibuprofen use and its partial effectiveness",
+        "Excedrin Migraine use and response",
+        "Use of friend's sumatriptan and counseling against it",
+        "Two C-sections",
+        "Specific progestin-only alternatives discussed (minipill, Depo, IUD, implant)",
+        "Caffeine taper plan details (down to 1 cup over 2 weeks)",
+        "Hydration goal of 64 ounces daily",
+        "Exercise recommendation (30 min, 3x/week)",
+        "Headache diary recommendation and Migraine Buddy app",
+        "Neck and shoulder tension on headache days",
+        "Propranolol and topiramate mentioned as alternatives",
+        "Two young children ages 2 and 5",
+        "Sleep hygiene counseling details",
+        "Alcohol details (nonsmoker, social drinker) misplaced in PMH instead of Social History"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template parenthetical instructions are left in the output. Social history is incomplete and missing tobacco/alcohol/recreational drug subfields. Past medical history contains social history content (nonsmoker, alcohol use). Vital signs section includes speculative filler rather than being omitted per template instructions. Allergies section is vague rather than stating 'No known drug allergies'."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 18.01,
+      "input_tokens": 4306,
+      "output_tokens": 949
+    }
+  }
+}

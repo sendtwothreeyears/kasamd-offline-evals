@@ -1,0 +1,51 @@
+{
+  "transcript_id": "29-anxiety-gad",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note states 'Appears anxious, restless' under General, but the transcript does not describe the patient's general appearance \u2014 it only says he was 'appreciative and engaged throughout the visit.' This is a minor embellishment beyond what the transcript supports.",
+      "flagged_content": [
+        "Appears anxious, restless."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "Template instructions in parentheses were left in the output in multiple places (e.g., '(Only include items that were mentioned)', '(Only include vitals that were documented)', '(Only document examination findings...)', '(Only include plan elements...'). Also, undocumented vitals were listed with '[Not documented]' rather than being omitted as instructed. The Review of Systems section was omitted entirely rather than being populated with the discussed systems, though the template says to omit only if not mentioned \u2014 many systems were discussed.",
+      "missed_items": []
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "The note captures the vast majority of transcript content. However, it omits the GAD-7 score of 17 from the Assessment/Subjective (though it appears in the Plan), the discussion about white coat hypertension vs. chronic anxiety contributing to elevated BP, the detail about him previously running and wanting to get back to it, the recommendation to replace phone use with reading a physical book, and the note that his wife may notice improvement before he does.",
+      "missed_items": [
+        "Discussion of white coat hypertension vs chronic anxiety contributing to elevated BP",
+        "He used to run and wants to get back to it",
+        "Recommendation to replace phone with reading a physical book before bed",
+        "Wife may notice improvement before he does",
+        "GAD-7 score not mentioned in subjective or assessment sections",
+        "Caffeine reduction details placed in HPI rather than Social History (though present)",
+        "IBS diagnosis from GI workup"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "There are two 'Physical Examination' headers in the Objective section. The Review of Systems section is entirely missing despite multiple systems being discussed. Social history content is duplicated between HPI and the Social History section. Template parenthetical instructions are left in the output. Undocumented vitals are listed rather than omitted.",
+      "missed_items": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. Medications (escitalopram, buspirone, benzodiazepines) and conditions (generalized anxiety disorder, irritable bowel syndrome, hyperthyroidism) were not marked with {{drug:...}} or {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The Physical Examination header appears twice in the Objective section, and social history/family history/past medical history content is largely duplicated between the HPI narrative and their respective dedicated sections."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.5,
+      "input_tokens": 5530,
+      "output_tokens": 741
+    }
+  }
+}

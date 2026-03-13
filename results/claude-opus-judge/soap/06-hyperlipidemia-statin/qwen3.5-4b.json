@@ -1,0 +1,41 @@
+{
+  "transcript_id": "06-hyperlipidemia-statin",
+  "template": "soap",
+  "model": "qwen3.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The generated note contains no actual clinical note \u2014 it is entirely a thinking/planning process that was never converted into a final output. There is no clinical note to evaluate, which constitutes a fundamental failure.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The output is entirely a thinking/reasoning process and never produces an actual clinical note. It fails to follow the most basic instruction of generating a structured clinical note."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "No clinical note was produced, so no transcript content was captured in a usable output format.",
+      "missed_items": [
+        "All transcript content \u2014 no note was generated"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "No structured clinical note was output. The entire output is an internal reasoning/planning document with no template-adherent sections."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was performed because no clinical note was generated."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The thinking process contains massive repetitive loops, with the same line about 'hyperlipidemia' repeated hundreds of times in an apparent infinite loop."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 8.84,
+      "input_tokens": 19739,
+      "output_tokens": 348
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "transcript_id": "25-headache-migraine",
+  "template": "soap",
+  "model": "qwen3.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The generated note is entirely a thinking/planning process and does not produce an actual clinical note. There is no final output to evaluate for hallucination, but the lack of any completed note means it cannot be scored favorably.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The output is entirely a thinking process with no completed clinical note. The instructions explicitly state to return ONLY the completed note, and this was completely ignored."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "No clinical note was produced. All transcript content is missing from any structured output.",
+      "missed_items": [
+        "Entire note content - no structured clinical note was generated"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "No structured output was produced following the template. The output is entirely unstructured thinking/planning text."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No clinical note was generated, so no entity marking was applied in any output."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The thinking process contains massive repetitive loops where the same sentence about the template structure is repeated hundreds of times."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 7.79,
+      "input_tokens": 20971,
+      "output_tokens": 342
+    }
+  }
+}

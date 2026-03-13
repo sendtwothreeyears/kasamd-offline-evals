@@ -1,0 +1,160 @@
+---
+id: 49
+scenario: Diabetic neuropathy, tingling in feet
+category: Endocrine/Other
+density: Dense
+---
+
+Doctor: Good morning, Gerald. Come on in, have a seat. How've you been?
+
+Patient: Well, Doc, I wish I could say great, but these feet of mine have been giving me trouble and I figured I better come talk to you about it.
+
+Doctor: Tell me what's going on.
+
+Patient: So the tingling — I've had that for a while, maybe a year. In my toes mostly. But the last few months it's gotten worse. It's moved up past my ankles now. And it's not just tingling anymore. At night, it's like my feet are on fire. I'll be lying in bed and it's this burning, aching sensation. Some nights I can't even have the sheet touching my feet.
+
+Doctor: That sounds miserable. Are you having any numbness too, or is it mostly the pain and tingling?
+
+Patient: Both. The bottoms of my feet are numb — like when I walk, it feels like I'm walking on a wad of cotton or something. I can't feel the floor the way I used to. I stepped on a thumbtack last month and didn't even notice until my wife saw the blood.
+
+Doctor: That's concerning. We definitely need to talk about that. Are you having any issues with balance or feeling unsteady on your feet?
+
+Patient: Now that you mention it, yes. I've been a little wobbly. I stumbled getting out of the shower the other day and had to grab the towel rack. I didn't fall, but it scared me. My wife keeps saying I'm going to break a hip.
+
+Doctor: She's not wrong to be concerned. Have you actually fallen?
+
+Patient: Once, about three weeks ago. I was walking to the kitchen at night — didn't turn the light on — and I just lost my footing. Went down on my knee. I was fine, just a bruise, but it shook me up.
+
+Doctor: I'm glad you weren't seriously hurt, but we need to take falls very seriously. Let me ask about some other symptoms. Any weakness in your legs? Trouble lifting your feet when you walk?
+
+Patient: I feel like I'm maybe shuffling more than I used to. My daughter noticed it. I don't think my feet are dropping or anything, but they feel heavy.
+
+Doctor: Any of these symptoms in your hands?
+
+Patient: A little. My fingertips feel slightly numb sometimes, like when I'm trying to button a shirt. But nothing like the feet.
+
+Doctor: Okay. Let me review your diabetes history. You were diagnosed with type 2 diabetes about — what — twelve years ago?
+
+Patient: Sounds about right. 2014.
+
+Doctor: And what are you on for it currently?
+
+Patient: Metformin, twice a day. And I started the Ozempic injections maybe eight months ago.
+
+Doctor: How's your blood sugar control been? Do you check at home?
+
+Patient: I do, most mornings. It's usually between 140 and 180 fasting. Sometimes higher. I'm not great about checking after meals.
+
+Doctor: And your last A1C — let me pull it up — was 8.4, which was about three months ago. We'd like that to be under 7, ideally. What was it before the Ozempic?
+
+Patient: I think it was 9-something.
+
+Doctor: 9.2, yes. So the Ozempic has helped bring it down, but we're still above target. And honestly, Gerald, the neuropathy you're describing is almost certainly related to the diabetes. Prolonged elevated blood sugars damage the small nerve fibers, especially in the feet and legs. It typically starts in the toes and works its way up — what we call a "stocking-glove" pattern.
+
+Patient: My old doctor mentioned neuropathy a few years back but it was mild then. Just a little tingling.
+
+Doctor: It tends to be progressive, especially if blood sugars aren't well controlled. Let me do an exam. I'm going to check a few things on your feet. First, take your shoes and socks off for me.
+
+Patient: Sure thing.
+
+Doctor: Okay. I'm going to start with the monofilament test. I'm going to touch your feet with this thin nylon filament in several spots. Close your eyes and tell me when you feel it. Ready?
+
+Patient: Ready.
+
+Doctor: How about here... here... here...
+
+Patient: I felt the first one. Not the second. Maybe the third? I'm not sure.
+
+Doctor: Okay. And on this foot — here... here... here...
+
+Patient: I think the middle one.
+
+Doctor: So you're missing sensation in about seven out of ten testing points, which is significant. Let me check your reflexes. I'm tapping your Achilles tendon here... and the other side...
+
+Patient: I didn't feel much.
+
+Doctor: Your ankle reflexes are absent bilaterally. That's consistent with neuropathy. Let me check vibration sense — I'm going to put this tuning fork on your big toe. Tell me when you feel the buzzing and when it stops.
+
+Patient: I... I can barely feel it. Maybe a tiny bit.
+
+Doctor: And proprioception — I'm going to move your big toe up or down. Eyes closed. Tell me which direction.
+
+Patient: Um... up?
+
+Doctor: It was down. Let's try again. This one?
+
+Patient: Up?
+
+Doctor: That was up, yes. So your proprioception is impaired, which explains the balance issues. Now let me look at the skin on your feet. I see some dry, cracked skin on the heels. There's a small callus on the lateral aspect of the right fifth toe — do you know about that?
+
+Patient: I can't really feel it, so no.
+
+Doctor: And that's exactly the problem. When you lose sensation, you lose the warning system that tells you something's rubbing or pressing. That's how people end up with ulcers, which can become very serious. The thumbtack incident is a perfect example. Let me also check your pulses... dorsalis pedis is present bilaterally, good. Posterior tibial is faintly palpable on the left, present on the right. Your circulation is okay, which is good.
+
+Patient: So what do we do about all this?
+
+Doctor: Let's talk treatment on multiple fronts. First, the pain. The burning at night is significantly affecting your quality of life, and we have medications that can help. The two first-line options are gabapentin and duloxetine — brand name Cymbalta. Gabapentin works by calming the overactive nerve signals. We'd start low, 100 milligrams three times a day, and gradually increase. Duloxetine is technically an antidepressant but it's FDA-approved for diabetic neuropathy pain. It works on the pain pathways directly.
+
+Patient: Which one do you recommend?
+
+Doctor: Given that you mentioned some trouble sleeping, I might lean toward gabapentin because it can also help with sleep. It does cause some drowsiness, which in your case might actually be beneficial at night. The main side effects are drowsiness and sometimes dizziness, which I want to be careful about given your balance issues. So we'll start at a low dose and go up slowly.
+
+Patient: Will it fix the numbness too?
+
+Doctor: I want to be honest with you — the medications treat the pain, but they don't reverse the nerve damage that's already occurred. The numbness is unlikely to improve significantly. What we can do is prevent it from getting worse, and that comes down to blood sugar control. That's the single most important thing.
+
+Patient: That's hard to hear.
+
+Doctor: I know. But it's important to understand so we focus our energy in the right place. Speaking of blood sugar — I think we need to intensify your diabetes management. Your A1C of 8.4 is better than it was, but every point we bring it down reduces the rate of neuropathy progression. I'd like to add a second agent or possibly increase the Ozempic dose. We should also talk about your diet and whether you've been following up with the diabetes educator.
+
+Patient: I saw her once when I started the Ozempic. I could probably go back.
+
+Doctor: Please do. I'll put in a referral. Now, let's talk about foot care, because this is critical. You need to inspect your feet every single day. Every day. Look for cuts, blisters, redness, any changes. Since you can't feel them well, your eyes are your early warning system. Use a mirror to check the bottoms of your feet, or have your wife help.
+
+Patient: She'd be happy to do that. She worries more than I do.
+
+Doctor: Good. Never walk barefoot, even in the house. The thumbtack situation — that can't happen again. Wear shoes or hard-soled slippers at all times. When you buy shoes, make sure they fit properly and don't have seams that could rub. Break them in gradually. And trim your toenails straight across — don't round the corners.
+
+Patient: Can I still go to that pedicure place my wife likes?
+
+Doctor: I'd actually recommend seeing a podiatrist instead. Which brings me to my next point — I'm going to refer you to podiatry. They specialize in diabetic foot care, can manage your calluses safely, and monitor for any early skin breakdown.
+
+Patient: How often would I see them?
+
+Doctor: Every three to four months for routine foot checks, or sooner if you notice any problems. They may also recommend special footwear or custom inserts that can help redistribute pressure on your feet and reduce the risk of ulcers.
+
+Patient: Alright.
+
+Doctor: Now about the falls. One fall is already concerning. The combination of numbness and impaired proprioception puts you at significant risk. I'd like you to do a few things. First, make sure your home is as safe as possible — remove throw rugs, make sure hallways and bathrooms are well-lit, install grab bars in the shower if you don't have them. Use a nightlight for trips to the bathroom.
+
+Patient: My wife's been after me about the throw rugs forever.
+
+Doctor: She's right again. I'd also like to refer you to physical therapy for balance and gait training. They can teach you exercises to strengthen the muscles that help compensate for the lost sensation. It makes a real difference in fall prevention.
+
+Patient: Is there anything I should be worried about with driving? I drive myself to my part-time job three days a week.
+
+Doctor: That's a fair question. As long as you can feel the pedals and operate them safely, you should be okay for now. But we should reassess if the numbness progresses. Have you noticed any difficulty with the gas or brake?
+
+Patient: No, not really. I can still feel the pedals fine with my forefoot.
+
+Doctor: Good. Let's keep monitoring that. Let me summarize the plan. I'm starting gabapentin 100 mg three times a day — we'll titrate up as tolerated. Continue the metformin and Ozempic — I want to discuss dose adjustment at our next visit after we recheck your A1C. Daily foot inspections, never barefoot, proper footwear. Referral to podiatry. Referral to physical therapy for balance training. Referral back to the diabetes educator. And I want to see you back in four weeks to check how the gabapentin is working and discuss your diabetes regimen.
+
+Patient: That's a lot of referrals.
+
+Doctor: It is, but each one addresses a different piece of this puzzle. The neuropathy isn't going to improve on its own, but with a coordinated approach, we can manage the pain, prevent complications, and protect your feet. The biggest thing you can control is your blood sugar. That's the lever that slows everything down.
+
+Patient: I hear you. I need to do better with the diet. I've been cheating more than I should.
+
+Doctor: Let's not frame it as cheating — let's just figure out what's realistic and sustainable. The diabetes educator can help with that. And Gerald, if you notice any cuts on your feet that aren't healing, any color changes, warmth, or redness — don't wait. Come in or call right away. Diabetic foot infections can escalate quickly.
+
+Patient: Got it. I'll take this seriously. My father lost toes to diabetes and I don't want to go down that road.
+
+Doctor: That's a powerful motivator. We're going to do everything we can to prevent that. Any other questions?
+
+Patient: Just — will the burning ever go away completely?
+
+Doctor: With gabapentin, many people get significant relief. We may not eliminate it a hundred percent, but the goal is to get it to a level where it's not running your life. If gabapentin alone isn't enough, we can add other things or switch approaches. We'll find the right combination.
+
+Patient: Okay. Thanks, Doc. I appreciate you spending the time.
+
+Doctor: Always, Gerald. We'll get through this together. See you in four weeks.

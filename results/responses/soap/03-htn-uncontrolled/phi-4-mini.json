@@ -1,0 +1,14 @@
+{
+  "transcript_id": "03-htn-uncontrolled",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nBlood pressure follow-up\n\n**History of Present Illness**\nThe patient is visiting for a blood pressure follow-up as indicated by a message through the portal due to high blood pressure readings. Home readings have been consistent in the 140s to 150s over 90s range over the past month. The patient does not report any symptoms but is concerned about the seriousness of hypertension given a family history of stroke.\n\n**Review of Systems**\n(Only include systems that were discussed. If not mentioned, omit this section entirely)\nConstitutional: No symptoms reported\nHEENT: No vision, hearing, throat, or nasal symptoms reported\nCardiovascular: No chest pain, palpitations, or edema reported\nRespiratory: No shortness of breath, cough, or wheezing reported\nGastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain reported\nGenitourinary: No urinary symptoms or menstrual history provided\nMusculoskeletal: No joint pain, muscle weakness, or mobility issues reported\nNeurological: No headache, dizziness, numbness, or weakness reported\nPsychiatric: No mood, anxiety, or sleep issues reported\nSkin: No rashes, lesions, or wounds reported\n\n**Past Medical History**\nNot documented\n\n**Medications**\nThe patient is on amlodipine 5 milligrams daily but is missing doses and taking it at inconsistent times. Lisinopril 10 milligrams daily was added to the regimen.\n(If not documented, state \"Not documented\")\n\n**Allergies**\nNo known drug allergies provided\n\n**Social History**\nTobacco: Not discussed\nAlcohol: Consumes a couple of beers on the weekend\nRecreational drugs: Not discussed\nOccupation: Not discussed\n\n**Family History**\nSignificant family history of stroke on the paternal side\n\n**Objective**\nPhysical Examination: Not performed\nVital Signs:\nBP: 152/94\nHR: Not provided\nTemp: Not provided\nRR: Not provided\nSpO2: Not provided\n\nGeneral: Not provided\n\n**Assessment**\nPrimary diagnosis: Hypertension\nSecondary diagnosis: None provided\n\n**Plan**\n1. Continue amlodipine 5 milligrams daily and add lisinopril 10 milligrams daily\n2. Work on consistent medication timing (anchoring medication to a consistent routine, such as taking it at night)\n3. Continue efforts to reduce sodium intake (under 2,000 milligrams of sodium per day)\n4. Increase exercise (brisk walking 20-45 minutes most days of the week)\n5. Follow-up in four weeks for a repeat blood pressure measurement\n\nTold the patient to keep logging home readings and called if a persistent dry cough occurs so that medication can be adjusted if needed.",
+  "metadata": {
+    "inference_time_s": 9.65,
+    "prompt_tokens": 1744,
+    "tokens_generated": 569,
+    "prompt_tps": 507.0,
+    "tokens_per_sec": 59.0,
+    "peak_memory_gb": 3.87
+  }
+}

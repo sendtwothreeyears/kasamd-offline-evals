@@ -1,0 +1,44 @@
+---
+id: 44
+scenario: Eczema flare in adult, topical management
+category: Derm
+density: Sparse
+---
+
+Doctor: Hi, what can I help you with today?
+
+Patient: So I've got this rash on my arms that's been driving me crazy. It's so itchy, especially at night. I can barely sleep.
+
+Doctor: How long has it been going on?
+
+Patient: A couple weeks, maybe? It gets like this every winter. Last year was bad too.
+
+Doctor: Let me take a look. Can you roll up your sleeves for me?
+
+Patient: Yeah, sure.
+
+Doctor: Okay, I can see some dry, scaly patches here on the insides of both elbows, and some on the wrists too. There's some redness and a few areas where it looks like you've been scratching quite a bit.
+
+Patient: Oh yeah, I scratch in my sleep. I wake up and there's like, skin under my fingernails. It's gross.
+
+Doctor: That's pretty common with eczema, which is what this looks like. Have you been diagnosed with eczema before?
+
+Patient: My mom said I had it as a kid but I kind of grew out of it. And then it came back a few years ago.
+
+Doctor: That happens. Alright, I'm going to prescribe a topical steroid — triamcinolone 0.1% ointment. Apply it twice a day to the affected areas for two weeks. Ointment, not cream — it's greasier but it works better and is less irritating.
+
+Patient: Okay.
+
+Doctor: And the other thing that makes a huge difference is moisturizing. Something thick — CeraVe cream or Vanicream, something fragrance-free. Slather it on right after you shower while your skin is still a little damp. Do that twice a day at minimum.
+
+Patient: I've been using a regular lotion. Is that not enough?
+
+Doctor: Probably not. Lotions are mostly water. You want a cream or ointment — something that actually locks moisture in. And keep your showers warm, not hot, and short. Hot water strips the oils from your skin.
+
+Patient: Got it. Anything else?
+
+Doctor: Try to avoid things that irritate your skin — harsh soaps, wool clothing, that kind of thing. If the itching is really bad at night, you can take an over-the-counter antihistamine like Benadryl. It'll help you sleep too. If this isn't better in two weeks, come back and we'll reassess.
+
+Patient: Sounds good. Thanks.
+
+Doctor: You're welcome. Take care.

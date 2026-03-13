@@ -1,0 +1,41 @@
+{
+  "transcript_id": "09-asthma-exacerbation",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note lists 'Cardiovascular: Chest tightness' in the Review of Systems, but chest tightness in the context of asthma is a respiratory symptom, not cardiovascular. 'Allergic rhinitis' as a formal diagnosis is a reasonable inference from the described allergy symptoms but is a minor embellishment since the physician didn't explicitly use that term. The Social History section includes 'Not documented' for tobacco, alcohol, recreational drugs, and occupation, which were not discussed but the template says 'Only include items that were mentioned' \u2014 this is an instruction-following issue rather than hallucination.",
+      "flagged_content": [
+        "Cardiovascular: Chest tightness"
+      ]
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The Social History section includes items (tobacco, alcohol, recreational drugs, occupation) all marked 'Not documented' despite the template instruction to 'Only include items that were mentioned.' The template also says to omit the section header for items not discussed. Otherwise, instructions were followed well.",
+      "missed_items": []
+    },
+    "completeness": {
+      "score": 3,
+      "rationale": "The note captures all key information from the transcript including chief complaint, HPI details, exam findings, peak flow results, all medications (current and new), counseling points, exercise advice, return precautions, spacer prescription, mouth rinsing advice, asthma action plan, and follow-up timeline."
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well overall, but the Social History section includes all sub-items as 'Not documented' instead of omitting them per template instructions. The Objective section uses bold formatting instead of the exact heading hierarchy specified. Minor formatting deviations."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Entity marking syntax is correct. Most drugs and conditions are marked on first occurrence. However, 'Asthma' is marked with {{condition:Asthma}} in Past Medical History after already being marked as {{condition:asthma}} in HPI \u2014 this is a repeated marking. Also, 'oral thrush' could arguably be marked as a condition but was not, which is minor since it's mentioned as a preventive context rather than a diagnosis."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No sections or content are duplicated in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.01,
+      "input_tokens": 3598,
+      "output_tokens": 610
+    }
+  }
+}

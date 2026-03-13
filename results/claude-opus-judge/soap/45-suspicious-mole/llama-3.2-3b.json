@@ -1,0 +1,65 @@
+{
+  "transcript_id": "45-suspicious-mole",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems section fabricates 'No findings' for multiple systems (Constitutional, HEENT, Cardiovascular, etc.) that were never discussed in the transcript. The Social History section fabricates 'No usage details' for tobacco, alcohol, recreational drugs, and occupation, none of which were discussed. The note also misattributes the mole's change to friction \u2014 the transcript says she attributed the bleeding to friction, not the change itself.",
+      "flagged_content": [
+        "Constitutional: No findings.",
+        "HEENT: No findings.",
+        "Cardiovascular: No findings.",
+        "Respiratory: No findings.",
+        "Gastrointestinal: No findings.",
+        "Genitourinary: No findings.",
+        "Musculoskeletal: No findings.",
+        "Neurological: No findings.",
+        "Psychiatric: No findings.",
+        "Tobacco: No usage details.",
+        "Alcohol: No usage details.",
+        "Recreational drugs: No usage details.",
+        "Occupation: No job details.",
+        "She attributed the mole's change to friction"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit the section entirely if not mentioned, but the note includes all systems with 'No findings.' The template says to only include Social History items that were mentioned, but the note lists all items with placeholder text. Vital signs that were not documented should have been omitted per template instructions."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing from the note.",
+      "missed_items": [
+        "Procedure details: local anesthetic with lidocaine, pinch and stinging sensation, 15-20 minutes duration, sutures removed in 10-14 days",
+        "Pre-procedure instructions: avoid aspirin and ibuprofen for 3 days prior, Tylenol is fine, wear loose-fitting top",
+        "Post-procedure wound care: keep site clean and dry for 24 hours, then can shower normally, detailed wound care instructions at visit",
+        "Counseling on possible outcomes: atypical benign mole vs melanoma, possible wider excision, referral to dermatology or surgical oncology",
+        "Monthly self-skin checks with husband's help using ABCDE criteria",
+        "Annual full skin exams recommendation",
+        "Patient's interest in seeing a dermatologist",
+        "Fair-skinned with poor sun protection habits when younger",
+        "Dermatoscope used for examination",
+        "Doctor will call personally with results"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Subjective section appears before Chief Complaint, reversing the template order. ABCDE examination findings are mixed into both HPI (Subjective) and Physical Examination (Objective), creating misplacement. The ROS and Social History sections include items that should have been omitted per template instructions. Vital signs are listed individually as 'Not documented' rather than being omitted."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Medications like lidocaine, aspirin, ibuprofen, Tylenol and conditions like melanoma should have been marked but were either missing from the note or not marked."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The ABCDE criteria findings and lesion description are duplicated nearly verbatim between the HPI section and the Physical Examination section."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.18,
+      "input_tokens": 3267,
+      "output_tokens": 839
+    }
+  }
+}

@@ -1,0 +1,16 @@
+---
+id: 01
+scenario: New hypertension diagnosis found incidentally during headache visit
+category: Chronic disease
+density: Sparse
+---
+
+So I saw this patient this morning, coming in with about a week of headaches. He describes them as a dull pressure, mostly in the back of his head, worse in the mornings. No nausea, no vision changes, no photosensitivity — just the pressure sensation.
+
+So when I checked his vitals, his blood pressure came back at 162 over 98. That's pretty elevated, so I went ahead and rechecked it on the other arm and got 158 over 96 — so consistently elevated bilaterally. He mentioned he hasn't seen a doctor in about four or five years and was not aware of any prior history of high blood pressure. I did counsel him that the elevated blood pressure could actually be contributing to his headaches.
+
+Plan is to get some baseline labs — kidney function, cholesterol, the usual workup — and have him come back in two weeks for a blood pressure recheck. If it's still elevated at that point, we'll talk about starting antihypertensive medication.
+
+In the meantime, I counseled him on lifestyle modifications — reducing salt intake, getting regular exercise, something like thirty minutes of walking a day, and cutting back on caffeine. For the headaches, I recommended acetaminophen as needed and specifically told him to avoid ibuprofen given that it can raise blood pressure.
+
+He understood the plan and was agreeable. Labs ordered, follow-up in two weeks.

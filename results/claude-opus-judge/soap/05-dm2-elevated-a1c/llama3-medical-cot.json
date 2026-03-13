@@ -1,0 +1,67 @@
+{
+  "transcript_id": "05-dm2-elevated-a1c",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "Multiple fabricated findings: heart rate 100, respiratory rate 20, oxygen saturation 98%, body temperature 98.6\u00b0F were never mentioned in the transcript. 'Secondary diagnosis is likely to be hypoglycemia' is fabricated and contradicts the transcript. 'difficulty sleeping' is not stated (nocturia is not the same). Social history claims about not being a smoker/drinker/drug user are fabricated. The eye exam does not show microalbuminuria \u2014 that was a urine lab finding. Mother was not on insulin; father was.",
+      "flagged_content": [
+        "Heart rate: 100",
+        "Respiratory rate: 20",
+        "Oxygen saturation: 98%",
+        "Body temperature: 98.6\u00b0F",
+        "The secondary diagnosis is likely to be hypoglycemia",
+        "Robert is not a recreational drug user. He is not a heavy smoker or drinker.",
+        "difficulty sleeping",
+        "His mother was hospitalized with a hip fracture and was on insulin",
+        "Robert's eye exam shows mild microalbuminuria"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note fabricates vital signs and social history rather than stating 'Not documented.' The Objective section is misinterpreted as a goal statement rather than clinical findings. Template instructions about omitting undiscussed items were ignored, and entity marking was completely absent."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "Major transcript content is missing: semaglutide titration protocol, discussion of insulin glargine and patient's refusal, GLP-1 mechanism/benefits/side effects counseling, insurance/prior authorization discussion, empagliflozin as backup, foot exam findings, ophthalmology referral, new glucometer/test strips order, BMP order, urine microalbumin value of 45, creatinine 1.0, early diabetic nephropathy, 4-week follow-up specifics, ran out of test strips, 15-pound weight gain, BMI 35.4, height/weight details.",
+      "missed_items": [
+        "Insulin glargine discussion and patient refusal",
+        "Semaglutide titration schedule (0.25 to 0.5 to 1 mg)",
+        "GLP-1 side effects counseling (nausea, vomiting, diarrhea, pancreatitis, thyroid cancer)",
+        "Insurance/prior authorization discussion",
+        "Empagliflozin as backup option",
+        "Foot exam with monofilament testing",
+        "Ophthalmology referral",
+        "New glucometer and test strips order",
+        "BMP order",
+        "Creatinine 1.0 and urine microalbumin 45",
+        "Early diabetic nephropathy diagnosis",
+        "Weight 240 lbs, height 5'9\", BMI 35.4",
+        "15-pound weight gain",
+        "Ran out of test strips",
+        "Mother's hip fracture as caregiver context",
+        "Father's difficult insulin experience",
+        "4-week follow-up plan"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Objective section is misused as a goal statement instead of clinical findings. Extra sections like 'Complications' and 'Complications Screening' were added that are not in the template. Vital signs section includes fabricated values. The overall structure loosely follows the template but with significant deviations."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Extensive duplication throughout: the A1c of 9.2 and associated symptoms are repeated verbatim multiple times across Chief Complaint, HPI, Review of Systems, and Complications sections."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 17.82,
+      "input_tokens": 4033,
+      "output_tokens": 949
+    }
+  }
+}

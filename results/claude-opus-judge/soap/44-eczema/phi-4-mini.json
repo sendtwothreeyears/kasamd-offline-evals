@@ -1,0 +1,54 @@
+{
+  "transcript_id": "44-eczema",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The Medications section lists triamcinolone and Benadryl as current medications, but these were newly prescribed/recommended during the visit, not pre-existing medications. This is a minor misrepresentation. The HPI includes physical exam findings (dry, scaly patches on bilateral antecubital fossae and wrists) which is misplaced content but not hallucinated.",
+      "flagged_content": [
+        "Medications\nTriamcinolone 0.1% ointment, Benadryl"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "Template instructions in parentheses were left in the output (e.g., '(Only include systems that were discussed. If not mentioned, omit this section entirely)' and '(Only include plan elements that were specifically discussed)'). The ROS section should have been omitted entirely or only included the Skin system, but instead listed all systems as 'Not documented'. Social History should have been omitted per template instructions since nothing was mentioned.",
+      "missed_items": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing.",
+      "missed_items": [
+        "Duration of rash: couple of weeks",
+        "Scratching in sleep, waking up with skin under fingernails",
+        "Erythema and visible excoriations on exam",
+        "Eczema came back a few years ago (not just childhood history)",
+        "Counseling on ointment not cream distinction",
+        "Counseling that regular lotion is mostly water and not sufficient",
+        "Advice to keep showers warm rather than hot and short to avoid stripping natural oils",
+        "Apply moisturizer while skin is still slightly damp",
+        "Sleep disruption from itching",
+        "Benadryl should also help with sleep"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template parenthetical instructions were left in the output. The ROS section was improperly handled by listing all systems as 'Not documented' instead of omitting undiscussed systems. Physical exam findings (dry, scaly patches, erythema, excoriations) are placed in HPI and General instead of a proper skin exam section. 'General' appears twice under Physical Examination. Vital Signs are placed after General instead of before.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. No {{drug:...}} or {{condition:...}} syntax was used for any medications (triamcinolone, Benadryl, CeraVe, Vanicream) or conditions (eczema, atopic dermatitis)."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or full note content, though 'General' appears twice which is a structural issue rather than content duplication."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.92,
+      "input_tokens": 2708,
+      "output_tokens": 750
+    }
+  }
+}

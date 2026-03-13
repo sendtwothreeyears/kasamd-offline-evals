@@ -1,0 +1,51 @@
+{
+  "transcript_id": "17-strep-pharyngitis",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly supported by or reasonably inferred from the transcript. No fabricated findings or diagnoses.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to omit systems not discussed rather than listing them as N/A, to state 'Not documented' for past medical history and family history, to only include social history items that were mentioned, and to only include vitals that were documented. The note includes many sections with [N/A] or brackets that should have been omitted or handled differently per instructions. Allergies should state 'No known drug allergies' based on transcript info about no penicillin/amoxicillin allergy, not [N/A].",
+      "missed_items": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Missing key findings: physical exam findings (red/swollen tonsils with white patches, tender submandibular lymphadenopathy), rapid strep test result, no known allergy to amoxicillin or penicillin, counseling to finish the full course of antibiotics, and the 24-48 hour improvement timeline.",
+      "missed_items": [
+        "Tonsils red and swollen with white patches",
+        "Tender submandibular lymphadenopathy",
+        "Rapid strep test positive",
+        "No known allergy to amoxicillin or penicillin",
+        "Counseled to finish full course of antibiotics even when feeling better",
+        "Should feel noticeably better within 24-48 hours",
+        "Contagious until on antibiotic for at least 24 hours",
+        "Can return to work the day after tomorrow if feeling up to it"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Brackets and [N/A] placeholders remain throughout the note instead of being removed or handled per template instructions. Systems not discussed should be omitted entirely. Vital signs section lists all vitals as N/A instead of only including documented ones. Physical exam findings are missing from the objective section entirely.",
+      "missed_items": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. No {{drug:...}} or {{condition:...}} syntax was used for any medications (amoxicillin, Tylenol, ibuprofen) or conditions (streptococcal pharyngitis, sore throat, fever).",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content found in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 12.25,
+      "input_tokens": 2748,
+      "output_tokens": 670
+    }
+  }
+}

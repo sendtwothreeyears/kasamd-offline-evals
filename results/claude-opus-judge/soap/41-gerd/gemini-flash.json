@@ -1,0 +1,38 @@
+{
+  "transcript_id": "41-gerd",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly stated or reasonably inferred from the transcript. No fabricated findings or diagnoses.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 3,
+      "rationale": "The note follows all template instructions correctly. 'Not documented' is used where appropriate, 'No known drug allergies' is used for allergies, only discussed systems are included in ROS, and physical exam states 'not documented.' Social history only includes mentioned items (coffee)."
+    },
+    "completeness": {
+      "score": 3,
+      "rationale": "All key information from the transcript is captured: chief complaint, HPI details (onset, location, quality, triggers, associated symptoms), negative symptoms, diagnosis, medication with dosing instructions, lifestyle modifications, and follow-up plan."
+    },
+    "template_adherence": {
+      "score": 3,
+      "rationale": "The note follows the template structure precisely with all appropriate sections, correct formatting, and proper handling of undocumented sections."
+    },
+    "entity_marking": {
+      "score": 3,
+      "rationale": "Both entities are correctly marked with proper syntax: {{condition:GERD}} and {{drug:omeprazole}}, each marked only at first occurrence."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "There is some content overlap between HPI and ROS (GI symptoms), but this is standard clinical documentation practice where ROS summarizes what was discussed in HPI; no section or full note is duplicated."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 7.68,
+      "input_tokens": 2787,
+      "output_tokens": 404
+    }
+  }
+}

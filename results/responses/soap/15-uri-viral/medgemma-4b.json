@@ -1,0 +1,14 @@
+{
+  "transcript_id": "15-uri-viral",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "generated_note": "**Subjective**\nChief Complaint: Three-day history of cold symptoms\n\n**History of Present Illness**\nPatient presents with a three-day history of cold symptoms, including runny nose, nasal congestion, and cough that started yesterday. Patient reports feeling warm on Monday, with a temperature of 99.1 at home, but has been normal since. Patient also has a mild scratchy throat, not painful, and feels generally run down. No significant body aches, no headache.\n\n**Review of Systems**\nConstitutional: Mild fatigue\nHEENT: Runny nose, nasal congestion, scratchy throat\nCardiovascular: No chest pain, palpitations, edema\nRespiratory: Cough\nGastrointestinal: No nausea, vomiting, diarrhea, abdominal pain\nGenitourinary: No urinary symptoms, menstrual history\nMusculoskeletal: No joint pain, muscle weakness, mobility issues\nNeurological: No headache, dizziness, numbness, weakness\nPsychiatric: No mood changes, anxiety, sleep disturbances\nSkin: No rashes, lesions, wounds\n\n**Past Medical History**\nNot documented\n\n**Medications**\nNot documented\n\n**Allergies**\nNo known drug allergies\n\n**Social History**\nTobacco: Not documented\nAlcohol: Not documented\nRecreational drugs: Not documented\nOccupation: Not documented\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\nVital Signs:\nBP: Not documented\nHR: Not documented\nTemp: 98.4\nRR: Not documented\nSpO2: Not documented\n\nGeneral: Patient appears well, alert and oriented, and in no acute distress.\nHEENT: Throat was a little pink but no exudates. Ears were clear bilaterally.\nLungs: Clear on both sides\n\n**Assessment**\nViral upper respiratory infection\n\n**Plan**\n1. Recommend pseudoephedrine or nasal steroid spray like Flonase for congestion.\n2. Recommend honey in tea or over-the-counter cough suppressant like dextromethorphan at night for cough.\n3. Advised patient to stay hydrated and rest.\n4. Provided return precautions: call if high fever develops, cough worsens, trouble breathing, or if symptoms don't improve after 10 days.\n",
+  "metadata": {
+    "inference_time_s": 9.04,
+    "prompt_tokens": 1475,
+    "tokens_generated": 466,
+    "prompt_tps": 290.3,
+    "tokens_per_sec": 51.6,
+    "peak_memory_gb": 3.67
+  }
+}

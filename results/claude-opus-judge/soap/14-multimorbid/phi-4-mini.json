@@ -1,0 +1,61 @@
+{
+  "transcript_id": "14-multimorbid",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The note contains fabricated findings: an abdominal exam ('non-distended, non-tender, non-massaging, and non-reducible') was never performed per the transcript. The ROS says 'No fever, chills, fatigue' when fatigue was explicitly reported. Social history fabricates that tobacco/alcohol/drugs were not reported when they were simply never discussed.",
+      "flagged_content": [
+        "Abdominal examination is non-distended, non-tender, non-massaging, and non-reducible",
+        "No fever, chills, fatigue, or weight changes reported",
+        "The patient does not report tobacco, alcohol, or recreational drug use provided"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "Template instructions in parentheses were left in the output (e.g., '(Only include systems that were discussed. If not mentioned, omit this section entirely)'). The ROS includes systems that were not discussed, violating the instruction to omit them. Social history includes items not mentioned, violating the 'only include items that were mentioned' instruction."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Many important details are missing: A1C values (8.1, up from 7.6), home BP readings (140s/85-90), creatinine (1.8 up from 1.5), GFR (42 down from 51), urine albumin-to-creatinine ratio (220), LDL (98), triglycerides (210), weight (234 lbs, up 6 lbs), BMI (33.5), monofilament testing results, nocturia details, exertional dyspnea, fasting blood sugar readings (150-160), holiday diet context, Tresiba titration instructions, positional change counseling, low sodium diet specifics, ibuprofen context (orthopedics prescription for back pain), dialysis discussion details, Dr. Khatri/nephrologist coordination.",
+      "missed_items": [
+        "A1C 8.1 up from 7.6",
+        "home BP readings 140s/85-90",
+        "creatinine 1.8 up from 1.5",
+        "GFR 42 down from 51",
+        "urine albumin-to-creatinine ratio 220",
+        "LDL 98",
+        "triglycerides 210",
+        "weight 234 lbs up 6 lbs",
+        "BMI 33.5",
+        "monofilament testing results",
+        "nocturia 2-3 times per night",
+        "mild exertional dyspnea",
+        "fasting blood sugars 150-160",
+        "Tresiba titration instructions",
+        "holiday diet context",
+        "target BP under 130/80",
+        "Dr. Khatri nephrologist coordination"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template parenthetical instructions were left in the output. Vital signs are not formatted per the template structure (BP listed under physical exam body rather than under Vital Signs subheading). Abdomen section was added without basis. ROS includes all systems despite instruction to omit undiscussed ones."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Massive duplication: 'Follow-up care will occur in six weeks' is repeated hundreds of times in Plan item 9."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 20.55,
+      "input_tokens": 21714,
+      "output_tokens": 887
+    }
+  }
+}

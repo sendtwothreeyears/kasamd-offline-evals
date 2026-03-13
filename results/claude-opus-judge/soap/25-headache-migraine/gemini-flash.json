@@ -1,0 +1,42 @@
+{
+  "transcript_id": "25-headache-migraine",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly stated or reasonably inferred from the transcript. No fabricated findings or diagnoses.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 3,
+      "rationale": "The note follows all template instructions correctly. Systems not discussed are omitted, vital signs section is present but empty (none were documented), and 'Not documented' is not used where information was available. The counseling about not using a friend's sumatriptan is captured implicitly but could have been more explicit."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "The note captures nearly all transcript content but misses the explicit counseling that the patient should not use a friend's sumatriptan again, and the mention that the patient is 34 years old is only in the plan rather than the demographics/HPI introduction.",
+      "missed_items": [
+        "Counseled patient not to use a friend's sumatriptan again",
+        "Patient age (34 years old) not stated in chief complaint or HPI opening"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well overall. Minor issues: stroke, blood clots, and heart disease are listed under Past Medical History rather than being separated out, and the Vital Signs section is left blank without stating 'Not documented'. The history of no stroke/blood clots/heart disease is placed in PMH which is reasonable but mixed with the OCP which is a medication."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Entity marking syntax is correct and most drugs and conditions are marked on first occurrence. However, 'stroke risk' is marked as a condition which is debatable, 'combination oral contraceptive pill' is marked as a drug (reasonable), and 'Migraine with aura' is marked twice (once in Assessment and once in Plan). Also 'blood clots' and 'heart disease' are marked as conditions in PMH as negated history, which is acceptable but 'sumatriptan' appears first in HPI (marked correctly) and again in Plan (also marked, which is a second occurrence error)."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No sections or content are duplicated in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.78,
+      "input_tokens": 4836,
+      "output_tokens": 582
+    }
+  }
+}

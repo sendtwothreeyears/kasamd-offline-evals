@@ -1,0 +1,56 @@
+{
+  "transcript_id": "45-suspicious-mole",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The note states 'Patient is a first-time visitor' which has no basis in the transcript. The Review of Systems section fabricates negative findings (e.g., 'No fever, chills, fatigue, or weight changes reported') that were never discussed. The note says 'a follow-up appointment will be scheduled to discuss results' but the transcript says the doctor will call her personally with results, not schedule a follow-up appointment.",
+      "flagged_content": [
+        "Patient is a first-time visitor",
+        "No fever, chills, fatigue, or weight changes reported",
+        "a follow-up appointment will be scheduled to discuss results and next steps",
+        "Follow-up appointment scheduled to discuss pathology results and further care"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template explicitly instructs to omit the Review of Systems section entirely if not mentioned, yet the note includes a full ROS with fabricated negatives. Template instructions in parentheses were copied verbatim into the output. Social History items that were not mentioned should have been omitted per template instructions, but were listed as 'Not discussed'."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing or inadequately captured: the dermatoscope examination, the 8mm diameter measurement, the specific ABCDE criteria breakdown in the objective findings, the local anesthetic with lidocaine, the 15-20 minute procedure duration, suture removal in 10-14 days, counseling about possible outcomes (atypical benign mole vs melanoma with wider excision/referral to surgical oncology), reassurance that many suspicious moles turn out benign, specific sunscreen guidance (SPF 30+, reapply every 2 hours), and fair skin/poor sun protection history.",
+      "missed_items": [
+        "dermatoscope examination",
+        "8mm diameter measurement",
+        "lidocaine local anesthetic",
+        "15-20 minute procedure duration",
+        "suture removal in 10-14 days",
+        "specific counseling on possible outcomes (atypical benign vs melanoma, wider excision, surgical oncology referral)",
+        "reassurance that many suspicious moles turn out benign",
+        "SPF 30+ sunscreen recommendation with reapplication every 2 hours",
+        "hats and protective clothing recommendation",
+        "fair-skinned with poor sun protection history in youth",
+        "dark brown, lighter tan, and almost black color description"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template parenthetical instructions were copied into the output (e.g., '(Only include systems that were discussed. If not mentioned, omit this section entirely)'). Vital Signs section is placed after General exam instead of before it as in the template. The detailed physical exam findings (dermatoscope, ABCDE criteria) are partially in Assessment rather than in the Physical Examination section."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Medications like aspirin, ibuprofen, Tylenol/lidocaine and conditions like melanoma should have been marked with {{drug:...}} and {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or full note content detected, though there is some minor redundancy in the Plan section regarding follow-up and pathology results."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.21,
+      "input_tokens": 3298,
+      "output_tokens": 832
+    }
+  }
+}

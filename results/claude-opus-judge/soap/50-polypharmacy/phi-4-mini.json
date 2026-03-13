@@ -1,0 +1,65 @@
+{
+  "transcript_id": "50-polypharmacy",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems section fabricates negative findings for every system (e.g., 'No fever, chills, fatigue, or weight changes reported,' 'No headache, dizziness, numbness, or weakness reported') when the transcript actually mentions dizziness/lightheadedness, falls, anxiety, sleep issues, urinary urgency/frequency/incontinence, back pain, and confusion. Reporting these as negative is fabrication. The Social History content is also fabricated/nonsensical.",
+      "flagged_content": [
+        "Constitutional: No fever, chills, fatigue, or weight changes reported.",
+        "Neurological: No headache, dizziness, numbness, or weakness reported.",
+        "Psychiatric: No mood, anxiety, or sleep issues reported.",
+        "Genitourinary: No urinary symptoms or menstrual history reported.",
+        "Musculoskeletal: No joint pain, muscle weakness, or mobility issues reported.",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain reported.",
+        "Dorothy was cooperative and alert during the visit."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit the section entirely if not mentioned, yet the note includes all systems with fabricated negatives. The template parenthetical instruction text '(Only include systems that were discussed. If not mentioned, omit this section entirely)' was left in the output verbatim. Social History includes irrelevant content instead of following the template's guidance.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Major omissions include: two falls in six months with orthostatic hypotension, lorazepam history (started 2013 by Dr. Patterson after husband's death), Beers Criteria counseling, daughter's concern about cognitive decline and discussion that it may be medication-related, sleep hygiene/melatonin/CBT-i discussion, omeprazole history (hiatal hernia since 2017), aspirin context (heart catheterization, primary prevention discussion), gabapentin details (300mg TID, Dr. Cho, sciatica), written medication action plan creation, referral to pharmacist Jim specifically, and past medical history items (hypertension, diabetes, hiatal hernia, sciatica, anxiety, insomnia, urinary urgency/incontinence).",
+      "missed_items": [
+        "Two falls in last six months with lightheadedness/orthostatic hypotension",
+        "Lorazepam history - started 2013 by Dr. Patterson after husband passed",
+        "Beers Criteria counseling for lorazepam, zolpidem, diphenhydramine",
+        "Daughter's concern about cognitive decline and medication-related confusion discussion",
+        "Sleep alternatives discussed: melatonin, sleep hygiene, CBT-i referral",
+        "Omeprazole history: hiatal hernia since ~2017, rarely gets heartburn now",
+        "Aspirin context: heart catheterization, no MI or stent, primary prevention discussion",
+        "Gabapentin 300mg TID for sciatica/back pain, started by Dr. Cho, improving",
+        "Past medical history: hypertension, diabetes, hiatal hernia, sciatica, anxiety, insomnia, urinary urgency/incontinence",
+        "Written medication action plan for daughter",
+        "Pharmacist Jim specifically named",
+        "Detailed patient education and counseling content",
+        "Amlodipine dose specified as 10mg currently",
+        "Atorvastatin 20mg continuing"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Vital signs are placed under Objective but after Physical Examination header instead of before/within it properly. The template parenthetical instruction was left in the ROS section. Past Medical History says 'Not documented' when conditions are clearly derivable from the transcript. Social History contains irrelevant filler content.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used for any medications or conditions.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 18.24,
+      "input_tokens": 4460,
+      "output_tokens": 1075
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "transcript_id": "22-low-back-pain",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems section fabricates numerous negative findings (HEENT, Cardiovascular, Respiratory, Gastrointestinal, Psychiatric, Skin) that were never discussed in the transcript. The template explicitly states to only include systems that were discussed. Listing ibuprofen 600 mg as a current medication is also inaccurate \u2014 it was prescribed as part of the plan, not a current medication.",
+      "flagged_content": [
+        "HEENT: No vision, hearing, throat, nasal symptoms.",
+        "Cardiovascular: No chest pain, palpitations, edema.",
+        "Respiratory: No shortness of breath, cough, wheezing.",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, abdominal pain.",
+        "Psychiatric: No mood changes, anxiety, sleep disturbances.",
+        "Skin: No rashes, lesions, wounds.",
+        "Musculoskeletal: No joint pain, muscle weakness, mobility issues.",
+        "Ibuprofen 600 mg three times daily"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed, but the note includes many undiscussed systems. Template instructions in parentheses appear verbatim in the output (e.g., '(Only include items that were mentioned)', '(Only include vitals that were documented)', '(Only document examination findings that were explicitly mentioned...)')."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured. However, the note omits the GI side effects counseling for ibuprofen (telling patient to let them know if stomach is sensitive), and the explicit statement that no imaging is indicated at this time.",
+      "missed_items": [
+        "GI side effects counseling for ibuprofen and instruction to report stomach sensitivity",
+        "No imaging indicated at this time given absence of red flags and acute presentation under six weeks"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template parenthetical instructions are left in the output verbatim in multiple places. Vital signs are listed as 'Not documented' when the template says to only include vitals that were documented. Physical exam findings are not organized under appropriate subsystem headers. The Chief Complaint formatting deviates slightly from the template's bold header structure."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Medications (ibuprofen, cyclobenzaprine) and conditions (acute mechanical low back strain) are not marked with {{drug:...}} or {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 12.13,
+      "input_tokens": 3767,
+      "output_tokens": 690
+    }
+  }
+}

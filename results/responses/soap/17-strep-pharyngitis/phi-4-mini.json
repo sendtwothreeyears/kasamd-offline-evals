@@ -1,0 +1,14 @@
+{
+  "transcript_id": "17-strep-pharyngitis",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nPatient complains of a sore throat that started yesterday.\n\n**History of Present Illness**\nPatient reports pain while swallowing and talking with general discomfort but no cough or runny nose. Fever of 101\u00b0F last night, treated with Tylenol. Examination reveals red and swollen tonsils with white patches and tender submandibular lymphadenopathy. Rapid strep test was positive.\n\n**Review of Systems**\nConstitutional: Fever, chills, fatigue, weight changes\nHEENT: Red and swollen tonsils with white patches, tender submandibular lymphadenopathy\nCardiovascular: Not discussed\nRespiratory: Not discussed\nGastrointestinal: Not discussed\nGenitourinary: Not discussed\nMusculoskeletal: Not discussed\nNeurological: Not discussed\nPsychiatric: Not discussed\nSkin: Not discussed\n\n**Past Medical History**\nNot documented\n\n**Medications**\nCurrent medications not discussed\nPrescribed medication: Amoxicillin, 500 milligrams three times a day for ten days\n\n**Allergies**\nNo known drug allergies\n\n**Social History**\nNot discussed\n\n**Family History**\nNot discussed\n\n**Objective**\n**Physical Examination**\nTonsils and submandibular lymphadenopathy examined\n\n**Vital Signs:**\nNot documented\n\nGeneral: Not documented\n\n**Assessment**\nPrimary diagnosis: Strep throat\nSecondary diagnosis: None\n\n**Plan**\n1. Amoxicillin 500 milligrams three times a day for ten days\n2. Symptom management with Tylenol or ibuprofen and throat comfort measures\n3. Contagious until 24 hours after starting antibiotics, advised to stay home tomorrow and return after feeling better\n4. Follow-up if fever does not break within 48 hours or if developing breathing difficulties or trouble swallowing liquids\n\nPrescribed medication sent to pharmacy. Not documented.",
+  "metadata": {
+    "inference_time_s": 6.28,
+    "prompt_tokens": 1400,
+    "tokens_generated": 380,
+    "prompt_tps": 511.7,
+    "tokens_per_sec": 60.5,
+    "peak_memory_gb": 4.8
+  }
+}

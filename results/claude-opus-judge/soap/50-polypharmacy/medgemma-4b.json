@@ -1,0 +1,62 @@
+{
+  "transcript_id": "50-polypharmacy",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The Review of Systems section lists numerous systems (Constitutional: Fatigue; HEENT: Vision, hearing; Cardiovascular: Chest pain, palpitations, edema; etc.) that were never discussed in the transcript. These appear to be template placeholders left in rather than actual findings, but they imply these systems were reviewed, which is fabricated.",
+      "flagged_content": [
+        "Constitutional: Fatigue",
+        "HEENT: Vision, hearing",
+        "Cardiovascular: Chest pain, palpitations, edema",
+        "Respiratory: Shortness of breath, cough, wheezing",
+        "Gastrointestinal: Nausea, vomiting, diarrhea, abdominal pain",
+        "Genitourinary: Urinary symptoms, menstrual history",
+        "Musculoskeletal: Joint pain, muscle weakness, mobility issues",
+        "Neurological: Headache, dizziness, numbness, weakness",
+        "Skin: Rashes, lesions, wounds"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The template explicitly states to omit the Review of Systems section entirely if not mentioned, yet the note includes a full ROS with template placeholder text. Social History includes empty fields and template instructions in parentheses. Vital Signs also includes empty fields and template instructions. The template instructions '(Only include items that were mentioned)' and '(Only include vitals that were documented)' and '(Only document examination findings...)' appear verbatim in the output."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "The note misses significant transcript content: oxybutynin is missing from the medication list, past medical history items (hypertension, diabetes, hiatal hernia, sciatica/back pain, orthostatic hypotension, falls, urinary urgency/incontinence) are not documented, extensive patient education/counseling details are omitted, sleep alternatives discussed (melatonin, sleep hygiene, CBT-I referral) are missing, and the daughter's observations about cognitive decline are not captured in the HPI.",
+      "missed_items": [
+        "Oxybutynin missing from medication list",
+        "Past medical history: hypertension, diabetes, hiatal hernia, sciatica/back pain, urinary urgency/incontinence, falls",
+        "Two falls in last six months with lightheadedness/orthostatic hypotension details",
+        "Daughter's observations of increased confusion",
+        "Discussion of medication-related cognitive effects vs true dementia",
+        "Sleep alternatives: low-dose melatonin, sleep hygiene, CBT-I referral",
+        "Beers Criteria counseling details",
+        "Lorazepam history (since 2013, started by Dr. Patterson)",
+        "Gabapentin 300mg TID details and future taper discussion",
+        "Atorvastatin 20mg dose",
+        "Aspirin primary prevention rationale",
+        "Amlodipine 10mg current dose"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template instructions in parentheses appear verbatim in the output in multiple sections (Social History, Vital Signs, General exam). Empty fields are left for vitals not documented instead of being omitted. The ROS section should have been omitted entirely per template instructions. The Assessment section is sparse and lacks proper clinical impression formatting."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used for any medications or conditions."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 23.93,
+      "input_tokens": 4459,
+      "output_tokens": 904
+    }
+  }
+}

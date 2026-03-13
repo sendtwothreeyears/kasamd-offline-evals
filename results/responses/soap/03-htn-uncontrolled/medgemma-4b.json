@@ -1,0 +1,14 @@
+{
+  "transcript_id": "03-htn-uncontrolled",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "generated_note": "**Subjective**\nChief Complaint: Follow-up for high blood pressure\n\n**History of Present Illness**\nPatient presents for follow-up of high blood pressure, with readings still elevated despite current medication regimen. Reports blood pressure in the office today was 152/94. Reports home readings consistently in the 140s-150s over 90s for the past month. States feeling \"totally fine\" and that's part of why it's hard to take it seriously. Mentions father had a stroke at age 62, significant family history of stroke.\n\n**Review of Systems**\nConstitutional: No fever, chills, fatigue, or weight changes reported.\nHEENT: No vision, hearing, throat, or nasal symptoms reported.\nCardiovascular: No chest pain or palpitations reported.\nRespiratory: No shortness of breath, cough, or wheezing reported.\nGastrointestinal: No nausea, vomiting, diarrhea, or abdominal pain reported.\nGenitourinary: No urinary symptoms reported.\nMusculoskeletal: No joint pain, muscle weakness, or mobility issues reported.\nNeurological: No headache, dizziness, numbness, or weakness reported.\nPsychiatric: No mood changes or anxiety reported.\nSkin: No rashes or lesions reported.\n\n**Past Medical History**\nNot documented\n\n**Medications**\nAmlodipine 5 milligrams daily\n\n**Allergies**\nNo known drug allergies\n\n**Social History**\nTobacco: Not documented\nAlcohol: 2 beers on the weekend\nRecreational drugs: Not documented\nOccupation: Not documented\n(Only include items that were mentioned)\n\n**Family History**\nSignificant family history of stroke, father had a stroke at age 62\n\n**Objective**\n**Physical Examination**\nGeneral: No physical exam findings documented\n\n**Assessment**\nHypertension, uncontrolled despite current medication regimen\n\n**Plan**\n1. Continue amlodipine 5 milligrams daily\n2. Add lisinopril 10 milligrams daily\n3. Work on consistent medication timing\n4. Continue sodium reduction efforts\n5. Increase exercise duration\n6. Follow-up in four weeks for recheck\n7. Instruct patient to call if cough is a problem so we can switch it out\n",
+  "metadata": {
+    "inference_time_s": 9.18,
+    "prompt_tokens": 1864,
+    "tokens_generated": 474,
+    "prompt_tps": 289.9,
+    "tokens_per_sec": 51.6,
+    "peak_memory_gb": 3.65
+  }
+}

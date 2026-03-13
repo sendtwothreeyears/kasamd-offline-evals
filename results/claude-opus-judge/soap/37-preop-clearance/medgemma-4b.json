@@ -1,0 +1,63 @@
+{
+  "transcript_id": "37-preop-clearance",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The note fabricates specific medication dosages (Losartan 100mg, Metformin 500mg twice daily, Atorvastatin 40mg) that are not mentioned in the transcript. It also fabricates '78-year-old male' (age not stated), 'Reports fatigue' in Constitutional, multiple negative ROS findings (HEENT, GI, GU, Skin, Psychiatric, Neurological) that were never discussed, 'RR: Normal', and 'Neurological: Grossly intact' exam finding.",
+      "flagged_content": [
+        "78-year-old male",
+        "Losartan 100mg daily",
+        "Metformin 500mg twice daily",
+        "Atorvastatin 40mg daily",
+        "Reports fatigue, but denies fever, chills, or weight changes",
+        "HEENT: Reports no vision, hearing, throat, or nasal symptoms",
+        "Respiratory: Reports no shortness of breath, cough, or wheezing",
+        "Gastrointestinal: Reports no nausea, vomiting, diarrhea, or abdominal pain",
+        "Genitourinary: Reports no urinary symptoms",
+        "Musculoskeletal: Reports no joint pain, muscle weakness, or mobility issues",
+        "Neurological: Reports no headache, dizziness, numbness, or weakness",
+        "Psychiatric: Reports no mood changes or anxiety. Reports sleeping well",
+        "Skin: Reports no rashes, lesions, or wounds",
+        "RR: Normal",
+        "Neurological: Grossly intact"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed, but the note includes many systems (HEENT, GI, GU, Skin, Psychiatric, Neurological, Musculoskeletal) that were never discussed. The template also says to omit items not mentioned in Social History, but OSA is a medical condition, not social history."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most transcript content is captured. However, the RCRI assessment details (diabetes = 1 point, no history of heart failure/CAD/stroke/renal disease) are not fully documented, the specific instruction about losartan resuming the day after surgery is partially captured, the note about last A1C being 7.1 and concern about infection risk is missing, and the note about atorvastatin continuing as usual is not clearly stated in the plan.",
+      "missed_items": [
+        "Last A1C was 7.1 three months ago",
+        "Elevated blood sugar increases infection risk perioperatively",
+        "Patient reports doing well with diet lately",
+        "RCRI details: diabetes gives 1 point, no history of heart failure, CAD, stroke, or renal disease",
+        "Preoperative stress test not indicated based on functional capacity and risk profile",
+        "Losartan specifically resume the day after surgery",
+        "Atorvastatin continue as usual with no changes"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure generally well, but places allergy information and family history of malignant hyperthermia within Past Medical History instead of their proper sections. OSA is placed in Social History rather than Past Medical History. The Assessment section is thin and lacks formal diagnoses."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.04,
+      "input_tokens": 3877,
+      "output_tokens": 906
+    }
+  }
+}

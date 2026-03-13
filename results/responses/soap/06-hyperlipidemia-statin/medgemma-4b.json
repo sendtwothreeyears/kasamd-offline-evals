@@ -1,0 +1,14 @@
+{
+  "transcript_id": "06-hyperlipidemia-statin",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "generated_note": "**Subjective**\nChief Complaint: Lipid panel results and cardiovascular risk assessment\n\n**History of Present Illness**\nTotal cholesterol: 258\nLDL: 172\nHDL: 44\nTriglycerides: 210\nTen-year cardiovascular risk score: 12 percent\nConcerns about statins, specifically muscle problems, due to a friend's experience\nPreference to try lifestyle modifications first\n\n**Review of Systems**\nNot documented\n\n**Past Medical History**\nNot documented\n\n**Medications**\nNot documented\n\n**Allergies**\nNo known drug allergies\n\n**Social History**\nTobacco: Not documented\nAlcohol: Drinking a beer or two most nights with more on weekends\nRecreational drugs: Not documented\nOccupation: Desk job during the week, golf on weekends\nFamily History: Family history of hyperlipidemia (brother on cholesterol medication)\n\n**Objective**\n**Physical Examination**\nNot documented\n\n**Assessment**\nBorderline to intermediate cardiovascular risk\n\n**Plan**\n1. Aggressive lifestyle modifications for three months: diet, exercise, and alcohol reduction\n2. Repeat lipid panel in three months\n3. If not at goal at that point, start statin (atorvastatin 20 mg at night, moderate intensity, with a recheck of lipids in 6 to 8 weeks)\n4. Consider switching to rosuvastatin if muscle pain develops\n5. Sending educational resources on heart-healthy eating\n6. Follow-up in three months\n",
+  "metadata": {
+    "inference_time_s": 6.1,
+    "prompt_tokens": 1842,
+    "tokens_generated": 315,
+    "prompt_tps": 291.9,
+    "tokens_per_sec": 51.6,
+    "peak_memory_gb": 3.67
+  }
+}

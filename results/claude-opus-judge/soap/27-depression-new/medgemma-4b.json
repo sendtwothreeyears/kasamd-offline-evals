@@ -1,0 +1,53 @@
+{
+  "transcript_id": "27-depression-new",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly stated or reasonably inferred from the transcript. No fabricated findings or diagnoses.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructions say to omit systems not discussed, but the note includes 'No mention' for multiple ROS categories. The Social History section includes the literal template instruction '(Only include items that were mentioned)' in the output. The note also lists 'No mention' entries for tobacco, alcohol, and recreational drugs instead of omitting them. The Medications section lists the newly prescribed medication rather than current/prior medications (none documented).",
+      "flagged_content": [
+        "(Only include items that were mentioned)"
+      ]
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Missing several important details: PHQ-9 score of 18/27, the roommate's concern prompting the visit, the discussion about medication ambivalence and the analogy used, mention of virtual visit availability for therapy, the patient's agreement to save 988 in her phone, encouragement to lean on her roommate, and the explanation that CBT is structured/evidence-based (not just venting). Weight loss also belongs in ROS constitutional.",
+      "missed_items": [
+        "PHQ-9 score of 18/27 (moderately severe range)",
+        "Roommate expressed concern prompting the visit",
+        "Patient's ambivalence about medication and the high blood pressure analogy used to reframe",
+        "Virtual visit availability mentioned for therapy",
+        "Patient agreed to save 988 in her phone",
+        "Encouraged patient to lean on supportive roommate",
+        "Patient is 29 years old",
+        "Patient decided to try both medication and therapy"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Subjective section has a large block of unstructured content before the Chief Complaint, which should come first. The Chief Complaint and HPI content is heavily duplicated in structure. ROS includes systems that should have been omitted. Vital Signs section is placed after Physical Examination instead of before/within it as templated. Template instruction text appears in the output.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Sertraline, major depressive disorder, and other conditions/drugs are not marked with {{drug:...}} or {{condition:...}} syntax.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The Subjective section and HPI contain nearly identical content \u2014 the same symptoms, details, and phrasing are repeated almost verbatim between the two sections."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.79,
+      "input_tokens": 3916,
+      "output_tokens": 680
+    }
+  }
+}

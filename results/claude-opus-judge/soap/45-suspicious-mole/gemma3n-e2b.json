@@ -1,0 +1,56 @@
+{
+  "transcript_id": "45-suspicious-mole",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems includes 'No reported fever or chills' and 'No reported visual symptoms' which were never discussed in the transcript \u2014 these are fabricated negatives, not standard clinical defaults. Vital signs are listed as 'Not documented' which is acceptable, but listing them all when the template says 'Only include vitals that were documented' is an instruction issue, not hallucination.",
+      "flagged_content": [
+        "Constitutional: No reported fever or chills.",
+        "HEENT: No reported visual symptoms."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed (constitutional and HEENT were not discussed), to only include vitals that were documented (none were, so the section should be omitted or minimal), and social history should only include items mentioned (fair skin and poor sun protection habits were mentioned but omitted). The template also says to omit ROS entirely if not mentioned, yet fabricated ROS entries appear."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing.",
+      "missed_items": [
+        "Detailed ABCDE criteria findings (asymmetry, irregular/jagged borders, variegated color with dark brown/lighter tan/almost black, 8mm diameter exceeding 6mm threshold, evolving)",
+        "Dermatoscope used for examination",
+        "Lidocaine as local anesthetic",
+        "Procedure duration 15-20 minutes",
+        "Sutures removal in 10-14 days",
+        "Pathology results in 5-7 business days",
+        "Discussion of possible outcomes (atypical benign mole vs melanoma, wider excision, referral to surgical oncology)",
+        "Reassurance that many suspicious moles turn out benign",
+        "Tylenol is fine to take",
+        "Scheduled for Thursday at 2:30",
+        "Fair-skinned with poor sun protection habits when younger",
+        "Husband can help with self-skin checks for areas she can't see",
+        "Detailed wound care instructions to be provided at the visit"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The overall structure follows the template, but vital signs are listed individually as 'Not documented' when the template says to only include those documented, and ROS includes systems not discussed despite template instructions to omit them."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Medications like aspirin, ibuprofen, lidocaine, Tylenol and conditions like melanoma should have been marked with {{drug:...}} and {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.08,
+      "input_tokens": 3021,
+      "output_tokens": 723
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "transcript_id": "15-uri-viral",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "Massive fabrication throughout. Vital signs BP 120/80, HR 100, RR 20, SpO2 98% are all fabricated. Pseudoephedrine 50mg twice daily dosage is fabricated. Social history details, family history 'None' stated as fact, and many other details have no basis in the transcript.",
+      "flagged_content": [
+        "BP: 120/80",
+        "HR: 100",
+        "RR: 20",
+        "SpO2: 98%",
+        "pseudoephedrine 50mg twice daily",
+        "Social History: Tobacco use, alcohol use, recreational drug use, occupation: Job details",
+        "Family History: None",
+        "He's been taking some pseudoephedrine, and it's been working out pretty well",
+        "the cough seems to be getting better",
+        "He's feeling better, and the cough is starting to subside"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "Template instructions in brackets/parentheses were copied verbatim into the output (e.g., 'Chest pain, palpitations, edema' as placeholder text). Systems not discussed were included rather than omitted. The note fabricated information instead of stating 'Not documented' where appropriate."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Some key transcript content is present (cold symptoms, scratchy throat, pseudoephedrine recommendation, dextromethorphan, honey in tea, return precautions partially), but important details are missing or distorted.",
+      "missed_items": [
+        "Temperature of 99.1 at home on Monday",
+        "Cough started yesterday (not 'a few days ago')",
+        "No significant body aches",
+        "No headache",
+        "Throat pink but no exudates (specific finding)",
+        "Ears clear bilaterally",
+        "Diagnosis of viral upper respiratory infection explicitly stated",
+        "Discussion about antibiotics being unnecessary and wife suggesting them",
+        "Flonase specifically named as nasal steroid spray option",
+        "7-10 day expected course",
+        "Return if not improving after 10 days specifically"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "The structure is severely mangled. Template placeholder text was copied verbatim into ROS sections. Physical exam findings are placed in the Chief Complaint. Assessment section is empty. A non-template section 'Return of Systemic Symptoms' was added. Past Medical History section is missing."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "Used incorrect syntax {{Medication:...}} instead of the required {{drug:...}} and {{condition:...}} format. No conditions were marked at all. 'Honey in tea' was incorrectly marked as a medication."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Multiple duplications: pseudoephedrine listed multiple times in the plan, dextromethorphan listed twice, return precautions about fever/cough/breathing listed twice."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.55,
+      "input_tokens": 3663,
+      "output_tokens": 749
+    }
+  }
+}

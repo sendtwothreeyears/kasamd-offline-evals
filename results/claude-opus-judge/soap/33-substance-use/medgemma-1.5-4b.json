@@ -1,0 +1,61 @@
+{
+  "transcript_id": "33-substance-use",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The HPI is entirely fabricated. The transcript only mentions knee pain briefly as the chief complaint; all details about right knee, 3 months duration, sharp/aching pain, front of knee, stairs, stiffness, locking/catching denial, ibuprofen use, swelling, 'warm puffy feeling,' work as a teacher, and no recent injuries are completely invented.",
+      "flagged_content": [
+        "pain in her right knee for about 3 months now",
+        "sharp, aching pain, primarily located in the front of her knee",
+        "worse with activity, like walking up stairs or walking on uneven surfaces",
+        "stiffness in her knee, especially in the morning",
+        "denies any locking or catching in her knee",
+        "tried over-the-counter pain relievers like ibuprofen",
+        "warm, puffy feeling",
+        "work as a teacher",
+        "has not had any recent injuries to her knee"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note completely fails to follow instructions: template placeholders and parenthetical instructions are left unfilled throughout, the note is duplicated over 20 times, and the vast majority of transcript content (alcohol use discussion, AUDIT-C, psychosocial stressors, labs, plan, referrals) is entirely absent while fabricated content fills the HPI."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note misses virtually all key transcript content: alcohol use history, AUDIT-C screening, psychosocial stressors, mother's stroke, counseling on reduction strategies, BASICS referral, drinking diary recommendation, lab orders (CMP, CBC, B12/folate), MRI referral, and 6-week follow-up plan.",
+      "missed_items": [
+        "Increased alcohol use pattern and details",
+        "AUDIT-C screening and score",
+        "Psychosocial stressors (mother's stroke, caregiving, husband traveling)",
+        "Failed abstinence attempt",
+        "Counseling on structured reduction and 30-day abstinence reset",
+        "BASICS program referral",
+        "Drinking diary recommendation",
+        "Lab orders (CMP, CBC, B12, folate)",
+        "MRI referral for knee",
+        "6-week follow-up plan",
+        "Family history (mother's stroke)"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "Template placeholders and parenthetical instructions are left verbatim throughout every section (Review of Systems, Past Medical History, Medications, Allergies, Social History, Family History, Vital Signs, Physical Exam, Assessment, Plan). No sections were actually completed."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The entire note is duplicated approximately 20+ times in succession."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.54,
+      "input_tokens": 20980,
+      "output_tokens": 741
+    }
+  }
+}

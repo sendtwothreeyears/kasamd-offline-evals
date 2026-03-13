@@ -1,0 +1,78 @@
+{
+  "transcript_id": "45-suspicious-mole",
+  "template": "soap",
+  "model": "llama3-medical-cot",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The note contains massive fabrications with no basis in the transcript: hypertension, diabetes, metformin, smoking history, alcohol use, occupation as a nurse, vital signs (BP 130/80, HR 110, etc.), skin ultrasound, height/weight, and an entirely fabricated Review of Systems including fever, chills, chest pain, palpitations, edema, nausea, vomiting, diarrhea, joint pain, headaches, mood swings, and many more.",
+      "flagged_content": [
+        "She has had hypertension for several years",
+        "She has also had a history of diabetes and has been on metformin for diabetes management",
+        "She is taking metformin 500mg twice daily",
+        "She has been a heavy smoker for most of her life",
+        "She has been drinking moderately",
+        "She works as a nurse",
+        "BP: 130/80",
+        "HR: 110",
+        "Temp: 98.6",
+        "RR: 20",
+        "SpO2: 98%",
+        "She is 5'8\" tall and has a normal weight",
+        "The patient has constitutional issues, including fever, chills, fatigue, and weight changes",
+        "She also reports vision and hearing issues, throat and nasal symptoms",
+        "she has cardiovascular issues, including chest pain and palpitations, and has edema",
+        "she has gastrointestinal issues, including nausea and vomiting, and has had diarrhea",
+        "She also reports joint pain and muscle weakness",
+        "The neurological section mentions headaches and dizziness",
+        "the psychiatric section mentions mood swings and anxiety",
+        "We will have a skin ultrasound to evaluate the mole",
+        "The primary diagnosis is a benign mole"
+      ]
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note retains template bracketed instructions in the output (e.g., '[Patient's primary reason for visit]', '[Detailed description of current problem...]'). The ROS section was supposed to be omitted if not discussed, but instead the note fabricated an entire ROS. The note also fabricated content instead of stating 'Not documented' for sections like Past Medical History, Medications, Social History, and Family History."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "The note captures some key elements (changing mole, bleeding episode, excisional biopsy scheduled Thursday at 2:30, pathology in 5-7 days) but misses many important details including the ABCDE criteria findings, dermatoscope use, lidocaine anesthesia, suture removal in 10-14 days, instructions to avoid aspirin/ibuprofen, Tylenol being acceptable, wound care instructions, sunscreen counseling (SPF 30+), annual full skin exams recommendation, and the patient's fair skin/poor sun protection history.",
+      "missed_items": [
+        "Dermatoscope examination",
+        "Detailed ABCDE criteria findings (asymmetry, irregular borders, variegated color, 8mm diameter)",
+        "Local anesthetic with lidocaine",
+        "Procedure duration 15-20 minutes",
+        "Suture removal in 10-14 days",
+        "Avoid aspirin and ibuprofen for 3 days prior",
+        "Tylenol is acceptable",
+        "Wear loose-fitting top",
+        "Keep site clean and dry for 24 hours post-procedure",
+        "Sunscreen counseling SPF 30+, reapply every 2 hours",
+        "Hats and protective clothing",
+        "Monthly self-skin checks with husband's help",
+        "Annual full skin exams",
+        "Fair-skinned with poor sun protection history",
+        "Possible outcomes discussion (atypical benign vs melanoma, wider excision, referral to surgical oncology)",
+        "Doctor will call personally with results"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The note follows the general section structure of the template but retains bracketed/parenthetical template instructions in the output, adds an unauthorized 'Conclusion' section, and includes fabricated sections that should have been omitted or marked 'Not documented'."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The follow-up instructions are duplicated in Plan items 3 and 4, and the Conclusion section repeats information already stated in the Plan and Assessment."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 18.5,
+      "input_tokens": 3711,
+      "output_tokens": 1178
+    }
+  }
+}

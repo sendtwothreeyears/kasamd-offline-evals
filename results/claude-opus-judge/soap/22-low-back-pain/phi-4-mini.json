@@ -1,0 +1,57 @@
+{
+  "transcript_id": "22-low-back-pain",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "Multiple fabricated details: 'The patient was examined in a recumbent position, transitioning to slight extension, and then lying down to elicit pain' is not in the transcript. The ROS section fabricates negative findings for HEENT, cardiovascular, respiratory, GI, psychiatric, skin systems that were never discussed. Social history fabricates that patient does not use tobacco, alcohol, or recreational drugs. The HPI states 'resolves somewhat with movement' which is not supported. The second General exam finding states 'no pain on palpation, and exhibited normal range of motion' which directly contradicts the transcript.",
+      "flagged_content": [
+        "The patient was examined in a recumbent position, transitioning to slight extension, and then lying down to elicit pain",
+        "The patient does not use tobacco, alcohol, or recreational drugs",
+        "Constitutional: No fever, chills, fatigue, or weight changes",
+        "HEENT: No vision, hearing, throat, or nasal symptoms",
+        "Cardiovascular: No chest pain, palpitations, or edema",
+        "Respiratory: No shortness of breath, cough, or wheezing",
+        "Gastrointestinal: No nausea, vomiting, or diarrhea",
+        "Psychiatric: No mood, anxiety, or sleep issues",
+        "Skin: No rashes, lesions, or wounds",
+        "no pain on palpation, and exhibited normal range of motion in the back"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed, but the note includes nearly all systems with fabricated negatives. The template instruction text '(Only include systems that were discussed)' was left in the output. Social history includes items not mentioned in the transcript despite the instruction to only include items that were mentioned."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Most key findings are captured including the mechanism, pain characteristics, exam findings, assessment, and plan. However, the HPI omits the resting pain level of 5-6/10, and the note omits that extension was better tolerated than flexion, patellar and Achilles reflexes being normal and symmetric, the rationale for no imaging, and counseling about cyclobenzaprine causing drowsiness and not driving.",
+      "missed_items": [
+        "Pain at rest is 5-6/10",
+        "Extension better tolerated than flexion",
+        "Patellar and Achilles reflexes normal and symmetric bilaterally",
+        "No imaging indicated due to absence of red flags and acute presentation under six weeks",
+        "Cyclobenzaprine drowsiness counseling and driving/operating machinery warning",
+        "Most acute back strains improve in 2-4 weeks, back to baseline by 6 weeks"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure generally well, but has a duplicated 'General' section in the physical exam, includes template instruction text '(Only include systems that were discussed)', and vital signs are listed after the General exam finding rather than before it as in the template."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Ibuprofen is correctly marked with {{drug:ibuprofen}} on first occurrence. However, cyclobenzaprine is not marked in the Plan section, and the condition 'acute mechanical low back strain' is not marked with {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The 'General' section appears twice in the Physical Examination with contradictory information, and the history of occasional mild back soreness from yard work is mentioned twice in the HPI."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.85,
+      "input_tokens": 3630,
+      "output_tokens": 897
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "transcript_id": "33-substance-use",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "\"Patient appears cooperative and engaged in the conversation\" is a minor embellishment \u2014 the transcript says she was 'very receptive' and 'very open,' which is close but not exactly the same as a physical exam finding of appearing cooperative. The 'Tobacco: Not documented' and 'Recreational drugs: Not documented' entries are not hallucinations per se but were not discussed. Otherwise content is grounded in the transcript.",
+      "flagged_content": [
+        "Patient appears cooperative and engaged in the conversation"
+      ]
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The template says to only include social history items that were mentioned, yet Tobacco and Recreational drugs are listed as 'Not documented' despite never being discussed. The template also says to only include vitals that were documented, but all vitals are listed as 'Not documented.' The Review of Systems section includes items not really discussed as ROS findings. Minor deviations from instructions."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Many important details from the transcript are missing.",
+      "missed_items": [
+        "MRI referral for knee pain",
+        "AUDIT-C screening details (drinking 4-5 times/week, 2-3 drinks typical day, sometimes 4, 6+ drinks once a month)",
+        "Estimated 15-20 drinks per week, well above low-risk guidelines for women (no more than 7/week, no more than 3 on any single occasion)",
+        "Psychosocial stressors: mother had a stroke in October, coordinating mother's care, working full time, husband traveling frequently",
+        "Description of nightly wine as 'taking the edge off'",
+        "Counseling that alcohol temporarily reduces anxiety but worsens anxiety and sleep over time and can shift from choice to dependency",
+        "Patient attempted to stop drinking last week, only sustained 2 days before returning to usual pattern",
+        "Structured reduction strategies discussed (capping at one drink on no more than 3 nights/week with alcohol-free days)",
+        "Thirty-day abstinence reset discussed as alternative",
+        "Counseling/therapy recommended for underlying stressor",
+        "Previous pattern was weekend-only, maybe a glass of wine on Friday night",
+        "Generous pours equating to 3-4 standard drinks on drinking nights",
+        "Patient's occupation (works full time)"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure generally, but Vital Signs are placed under Objective after Physical Examination rather than before/within it as the template specifies, and General is placed after Vital Signs outside the Physical Examination section. Minor formatting issues."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. There are conditions (e.g., increased alcohol consumption, knee pain, stroke) that should have been marked with {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.3,
+      "input_tokens": 3004,
+      "output_tokens": 774
+    }
+  }
+}

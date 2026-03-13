@@ -1,0 +1,52 @@
+---
+id: 28
+scenario: Depression medication follow-up, partial response, dose increase
+category: Mental health
+density: Sparse
+---
+
+Doctor: Ms. Caldwell, good to see you. It's been about six weeks since we started the sertraline. How are you doing?
+
+Patient: Better than before. I'm definitely not as low as I was. But I wouldn't say I feel good, you know? Like, I'm functional but I'm still kind of... blah.
+
+Doctor: Can you be more specific? How's your sleep?
+
+Patient: Sleep is a lot better, actually. I'm not waking up at four a.m. anymore. That was a big one for me.
+
+Doctor: And your appetite? Energy?
+
+Patient: Appetite came back some. Energy is still not great. I'm making it through the day but I'm dragging by the afternoon.
+
+Doctor: What about the things you used to enjoy — are you able to engage with those more?
+
+Patient: A little. I went to dinner with a friend last weekend, which I wouldn't have done a month ago. But I still have to push myself. It's not natural yet.
+
+Doctor: That's actually good progress. Partial response at six weeks is common at 50 milligrams. Have you had any side effects?
+
+Patient: The nausea the first week was rough, but it went away. My mouth is kind of dry sometimes. And honestly, my sex drive is basically nonexistent, which is annoying.
+
+Doctor: Those are all known sertraline side effects. The dry mouth and sexual side effects can sometimes improve with time, and sometimes don't. We'll keep an eye on it. How are your moods overall — any days where you feel really down still?
+
+Patient: A couple. But not like before. No dark thoughts or anything like that.
+
+Doctor: Good. No thoughts of self-harm or suicide?
+
+Patient: No. Nothing like that.
+
+Doctor: I'm glad to hear it. So here's what I'm thinking. You've had a partial response, which tells us the medication is working, just not enough yet. I'd like to increase your dose from 50 to 100 milligrams. That's a standard step and still well within the therapeutic range. You might get a brief return of the nausea for a few days as you adjust, but it usually passes quickly.
+
+Patient: Okay. I'm fine with that. I felt the difference the first time, so I'm hopeful a higher dose will get me the rest of the way.
+
+Doctor: That's the goal. Are you seeing the therapist we referred you to?
+
+Patient: I've had three sessions. I like her. She's having me do some cognitive reframing exercises. It's helpful.
+
+Doctor: Great. Keep going with that. I'll send the new prescription — sertraline 100 milligrams, one tablet every morning. Same pharmacy?
+
+Patient: Yes, same one.
+
+Doctor: Let's check in again in about six weeks. If you feel any worsening of mood or any new concerning symptoms in the meantime, call us. Otherwise, I'll see you then.
+
+Patient: Sounds good. Thank you, Doctor.
+
+Doctor: You're doing the right things, Ms. Caldwell. Take care.

@@ -1,0 +1,58 @@
+{
+  "transcript_id": "22-low-back-pain",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "The HPI content that was actually filled in is accurate and faithful to the transcript. No fabricated findings or diagnoses are present.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note catastrophically fails to follow instructions. Template placeholder text and bracketed instructions are left throughout (e.g., '[Fever]', '[Blood pressure]', '(If not documented, state \"Not documented\")'). The ROS includes all systems with unfilled brackets instead of only discussed systems. Sections that should have been filled or marked 'Not documented' are left as raw template. The Objective, Assessment, and Plan sections are entirely unfilled across all duplicated copies.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "While the HPI is well-captured, the entire physical examination, assessment (acute mechanical low back strain), and plan (ibuprofen increase, cyclobenzaprine, activity counseling, ice/heat, physical therapy referral, follow-up instructions) are completely missing. Social history (desk job) and medications section are also unfilled.",
+      "missed_items": [
+        "Physical exam findings (lumbar flexion, extension, palpation tenderness at L4-L5, paraspinal muscle spasm, straight leg raise, reflexes, motor strength)",
+        "Assessment: acute mechanical low back strain",
+        "Ibuprofen increased to 600mg TID with food for 7-10 days",
+        "Cyclobenzaprine 10mg at bedtime",
+        "GI side effects counseling",
+        "Drowsiness counseling for cyclobenzaprine",
+        "Activity counseling (stay active, avoid prolonged bed rest, avoid heavy lifting)",
+        "Ice and heat recommendations",
+        "Physical therapy referral for core strengthening and body mechanics",
+        "Prognosis (2-4 weeks significant improvement, 6 weeks baseline)",
+        "Follow-up in 2 weeks",
+        "Return precautions (numbness, tingling, weakness, bladder/bowel changes)",
+        "No imaging indicated",
+        "Desk job (social history)",
+        "Current medication: ibuprofen 400mg TID"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "Template placeholder text, bracketed instructions, and parenthetical guidance are left verbatim throughout the note. The ROS includes all systems with unfilled brackets rather than only discussed systems. Vital signs section includes unfilled placeholders instead of being omitted. Multiple sections retain raw template instructions.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The entire note structure is duplicated approximately 20+ times, with the same HPI and unfilled template sections repeated over and over."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 27.9,
+      "input_tokens": 21124,
+      "output_tokens": 749
+    }
+  }
+}

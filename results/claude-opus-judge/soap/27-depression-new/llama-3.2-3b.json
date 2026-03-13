@@ -1,0 +1,57 @@
+{
+  "transcript_id": "27-depression-new",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note states 'difficulty falling asleep' in the HPI, but the transcript explicitly says 'she can fall asleep okay.' The ROS states 'No fatigue mentioned' under Constitutional and 'No mood, anxiety, or sleep issues mentioned' under Psychiatric, which contradicts the transcript. These are inaccuracies rather than fabrications.",
+      "flagged_content": [
+        "difficulty falling asleep",
+        "Constitutional: No fever, chills, or fatigue mentioned.",
+        "Psychiatric: No mood, anxiety, or sleep issues mentioned."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit the section entirely if not mentioned, but the note lists all systems with 'not mentioned' \u2014 and incorrectly says psychiatric symptoms were not mentioned. Social history includes items not mentioned in the transcript despite the instruction to only include items that were mentioned. The template also says to list vitals only if documented, but all are listed as 'Not documented.'",
+      "missed_items": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing: the roommate's concern prompting the visit, the PHQ-9 score of 18/27, the discussion about medication ambivalence and the analogy used, the counseling on sexual side effects, the duration of treatment recommendation (6-12 months after remission), the instruction to save 988 in her phone, and encouragement to lean on her roommate.",
+      "missed_items": [
+        "Roommate's concern prompting the visit",
+        "PHQ-9 score of 18/27 (moderately severe)",
+        "Patient's ambivalence about medication and the high blood pressure analogy",
+        "Sexual side effects counseling (decreased libido, difficulty with orgasm)",
+        "Duration of treatment recommendation (6-12 months after remission before tapering)",
+        "4-6 weeks to reach full effect",
+        "Patient agreed to save 988 in her phone",
+        "Encouragement to lean on supportive roommate",
+        "Concentration problems at work (mistakes, forgot meeting, manager concern)",
+        "Patient's age (29)",
+        "Everything feeling like it takes ten times more effort"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Chief Complaint appears after the initial Subjective paragraph rather than as the first item under Subjective. The ROS is improperly filled out with all systems listed despite instructions to omit unmentioned systems. Vital signs are all listed as 'Not documented' instead of being omitted. Social history lists items not discussed. The newly prescribed medication is placed under current Medications rather than in the Plan.",
+      "missed_items": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. There are no {{drug:...}} or {{condition:...}} tags anywhere in the note despite multiple drugs (sertraline, SSRIs) and conditions (major depressive disorder, suicidal ideation, depression) being mentioned."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.11,
+      "input_tokens": 3752,
+      "output_tokens": 785
+    }
+  }
+}

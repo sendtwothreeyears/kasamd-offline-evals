@@ -1,0 +1,53 @@
+{
+  "transcript_id": "06-hyperlipidemia-statin",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly stated or reasonably inferred from the transcript. No fabricated findings or diagnoses.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The note mostly follows instructions. However, it includes 'Tobacco: Not documented' and 'Recreational drugs: Not documented' in Social History when the template says to only include items that were mentioned. The ROS section says 'Not documented' rather than being omitted entirely as instructed. Family History is placed under Social History rather than as its own section."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing.",
+      "missed_items": [
+        "Patient age (54-year-old male)",
+        "Blood pressure 134/82",
+        "No diabetes",
+        "Guideline thresholds discussed (7.5% and 20%)",
+        "Specific statin counseling details: muscle aching in 5-10% of patients, rhabdomyolysis less than 1 in 10,000, liver concerns addressed, statins reduce heart attack/stroke risk by 25-35%",
+        "LDL target of under 130",
+        "HDL at lower threshold of acceptable, triglycerides above 150 in high range",
+        "Specific dietary counseling: reducing saturated fats (red meat, cheese, butter, fried foods), increasing fish, nuts, olive oil, fiber",
+        "Dietary changes alone might reduce LDL by 10-15%",
+        "Exercise recommendation of 150 minutes per week of moderate exercise",
+        "Currently fairly sedentary",
+        "Counseling on reducing alcohol and refined sugars for triglycerides, suggested cutting back to weekends only",
+        "Primary diagnosis of hyperlipidemia/dyslipidemia not explicitly stated in Assessment"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "Family History is nested under Social History instead of being its own separate section. Vital Signs section is missing (BP was documented). Lab results are placed in HPI rather than in Objective or a separate results section, though this is a minor placement issue."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Medications like atorvastatin and rosuvastatin, and conditions like hyperlipidemia, were not marked with {{drug:...}} or {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 11.83,
+      "input_tokens": 2928,
+      "output_tokens": 672
+    }
+  }
+}

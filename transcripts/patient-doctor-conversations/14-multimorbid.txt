@@ -1,0 +1,192 @@
+---
+id: 14
+scenario: Complex multimorbid visit — HTN, DM, and CKD combined management
+category: Chronic disease
+density: Dense
+---
+
+Doctor: Mr. Patton, good to see you. It's been — what, four months?
+
+Patient: About that. You know how it is, busy with grandkids, time flies.
+
+Doctor: I hear that. Well, we've got a lot to cover today. I got your labs back from last week and I want to go through everything. How have you been feeling overall?
+
+Patient: Eh, okay I guess. Tired a lot. My energy's not what it used to be. And I've been getting these headaches in the afternoon.
+
+Doctor: How often are the headaches?
+
+Patient: Maybe three, four times a week? Just this pressure, right here in the back of my head. Goes away eventually.
+
+Doctor: Those afternoon headaches can sometimes be related to blood pressure. Let me check — your BP today is 158 over 94. That's higher than I'd like.
+
+Patient: Really? I thought the medications were keeping it down.
+
+Doctor: What's it been running at home? Are you checking it?
+
+Patient: I check it a couple times a week. Usually it's... I'd say 140-something over 85 or 90. Sometimes higher, sometimes a little lower.
+
+Doctor: Okay, so it's been consistently elevated. Remind me what you're on for blood pressure.
+
+Patient: The amlodipine — that's 10 — and the losartan 100. I take those in the morning.
+
+Doctor: And you're taking them every day?
+
+Patient: Yes, every morning, religiously. My wife lines them all up for me.
+
+Doctor: Good. The target we're aiming for with your kidneys and diabetes is under 130 over 80, so we've got some room to improve. Let me come back to that in a minute. Let's talk about your diabetes. Your A1C came back at 8.1.
+
+Patient: That's not great, is it.
+
+Doctor: It's above our target of 7 or below. Last time it was 7.6, so it's drifted up. What's been going on with diet and medications?
+
+Patient: I'm on the metformin 1000 twice a day and the long-acting insulin at night — Lantus? Twenty-two units.
+
+Doctor: Tresiba, actually — that's what we switched you to.
+
+Patient: Right, right. Tresiba, 22 units. I take it at bedtime.
+
+Doctor: Are you checking your blood sugars at home?
+
+Patient: Not as much as I should. Morning fasting is usually 150, 160-ish. Sometimes higher.
+
+Doctor: 150 to 160 fasting tells me we need more basal insulin coverage. What about after meals?
+
+Patient: I don't really check after meals. I probably should.
+
+Doctor: It would help us understand the full picture. Your fasting numbers being high suggests the Tresiba dose needs to go up. I'd like to increase it to 26 units — go up by two units every three days until your fasting is under 130. And I want to add a post-meal check — pick your biggest meal and check two hours after.
+
+Patient: Okay. I can do that.
+
+Doctor: Now, the diet piece. I have to ask — holiday season was rough?
+
+Patient: Yeah... you know, parties, cookies, my wife makes this pecan pie... I fell off the wagon a little.
+
+Doctor: A little?
+
+Patient: Maybe more than a little. But I'm getting back on track. I've been doing better the last couple weeks.
+
+Doctor: I'm glad. The diet affects everything we're managing — your sugar, your blood pressure, your kidneys. It's all connected. Speaking of kidneys, let's talk about those numbers.
+
+Patient: This is the part I was worried about.
+
+Doctor: Your creatinine is 1.8, up from 1.5 last time. GFR is 42. That puts you in stage 3B CKD.
+
+Patient: Forty-two. And last time was what?
+
+Doctor: Fifty-one. So a meaningful drop over four months. That's faster than I'd like to see. Your urine protein is also elevated — albumin-to-creatinine ratio is 220.
+
+Patient: The kidney doctor — Dr. Khatri — she mentioned the protein last time I saw her. She wanted to recheck it.
+
+Doctor: How did that visit go, by the way?
+
+Patient: She seemed concerned but not panicked. She mentioned maybe adding a medication — saga-something?
+
+Doctor: Dapagliflozin? An SGLT2 inhibitor?
+
+Patient: That sounds right. She wanted to check with you first.
+
+Doctor: Yes, I got her note. I'm in agreement — I want to start that. Dapagliflozin 10 milligrams daily. It's going to help with the kidneys and it'll bring your blood sugar down a little too, which is a nice bonus. But with your GFR at 42, we need to talk about your metformin.
+
+Patient: What about it?
+
+Doctor: At this level of kidney function, the standard approach is to reduce the dose. I want to cut it from 1000 twice a day to 500 twice a day. The dapagliflozin will offset some of that glucose-lowering effect.
+
+Patient: And if my sugar's still high?
+
+Doctor: Then we increase the Tresiba further, or we can consider adding a mealtime insulin. Let's see how these changes settle first. Now, let me tie this all together because I know it feels like a lot. Your blood pressure being elevated is directly worsening your kidney function. The kidney function declining makes blood pressure harder to control. High blood sugar damages the kidneys further. It's a cycle, and we need to break it.
+
+Patient: So what do we do?
+
+Doctor: First, blood pressure. I want to add a third agent. Given your kidney disease and protein in the urine, I'd like to add hydrochlorothiazide 25 milligrams. Some people get a little lightheaded at first, so take it slow standing up.
+
+Patient: Another pill. How many is that now?
+
+Doctor: I know. Let me count with you. Losartan 100 for blood pressure and kidney protection. Amlodipine 10 for blood pressure. Now adding HCTZ 25 for blood pressure. Metformin 500 twice daily — reduced — for diabetes. Tresiba insulin at bedtime, going up to 26 units. Dapagliflozin 10 for kidneys and diabetes. Atorvastatin 40 for cholesterol. Aspirin 81. That's eight medications.
+
+Patient: Good lord.
+
+Doctor: I know it's a lot. This is the reality of managing multiple conditions, and every one of those is earning its keep. Let me check — your cholesterol panel. LDL is 98, which is okay but for your risk level I'd prefer it under 70. Your triglycerides are 210, which is elevated.
+
+Patient: Should we change the statin?
+
+Doctor: I think so. Let's go from atorvastatin 40 to 80. That should bring the LDL down further. The triglycerides are partly diet-related — when the sugar control improves and you clean up the diet, those often come down.
+
+Patient: So now it's nine things counting the insulin.
+
+Doctor: It is. Let me do a physical exam while we're talking. Your weight today is 234 — that's up 6 pounds from your last visit. At five-ten, your BMI is about 33.5. How are your feet — any numbness or tingling?
+
+Patient: Actually, yeah. My toes on the right foot feel kind of numb sometimes. Like pins and needles.
+
+Doctor: How long has that been going on?
+
+Patient: Few months maybe? I figured it was just from sitting wrong.
+
+Doctor: It could be diabetic neuropathy — nerve damage from the blood sugar. Let me check your sensation... can you feel this monofilament on your big toe? How about here?
+
+Patient: I feel it on the left... not really on the right.
+
+Doctor: Okay, I'm getting diminished sensation on the right foot, intact on the left. Pedal pulses are good bilaterally. No open sores, no calluses to worry about. But the neuropathy is another reason to get that A1C down. I want you seeing a podiatrist for regular foot exams — with diabetes and now neuropathy, foot care is critical.
+
+Patient: My buddy lost a toe from diabetes. That scares me.
+
+Doctor: It should motivate you, for sure. Good foot care and sugar control prevent that. Let me listen to your heart and lungs... heart sounds regular, no murmurs. Lungs are clear. No ankle edema.
+
+Patient: That's good at least.
+
+Doctor: It is. Your kidney function is dropping but you're not retaining fluid, which is a positive sign. Alright, let me also mention your eyes. When was your last eye exam?
+
+Patient: Uh... maybe two years ago?
+
+Doctor: You need one. With your A1C and the kidney changes, we need to screen for diabetic retinopathy. I'll put in a referral to ophthalmology. You should be getting that annually.
+
+Patient: Okay. I'll make the appointment.
+
+Doctor: Let me also check — any chest pain, any shortness of breath?
+
+Patient: No chest pain. A little short of breath if I'm doing yard work but nothing terrible.
+
+Doctor: Any changes in urination? Going more frequently, any blood in the urine?
+
+Patient: Going more often at night — up two, three times. No blood that I've noticed.
+
+Doctor: The frequent nighttime urination can be related to the kidneys or the blood sugar, or both. Should improve as we get things under better control. Now — I want to talk about priorities because I know this is overwhelming.
+
+Patient: Please, because my head is spinning.
+
+Doctor: Number one priority: blood pressure. This is the most important thing for protecting your kidneys right now. Take the new medication, check your BP at home daily for the next two weeks and log it. Number two: get the fasting blood sugar under 130. Increase the Tresiba like I described. Number three: start the dapagliflozin. Number four: diet — and I mean really commit this time. Low sodium under 2,000 milligrams, moderate protein, controlled carbohydrates.
+
+Patient: Should I see the nutritionist again?
+
+Doctor: Absolutely. I'll put in that referral too. I think a refresher visit focusing on your specific situation — diabetes, kidney disease, blood pressure — would be really valuable. And I want to see you back in six weeks, not four months. We can't let this much time go by with numbers moving in the wrong direction.
+
+Patient: Fair enough. Six weeks.
+
+Doctor: Labs in four weeks so I have results before you come in. BMP, A1C, lipids, urine protein, CBC. And I need you to stop the ibuprofen — I see you have a prescription from orthopedics.
+
+Patient: For my back, yeah. I take it a few times a week.
+
+Doctor: It's got to stop. NSAIDs are toxic to kidneys at this stage. Switch to Tylenol, up to 2,000 milligrams a day. If your back pain isn't manageable with that, let me know and we'll figure out an alternative.
+
+Patient: Alright. No more Advil.
+
+Doctor: One more thing — and I want you to hear this. The numbers aren't where we want them, but you're here. You're engaged. Showing up and working on this — that matters. We can turn this around, but it requires commitment on both sides.
+
+Patient: I know. My wife keeps telling me I'm not taking it seriously enough. She's right.
+
+Doctor: She's a smart woman. Let her help you — with the diet, with the pill reminders, with the foot checks. This is a team sport.
+
+Patient: I'll do better. I mean it this time.
+
+Doctor: I believe you. Alright — let me get the nurse to print your medication list and after-visit summary. The new prescriptions will go to your pharmacy electronically. Any questions before you go?
+
+Patient: Just... am I heading toward dialysis?
+
+Doctor: Not if we can help it. At your current GFR, dialysis is not imminent. But the trend is what concerns me. If we stabilize things — get the blood pressure down, the sugar down, start the kidney-protective medications — we can significantly slow this. Many people at your stage never reach dialysis. That's the goal.
+
+Patient: Okay. That's what I needed to hear.
+
+Doctor: Good. Take care, Mr. Patton. I'll see you in six weeks.
+
+Patient: Thanks, doc. I appreciate your honesty.
+
+Doctor: Always. Tell your wife I said hello.

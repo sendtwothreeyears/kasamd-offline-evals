@@ -1,0 +1,132 @@
+---
+id: 13
+scenario: CKD stage 3 lab review and nephrology referral discussion
+category: Chronic disease
+density: Dense
+---
+
+Doctor: Afternoon, Mr. Okonkwo. Thanks for coming in. I've got your lab results back and I wanted to go over them with you in detail.
+
+Patient: Sure thing. I've been a little nervous about these, honestly.
+
+Doctor: I understand. Let's walk through everything. So as you know, we've been monitoring your kidney function over the past couple years because of your diabetes and high blood pressure. Let me pull up the numbers.
+
+Patient: Okay.
+
+Doctor: Your creatinine came back at 1.6, which is up a bit from 1.4 six months ago and 1.2 the year before that. Your GFR — that's the estimated glomerular filtration rate, the main number we use to measure how well your kidneys are filtering — is 48.
+
+Patient: And what should it be?
+
+Doctor: Normal is above 90. Last time it was 52, and the time before that it was 62. So there's been a gradual decline. At 48, you're in what we call stage 3B chronic kidney disease.
+
+Patient: Stage 3B? That sounds... is that bad?
+
+Doctor: There are five stages. Stage 1 is normal, stage 5 is kidney failure. Stage 3 is moderate. The 'B' part means you're in the lower half of stage 3 — GFR between 30 and 44 is 3B, 45 to 59 is 3A. You're right at the border. The good news is this is a stage where we can do a lot to slow things down.
+
+Patient: Okay. What's causing it to get worse?
+
+Doctor: The two biggest culprits are the same things we've been managing — your diabetes and your blood pressure. Both of them, over time, damage the small blood vessels in the kidneys. Let me go through the rest of your labs because there's some connected pieces. Your BMP — basic metabolic panel — shows your potassium is 4.8.
+
+Patient: Is that high?
+
+Doctor: It's at the upper end of normal. Normal range is 3.5 to 5.0. As kidney function declines, the kidneys have a harder time getting rid of potassium. It's not dangerous right now, but it's something we need to monitor because certain medications can push it higher. Your sodium is fine at 139. BUN is 32, which is mildly elevated — that tracks with the kidney function. CO2 is 22, which is slightly low — kidneys also help regulate your acid-base balance, and that can start to shift in stage 3.
+
+Patient: This is a lot of numbers.
+
+Doctor: I know, and I don't expect you to memorize all of this. The big picture is that your kidneys are working harder than they should be and we need to be proactive. Now, we also checked your urine. You had a urine albumin-to-creatinine ratio of 180.
+
+Patient: What's that measure?
+
+Doctor: It measures protein leaking into your urine. Normal is under 30. Yours at 180 is in the moderately increased range — what we used to call microalbuminuria, though the newer terminology is A2. Protein in the urine is a sign that the kidney's filtering units are damaged, and it's also a marker that tells us the kidney disease is more likely to progress.
+
+Patient: It's going to keep getting worse?
+
+Doctor: Not necessarily. That's why we're having this conversation now. The proteinuria actually tells us that certain treatments are especially likely to help. You're on lisinopril 20 milligrams for your blood pressure, correct?
+
+Patient: Yes, for about three years now.
+
+Doctor: Lisinopril is an ACE inhibitor, and those are specifically protective for the kidneys — they reduce that protein leak and slow the decline in GFR. But given where your numbers are, I want to increase it to 40 milligrams. We need your blood pressure tighter. What's it been running at home?
+
+Patient: Usually around 140 over 85, 88, somewhere in there.
+
+Doctor: That's what I'm seeing in the office too — today it's 142 over 86. For someone with CKD and proteinuria, our target is under 130 over 80. Getting there can meaningfully slow the progression.
+
+Patient: So just increasing the lisinopril?
+
+Doctor: That's the first step. If it's not enough, we may add another agent. There's also a newer class of medications called SGLT2 inhibitors — drugs like dapagliflozin or empagliflozin — that were originally designed for diabetes but have shown remarkable kidney-protective effects. You're on metformin and glipizide for your diabetes, right?
+
+Patient: Yeah, the metformin 1000 twice a day and glipizide 5 once a day.
+
+Doctor: So I want to add dapagliflozin 10 milligrams daily. It'll help with your blood sugar, but more importantly, it has strong evidence for slowing kidney disease progression in people with proteinuria like yours. Several major clinical trials showed it reduces the risk of needing dialysis.
+
+Patient: Dialysis — is that something I should be worried about?
+
+Doctor: At your current rate of decline, you're not anywhere near that. But the reason we're being aggressive now is to keep it that way. The trajectory matters more than any single number. If we can flatten the curve — slow the GFR decline — you may never need dialysis.
+
+Patient: Okay. That's reassuring. Are there side effects with this new one?
+
+Doctor: The dapagliflozin — the main things to watch for are urinary tract infections and yeast infections, because it works by putting more sugar into the urine. Drink plenty of water, and let us know if you have any burning with urination or unusual discharge. Some people also feel lightheaded at first because it has a mild diuretic effect.
+
+Patient: Got it. What about the metformin? My friend told me that's bad for your kidneys.
+
+Doctor: Good question. Metformin is actually safe at your GFR level — the cutoff is generally 30. But at a GFR of 48, we're starting to get into the range where I want to reduce the dose. I'm going to drop your metformin from 1000 twice daily to 500 twice daily, with the dapagliflozin picking up some of the glucose-lowering. Your A1C was 7.2, which is reasonable, so I don't think the sugar control will suffer.
+
+Patient: What about the other one — the glipizide?
+
+Doctor: Glipizide is actually okay in kidney disease, it's metabolized by the liver. We'll keep that the same for now. But I want to check your A1C again in three months to make sure we're still in range with the medication changes.
+
+Patient: Alright. My wife's been asking me about diet. Is there stuff I should be eating differently because of the kidneys?
+
+Doctor: Yes, actually. The main dietary changes for CKD are reducing sodium — under 2,000 milligrams a day — which also helps with blood pressure. You should also be mindful of your protein intake. I'm not saying go low-protein, but don't overdo it. Some people think they need to eat tons of protein for muscle, and in kidney disease, that extra protein actually makes the kidneys work harder.
+
+Patient: How much protein should I be having?
+
+Doctor: A reasonable target is about 0.8 grams per kilogram of body weight per day. You weigh about 195, so that's roughly 70 grams of protein a day. A chicken breast has about 30 grams for reference. And with your potassium at 4.8, I'd say be moderate with high-potassium foods — bananas, oranges, potatoes, tomatoes. You don't need to avoid them completely, but don't go overboard.
+
+Patient: I eat a banana every morning.
+
+Doctor: One banana a day is fine. Just don't eat five. And we'll keep checking the potassium. If it starts creeping above 5, we'll have a stricter conversation about potassium restriction.
+
+Patient: Makes sense. You mentioned something about a referral?
+
+Doctor: Yes. Given the trajectory of your GFR — the consistent decline over the past two years, the significant proteinuria, and the multiple risk factors — I think it's time to bring a nephrologist on board. That's a kidney specialist.
+
+Patient: Is it really that serious?
+
+Doctor: It's not that you're in immediate danger. It's more about having another set of expert eyes on this. A nephrologist might suggest additional treatments, can help us optimize everything, and if things do progress further, it's better to have that relationship established early rather than scrambling later. It's proactive, not reactive.
+
+Patient: Okay, I can see that. Who would you send me to?
+
+Doctor: Dr. Aminah Khatri at the renal associates group. She's excellent, very thorough, and she's good at explaining things. I'll send a referral with all your lab trends.
+
+Patient: How long until I can get in?
+
+Doctor: Usually a few weeks. I'll mark it as relatively urgent given the trend. In the meantime, we'll get the medication changes started. Let me also mention — you should avoid NSAIDs. Ibuprofen, naproxen, Aleve — those are all hard on the kidneys.
+
+Patient: I take Advil for my back sometimes.
+
+Doctor: I'd switch to acetaminophen — Tylenol. Up to 2,000 milligrams a day is safe. And if you ever need imaging or a procedure and they mention contrast dye, make sure to tell them about your kidney function. Contrast can temporarily worsen kidney function.
+
+Patient: I had a CT scan last year — is that the contrast you mean?
+
+Doctor: It can be. Did they give you an IV for it?
+
+Patient: Yeah, they did.
+
+Doctor: Then it likely had contrast. It's not that you can never have it, but the radiologist and your doctors need to know your GFR so they can take precautions — extra hydration, using the lowest dose possible.
+
+Patient: Good to know. Anything else?
+
+Doctor: Let me summarize. Lisinopril goes from 20 to 40 milligrams. Adding dapagliflozin 10 milligrams. Metformin drops from 1000 to 500 twice daily. Glipizide stays the same. Avoid ibuprofen, use Tylenol instead. Sodium under 2,000, moderate protein, watch potassium-heavy foods. Labs in six weeks to recheck your kidney function, potassium, and make sure everything's tolerating the changes. Nephrology referral to Dr. Khatri. And I'll see you back in three months or sooner if anything comes up.
+
+Patient: That's a lot to process, but I think I've got it. Can you print any of this out?
+
+Doctor: Absolutely, I'll have the nurse print your after-visit summary with all the medication changes and dietary recommendations. And don't hesitate to call if you have questions — especially about the new medication.
+
+Patient: I appreciate you taking the time to explain everything. It's scary hearing about kidney disease, but I feel better knowing we have a plan.
+
+Doctor: That's exactly why we're doing this. You're not helpless here — the changes you make with diet and the medications we're adjusting, those genuinely make a difference. We'll stay on top of this.
+
+Patient: Thank you, doctor.
+
+Doctor: You're welcome, Mr. Okonkwo. Take care, and I'll see you in three months.

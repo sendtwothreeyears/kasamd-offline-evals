@@ -1,0 +1,12 @@
+{
+  "transcript_id": "41-gerd",
+  "template": "soap",
+  "model": "gemini-flash",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nThree weeks of burning chest discomfort.\n\n**History of Present Illness**\nPatient presents with three weeks of burning chest discomfort. They describe it as a burning sensation right behind the breastbone, midsternal area, that sometimes creeps up into the throat with an associated sour taste. It has been particularly miserable after dinner. Trigger foods include spicy foods, tomato-based sauces (pasta specifically mentioned), and coffee, which they are drinking about two to three cups a day. There is no dysphagia, no odynophagia, no sensation of food getting stuck. No vomiting, no hematemesis, no melena or blood in the stool. No unintentional weight loss. No alarm symptoms noted.\n\n**Review of Systems**\nConstitutional: No unintentional weight loss.\nHEENT: Discomfort creeping up into the throat with an associated sour taste.\nGastrointestinal: Burning chest discomfort, burning sensation behind the breastbone, midsternal area, especially after dinner. Triggered by spicy foods, tomato-based sauces, and coffee. No dysphagia, no odynophagia, no sensation of food getting stuck. No vomiting, no hematemesis, no melena or blood in the stool.\n\n**Past Medical History**\nNot documented\n\n**Medications**\nNot documented\n\n**Allergies**\nNo known drug allergies\n\n**Social History**\nCoffee: Two to three cups a day.\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\nPhysical examination not documented\n\n**Assessment**\n{{condition:GERD}}\n\n**Plan**\n1. Therapeutic interventions: Started on {{drug:omeprazole}} 20 milligrams once daily, to be taken on an empty stomach about 30 minutes before breakfast.\n2. Patient education and counseling: Patient counseled that they should start feeling better within a few days but to give it a full two weeks for the complete effect. Discussed lifestyle modifications including cutting back on coffee (ideally reducing from current two to three cups), avoiding trigger foods like spicy foods and tomato-based sauces, not eating within two to three hours of lying down, and elevating the head of the bed.\n3. Follow-up instructions: Follow up in six weeks. If omeprazole is working well, reassess at that point. If not, will look into things further.",
+  "metadata": {
+    "inference_time_s": 6.92,
+    "prompt_tokens": 1479,
+    "tokens_generated": 495,
+    "tokens_per_sec": 71.5
+  }
+}

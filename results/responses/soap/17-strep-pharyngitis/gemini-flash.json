@@ -1,0 +1,12 @@
+{
+  "transcript_id": "17-strep-pharyngitis",
+  "template": "soap",
+  "model": "gemini-flash",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nPatient came in complaining of a sore throat that started yesterday.\n\n**History of Present Illness**\nPatient reports his throat hurts to swallow, hurts to talk, and hurts in general. He denies cough or runny nose. He did have a fever last night, 101 and some change, and took some {{drug:Tylenol}} for it.\n\n**Review of Systems**\nConstitutional: Patient reported a fever last night, 101 and some change.\nHEENT: Patient complains of sore throat, pain with swallowing and talking. Denies runny nose.\nRespiratory: Patient denies cough.\n\n**Past Medical History**\nNot documented\n\n**Medications**\nNot documented\n\n**Allergies**\nNo known allergy to {{drug:amoxicillin}} or {{drug:penicillin}}.\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\nHEENT: Tonsils were red and swollen with white patches.\nNeck: Tender submandibular lymphadenopathy.\n\n**Assessment**\n{{condition:Streptococcal pharyngitis}}\n\n**Plan**\n1. Prescribed {{drug:amoxicillin}} 500 milligrams three times a day for ten days.\n2. Recommended continuing Tylenol or {{drug:ibuprofen}} for pain and fever. Suggested warm tea or cold things like popsicles for throat comfort.\n3. Counseled patient to finish the full course of antibiotics even when feeling better. Patient should feel noticeably better within 24 to 48 hours. Patient is contagious until on antibiotic for at least 24 hours; advised to stay home from work tomorrow and can return the day after if feeling well.\n4. Return precautions given: return if fever does not break within 48 hours of starting antibiotic, or if develops difficulty breathing or trouble swallowing liquids.",
+  "metadata": {
+    "inference_time_s": 12.48,
+    "prompt_tokens": 1476,
+    "tokens_generated": 394,
+    "tokens_per_sec": 31.6
+  }
+}

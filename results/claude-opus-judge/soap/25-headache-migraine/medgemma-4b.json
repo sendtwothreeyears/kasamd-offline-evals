@@ -1,0 +1,52 @@
+{
+  "transcript_id": "25-headache-migraine",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the generated note is directly stated or reasonably inferred from the transcript. No fabricated findings or diagnoses.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "Template instructions in parentheses were left in the output (e.g., '(Only include items that were mentioned)', '(Only include vitals that were documented)', '(Only document examination findings that were explicitly mentioned...)'). Vital signs section was listed with 'Not documented' for each when the template says to only include vitals that were documented. Past Medical History says 'Not documented' when the transcript mentions two C-sections and combination oral contraceptive pill use. Medications says 'Not documented' when the transcript mentions the combination oral contraceptive pill.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing from the note: triggers (stress, menstruation, red wine), sleep deprivation (5-6 hours/night with two young children ages 2 and 5), high caffeine intake (3-4 cups/day), work impact (left early twice, concerned about boss noticing), past medical history (two C-sections), current medications (combination oral contraceptive pill), the detailed neurological exam findings, and the patient's age (34).",
+      "missed_items": [
+        "Triggers: stress, menstruation, red wine",
+        "Sleep deprivation: 5-6 hours/night",
+        "Two young children ages 2 and 5",
+        "High caffeine intake: 3-4 cups/day",
+        "Work impact: left early twice last month, concerned boss is noticing",
+        "Past medical history: two C-sections",
+        "Current medication: combination oral contraceptive pill",
+        "Detailed neurological exam findings (pupils, EOM, visual acuity, visual fields, facial nerve, pronator drift, finger-nose-finger, DTRs, gait)",
+        "Patient age: 34 years old"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template parenthetical instructions were left in the output. Vital signs were listed as 'Not documented' instead of being omitted per template instructions. The neurological exam section is entirely missing despite being the most documented exam component. The physical exam section just says 'Not documented' for General when detailed neuro findings were provided.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used for any medications or conditions.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content found in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 12.46,
+      "input_tokens": 4656,
+      "output_tokens": 713
+    }
+  }
+}

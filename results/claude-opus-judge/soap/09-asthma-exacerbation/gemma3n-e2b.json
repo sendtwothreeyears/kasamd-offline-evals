@@ -1,0 +1,52 @@
+{
+  "transcript_id": "09-asthma-exacerbation",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note states 'Patient appears to be in mild respiratory distress' which is not supported by the transcript \u2014 the exam only mentions expiratory wheezing and O2 sat. This is a minor embellishment beyond what the transcript supports.",
+      "flagged_content": [
+        "Patient appears to be in mild respiratory distress."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit the section entirely if not mentioned, yet the note lists many systems as 'Not documented' instead of omitting them. The template also says to state 'Not documented' or 'No known drug allergies' for allergies, and the note just says 'Not documented' which is acceptable, but Social History should have been omitted per instructions since nothing was mentioned. The ROS also missed HEENT findings (runny nose, sneezing, postnasal drip) that were discussed."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing.",
+      "missed_items": [
+        "Peak flow of 380 with personal best of 480 (79% of personal best, yellow zone)",
+        "Mild expiratory wheezing bilaterally, worse on the right",
+        "Counseling about spacer use and why it helps get medication deeper into lungs",
+        "Counseling to rinse mouth and spit after inhaled steroid use to prevent oral thrush",
+        "Patient's concerns about long-acting bronchodilator safety and provider's explanation about combination inhaler safety data",
+        "Exercise counseling \u2014 use two puffs of albuterol 15 minutes before working out, exercise is beneficial for lung function",
+        "Prescribing a spacer device (mentioned but not clearly as a prescription)",
+        "Asthma history (past medical history should include asthma)",
+        "HEENT symptoms in ROS (runny nose, sneezing, postnasal drip)",
+        "Detailed counseling about why maintenance inhaler must be taken daily even when feeling well"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the general template structure with appropriate sections, but lists undiscussed ROS systems as 'Not documented' instead of omitting them per template instructions, and HEENT findings are misplaced (in HPI but not in ROS where they belong)."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Entity marking syntax is correct and drugs are appropriately marked. However, albuterol is marked twice (in HPI and Medications), fluticasone is marked multiple times, and conditions like 'asthma' and 'seasonal allergies' are not marked with {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No sections or content are duplicated in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.33,
+      "input_tokens": 3375,
+      "output_tokens": 744
+    }
+  }
+}

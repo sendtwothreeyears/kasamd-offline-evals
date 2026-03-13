@@ -1,0 +1,53 @@
+{
+  "transcript_id": "50-polypharmacy",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note lists 'orthostatic hypotension' as a past medical history item, but the transcript describes it as a suspected cause of falls rather than a confirmed diagnosis. 'GERD' and 'hyperlipidemia' are inferred but not explicitly stated as diagnoses. 'Stent placement' is marked as a condition which is not really a condition. These are minor embellishments.",
+      "flagged_content": [
+        "Gastroesophageal reflux disease (history of hiatal hernia, on omeprazole)",
+        "Hyperlipidemia (on atorvastatin)"
+      ]
+    },
+    "instruction_following": {
+      "score": 3,
+      "rationale": "The note follows all template instructions well. Sections not documented are appropriately marked as 'Not documented'. Only discussed systems are included in ROS. No template instructions appear in the output."
+    },
+    "completeness": {
+      "score": 3,
+      "rationale": "The note captures virtually all content from the transcript including all 14 medications, all medication changes, all counseling points, the lorazepam history (started 2013 by Dr. Patterson after husband passed), the gabapentin future taper discussion, the pharmacist referral, the home BP monitoring plan, and follow-up instructions. The detail about the lorazepam being started in 2013 by Dr. Patterson after her husband passed is not explicitly stated but the taper plan and Beers criteria counseling are captured. Minor omission: the specific mention that lorazepam was started by Dr. Patterson in 2013 after her husband passed, and that the heart catheterization was done by a cardiologist.",
+      "missed_items": [
+        "Lorazepam started in 2013 by Dr. Patterson after her husband passed",
+        "Aspirin started by a cardiologist after heart catheterization",
+        "Omeprazole started approximately 2017 (about nine years)",
+        "Gabapentin started by Dr. Cho",
+        "Falls occurred in bathroom and kitchen specifically",
+        "Hip fracture risk discussion point"
+      ]
+    },
+    "template_adherence": {
+      "score": 3,
+      "rationale": "The note follows the template structure precisely with all required sections present and properly formatted. Vitals only include what was documented, and omitted sections are handled appropriately."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Entity marking syntax is correct and first-occurrence-only is mostly followed. However, 'stent placement' is marked as a condition when it is a procedure, and some drugs are re-marked in the Plan section (amlodipine, lorazepam, zolpidem, diphenhydramine, oxybutynin, omeprazole, aspirin, mirabegron, melatonin) when they were already marked in the Medications section. Also, 'calcium supplement' and 'multivitamin' are debatable as drugs.",
+      "flagged_content": [
+        "{{condition:stent placement}}",
+        "repeated drug markings in Plan section"
+      ]
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No sections or content are duplicated in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.33,
+      "input_tokens": 5144,
+      "output_tokens": 779
+    }
+  }
+}

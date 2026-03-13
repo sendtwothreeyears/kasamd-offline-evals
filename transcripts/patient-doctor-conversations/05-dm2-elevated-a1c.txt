@@ -1,0 +1,146 @@
+---
+id: 05
+scenario: Type 2 diabetes with newly elevated A1c, detailed medication discussion
+category: Chronic disease
+density: Dense
+---
+
+Doctor: Good afternoon, Robert. Come on in. How are you doing?
+
+Patient: Eh, I've been better. I had a feeling this wasn't going to be a great visit.
+
+Doctor: Well, let's talk through it. Before we get into the labs, how have you been feeling day to day?
+
+Patient: Tired mostly. And I've been getting up to pee at night more — like two, three times. And I've been thirstier than usual.
+
+Doctor: Those are important symptoms. They actually fit with what we're seeing in your labs. Your A1c came back at 9.2.
+
+Patient: Wow.
+
+Doctor: Yeah, it's up significantly from 7.4 six months ago. So that tells us your average blood sugars over the past three months have been running quite high. Have you been checking at home?
+
+Patient: Not as much as I should. I ran out of test strips and kept forgetting to reorder them. When I did check, I was seeing numbers in the 200s, sometimes higher.
+
+Doctor: Okay. That tracks. Let me ask — what's been going on with the metformin? You're on 1,000 twice a day.
+
+Patient: I've been taking it. I missed a few days here and there when I was traveling for work last month, but mostly I take it.
+
+Doctor: Alright. And how about the diet? Last time we talked, you were doing pretty well with the lower carb approach.
+
+Patient: Yeah, that kind of fell apart. My mom was in the hospital for a few weeks — she had a hip fracture — and I was basically living at the hospital. Eating out of vending machines, fast food, whatever was easy. I gained about 15 pounds.
+
+Doctor: I'm sorry to hear about your mom. Is she doing okay now?
+
+Patient: She's in rehab, getting better. But it was stressful. I just let everything go — the diet, the exercise, all of it.
+
+Doctor: That's completely understandable. Caregiving is exhausting and your health takes a backseat. But now we need to regroup, because 9.2 puts you at risk for complications — we're talking about damage to your eyes, your kidneys, your nerves over time. And those symptoms you're having — the fatigue, the urination, the thirst — those are from the high sugars.
+
+Patient: Yeah, I know. I feel it.
+
+Doctor: So here's where we are. Metformin alone isn't cutting it anymore, even when you were taking it consistently before, you were at 7.4, which was borderline. Now with the weight gain and the dietary changes, we need to add something. I want to talk through the options with you.
+
+Patient: Okay.
+
+Doctor: There are two main routes I think make sense for you. One is a GLP-1 receptor agonist — you may have heard of these, they've gotten a lot of press. Semaglutide, brand name Ozempic, or Wegovy for weight loss specifically. The other option is starting insulin.
+
+Patient: I really don't want to go on insulin. My dad was on insulin and it was... he hated it. The shots, the lows, all of it.
+
+Doctor: I hear that a lot, and I want to address it because insulin has come a long way. But let me tell you about the GLP-1 option first since you seem more open to that. Semaglutide is a once-weekly injection — so one shot per week, not daily.
+
+Patient: One shot a week? That's not bad.
+
+Doctor: Right. And it works in a few ways. It helps your pancreas release more insulin when your sugar is high, it slows down stomach emptying so you feel full longer, and it acts on the brain to reduce appetite. Most people lose weight on it — significant weight loss, often 10 to 15 percent of body weight.
+
+Patient: That would be good because I'm at 240 now and I'm only five-nine.
+
+Doctor: Exactly. Your BMI is 35.4, so the weight loss benefit is a real advantage here. It would help with the diabetes and the weight and also has some cardiovascular benefits.
+
+Patient: What are the side effects?
+
+Doctor: The main ones are GI — nausea, sometimes vomiting or diarrhea, especially when you're starting or increasing the dose. We start low and go up slowly to minimize that. Most people tolerate it well after the first few weeks. There's a rare risk of pancreatitis, and we wouldn't use it if you had a history of certain thyroid cancers, but you don't.
+
+Patient: The nausea worries me a little. I have a weak stomach.
+
+Doctor: We'll start you on the lowest dose — 0.25 milligrams weekly for four weeks — and you stay there until you're tolerating it. Then we bump to 0.5, and eventually up to 1 milligram if needed. If the nausea is bad, we can slow the titration. Eating smaller meals helps, and avoiding really fatty or greasy food.
+
+Patient: Okay. And the insulin option — what would that look like?
+
+Doctor: If we went the insulin route, I'd start with a long-acting basal insulin — something like insulin glargine, brand name Lantus or Basaglar. That's one injection at bedtime, and it gives you a steady baseline of insulin coverage throughout the day. We'd start at a low dose, maybe 10 units, and you'd adjust it up slowly based on your fasting sugars.
+
+Patient: And the risk of lows?
+
+Doctor: With basal insulin, the risk of hypoglycemia is lower than what your dad probably experienced. The newer insulins are much smoother. But yes, it's still a risk, which is why we monitor closely. The GLP-1 drugs have a much lower risk of hypoglycemia because they only trigger insulin release when your sugar is actually high.
+
+Patient: I think I want to try the Ozempic first.
+
+Doctor: That's what I'd recommend too, given your situation. The weight loss will compound the benefit. Now, I have to be upfront — insurance coverage can be tricky with these medications. They're expensive without coverage. We'll run it through your insurance and if there are issues, we'll look at manufacturer coupons or prior authorization.
+
+Patient: How much are we talking?
+
+Doctor: Without insurance, it can be over a thousand dollars a month. But most commercial insurance plans cover it with a prior auth. We'll handle that paperwork.
+
+Patient: Okay. God, that's expensive.
+
+Doctor: It is. If it's a barrier, we pivot. There are other options — like empagliflozin, an SGLT2 inhibitor, which is cheaper and also helps with weight. But let's try the semaglutide first.
+
+Patient: Alright.
+
+Doctor: Now, while we're getting that going, I also want to talk about what you can do right now. Can we get back on track with the diet?
+
+Patient: Yeah, my mom's more settled now, so I can actually cook again. I know what to do, I just haven't been doing it.
+
+Doctor: That's half the battle. You know the framework — protein and vegetables first, limit the refined carbs, watch portion sizes. Even getting back to 80 percent of where you were before would make a difference.
+
+Patient: I'll get back on it this week.
+
+Doctor: Exercise too. Where were you before?
+
+Patient: I was walking three or four times a week. Thirty minutes or so.
+
+Doctor: Let's get back to that. Start where you can and build up. Even 15 minutes is better than zero.
+
+Patient: Yeah, for sure.
+
+Doctor: Okay. I also want to make sure we're up to date on your complications screening. Your eye exam — when was the last one?
+
+Patient: It's been over a year. Maybe a year and a half?
+
+Doctor: We need to get that scheduled. I'll put in a referral to ophthalmology. With an A1c of 9.2, it's important we check for any retinal changes. Your kidney labs from today — your creatinine is normal at 1.0, but your urine microalbumin is mildly elevated at 45.
+
+Patient: Is that bad?
+
+Doctor: It's early. It means there's a small amount of protein leaking into your urine, which can be an early sign of diabetic kidney damage. The good news is it's reversible at this stage if we get the sugars under control. The semaglutide and better glucose control should help. I also want to make sure your blood pressure is well controlled — what's it running at home?
+
+Patient: I haven't been checking it.
+
+Doctor: Let me check now. 138 over 86. A little elevated. You're on lisinopril 20, correct?
+
+Patient: Yes.
+
+Doctor: The lisinopril is actually protective for the kidneys too, so that's good. But we may need to increase it if it stays in this range. Let's monitor.
+
+Patient: Okay.
+
+Doctor: I'm going to reorder your test strips — let's get you a new glucometer while we're at it. I want you checking fasting sugars every morning and before dinner. Write them down or use the app on your phone. We'll review them when you come back.
+
+Patient: How soon do you want me back?
+
+Doctor: Four weeks. That gives us time to get the semaglutide started, see how you tolerate it, and start seeing the effect. I'll also check a basic metabolic panel at that visit.
+
+Patient: Sounds like a plan.
+
+Doctor: Let me also do a quick foot exam. Shoes off for me?
+
+Patient: Sure.
+
+Doctor: I'm going to check sensation with the monofilament. Can you feel this? Here? And here? Good. Both feet are intact, pulses are strong, no skin breakdown. Keep wearing good shoes, check your feet daily.
+
+Patient: Will do.
+
+Doctor: Alright, so let me recap. We're starting semaglutide 0.25 milligrams subcutaneous once weekly — the pharmacy will show you how to use the pen. Continue metformin 1,000 twice daily. Continue lisinopril 20 daily. Resume diet and exercise. New glucometer and strips. Ophthalmology referral. Come back in four weeks. And Robert — don't beat yourself up about the last few months. You were dealing with a lot. What matters is what we do from here.
+
+Patient: Thanks, doc. I appreciate you taking the time to go through all this.
+
+Doctor: That's what I'm here for. Call us if you have any issues with the injection or if the nausea is severe. We'll get through this.
+
+Patient: Alright. Thanks again.

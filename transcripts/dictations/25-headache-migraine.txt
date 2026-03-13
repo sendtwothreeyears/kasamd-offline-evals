@@ -1,0 +1,40 @@
+---
+id: 25
+scenario: New-onset recurrent headaches, migraine diagnosis, comprehensive evaluation
+category: Acute
+density: Dense
+---
+
+So I saw Ms. Pereira today — she's a thirty-four-year-old woman, project manager at a tech company, coming in for evaluation of headaches that have been going on for about three months, maybe a little longer.
+
+She describes recurrent headaches that started at a frequency of once or twice a month but have increased to four episodes this past month alone. Duration varies — anywhere from six hours to nearly two days for the worst one. The pain is unilateral, predominantly right-sided, around the temple and behind the eye, pulsating and throbbing in quality. Severity is seven to eight out of ten for the bad ones, five to six for the milder episodes. She notes that physical activity aggravates them.
+
+About half the time, she experiences a visual aura preceding the headache by approximately twenty to thirty minutes — she describes shimmery zigzag lines, like looking through a kaleidoscope. The aura lasts about fifteen to twenty minutes and then the headache begins. No associated numbness, tingling, or word-finding difficulties. During the headaches, she has significant nausea — she's actually vomited during two episodes — as well as photophobia and phonophobia. She has to go into a dark room and close the blinds, and noise from her kids makes it significantly worse.
+
+She's identified several triggers: stress — a couple of headaches came on after hectic workdays — menstruation, and red wine. She's also sleep-deprived, averaging five to six hours a night with two young children, ages two and five. Caffeine intake is high — three to four cups of coffee per day. The headaches have significantly impacted her work; she had to leave early twice last month and is concerned her boss is noticing.
+
+For treatment, she's tried ibuprofen — helps if taken early but doesn't touch it once fully established. Excedrin Migraine worked better but took about an hour. She used a friend's sumatriptan once, which worked very well. I counseled her not to do that again.
+
+Family history is significant — her mother has migraines and has been on medication for them for years, and her maternal aunt also gets migraines. Strong family history.
+
+Past medical history is otherwise unremarkable. She's had two C-sections. She is currently on a combination oral contraceptive pill. No other medications. No history of stroke, blood clots, or heart disease. She's a nonsmoker. Drinks alcohol socially, a couple of drinks on weekends, less so since the headaches started. No recreational drug use.
+
+Review of systems: no vision changes outside of aura episodes, no dizziness or balance problems, no weakness or numbness, no recent weight changes, fevers, or night sweats. She does note neck and shoulder tension, particularly on headache days, which she attributes to stress.
+
+On exam, neurological exam was completely normal. Pupils equal, round, and reactive bilaterally. Extraocular movements intact with smooth pursuit, no nystagmus. Visual acuity 20/25. Visual fields full to confrontation. Facial nerve intact — symmetric smile, brow raise, cheek puff. No pronator drift on outstretched arms with eyes closed. Finger-nose-finger testing normal bilaterally, no tremor, no dysmetria. Deep tendon reflexes normal and symmetric at biceps, triceps, knees, and ankles. Gait normal, including heel and toe walking.
+
+Assessment: This is migraine with aura. She meets full diagnostic criteria — recurrent unilateral pulsating headaches, moderate to severe, aggravated by activity, with nausea, photophobia, and phonophobia, preceded by visual aura, lasting hours to days, with consistent family history. Textbook presentation.
+
+Plan:
+
+First, imaging — although her neurological exam is normal and this is a classic presentation, given that these are new headaches at age thirty-four with aura, I went ahead and ordered a brain MRI without contrast for completeness and reassurance. I don't expect anything concerning, but I think it's reasonable.
+
+Second, acute treatment — prescribing sumatriptan 50 milligram tablets. She should take it at headache onset — not during the aura, but when the pain begins. Can take a second dose if no response after two hours. I counseled her on potential side effects including chest or throat tightness, tingling, flushing, and mild dizziness, which are typically brief. I also counseled her on medication overuse — she should not be using acute medications more than two to three days per week or she risks developing medication overuse headache.
+
+Third — and this is urgent — her combination oral contraceptive pill needs to be changed. Migraine with aura is a contraindication to estrogen-containing contraceptives given the elevated stroke risk, independent of the triptan. I counseled her on this at length — she was unaware. We discussed switching to a progestin-only method, such as the minipill, Depo shot, hormonal IUD, or implant. She's going to schedule an appointment with her OB-GYN to address this.
+
+Fourth, preventive therapy — given four migraines per month with significant functional impairment, she's a good candidate for prophylaxis. I'm starting amitriptyline 10 milligrams at bedtime. I chose this given her associated poor sleep and stress, and it has good evidence for migraine prevention. Common side effects are drowsiness and dry mouth, which are generally well tolerated at this dose. Goal is at least fifty percent reduction in frequency. I told her it takes four to six weeks to see the full effect. I also discussed other first-line options including propranolol and topiramate for her awareness.
+
+Fifth, lifestyle modifications — I counseled her on sleep hygiene, consistent sleep and wake times even if total sleep hours are limited. Caffeine taper — gradual reduction from three to four cups down to one cup per day over two weeks to avoid withdrawal headaches. Hydration — at least sixty-four ounces of water daily. Regular exercise, at least thirty minutes of moderate activity three times per week. And I strongly encouraged her to start a headache diary — tracking timing, diet, sleep, menstrual cycle, and stress level. I mentioned the Migraine Buddy app as a good option.
+
+Follow-up in six weeks to review MRI results and assess response to amitriptyline. She can message me through the patient portal in the meantime with any questions.

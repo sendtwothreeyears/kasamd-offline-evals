@@ -1,0 +1,40 @@
+---
+id: 15
+scenario: Viral upper respiratory infection, reassurance and symptomatic treatment
+category: Acute
+density: Sparse
+---
+
+Doctor: Hi, Mr. Tanaka. What's going on today?
+
+Patient: I've had this cold for about three days. Runny nose, kind of stuffy, and a cough that started yesterday.
+
+Doctor: Any fever?
+
+Patient: I don't think so. I felt a little warm on Monday but I checked and it was 99.1. Since then, normal.
+
+Doctor: Sore throat?
+
+Patient: A tiny bit. More like scratchy, not really painful.
+
+Doctor: Any body aches, headache?
+
+Patient: Not really. Just kind of run down.
+
+Doctor: Alright, let me take a quick look. Open up for me... throat looks a little pink but no exudates. Ears look clear. Let me listen to your lungs... clear on both sides. Your vitals are fine — temp 98.4, everything else normal.
+
+Patient: Do I need antibiotics? My wife thinks I should.
+
+Doctor: I know it's tempting, but this really looks like a viral cold. Antibiotics won't help and can cause side effects. The stuffy nose, the mild cough, no high fever — this should run its course in about seven to ten days.
+
+Patient: Is there anything I can take?
+
+Doctor: Absolutely. For the congestion, pseudoephedrine or a nasal spray like Flonase. For the cough, honey in tea actually works pretty well, or an over-the-counter cough suppressant like dextromethorphan at night. Stay hydrated and rest when you can.
+
+Patient: And if it gets worse?
+
+Doctor: If you develop a high fever, the cough gets significantly worse, you're having trouble breathing, or it's not improving after ten days — give us a call.
+
+Patient: Got it. Thanks, doctor.
+
+Doctor: Feel better, Mr. Tanaka. Take it easy this week.

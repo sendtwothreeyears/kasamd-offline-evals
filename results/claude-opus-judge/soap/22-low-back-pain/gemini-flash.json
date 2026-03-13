@@ -1,0 +1,42 @@
+{
+  "transcript_id": "22-low-back-pain",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "All content in the note is directly stated or reasonably inferred from the transcript. No fabricated findings or diagnoses.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "Minor issue: bladder/bowel changes are listed under Gastrointestinal in the ROS, but these are genitourinary symptoms. Also, bladder/bowel changes are duplicated across GI and Neurological ROS sections. Otherwise instructions are well followed."
+    },
+    "completeness": {
+      "score": 2,
+      "rationale": "Minor omission: the note does not mention that the ibuprofen was two of the 200 mg tablets (a minor detail), and the note mentions ibuprofen 400 mg in medications but doesn't capture the specific formulation detail. The note also omits the explicit statement about 'no red flag symptoms' and 'normal neuro exam' as part of the clinical reasoning in the assessment.",
+      "missed_items": [
+        "Ibuprofen described as two of the 200 mg tablets",
+        "Explicit mention of no red flag symptoms and negative straight leg raise and normal neuro exam as clinical reasoning in assessment"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "Minor formatting issues: the physical exam lacks a 'General' appearance line, and the exam subsections use non-standard headers ('Lumbar' instead of 'Musculoskeletal'). Vital signs correctly noted as not documented."
+    },
+    "entity_marking": {
+      "score": 3,
+      "rationale": "Correct syntax used for {{drug:ibuprofen}}, {{drug:cyclobenzaprine}}, and {{condition:Acute mechanical low back strain}}. Each entity is marked only on first occurrence. No missed obvious entities."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or full note content, though bladder/bowel changes appear in both GI and Neuro ROS, which is a minor redundancy rather than section duplication."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 11.66,
+      "input_tokens": 3641,
+      "output_tokens": 535
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "transcript_id": "01-htn-new-dx",
+  "template": "soap",
+  "model": "gemini-flash",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The note only reports BP as 158/96 (the recheck value) and omits the initial reading of 162/98. While not fabricated, presenting only one reading misrepresents the clinical picture. The note also omits that BP was checked bilaterally and consistently elevated. Otherwise, all content is from the transcript.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 2,
+      "rationale": "The template instructs to only include Social History items that were mentioned \u2014 since none were mentioned, the section should have been omitted rather than stating 'Not documented.' The ROS section includes nausea denial under Neurological rather than Gastrointestinal, which is a minor organizational issue. Otherwise instructions were generally followed."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "The note misses the initial BP reading of 162/98, the fact that BP was rechecked on the other arm (bilateral measurement), and that the patient hasn't seen a doctor in 4-5 years with no prior history of high blood pressure. These are important clinical details.",
+      "missed_items": [
+        "Initial BP reading of 162/98",
+        "BP was rechecked on the other arm \u2014 consistently elevated bilaterally",
+        "Patient hasn't seen a doctor in about 4-5 years",
+        "Patient was not aware of any prior history of high blood pressure"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note follows the template structure well overall. Minor issues include including Social History as 'Not documented' instead of omitting it per template instructions, and the ROS could be better organized (nausea placed under Neurological). The Gastrointestinal ROS line for nausea denial is missing."
+    },
+    "entity_marking": {
+      "score": 2,
+      "rationale": "Entity marking syntax is correct. Drugs (acetaminophen, ibuprofen) and conditions (headaches, hypertension) are marked. However, 'Headaches' is marked twice \u2014 once in ROS and once in Assessment \u2014 violating the first-occurrence-only rule."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No sections or content are duplicated in the note."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 11.14,
+      "input_tokens": 2631,
+      "output_tokens": 587
+    }
+  }
+}

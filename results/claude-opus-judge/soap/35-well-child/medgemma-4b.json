@@ -1,0 +1,63 @@
+{
+  "transcript_id": "35-well-child",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "scores": {
+    "hallucination": {
+      "score": 2,
+      "rationale": "The Review of Systems section lists multiple systems as having no reported symptoms, but these systems were never discussed in the transcript. The template instructs to only include systems that were discussed, so fabricating negative reviews for undiscussed systems is a minor embellishment. The rest of the content is supported by the transcript.",
+      "flagged_content": [
+        "Constitutional: No fever, chills, fatigue, weight changes reported.",
+        "HEENT: No vision, hearing, throat, nasal symptoms reported.",
+        "Cardiovascular: No chest pain, palpitations reported.",
+        "Respiratory: No shortness of breath, cough, wheezing reported.",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, abdominal pain reported.",
+        "Genitourinary: No urinary symptoms reported.",
+        "Musculoskeletal: No joint pain, muscle weakness, mobility issues reported.",
+        "Neurological: No headache, dizziness, numbness, weakness reported.",
+        "Psychiatric: No mood, anxiety, sleep issues reported.",
+        "Skin: No rashes, lesions, wounds reported."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template explicitly states to only include ROS systems that were discussed and to omit the section entirely if not mentioned, yet all systems were included with fabricated negatives. Template parenthetical instructions appear verbatim in the output (e.g., '(Only include items that were mentioned)', '(If not documented, state \"Not documented\")', '(Only include vitals that were documented)', '(Only document examination findings that were explicitly mentioned...)'). Social history includes items explicitly not mentioned rather than omitting them."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Many significant transcript details are missing from the note.",
+      "missed_items": [
+        "Growth measurements (height 39.2 inches/45th percentile, weight 35.6 lbs/55th percentile, BMI 58th percentile)",
+        "Detailed developmental milestones (language, drawing, dressing, counting, colors)",
+        "Potty training status and nighttime wetting discussion",
+        "Dental hygiene details (brushing, dentist visits, no cavities)",
+        "Behavioral discussion (meltdowns, negotiating, fears of dark and dogs)",
+        "Sleep schedule details (bath 7:15, books 7:30, lights out 8, wakes 6:30, 10.5 hours)",
+        "Nap dropping discussion",
+        "Detailed dietary intake (typical day foods, milk/water/juice intake)",
+        "Preschool attendance (4 mornings/week), swim lessons, dance class",
+        "Physical exam findings (oropharynx, ears, eyes, vision screen 20/25, hearing screen, cardiovascular, lungs, abdomen, musculoskeletal, skin)",
+        "Gross motor assessment (hopping, catching ball, single-leg stance)",
+        "Chief complaint should be four-year well-child visit, not just picky eating"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Template parenthetical instructions are left in the output verbatim in multiple sections. The physical exam section is nearly empty despite extensive exam findings in the transcript. Vital signs section lists undocumented vitals rather than omitting them per template instructions. The ROS section should have been omitted or limited per template instructions."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted. Medications (DTaP, IPV, MMR, varicella, flu vaccine) and conditions (picky eating, refractive error, nighttime wetting) were not marked with {{drug:...}} or {{condition:...}} syntax."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 17.96,
+      "input_tokens": 4192,
+      "output_tokens": 935
+    }
+  }
+}

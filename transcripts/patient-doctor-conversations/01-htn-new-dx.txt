@@ -1,0 +1,36 @@
+---
+id: 01
+scenario: New hypertension diagnosis found incidentally during headache visit
+category: Chronic disease
+density: Sparse
+---
+
+Doctor: Good morning, what brings you in today?
+
+Patient: Hi, yeah, I've been having these headaches for like the past week or so. They're mostly in the back of my head, kind of a dull pressure.
+
+Doctor: Okay. Any nausea, vision changes, or sensitivity to light with them?
+
+Patient: No, nothing like that. Just the pressure feeling. It's worse in the mornings usually.
+
+Doctor: Got it. Let me check your vitals here. Hmm — so your blood pressure is reading 162 over 98 today. That's pretty elevated. Has anyone ever told you your blood pressure was high before?
+
+Patient: Uh, I don't think so. I mean, I haven't been to a doctor in probably... four years? Maybe five.
+
+Doctor: That's okay. I'm going to recheck it on the other arm. Alright, 158 over 96 on the left. So it's consistently elevated. That could actually be contributing to your headaches.
+
+Patient: Really? I didn't think high blood pressure caused headaches.
+
+Doctor: It can when it's this elevated. So here's what I'd like to do — I want to get some baseline labs, check your kidney function, cholesterol, a few other things. And I'd like you to come back in about two weeks so we can recheck the pressure. If it's still up, we'll need to talk about starting a medication.
+
+Patient: Okay. Is there anything I can do in the meantime?
+
+Doctor: Absolutely. Cut back on salt if you can, try to get some exercise — even just walking thirty minutes a day helps. And if you're drinking a lot of caffeine, maybe scale that back a bit.
+
+Patient: Alright, I can try that.
+
+Doctor: For the headaches, you can take acetaminophen — Tylenol — for now. Try to avoid ibuprofen since it can raise blood pressure. Sound good?
+
+Patient: Yeah, that works. Thanks, doc.
+
+Doctor: You bet. We'll get those labs ordered and I'll see you in two weeks.

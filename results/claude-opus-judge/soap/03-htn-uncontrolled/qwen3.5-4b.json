@@ -1,0 +1,52 @@
+{
+  "transcript_id": "03-htn-uncontrolled",
+  "template": "soap",
+  "model": "qwen3.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The generated note contains only a thinking/planning process and no actual clinical note output. There is no clinical content to evaluate, but the absence of a proper note means this fails entirely.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The output is entirely a thinking process/internal monologue and does not produce an actual clinical note. The instructions to generate a structured clinical note were completely ignored in terms of output."
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "No actual clinical note was generated. All transcript content is missing from any structured output.",
+      "missed_items": [
+        "Chief complaint",
+        "HPI details",
+        "BP readings",
+        "Medication adherence issues",
+        "Amlodipine details",
+        "Lisinopril addition",
+        "Side effect counseling",
+        "Diet/sodium counseling",
+        "Exercise recommendations",
+        "Family history",
+        "Follow-up plan",
+        "Home monitoring instructions"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "No structured clinical note was produced. The output is entirely unstructured internal reasoning with no template sections."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No actual note was generated, so no entity marking was applied to any output content."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "The thinking process contains massive repetitive loops where the same line ('Wait, I need to check if I mention it in the HPI' / 'Okay, I will mark it in the PMH section') is duplicated hundreds of times."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 9.92,
+      "input_tokens": 19509,
+      "output_tokens": 426
+    }
+  }
+}

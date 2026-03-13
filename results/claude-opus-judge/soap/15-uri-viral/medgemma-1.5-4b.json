@@ -1,0 +1,54 @@
+{
+  "transcript_id": "15-uri-viral",
+  "template": "soap",
+  "model": "medgemma-1.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 3,
+      "rationale": "The Subjective and HPI sections contain only information from the transcript with no fabricated content. The rest of the note is unfilled template placeholders, so no hallucinated clinical content exists.",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "The note left nearly all sections as raw template placeholders with bracketed instructions and parenthetical guidance text, which the instructions explicitly state should not appear in the output. The ROS, Past Medical History, Medications, Allergies, Social History, Family History, Objective, Assessment, and Plan sections were not filled in at all. The template instructions say to omit systems not discussed, yet all ROS systems are listed as placeholders.",
+      "flagged_content": []
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "The note only completed the Chief Complaint and HPI. It missed the entire physical exam (temp 98.4, throat pink without exudates, ears clear, lungs clear), the assessment (viral URI), the plan (pseudoephedrine, Flonase, honey/tea, dextromethorphan, hydration, rest), patient education about antibiotics, and return precautions.",
+      "missed_items": [
+        "Temp 98.4, other vitals normal",
+        "Throat a little pink, no exudates",
+        "Ears clear bilaterally",
+        "Lungs clear bilaterally",
+        "Assessment: viral upper respiratory infection",
+        "Pseudoephedrine or nasal steroid spray (Flonase) for congestion",
+        "Honey in tea or dextromethorphan for cough",
+        "Stay hydrated and rest",
+        "Patient education: antibiotics not indicated for viral illness",
+        "Return precautions: high fever, worsening cough, trouble breathing, no improvement after 10 days",
+        "Expected course 7-10 days"
+      ]
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "Most sections are raw template placeholders with bracketed instructions and parenthetical notes left in place. Only the Chief Complaint and HPI were actually filled in; the rest is the unmodified template.",
+      "flagged_content": []
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 12.65,
+      "input_tokens": 2875,
+      "output_tokens": 671
+    }
+  }
+}

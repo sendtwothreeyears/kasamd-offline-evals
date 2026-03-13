@@ -1,0 +1,60 @@
+{
+  "transcript_id": "50-polypharmacy",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The note states 'Hip fracture (history)' in Past Medical History, but the transcript only mentions hip fracture as a hypothetical risk ('A hip fracture at 82 is far more dangerous...'), not as an actual history. The Review of Systems entries for Constitutional, HEENT, Respiratory, and GI stating 'No reported changes' are fabricated \u2014 these systems were not discussed. The template instructs to only include systems that were discussed.",
+      "flagged_content": [
+        "Hip fracture (history)",
+        "Constitutional: No reported changes.",
+        "HEENT: No reported changes.",
+        "Respiratory: No reported changes.",
+        "Gastrointestinal: No reported changes."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and to omit the section entirely if not mentioned, but the note includes multiple undiscussed systems. Social History and Family History should state 'Not documented' per template instructions, but instead use non-standard phrasing like 'No reported social history details.'"
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details from the transcript are missing.",
+      "missed_items": [
+        "Two falls in last six months (bathroom and kitchen) with lightheadedness on standing / orthostatic hypotension",
+        "Daughter's observation of increased confusion and concern about early cognitive decline",
+        "Discussion that confusion may be medication-related rather than true dementia",
+        "Sleep alternatives discussed: low-dose melatonin, sleep hygiene, possible CBT-I referral",
+        "Lorazepam history: started 2013 by Dr. Patterson after husband's death, dosing details (half tablet at bedtime, sometimes half during day)",
+        "Omeprazole history: since 2017 for hiatal hernia, rarely gets heartburn now",
+        "Aspirin context: started by cardiologist after heart catheterization, no MI or stent history, primary prevention discussion",
+        "Gabapentin 300mg TID for sciatica/back pain, started by Dr. Cho, pain improving, future dose reduction discussed",
+        "Atorvastatin 20mg dose",
+        "Written medication action plan to share with daughter",
+        "Pharmacist Jim specifically named",
+        "Daughter invited to future visits",
+        "Withdrawal symptoms as a reason to call sooner",
+        "Past medical history items: diabetes (implied by metformin), hiatal hernia, sciatica/back pain, anxiety, insomnia, urinary urgency/incontinence"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The overall structure follows the template, but Vital Signs are placed under Objective after Physical Examination rather than within the Physical Examination section as the template specifies. The ROS includes systems that should have been omitted per template instructions."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax is present."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 15.32,
+      "input_tokens": 4435,
+      "output_tokens": 809
+    }
+  }
+}

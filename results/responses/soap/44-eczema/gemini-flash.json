@@ -1,0 +1,12 @@
+{
+  "transcript_id": "44-eczema",
+  "template": "soap",
+  "model": "gemini-flash",
+  "generated_note": "**Subjective**\n**Chief Complaint**\nPatient presents with a rash on the arms for a couple of weeks, with intense itching, especially at night, disrupting sleep.\n\n**History of Present Illness**\nPatient reports a rash on the arms for a couple of weeks, with intense itching, particularly at night, which is severe enough to disrupt sleep. Patient reports scratching in their sleep and waking up with skin under their fingernails. This issue reportedly occurs every winter, with last year also being severe.\n\n**Past Medical History**\nHistory of {{condition:eczema}} as a child, which resolved but recurred a few years ago.\n\n**Medications**\nNot documented\n\n**Allergies**\nNot documented\n\n**Social History**\nNot documented\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\n**Vital Signs:**\nNot documented\n\nGeneral: Not documented\n\nSkin: Dry, scaly patches noted on bilateral antecubital fossae and wrists. Erythema and visible excoriations from scratching are present.\n\n**Assessment**\nConsistent with {{condition:eczema}}, {{condition:atopic dermatitis}}.\n\n**Plan**\n1. Prescribed {{drug:triamcinolone}} 0.1% ointment, to be applied twice daily to affected areas for two weeks.\n2. Counseled patient on the importance of moisturizing with a thick, fragrance-free cream (e.g., CeraVe cream or Vanicream) applied right after showering while skin is damp, at least twice daily. Explained that regular lotion is insufficient.\n3. Advised keeping showers warm rather than hot, and short, to avoid stripping natural skin oils.\n4. Recommended avoiding skin irritants such as harsh soaps and wool clothing.\n5. For nighttime itching, recommended over-the-counter {{drug:Benadryl}} as needed to aid with sleep.\n6. Instructed patient to follow up in two weeks if no improvement for reassessment.",
+  "metadata": {
+    "inference_time_s": 7.3,
+    "prompt_tokens": 1509,
+    "tokens_generated": 412,
+    "tokens_per_sec": 56.4
+  }
+}

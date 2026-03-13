@@ -1,0 +1,14 @@
+{
+  "transcript_id": "45-suspicious-mole",
+  "template": "soap",
+  "model": "medgemma-4b",
+  "generated_note": "**Subjective**\nChief Complaint\nMole on upper back changing\n\n**History of Present Illness**\nPatient presented with a mole on her upper back that her husband had noticed was changing. He's been observing it for roughly three to four months, said it looks darker and possibly bigger than it used to be. She can't see it well herself. She did mention it bled once when she caught it on her bra strap, though she attributed that to friction.\n\n**Review of Systems**\nConstitutional: No mention\nHEENT: No mention\nCardiovascular: No mention\nRespiratory: No mention\nGastrointestinal: No mention\nGenitourinary: No mention\nMusculoskeletal: No mention\nNeurological: No mention\nPsychiatric: No mention\nSkin: Bleeding\n\n**Past Medical History**\nNot documented\n\n**Medications**\nNot documented\n\n**Allergies**\nNo known drug allergies\n\n**Social History**\nTobacco: No mention\nAlcohol: No mention\nRecreational drugs: No mention\nOccupation: No mention\n(Only include items that were mentioned)\n\n**Family History**\nNot documented\n\n**Objective**\n**Physical Examination**\n**Vital Signs:**\nBP: Not documented\nHR: Not documented\nTemp: Not documented\nRR: Not documented\nSpO2: Not documented\n(Only include vitals that were documented)\n\nGeneral: Examined back and used dermatoscope to get closer look at mole.\n**Assessment**\nSuspicious mole on upper back, likely requiring biopsy.\n[Secondary diagnoses if applicable]\n**Plan**\n1. Excisional biopsy Thursday at 2:30\n2. Pathology to follow\n3. Skin surveillance going forward: monthly self-skin checks using ABCDE criteria, annual full skin exams with me or dermatologist\n4. Counsel on sunscreen use, SPF 30 or higher, reapplying every two hours when outdoors, and using hats and protective clothing when possible\n(Only include plan elements that were specifically discussed)\n",
+  "metadata": {
+    "inference_time_s": 8.15,
+    "prompt_tokens": 1812,
+    "tokens_generated": 420,
+    "prompt_tps": 292.0,
+    "tokens_per_sec": 51.5,
+    "peak_memory_gb": 3.67
+  }
+}

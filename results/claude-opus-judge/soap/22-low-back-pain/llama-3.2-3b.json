@@ -1,0 +1,66 @@
+{
+  "transcript_id": "22-low-back-pain",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "The note fabricates vital signs (BP: 120/80, HR: 70, Temp: 98.6\u00b0F, RR: 14, SpO2: 98%) that are completely absent from the transcript. It also fabricates an entire Review of Systems with negatives for HEENT, Cardiovascular, Respiratory, GI, Psychiatric, Skin, and other systems that were never discussed. The medication dosing is also wrong (says 'twice daily' instead of 'three times a day').",
+      "flagged_content": [
+        "BP: 120/80",
+        "HR: 70",
+        "Temp: 98.6\u00b0F",
+        "RR: 14",
+        "SpO2: 98%",
+        "HEENT: No vision, hearing, throat, nasal symptoms.",
+        "Cardiovascular: No chest pain, palpitations, edema.",
+        "Respiratory: No shortness of breath, cough, wheezing.",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, abdominal pain.",
+        "Genitourinary: No urinary symptoms, menstrual history.",
+        "Psychiatric: No mood, anxiety, sleep.",
+        "Skin: No rashes, lesions, wounds.",
+        "Musculoskeletal: No joint pain, muscle weakness, mobility issues.",
+        "ibuprofen 400 milligrams twice daily",
+        "Tobacco: No usage details.",
+        "Alcohol: No usage details.",
+        "Recreational drugs: No usage details."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include ROS systems that were discussed and only include vitals that were documented, but the note fabricates vitals and includes undiscussed ROS systems. Social history items not mentioned should have been omitted per template instructions, but tobacco, alcohol, and recreational drugs are listed with 'No usage details.'"
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "The note misses the onset details (helping brother-in-law move furniture four days ago on Saturday, felt something pull while lifting a dresser), the mechanism of injury context, the fact that ibuprofen 'takes the edge off but doesn't fully relieve it,' the counseling about GI side effects, the expected recovery timeline (2-4 weeks significant improvement, baseline by 6 weeks), and the statement that no imaging is indicated.",
+      "missed_items": [
+        "Onset: helping brother-in-law move furniture four days ago on Saturday",
+        "Mechanism: felt something pull while lifting a dresser",
+        "Had to stop and sit down, tried to continue but pain worsened",
+        "Ibuprofen takes the edge off but doesn't fully relieve it",
+        "Counseled about GI side effects of ibuprofen",
+        "No imaging indicated at this time given absence of red flags and acute presentation under six weeks",
+        "Expected recovery timeline: most improve in 2-4 weeks, back to baseline by 6 weeks",
+        "Patient age: 43 years old"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The note mostly follows the template structure but has the Chief Complaint placed after an initial Subjective line rather than before HPI as in the template, and Physical Examination header appears twice."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used for any medications or conditions."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed, though the Physical Examination header appears twice which is a minor structural issue rather than content duplication."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.18,
+      "input_tokens": 3662,
+      "output_tokens": 909
+    }
+  }
+}

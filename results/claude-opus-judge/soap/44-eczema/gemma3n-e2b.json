@@ -1,0 +1,49 @@
+{
+  "transcript_id": "44-eczema",
+  "template": "soap",
+  "model": "gemma3n-e2b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems states 'No reported fever or chills,' but the transcript never mentions fever or chills at all \u2014 this is fabricated negative information. The template instructs to only include systems that were discussed. The Social History section should have been omitted rather than stated as 'Not documented' per template instructions, but that's an instruction issue, not hallucination.",
+      "flagged_content": [
+        "Constitutional: No reported fever or chills."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template says to only include ROS systems that were discussed and to omit the section entirely if not mentioned \u2014 Constitutional was not discussed but was included. Vital signs were listed as 'Not documented' when the template says to only include vitals that were documented. Social History should have been omitted per the template's instruction to only include items that were mentioned, but instead says 'Not documented.'",
+      "missed_items": []
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Missing key physical exam findings: bilateral antecubital fossae and wrists as specific locations, erythema, and visible excoriations from scratching. Also missing the counseling that regular lotion is mostly water and not sufficient. The sleep disruption was captured but the psychiatric ROS (sleep) was not included while a fabricated Constitutional ROS was.",
+      "missed_items": [
+        "Dry scaly patches on bilateral antecubital fossae (insides of both elbows) and wrists",
+        "Erythema",
+        "Visible excoriations from scratching",
+        "Counseling that regular lotion is mostly water and not sufficient",
+        "Ointment not cream distinction was not explicitly highlighted in counseling"
+      ]
+    },
+    "template_adherence": {
+      "score": 2,
+      "rationale": "The overall structure follows the template well, but vital signs are listed as 'Not documented' instead of being omitted per template instructions, and Social History is listed as 'Not documented' instead of being omitted. The physical exam findings are misplaced \u2014 specific skin findings are vaguely summarized under General rather than documented under a Skin section."
+    },
+    "entity_marking": {
+      "score": 1,
+      "rationale": "CeraVe cream and Vanicream are moisturizers/OTC products, not drugs \u2014 marking them as drugs is incorrect. The condition 'eczema' / 'atopic dermatitis' in the Assessment was not marked with {{condition:...}} syntax. The condition mentions in HPI and PMH were also not marked.",
+      "flagged_content": []
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No duplicated sections or repeated content detected."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 13.89,
+      "input_tokens": 2753,
+      "output_tokens": 674
+    }
+  }
+}

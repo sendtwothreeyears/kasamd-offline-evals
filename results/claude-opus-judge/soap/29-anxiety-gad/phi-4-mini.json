@@ -1,0 +1,67 @@
+{
+  "transcript_id": "29-anxiety-gad",
+  "template": "soap",
+  "model": "phi-4-mini",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The note fabricates specific vital signs not mentioned in the transcript: Temp 98.6 F, RR 16, and SpO2 98%. These are not standard clinical defaults \u2014 they are specific numerical values presented as documented findings.",
+      "flagged_content": [
+        "Temp: 98.6 F",
+        "RR: 16",
+        "SpO2: 98%"
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template instructs to only include vitals that were documented, but the note fabricated Temp, RR, and SpO2. Multiple sections from the template are missing entirely (Review of Systems, Past Medical History as a separate section, Medications, Allergies, Social History as a separate section, Family History as a separate section). The chief complaint states a diagnosis rather than the patient's reason for visit."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Many important details from the transcript are missing: the daughter's school play precipitating event, wife's involvement in urging the visit, sleep details (45 min to fall asleep, podcasts, 'tired but wired'), cracked molar and night guard, GI workup details (endoscopy/colonoscopy, IBS diagnosis), CBT/ACT discussion, benzodiazepine discussion, lifestyle counseling details (exercise commitment, mindfulness apps, sleep hygiene, screen time), palmar diaphoresis, the suggestion to loop his wife in, safety counseling details, and the brother's response to escitalopram as rationale for prescribing.",
+      "missed_items": [
+        "Daughter's school play precipitating event",
+        "Wife urging him to seek help",
+        "Sleep onset latency 45 min to 1 hour",
+        "Podcast use to drown out thoughts",
+        "'Tired but wired' description",
+        "Cracked molar and night guard",
+        "GI workup (endoscopy/colonoscopy normal, IBS diagnosis, fiber advice)",
+        "CBT and ACT therapy discussion",
+        "Benzodiazepine discussion and rationale for not prescribing long-term",
+        "Exercise counseling (3 thirty-minute walks)",
+        "Mindfulness meditation and apps (Headspace, Calm, Insight Timer)",
+        "Sleep hygiene counseling (no screens 1 hour before bed, physical book)",
+        "Alcohol reduction recommendation",
+        "Suggestion to loop wife into treatment plan",
+        "Detailed medication side effect counseling",
+        "Palmar diaphoresis",
+        "No prior psychiatric treatment history",
+        "Family where mental health wasn't discussed",
+        "Cardiac exam findings (RRR, no murmurs)",
+        "Lungs clear",
+        "Thyroid normal to palpation",
+        "GAD-7 score of 17/21",
+        "Behavioral health referral"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "Multiple template sections are entirely missing: Review of Systems, Past Medical History (as separate section), Medications, Allergies, Social History (as separate section), Family History (as separate section). Past medical and family history information is embedded in HPI instead of their proper sections. The 'General' heading appears twice in the objective."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used for any medications (escitalopram, buspirone) or conditions (GAD, IBS, hypertension, hyperthyroidism)."
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "No significant duplication of sections or content was observed, though 'General' appears twice in the objective."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 16.11,
+      "input_tokens": 4335,
+      "output_tokens": 903
+    }
+  }
+}

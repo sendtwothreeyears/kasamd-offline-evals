@@ -1,0 +1,34 @@
+---
+id: 47
+scenario: Vitamin D deficiency, fatigue workup
+category: Endocrine/Other
+density: Sparse
+---
+
+Doctor: Hey Rosa, come on in. I have your lab results back and I wanted to go over them with you.
+
+Patient: Oh good, because I've been really tired and I want to know what's going on.
+
+Doctor: Right, the fatigue was the main concern. So the good news is your thyroid is normal, your blood counts are normal, your metabolic panel looks fine. The one thing that did come back low is your vitamin D. It was 14 — we like to see it above 30.
+
+Patient: That's low? Is that why I'm so tired?
+
+Doctor: It can definitely contribute. Vitamin D deficiency is linked to fatigue, muscle weakness, and sometimes mood changes. It's very common, especially in our area with the long winters. Do you get much sun exposure?
+
+Patient: Not really. I work indoors all day and honestly during the winter I go weeks without being outside for more than a few minutes.
+
+Doctor: That's the story I hear a lot. So I'm going to start you on a high-dose vitamin D supplement — 50,000 units once a week for eight weeks to get your levels up, and then we'll switch to a daily maintenance dose of 2,000 units.
+
+Patient: Once a week? That's it?
+
+Doctor: That's it. Take it with a meal that has some fat in it — it absorbs better that way. We'll recheck your level in about three months to make sure it's come up.
+
+Patient: And you think that'll help with the tiredness?
+
+Doctor: It should help, though I want to be honest — fatigue has a lot of potential causes. If your energy doesn't improve once we get the vitamin D up, we should look at other things like your sleep habits, stress levels, that kind of thing. But let's start here since this is the concrete finding we have.
+
+Patient: Okay, that makes sense. Thank you.
+
+Doctor: You're welcome. Pick up the prescription today if you can and I'll see you in three months.
+
+Patient: Will do. Thanks.

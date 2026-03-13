@@ -1,0 +1,40 @@
+{
+  "transcript_id": "05-dm2-elevated-a1c",
+  "template": "soap",
+  "model": "qwen3.5-4b",
+  "scores": {
+    "hallucination": {
+      "score": 0,
+      "rationale": "Judge could not score: JSON parse error: Expecting value: line 1 column 1 (char 0)",
+      "flagged_content": []
+    },
+    "instruction_following": {
+      "score": 0,
+      "rationale": "Judge could not score"
+    },
+    "completeness": {
+      "score": 0,
+      "rationale": "Judge could not score",
+      "missed_items": []
+    },
+    "template_adherence": {
+      "score": 0,
+      "rationale": "Judge could not score"
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "Judge could not score"
+    },
+    "duplication": {
+      "score": 0,
+      "rationale": "Judge could not score"
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 10.23,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "unscorable": true
+    }
+  }
+}

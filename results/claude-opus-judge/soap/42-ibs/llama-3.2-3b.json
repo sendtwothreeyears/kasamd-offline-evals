@@ -1,0 +1,63 @@
+{
+  "transcript_id": "42-ibs",
+  "template": "soap",
+  "model": "llama-3.2-3b",
+  "scores": {
+    "hallucination": {
+      "score": 1,
+      "rationale": "The Review of Systems section fabricates numerous negative findings (HEENT, cardiovascular, respiratory, genitourinary, musculoskeletal, skin) that were never discussed in the transcript. The ROS also incorrectly states 'No diarrhea, abdominal pain' and 'No mood, anxiety, or sleep issues' which directly contradicts the transcript. The note also states 'Priya's overall appearance and condition are good' without transcript support.",
+      "flagged_content": [
+        "HEENT: No vision, hearing, throat, or nasal symptoms.",
+        "Cardiovascular: No chest pain, palpitations, or edema.",
+        "Respiratory: No shortness of breath, cough, or wheezing.",
+        "Gastrointestinal: No nausea, vomiting, diarrhea, abdominal pain, or blood in the stool.",
+        "Genitourinary: No urinary symptoms or menstrual history.",
+        "Musculoskeletal: No joint pain, muscle weakness, or mobility issues.",
+        "Neurological: No headache, dizziness, numbness, or weakness.",
+        "Psychiatric: No mood, anxiety, or sleep issues.",
+        "Skin: No rashes, lesions, or wounds.",
+        "Constitutional: No fever, chills, or fatigue.",
+        "Priya's overall appearance and condition are good."
+      ]
+    },
+    "instruction_following": {
+      "score": 1,
+      "rationale": "The template explicitly states 'Only include systems that were discussed. If not mentioned, omit this section entirely' for ROS, yet the note includes all ROS systems with fabricated negatives. The template also says 'Only document examination findings that were explicitly mentioned' but the note adds a general appearance statement not in the transcript."
+    },
+    "completeness": {
+      "score": 1,
+      "rationale": "Several important details are missing from the note.",
+      "missed_items": [
+        "Prior workup results (CBC, CRP, sed rate, celiac panel/tTG, TSH, fecal calprotectin, CT abdomen)",
+        "Weight stable at 142 pounds",
+        "No known family history of Crohn's disease or ulcerative colitis",
+        "Psyllium husk/Metamucil fiber supplementation plan with titration details",
+        "Dicyclomine side effects counseling (dry mouth, dizziness)",
+        "Referral to behavioral health/psychologist for gut-directed CBT",
+        "Explanation that IBS is a disorder of gut-brain interaction",
+        "Correlation between stress and GI symptoms / worst flare during trial week",
+        "Red flag instructions (call if blood in stool, weight loss, fevers)",
+        "Screening colonoscopy at age 45 recommendation",
+        "Low-FODMAP elimination phase details (4-6 weeks then reintroduction)"
+      ]
+    },
+    "template_adherence": {
+      "score": 1,
+      "rationale": "The Subjective section has an extra introductory line before Chief Complaint. Family history content is placed in Past Medical History. The Chief Complaint appears after an introductory subjective line rather than being the first subsection. Vital Signs and General are placed outside the Physical Examination subsection structure."
+    },
+    "entity_marking": {
+      "score": 0,
+      "rationale": "No entity marking was attempted anywhere in the note. No {{drug:...}} or {{condition:...}} syntax was used for any medications or conditions."
+    },
+    "duplication": {
+      "score": 1,
+      "rationale": "Family history of uncle with colon cancer is duplicated in both Past Medical History and Family History sections."
+    },
+    "_meta": {
+      "judge_model": "claude-opus-4-6",
+      "judge_time_s": 14.02,
+      "input_tokens": 4046,
+      "output_tokens": 871
+    }
+  }
+}
